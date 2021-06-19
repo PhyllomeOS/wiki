@@ -2,13 +2,11 @@
 title: Frequently asked questions
 description: This page intents to give answers to common questions around Phyllome OS
 published: true
-date: 2021-06-19T13:20:00.698Z
+date: 2021-06-19T13:20:37.239Z
 tags: info
 editor: markdown
 dateCreated: 2021-06-19T13:20:00.698Z
 ---
-
-# Frequently Asked Questions 
 
 ## Why use Fedora as a base for Phyllome OS ?
 
