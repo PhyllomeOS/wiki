@@ -2,7 +2,7 @@
 title: Homepage
 description: 
 published: true
-date: 2021-06-19T13:20:59.786Z
+date: 2021-06-19T13:23:05.004Z
 tags: test
 editor: markdown
 dateCreated: 2021-06-19T09:29:20.593Z
@@ -19,7 +19,7 @@ It is designed for usability, featuring native sound capabilities, hardware-acce
 As of now, there are five main sections in this wiki:
 
 * **[Users](/users)** : How to install and use Phyllome OS (work in progress)
-* **Developers** : How to hack Phyllome OS (work in progress)
+* **Developers** : How to hack and develop Phyllome OS (work in progress)
 * **The Phyllome OS Project** : How the project is currently set-up (work in progress)
 * **How-to guides** : How to do certain tasks
 * **[FAQ](/faq)** : The frequently asked questions section 
