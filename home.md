@@ -2,7 +2,7 @@
 title: Homepage
 description: 
 published: true
-date: 2021-06-19T12:39:24.790Z
+date: 2021-06-19T12:39:40.488Z
 tags: test
 editor: markdown
 dateCreated: 2021-06-19T09:29:20.593Z
@@ -16,7 +16,7 @@ The [Phyllome Operating System (OS)](https://phyllo.me/) is a multi-user, free a
 
 As of now, there are three main sections in this wiki:
 
-* **[Users](/users))** : How to install and use Phyllome OS (work in progress)
+* **[Users](/users)** : How to install and use Phyllome OS (work in progress)
 * **Developers** : How to hack Phyllome OS (work in progress)
 * **The Phyllome OS Project** : How the project is currently set-up (work in progress)
 
