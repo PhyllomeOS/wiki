@@ -2,7 +2,7 @@
 title: Homepage
 description: 
 published: true
-date: 2021-06-19T12:42:57.678Z
+date: 2021-06-19T12:43:25.665Z
 tags: test
 editor: markdown
 dateCreated: 2021-06-19T09:29:20.593Z
@@ -19,7 +19,7 @@ As of now, there are five main sections in this wiki:
 * **[Users](/users)** : How to install and use Phyllome OS (work in progress)
 * **Developers** : How to hack Phyllome OS (work in progress)
 * **The Phyllome OS Project** : How the project is currently set-up (work in progress)
-* **How-to guides** : How to do something special
+* **How-to guides** : How to do certain tasks
 * **FAQ** : The frequently asked questions section 
 
 If you would rather avoid JavaScript altogether, or wish to download the content locally, we have you covered as you can download the content [here](https://git.phyllo.me/home/wiki) using git. 
