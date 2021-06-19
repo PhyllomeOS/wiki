@@ -2,7 +2,7 @@
 title: Homepage
 description: 
 published: true
-date: 2021-06-19T12:43:25.665Z
+date: 2021-06-19T12:44:53.922Z
 tags: test
 editor: markdown
 dateCreated: 2021-06-19T09:29:20.593Z
@@ -10,7 +10,9 @@ dateCreated: 2021-06-19T09:29:20.593Z
 
 # Introduction
 
-The [Phyllome Operating System (OS)](https://phyllo.me/) is a multi-user, free and open-source desktop-oriented Linux distribution aimed at running diverse guest operating systems using state-of-the-art virtualization techniques. It is designed for usability, featuring native sound capabilities, hardware-accelerated 3D graphics for virtual machines, and simple networking. 
+The [Phyllome Operating System (OS)](https://phyllo.me/) is a multi-user, free and open-source desktop-oriented Linux distribution aimed at running diverse guest operating systems using state-of-the-art virtualization techniques. 
+
+It is designed for usability, featuring native sound capabilities, hardware-accelerated 3D graphics for virtual machines, and simple networking. 
 
 ## Welcome to the Phyllome OS wiki !
 
@@ -30,4 +32,4 @@ Happy reading !
 
 *Phyllome is under active development and not yet available to the public.*
 
-*Please come back later to test it out.*
+*Please come back around September to test it out.*
