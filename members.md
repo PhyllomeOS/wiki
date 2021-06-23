@@ -2,7 +2,7 @@
 title: members
 description: Everything you need to know as a member of the project
 published: true
-date: 2021-06-23T12:12:09.796Z
+date: 2021-06-23T12:17:10.818Z
 tags: 
 editor: markdown
 dateCreated: 2021-06-23T09:06:00.169Z
@@ -57,7 +57,7 @@ Your `{USERNAME}` can be used to access all services and tools listed below.
 ### Mail
 
 * **Description** : Cloudron.io is used to manage emailing, together with [rainloop](https://www.rainloop.net/), a webmail system
-* **Status** : online
+* **Status** : `online`
 * **Location** : https://mail.phyllo.me/
 * **Wiki pages** : [mail](/members/mail)
 
