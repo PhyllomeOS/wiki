@@ -1,8 +1,8 @@
 ---
-title: Collaborative writing
-description: Everyhting about the tool used to collaborate on writing
+title: Collaborative writing as practiced in Phyllome OS
+description: 
 published: true
-date: 2021-06-23T10:28:46.150Z
+date: 2021-06-23T12:05:16.316Z
 tags: 
 editor: markdown
 dateCreated: 2021-06-23T09:12:21.512Z
