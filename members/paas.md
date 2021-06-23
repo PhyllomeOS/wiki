@@ -2,7 +2,7 @@
 title: Information about Phyllome OS PaaS
 description: Page about the PaaS we use for the Phyllome OS project
 published: true
-date: 2021-06-23T10:34:39.626Z
+date: 2021-06-23T12:00:33.460Z
 tags: 
 editor: markdown
 dateCreated: 2021-06-23T10:25:00.076Z
@@ -10,9 +10,12 @@ dateCreated: 2021-06-23T10:25:00.076Z
 
 # Platform-as-a-Service (PaaS)
 
+* **Description** : Cloudron.io is used to deploy web applications consumed by the Phyllome OS project 
+* **Status** : `online`
 * **Location** : https://my.refre.ch
-* **Maintainer** : lukas
+* **Maintainer** : lukas@phyllo.me
 * **Solution** : [cloudron.io](https://www.cloudron.io/)
+
 
 Cloudron.io is a PaaS used to deploy and keep web applications up-do-date. It is our beloved single point-of-failure.
 
