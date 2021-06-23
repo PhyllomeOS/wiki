@@ -2,7 +2,7 @@
 title: members
 description: Everything you need to know as a member of the project
 published: true
-date: 2021-06-23T10:25:20.960Z
+date: 2021-06-23T10:37:14.561Z
 tags: 
 editor: markdown
 dateCreated: 2021-06-23T09:06:00.169Z
@@ -53,7 +53,6 @@ Your `{USERNAME}` can be used to access all services and tools listed below.
 * **Status** : `online`
 * **Location** : https://my.refre.ch
 * **Wiki** : [PaaS](/members/paas)
-* **Maintainer** : lukas@phyllo.me
 
 ### Git repository
 
@@ -61,7 +60,6 @@ Your `{USERNAME}` can be used to access all services and tools listed below.
 * **Status** : `online`
 * **Location** : https://git.phyllo.me
 * **Wiki pages** : [Git](/members/git)
-* **Maintainer** : lukas@phyllo.me
 
 ### Collaborative writing
 
@@ -69,7 +67,6 @@ Your `{USERNAME}` can be used to access all services and tools listed below.
 * **Status** : `online`
 * **Location** : https://docs.phyllo.me
 * **Wiki page** : [Docs](/members/docs)
-* **Maintainer** : lukas@phyllo.me
 
 ### Wiki
 
@@ -77,15 +74,12 @@ Your `{USERNAME}` can be used to access all services and tools listed below.
 * **Status** : `online`
 * **Location** : https://wiki.phyllo.me
 * **Wiki page** : [Wiki](/members/wiki)
-* **Maintainer** : lukas@phyllo.me
 
 ### Issue tracking
 
 * **Description** : [Wekan](https://wekan.github.io/) is used for issue tracking
-* **Status** : `online`
 * **Location** : https://kanban.phyllo.me/
 * **Wiki page** : [Kanban](/members/kanban)
-* **Maintainer** : lukas@phyllo.me
 
 ### Website hosting
 
@@ -93,7 +87,6 @@ Your `{USERNAME}` can be used to access all services and tools listed below.
 * **Status** : `online`
 * **Location** : https://phyllo.me
 * **Wiki page** : [CMS](/members/cms)
-* **Maintainer** : lukas@phyllo.me
 
 ### Files hosting
 
@@ -101,7 +94,6 @@ Your `{USERNAME}` can be used to access all services and tools listed below.
 * **Status** : `online`
 * **Location** : https://files.phyllo.me/
 * **Wiki page** : [Files](/members/files)
-* **Maintainer** : lukas@phyllo.me
 
 ### S3 object storage
 
@@ -109,4 +101,3 @@ Your `{USERNAME}` can be used to access all services and tools listed below.
 * **Status** : `offline`
 * **Location** : https://s3.phyllo.me
 * **Wiki page** : *to-do*
-* **Maintainer** : lukas@phyllo.me
