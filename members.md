@@ -2,7 +2,7 @@
 title: members
 description: Everything you need to know as a member of the project
 published: true
-date: 2021-06-23T09:38:19.583Z
+date: 2021-06-23T09:52:05.363Z
 tags: 
 editor: markdown
 dateCreated: 2021-06-23T09:06:00.169Z
