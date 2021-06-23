@@ -2,7 +2,7 @@
 title: members
 description: Everything you need to know as a member of the project
 published: true
-date: 2021-06-23T10:37:14.561Z
+date: 2021-06-23T11:54:33.683Z
 tags: 
 editor: markdown
 dateCreated: 2021-06-23T09:06:00.169Z
@@ -26,7 +26,7 @@ To receive an invitation, you need to possess a working email address, typically
 > **Password**. Please use a long passphrase and store it securely, using a password manager such as [Bitwarden](https://bitwarden.com/) or [KeePaasXC](https://keepassxc.org/), or on an air-gapped hardware token made of cellulose fibres, also known as a sheet of paper. 
 {.is-info}
 
-> **Second authentication**. 2FA is mandatory across all apps. Please use an application such as the [Aegis Authenticator](https://f-droid.org/en/packages/com.beemdevelopment.aegis/) on Android to generate One Time Passwords (OTP).  
+> **Second Factor Authentication (2FA)**. 2FA is mandatory across all apps. Please use an application such as the [Aegis Authenticator](https://f-droid.org/en/packages/com.beemdevelopment.aegis/) on Android to generate One Time Passwords (OTP).  
 {.is-info}
 
 ## Legal notice
