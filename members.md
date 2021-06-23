@@ -2,7 +2,7 @@
 title: members
 description: Everything you need to know as a member of the project
 published: true
-date: 2021-06-23T09:06:00.169Z
+date: 2021-06-23T09:38:19.583Z
 tags: 
 editor: markdown
 dateCreated: 2021-06-23T09:06:00.169Z
@@ -18,20 +18,22 @@ This file is made to ease the onboarding of new people into the Phyllome OS proj
 
 When you onboard the project, you will eventually get an account on https://my.refre.ch, which will allow you to access applications used by the Phyllome OS project.
 
-In order to receive an invitation, you need to possess a working email address. Then, you should receive an email asking you to register.
+To receive an invitation, you need to possess a working email address, typically your personal email address. Then, you should receive an email inviting you to register.
 
-> If you haven't received your invitation, please check your spam folder. If there is nothing there, send an email to `contact@phyllo.me`
+> If you haven't received your invitation, please check your spam folder. If there is nothing there, please send an email to `contact@phyllo.me` and mention your username
 {.is-warning}
 
-* **Password**. Please use a long password and store it securely, using a password manager such as [Bitwarden](https://bitwarden.com/) or [KeePaasXC](https://keepassxc.org/), or on an air-gapped hardware token made of cellulose fibres, also known as a sheet of paper.
+> **Password**. Please use a long password and store it securely, using a password manager such as [Bitwarden](https://bitwarden.com/) or [KeePaasXC](https://keepassxc.org/), or on an air-gapped hardware token made of cellulose fibres, also known as a sheet of paper.
+{.is-info}
 
-* **Second authentication**. 2FA is mandatory across all apps. Please use an application such as the [Aegis Authenticator](https://f-droid.org/en/packages/com.beemdevelopment.aegis/) on Android to generate One Time Passwords (OTP).  
+> **Second authentication**. 2FA is mandatory across all apps. Please use an application such as the [Aegis Authenticator](https://f-droid.org/en/packages/com.beemdevelopment.aegis/) on Android to generate One Time Passwords (OTP).  
+{.is-info}
 
 ## Legal notice
 
-Please note that all contributions made to the project, through the official tools stated bellow, will be open-sourced.
+Please note that all contributions made to the project, through the official tools stated below, will be open-sourced.
  
-> As a contributor, you waive your rights in profit of Phyllome OS. You will be quoted as being a contributor.
+> As a contributor, you waive your rights in profit of Phyllome OS. You will be added to the list of contributors.
 {.is-warning}
 
 ## Tools being used
@@ -40,56 +42,63 @@ Please note that all contributions made to the project, through the official too
 
 You will receive an email address such as `{YOUR_USERNAME}@phyllo.me`
 
-Your `{USERNAME}` can be used to access all services and tools listed bellow.  
+Your `{USERNAME}` can be used to access all services and tools listed below.  
 
-Please bookmark their locations !
+> To ease access to those tools, do not hesitate to add a  bookmark for each ot them!
+{.is-info}
 
 ### Platform-as-a-Service (PaaS)
 
+* **Description** : Cloudron.io is used to deploy web applications consumed by the Phyllome OS project 
 * **Status** : `online`
 * **Location** : https://my.refre.ch
-* **Wiki page** :   
-* **Maintainer** : lukas
-* **Based on** : [cloudron.io](https://www.cloudron.io/)
+* **Wiki** : *to-do*
+* **Maintainer** : lukas@phyllo.me
 
 ### Git repository
 
+* **Description** : [Gitea](https://gitea.io/en-us/) is used to host git repositories 
 * **Status** : `online`
 * **Location** : https://git.phyllo.me
-* **Maintainer** : lukas
-* **Based on** : [gitea](https://gitea.io/en-us/)
+* **Wiki** : *to-do*
+* **Maintainer** : lukas@phyllo.me
 
 ### Collaborative writing
 
+* **Description** : [HedgeDoc](https://hedgedoc.org/) is used for collaborative writing 
 * **Status** : `online`
 * **Location** : https://docs.phyllo.me
-* **Maintainer** : lukas
-* **Based on** : [HedgeDoc](https://hedgedoc.org/)
+* **Wiki page** : *to-do*
+* **Maintainer** : lukas@phyllo.me
 
 ### Issue tracking
 
+* **Description** : [Wekan](https://wekan.github.io/) is used for isse tracking
 * **Status** : `online`
 * **Location** : https://kanban.phyllo.me/
-* **Maintainer** : lukas
-* **Based on** : [Wekan](https://wekan.github.io/)
+* **Wiki page** : *to-do*
+* **Maintainer** : lukas@phyllo.me
 
 ### Website hosting
 
+* **Description** : [Grav](https://getgrav.org/) is used for collaborative writing 
 * **Status** : `online`
 * **Location** : https://phyllo.me
-* **Maintainer** : lukas
-* **Based on** : [Grav](https://getgrav.org/)
+* **Wiki page** : *to-do*
+* **Maintainer** : lukas@phyllo.me
 
 ### Files hosting
 
+* **Description** : [Nextcloud](https://nextcloud.com/)) is used for hosting files 
 * **Status** : `online`
 * **Location** : https://files.phyllo.me/
-* **Maintainer** : lukas
-* **Based on** : [Nextcloud](https://nextcloud.com/)
+* **Wiki page** : *to-do*
+* **Maintainer** : lukas@phyllo.me
 
 ### S3 object storage
 
+* **Description** : [Minio](https://min.io/) will be used as a blob storage 
 * **Status** : `offline`
 * **Location** : https://s3.phyllo.me
 * **Maintainer** : lukas
-* **Based on** : [Minio](https://min.io/)
+* **Maintainer** : lukas@phyllo.me
