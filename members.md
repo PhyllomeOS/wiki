@@ -2,7 +2,7 @@
 title: members
 description: Everything you need to know as a member of the project
 published: true
-date: 2021-06-23T11:55:15.980Z
+date: 2021-06-23T12:12:09.796Z
 tags: 
 editor: markdown
 dateCreated: 2021-06-23T09:06:00.169Z
@@ -53,6 +53,13 @@ Your `{USERNAME}` can be used to access all services and tools listed below.
 * **Status** : `online`
 * **Location** : https://my.refre.ch
 * **Wiki** : [PaaS](/members/paas)
+
+### Mail
+
+* **Description** : Cloudron.io is used to manage emailing, together with [rainloop](https://www.rainloop.net/), a webmail system
+* **Status** : online
+* **Location** : https://mail.phyllo.me/
+* **Wiki pages** : [mail](/members/mail)
 
 ### Git repository
 
