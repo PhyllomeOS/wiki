@@ -2,7 +2,7 @@
 title: Collaborative writing as practiced in Phyllome OS
 description: 
 published: true
-date: 2021-06-23T12:05:16.316Z
+date: 2021-06-23T12:05:29.301Z
 tags: 
 editor: markdown
 dateCreated: 2021-06-23T09:12:21.512Z
@@ -15,7 +15,6 @@ dateCreated: 2021-06-23T09:12:21.512Z
 * **Description** : [HedgeDoc](https://hedgedoc.org/) is used for collaborative writing 
 * **Status** : `online`
 * **Location** : https://docs.phyllo.me
-* **Wiki page** : [Docs](/members/docs)
 * **Maintainer** : lukas@phyllo.me
 
 ## Users
