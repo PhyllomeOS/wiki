@@ -2,7 +2,7 @@
 title: Git as used by Phyllome OS
 description: Page about Git as used by Phyllome OS
 published: true
-date: 2021-06-23T10:27:58.910Z
+date: 2021-06-23T12:02:11.520Z
 tags: 
 editor: markdown
 dateCreated: 2021-06-23T10:27:58.910Z
@@ -13,7 +13,6 @@ dateCreated: 2021-06-23T10:27:58.910Z
 * **Description** : [Gitea](https://gitea.io/en-us/) is used to host git repositories 
 * **Status** : `online`
 * **Location** : https://git.phyllo.me
-* **Wiki pages** : [Git](/members/git)
 * **Maintainer** : lukas@phyllo.me
 
 ## Users
