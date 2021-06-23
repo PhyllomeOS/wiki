@@ -2,7 +2,7 @@
 title: External ressources
 description: A list of external mostly-online ressources around KVM virtualization and related technologies
 published: true
-date: 2021-06-23T13:20:50.700Z
+date: 2021-06-23T13:23:47.770Z
 tags: 
 editor: markdown
 dateCreated: 2021-06-23T12:36:12.051Z
