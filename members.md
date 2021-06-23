@@ -2,7 +2,7 @@
 title: members
 description: Everything you need to know as a member of the project
 published: true
-date: 2021-06-23T09:52:05.363Z
+date: 2021-06-23T10:05:03.020Z
 tags: 
 editor: markdown
 dateCreated: 2021-06-23T09:06:00.169Z
@@ -23,7 +23,7 @@ To receive an invitation, you need to possess a working email address, typically
 > If you haven't received your invitation, please check your spam folder. If there is nothing there, please send an email to `contact@phyllo.me` and mention your username
 {.is-warning}
 
-> **Password**. Please use a long password and store it securely, using a password manager such as [Bitwarden](https://bitwarden.com/) or [KeePaasXC](https://keepassxc.org/), or on an air-gapped hardware token made of cellulose fibres, also known as a sheet of paper.
+> **Password**. Please use a long passphrase and store it securely, using a password manager such as [Bitwarden](https://bitwarden.com/) or [KeePaasXC](https://keepassxc.org/), or on an air-gapped hardware token made of cellulose fibres, also known as a sheet of paper. 
 {.is-info}
 
 > **Second authentication**. 2FA is mandatory across all apps. Please use an application such as the [Aegis Authenticator](https://f-droid.org/en/packages/com.beemdevelopment.aegis/) on Android to generate One Time Passwords (OTP).  
@@ -52,7 +52,7 @@ Your `{USERNAME}` can be used to access all services and tools listed below.
 * **Description** : Cloudron.io is used to deploy web applications consumed by the Phyllome OS project 
 * **Status** : `online`
 * **Location** : https://my.refre.ch
-* **Wiki** : *to-do*
+* **Wiki** : [PaaS](/members/paas)
 * **Maintainer** : lukas@phyllo.me
 
 ### Git repository
@@ -60,7 +60,7 @@ Your `{USERNAME}` can be used to access all services and tools listed below.
 * **Description** : [Gitea](https://gitea.io/en-us/) is used to host git repositories 
 * **Status** : `online`
 * **Location** : https://git.phyllo.me
-* **Wiki** : *to-do*
+* **Wiki** : [Git](/members/git)
 * **Maintainer** : lukas@phyllo.me
 
 ### Collaborative writing
@@ -68,15 +68,23 @@ Your `{USERNAME}` can be used to access all services and tools listed below.
 * **Description** : [HedgeDoc](https://hedgedoc.org/) is used for collaborative writing 
 * **Status** : `online`
 * **Location** : https://docs.phyllo.me
-* **Wiki page** : *to-do*
+* **Wiki page** : [Docs](/members/docs)
+* **Maintainer** : lukas@phyllo.me
+
+### Wiki
+
+* **Description** : [Wiki.js](https://js.wiki/) is used to power the wiki  
+* **Status** : `online`
+* **Location** : https://wiki.phyllo.me
+* **Wiki page** : [Wiki](/members/wiki)
 * **Maintainer** : lukas@phyllo.me
 
 ### Issue tracking
 
-* **Description** : [Wekan](https://wekan.github.io/) is used for isse tracking
+* **Description** : [Wekan](https://wekan.github.io/) is used for issue tracking
 * **Status** : `online`
 * **Location** : https://kanban.phyllo.me/
-* **Wiki page** : *to-do*
+* **Wiki page** : [Kanban](/members/kanban)
 * **Maintainer** : lukas@phyllo.me
 
 ### Website hosting
@@ -84,15 +92,15 @@ Your `{USERNAME}` can be used to access all services and tools listed below.
 * **Description** : [Grav](https://getgrav.org/) is used for collaborative writing 
 * **Status** : `online`
 * **Location** : https://phyllo.me
-* **Wiki page** : *to-do*
+* **Wiki page** : [CMS](/members/cms)
 * **Maintainer** : lukas@phyllo.me
 
 ### Files hosting
 
-* **Description** : [Nextcloud](https://nextcloud.com/)) is used for hosting files 
+* **Description** : [Nextcloud](https://nextcloud.com/) is used for hosting files 
 * **Status** : `online`
 * **Location** : https://files.phyllo.me/
-* **Wiki page** : *to-do*
+* **Wiki page** : [Files](/members/files)
 * **Maintainer** : lukas@phyllo.me
 
 ### S3 object storage
@@ -100,5 +108,5 @@ Your `{USERNAME}` can be used to access all services and tools listed below.
 * **Description** : [Minio](https://min.io/) will be used as a blob storage 
 * **Status** : `offline`
 * **Location** : https://s3.phyllo.me
-* **Maintainer** : lukas
+* **Wiki page** : *to-do*
 * **Maintainer** : lukas@phyllo.me
