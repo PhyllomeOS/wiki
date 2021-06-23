@@ -2,7 +2,7 @@
 title: External ressources
 description: A list of external mostly-online ressources around KVM virtualization and related technologies
 published: true
-date: 2021-06-23T13:02:24.730Z
+date: 2021-06-23T13:20:50.700Z
 tags: 
 editor: markdown
 dateCreated: 2021-06-23T12:36:12.051Z
@@ -40,9 +40,12 @@ dateCreated: 2021-06-23T12:36:12.051Z
 ### Virt-* tools
 
 * virt-install and cloud-init : https://blog.wikichoon.com/2020/09/virt-install-cloud-init.html
-* virt-builder : https://developer.fedoraproject.org/tools/virt-builder/about.html
+* virt-builder and virsh : https://developer.fedoraproject.org/tools/virt-builder/about.html
 * virt-builder : https://www.admin-magazine.com/Articles/Generate-VM-Images-with-virt-builder
 * https://docs.fedoraproject.org/en-US/fedora-silverblue/toolbox/
+* https://www.golinuxcloud.com/virt-install-examples-kvm-virt-commands-linux/
+* virt* cheatsheet : https://www.cyberithub.com/virsh-commands-examples-virt-df-virt-top-kvm/
+* https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/7/html/virtualization_deployment_and_administration_guide/sect-guest_virtual_machine_installation_overview-creating_guests_with_virt_install
 
 ### Kickstart
 
@@ -50,6 +53,31 @@ dateCreated: 2021-06-23T12:36:12.051Z
 * https://fedoraproject.org/wiki/Anaconda/Kickstart/KickstartingFedoraLiveInstallation
 * For reference, a complex example with CentOS : https://gist.github.com/giovtorres/0049cec554179d96e0a8329930a6d724
 
+### Fedora-related 
+
+* Redhat Fedora : https://developer.fedoraproject.org/tools.html
+* Fedora Silverblue : https://docs.fedoraproject.org/en-US/fedora-silverblue/toolbox/
+
+### Open Build Service (OBS)
+
+* Our build tool, building all of our packages as well as ones for SUSE Linux Enterprise, Arch, Debian, Fedora, Scientific Linux, RHEL, CentOS, Ubuntu, and more : https://openbuildservice.org/
+
+### openQA
+
+* Automated testing for *any* operating system, that can read the screen and control the test host the same way a user does : http://open.qa/
+
+### YaST
+
+The best/only comprehensive Linux system configuration & installation tool : https://yast.opensuse.org/documentation
+
+### Kiwi
+
+Create Linux images for deployment on real hardware, virtualisation, and now even container systems like Docker. Kiwi is the engine that builds the openSUSE release images.
+
+* http://osinside.github.io/kiwi/self_contained.html
+* http://osinside.github.io/kiwi/building_images/build_live_iso.html
+* http://osinside.github.io/kiwi/building_images/build_simple_disk.html
+* http://osinside.github.io/kiwi/building_images/build_kis.html
 
 ## Virtual chipsets
 
@@ -73,13 +101,27 @@ dateCreated: 2021-06-23T12:36:12.051Z
 
 #### vfio-gpu
 
-## Hypervisor
+## KVM hypervisors
+
+### CROSVM/KVM
+
+#### Spectrum OS
+
+* https://github.com/sponsors/alyssais
+* https://liberapay.com/qyliss/
+* https://spectrum-os.org/
 
 ### QEMU/KVM
+
+* QEMU / KVM CPU model configuration : https://qemu.readthedocs.io/en/latest/system/qemu-cpu-models.html
+* This is a port of QEMU machine emulator to JavaScript using Emscripten : https://github.com/atrosinenko/qemujs
+* My QEMU fork with pinning (affinity) support and a few tweaks. : https://github.com/saveriomiroddi/qemu-pinning
 
 #### QEMU virtualization on Fedora host
 
 * [Virtualization Deployment and Administration Guide](https://docs.fedoraproject.org/en-US/Fedora_Draft_Documentation/0.1/html/Virtualization_Deployment_and_Administration_Guide/index.html) 
+* https://docs.fedoraproject.org/en-US/Fedora/26/html/Installation_Guide/index.html
+* fedora cloud images : https://alt.fedoraproject.org/cloud/
 
 #### QEMU virtualization on macOS host
 
@@ -87,12 +129,6 @@ dateCreated: 2021-06-23T12:36:12.051Z
 * UTM App :
 	* https://mac.getutm.app/
 	* https://github.com/utmapp/UTM
-
-### QEMU
-
-* QEMU / KVM CPU model configuration : https://qemu.readthedocs.io/en/latest/system/qemu-cpu-models.html
-* This is a port of QEMU machine emulator to JavaScript using Emscripten : https://github.com/atrosinenko/qemujs
-* My QEMU fork with pinning (affinity) support and a few tweaks. : https://github.com/saveriomiroddi/qemu-pinning
 
 ### Cloud Hypervisor/KVM
 
@@ -107,9 +143,30 @@ dateCreated: 2021-06-23T12:36:12.051Z
 
 ## Guests
 
+### Android
+
+* adb cheat sheet : https://www.automatetheplanet.com/adb-cheat-sheet/
+* Building Android for Qemu: A Step-by-Step Guide https://www.collabora.com/news-and-blog/blog/2016/09/02/building-android-for-qemu-a-step-by-step-guide/
+* Vifio for Android : https://github.com/robherring/generic_device/wiki
+
+### Lakka
+
+* Proxmox : https://forums.libretro.com/t/video-guide-how-to-install-lakka-as-a-vm-using-kvm-in-unraid/6319
+
+### macOS kvm guest
+
+* https://github.com/kholia/OSX-KVM
+* https://github.com/yoonsikp/macos-kvm-pci-passthrough
+* https://github.com/foxlet/macOS-Simple-KVM
+* https://www.nicksherlock.com/2019/10/installing-macos-catalina-10-15-on-proxmox-6/
+* Virgil 3D renderer for macos : https://mail.gnu.org/archive/html/qemu-devel/2021-02/msg04235.html
+* OSX-KVM : https://gitlab.com/sanselme/OSX-KVM
+
 ### PS4 
 
 * Orbital : Virtualization-based PlayStation 4 emulator : https://github.com/AlexAltea/orbital
+
+## Themes
 
 ### GPU-related
 
@@ -125,24 +182,16 @@ dateCreated: 2021-06-23T12:36:12.051Z
 * https://github.com/bducha/single-gpu-passthrough
 * bugs : https://gitlab.freedesktop.org/mesa/mesa/-/issues/2678
 
-### Guides
+## Guides
 
-* https://stewartadam.io/howtos/fedora-20/create-gaming-virtual-machine-using-vfio-pci-passthrough-kvm
+* Great in-depth article : https://stewartadam.io/howtos/fedora-20/create-gaming-virtual-machine-using-vfio-pci-passthrough-kvm
 * UEFI ! https://blog.system76.com/post/139138591598/howto-uefi-qemu-guest-on-ubuntu-xenial-host
 * Getting started with qemu : https://drewdevault.com/2018/09/10/Getting-started-with-qemu.html
 
-### Package management
+## Package management
 
 * RPM Packaging Guide : https://rpm-packaging-guide.github.io/#preparing-software-for-packaging
 * Join the package collection maintainers : https://fedoraproject.org/wiki/Join_the_package_collection_maintainers
-
-## Communication
-
-### Mascot
-
-* Xenia, the Linux mascot: https://xenia-linux-site.glitch.me/
-
-
 
 ### Tiny-distro
 
@@ -152,230 +201,83 @@ dateCreated: 2021-06-23T12:36:12.051Z
 *  alux - a minimal Linux kernel distribution : https://github.com/alexhultman/alux
 *  Build and run minimal linux with QEMU : https://gist.github.com/seokbeomKim/9cff93b073573fe535534c522c6e53e1
 
+## Communication
 
-## Android
+### Mascot
 
-* adb cheat sheet : https://www.automatetheplanet.com/adb-cheat-sheet/
-
-* Building Android for Qemu: A Step-by-Step Guide https://www.collabora.com/news-and-blog/blog/2016/09/02/building-android-for-qemu-a-step-by-step-guide/
-
-* Vifio for Android : https://github.com/robherring/generic_device/wiki
-
-## Lakka
-
-Proxmox : https://forums.libretro.com/t/video-guide-how-to-install-lakka-as-a-vm-using-kvm-in-unraid/6319
-
-## macOS kvm guest
-
-https://github.com/kholia/OSX-KVM
-
-https://github.com/yoonsikp/macos-kvm-pci-passthrough
-
-https://github.com/foxlet/macOS-Simple-KVM
-
-https://www.nicksherlock.com/2019/10/installing-macos-catalina-10-15-on-proxmox-6/
-
-Virgil 3D renderer for macos : https://mail.gnu.org/archive/html/qemu-devel/2021-02/msg04235.html
-
-https://gitlab.com/sanselme/OSX-KVM
-
-## Virt-builder
-
-https://www.admin-magazine.com/Articles/Generate-VM-Images-with-virt-builder
-
-* Virt-builder and virsh : Virt-builder https://developer.fedoraproject.org/tools/virt-builder/about.html
-
-
-## Great in-depth article
-
-https://stewartadam.io/howtos/fedora-20/create-gaming-virtual-machine-using-vfio-pci-passthrough-kvm
-
+* Xenia, the Linux mascot: https://xenia-linux-site.glitch.me/
 
 ## Funding
 
 NGI Open Calls : https://www.ngi.eu/opencalls/#ngi-zero-pet-opencall
 
 ## MISC
-Isaard vdi : https://isard.gitlab.io/isardvdi-docs/#why-choose-isardvdi
+* Isaard vdi : https://isard.gitlab.io/isardvdi-docs/#why-choose-isardvdi
 
-https://www.golinuxcloud.com/virt-install-examples-kvm-virt-commands-linux/
+## Desktop environment 
 
-cheatsheet
-https://www.cyberithub.com/virsh-commands-examples-virt-df-virt-top-kvm/
+### Wayland
 
-https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/7/html/virtualization_deployment_and_administration_guide/sect-guest_virtual_machine_installation_overview-creating_guests_with_virt_install
-
-
-
-## Developping/Building tools
-
-* Redhat Fedora : https://developer.fedoraproject.org/tools.html
-* Open SUSE
-* 	 https://www.opensuse.org/#
-
-### Open Build Service (OBS)
-
-Our build tool, building all of our packages as well as ones for SUSE Linux Enterprise, Arch, Debian, Fedora, Scientific Linux, RHEL, CentOS, Ubuntu, and more.
-
-### openQA
-
-Automated testing for *any* operating system, that can read the screen and control the test host the same way a user does.
-
-http://open.qa/
-
-
-### YaST
-
-The best/only comprehensive Linux system configuration & installation tool.
-
-https://yast.opensuse.org/documentation
-
-### Kiwi
-
-Create Linux images for deployment on real hardware, virtualisation, and now even container systems like Docker. Kiwi is the engine that builds the openSUSE release images.
-
-http://osinside.github.io/kiwi/self_contained.html
-http://osinside.github.io/kiwi/building_images/build_live_iso.html
-http://osinside.github.io/kiwi/building_images/build_simple_disk.html
-http://osinside.github.io/kiwi/building_images/build_kis.html
-
-## Fedora dev tool
-
-https://developer.fedoraproject.org/tools.html
-
-### Toolbox
-
-https://docs.fedoraproject.org/en-US/fedora-silverblue/toolbox/
-
-
-### Virt-builder
-
-https://developer.fedoraproject.org/tools/virt-builder/about.html
-
-## Desktop GUI
-
-http://bhepple.com/doku/doku.php?id=sway:sway-apps
-
-Wayland on archlinux : https://www.fosskers.ca/en/blog/wayland
-
-## Spectrum
-
-https://github.com/sponsors/alyssais
-
-https://liberapay.com/qyliss/
-
-https://spectrum-os.org/
-
-
-
-
-# Fedora Reference Manual
-
-https://docs.fedoraproject.org/en-US/Fedora/26/html/Installation_Guide/index.html
+* GUI : http://bhepple.com/doku/doku.php?id=sway:sway-apps
+* Wayland on archlinux : https://www.fosskers.ca/en/blog/wayland
 
 ## Virtualization tool
 
-https://docs.fedoraproject.org/en-US/Fedora/23/html/Virtualization_Getting_Started_Guide/sec-Other-Useful-tools.html
+* https://docs.fedoraproject.org/en-US/Fedora/23/html/Virtualization_Getting_Started_Guide/sec-Other-Useful-tools.html
+* https://github.com/kvmtool/kvmtool kvmtool is a lightweight tool for hosting KVM guests. As a pure virtualization tool it only supports guests using the same architecture, though it supports running 32-bit guests on those 64-bit architectures that allow this.
 
-https://github.com/kvmtool/kvmtool kvmtool is a lightweight tool for hosting KVM guests. As a pure virtualization
-tool it only supports guests using the same architecture, though it supports
-running 32-bit guests on those 64-bit architectures that allow this.
+## Networking
 
+### Bridge
 
-## Bridge ethernet
+* How To Create and Configure Bridge Networking For KVM in Linux : https://computingforgeeks.com/how-to-create-and-configure-bridge-networking-for-kvm-in-linux/
+* https://docs.fedoraproject.org/en-US/Fedora/13/html/Virtualization_Guide/sect-Virtualization-Network_Configuration-Bridged_networking_with_libvirt.html
+* Networking in Libvirt : https://wiki.libvirt.org/page/Networking
+* https://lukas.zapletalovi.com/2015/09/fedora-22-libvirt-with-bridge.html
+* How to Setup Bridge Networking with KVM on Ubuntu 20.04 : https://levelup.gitconnected.com/how-to-setup-bridge-networking-with-kvm-on-ubuntu-20-04-9c560b3e3991
 
-How To Create and Configure Bridge Networking For KVM in Linux : https://computingforgeeks.com/how-to-create-and-configure-bridge-networking-for-kvm-in-linux/
+### Bridge Wireless Cards
 
-https://docs.fedoraproject.org/en-US/Fedora/13/html/Virtualization_Guide/sect-Virtualization-Network_Configuration-Bridged_networking_with_libvirt.html
-
-Networking in Libvirt : https://wiki.libvirt.org/page/Networking
-
-https://lukas.zapletalovi.com/2015/09/fedora-22-libvirt-with-bridge.html
-
-How to Setup Bridge Networking with KVM on Ubuntu 20.04 : https://levelup.gitconnected.com/how-to-setup-bridge-networking-with-kvm-on-ubuntu-20-04-9c560b3e3991
-
-
-## Bridge Wireless Cards
-
-https://shanetomlinson.com/bridging-a-wireless-card-in-kvmqemu/
-
-https://web.archive.org/web/20160821085327/http://blog.bodhizazen.net/linux/bridge-wireless-cards/
-
-https://gist.github.com/Jiab77/4cf278ac3ad59665969bdf73e083a847
-
-https://unix.stackexchange.com/questions/159191/setup-kvm-on-a-wireless-interface-on-a-laptop-machine
-
-
-
-fedora cloud images
-https://alt.fedoraproject.org/cloud/
+* https://shanetomlinson.com/bridging-a-wireless-card-in-kvmqemu/
+* https://web.archive.org/web/20160821085327/http://blog.bodhizazen.net/linux/bridge-wireless-cards/
+* https://gist.github.com/Jiab77/4cf278ac3ad59665969bdf73e083a847
+* https://unix.stackexchange.com/questions/159191/setup-kvm-on-a-wireless-interface-on-a-laptop-machine
 
 
 ## Cloud gaming
 
-Gaming Anywhere : https://github.com/chunying/gaminganywhere
+* Gaming Anywhere : https://github.com/chunying/gaminganywhere
 
 ## Linux KVM
 
 https://thereisnospoon.ews-network.net/posts/fedora-30-win10-nvidia-gpu-passthrough/
-
-https://spectrum-os.org/
-
 https://www.redhat.com/en/blog/all-you-need-know-about-kvm-userspace
-
-Windows Gaming on Linux: Single GPU Passthrough Guide
-https://www.youtube.com/watch?v=3BxAaaRDEEw
-
-
-Using the KVM API
- https://lwn.net/Articles/658511/
-
-Sparkler: A KVM-based Virtual Machine Manager :
- https://unixism.net/2019/10/sparkler-kvm-based-virtual-machine-manager/
+Windows Gaming on Linux: Single GPU Passthrough Guide https://www.youtube.com/watch?v=3BxAaaRDEEw
+Using the KVM API https://lwn.net/Articles/658511/
+Sparkler: A KVM-based Virtual Machine Manager : https://unixism.net/2019/10/sparkler-kvm-based-virtual-machine-manager/
 
 ## 3D in a VM virtual gpu virtugl virtio-gl virgil
 
 * Virglrenderer and the state of virtualized virtual worlds, 2019. https://www.collabora.com/news-and-blog/blog/2019/08/28/virglrenderer-state-of-virtualized-virtual-worlds/
-
 * Virtualizing GPU Access https://www.collabora.com/news-and-blog/blog/2018/02/12/virtualizing-gpu-access/
-
 * Android https://linuxhint.com/android_qemu_play_3d_games_linux/
-
-https://www.kraxel.org/blog/2016/09/using-virtio-gpu-with-libvirt-and-spice/
-https://src.fedoraproject.org/rpms/virglrenderer
-
-https://github.com/VirtualGL/virtualgl/releases
-https://virtualgl.org/About/Introduction
-
-https://docs.oasis-open.org/virtio/virtio/v1.1/cs01/virtio-v1.1-cs01.html#x1-3200007
-
-https://docs.oasis-open.org/virtio/virtio/v1.1/cs01/virtio-v1.1-cs01.html#x1-3200007
-
-http://virgil3d.github.io/
-
-https://www.studiopixl.com/2017-08-27/3d-acceleration-using-virtio.html
-
-https://cgit.freedesktop.org/virglrenderer
-
-https://github.com/Keenuts/virtio-gpu-documentation
-
-https://at.projects.genivi.org/wiki/display/DIRO/VIRTIO+GPU+Operation+Highlights
-
-https://www.reddit.com/r/archlinux/comments/7nmceg/kvmqemu_with_virtiogpu_virgl_support_enabled/
-
-https://forums.unraid.net/topic/62276-gpu-virtualization-virtio-gpu-virgl-sr-iov-mxgpu-vdi-spice/
-
-https://github.com/ekistece/Fedora-33-VFIO-guide/
-
-www.reddit.com/r/VFIO/comments/h9zijx/fedora_32_and_gpu_passthrough_vfio/
-
-https://czak.pl/2020/04/09/three-levels-of-qemu-graphics.html
-
-http://events17.linuxfoundation.org/sites/events/files/slides/KVM%20Forum%202014%20-%20VFIO%2C%20OVMF%2C%20GPU%2C%20and%20You%20-%20Alex%20Williamson.pdf
-
- Virgil 3d project homepage : http://virgil3d.github.io/
-
-Introducing Virgil - 3D virtual GPU for qemu : https://airlied.livejournal.com/77553.html
+* https://www.kraxel.org/blog/2016/09/using-virtio-gpu-with-libvirt-and-spice/
+* https://src.fedoraproject.org/rpms/virglrenderer
+* https://github.com/VirtualGL/virtualgl/releases
+* https://virtualgl.org/About/Introduction
+* http://virgil3d.github.io/
+* https://www.studiopixl.com/2017-08-27/3d-acceleration-using-virtio.html
+* https://cgit.freedesktop.org/virglrenderer
+* https://github.com/Keenuts/virtio-gpu-documentation
+* https://at.projects.genivi.org/wiki/display/DIRO/VIRTIO+GPU+Operation+Highlights
+* https://www.reddit.com/r/archlinux/comments/7nmceg/kvmqemu_with_virtiogpu_virgl_support_enabled/
+* https://forums.unraid.net/topic/62276-gpu-virtualization-virtio-gpu-virgl-sr-iov-mxgpu-vdi-spice/
+* https://github.com/ekistece/Fedora-33-VFIO-guide/
+* www.reddit.com/r/VFIO/comments/h9zijx/fedora_32_and_gpu_passthrough_vfio/
+* https://czak.pl/2020/04/09/three-levels-of-qemu-graphics.html
+* http://events17.linuxfoundation.org/sites/events/files/slides/KVM%20Forum%202014%20-%20VFIO%2C%20OVMF%2C%20GPU%2C%20and%20You%20-%20Alex%20Williamson.pdf
+* Virgil 3d project homepage : http://virgil3d.github.io/
+* Introducing Virgil - 3D virtual GPU for qemu : https://airlied.livejournal.com/77553.html
 
 ## Modes of 3D acceleration in a VM explained
 
@@ -608,25 +510,18 @@ https://bugzilla.redhat.com/show_bug.cgi?id=1881850
 
 ## IOMMU Exploit
 
-Thunderclap : https://www.ndss-symposium.org/wp-content/uploads/ndss2019_05A-1_Markettos_slides.pdf
+* Thunderclap : https://www.ndss-symposium.org/wp-content/uploads/ndss2019_05A-1_Markettos_slides.pdf
 
 ## XML
-http://functionx.com/xml/Lesson04.htm
-
+* http://functionx.com/xml/Lesson04.htm
 
 ## Intel GVT-g
 
-https://wiki.gentoo.org/wiki/User:Shunlir/Intel_GVT-g
-
-https://libvirt.org/drvnodedev.html
-
-https://blog.tmm.cx/2020/05/15/passing-an-intel-gpu-to-a-linux-kvm-virtual-machine/
-
-https://blog.bepbep.co/posts/gvt/
-
-https://reposhub.com/cpp/miscellaneous/DualCoder-vgpu_unlock.html
-
-https://lantian.pub/en/article/modify-computer/laptop-intel-nvidia-optimus-passthrough.lantian/
-
-https://wiki.archlinux.org/title/Intel_GVT-g
+* https://wiki.gentoo.org/wiki/User:Shunlir/Intel_GVT-g
+* https://libvirt.org/drvnodedev.html
+* https://blog.tmm.cx/2020/05/15/passing-an-intel-gpu-to-a-linux-kvm-virtual-machine/
+* https://blog.bepbep.co/posts/gvt/
+* https://reposhub.com/cpp/miscellaneous/DualCoder-vgpu_unlock.html
+* https://lantian.pub/en/article/modify-computer/laptop-intel-nvidia-optimus-passthrough.lantian/
+* https://wiki.archlinux.org/title/Intel_GVT-g
 
