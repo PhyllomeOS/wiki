@@ -2,7 +2,7 @@
 title: Files
 description: The wiki page about Nextcloud, which the Phyllome OS project uses to store files
 published: true
-date: 2021-06-23T10:11:53.306Z
+date: 2021-06-23T10:30:04.161Z
 tags: 
 editor: markdown
 dateCreated: 2021-06-23T10:11:53.306Z
@@ -10,10 +10,11 @@ dateCreated: 2021-06-23T10:11:53.306Z
 
 # Files hosting
 
-* **Status** : online
+* **Description** : [Nextcloud](https://nextcloud.com/) is used for hosting files 
+* **Status** : `online`
 * **Location** : https://files.phyllo.me/
-* **Maintainer** : lukas
-* **Solution** : [Nextcloud](https://nextcloud.com/)
+* **Wiki page** : [Files](/members/files)
+* **Maintainer** : lukas@phyllo.me
 
 ## Users
 
