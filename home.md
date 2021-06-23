@@ -2,7 +2,7 @@
 title: Homepage
 description: 
 published: true
-date: 2021-06-23T08:21:13.925Z
+date: 2021-06-23T12:30:53.359Z
 tags: test
 editor: markdown
 dateCreated: 2021-06-19T09:29:20.593Z
@@ -16,20 +16,15 @@ It is designed for usability, featuring native sound capabilities, hardware-acce
 
 ## Welcome to the Phyllome OS wiki !
 
-As of now, there are five main sections in this wiki:
+As of now, there are many sections in this wiki:
 
 * **[Users](/users)** : How to install and use Phyllome OS (work in progress)
 * **Developers** : How to hack and develop Phyllome OS (work in progress)
 * **[Members](/members)** : How the project is currently set-up (work in progress)
 * **How-to guides** : How to do certain tasks
 * **[FAQ](/faq)** : The frequently asked questions section 
+* **[External ressources](/ressources)** : List of useful ressources around virtualization or tools used by the project
 
-If you would rather avoid JavaScript altogether, or wish to download the content locally, we have you covered as you can download the content [here](https://git.phyllo.me/home/wiki) using git. 
+> If you would rather avoid JavaScript altogether, or wish to download the content locally, we have you covered as you can download the content [here](https://git.phyllo.me/home/wiki) using git. 
+{.is-info}
 
-Happy reading !
-
-## Disclaimer
-
-*Phyllome is under active development and not yet available to the public.*
-
-*Please come back around September to test it out.*
