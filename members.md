@@ -2,7 +2,7 @@
 title: members
 description: Everything you need to know as a member of the project
 published: true
-date: 2021-06-23T10:06:33.720Z
+date: 2021-06-23T10:19:28.266Z
 tags: 
 editor: markdown
 dateCreated: 2021-06-23T09:06:00.169Z
@@ -89,7 +89,7 @@ Your `{USERNAME}` can be used to access all services and tools listed below.
 
 ### Website hosting
 
-* **Description** : [Grav](https://getgrav.org/) is used for collaborative writing 
+* **Description** : [Grav](https://getgrav.org/) is used as a Content Management System (CMS) 
 * **Status** : `online`
 * **Location** : https://phyllo.me
 * **Wiki page** : [CMS](/members/cms)
