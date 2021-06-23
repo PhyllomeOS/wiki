@@ -2,7 +2,7 @@
 title: members
 description: Everything you need to know as a member of the project
 published: true
-date: 2021-06-23T11:54:33.683Z
+date: 2021-06-23T11:55:15.980Z
 tags: 
 editor: markdown
 dateCreated: 2021-06-23T09:06:00.169Z
@@ -100,4 +100,4 @@ Your `{USERNAME}` can be used to access all services and tools listed below.
 * **Description** : [Minio](https://min.io/) will be used as a blob storage 
 * **Status** : `offline`
 * **Location** : https://s3.phyllo.me
-* **Wiki page** : *to-do*
+* **Wiki page** : [S3](/members/s3)
