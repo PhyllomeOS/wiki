@@ -2,7 +2,7 @@
 title: External ressources
 description: A list of external mostly-online ressources around KVM virtualization and related technologies
 published: true
-date: 2021-06-23T13:01:44.358Z
+date: 2021-06-23T13:02:24.730Z
 tags: 
 editor: markdown
 dateCreated: 2021-06-23T12:36:12.051Z
@@ -39,9 +39,9 @@ dateCreated: 2021-06-23T12:36:12.051Z
 
 ### Virt-* tools
 
-* https://blog.wikichoon.com/2020/09/virt-install-cloud-init.html
+* virt-install and cloud-init : https://blog.wikichoon.com/2020/09/virt-install-cloud-init.html
 * virt-builder : https://developer.fedoraproject.org/tools/virt-builder/about.html
-* https://www.admin-magazine.com/Articles/Generate-VM-Images-with-virt-builder
+* virt-builder : https://www.admin-magazine.com/Articles/Generate-VM-Images-with-virt-builder
 * https://docs.fedoraproject.org/en-US/fedora-silverblue/toolbox/
 
 ### Kickstart
