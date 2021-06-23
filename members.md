@@ -2,7 +2,7 @@
 title: members
 description: Everything you need to know as a member of the project
 published: true
-date: 2021-06-23T10:19:28.266Z
+date: 2021-06-23T10:25:20.960Z
 tags: 
 editor: markdown
 dateCreated: 2021-06-23T09:06:00.169Z
@@ -36,7 +36,7 @@ Please note that all contributions made to the project, through the official too
 > As a contributor, you waive your rights in profit of Phyllome OS. You will be added to the list of contributors.
 {.is-warning}
 
-## Tools being used
+## Tool we use
 
 ### Introduction
 
