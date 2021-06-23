@@ -2,7 +2,7 @@
 title: External ressources
 description: A list of external mostly-online ressources around KVM virtualization and related technologies
 published: true
-date: 2021-06-23T13:23:47.770Z
+date: 2021-06-23T18:20:57.631Z
 tags: 
 editor: markdown
 dateCreated: 2021-06-23T12:36:12.051Z
@@ -75,8 +75,6 @@ dateCreated: 2021-06-23T12:36:12.051Z
 * UEFI Boot : https://github.com/cloud-hypervisor/cloud-hypervisor/blob/master/docs/uefi.md
 * VFIO : https://github.com/cloud-hypervisor/cloud-hypervisor/blob/master/docs/vfio.md
 
----
-
 ## Virtual chipsets
 
 * i440fx vs Q35 : https://www.reddit.com/r/VFIO/comments/5ireij/differencesbenefits_between_i440fx_and_q35/
@@ -98,6 +96,11 @@ dateCreated: 2021-06-23T12:36:12.051Z
 * [Virtual I/O Device (VIRTIO) specification, version 1.1](http://docs.oasis-open.org/virtio/virtio/v1.1/virtio-v1.1.html)
 
 * Host device management with libvirt : https://libvirt.org/drvnodedev.html
+
+* Virtio and Vhost Architecture - Part 1 : https://insujang.github.io/2021-03-10/virtio-and-vhost-architecture-part-1/
+* Virtio and Vhost Architecture - Part 2 : https://insujang.github.io/2021-03-15/virtio-and-vhost-architecture-part-2/
+
+* Virtio: An I/O virtualization framework for Linux : https://www.cs.cmu.edu/~412/lectures/Virtio_2015-10-14.pdf
 
 ### vfio-mdev
 
@@ -134,12 +137,14 @@ dateCreated: 2021-06-23T12:36:12.051Z
 * https://czak.pl/2020/04/09/three-levels-of-qemu-graphics.html
 * Virgil 3D renderer for macos : https://mail.gnu.org/archive/html/qemu-devel/2021-02/msg04235.html
 
-#### vfio-pci
+### vfio-pci
 
 * https://github.com/ekistece/Fedora-33-VFIO-guide/
 * www.reddit.com/r/VFIO/comments/h9zijx/fedora_32_and_gpu_passthrough_vfio/
 
----
+### vfio-snd
+
+* New patch : https://lists.oasis-open.org/archives/virtio-dev/202003/msg00185.html
 
 ## Guests
 
@@ -163,7 +168,6 @@ dateCreated: 2021-06-23T12:36:12.051Z
 * OSX-KVM : https://gitlab.com/sanselme/OSX-KVM
 * https://dortania.github.io/OpenCore-Install-Guide/installer-guide/linux-install.html#downloading-macos
 
-
 ### PS4 
 
 * Orbital : Virtualization-based PlayStation 4 emulator : https://github.com/AlexAltea/orbital
@@ -174,12 +178,9 @@ dateCreated: 2021-06-23T12:36:12.051Z
 * "Additionally, in case you are using QEMU 4.0 (or higher) in combination with a Q35 chip, the flag ‘ioapic driver='kvm'‘ needs to be added in the features section (see excerpt marked blue)."
 https://mathiashueber.com/fighting-error-43-nvidia-gpu-virtual-machine/
 
-
 ### Fedora 
 
 * fedora cloud images : https://alt.fedoraproject.org/cloud/
-
----
 
 ## GPU-related
 
@@ -200,14 +201,10 @@ https://www.kraxel.org/blog/2019/09/display-devices-in-qemu/
 * bugs : https://gitlab.freedesktop.org/mesa/mesa/-/issues/2678
 * Windows Gaming on Linux: Single GPU Passthrough Guide https://www.youtube.com/watch?v=3BxAaaRDEEw
 
----
-
 ## CPU-related 
 
 * QEMU / KVM CPU model configuration : https://qemu.readthedocs.io/en/latest/system/qemu-cpu-models.html
 * My QEMU fork with pinning (affinity) support and a few tweaks. : https://github.com/saveriomiroddi/qemu-pinning
-
----
 
 ## Network-related
 
@@ -225,8 +222,6 @@ https://www.kraxel.org/blog/2019/09/display-devices-in-qemu/
 * https://web.archive.org/web/20160821085327/http://blog.bodhizazen.net/linux/bridge-wireless-cards/
 * https://gist.github.com/Jiab77/4cf278ac3ad59665969bdf73e083a847
 * https://unix.stackexchange.com/questions/159191/setup-kvm-on-a-wireless-interface-on-a-laptop-machine
-
----
 
 ## Storage-related 
 
@@ -251,15 +246,11 @@ https://www.tutos.snatch-crash.fr/proxmox-raw-vs-qcow2-vs-vmdk/
 * https://lists.gnu.org/archive/html/qemu-devel/2020-09/msg05221.html
 * https://bugzilla.redhat.com/show_bug.cgi?id=1881850
 
----
-
 ## Boot-related firmware
 
 ### SeaBIOS versus edk2
 
 * https://mail.coreboot.org/pipermail/seabios/2014-February/007689.html
-
----
 
 ## Security-related
 
@@ -300,8 +291,6 @@ https://specs.openstack.org/openstack/nova-specs/specs/train/approved/allow-secu
 * Thunderclap IOMMU Exploit : https://www.ndss-symposium.org/wp-content/uploads/ndss2019_05A-1_Markettos_slides.pdf
 * https://www.computer.org/csdl/proceedings-article/hpca/2018/365901a441/12OmNzkMlRm
 * https://ipads.se.sjtu.edu.cn/_media/publications/fidelius_hpca18.pdf
-
----
 
 ## Tools
 
@@ -355,9 +344,7 @@ https://specs.openstack.org/openstack/nova-specs/specs/train/approved/allow-secu
 	* http://osinside.github.io/kiwi/building_images/build_live_iso.html
 	* http://osinside.github.io/kiwi/building_images/build_simple_disk.html
 	* http://osinside.github.io/kiwi/building_images/build_kis.html
-
----
-
+  
 ## Guides
 
 * Great in-depth article : https://stewartadam.io/howtos/fedora-20/create-gaming-virtual-machine-using-vfio-pci-passthrough-kvm
@@ -380,8 +367,6 @@ https://specs.openstack.org/openstack/nova-specs/specs/train/approved/allow-secu
 * https://thereisnospoon.ews-network.net/posts/fedora-30-win10-nvidia-gpu-passthrough/
 * https://mathiashueber.com/performance-tweaks-gaming-on-virtual-machines/
 
----
-
 ## Misc
 
 ### XML
@@ -395,7 +380,6 @@ https://specs.openstack.org/openstack/nova-specs/specs/train/approved/allow-secu
 ### Unsorted
 
 * [Index of Documentation for People Interested in Writing and/or Understanding the Linux Kernel](http://www.dit.upm.es/~jmseyas/linux/kernel/hackers-docs.html)
-
 
 ### Wayland
 
@@ -443,13 +427,9 @@ https://specs.openstack.org/openstack/nova-specs/specs/train/approved/allow-secu
 * Isaard vdi : https://isard.gitlab.io/isardvdi-docs/#why-choose-isardvdi
 * VirtualGL https://github.com/VirtualGL/virtualgl/releases
 
----
-
 ## Meta 
 
 * [Awesome Virtualization](https://github.com/Wenzel/awesome-virtualization), A curated list of awesome resources about virtualization
-
----
 
 ## Project
 
@@ -461,8 +441,6 @@ https://specs.openstack.org/openstack/nova-specs/specs/train/approved/allow-secu
 
 * NGI Open Calls : https://www.ngi.eu/opencalls/#ngi-zero-pet-opencall
 
-----
-
 ## Books
 
 ### On Linux
@@ -471,3 +449,4 @@ https://specs.openstack.org/openstack/nova-specs/specs/train/approved/allow-secu
 * Understanding the Linux Kernel 3e
 * Linux System Programming 2ed
 * The Linux Programming Interface: A Linux and UNIX System Programming Handbook (English Edition)
+* Linux-insides : https://0xax.gitbooks.io/linux-insides/content/
