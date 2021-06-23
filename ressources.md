@@ -2,7 +2,7 @@
 title: External ressources
 description: A list of external mostly-online ressources around KVM virtualization and related technologies
 published: true
-date: 2021-06-23T12:36:12.051Z
+date: 2021-06-23T13:01:44.358Z
 tags: 
 editor: markdown
 dateCreated: 2021-06-23T12:36:12.051Z
@@ -13,6 +13,10 @@ dateCreated: 2021-06-23T12:36:12.051Z
 ## Meta 
 
 * [Awesome Virtualization](https://github.com/Wenzel/awesome-virtualization), A curated list of awesome resources about virtualization
+
+## Communities
+
+* To-do
 
 ## Unsorted
 
@@ -27,130 +31,127 @@ dateCreated: 2021-06-23T12:36:12.051Z
 * Linux System Programming 2ed
 * The Linux Programming Interface: A Linux and UNIX System Programming Handbook (English Edition)
 
-## Virtualization
+## Tools
 
-### Virtio-device
+### VMs management
 
-https://docs.oasis-open.org/virtio/virtio/v1.1/cs01/virtio-v1.1-cs01.html#x1-3200007
+* [Ignite from Weaveworks](https://github.com/weaveworks/ignite)
 
+### Virt-* tools
 
+* https://blog.wikichoon.com/2020/09/virt-install-cloud-init.html
+* virt-builder : https://developer.fedoraproject.org/tools/virt-builder/about.html
+* https://www.admin-magazine.com/Articles/Generate-VM-Images-with-virt-builder
+* https://docs.fedoraproject.org/en-US/fedora-silverblue/toolbox/
 
-# Great ressource on Fedora Virtualization
+### Kickstart
 
-Virtualization Deployment and Administration Guide : https://docs.fedoraproject.org/en-US/Fedora_Draft_Documentation/0.1/html/Virtualization_Deployment_and_Administration_Guide/index.html
-
-
-# Ignite from Weaveworks
-
-GitHub page : https://github.com/weaveworks/ignite
-
-
-# Virt-stuff
-
-https://blog.wikichoon.com/2020/09/virt-install-cloud-init.html
-
-virt-builder : https://developer.fedoraproject.org/tools/virt-builder/about.html
-
-https://www.admin-magazine.com/Articles/Generate-VM-Images-with-virt-builder
-
-https://stewartadam.io/howtos/fedora-20/create-gaming-virtual-machine-using-vfio-pci-passthrough-kvm
-
-https://docs.fedoraproject.org/en-US/fedora-silverblue/toolbox/
+* https://docs.fedoraproject.org/en-US/fedora/rawhide/install-guide/advanced/Kickstart_Installations/
+* https://fedoraproject.org/wiki/Anaconda/Kickstart/KickstartingFedoraLiveInstallation
+* For reference, a complex example with CentOS : https://gist.github.com/giovtorres/0049cec554179d96e0a8329930a6d724
 
 
+## Virtual chipsets
 
+### i440fx
 
-## QEMU
+### Q35
+
+### microvm
+
+### virt
+
+## Devices 
+
+### Emulated
+
+### Paravirtualization
+
+* [Virtual I/O Device (VIRTIO) specification, version 1.1](http://docs.oasis-open.org/virtio/virtio/v1.1/virtio-v1.1.html)
+
+#### vfio-mdev
+
+#### vfio-gpu
+
+## Hypervisor
+
+### QEMU/KVM
+
+#### QEMU virtualization on Fedora host
+
+* [Virtualization Deployment and Administration Guide](https://docs.fedoraproject.org/en-US/Fedora_Draft_Documentation/0.1/html/Virtualization_Deployment_and_Administration_Guide/index.html) 
+
+#### QEMU virtualization on macOS host
+
+* Virtualizing OpenCore and x86 macOS on Apple Silicon (and even iOS!) https://khronokernel.github.io/apple/silicon/2021/01/17/QEMU-AS.html
+* UTM App :
+	* https://mac.getutm.app/
+	* https://github.com/utmapp/UTM
+
+### QEMU
 
 * QEMU / KVM CPU model configuration : https://qemu.readthedocs.io/en/latest/system/qemu-cpu-models.html
+* This is a port of QEMU machine emulator to JavaScript using Emscripten : https://github.com/atrosinenko/qemujs
+* My QEMU fork with pinning (affinity) support and a few tweaks. : https://github.com/saveriomiroddi/qemu-pinning
 
-This is a port of QEMU machine emulator to JavaScript using Emscripten : https://github.com/atrosinenko/qemujs
-Orbital : Virtualization-based PlayStation 4 emulator : https://github.com/AlexAltea/orbital
+### Cloud Hypervisor/KVM
 
- My QEMU fork with pinning (affinity) support and a few tweaks. : https://github.com/saveriomiroddi/qemu-pinning
+* Docs ; https://github.com/cloud-hypervisor/cloud-hypervisor/tree/master/docs
+* Cloud Hypervisor API : https://github.com/cloud-hypervisor/cloud-hypervisor/blob/master/docs/api.md
+* Device model : https://github.com/cloud-hypervisor/cloud-hypervisor/blob/master/docs/device_model.md
+* FUzzing : https://github.com/cloud-hypervisor/cloud-hypervisor/blob/master/docs/fuzzing.md
+* Using MACVTAP to Bridge onto Host Network : https://github.com/cloud-hypervisor/cloud-hypervisor/blob/master/docs/macvtap-bridge.md
+* Networking : https://github.com/cloud-hypervisor/cloud-hypervisor/blob/master/docs/networking.md
+* UEFI Boot : https://github.com/cloud-hypervisor/cloud-hypervisor/blob/master/docs/uefi.md
+* VFIO : https://github.com/cloud-hypervisor/cloud-hypervisor/blob/master/docs/vfio.md
 
+## Guests
 
-# RPM Packaging
+### PS4 
 
-RPM Packaging Guide : https://rpm-packaging-guide.github.io/#preparing-software-for-packaging
-Join the package collection maintainers : https://fedoraproject.org/wiki/Join_the_package_collection_maintainers
+* Orbital : Virtualization-based PlayStation 4 emulator : https://github.com/AlexAltea/orbital
 
-# Mascot
+### GPU-related
+
+#### Android
+
+* Android GPU Compute Going Forward  : https://android-developers.googleblog.com/2021/04/android-gpu-compute-going-forward.html?m=1
+* GPU Emulation plans : https://groups.google.com/g/android-emulator-dev/c/9o8OZezxq9c?pli=1
+
+#### Single GPU passthrough
+
+* https://github.com/cosminmocan/vfio-single-amdgpu-passthrough
+* https://gitlab.com/Karuri/vfio
+* https://github.com/bducha/single-gpu-passthrough
+* bugs : https://gitlab.freedesktop.org/mesa/mesa/-/issues/2678
+
+### Guides
+
+* https://stewartadam.io/howtos/fedora-20/create-gaming-virtual-machine-using-vfio-pci-passthrough-kvm
+* UEFI ! https://blog.system76.com/post/139138591598/howto-uefi-qemu-guest-on-ubuntu-xenial-host
+* Getting started with qemu : https://drewdevault.com/2018/09/10/Getting-started-with-qemu.html
+
+### Package management
+
+* RPM Packaging Guide : https://rpm-packaging-guide.github.io/#preparing-software-for-packaging
+* Join the package collection maintainers : https://fedoraproject.org/wiki/Join_the_package_collection_maintainers
+
+## Communication
+
+### Mascot
 
 * Xenia, the Linux mascot: https://xenia-linux-site.glitch.me/
 
-## Android GPU
 
 
-Android GPU Compute Going Forward  : https://android-developers.googleblog.com/2021/04/android-gpu-compute-going-forward.html?m=1
-GPU Emulation plans : https://groups.google.com/g/android-emulator-dev/c/9o8OZezxq9c?pli=1
-
-## Cloud Hypervisor
-
-Docs ; https://github.com/cloud-hypervisor/cloud-hypervisor/tree/master/docs
-
-Cloud Hypervisor API : https://github.com/cloud-hypervisor/cloud-hypervisor/blob/master/docs/api.md
-
-Device model : https://github.com/cloud-hypervisor/cloud-hypervisor/blob/master/docs/device_model.md
-
-FUzzing : https://github.com/cloud-hypervisor/cloud-hypervisor/blob/master/docs/fuzzing.md
-
-Using MACVTAP to Bridge onto Host Network : https://github.com/cloud-hypervisor/cloud-hypervisor/blob/master/docs/macvtap-bridge.md
-
-Networking : https://github.com/cloud-hypervisor/cloud-hypervisor/blob/master/docs/networking.md
-
-UEFI Boot : https://github.com/cloud-hypervisor/cloud-hypervisor/blob/master/docs/uefi.md
-
-VIFIO : https://github.com/cloud-hypervisor/cloud-hypervisor/blob/master/docs/vfio.md
-
-## macOS host
-
-
-
-Virtualizing OpenCore and x86 macOS on Apple Silicon (and even iOS!) https://khronokernel.github.io/apple/silicon/2021/01/17/QEMU-AS.html
-
-UTM App :
-* https://mac.getutm.app/
-* https://github.com/utmapp/UTM
-
-## Emulators
-
-https://github.com/AlexAltea/orbital
-
-## Kickstart
-
-https://docs.fedoraproject.org/en-US/fedora/rawhide/install-guide/advanced/Kickstart_Installations/
-
-https://fedoraproject.org/wiki/Anaconda/Kickstart/KickstartingFedoraLiveInstallation
-
-For reference, a complex example with CentOS : https://gist.github.com/giovtorres/0049cec554179d96e0a8329930a6d724
-
-# Qemu front-end
-
-* Qtemu : https://qtemu.org/
-
-# QEMU command-line
-
-UEFI !
-
-https://blog.system76.com/post/139138591598/howto-uefi-qemu-guest-on-ubuntu-xenial-host
-
-* Getting started with qemu : https://drewdevault.com/2018/09/10/Getting-started-with-qemu.html
-
-## Tiny-distro
+### Tiny-distro
 
 *  Build and run minimal Linux / Busybox systems in Qemu : https://gist.github.com/chrisdone/02e165a0004be33734ac2334f215380e#file-gistfile1-md
 *  Making minimal graphical operating system  : https://bcksp.blogspot.com/2017/09/making-minimal-graphical-operating.html?m=1
 *  Build and boot a minimal Linux system with qemu : https://www.kaizou.org/2016/09/boot-minimal-linux-qemu.html
 *  alux - a minimal Linux kernel distribution : https://github.com/alexhultman/alux
-*   Build and run minimal linux with QEMU : https://gist.github.com/seokbeomKim/9cff93b073573fe535534c522c6e53e1
+*  Build and run minimal linux with QEMU : https://gist.github.com/seokbeomKim/9cff93b073573fe535534c522c6e53e1
 
-## Single GPU passthrough
-
-https://github.com/cosminmocan/vfio-single-amdgpu-passthrough
-https://gitlab.com/Karuri/vfio
-https://github.com/bducha/single-gpu-passthrough
-bugs : https://gitlab.freedesktop.org/mesa/mesa/-/issues/2678
 
 ## Android
 
