@@ -2,7 +2,7 @@
 title: members
 description: Everything you need to know as a member of the project
 published: true
-date: 2021-06-23T10:05:03.020Z
+date: 2021-06-23T10:06:33.720Z
 tags: 
 editor: markdown
 dateCreated: 2021-06-23T09:06:00.169Z
@@ -60,7 +60,7 @@ Your `{USERNAME}` can be used to access all services and tools listed below.
 * **Description** : [Gitea](https://gitea.io/en-us/) is used to host git repositories 
 * **Status** : `online`
 * **Location** : https://git.phyllo.me
-* **Wiki** : [Git](/members/git)
+* **Wiki pages** : [Git](/members/git)
 * **Maintainer** : lukas@phyllo.me
 
 ### Collaborative writing
