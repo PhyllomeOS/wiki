@@ -132,6 +132,7 @@ dateCreated: 2021-06-23T12:36:12.051Z
 * Virgil 3d project homepage : http://virgil3d.github.io/
 * Introducing Virgil - 3D virtual GPU for qemu : https://airlied.livejournal.com/77553.html
 * https://czak.pl/2020/04/09/three-levels-of-qemu-graphics.html
+* Virgil 3D renderer for macos : https://mail.gnu.org/archive/html/qemu-devel/2021-02/msg04235.html
 
 #### vfio-pci
 
@@ -160,6 +161,8 @@ dateCreated: 2021-06-23T12:36:12.051Z
 * https://www.nicksherlock.com/2019/10/installing-macos-catalina-10-15-on-proxmox-6/
 * Virgil 3D renderer for macos : https://mail.gnu.org/archive/html/qemu-devel/2021-02/msg04235.html
 * OSX-KVM : https://gitlab.com/sanselme/OSX-KVM
+* https://dortania.github.io/OpenCore-Install-Guide/installer-guide/linux-install.html#downloading-macos
+
 
 ### PS4 
 
@@ -206,7 +209,7 @@ https://www.kraxel.org/blog/2019/09/display-devices-in-qemu/
 
 ---
 
-## Networking-related
+## Network-related
 
 ### Bridge
 
@@ -248,19 +251,13 @@ https://www.tutos.snatch-crash.fr/proxmox-raw-vs-qcow2-vs-vmdk/
 * https://lists.gnu.org/archive/html/qemu-devel/2020-09/msg05221.html
 * https://bugzilla.redhat.com/show_bug.cgi?id=1881850
 
+---
+
 ## Boot-related firmware
 
 ### SeaBIOS versus edk2
 
 * https://mail.coreboot.org/pipermail/seabios/2014-February/007689.html
-
-
-
-
-## Hackintosh
-
-* https://dortania.github.io/OpenCore-Install-Guide/installer-guide/linux-install.html#downloading-macos
-
 
 ---
 
