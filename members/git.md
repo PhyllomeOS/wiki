@@ -1,8 +1,8 @@
 ---
 title: Git as used by Phyllome OS
-description: Page about Git as used by Phyllome OS
+description: 
 published: true
-date: 2021-06-23T12:02:11.520Z
+date: 2021-06-23T12:04:43.385Z
 tags: 
 editor: markdown
 dateCreated: 2021-06-23T10:27:58.910Z
