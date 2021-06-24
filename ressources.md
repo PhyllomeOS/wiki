@@ -2,7 +2,7 @@
 title: External ressources
 description: A list of external mostly-online ressources around KVM virtualization and related technologies
 published: true
-date: 2021-06-23T18:20:57.631Z
+date: 2021-06-24T15:11:39.977Z
 tags: 
 editor: markdown
 dateCreated: 2021-06-23T12:36:12.051Z
@@ -36,6 +36,7 @@ dateCreated: 2021-06-23T12:36:12.051Z
 * https://spectrum-os.org/
 	* https://github.com/sponsors/alyssais
 	* https://liberapay.com/qyliss/
+* Qubes-lite With KVM and Wayland : https://roscidus.com/blog/blog/2021/03/07/qubes-lite-with-kvm-and-wayland/
 
 ### QEMU/KVM
 
