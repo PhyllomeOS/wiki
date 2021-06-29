@@ -2,7 +2,7 @@
 title: External ressources
 description: A list of external mostly-online ressources around KVM virtualization and related technologies
 published: true
-date: 2021-06-24T15:11:39.977Z
+date: 2021-06-29T08:24:32.998Z
 tags: 
 editor: markdown
 dateCreated: 2021-06-23T12:36:12.051Z
@@ -45,7 +45,9 @@ dateCreated: 2021-06-23T12:36:12.051Z
 
 #### On Fedora host
 
-* [Virtualization Deployment and Administration Guide](https://docs.fedoraproject.org/en-US/Fedora_Draft_Documentation/0.1/html/Virtualization_Deployment_and_Administration_Guide/index.html) 
+* [Virtualization Deployment and Administration Guide](https://docs.fedoraproject.org/en-US/Fedora_Draft_Documentation/0.1/html/Virtualization_Deployment_and_Administration_Guide/index.html)
+* [New Fedora Official User Documentation](https://docs.fedoraproject.org/en-US/docs/)
+* [Old Fedora Official User Documentation](https://docs.fedoraproject.org/en-US/Fedora_Draft_Documentation/0.1/html/Documentation_Guide/index.html)
 
 #### On Unraid (Debian-based) host 
 * https://forums.unraid.net/topic/54834-video-guideall-about-docker-in-unraid-docker-principles-and-setup/
