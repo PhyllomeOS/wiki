@@ -2,7 +2,7 @@
 title: members
 description: Everything you need to know as a member of the project
 published: true
-date: 2021-06-23T12:17:10.818Z
+date: 2021-06-29T08:20:10.784Z
 tags: 
 editor: markdown
 dateCreated: 2021-06-23T09:06:00.169Z
@@ -108,3 +108,7 @@ Your `{USERNAME}` can be used to access all services and tools listed below.
 * **Status** : `offline`
 * **Location** : https://s3.phyllo.me
 * **Wiki page** : [S3](/members/s3)
+
+## Ressources
+
+* [Link](https://kanboard.phyllo.me/b/DGyfQKKJPanuNfsnv/project/4envpCeyT9TnyKiPC) to the kanboard card tracking the deployment of web tools
