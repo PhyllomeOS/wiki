@@ -2,7 +2,7 @@
 title: Git as used by Phyllome OS
 description: 
 published: true
-date: 2021-06-29T08:16:00.156Z
+date: 2021-06-29T08:16:33.493Z
 tags: 
 editor: markdown
 dateCreated: 2021-06-23T10:27:58.910Z
@@ -23,7 +23,7 @@ dateCreated: 2021-06-23T10:27:58.910Z
 
 *To-do*
 
-* There is a two-way syncs relationship between the website and the Git repository.
+* There is a two-ways synchronization relationship between the website and its Git repository. 
 
 ## Ressources
 
