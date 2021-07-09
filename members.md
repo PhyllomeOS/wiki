@@ -2,7 +2,7 @@
 title: members
 description: Everything you need to know as a member of the project
 published: true
-date: 2021-07-09T19:43:59.733Z
+date: 2021-07-09T19:45:26.130Z
 tags: 
 editor: markdown
 dateCreated: 2021-06-23T09:06:00.169Z
@@ -12,7 +12,7 @@ dateCreated: 2021-06-23T09:06:00.169Z
 
 ## Introduction
 
-This file is made to support the onboarding of new people into the Phyllome OS project.
+This page intends to support onboarding of new contributors to the Phyllome OS project.
 
 ## Getting started
 
