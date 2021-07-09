@@ -2,7 +2,7 @@
 title: members
 description: Everything you need to know as a member of the project
 published: true
-date: 2021-06-29T08:20:10.784Z
+date: 2021-07-09T19:43:59.733Z
 tags: 
 editor: markdown
 dateCreated: 2021-06-23T09:06:00.169Z
@@ -12,18 +12,18 @@ dateCreated: 2021-06-23T09:06:00.169Z
 
 ## Introduction
 
-This file is made to ease the onboarding of new people into the Phyllome OS project.
+This file is made to support the onboarding of new people into the Phyllome OS project.
 
-## At the beginning
+## Getting started
 
-When you onboard the project, you will eventually get an account on https://my.refre.ch, which will allow you to access applications used by the Phyllome OS project.
+When you join the project, you will eventually get an account on https://my.refre.ch, which will allow you to access applications used by the Phyllome OS project.
 
 To receive an invitation, you need to possess a working email address, typically your personal email address. Then, you should receive an email inviting you to register.
 
-> If you haven't received your invitation, please check your spam folder. If there is nothing there, please send an email to `contact@phyllo.me` and mention your username
+> If you haven't received your invitation, please check your spam folder. If there is nothing there, please send an email to `contact@phyllo.me` mentioning your username.
 {.is-warning}
 
-> **Password**. Please use a long passphrase and store it securely, using a password manager such as [Bitwarden](https://bitwarden.com/) or [KeePaasXC](https://keepassxc.org/), or on an air-gapped hardware token made of cellulose fibres, also known as a sheet of paper. 
+> **Password**. Please use a long passphrase and store it securely using a password manager such as [Bitwarden](https://bitwarden.com/) or [KeePaasXC](https://keepassxc.org/), or on an air-gapped hardware token made of cellulose fibres (also known as a sheet of paper). 
 {.is-info}
 
 > **Second Factor Authentication (2FA)**. 2FA is mandatory across all apps. Please use an application such as the [Aegis Authenticator](https://f-droid.org/en/packages/com.beemdevelopment.aegis/) on Android to generate One Time Passwords (OTP).  
@@ -33,10 +33,10 @@ To receive an invitation, you need to possess a working email address, typically
 
 Please note that all contributions made to the project, through the official tools stated below, will be open-sourced.
  
-> As a contributor, you waive your rights in profit of Phyllome OS. You will be added to the list of contributors.
+> As a contributor, you waive your rights to profit from Phyllome OS. You will be added to the list of contributors.
 {.is-warning}
 
-## Tool we use
+## Tools we use
 
 ### Introduction
 
@@ -44,7 +44,7 @@ You will receive an email address such as `{YOUR_USERNAME}@phyllo.me`
 
 Your `{USERNAME}` can be used to access all services and tools listed below.  
 
-> To ease access to those tools, do not hesitate to add a  bookmark for each ot them!
+> For easy access to those tools, don't hesitate to add a  bookmark to each of them!
 {.is-info}
 
 ### Platform-as-a-Service (PaaS)
@@ -84,7 +84,7 @@ Your `{USERNAME}` can be used to access all services and tools listed below.
 
 ### Issue tracking
 
-* **Description** : [Wekan](https://wekan.github.io/) is used for issue tracking
+* **Description** : [Wekan](https://wekan.github.io/) is used to track issues
 * **Location** : https://kanban.phyllo.me/
 * **Wiki page** : [Kanban](/members/kanban)
 
@@ -97,7 +97,7 @@ Your `{USERNAME}` can be used to access all services and tools listed below.
 
 ### Files hosting
 
-* **Description** : [Nextcloud](https://nextcloud.com/) is used for hosting files 
+* **Description** : [Nextcloud](https://nextcloud.com/) is used to host files 
 * **Status** : `online`
 * **Location** : https://files.phyllo.me/
 * **Wiki page** : [Files](/members/files)
