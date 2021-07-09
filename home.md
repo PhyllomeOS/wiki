@@ -2,7 +2,7 @@
 title: Homepage
 description: 
 published: true
-date: 2021-06-23T12:30:53.359Z
+date: 2021-07-09T19:33:30.207Z
 tags: test
 editor: markdown
 dateCreated: 2021-06-19T09:29:20.593Z
@@ -23,7 +23,7 @@ As of now, there are many sections in this wiki:
 * **[Members](/members)** : How the project is currently set-up (work in progress)
 * **How-to guides** : How to do certain tasks
 * **[FAQ](/faq)** : The frequently asked questions section 
-* **[External ressources](/ressources)** : List of useful ressources around virtualization or tools used by the project
+* **[External ressources](/ressources)** : List of useful resources around virtualization or tools used by the project
 
 > If you would rather avoid JavaScript altogether, or wish to download the content locally, we have you covered as you can download the content [here](https://git.phyllo.me/home/wiki) using git. 
 {.is-info}
