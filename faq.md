@@ -2,7 +2,7 @@
 title: Frequently asked questions
 description: This page intents to give answers to common questions around Phyllome OS
 published: true
-date: 2021-06-19T13:36:30.757Z
+date: 2021-07-09T19:47:52.496Z
 tags: info
 editor: markdown
 dateCreated: 2021-06-19T13:20:00.698Z
@@ -13,7 +13,7 @@ dateCreated: 2021-06-19T13:20:00.698Z
 For a couple reasons :
 
 * **Development velocity**
-	* It would take much longuer to build a Linux-distribution from scratch, although it may eventually be necessary to do so to achieve Phyllome OS vision. After all, Google [first used Ubuntu as a base for ChromeOS](https://en.wikipedia.org/wiki/Chrome_OS#History), then switched to Gentoo to finally build their own distribution. 
+	* It would take much longuer to build a Linux-distribution from scratch, although it may eventually be necessary to do so to achieve Phyllome OS' vision. After all, Google [first used Ubuntu as a base for ChromeOS](https://en.wikipedia.org/wiki/Chrome_OS#History), then switched to Gentoo to finally build their own distribution. 
 
 * **Piggy backing**
 	* The kernel used by Fedora is fairly recent. It allows the project to benefit from new virtualization-related functionalities and extensive hardware support, including support for newer graphic cards and peripherals. 
@@ -36,7 +36,7 @@ The goal of Phyllome — which is in its very early stages — is to develop and
 
 ## When will it be released ?
 
-Perhaps around September 2021
+September 2021
 
 ## Who is behind it ?
 
