@@ -2,7 +2,7 @@
 title: Automatic deployment of a Fedora guest
 description: Deploy a Fedora automatically with virt-install
 published: true
-date: 2021-08-12T10:42:26.907Z
+date: 2021-08-12T12:15:36.949Z
 tags: 
 editor: markdown
 dateCreated: 2021-08-12T10:06:58.917Z
