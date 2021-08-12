@@ -2,7 +2,7 @@
 title: Homepage
 description: 
 published: true
-date: 2021-08-12T13:39:05.745Z
+date: 2021-08-12T13:40:28.020Z
 tags: test
 editor: markdown
 dateCreated: 2021-06-19T09:29:20.593Z
@@ -29,7 +29,7 @@ dateCreated: 2021-06-19T09:29:20.593Z
 * **Tasks**
   * [Deploy](/deploy) a `q35`, `ovmf`, Fedora guest with `virtio` devices using `virt-install`
   * [Migrate](/migrate) an existing guest virtual machine to another Phyllome OS host
-  * [Resize](/resize) an existing virtual disk that uses an EXT4 filesystem]
+  * [Resize](/resize) an existing virtual disk that uses an EXT4 filesystem
 
 * **References**
   * *Phyllome OS* 
@@ -42,6 +42,7 @@ dateCreated: 2021-06-19T09:29:20.593Z
   * *Linux and KVM-virtualization*
     * [Linux Kernel module list](/kernel_modules) related to virtualization
     * [Virtualization-related paths](/linux_paths) on Linux
+    * [QEMU/KVM devices](/qemu-kvm_devices)
     * [XML](/xml) commented 
   
   * [Lexicon](/lexicon) 
