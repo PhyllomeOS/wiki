@@ -2,7 +2,7 @@
 title: Homepage
 description: 
 published: true
-date: 2021-08-12T13:40:28.020Z
+date: 2021-08-12T13:50:23.851Z
 tags: test
 editor: markdown
 dateCreated: 2021-06-19T09:29:20.593Z
@@ -56,7 +56,7 @@ dateCreated: 2021-06-19T09:29:20.593Z
 
 ## Phyllome OS
 
-[Phyllome OS](https://phyllo.me/) is an operating system that makes it easier to run [various guest systems](guest_systems) locally using [off-the-shelf hardware](requirements).
+[Phyllome OS](https://phyllo.me/) is an operating system that makes it easier to run [various guest systems](/guest) locally using [off-the-shelf hardware](/requirements).
 
 ## Links
 
