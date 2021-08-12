@@ -2,7 +2,7 @@
 title: members
 description: Everything you need to know as a member of the project
 published: true
-date: 2021-08-12T07:53:13.544Z
+date: 2021-08-12T07:54:30.263Z
 tags: 
 editor: markdown
 dateCreated: 2021-06-23T09:06:00.169Z
@@ -42,7 +42,7 @@ Please note that all contributions made to the project, through the official too
 
 You will receive an email address such as `{YOUR_USERNAME}@phyllo.me`
 
-Your `{USERNAME}` can be used to access all services and tools listed below.  
+`{YOUR_USERNAME}` can be used to access all services and tools listed below.  
 
 > For easy access to those tools, don't hesitate to add a  bookmark to each of them!
 {.is-info}
