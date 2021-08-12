@@ -2,7 +2,7 @@
 title: Automatic deployment of a Fedora guest
 description: Deploy a Fedora automatically with virt-install
 published: true
-date: 2021-08-12T12:15:36.949Z
+date: 2021-08-12T14:41:09.641Z
 tags: 
 editor: markdown
 dateCreated: 2021-08-12T10:06:58.917Z
@@ -27,7 +27,7 @@ Install the *virt-install* command-line tool on Fedora :
 Use the following command to automatically launch the Fedora installation process. It will also automatically create a disk image to install Fedora on. Make sure you have at least 20 GB of free space.
 
 ```
-virt-install --install fedora32
+$ virt-install --install fedora32
 
 Using fedora32 --location https://download.fedoraproject.org/pub/fedora/linux/releases/32/Everything/x86_64/os
 Using default --name fedora32
@@ -62,7 +62,7 @@ $ wget https://download.fedoraproject.org/pub/fedora/linux/releases/34/Server/x8
 * Deploy a Fedora Server using Phyllome OS curated kickstart
 
 ```
-virt-install \
+$ virt-install \
     --connect qemu:///system \
     --virt-type kvm \
     --arch x86_64 \
