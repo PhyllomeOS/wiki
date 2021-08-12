@@ -2,13 +2,13 @@
 title: members
 description: Everything you need to know as a member of the project
 published: true
-date: 2021-08-12T07:54:30.263Z
+date: 2021-08-12T07:54:46.398Z
 tags: 
 editor: markdown
 dateCreated: 2021-06-23T09:06:00.169Z
 ---
 
-# Welcome to the Phyllome OS Project !
+# Welcome to the Phyllome OS project !
 
 ## Introduction
 
