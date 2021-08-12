@@ -2,13 +2,13 @@
 title: Resize a guest disk image
 description: Resize a a guest disk image using qemu-img and virt-resize
 published: true
-date: 2021-08-12T10:55:58.877Z
+date: 2021-08-12T10:56:34.771Z
 tags: 
 editor: markdown
 dateCreated: 2021-08-12T10:55:58.877Z
 ---
 
-# qemu-img
+# qemu-img and virt-resize
 
 ## Introduction
 
