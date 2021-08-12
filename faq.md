@@ -2,7 +2,7 @@
 title: Frequently asked questions
 description: This page intents to give answers to common questions around Phyllome OS
 published: true
-date: 2021-08-12T07:58:35.739Z
+date: 2021-08-12T14:33:17.495Z
 tags: info
 editor: markdown
 dateCreated: 2021-06-19T13:20:00.698Z
@@ -15,6 +15,10 @@ Traditionally, operating systems (OS) installed directly on physical hardware ha
 Despite these advantages, most individuals don't use a virtual machine as their main desktop OS. One of the reasons is that granting a virtual machine 3D capabilities — a must-have to achieve optimal performance on any desktop environment — is still difficult, prone to errors, and risky from a security standpoint as it increases the attack surface of the overall system.
 
 The goal of Phyllome — which is in its very early stages — is to develop and distribute a KVM/QEMU-powered Linux distribution built on a small set of software and that will allow the virtualization of 3D accelerated guest operating systems out-of-the-box, including non-UNIX ones, while offering better security and privacy than OS installed directly on physical hardware.
+
+### How the fuck will make any money with that project ?
+
+I don't give a shit, do you? 
 
 ### What does Phyllome mean ?
 
