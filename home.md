@@ -2,7 +2,7 @@
 title: Homepage
 description: 
 published: true
-date: 2021-08-12T08:42:32.343Z
+date: 2021-08-12T10:44:42.615Z
 tags: test
 editor: markdown
 dateCreated: 2021-06-19T09:29:20.593Z
@@ -24,8 +24,7 @@ dateCreated: 2021-06-19T09:29:20.593Z
   * [Contribute](/members)
 
 * **Tasks**
-  * [Create](/create) a `q35`, `ovmf`, Fedora guest with `virtio` devices manually using `virt-manager`
-  * [Deploy](/deploy) a `q35`, `ovmf`, Fedora guest with `virtio` devices automatically using `virt-install`
+  * [Deploy](/deploy) a `q35`, `ovmf`, Fedora guest with `virtio` devices using `virt-install`
   * [Migrate](/migrate) an existing guest virtual machine to another Phyllome OS host
   * [Resize](/resize) an existing virtual disk that uses an EXT4 filesystem]
 
