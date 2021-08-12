@@ -2,7 +2,7 @@
 title: Automatic deployment of a Fedora guest
 description: Deploy a Fedora automatically with virt-install
 published: true
-date: 2021-08-12T10:34:43.783Z
+date: 2021-08-12T10:40:38.933Z
 tags: 
 editor: markdown
 dateCreated: 2021-08-12T10:06:58.917Z
@@ -47,13 +47,19 @@ Other options include : `android-x86-9.0`, `centos8`, `clearlinux`, `debian9`, `
 
 
 > The virt-install package that comes with Fedora 34 doesn't work yet with argument *fedora34*
-{.is-info}
+{.is-warning}
 
 ## Automated installation 
 
 ### Local iso and kickstart
 
-Note : requires an Internet connection
+* Fetch a Fedora iso file
+
+```
+$ wget https://download.fedoraproject.org/pub/fedora/linux/releases/34/Server/x86_64/iso/Fedora-Server-dvd-x86_64-34-1.2.iso -P /var/lib/libvirt/iso 
+```
+
+* Deploy a Fedora Server using Phyllome OS curated kickstart
 
 ```
 virt-install \
@@ -77,10 +83,14 @@ virt-install \
     --input type=keyboard,bus=virtio \
     --input type=tablet,bus=virtio \
     --rng /dev/urandom,model=virtio \
-    --disk path=/var/lib/libvirt/images/vmd.img,format=raw,bus=virtio,cache=writeback,size=10 \
+    --disk path=/var/lib/libvirt/images/vmd.img,format=raw,bus=virtio,cache=writeback,size=5 \
     --location=/var/lib/libvirt/iso/Fedora-Server-dvd-x86_64-34-1.2.iso \
     --extra-args="inst.ks=https://git.phyllo.me/home/kickstart/raw/branch/master/leaves/vmd.cfg"
 ```
+
+> Requires an Internet connection
+{.is-info}
+
 
 ### Built-in unattended mode
 
@@ -89,5 +99,7 @@ virt-install can rely on libosinfo's unattended install support to deploy fedora
 `virt-install --install fedora32 --unattended`
 
 ### Cloud-init
+
+Cloud-init may be used alongside virt-install:
 
 `virt-install --install fedora34,cloud=yes --cloud-init root-password-generate=on ssh-key=/home/user/.ssh/test_rsa.pub disable=on`
