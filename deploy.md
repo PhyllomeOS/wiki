@@ -2,7 +2,7 @@
 title: Automatic deployment of a Fedora guest
 description: Deploy a Fedora automatically with virt-install
 published: true
-date: 2021-08-12T10:40:38.933Z
+date: 2021-08-12T10:42:26.907Z
 tags: 
 editor: markdown
 dateCreated: 2021-08-12T10:06:58.917Z
@@ -22,7 +22,7 @@ Install the *virt-install* command-line tool on Fedora :
 # dnf install virt-install
 ```
 
-## Simple command
+## Manual installation
 
 Use the following command to automatically launch the Fedora installation process. It will also automatically create a disk image to install Fedora on. Make sure you have at least 20 GB of free space.
 
