@@ -2,7 +2,7 @@
 title: Resize a guest disk image
 description: Resize a a guest disk image using qemu-img and virt-resize
 published: true
-date: 2021-08-12T12:17:09.143Z
+date: 2021-08-12T12:17:26.497Z
 tags: 
 editor: markdown
 dateCreated: 2021-08-12T10:55:58.877Z
@@ -31,9 +31,7 @@ $ qemu-img create -f raw /var/lib/libvirt/images/phyllome-bigger.img 15G
 
 ```
 # virt-resize --expand /dev/vda3 phyllome.img phyllome_but_bigger.img
-``` 
 
-``` 
 [   0.0] Examining phyllome.img
 **********
 
