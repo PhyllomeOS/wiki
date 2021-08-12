@@ -2,7 +2,7 @@
 title: XML commented
 description: An XML file describing a virtual machine
 published: true
-date: 2021-08-12T09:43:20.587Z
+date: 2021-08-12T09:55:25.459Z
 tags: 
 editor: markdown
 dateCreated: 2021-08-12T09:43:20.587Z
@@ -156,28 +156,28 @@ This is the description of an XML file associated to a virtio-based virtual mach
  <!-- Legacy PS/2 input mouse input device. Hard-coded on QEMU -->
     <input type='keyboard' bus='ps2'/>
 
-<!-- USB keyboard input device -->
-
-  <input type="tablet" bus="virtio">
+<!-- Virtio-input mouse device -->
+    <input type="tablet" bus="virtio">
       <address type="pci" domain="0x0000" bus="0x01" slot="0x00" function="0x0"/>
     </input>
 
- <!-- Virtio keyboard input device -->
-  
+ <!-- Virtio-input keyboard device -->
     <input type="keyboard" bus="virtio">
       <address type="pci" domain="0x0000" bus="0x07" slot="0x00" function="0x0"/>
     </input>
   
- <!-- Insert comment here -->
-
+ <!-- Output the guest display to Spice -->
     <graphics type='spice'>
       <listen type='none'/>
-      <image compression='off'/>
+      <image compression="auto_glz"/>
+      <jpeg compression="auto"/>
+      <zlib compression="auto"/>
+      <playback compression="on"/>
+			<image compression='off'/>
       <gl enable='yes' rendernode='/dev/dri/by-path/pci-0000:00:02.0-render'/>
     </graphics>
 
- <!-- Add pci-based virtio-gpu device using OpenGL -->
-
+ <!-- Virtio-gpu device with 3D acceleration -->
     <video>
       <model type='virtio' heads='1' primary='yes'>
         <acceleration accel3d='yes'/>
@@ -185,61 +185,25 @@ This is the description of an XML file associated to a virtio-based virtual mach
       <address type='pci' domain='0x0000' bus='0x00' slot='0x01' function='0x0'/>
     </video>
 
-<!-- Add spice-based-gpu device using OpenGL -->
-
-    <graphics type="spice">
-      <listen type="none"/>
-      <gl enable="yes" rendernode="/dev/dri/by-path/pci-0000:00:02.0-render"/>
-    </graphics>
-
- <!-- Remove video -->
-    <video>
-      <model type="none"/>
-    </video>
-
- <!-- Add vfio-mdev gpu device  -->
-     <hostdev mode="subsystem" type="mdev" managed="no" model="vfio-pci" display="on">
-      <source>
-        <address uuid="f722c397-350c-4373-abb1-3fa7af20d7c5"/>
-      </source>
-    </hostdev>
-  </devices>
-
- <!-- Spice only : Add USB ports 1 et 2 to allow redirection of up to two USB devices from the host -->
-
-    <redirdev bus='usb' type='spicevmc'>
-      <address type='usb' bus='0' port='1'/>
-    </redirdev>
-
-    <redirdev bus='usb' type='spicevmc'>
-      <address type='usb' bus='0' port='2'/>
-    </redirdev>
-
- <!-- Virtio memballoon device, to grow memory allocation dynamically inside vm -->
-
+ <!-- Virtio-based memballoon device, to allow memory to grow dynamically in a virtual machine. For Windows-guests, it is better to turn this feature off -->
     <memballoon model='virtio'>
       <address type='pci' domain='0x0000' bus='0x05' slot='0x00' function='0x0'/>
     </memballoon>
 
- <!-- Virtio random number generated using host backend  -->
+ <!-- Virtio random number generator  -->
     <rng model='virtio'>
       <backend model='random'>/dev/urandom</backend>
       <address type='pci' domain='0x0000' bus='0x06' slot='0x00' function='0x0'/>
     </rng>
 
-<!-- IOMMU device, compatible with AMD and Intel CPUs  -->
- 
-    <iommu model='intel'>
+<!-- Virtio-iommu device, compatible with AMD and Intel CPUs  -->
+     <iommu model='intel'>
        <driver intremap='on' iotlb='on'/>
     </iommu>
-
- <!-- End of device section -->
+<!-- End of device section -->
   </devices>
 
- <!-- Start of qemu:commandline section. 
-Note : must have <domain type='kvm' xmlns:qemu='http://libvirt.org/schemas/domain/qemu/1.0'> at the beginning of the XML file
--->
-
+<!-- Start of qemu:commandline section. Requires <domain type='kvm' xmlns:qemu='http://libvirt.org/schemas/domain/qemu/1.0'> at the beginning of the XML file -->
   <qemu:commandline>
     <qemu:env name="DISPLAY" value=":1"/>
     <qemu:env name="GDK_SCALE" value="1.0"/>
@@ -259,12 +223,8 @@ Note : must have <domain type='kvm' xmlns:qemu='http://libvirt.org/schemas/domai
     <qemu:arg value='-set'/>
   </qemu:commandline>
 
- <!-- End of qemu:commandline section. -->
-
- <!-- End of domain section. -->
-
+<!-- End of domain section. -->
 </domain>
-
 ```
 
 ## Reference
