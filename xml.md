@@ -2,7 +2,7 @@
 title: XML commented
 description: An XML file describing a virtual machine
 published: true
-date: 2021-08-12T10:00:20.535Z
+date: 2021-08-12T10:02:24.355Z
 tags: 
 editor: markdown
 dateCreated: 2021-08-12T09:43:20.587Z
@@ -117,7 +117,7 @@ This is the description of an XML file associated to a virtio-based virtual mach
       <address type='pci' domain='0x0000' bus='0x02' slot='0x00' function='0x0'/>
     </controller>
 
-<!-- Insert comment here -->
+<!-- SCSI controller -->
     <controller type='scsi' index='0'>
       <address type='pci' domain='0x0000' bus='0x00' slot='0x1f' function='0x2'/>
     </controller>
@@ -125,7 +125,7 @@ This is the description of an XML file associated to a virtio-based virtual mach
 <!-- PCI-root -->
    	<controller type='pci' index='0' model='pcie-root'/>
 
-<!-- Controller type -->
+<!-- PCI-express slots. 8 are created. Only two are shown -->
 		<controller type="pci" index="1" model="pcie-root-port">
       <model name="pcie-root-port"/>
       <target chassis="1" port="0x10"/>
@@ -178,7 +178,7 @@ This is the description of an XML file associated to a virtio-based virtual mach
       <address type="pci" domain="0x0000" bus="0x07" slot="0x00" function="0x0"/>
     </input>
   
- <!-- Output the guest display to Spice -->
+ <!-- Output the guest display to Spice, for local use only. Use image compression and OpenGL (Only works with Intel GPUs, perhaps AMD ones too) -->
     <graphics type='spice'>
       <listen type='none'/>
       <image compression="auto_glz"/>
