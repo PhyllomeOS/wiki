@@ -2,7 +2,7 @@
 title: Homepage
 description: 
 published: true
-date: 2021-08-12T10:44:42.615Z
+date: 2021-08-12T13:29:01.530Z
 tags: test
 editor: markdown
 dateCreated: 2021-06-19T09:29:20.593Z
@@ -32,16 +32,15 @@ dateCreated: 2021-06-19T09:29:20.593Z
   * *Phyllome OS* 
     * [Requirements](/requirements)
     * [Hardware support](/hardware_support)
+    * [Guests support](/guest)
     * [Architecture](/architecture)
     * [Software bill of materials](/sbom) (SBOM)
-	
+	  
   * *Linux and KVM-virtualization*
     * [Linux Kernel module list](/kernel_modules) related to virtualization
     * [Virtualization-related paths](/linux_paths) on Linux
+    * [XML](/xml) commented 
   
-  * *Guests*
-    * [XML](/xml) commented
-    
   * [Lexicon](/lexicon) 
 
   * [Frequently Asked Questions](/faq) (FAQ)
