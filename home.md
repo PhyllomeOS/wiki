@@ -2,7 +2,7 @@
 title: Homepage
 description: 
 published: true
-date: 2021-08-12T13:36:19.276Z
+date: 2021-08-12T13:39:05.745Z
 tags: test
 editor: markdown
 dateCreated: 2021-06-19T09:29:20.593Z
@@ -18,10 +18,10 @@ dateCreated: 2021-06-19T09:29:20.593Z
   * [Roadmap](/roadmap)
 
 * **Do**
-  * [Install](/install)
-  	* [On top off Fedora 34 Server](/install_on_fedora_34)
+  * Install
+    * [As a live system, on a USB stick](/install_usb) 
+    * [On top of Fedora 34 Server](/install_on_fedora_34)
     * [From source](/install_from_source)
-    * [As a live system, on a USB stick](/install_usb)
   * [Use](/use)
   * [Hack](/hack)
   * [Contribute](/members)
