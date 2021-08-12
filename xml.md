@@ -2,7 +2,7 @@
 title: XML commented
 description: An XML file describing a virtual machine
 published: true
-date: 2021-08-12T09:55:25.459Z
+date: 2021-08-12T10:00:20.535Z
 tags: 
 editor: markdown
 dateCreated: 2021-08-12T09:43:20.587Z
@@ -118,12 +118,24 @@ This is the description of an XML file associated to a virtio-based virtual mach
     </controller>
 
 <!-- Insert comment here -->
-    <controller type='sata' index='0'>
+    <controller type='scsi' index='0'>
       <address type='pci' domain='0x0000' bus='0x00' slot='0x1f' function='0x2'/>
     </controller>
 
-<!-- Emulated USB 3 controller -->
-	<controller type='pci' index='0' model='pcie-root'/>
+<!-- PCI-root -->
+   	<controller type='pci' index='0' model='pcie-root'/>
+
+<!-- Controller type -->
+		<controller type="pci" index="1" model="pcie-root-port">
+      <model name="pcie-root-port"/>
+      <target chassis="1" port="0x10"/>
+      <address type="pci" domain="0x0000" bus="0x00" slot="0x02" function="0x0" multifunction="on"/>
+    </controller>
+    <controller type="pci" index="2" model="pcie-root-port">
+      <model name="pcie-root-port"/>
+      <target chassis="2" port="0x11"/>
+      <address type="pci" domain="0x0000" bus="0x00" slot="0x02" function="0x1"/>
+    </controller>
 
 <!-- Insert comment here -->
     <controller type='virtio-serial' index='0'>
