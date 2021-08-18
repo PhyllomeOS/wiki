@@ -1,6 +1,6 @@
 ---
-title: Automatic deployment of a Fedora guest
-description: Deploy a Fedora automatically with virt-install
+title: Deployment of a Fedora guest
+description: Deploy a Fedora guest system with virt-install, manually or automatically
 published: true
 date: 2021-08-12T14:41:09.641Z
 tags: 
@@ -8,13 +8,15 @@ editor: markdown
 dateCreated: 2021-08-12T10:06:58.917Z
 ---
 
-# Virt-install
+# Virt-install and Fedora guests
 
 ## Introduction
 
-*virt-install* is a command-line utility to install virtual machines.
+*virt-install* is a command-line utility to install virtual machines. 
 
-### Installation
+### Prequesites 
+
+* Fedora only, as Phyllome OS ships with virt-install by default.
 
 Install the *virt-install* command-line tool on Fedora :
 
@@ -45,7 +47,6 @@ It should automatically launch the guest console. Eventually, you should see the
 
 Other options include : `android-x86-9.0`, `centos8`, `clearlinux`, `debian9`, `macosx10.7`, `nixos-20.03`, `ubuntu20.04`, `win10`
 
-
 > The virt-install package that comes with Fedora 34 doesn't work yet with argument *fedora34*
 {.is-warning}
 
@@ -53,13 +54,66 @@ Other options include : `android-x86-9.0`, `centos8`, `clearlinux`, `debian9`, `
 
 ### Local iso and kickstart
 
-* Fetch a Fedora iso file
+> Requires an Internet connection
+{.is-info}
+
+* Fetch a Fedora iso file using wget and put it in the current working directory
 
 ```
-$ wget https://download.fedoraproject.org/pub/fedora/linux/releases/34/Server/x86_64/iso/Fedora-Server-dvd-x86_64-34-1.2.iso -P /var/lib/libvirt/iso 
+$ wget https://download.fedoraproject.org/pub/fedora/linux/releases/34/Server/x86_64/iso/Fedora-Server-dvd-x86_64-34-1.2.iso
 ```
 
-* Deploy a Fedora Server using Phyllome OS curated kickstart
+* Fetch a kickstart script using wget and put it in the current working directory
+
+```
+$ wget https://git.phyllo.me/home/kickstart/raw/branch/master/leaves/ivmd.cfg 
+```
+
+> If using a custom kickstart script, make sure it includes the cdrom option.
+{.is-warning}
+
+
+* Deploy a UEFI-based machine with Fedora Server using the relative path of the local kickstart file
+
+```
+$ virt-install \
+    --connect qemu:///system \
+    --virt-type kvm \
+    --arch x86_64 \
+    --machine q35 \
+    --name ivmd \
+    --boot uefi \
+    --cpu host-model,topology.sockets=1,topology.cores=2,topology.threads=2 \
+    --vcpus 4 \
+    --memory 8192 \
+    --video virtio \
+    --channel spicevmc \
+    --autoconsole none \
+    --sound none \
+    --controller type=virtio-serial \
+    --controller type=usb,model=none \
+    --controller type=scsi,model=virtio-scsi \
+    --network network=default,model=virtio \
+    --input type=keyboard,bus=virtio \
+    --input type=tablet,bus=virtio \
+    --rng /dev/urandom,model=virtio \
+    --disk path=/var/lib/libvirt/images/ivmd.img,format=raw,bus=virtio,cache=writeback,size=5 \
+    --location=/var/lib/libvirt/iso/Fedora-Server-dvd-x86_64-34-1.2.iso \
+    --initrd-inject ivmd.cfg --extra-args "inst.ks=file:/ivmd.cfg"
+```
+### Remote-only kickstart installation
+
+> Requires an Internet connection
+{.is-info}
+
+* Fetch a kickstart script using wget and put it in the current working directory
+
+```
+$ wget https://git.phyllo.me/home/kickstart/raw/branch/master/leaves/vmd.cfg 
+```
+
+> If using a custom kickstart script, make sure it includes repo information
+{.is-warning}
 
 ```
 $ virt-install \
@@ -69,9 +123,9 @@ $ virt-install \
     --machine q35 \
     --name vmd \
     --boot uefi \
-    --cpu host-model,topology.sockets=1,topology.cores=1,topology.threads=2 \
-    --vcpus 2 \
-    --memory 4096 \
+    --cpu host-model,topology.sockets=1,topology.cores=2,topology.threads=2 \
+    --vcpus 4 \
+    --memory 8192 \
     --video virtio \
     --channel spicevmc \
     --autoconsole none \
@@ -84,17 +138,18 @@ $ virt-install \
     --input type=tablet,bus=virtio \
     --rng /dev/urandom,model=virtio \
     --disk path=/var/lib/libvirt/images/vmd.img,format=raw,bus=virtio,cache=writeback,size=5 \
-    --location=/var/lib/libvirt/iso/Fedora-Server-dvd-x86_64-34-1.2.iso \
+    --location=https://download.fedoraproject.org/pub/fedora/linux/releases/34/Everything/x86_64/os/ \
+    --initrd-inject bmd.cfg --extra-args "inst.ks=file:/bmd.cfg"
+```
+
+* Alternatively, same as above but without fetching the kickstart file. The last line has to be swapped with : 
+``` 
     --extra-args="inst.ks=https://git.phyllo.me/home/kickstart/raw/branch/master/leaves/vmd.cfg"
 ```
 
-> Requires an Internet connection
-{.is-info}
-
-
 ### Built-in unattended mode
 
-virt-install can rely on libosinfo's unattended install support to deploy fedora34 any user intervention:
+virt-install can rely on libosinfo's unattended install support to deploy fedora34 without any user intervention:
 
 `virt-install --install fedora32 --unattended`
 
