@@ -66,7 +66,7 @@ $ wget https://download.fedoraproject.org/pub/fedora/linux/releases/34/Server/x8
 * Fetch a kickstart script using wget and put it in the current working directory
 
 ```
-$ wget https://git.phyllo.me/home/kickstart/raw/branch/master/leaves/ivmd.cfg 
+$ wget https://git.phyllo.me/home/kickstart/raw/branch/master/leaves/imd.cfg 
 ```
 
 > If using a custom kickstart script, make sure it includes the cdrom option.
@@ -81,7 +81,7 @@ $ virt-install \
     --virt-type kvm \
     --arch x86_64 \
     --machine q35 \
-    --name ivmd \
+    --name imd \
     --boot uefi \
     --cpu host-model,topology.sockets=1,topology.cores=2,topology.threads=2 \
     --vcpus 4 \
@@ -97,9 +97,9 @@ $ virt-install \
     --input type=keyboard,bus=virtio \
     --input type=tablet,bus=virtio \
     --rng /dev/urandom,model=virtio \
-    --disk path=/var/lib/libvirt/images/ivmd.img,format=raw,bus=virtio,cache=writeback,size=5 \
+    --disk path=/var/lib/libvirt/images/imd.img,format=raw,bus=virtio,cache=writeback,size=5 \
     --location=/var/lib/libvirt/iso/Fedora-Server-dvd-x86_64-34-1.2.iso \
-    --initrd-inject ivmd.cfg --extra-args "inst.ks=file:/ivmd.cfg"
+    --initrd-inject imd.cfg --extra-args "inst.ks=file:/imd.cfg"
 ```
 ### Remote-only kickstart installation
 
