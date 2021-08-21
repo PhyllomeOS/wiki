@@ -2,7 +2,7 @@
 title: Homepage
 description: 
 published: true
-date: 2021-08-12T13:50:23.851Z
+date: 2021-08-21T18:41:40.902Z
 tags: test
 editor: markdown
 dateCreated: 2021-06-19T09:29:20.593Z
@@ -18,19 +18,23 @@ dateCreated: 2021-06-19T09:29:20.593Z
   * [Roadmap](/roadmap)
 
 * **Do**
-  * Install
-    * [As a live system, on a USB stick](/install_usb) 
-    * [On top of Fedora 34 Server](/install_on_fedora_34)
-    * [From source](/install_from_source)
+  * [Install](/install)
+    * [From the official ISO image](/from_iso)
+    * [From source](/from_source)
   * [Use](/use)
+    * [As a live system, from a USB stick](/usb)
+    * [As an installed system, on a disk](/disk)
   * [Hack](/hack)
   * [Contribute](/members)
 
 * **Tasks**
-  * [Deploy](/deploy) a `q35`, `ovmf`, Fedora guest with `virtio` devices using `virt-install`
+  * [Configure the Virtual Machine Manager](/virt-manager)
+  * [Install Phyllome inside Phyllome](/inception) using the Virtual Machine Manager 
+  * [Deploy](/deploy) a `q35`, `ovmf` minimal or desktop-based RPM-guest programatically using `virtio` devices and `virt-install` 
+  * [Use netboot.xyz ISO](/netboot.xyz) to launch the installer for many Linux distributions
   * [Migrate](/migrate) an existing guest virtual machine to another Phyllome OS host
   * [Resize](/resize) an existing virtual disk that uses an EXT4 filesystem
-
+  * [Encrypt](/encrypt) the default directory containing virtual disk images with `fscrypt`
 * **References**
   * *Phyllome OS* 
     * [Requirements](/requirements)
