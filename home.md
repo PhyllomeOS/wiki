@@ -2,7 +2,7 @@
 title: Homepage
 description: 
 published: true
-date: 2021-08-21T18:41:40.902Z
+date: 2021-08-27T00:47:35.174Z
 tags: test
 editor: markdown
 dateCreated: 2021-06-19T09:29:20.593Z
@@ -18,6 +18,7 @@ dateCreated: 2021-06-19T09:29:20.593Z
   * [Roadmap](/roadmap)
 
 * **Do**
+	* [Prepare the host](/prepare)
   * [Install](/install)
     * [From the official ISO image](/from_iso)
     * [From source](/from_source)
@@ -25,7 +26,6 @@ dateCreated: 2021-06-19T09:29:20.593Z
     * [As a live system, from a USB stick](/usb)
     * [As an installed system, on a disk](/disk)
   * [Hack](/hack)
-  * [Contribute](/members)
 
 * **Tasks**
   * [Configure the Virtual Machine Manager](/virt-manager)
@@ -61,6 +61,12 @@ dateCreated: 2021-06-19T09:29:20.593Z
 ## Phyllome OS
 
 [Phyllome OS](https://phyllo.me/) is an operating system that makes it easier to run [various guest systems](/guest) locally using [off-the-shelf hardware](/requirements).
+
+## Phyllome OS Project
+
+*  **Core team**
+   * [How to join](/join)
+   * [Current infrastructure](/infrastructure)
 
 ## Links
 
