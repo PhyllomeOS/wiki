@@ -101,7 +101,7 @@ $ virt-install \
     --location=/var/lib/libvirt/iso/Fedora-Server-dvd-x86_64-34-1.2.iso \
     --initrd-inject imd.cfg --extra-args "inst.ks=file:/imd.cfg"
 ```
-### Remote-only kickstart installation
+### Remote installation with local kickstart
 
 > Requires an Internet connection
 {.is-info}
@@ -142,9 +142,35 @@ $ virt-install \
     --initrd-inject bmd.cfg --extra-args "inst.ks=file:/bmd.cfg"
 ```
 
+### Remote installation with remote kickstart
+
 * Alternatively, same as above but without fetching the kickstart file. The last line has to be swapped with : 
+
 ``` 
-    --extra-args="inst.ks=https://git.phyllo.me/home/kickstart/raw/branch/master/leaves/vmd.cfg"
+virt-install \
+    --connect qemu:///system \
+    --virt-type kvm \
+    --arch x86_64 \
+    --machine q35 \
+    --name flat-dmd \
+    --boot uefi \
+    --cpu host-model,topology.sockets=1,topology.cores=2,topology.threads=2 \
+    --vcpus 4 \
+    --memory 8192 \
+    --video virtio \
+    --channel spicevmc \
+    --autoconsole none \
+    --sound none \
+    --controller type=virtio-serial \
+    --controller type=usb,model=none \
+    --controller type=scsi,model=virtio-scsi \
+    --network network=default,model=virtio \
+    --input type=keyboard,bus=virtio \
+    --input type=tablet,bus=virtio \
+    --rng /dev/urandom,model=virtio \
+    --disk path=/var/lib/libvirt/images/flat-dmd.img,format=raw,bus=virtio,cache=writeback,size=5 \
+    --location=https://download.fedoraproject.org/pub/fedora/linux/releases/34/Everything/x86_64/os/ \
+    --extra-args="inst.ks=https://git.phyllo.me/home/kickstart/raw/branch/master/flat/flat-dmd.cfg"
 ```
 
 ### Built-in unattended mode
