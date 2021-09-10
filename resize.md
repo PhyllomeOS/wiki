@@ -2,7 +2,7 @@
 title: Resize a guest disk image
 description: Resize a a guest disk image using qemu-img and virt-resize
 published: true
-date: 2021-08-12T12:17:26.497Z
+date: 2021-09-10T09:34:56.872Z
 tags: 
 editor: markdown
 dateCreated: 2021-08-12T10:55:58.877Z
@@ -16,18 +16,28 @@ As per the software description : "*qemu-img allows you to create, convert and m
 
 Expanding a new disk implies creating a new blank image of the desired size and "copy" the existing disk into this new bigger image using virt-resize.
 
+> In-place expansion is not supported.  
+{.is-info}
+ 
+
 ## Usage
 
-* Create the new disk phyllome_but_bigger.img of the desired size. In this case, it is 15 GiB 
+* **Create a new disk image**
+
+In-place expansion is not supported. A new disk of the desired size has to be created. 
+
+Use the following command to create `phyllome_but_bigger.img`, a disk of 15 GiB 
 
 ```
-$ qemu-img create -f raw /var/lib/libvirt/images/phyllome-bigger.img 15G
+$ qemu-img create -f raw phyllome-bigger.img 15G
 ```
 
-* Expand the root partition on the disk. 
+* **Expand the root partition**
 
 > This command only works if the root partition is located on vda3 and if the disk image filesystem uses EXT4.  
 {.is-warning}
+
+This command bellow requires root privileges. 
 
 ```
 # virt-resize --expand /dev/vda3 phyllome.img phyllome_but_bigger.img
@@ -57,3 +67,6 @@ Resize operation completed with no errors.  Before deleting the old disk,
 carefully check that the resized disk boots and works correctly.
 ```
 
+* **Inform your virtual machine to use the new disk**
+
+*To-do*
