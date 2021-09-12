@@ -2,7 +2,7 @@
 title: Resize a guest disk image
 description: Resize a a guest disk image using qemu-img and virt-resize
 published: true
-date: 2021-09-10T09:34:56.872Z
+date: 2021-09-12T08:28:18.891Z
 tags: 
 editor: markdown
 dateCreated: 2021-08-12T10:55:58.877Z
@@ -19,6 +19,13 @@ Expanding a new disk implies creating a new blank image of the desired size and 
 > In-place expansion is not supported.  
 {.is-info}
  
+## Installation
+
+* On Fedora-related distributions, `virt-resize` is provided by the `guestfs-tools` package : 
+
+```
+# dnf install guestfs-tools
+```
 
 ## Usage
 
