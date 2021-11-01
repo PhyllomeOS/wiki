@@ -14,9 +14,9 @@ dateCreated: 2021-08-12T10:06:58.917Z
 
 *virt-install* is a command-line utility to install virtual machines. 
 
-### Prequesites 
+### Prerequesites 
 
-* Fedora only, as Phyllome OS ships with virt-install by default.
+* These prerequesites are for Fedora only, as Phyllome OS ships with virt-install by default.
 
 Install the *virt-install* command-line tool on Fedora :
 
