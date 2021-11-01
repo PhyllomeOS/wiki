@@ -2,7 +2,7 @@
 title: Resize a guest disk image
 description: Resize a a guest disk image using qemu-img and virt-resize
 published: true
-date: 2021-09-12T08:28:18.891Z
+date: 2021-11-01T23:40:55.146Z
 tags: 
 editor: markdown
 dateCreated: 2021-08-12T10:55:58.877Z
@@ -16,7 +16,7 @@ As per the software description : "*qemu-img allows you to create, convert and m
 
 Expanding a new disk implies creating a new blank image of the desired size and "copy" the existing disk into this new bigger image using virt-resize.
 
-> In-place expansion is not supported.  
+> In-place expansion is not supported, which mean than a copy of the disk to be expanded has to be created
 {.is-info}
  
 ## Installation
