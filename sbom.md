@@ -2,7 +2,7 @@
 title: Software bill of materials
 description: List software used by Phyllome
 published: true
-date: 2021-08-12T13:24:17.708Z
+date: 2021-11-01T15:16:35.167Z
 tags: 
 editor: markdown
 dateCreated: 2021-08-12T13:24:17.708Z
@@ -85,12 +85,11 @@ The following list is provided by the following command `dnf list --installed | 
 *  website : https://www.gnu.org/software/diffutils/
 * policycoreutils depends on diffutils
 * diffutils.x86_64
-*  
-*  dnf - dnf is the new package manager for Fedora
-*  website : https://rpm-software-management.github.io/
-* dnf.noarch
-* dnf-data.noarch
-* dnf-plugins-core.noarch         
+* dnf - dnf is the new package manager for Fedora
+	* website : https://rpm-software-management.github.io/
+	* dnf.noarch
+	* dnf-data.noarch
+	* dnf-plugins-core.noarch         
 *  dosfstools - "dosfstools consists of the programs mkfs.fat, fsck.fat and fatlabel to create, check and label file * systems of the FAT family."
 *  website : https://github.com/dosfstools/dosfstools
 * dosfstools.x86_64
