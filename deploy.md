@@ -66,7 +66,7 @@ $ wget https://download.fedoraproject.org/pub/fedora/linux/releases/34/Server/x8
 * Fetch a kickstart script using wget and put it in the current working directory
 
 ```
-$ wget https://git.phyllo.me/home/kickstart/raw/branch/master/leaves/imd.cfg 
+$ wget https://git.phyllo.me/home/kickstart/raw/branch/main/leaves/imd.cfg 
 ```
 
 > If using a custom kickstart script, make sure it includes the cdrom option.
@@ -109,7 +109,7 @@ $ virt-install \
 * Fetch a kickstart script using wget and put it in the current working directory
 
 ```
-$ wget https://git.phyllo.me/home/kickstart/raw/branch/master/leaves/vmd.cfg 
+$ wget https://git.phyllo.me/home/kickstart/raw/branch/main/leaves/vmd.cfg 
 ```
 
 > If using a custom kickstart script, make sure it includes repo information
@@ -170,7 +170,38 @@ virt-install \
     --rng /dev/urandom,model=virtio \
     --disk path=/var/lib/libvirt/images/flat-dmd.img,format=raw,bus=virtio,cache=writeback,size=5 \
     --location=https://download.fedoraproject.org/pub/fedora/linux/releases/34/Everything/x86_64/os/ \
-    --extra-args="inst.ks=https://git.phyllo.me/home/kickstart/raw/branch/master/flat/flat-dmd.cfg"
+    --extra-args="inst.ks=https://git.phyllo.me/home/kickstart/raw/branch/main/flat/flat-dmd.cfg"
+```
+
+### Local deployment without installation
+
+The idea here is to define a virtual machine and use the netboot.xyz.iso as a way to boot into an installer. 
+
+```
+virt-install \
+    --connect qemu:///system \
+    --virt-type kvm \
+    --arch x86_64 \
+    --machine q35 \
+    --name live-with-netboot-xyz \
+    --boot uefi \
+    --cpu host-model,topology.sockets=1,topology.cores=1,topology.threads=1 \
+    --vcpus 1 \
+    --memory 2048 \
+    --video virtio \
+    --channel spicevmc \
+    --autoconsole none \
+    --sound none \
+    --controller type=virtio-serial \
+    --controller type=usb,model=none \
+    --controller type=scsi,model=virtio-scsi \
+    --network network=default,model=virtio \
+    --input type=keyboard,bus=virtio \
+    --input type=tablet,bus=virtio \
+    --rng /dev/urandom,model=virtio \
+    --disk none \
+    --cdrom=/var/lib/libvirt/iso/netboot.xyz.iso \
+    --install no_install=yes
 ```
 
 ### Built-in unattended mode
