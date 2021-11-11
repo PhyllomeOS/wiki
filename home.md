@@ -2,7 +2,7 @@
 title: Homepage
 description: 
 published: true
-date: 2021-11-11T17:12:10.734Z
+date: 2021-11-11T17:42:03.804Z
 tags: 
 editor: markdown
 dateCreated: 2021-06-19T09:29:20.593Z
@@ -14,19 +14,21 @@ Welcome to the **Phyllome's OS wiki**!
 
 Here, you will find guides about how to install, use and hack Phyllome OS, as well as more general infos about open-source virtualization and the project behind Phyllome OS.
 
-*[Phyllome OS](https://phyllo.me/) is an operating system that makes it easier to run various guest systems locally using [off-the-shelf hardware](/do/choose/requirements).*
-
 > If you would rather avoid JavaScript altogether, or wish to download the content of this wiki locally, we got you covered [here](https://github.com/PhyllomeOS/wiki).
 {.is-info}
+
+> Phyllome OS is still in its infancy and not yet ready for production use.
+{.is-warning}
+
+*[Phyllome OS](https://phyllo.me/) is an operating system that makes it easier to run various guest systems locally using [off-the-shelf hardware](/do/choose/requirements).*
 
 ## Do
 
 ### Install
 
-> Phyllome OS is still in its infancy and not ready for production use. 
-{.is-warning}
+*The section is meant to help users prepare their computer to host Phyllome OS, to pick the right version that will suit their needs, to understand its limitations, and to install it.*
 
-* [Prepare](/prepare)
+* [Prepare](/do/prepare)
 * [Choose](/do/choose)
 	* [Limitations](/do/choose/limitations)
 	* [Requirements](/do/choose/requirements)
@@ -37,6 +39,8 @@ Here, you will find guides about how to install, use and hack Phyllome OS, as we
 
 ### Use
 
+*The section is meant to introduce how to use Phyllome OS in a general way.*
+
 * [Use it as a live system](/do/use/live) (*to test it*)
 * [Use it as an installed system](/do/use/disk) (*for daily use*)
 
@@ -44,7 +48,7 @@ Here, you will find guides about how to install, use and hack Phyllome OS, as we
 
 #### Phyllome OS
 
-* [Perform a few checks on Phyllome OS](/tasks/checks)
+* [Perform a few checks](/tasks/checks) on Phyllome OS
 * [Configure the Virtual Machine Manager](/tasks/virt-manager) manually or automatically
 * [Deploy Phyllome OS inside Phyllome OS](/tasks/inception) 
 * [Migrate](/tasks/migrate) an existing guest virtual machine to another Phyllome OS host
