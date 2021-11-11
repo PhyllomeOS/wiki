@@ -2,7 +2,7 @@
 title: Homepage
 description: 
 published: true
-date: 2021-11-11T19:06:39.399Z
+date: 2021-11-11T19:27:08.824Z
 tags: 
 editor: markdown
 dateCreated: 2021-06-19T09:29:20.593Z
@@ -115,5 +115,3 @@ In this section, the focus is on KVM virtualization, and its associated tools, i
 * **The website**: https://phyllo.me
 * **The wiki**: https://wiki.phyllo.me
 * **The git**: https://git.phyllo.me
-
-Information published here is available under 
