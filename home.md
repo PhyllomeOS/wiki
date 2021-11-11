@@ -2,7 +2,7 @@
 title: Homepage
 description: 
 published: true
-date: 2021-11-11T17:54:58.738Z
+date: 2021-11-11T19:06:39.399Z
 tags: 
 editor: markdown
 dateCreated: 2021-06-19T09:29:20.593Z
@@ -14,7 +14,7 @@ dateCreated: 2021-06-19T09:29:20.593Z
 
 *In this wiki, you will find guides about how to install, use and hack Phyllome OS, as well as more general infos about open-source virtualization and the project behind this specialized OS.*
 
-> If you would rather avoid JavaScript altogether, or wish to download the content of this wiki locally, just `git clone` [this repository](https://github.com/PhyllomeOS/wiki).
+> If you would rather avoid JavaScript altogether, or wish to download the content of this wiki locally, you can clone [this repository](https://github.com/PhyllomeOS/wiki).
 {.is-info}
 
 > Phyllome OS is still in its infancy and not yet ready for production use.
@@ -28,19 +28,17 @@ dateCreated: 2021-06-19T09:29:20.593Z
 
 * [Prepare](/install/prepare)
 * [Choose](/install/choose)
-	* [Limitations](/install/choose/limitations)
-	* [Requirements](/install/choose/requirements)
 * Install
-  * [From a live medium](/do/install/live) (*default method*)
-  * [In a virtual machine](/do/install/vm) (*to hack it*)
-  * [From source](/do/install/source)
+  * [From a live medium](/install/live) (*default method*)
+  * [In a virtual machine](/install/vm) (*to hack it*)
+  * [From source](/install/source)
 
 ## Use
 
 *The section is meant to introduce how to use Phyllome OS in a general way.*
 
-* [Use it as a live system](/do/use/live) (*to test it*)
-* [Use it as an installed system](/do/use/disk) (*for daily use*)
+* [Use it as a live system](/use/live) (*to test it*)
+* [Use it as an installed system](/use/disk) (*for daily use*)
 
 ## Master
 
