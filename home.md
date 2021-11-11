@@ -2,7 +2,7 @@
 title: Homepage
 description: 
 published: true
-date: 2021-11-11T17:42:03.804Z
+date: 2021-11-11T17:54:58.738Z
 tags: 
 editor: markdown
 dateCreated: 2021-06-19T09:29:20.593Z
@@ -10,43 +10,43 @@ dateCreated: 2021-06-19T09:29:20.593Z
 
 # Phyllome OS wiki
 
-Welcome to the **Phyllome's OS wiki**! 
+`Welcome to the Phyllome's OS wiki! `
 
-Here, you will find guides about how to install, use and hack Phyllome OS, as well as more general infos about open-source virtualization and the project behind Phyllome OS.
+*In this wiki, you will find guides about how to install, use and hack Phyllome OS, as well as more general infos about open-source virtualization and the project behind this specialized OS.*
 
-> If you would rather avoid JavaScript altogether, or wish to download the content of this wiki locally, we got you covered [here](https://github.com/PhyllomeOS/wiki).
+> If you would rather avoid JavaScript altogether, or wish to download the content of this wiki locally, just `git clone` [this repository](https://github.com/PhyllomeOS/wiki).
 {.is-info}
 
 > Phyllome OS is still in its infancy and not yet ready for production use.
 {.is-warning}
 
-*[Phyllome OS](https://phyllo.me/) is an operating system that makes it easier to run various guest systems locally using [off-the-shelf hardware](/do/choose/requirements).*
+*[Phyllome OS](https://phyllo.me/) is an operating system that makes it easier to run various guest systems locally using [off-the-shelf hardware](/install/choose/).*
 
-## Do
-
-### Install
+## Install
 
 *The section is meant to help users prepare their computer to host Phyllome OS, to pick the right version that will suit their needs, to understand its limitations, and to install it.*
 
-* [Prepare](/do/prepare)
-* [Choose](/do/choose)
-	* [Limitations](/do/choose/limitations)
-	* [Requirements](/do/choose/requirements)
+* [Prepare](/install/prepare)
+* [Choose](/install/choose)
+	* [Limitations](/install/choose/limitations)
+	* [Requirements](/install/choose/requirements)
 * Install
   * [From a live medium](/do/install/live) (*default method*)
   * [In a virtual machine](/do/install/vm) (*to hack it*)
   * [From source](/do/install/source)
 
-### Use
+## Use
 
 *The section is meant to introduce how to use Phyllome OS in a general way.*
 
 * [Use it as a live system](/do/use/live) (*to test it*)
 * [Use it as an installed system](/do/use/disk) (*for daily use*)
 
-### Master
+## Master
 
-#### Phyllome OS
+*The section is meant to introduce how to execute particular taks on Phyllome OS, including deploying certain guest systems.*
+
+#### Tasks related to Phyllome OS
 
 * [Perform a few checks](/tasks/checks) on Phyllome OS
 * [Configure the Virtual Machine Manager](/tasks/virt-manager) manually or automatically
@@ -56,7 +56,7 @@ Here, you will find guides about how to install, use and hack Phyllome OS, as we
 * [Encrypt](/tasks/encrypt) virtual disk images using filesystem-level encryption
 * [Use the Cloud Hypervisor](/tasks/cloud-hypervisor) to create a virtual machine
 
-#### Guests systems
+#### Deploy guests systems
 
 * Unix-like
 	* [Linux family](/guests/linux)
