@@ -2,7 +2,7 @@
 title: Homepage
 description: 
 published: true
-date: 2021-11-11T17:09:18.651Z
+date: 2021-11-11T17:10:12.121Z
 tags: 
 editor: markdown
 dateCreated: 2021-06-19T09:29:20.593Z
@@ -26,7 +26,7 @@ Here, you will find guides about how to install, use and hack Phyllome OS, as we
 > Phyllome OS is still in its infancy and not ready for production use. 
 {.is-warning}
 
-* [Prepare](/do/prepare)
+* [Prepare](/prepare)
 * [Choose](/do/choose)
 	* [Limitations](/do/choose/limitations)
 	* [Requirements](/do/choose/requirements)
