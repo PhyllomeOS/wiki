@@ -2,7 +2,7 @@
 title: Homepage
 description: 
 published: true
-date: 2021-11-11T16:16:24.988Z
+date: 2021-11-11T17:09:18.651Z
 tags: 
 editor: markdown
 dateCreated: 2021-06-19T09:29:20.593Z
@@ -12,30 +12,37 @@ dateCreated: 2021-06-19T09:29:20.593Z
 
 Welcome to the **Phyllome's OS wiki**! 
 
-Here, you will find guides about how to install, use and hack Phyllome OS, as well as more general infos about open-source virtualization.
+Here, you will find guides about how to install, use and hack Phyllome OS, as well as more general infos about open-source virtualization and the project behind Phyllome OS.
+
+*[Phyllome OS](https://phyllo.me/) is an operating system that makes it easier to run various guest systems locally using [off-the-shelf hardware](/do/choose/requirements).*
 
 > If you would rather avoid JavaScript altogether, or wish to download the content of this wiki locally, we got you covered [here](https://github.com/PhyllomeOS/wiki).
 {.is-info}
 
-*[Phyllome OS](https://phyllo.me/) is an operating system that makes it easier to run [various guest systems](/phyllomeos/guests) locally using [off-the-shelf hardware](/phyllomeos/requirements).*
-
 ## Do
 
-### Before
+### Install
+
+> Phyllome OS is still in its infancy and not ready for production use. 
+{.is-warning}
 
 * [Prepare](/do/prepare)
 * [Choose](/do/choose)
-* [Install](/do/install)
+	* [Limitations](/do/choose/limitations)
+	* [Requirements](/do/choose/requirements)
+* Install
   * [From a live medium](/do/install/live) (*default method*)
-  * [From source](/do/install/source)
   * [In a virtual machine](/do/install/vm) (*to hack it*)
+  * [From source](/do/install/source)
 
-### During
+### Use
 
-* [As a live system](/do/use/live) (*to test it*)
-* [As an installed system](/do/use/disk) (*for daily use*)
+* [Use it as a live system](/do/use/live) (*to test it*)
+* [Use it as an installed system](/do/use/disk) (*for daily use*)
 
-### After
+### Master
+
+#### Phyllome OS
 
 * [Perform a few checks on Phyllome OS](/tasks/checks)
 * [Configure the Virtual Machine Manager](/tasks/virt-manager) manually or automatically
@@ -45,42 +52,52 @@ Here, you will find guides about how to install, use and hack Phyllome OS, as we
 * [Encrypt](/tasks/encrypt) virtual disk images using filesystem-level encryption
 * [Use the Cloud Hypervisor](/tasks/cloud-hypervisor) to create a virtual machine
 
-## References
+#### Guests systems
+
+* Unix-like
+	* [Linux family](/guests/linux)
+  * [BSD family](/guests/bsd)
+  * [OpenSolaris and derivatives](/guests/opensolaris)
+  * [Darwin and derivatives](/guests/darwin)
+* Windows NT
+	* [Windows family](/guests/windows)
+  * [ReactOS](/guests/reactos)
+* Independant
+	* [Sculpt OS](/guests/sculpt-os)
+  * [Fuschia OS](/guests/fuschia-os)
+
+## Learn
 
 ### Phyllome OS 
 
 * [Context](/phyllomeos/context)
 * [Purpose](/phyllomeos/purpose)
-* [Limitations](/phyllomeos/limitations)
-* [Requirements](/phyllomeos/requirements)
+* [Use cases](/phyllomeos/use-cases)
 * [Architecture](/phyllomeos/architecture)
 * [Software bill of materials](/phyllomeos/sbom) (SBOM)
 * [Roadmap](/phyllomeos/roadmap)
 * [Frequently Asked Questions](/phyllomeos/faq) (FAQ)
 
-#### Guests support
+### Guests support matrix
 
-By design, Phyllome OS only supports modern UEFI-based guests operating systems compatible with virtio devices. 
+By design, Phyllome OS only supports modern UEFI-based guests operating systems compatible with virtio devices and that haven't reached their end of life. 
 
-> It is however possible to deploy non-UEFI compatible operating systems within these guest systems, using so-called nested virtualization.
+> It is possible to deploy non-UEFI compatible operating systems within these guest systems, using so-called nested virtualization.
 {.is-info}
 
-* Windows NT family
-	* Windows
-  * ReactOS
-* Unix-like operating systems
-	* Linux family
-  * BSD family
-  * OpenSolaris and derivatives
-  * Darwin and derivatives
+### About open-source virtualization
 
-### On virtualization
+In this section, the focus is on KVM virtualization, and its associated tools, including QEMU, the Linux kernel, libvirt, etc. 
 
-This 
-
+* [Anatomy of a virtual machine](/virtualization/vm)
+	* [Chipsets](/virtualization/chipset)
+  * [Firmware](/virtualization/firmware)
+  * [CPU](/virtualization/cpu)
+  * [Memory](/virtualization/memory)
+  * [Storage](/virtualization/storage)
+  * [Display](/virtualization/display)
 * [Linux Kernel modules](/kernel_modules) related to virtualization
 * [Virtualization-related paths](/linux-paths) on Linux
-* [Devices](/devices)
 * [XML](/xml) commented 
 * [Lexicon](/lexicon) 
 * [External resources](/resources)
