@@ -2,7 +2,7 @@
 title: Homepage
 description: 
 published: true
-date: 2021-11-11T15:45:23.888Z
+date: 2021-11-11T15:46:34.508Z
 tags: 
 editor: markdown
 dateCreated: 2021-06-19T09:29:20.593Z
@@ -14,7 +14,7 @@ Welcome to the **Phyllome's OS wiki**!
 
 Here, you will find guides about how to install, use and hack Phyllome OS, as well more general infos as about open-source virtualization in general.
 
-> If you would rather avoid JavaScript altogether, or wish to download the content of this wiki locally, we got you covered [here](https://git.phyllo.me/home/wiki).
+> If you would rather avoid JavaScript altogether, or wish to download the content of this wiki locally, we got you covered [here](https://github.com/PhyllomeOS/wiki).
 {.is-info}
 
 *[Phyllome OS](https://phyllo.me/) is an operating system that makes it easier to run [various guest systems](/phyllomeos/guest) locally using [off-the-shelf hardware](/phyllomeos/requirements).*
