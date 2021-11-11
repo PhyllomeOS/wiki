@@ -2,8 +2,8 @@
 title: Homepage
 description: 
 published: true
-date: 2021-08-27T00:48:33.102Z
-tags: test
+date: 2021-11-11T13:36:40.891Z
+tags: 
 editor: markdown
 dateCreated: 2021-06-19T09:29:20.593Z
 ---
@@ -28,7 +28,7 @@ dateCreated: 2021-06-19T09:29:20.593Z
   * [Hack](/hack)
 
 * **Tasks**
-  * [Configure the Virtual Machine Manager](/virt-manager)
+  * [Configure the Virtual Machine Manager](/tasks/virt-manager)
   * [Install Phyllome inside Phyllome](/inception) using the Virtual Machine Manager 
   * [Deploy](/deploy) a `q35`, `ovmf` minimal or desktop-based RPM-guest programatically using `virtio` devices and `virt-install` 
   * [Use netboot.xyz ISO](/netboot.xyz) to launch the installer for many Linux distributions
