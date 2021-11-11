@@ -2,34 +2,40 @@
 title: Homepage
 description: 
 published: true
-date: 2021-11-11T13:36:40.891Z
+date: 2021-11-11T14:05:07.941Z
 tags: 
 editor: markdown
 dateCreated: 2021-06-19T09:29:20.593Z
 ---
 
-# Welcome to the Phyllome OS wiki
+# Phyllome OS wiki
+
+Welcome to the Phyllome's OS wiki! 
+
+Here, you will find informations about this Linux distribution, as well as about open-source virtualization in general.
+
+Feel free to contibute.
 
 ## Table of contents
 
-* **Overview**
-	* [Context](/context)
-  * [Phyllome's purpose](/purpose)
-  * [Roadmap](/roadmap)
+* **[Overview](/overview)**
+	* [Context](/overview/context)
+  * [Phyllome's purpose](/overview/purpose)
+  * [Roadmap](/overview/roadmap)
 
-* **Do**
-	* [Prepare the host](/prepare)
-  * [Install](/install)
-    * [From the official ISO image](/from_iso)
-    * [From source](/from_source)
-  * [Use](/use)
-    * [As a live system, from a USB stick](/usb)
-    * [As an installed system, on a disk](/disk)
+* **[Do](/do)**
+	* [Prepare](/do/prepare)
+  * [Install](/do/install) 
+    * [From a live medium](/do/install/live) (*recommended method*)
+    * [From source](/do/install/source)
+  * [Use](/do/use) 
+    * [As a live system](/do/use/live) (*to test it*)
+    * [As an installed system](/do/use/disk) (*for daily usage*)
   * [Hack](/hack)
 
-* **Tasks**
+* **[Tasks](/tasks/)**
   * [Configure the Virtual Machine Manager](/tasks/virt-manager)
-  * [Install Phyllome inside Phyllome](/inception) using the Virtual Machine Manager 
+  * [Install Phyllome inside Phyllome](/tasks/inception) using the Virtual Machine Manager 
   * [Deploy](/deploy) a `q35`, `ovmf` minimal or desktop-based RPM-guest programatically using `virtio` devices and `virt-install` 
   * [Use netboot.xyz ISO](/netboot.xyz) to launch the installer for many Linux distributions
   * [Migrate](/migrate) an existing guest virtual machine to another Phyllome OS host
