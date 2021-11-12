@@ -2,7 +2,7 @@
 title: Choose
 description: Understand if Phyllome OS is for you and pick the right version
 published: true
-date: 2021-11-12T15:11:37.710Z
+date: 2021-11-12T15:22:33.187Z
 tags: 
 editor: markdown
 dateCreated: 2021-11-11T18:18:23.807Z
@@ -72,17 +72,7 @@ Please also note that macOS or Windows can also be used to host virtual machines
 
 [^3]: Take for instance the boot process, or before an operating system effectively takes control over the hardware. Major operating systems editors that are working directly with OEM integrators have a distinct advantage over editors that aren't: these major editors have almost unlimited resources, sometimes almost perfect control over hardware, and can therefore tame the underlying hardware, effectively controlling, measuring and attesting the entire boot process. To implement a user-backed root of trust on a particular hardware platform, one would need to take several extra measures, relying on something like [Heads](https://github.com/osresearch/heads) which, among other things, involves physically flashing a more open firmware to a motherboard, a complicated process that is available for a few hardware platforms only. Fortunately, some hardware integrators like [Purism](https://puri.sm/) or [System76](https://system76.com/) are backing security measures straight into hardware platforms, while at the same time respecting user freedom. 
 
-## Requirements
-
-`To be fetched from white paper : hardware requirements ; Phyllome OS version`
-
-## Use
-
-Install
-
-    From a live medium (default method)
-    In a virtual machine (to hack it)
-    From source
+## Versions
 
 
 
