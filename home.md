@@ -2,7 +2,7 @@
 title: Homepage
 description: 
 published: true
-date: 2021-11-12T11:51:04.590Z
+date: 2021-11-12T15:08:49.932Z
 tags: 
 editor: markdown
 dateCreated: 2021-06-19T09:29:20.593Z
@@ -12,9 +12,9 @@ dateCreated: 2021-06-19T09:29:20.593Z
 
 `Welcome to the Phyllome's OS wiki! `
 
-*In this wiki, you will find guides about how to install, use and hack Phyllome OS, as well as more general infos about open-source virtualization and the project behind this specialized OS.*
+*In this wiki, you will find guides about how to install, use and hack Phyllome OS, as well as more general information about open-source virtualization and the project behind this specialized OS.*
 
-> If you would rather avoid JavaScript altogether, or wish to download the content of this wiki locally, you can clone [this repository](https://github.com/PhyllomeOS/wiki).
+> If you would rather avoid JavaScript altogether, or wish to download the content of this wiki locally, feel free to clone [this repository](https://github.com/PhyllomeOS/wiki).
 {.is-info}
 
 > Phyllome OS is still in its infancy and not yet ready for production use.
@@ -22,19 +22,19 @@ dateCreated: 2021-06-19T09:29:20.593Z
 
 *[Phyllome OS](https://phyllo.me/) is an operating system that makes it easier to run various guest systems locally using [off-the-shelf hardware](/install/choose/).*
 
-## Install
+## Deploy
 
 *The section is meant to help users prepare their computer to host Phyllome OS, to pick the right version that will suit their needs, to understand its limitations, and to install it.*
 
-* [Prepare](/install/prepare)
-* [Choose](/install/choose)
-	* [Is the Phyllome OS right for you?](/install/choose/phyllomeos)
-  * [Requirements](/install/choose/requirements)
-  * [Fetch and install](/install/choose/fetch)
-* Install
-  * [From a live medium](/install/live) (*default method*)
-  * [In a virtual machine](/install/vm) (*to hack it*)
-  * [From source](/install/source)
+* [Choose](/deploy/choose)
+	* [Is Phyllome OS right for you?](/deploy/choose/phyllomeos)
+  * [Requirements](/deploy/choose/requirements)
+* [Install](/deploy/install)
+  * [Prepare](/deploy/install/prepare)
+  * [Create an installation medium](/deploy/install/medium)
+  * [From a live medium](/deploy/install/live) (*default method*)
+  * [In a virtual machine](/deploy/install/vm) (*to hack it*)
+  * [From source](/deploy/install/source)
 
 ## Use
 
