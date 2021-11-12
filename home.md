@@ -2,7 +2,7 @@
 title: Homepage
 description: 
 published: true
-date: 2021-11-12T09:26:45.972Z
+date: 2021-11-12T11:51:04.590Z
 tags: 
 editor: markdown
 dateCreated: 2021-06-19T09:29:20.593Z
@@ -28,6 +28,9 @@ dateCreated: 2021-06-19T09:29:20.593Z
 
 * [Prepare](/install/prepare)
 * [Choose](/install/choose)
+	* [Is the Phyllome OS right for you?](/install/choose/phyllomeos)
+  * [Requirements](/install/choose/requirements)
+  * [Fetch and install](/install/choose/fetch)
 * Install
   * [From a live medium](/install/live) (*default method*)
   * [In a virtual machine](/install/vm) (*to hack it*)
