@@ -2,7 +2,7 @@
 title: Choose
 description: Understand if Phyllome OS is for you and pick the right version
 published: true
-date: 2021-11-12T09:04:10.130Z
+date: 2021-11-12T09:04:19.946Z
 tags: 
 editor: markdown
 dateCreated: 2021-11-11T18:18:23.807Z
@@ -17,7 +17,7 @@ Phyllome OS is based on two general assomptions:
 * **The host operating system should not be modified, in general**
 	* Two Phyllome OS hosts should barely differ, allowing virtual machines to be fly from one host to the other.
 
-## Limitations
+## Some limitations
 
 Relying on a virtual machine as its primarily personnal environment has advantages but also comes with several limitations in comparaison to using a bare-metal operating system. Some limitations might be overcome one day, others might not. Let's list some of these limitations.
 
