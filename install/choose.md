@@ -2,7 +2,7 @@
 title: Choose
 description: Understand if Phyllome OS is for you and pick the right version
 published: true
-date: 2021-11-11T19:26:35.174Z
+date: 2021-11-12T09:04:10.130Z
 tags: 
 editor: markdown
 dateCreated: 2021-11-11T18:18:23.807Z
@@ -39,3 +39,4 @@ Relying on a virtual machine as its primarily personnal environment has advantag
 
 ## Requirements
 
+`To be fetched from white paper`
