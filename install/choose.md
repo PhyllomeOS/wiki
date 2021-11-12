@@ -2,7 +2,7 @@
 title: Choose
 description: Understand if Phyllome OS is for you and pick the right version
 published: true
-date: 2021-11-12T13:52:08.492Z
+date: 2021-11-12T13:52:28.535Z
 tags: 
 editor: markdown
 dateCreated: 2021-11-11T18:18:23.807Z
@@ -20,7 +20,7 @@ Phyllome OS makes a few assumptions, including the following:
 * **The host operating system should not be modified, in general**
 	* Two Phyllome OS hosts should barely differ, allowing virtual machines to be migrated from one host to the next.
   
-Some limitations result directly from these choices.
+Some limitations result directly from these assumptions.
 
 ## Limitations
 
