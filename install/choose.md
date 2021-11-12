@@ -2,7 +2,7 @@
 title: Choose
 description: Understand if Phyllome OS is for you and pick the right version
 published: true
-date: 2021-11-12T13:52:28.535Z
+date: 2021-11-12T13:55:43.019Z
 tags: 
 editor: markdown
 dateCreated: 2021-11-11T18:18:23.807Z
@@ -52,7 +52,7 @@ Some of these limitations will be tackled or greatly reduced one day, others mig
 
 Here is a table to help you pick a **desktop-oriented** operating system. 
 
-How to read this table? For instance: *If you care most about virtualization and security, you would be better off picking [Qubes OS](https://www.qubes-os.org/) or the upcoming [Spectrum](https://spectrum-os.org/) instead of Phyllome OS.*
+How to read this table? For instance: *If you care most about virtualization and put security first, you would be better off picking [Qubes OS](https://www.qubes-os.org/) or the upcoming [Spectrum](https://spectrum-os.org/) instead of Phyllome OS.*
 
 |  | Security | Usability | 
 |---|---|---| 
@@ -70,7 +70,7 @@ Please also note that macOS or Windows can also be used to host virtual machines
 
 [^2]: A common pain point for Linux security are desktop environments (DE), which have a limited user base scattered across many different DE: there is a lot of complexity due to adding desktop environments atop the Linux kernel and its associated tools. Simple bugs might still lurk in the codebase for a long time. See for instance [*Is the Linux desktop less secure than Windows 10: Or how super mario music can own your system* (PDF)](https://archive.fosdem.org/2017/schedule/event/linux_desktop_versus_windows10/attachments/slides/1730/export/events/attachments/linux_desktop_versus_windows10/slides/1730/fosdem_linux_desktop_security.pdf), by M.Hanno Böck (2017).
 
-[^3]: Take for instance the boot process, or before an operating system effectively takes control over the hardware. Major operating systems editors that are working directly with OEM integrators have a distinct advantage over editors that aren't: they have almost unlimited resources and can tame the underlying hardware, effectively controlling, measuring and attesting the entire boot process. To implement a user-backed root of trust on a particular hardware platform, one would need to take several extra measures, relying on something like [Heads](https://github.com/osresearch/heads) which, among other things, involves physically flashing a more open firmware to a motherboard, a complicated process. Fortunately, some hardware integrators like [Purism](https://puri.sm/) or [System76](https://system76.com/) are backing security measures straight into hardware platforms while at the same time respecting user freedom. 
+[^3]: Take for instance the boot process, or before an operating system effectively takes control over the hardware. Major operating systems editors that are working directly with OEM integrators have a distinct advantage over editors that aren't: these major editors have almost unlimited resources, sometimes almost perfect control over hardware, and can therefore tame the underlying hardware, effectively controlling, measuring and attesting the entire boot process. To implement a user-backed root of trust on a particular hardware platform, one would need to take several extra measures, relying on something like [Heads](https://github.com/osresearch/heads) which, among other things, involves physically flashing a more open firmware to a motherboard, a complicated process that is available for a few hardware platforms only. Fortunately, some hardware integrators like [Purism](https://puri.sm/) or [System76](https://system76.com/) are backing security measures straight into hardware platforms, while at the same time respecting user freedom. 
 
 ## Requirements
 
