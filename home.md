@@ -2,7 +2,7 @@
 title: Homepage
 description: 
 published: true
-date: 2021-11-12T15:40:05.315Z
+date: 2021-11-12T18:59:20.000Z
 tags: 
 editor: markdown
 dateCreated: 2021-06-19T09:29:20.593Z
@@ -32,8 +32,8 @@ dateCreated: 2021-06-19T09:29:20.593Z
 * [Install](/deploy/install)
   * [Prepare](/deploy/install/prepare)
   * [Create an installation medium](/deploy/install/medium)
-  * [From a live medium](/deploy/install/live) (*default method*)
-  * [In a virtual machine](/deploy/install/vm) (*to hack it*)
+  * [Install from a live medium](/deploy/install/live) (**default method**)
+  * [In a virtual machine](/deploy/install/vm) (**to hack it**)
   * [From source](/deploy/install/source)
 
 ## Use
