@@ -2,7 +2,7 @@
 title: On some ways to deploy Phyllome OS
 description: 
 published: true
-date: 2021-11-13T13:32:46.084Z
+date: 2021-11-13T17:21:20.498Z
 tags: 
 editor: markdown
 dateCreated: 2021-11-13T11:19:53.459Z
@@ -14,12 +14,11 @@ dateCreated: 2021-11-13T11:19:53.459Z
 
 * **Choose**
 	* [Is Phyllome OS right for you?](/deploy/rightforyou)
-  * [Requirements](/deploy/requirements)
 * **Install**
   * [Prepare](/deploy/prepare)
   * [Create an installation medium](/deploy/medium)
-  * [Install from a live medium](/deploy/live) (*default method*)
-  * [Deploy in a virtual machine](/deploy/vm) (*to hack it*)
+  * [Install from a live medium](/deploy/live) 
+  * [Deploy in a virtual machine](/deploy/vm)
   * [From source](/deploy/source)
 --- 
-*Go to the [Get started section](/getstarted) if you already have a working medium or installation*
+*Already have a working medium or installation? Go to the [Get started section](/getstarted)*
