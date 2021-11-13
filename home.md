@@ -2,7 +2,7 @@
 title: Homepage
 description: 
 published: true
-date: 2021-11-13T13:09:04.302Z
+date: 2021-11-13T16:06:32.524Z
 tags: 
 editor: markdown
 dateCreated: 2021-06-19T09:29:20.593Z
@@ -17,7 +17,7 @@ dateCreated: 2021-06-19T09:29:20.593Z
 > If you would rather avoid JavaScript altogether, or wish to download the content of this wiki locally, feel free to clone [this repository](https://github.com/PhyllomeOS/wiki).
 {.is-info}
 
-> Phyllome OS is still in its infancy and not yet ready for production use.
+> Phyllome OS is not production-ready.
 {.is-warning}
 
 *[Phyllome OS](https://phyllo.me/) is an operating system that makes it easier to run various guest systems locally using [off-the-shelf hardware](https://wiki.phyllo.me/deploy/requirements).*
