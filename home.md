@@ -2,7 +2,7 @@
 title: Homepage
 description: 
 published: true
-date: 2021-11-13T16:06:32.524Z
+date: 2021-11-13T16:49:46.726Z
 tags: 
 editor: markdown
 dateCreated: 2021-06-19T09:29:20.593Z
@@ -73,7 +73,7 @@ dateCreated: 2021-06-19T09:29:20.593Z
   * [ReactOS](/gofurther/reactos)
 * Independant
 	* [Sculpt OS](/gofurther/sculpt-os)
-  * [Fuschia OS](/gofurther/fuschia-os)
+  * [Fuchsia OS](/gofurther/fuchsia-os)
 
 ## On Phyllome OS 
 
