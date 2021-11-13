@@ -2,7 +2,7 @@
 title: Homepage
 description: 
 published: true
-date: 2021-11-13T17:29:18.919Z
+date: 2021-11-13T17:30:51.669Z
 tags: 
 editor: markdown
 dateCreated: 2021-06-19T09:29:20.593Z
@@ -58,11 +58,11 @@ dateCreated: 2021-06-19T09:29:20.593Z
 *Although Phyllome OS thrives to pick good defaults that will work for many guest systems, further optimizations may be needed.* 
 
 * [Linux family](/gofurther/linux)
-* [Darwin and derivatives](/gofurther/darwin)
-* [Windows family](/gofurther/windows)
+* [Darwin family](/gofurther/darwin)
+* [Windows NT family](/gofurther/windows)
 * ...and [**more**](https://wiki.phyllo.me/en/gofurther)
 
-## On Phyllome OS 
+## About Phyllome OS 
 
 *In this section, the context around Phyllome OS is set and its internals are described* 
 
