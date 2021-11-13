@@ -2,7 +2,7 @@
 title: Homepage
 description: 
 published: true
-date: 2021-11-13T12:53:54.634Z
+date: 2021-11-13T13:02:01.198Z
 tags: 
 editor: markdown
 dateCreated: 2021-06-19T09:29:20.593Z
@@ -47,7 +47,7 @@ dateCreated: 2021-06-19T09:29:20.593Z
 
 *The section is meant to introduce how to execute particular taks on Phyllome OS, including deploying certain guest systems. Some of these tasks will be rendered obsolete with newer Phyllome OS version.*
 
-#### Tasks related to Phyllome OS
+### Tasks related to Phyllome OS
 
 * [Perform a few checks](/gofurther/checks) on Phyllome OS
 * [Configure the Virtual Machine Manager](/gofurther/virt-manager) manually or automatically
