@@ -2,7 +2,7 @@
 title: Homepage
 description: 
 published: true
-date: 2021-11-13T10:00:55.996Z
+date: 2021-11-13T10:24:13.500Z
 tags: 
 editor: markdown
 dateCreated: 2021-06-19T09:29:20.593Z
@@ -52,6 +52,7 @@ dateCreated: 2021-06-19T09:29:20.593Z
 * [Perform a few checks](/gofurther/checks) on Phyllome OS
 * [Configure the Virtual Machine Manager](/gofurther/virt-manager) manually or automatically
 * [Install a guest system using netboot.xyz](/gofurther/install-guest)
+* [Use virt-install to install a guest system](/gofurther/virt-install) 
 * [Deploy Phyllome OS inside Phyllome OS](/gofurther/inception)
 * [Migrate](/gofurther/migrate) an existing guest virtual machine to another Phyllome OS host
 * [Resize](/gofurther/resize) an existing virtual disk
