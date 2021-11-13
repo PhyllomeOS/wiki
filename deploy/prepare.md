@@ -1,18 +1,16 @@
 ---
-title: Preparation
-description: Prepare the host computer
+title:  Checkbox your system
+description: 
 published: true
-date: 2021-11-13T13:29:27.873Z
+date: 2021-11-13T17:20:09.745Z
 tags: 
 editor: markdown
 dateCreated: 2021-11-13T10:47:33.615Z
 ---
 
-# Checkbox your system
+# Prepare the host computer
 
 ## Requirements
-
-## Prepare your host computer 
 
 `To-do`
 
