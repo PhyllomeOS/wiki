@@ -2,7 +2,7 @@
 title: Homepage
 description: 
 published: true
-date: 2021-11-13T16:49:46.726Z
+date: 2021-11-13T17:10:38.697Z
 tags: 
 editor: markdown
 dateCreated: 2021-06-19T09:29:20.593Z
@@ -18,9 +18,9 @@ dateCreated: 2021-06-19T09:29:20.593Z
 {.is-info}
 
 > Phyllome OS is not production-ready.
-{.is-warning}
+> {.is-warning}
 
-*[Phyllome OS](https://phyllo.me/) is an operating system that makes it easier to run various guest systems locally using [off-the-shelf hardware](https://wiki.phyllo.me/deploy/requirements).*
+*[Phyllome OS](https://phyllo.me/) is an operating system that makes it easier to run various guest systems locally using [off-the-shelf hardware](https://wiki.phyllo.me/deploy/prepare).*
 
 ## Deploy
 
@@ -28,7 +28,6 @@ dateCreated: 2021-06-19T09:29:20.593Z
 
 * **Choose**
 	* [Is Phyllome OS right for you?](/deploy/rightforyou)
-  * [Requirements](/deploy/requirements)
 * **Install**
   * [Prepare](/deploy/prepare)
   * [Create an installation medium](/deploy/medium)
