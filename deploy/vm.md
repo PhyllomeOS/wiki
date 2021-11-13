@@ -8,5 +8,26 @@ editor: markdown
 dateCreated: 2021-11-12T15:18:50.223Z
 ---
 
-# Header
-Your content here
+# How to deploy Phyllome OS in a virtual machine
+
+`To-do`
+
+## On Linux
+
+`To-do`
+
+### Fedora
+
+`To-do`
+
+### Debian
+
+`To-do`
+
+## On macOS
+
+`To-do`
+
+## On Windows
+
+`To-do`
