@@ -2,7 +2,7 @@
 title: Get started
 description: 
 published: true
-date: 2021-11-13T13:00:54.645Z
+date: 2021-11-13T14:57:40.817Z
 tags: 
 editor: markdown
 dateCreated: 2021-11-13T11:37:12.103Z
@@ -15,6 +15,8 @@ dateCreated: 2021-11-13T11:37:12.103Z
 * [Use it as a live system](/getstarted/live) (*to test it*)
 * [Use it as an installed system](/getstarted/disk) (*for daily use*)
 
-> If you haven't deploy Phyllome OS, please go to the [Deploy](/deploy) section. If you already have a working system installed, go to the [next section](/gofurther). 
-{.is-info}
+---
 
+*If you haven't deploy Phyllome OS, please go to the [Deploy](/deploy) section.* 
+
+*If you already have a working system installed and would like to explore what to do next, please go to the [next section](/gofurther).*
