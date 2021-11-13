@@ -2,7 +2,7 @@
 title: Homepage
 description: 
 published: true
-date: 2021-11-13T17:51:24.411Z
+date: 2021-11-13T19:32:55.887Z
 tags: 
 editor: markdown
 dateCreated: 2021-06-19T09:29:20.593Z
@@ -29,11 +29,10 @@ dateCreated: 2021-06-19T09:29:20.593Z
 * **Choose**
 	* [Is Phyllome OS right for you?](/deploy/rightforyou)
 * **Install**
-  * [Prepare](/deploy/prepare)
+  * [Prepare your computer](/deploy/prepare)
   * [Create an installation medium](/deploy/medium)
-  * [Install from a live medium](/deploy/live) (*default method*)
-  * [Deploy in a virtual machine](/deploy/vm) (*to hack it*)
-  * [From source](/deploy/source)
+  * [Install from a thumb drive](/deploy/live) (*default method*)
+	* ...and [**more**](https://wiki.phyllo.me/en/deploy)
 
 ## Get started
 
@@ -69,29 +68,16 @@ dateCreated: 2021-06-19T09:29:20.593Z
 * [Context](/phyllomeos/context)
 * [Purpose](/phyllomeos/purpose)
 * [Use cases](/phyllomeos/use-cases)
-* [Architecture](/phyllomeos/architecture)
-* [Software bill of materials](/phyllomeos/sbom) (SBOM)
-* [Roadmap](/phyllomeos/roadmap)
-* [Frequently Asked Questions](/phyllomeos/faq) (FAQ)
-* [Guests support matrix](/phyllomeos/guests)
+* ...and [**more**](https://wiki.phyllo.me/en/phyllomeos)
 
 ### On open-source virtualization
 
 *In this section, the focus is on KVM virtualization, and its associated tools, including QEMU, the Linux kernel, libvirt, etc., mostly in the context of Phyllome OS.* 
 
 * [Anatomy of a virtual machine](/virt/vm)
-	* [Chipsets](/virt/chipset)
-  * [Firmware](/virt/firmware)
-  * [CPU](/virt/cpu)
-  * [Memory](/virt/memory)
-  * [Storage](/virt/storage)
-  * [Graphics card](/virt/graphics-card)
-  * [Display](/virt/display)
-* [Linux Kernel modules](/virt/kernel-modules) related to virtualization
-* [Virtualization-related paths](/virt/linux-paths) on Linux
-* [XML](/virt/xml) commented 
 * [Lexicon](/virt/lexicon) 
 * [External resources](/virt/resources)
+* ...and [**more**](https://wiki.phyllo.me/en/virt)
 
 ## The Phyllome OS Project
 
