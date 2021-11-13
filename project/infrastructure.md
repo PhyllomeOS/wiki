@@ -2,7 +2,7 @@
 title: Infrastructure
 description: 
 published: true
-date: 2021-11-13T12:27:26.768Z
+date: 2021-11-13T12:49:11.558Z
 tags: 
 editor: markdown
 dateCreated: 2021-11-13T12:10:04.658Z
