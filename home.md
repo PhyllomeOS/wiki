@@ -2,7 +2,7 @@
 title: Homepage
 description: 
 published: true
-date: 2021-11-13T10:24:13.500Z
+date: 2021-11-13T12:00:06.280Z
 tags: 
 editor: markdown
 dateCreated: 2021-06-19T09:29:20.593Z
@@ -111,7 +111,7 @@ dateCreated: 2021-06-19T09:29:20.593Z
 
 ## The Phyllome OS Project
 
-### Functionning
+### Contribute
 
 * [How to join](/project/join)
 * [Current infrastructure](/project/infrastructure)
