@@ -2,7 +2,7 @@
 title: Tasks
 description: 
 published: true
-date: 2021-11-13T17:35:22.110Z
+date: 2021-11-13T22:16:47.943Z
 tags: 
 editor: markdown
 dateCreated: 2021-11-13T11:40:46.114Z
@@ -16,9 +16,9 @@ dateCreated: 2021-11-13T11:40:46.114Z
 
 * [Perform a few checks](/gofurther/checks) on Phyllome OS
 * [Configure the Virtual Machine Manager](/gofurther/virt-manager) manually or automatically
-* [Install a guest system using netboot.xyz](/gofurther/install-guest)
-* [Use virt-install to install a guest system](/gofurther/virt-install) 
-* [Deploy Phyllome OS inside Phyllome OS](/gofurther/inception)
+* [Manully install](/gofurther/install-guest) a Linux or Windows guest system using `netboot.xyz`
+* [Automatically deploy](/gofurther/virt-install) a RPM-based guest system with `virt-install` 
+* [Inception](/gofurther/inception) or Phyllome OS inside Phyllome OS inside Phyllome OS
 * [Migrate](/gofurther/migrate) an existing guest virtual machine to another Phyllome OS host
 * [Resize](/gofurther/resize) an existing virtual disk
 * [Encrypt](/gofurther/encrypt) virtual disk images using filesystem-level encryption
