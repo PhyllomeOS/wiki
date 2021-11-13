@@ -2,7 +2,7 @@
 title: Understand what you are signing up for
 description: 
 published: true
-date: 2021-11-13T16:24:47.267Z
+date: 2021-11-13T17:18:28.519Z
 tags: 
 editor: markdown
 dateCreated: 2021-11-13T11:19:38.215Z
@@ -13,7 +13,7 @@ dateCreated: 2021-11-13T11:19:38.215Z
 > Phyllome OS is not production-ready.
 {.is-warning}
 
-Phyllome OS makes a few assumptions, including the following: 
+Phyllome OS makes a few assumptions, including the following ones: 
 
 * **Virtual machines have become viable personal computing environments, including for desktop computing** 
 	* Due to their software-based nature, virtual machines are extremely flexible, and can for instance emulate features that their physical host may lack. 
