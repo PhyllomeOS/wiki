@@ -2,7 +2,7 @@
 title: Homepage
 description: 
 published: true
-date: 2021-11-13T13:02:01.198Z
+date: 2021-11-13T13:05:56.208Z
 tags: 
 editor: markdown
 dateCreated: 2021-06-19T09:29:20.593Z
@@ -83,6 +83,8 @@ dateCreated: 2021-06-19T09:29:20.593Z
 
 ## On Phyllome OS 
 
+*In this section, Phyllome OS' internals are described.* 
+
 * [Context](/phyllomeos/context)
 * [Purpose](/phyllomeos/purpose)
 * [Use cases](/phyllomeos/use-cases)
@@ -92,7 +94,7 @@ dateCreated: 2021-06-19T09:29:20.593Z
 * [Frequently Asked Questions](/phyllomeos/faq) (FAQ)
 * [Guests support matrix](/phyllomeos/guests)
 
-## On open-source virtualization
+### On open-source virtualization
 
 *In this section, the focus is on KVM virtualization, and its associated tools, including QEMU, the Linux kernel, libvirt, etc., mostly in the context of Phyllome OS.* 
 
