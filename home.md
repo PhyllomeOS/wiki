@@ -2,7 +2,7 @@
 title: Homepage
 description: 
 published: true
-date: 2021-11-13T12:00:06.280Z
+date: 2021-11-13T12:53:54.634Z
 tags: 
 editor: markdown
 dateCreated: 2021-06-19T09:29:20.593Z
@@ -121,3 +121,5 @@ dateCreated: 2021-06-19T09:29:20.593Z
 * **The website**: https://phyllo.me
 * **The wiki**: https://wiki.phyllo.me
 * **The internal git**: https://git.phyllo.me
+* **The issue board**: https://kanboard.phyllo.me/
+
