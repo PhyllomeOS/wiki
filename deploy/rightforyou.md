@@ -2,7 +2,7 @@
 title: Understand what you are signing up for
 description: 
 published: true
-date: 2021-11-13T13:12:50.608Z
+date: 2021-11-13T13:21:54.995Z
 tags: 
 editor: markdown
 dateCreated: 2021-11-13T11:19:38.215Z
@@ -50,6 +50,9 @@ Some of these limitations will be tackled or greatly reduced one day, others mig
 
 ### Still undecided?
 
+> You can give Phyllome OS a try, as a live system booting off a USB stick, without impacting the existing operating system on your machine.
+{.is-info}
+
 Here is a table to help you pick a **desktop-oriented** operating system. 
 
 How to read this table? For instance: *If you care most about virtualization and put security first, you would be better off picking [Qubes OS](https://www.qubes-os.org/) or the upcoming [Spectrum](https://spectrum-os.org/) instead of Phyllome OS.*
@@ -62,9 +65,9 @@ How to read this table? For instance: *If you care most about virtualization and
 > In general, the vast majority of users will stick to the bottom-right corner of the table. 
 {.is-info}
 
-This table is not meant to be clear-cut. Phyllome OS is intended to be easy-to-use, but still isn't. Out of the box, Chrome OS [^1], or even Windows [^2], might be considered  more secure than most Linux desktop-oriented distributions [^3], at the price of greatly limiting user freedom and privacy, however. Due to their tight integration, some BSD distributions might be considered more secure than some Linux distributions. Finally, just as Phyllome OS, Qubes OS is compatible with running Windows-based guest systems. In other words, using virtualization, a user might be able to access more usable operating systems, and in the case of Phyllome OS, one may even host Qubes OS inside Phyllome OS.    
+This table is not meant to be clear-cut. Phyllome OS is intended to be easy-to-use, but still isn't. Out of the box, Chrome OS [^1], or even Windows [^2], might be considered  more secure than most Linux desktop-oriented distributions [^3], at the price of greatly limiting user freedom and privacy, however. Due to their tight integration, some BSD distributions might be considered more secure than some Linux distributions. Finally, just as Phyllome OS, Qubes OS is compatible with running Windows-based guest systems. In other words, using virtualization, a user might be able to access more usable operating systems, and in the case of Phyllome OS, one may even host Qubes OS inside Phyllome OS.
 
-Please also note that macOS or Windows can also be used to host virtual machines, just as any Linux or BSD distributions.  
+Also note that macOS or Windows can also be used to host virtual machines, just as any Linux or BSD distributions.  
 
 [^1]: See for instance the paper [*Security of Google Chromebook* (PDF)](http://dhanus.mit.edu/docs/ChromeOSSecurity.pdf) by Katherine Fang, Deborah Hanus, Yuzhi Zheng. 
 
@@ -72,6 +75,11 @@ Please also note that macOS or Windows can also be used to host virtual machines
 
 [^3]: Take for instance the boot process, or before an operating system effectively takes control over the hardware. Major operating systems editors that are working directly with OEM integrators have a distinct advantage over editors that aren't: these major editors have almost unlimited resources, sometimes almost perfect control over hardware, and can therefore tame the underlying hardware, effectively controlling, measuring and attesting the entire boot process. To implement a user-backed root of trust on a particular hardware platform, one would need to take several extra measures, relying on something like [Heads](https://github.com/osresearch/heads) which, among other things, involves physically flashing a more open firmware to a motherboard, a complicated process that is available for a few hardware platforms only. Fortunately, some hardware integrators like [Purism](https://puri.sm/) or [System76](https://system76.com/) are backing security measures straight into hardware platforms, while at the same time respecting user freedom. 
 
-## Versions
+## Phyllome OS editions and versions
+
+### Editions
 
 ```Content to be fetched from the white-paper```
+
+*Have you made up your mind ? If so, please go to [the next section](/deploy/prepare)*
+
