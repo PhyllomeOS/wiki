@@ -2,7 +2,7 @@
 title: Understand what you are signing up for
 description: 
 published: true
-date: 2021-11-13T16:14:15.676Z
+date: 2021-11-13T16:24:47.267Z
 tags: 
 editor: markdown
 dateCreated: 2021-11-13T11:19:38.215Z
@@ -10,13 +10,13 @@ dateCreated: 2021-11-13T11:19:38.215Z
 
 # Is Phyllome OS right for you?
 
-> Phyllome OS is still in its infancy and not yet ready for production use
+> Phyllome OS is not production-ready.
 {.is-warning}
 
 Phyllome OS makes a few assumptions, including the following: 
 
 * **Virtual machines have become viable personal computing environments, including for desktop computing** 
-	* Due to their software-based nature, they are extremely flexible, and despite their nature, they can match or even exceed their physical counterparts abilities in some areas. 
+	* Due to their software-based nature, virtual machines are extremely flexible, and can for instance emulate features that their physical host may lack. 
 * **The host operating system should not be modified, in general**
 	* Two Phyllome OS hosts should barely differ, allowing virtual machines to be migrated from one host to the next.
   
@@ -28,25 +28,19 @@ Relying on a virtual machine as its primarily personal environment has key advan
 
 Some of these limitations will be tackled or greatly reduced one day, others might not. Let's list some of these. 
 
-### Performance overhead
+### Performance-related
 
-* Phyllome OS requires resources to run, resources that will not be accessible to guest operating systems.
+* **Performance overhead**. Phyllome OS requires resources to run, resources that will not be accessible to guest operating systems.
 
-### Suboptimal guest performance
+* **Suboptimal guest performance**. In most cases, running a virtual machine instead of using the physical hardware directly will come with a performance penalty. This penalty can be greatly reduced by using some techniques, such as letting the virtual machine access the underlying hardware directly, but this particular solution is by definition not scalable to multiple virtual machines.
 
-* In most cases, running a virtual machine instead of using the physical hardware directly will come with a performance penalty. This penalty can be greatly reduced by using some techniques, such as letting the virtual machine access the underlying hardware directly, but this particular solution is by definition not scalable to multiple virtual machines.
+### Usability-related
 
-### Limited features set
+* **Limited features set**. Some operating systems are designed to leverage hardware features that may not be accessible to an operating system installed on a virtual machine, or that would require specific developments to be taken advantage of. 
 
-* Some operating systems are designed to leverage hardware features that may not be accessible to an operating system installed on a virtual machine, or that would require specific developments to be taken advantage of. 
+* **Increased general complexity**. Instead of running just an operating system on top of some physical hardware, any Phyllome OS user would need to manage it as well as their primarily guest operating system. As a result, it might be more difficult to troubleshoot an issue, and it will add a pile of code that the user has to trust.
 
-### Increased general complexity
-
-* Instead of running just an operating system on top of some physical hardware, any Phyllome OS user would need to manage it as well as their primarily guest operating system. As a result, it might be more difficult to troubleshoot an issue. 
-
-### Decreased general usability
-
-* Any physical device attached to a computer won't automatically be made to a guest virtual machine. For some users, it might be considered a hindrance. Phyllome OS relies on Linux drivers. Not all hardware fully supports Linux well, which may force users to rely on device or controllers passthrough. 
+* **Decreased general usability**. Any physical device attached to a computer won't automatically be made to a guest virtual machine. For some users, it might be considered a hindrance. Phyllome OS relies on Linux drivers. Not all hardware fully supports Linux well, which may force users to rely on device or controllers passthrough. 
 
 ## Choosing a desktop-oriented OS
 
@@ -72,15 +66,14 @@ Also note that macOS or Windows can also be used to host virtual machines, just 
 
 [^3]: Take for instance the boot process, or before an operating system effectively takes control over the hardware. Major operating systems editors that are working directly with OEM integrators have a distinct advantage over editors that aren't: these major editors have almost unlimited resources, sometimes almost perfect control over hardware, and can therefore tame the underlying hardware, effectively controlling, measuring and attesting the entire boot process. To implement a user-backed root of trust on a particular hardware platform, one would need to take several extra measures, relying on something like [Heads](https://github.com/osresearch/heads) which, among other things, involves physically flashing a more open firmware to a motherboard, a complicated process that is available for a few hardware platforms only. Fortunately, some hardware integrators like [Purism](https://puri.sm/) or [System76](https://system76.com/) are backing security measures straight into hardware platforms, while at the same time respecting user freedom. 
 
+> **Still undecided?** You can give Phyllome OS a try, as a live system booting off a USB thumb drive, without impacting the existing operating system on your machine.
+
 ## Phyllome OS editions and versions
 
 ### Editions
 
 ```Content to be fetched from the white-paper```
 
-### Still undecided?
-
-You can give Phyllome OS a try, as a live system booting off a USB thumb drive, without impacting the existing operating system on your machine.
 
 ---
 
