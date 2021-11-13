@@ -2,7 +2,7 @@
 title: Put Phyllome OS on a USB stick
 description: 
 published: true
-date: 2021-11-13T13:45:10.910Z
+date: 2021-11-13T13:46:52.977Z
 tags: 
 editor: markdown
 dateCreated: 2021-11-13T11:34:07.852Z
@@ -17,14 +17,24 @@ dateCreated: 2021-11-13T11:34:07.852Z
 
 ## Download Phyllome OS
 
+`to be done`
+
 ## Put it on a USB stick
+
+Please follow the instructions depending on the OS you currently use.
 
 ### Linux
 
+`to be done`
+
 ### macOS
+
+`to be done`
 
 ### Windows 
 
+`to be done`
+
 ---
 
-When you are done, please go to the section [Install from a live medium](/deploy/live) (*default method*)
+When you are done, please go to the section [Install from a live medium](/deploy/live)
