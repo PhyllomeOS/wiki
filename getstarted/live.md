@@ -2,7 +2,7 @@
 title: Get started with the Live system
 description: 
 published: true
-date: 2021-11-13T16:07:07.700Z
+date: 2021-11-13T16:07:49.393Z
 tags: 
 editor: markdown
 dateCreated: 2021-11-13T11:36:55.647Z
@@ -10,7 +10,7 @@ dateCreated: 2021-11-13T11:36:55.647Z
 
 # Phyllome OS as a live system
 
-> Phyllome OS is not yet ready to be used daily as a live system.
+> Phyllome OS is not production-ready, let alone ready to be used daily as a live system.
 {.is-warning}
 
 Using Phyllome OS as a live system is a great way to test it out and make sure your host computer is up to the task, before committing to a [permanent installation](/deploy/live), which is currently the recommended way to use Phyllome OS.
