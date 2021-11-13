@@ -2,7 +2,7 @@
 title: Tasks
 description: 
 published: true
-date: 2021-11-13T17:08:54.739Z
+date: 2021-11-13T17:35:22.110Z
 tags: 
 editor: markdown
 dateCreated: 2021-11-13T11:40:46.114Z
@@ -38,4 +38,4 @@ dateCreated: 2021-11-13T11:40:46.114Z
   * [ReactOS](/gofurther/reactos)
 * Independant
 	* [Sculpt OS](/gofurther/sculpt-os)
-  * [Fuschia OS](/gofurther/fuschia-os)
+  * [Fuchsia OS](/gofurther/fuchsia-os)
