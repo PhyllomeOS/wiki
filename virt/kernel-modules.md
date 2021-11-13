@@ -2,15 +2,13 @@
 title: Kernel modules
 description: 
 published: true
-date: 2021-11-13T18:48:24.760Z
+date: 2021-11-13T18:48:57.771Z
 tags: 
 editor: markdown
 dateCreated: 2021-11-13T11:58:03.276Z
 ---
 
-# List
-
-## Kernel modules loaded on a hypervisor
+# List of kernel modules found on a hypervisor
 
 This list is only concerned about kernel modules that relates to virtualization. Their description is fetched using the `modinfo` command.
 
