@@ -2,7 +2,7 @@
 title: Homepage
 description: 
 published: true
-date: 2021-11-13T13:05:56.208Z
+date: 2021-11-13T13:07:16.190Z
 tags: 
 editor: markdown
 dateCreated: 2021-06-19T09:29:20.593Z
@@ -45,7 +45,7 @@ dateCreated: 2021-06-19T09:29:20.593Z
 
 ## Go further
 
-*The section is meant to introduce how to execute particular taks on Phyllome OS, including deploying certain guest systems. Some of these tasks will be rendered obsolete with newer Phyllome OS version.*
+*The section is meant to introduce how to execute particular taks on Phyllome OS, including deploying certain guest systems. Some of these tasks will be rendered obsolete with newer Phyllome OS versions.*
 
 ### Tasks related to Phyllome OS
 
@@ -74,12 +74,6 @@ dateCreated: 2021-06-19T09:29:20.593Z
 * Independant
 	* [Sculpt OS](/gofurther/sculpt-os)
   * [Fuschia OS](/gofurther/fuschia-os)
-
-> It is possible to deploy non-UEFI compatible operating systems within these guest systems, using so-called nested virtualization.
-{.is-info}
-
-> By design, Phyllome OS only supports modern UEFI-based guests operating systems compatible with virtio devices and that haven't reached their end of life.
-{.is-info}
 
 ## On Phyllome OS 
 
@@ -118,7 +112,7 @@ dateCreated: 2021-06-19T09:29:20.593Z
 * [How to join](/project/join)
 * [Current infrastructure](/project/infrastructure)
 
-### Tooling
+### Public presence
 
 * **The website**: https://phyllo.me
 * **The wiki**: https://wiki.phyllo.me
