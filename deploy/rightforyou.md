@@ -2,7 +2,7 @@
 title: Understand what you are signing up for
 description: 
 published: true
-date: 2021-11-13T13:25:44.792Z
+date: 2021-11-13T16:14:15.676Z
 tags: 
 editor: markdown
 dateCreated: 2021-11-13T11:19:38.215Z
@@ -80,7 +80,9 @@ Also note that macOS or Windows can also be used to host virtual machines, just 
 
 ### Still undecided?
 
-You can give Phyllome OS a try, as a live system booting off a USB stick, without impacting the existing operating system on your machine.
+You can give Phyllome OS a try, as a live system booting off a USB thumb drive, without impacting the existing operating system on your machine.
 
-Either ways, please go to [the next section](/deploy/prepare) to prepare your host computer.
+---
+
+*Please go to [the next section](/deploy/prepare) to prepare your host computer.*
 
