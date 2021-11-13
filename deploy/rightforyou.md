@@ -2,7 +2,7 @@
 title: Understand what you are signing up for
 description: 
 published: true
-date: 2021-11-13T13:21:54.995Z
+date: 2021-11-13T13:25:44.792Z
 tags: 
 editor: markdown
 dateCreated: 2021-11-13T11:19:38.215Z
@@ -20,7 +20,7 @@ Phyllome OS makes a few assumptions, including the following:
 * **The host operating system should not be modified, in general**
 	* Two Phyllome OS hosts should barely differ, allowing virtual machines to be migrated from one host to the next.
   
-Some limitations result directly from these assumptions.
+Some limitations directly result from these assumptions.
 
 ## Limitations
 
@@ -48,10 +48,7 @@ Some of these limitations will be tackled or greatly reduced one day, others mig
 
 * Any physical device attached to a computer won't automatically be made to a guest virtual machine. For some users, it might be considered a hindrance. Phyllome OS relies on Linux drivers. Not all hardware fully supports Linux well, which may force users to rely on device or controllers passthrough. 
 
-### Still undecided?
-
-> You can give Phyllome OS a try, as a live system booting off a USB stick, without impacting the existing operating system on your machine.
-{.is-info}
+## Choosing a desktop-oriented OS
 
 Here is a table to help you pick a **desktop-oriented** operating system. 
 
@@ -81,5 +78,9 @@ Also note that macOS or Windows can also be used to host virtual machines, just 
 
 ```Content to be fetched from the white-paper```
 
-*Have you made up your mind ? If so, please go to [the next section](/deploy/prepare)*
+### Still undecided?
+
+You can give Phyllome OS a try, as a live system booting off a USB stick, without impacting the existing operating system on your machine.
+
+Either ways, please go to [the next section](/deploy/prepare) to prepare your host computer.
 
