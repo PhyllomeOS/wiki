@@ -2,7 +2,7 @@
 title: Homepage
 description: 
 published: true
-date: 2021-11-13T17:46:30.996Z
+date: 2021-11-13T17:51:24.411Z
 tags: 
 editor: markdown
 dateCreated: 2021-06-19T09:29:20.593Z
@@ -85,6 +85,7 @@ dateCreated: 2021-06-19T09:29:20.593Z
   * [CPU](/virt/cpu)
   * [Memory](/virt/memory)
   * [Storage](/virt/storage)
+  * [Graphics card](/virt/graphics-card)
   * [Display](/virt/display)
 * [Linux Kernel modules](/virt/kernel-modules) related to virtualization
 * [Virtualization-related paths](/virt/linux-paths) on Linux
