@@ -1,13 +1,12 @@
 ---
-title: Create an installation medium
-description: You need to put Phyllome OS on a USB stick to be able use it 
+title: Put Phyllome OS on a USB stick
+description: 
 published: true
-date: 2021-11-12T15:17:34.095Z
+date: 2021-11-13T11:34:07.852Z
 tags: 
 editor: markdown
-dateCreated: 2021-11-12T15:17:34.095Z
+dateCreated: 2021-11-13T11:34:07.852Z
 ---
 
-# Put Phyllome OS on a USB stick
-
+# Header
 Your content here
