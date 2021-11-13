@@ -1,8 +1,8 @@
 ---
-title: Untitled Page
+title: On some ways to deploy Phyllome OS
 description: 
 published: true
-date: 2021-11-13T13:30:32.343Z
+date: 2021-11-13T13:31:03.543Z
 tags: 
 editor: markdown
 dateCreated: 2021-11-13T11:19:53.459Z
