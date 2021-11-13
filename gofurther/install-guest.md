@@ -2,17 +2,17 @@
 title: Netboot for all
 description: 
 published: true
-date: 2021-11-13T17:05:36.042Z
+date: 2021-11-13T17:07:02.233Z
 tags: 
 editor: markdown
 dateCreated: 2021-11-13T11:43:58.697Z
 ---
 
-# Install a guest system using netboot.xyz
+# Install a guest OS
 
 ## Forewords
 
-As a now, `netboot.xyz` is the main way to install operating systems inside Phyllome OS.  
+As a now, `netboot.xyz` is the main way to install a guest operating system inside Phyllome OS. It is compatible with most but not all guest operating systems.
 
 ## Preparation
 
@@ -53,3 +53,6 @@ virt-install \
     --install no_install=yes
 ```
 
+## Create a virtual machine using `virt-manager`
+
+`to-be done`
