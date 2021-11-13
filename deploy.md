@@ -2,7 +2,7 @@
 title: On some ways to deploy Phyllome OS
 description: 
 published: true
-date: 2021-11-13T13:31:03.543Z
+date: 2021-11-13T13:32:46.084Z
 tags: 
 editor: markdown
 dateCreated: 2021-11-13T11:19:53.459Z
@@ -21,3 +21,5 @@ dateCreated: 2021-11-13T11:19:53.459Z
   * [Install from a live medium](/deploy/live) (*default method*)
   * [Deploy in a virtual machine](/deploy/vm) (*to hack it*)
   * [From source](/deploy/source)
+--- 
+*Go to the [Get started section](/getstarted) if you already have a working medium or installation*
