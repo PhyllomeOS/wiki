@@ -2,7 +2,7 @@
 title: Homepage
 description: 
 published: true
-date: 2021-11-13T13:07:16.190Z
+date: 2021-11-13T13:09:04.302Z
 tags: 
 editor: markdown
 dateCreated: 2021-06-19T09:29:20.593Z
@@ -77,7 +77,7 @@ dateCreated: 2021-06-19T09:29:20.593Z
 
 ## On Phyllome OS 
 
-*In this section, Phyllome OS' internals are described.* 
+*In this section, the context around Phyllome OS is set and its internals are described* 
 
 * [Context](/phyllomeos/context)
 * [Purpose](/phyllomeos/purpose)
@@ -116,6 +116,6 @@ dateCreated: 2021-06-19T09:29:20.593Z
 
 * **The website**: https://phyllo.me
 * **The wiki**: https://wiki.phyllo.me
-* **The internal git**: https://git.phyllo.me
 * **The issue board**: https://kanboard.phyllo.me/
+* **GitHub repositories**: https://github.com/PhyllomeOS
 
