@@ -1,8 +1,8 @@
 ---
-title: Untitled Page
+title: Understand what you are signing up for
 description: 
 published: true
-date: 2021-11-13T11:29:24.343Z
+date: 2021-11-13T11:33:08.991Z
 tags: 
 editor: markdown
 dateCreated: 2021-11-13T11:19:38.215Z
