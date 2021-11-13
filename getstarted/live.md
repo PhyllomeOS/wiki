@@ -2,7 +2,7 @@
 title: Get started with the Live system
 description: 
 published: true
-date: 2021-11-13T15:26:12.565Z
+date: 2021-11-13T16:07:07.700Z
 tags: 
 editor: markdown
 dateCreated: 2021-11-13T11:36:55.647Z
@@ -24,4 +24,4 @@ Under certain conditions, you may want to use a live system daily, provided that
 
 ---
 
-*Are you looking for things to do with your live system? If so, have a look at doing some of the [suggested tasks](/gofurther)*
+*Are you looking for things to do with your live system? If so, have a look at doing some [suggested tasks](/gofurther)*
