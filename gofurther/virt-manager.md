@@ -1,12 +1,18 @@
 ---
-title: Configure the Virtual Machine Manager manually or automatically
+title: The Virtual Machine Manager
 description: 
 published: true
-date: 2021-11-13T11:40:06.083Z
+date: 2021-11-13T17:33:45.018Z
 tags: 
 editor: markdown
 dateCreated: 2021-11-13T11:40:06.083Z
 ---
 
-# Header
-Your content here
+# Configure the Virtual Machine Manager
+
+## Forewords
+
+## Automatically
+
+## Manually
+
