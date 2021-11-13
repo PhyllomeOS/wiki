@@ -1,8 +1,8 @@
 ---
-title: title: Installation Phyllome OS in a VM
+title: Install Phyllome OS in a virtual machine
 description: 
 published: true
-date: 2021-11-13T11:35:17.576Z
+date: 2021-11-13T17:12:26.031Z
 tags: 
 editor: markdown
 dateCreated: 2021-11-13T11:35:17.576Z
