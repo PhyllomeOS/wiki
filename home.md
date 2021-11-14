@@ -2,7 +2,7 @@
 title: Homepage
 description: 
 published: true
-date: 2021-11-14T16:21:02.692Z
+date: 2021-11-14T18:34:35.464Z
 tags: 
 editor: markdown
 dateCreated: 2021-06-19T09:29:20.593Z
@@ -10,7 +10,7 @@ dateCreated: 2021-06-19T09:29:20.593Z
 
 # Phyllome OS wiki
 
-`Welcome to the Phyllome's OS wiki! `
+`Welcome to the Phyllome OS wiki! `
 
 *In this wiki, you will find guides about how to install, use and hack Phyllome OS, as well as more general information about open-source virtualization and the project behind this specialized OS.*
 
@@ -24,7 +24,7 @@ dateCreated: 2021-06-19T09:29:20.593Z
 
 ## Deploy
 
-*The section is meant to help users prepare their computer to host Phyllome OS, to pick the right version that will suit their needs, to understand its limitations, and to install it.*
+*This section is meant to help users prepare their computers to host Phyllome OS,  pick the version that will suit their needs,  understand Phyllome OS' limitations, and install it.*
 
 * **Choose**
 	* [Is Phyllome OS right for you?](/deploy/rightforyou)
@@ -36,14 +36,14 @@ dateCreated: 2021-06-19T09:29:20.593Z
 
 ## Get started
 
-*The section is meant to introduce how to use Phyllome OS in a general way.*
+*This section is meant to introduce uses of Phyllome OS in a general way.*
 
 * [Use it as a live system](/getstarted/live) (*to test it*)
 * [Use it as an installed system](/getstarted/disk) (*for daily use*)
 
 ## Go further
 
-*The section is meant to introduce how to execute particular taks on Phyllome OS, including deploying certain guest systems. Some of these tasks will be rendered obsolete with newer Phyllome OS versions.*
+*This section is meant to introduce the execution of particular taks on Phyllome OS, including deployment of certain guest systems. Some of these tasks will be rendered obsolete with newer Phyllome OS versions.*
 
 ### Tasks related to Phyllome OS
 
@@ -54,7 +54,7 @@ dateCreated: 2021-06-19T09:29:20.593Z
 
 ### Tasks related to your guest OS
 
-*Although Phyllome OS thrives to pick good defaults that will work for many guest systems, further optimizations may be needed.* 
+*Although Phyllome OS strives to choose defaults that will work for many guest systems, further optimizations may be needed.* 
 
 * [Linux family](/gofurther/linux)
 * [Darwin family](/gofurther/darwin)
@@ -63,7 +63,7 @@ dateCreated: 2021-06-19T09:29:20.593Z
 
 ## About Phyllome OS 
 
-*In this section, the context around Phyllome OS is set and its internals are described* 
+*In this section, the context around Phyllome OS is explained and its internals are described* 
 
 * [Context](/phyllomeos/context)
 * [Purpose](/phyllomeos/purpose)
@@ -72,7 +72,7 @@ dateCreated: 2021-06-19T09:29:20.593Z
 
 ### On open-source virtualization
 
-*In this section, the focus is on KVM virtualization, and its associated tools, including QEMU, the Linux kernel, libvirt, etc., mostly in the context of Phyllome OS.* 
+*In this section, the focus is on KVM virtualization and its associated tools, including QEMU, the Linux kernel, libvirt, etc., mostly in the context of Phyllome OS.* 
 
 * [Anatomy of a virtual machine](/virt/vm)
 * [Lexicon](/virt/lexicon) 
