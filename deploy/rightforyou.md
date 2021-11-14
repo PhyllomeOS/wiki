@@ -2,7 +2,7 @@
 title: Understand what you are signing up for
 description: 
 published: true
-date: 2021-11-13T17:18:28.519Z
+date: 2021-11-14T18:38:57.260Z
 tags: 
 editor: markdown
 dateCreated: 2021-11-13T11:19:38.215Z
@@ -13,7 +13,7 @@ dateCreated: 2021-11-13T11:19:38.215Z
 > Phyllome OS is not production-ready.
 {.is-warning}
 
-Phyllome OS makes a few assumptions, including the following ones: 
+Phyllome OS makes a few assumptions, including the following : 
 
 * **Virtual machines have become viable personal computing environments, including for desktop computing** 
 	* Due to their software-based nature, virtual machines are extremely flexible, and can for instance emulate features that their physical host may lack. 
@@ -24,9 +24,9 @@ Some limitations directly result from these assumptions.
 
 ## Limitations
 
-Relying on a virtual machine as its primarily personal environment has key advantages, some as the ability to more easily migrate to a new host computer or the ability to create multiple virtual computers out of a single physical computer. However, it also comes with several limitations in comparison to using a bare-metal operating system. 
+Relying on a virtual machine as its primarily personal environment has key advantages, such as the ability to more easily migrate to a new host computer or the ability to create multiple virtual computers out of a single physical computer. However, it also comes with several limitations in comparison to using a bare-metal operating system. 
 
-Some of these limitations will be tackled or greatly reduced one day, others might not. Let's list some of these. 
+Some of these limitations will be tackled or greatly reduced one day, others might not:
 
 ### Performance-related
 
