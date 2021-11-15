@@ -2,7 +2,7 @@
 title: Understand what you are signing up for
 description: 
 published: true
-date: 2021-11-14T18:38:57.260Z
+date: 2021-11-15T11:35:47.325Z
 tags: 
 editor: markdown
 dateCreated: 2021-11-13T11:19:38.215Z
@@ -53,12 +53,14 @@ How to read this table? For instance: *If you care most about virtualization and
 | *Virtualization* | [Qubes OS](https://www.qubes-os.org/) or [Spectrum](https://spectrum-os.org/) | **Phyllome OS Desktop** | 
 | *Bare-metal* | [Sculpt](https://en.wikipedia.org/wiki/Genode#Sculpt) or [Fuchsia](https://en.wikipedia.org/wiki/Fuchsia_(operating_system)) | [Linux](https://en.wikipedia.org/wiki/List_of_Linux_distributions) or [BSD distro](https://en.wikipedia.org/wiki/List_of_BSD_operating_systems), [macOS](https://en.wikipedia.org/wiki/MacOS), [Windows](https://en.wikipedia.org/wiki/Microsoft_Windows) or [Chrome OS](https://en.wikipedia.org/wiki/Chrome_OS) | 
 
-> In general, the vast majority of users will stick to the bottom-right corner of the table. 
+> In general, the vast majority of users will stick to the bottom-right corner of the table, because that is the operating system that ships with their hardware.
 {.is-info}
 
-This table is not meant to be clear-cut. Phyllome OS is intended to be easy-to-use, but still isn't. Out of the box, Chrome OS [^1], or even Windows [^2], might be considered  more secure than most Linux desktop-oriented distributions [^3], at the price of greatly limiting user freedom and privacy, however. Due to their tight integration, some BSD distributions might be considered more secure than some Linux distributions. Finally, just as Phyllome OS, Qubes OS is compatible with running Windows-based guest systems. In other words, using virtualization, a user might be able to access more usable operating systems, and in the case of Phyllome OS, one may even host Qubes OS inside Phyllome OS.
+This table is not meant to be clear-cut, or definitive. Pull requests are welcome.
 
-Also note that macOS or Windows can also be used to host virtual machines, just as any Linux or BSD distributions.  
+Phyllome OS is intended to be easy-to-use, but still isn't. Out of the box, Chrome OS [^1], or even Windows [^2], might be considered  more secure than most Linux desktop-oriented distributions [^3], at the price of greatly limiting user freedom and privacy, however. Due to their tight integration, some BSD distributions might be considered more secure than some Linux distributions. People might find Windows easier to use than, say, Ubuntu. Finally, just as Phyllome OS, Qubes OS is compatible with running Windows-based guest systems. In other words, using virtualization, a user might be able to access more usable operating systems, and in the case of Phyllome OS, one may even host Qubes OS inside Phyllome OS, for instance to test out Qubes OS.
+
+Also note that macOS or Windows can also be used to host virtual machines, just as any Linux or BSD distributions. 
 
 [^1]: See for instance the paper [*Security of Google Chromebook* (PDF)](http://dhanus.mit.edu/docs/ChromeOSSecurity.pdf) by Katherine Fang, Deborah Hanus, Yuzhi Zheng. 
 
