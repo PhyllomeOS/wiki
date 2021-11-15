@@ -2,7 +2,7 @@
 title: Infrastructure
 description: 
 published: true
-date: 2021-11-13T12:49:11.558Z
+date: 2021-11-14T18:44:52.262Z
 tags: 
 editor: markdown
 dateCreated: 2021-11-13T12:10:04.658Z
@@ -16,7 +16,7 @@ Most services are self-hosted in a virtual machine, on a Fedora Server host.
 
 ## Platform-as-a-Service (PaaS)
 
-* **Description**: [Cloudron.io](https://www.cloudron.io/) is used to deploy web applications consumed by the Phyllome OS project 
+* **Description**: [Cloudron.io](https://www.cloudron.io/) is used to deploy web applications consumed by the Phyllome OS project.
 * **Location**: https://my.phyllo.me
 * **Maintainer** : lukas@phyllo.me
 
@@ -24,7 +24,7 @@ Cloudron.io is a PaaS used to deploy and keep web applications up-do-date. It is
 
 OpenLDAP is made through so you can access most applications using a single account.
 
-Alas, there is no SSO, so you will have to login to each applications at first.
+Alas, there is no SSO, so you will have to login to each application at first.
 
 ## Website
 
@@ -42,7 +42,7 @@ Learn about Grav by checking out the dedicated [Learn Grav](http://learn.getgrav
 * **Maintainer**: lukas@phyllo.me
 * **Access**: Core team only
 
-## Files hosting
+## File hosting
 
 * **Description**: [Nextcloud](https://nextcloud.com/) is used for hosting files 
 * **Location**: https://files.phyllo.me/

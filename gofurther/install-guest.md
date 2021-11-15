@@ -2,7 +2,7 @@
 title: Netboot for all
 description: 
 published: true
-date: 2021-11-13T17:07:02.233Z
+date: 2021-11-14T18:40:21.600Z
 tags: 
 editor: markdown
 dateCreated: 2021-11-13T11:43:58.697Z
@@ -12,7 +12,7 @@ dateCreated: 2021-11-13T11:43:58.697Z
 
 ## Forewords
 
-As a now, `netboot.xyz` is the main way to install a guest operating system inside Phyllome OS. It is compatible with most but not all guest operating systems.
+As of now, `netboot.xyz` is the main way to install a guest operating system inside Phyllome OS. It is compatible with most (but not all) guest operating systems.
 
 ## Preparation
 
@@ -24,7 +24,7 @@ wget https://boot.netboot.xyz/ipxe/netboot.xyz.iso -P /var/lib/libvirt/iso/
 
 ## Create a virtual machine using `virt-install`
 
-The command bellow will create a virtual machine without a disk.  
+The command below will create a virtual machine without a disk.  
 
 ```
 virt-install \

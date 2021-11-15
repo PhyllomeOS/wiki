@@ -2,7 +2,7 @@
 title: How to join
 description: 
 published: true
-date: 2021-11-13T17:54:51.006Z
+date: 2021-11-14T18:43:40.530Z
 tags: 
 editor: markdown
 dateCreated: 2021-11-13T12:51:05.446Z
@@ -12,7 +12,7 @@ dateCreated: 2021-11-13T12:51:05.446Z
 
 ## Introduction
 
-This page intends to support onboarding of new contributors to the Phyllome OS Project.
+This page supports the onboarding of new contributors to the Phyllome OS Project.
 
 ## Getting started
 

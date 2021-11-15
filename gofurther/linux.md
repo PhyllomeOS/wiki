@@ -2,7 +2,7 @@
 title: Linux
 description: 
 published: true
-date: 2021-11-13T12:56:26.763Z
+date: 2021-11-14T18:41:11.183Z
 tags: 
 editor: markdown
 dateCreated: 2021-11-13T11:50:48.789Z
@@ -10,7 +10,7 @@ dateCreated: 2021-11-13T11:50:48.789Z
 
 ## Go further
 
-*The section is meant to introduce how to execute particular taks on Phyllome OS, including deploying certain guest systems. Some of these tasks will be rendered obsolete with newer Phyllome OS version.*
+*This section is meant to introduce how to execute particular taks on Phyllome OS, including deployment of certain guest systems. Some of these tasks will be rendered obsolete with newer Phyllome OS versions.*
 
 ### Tasks related to Phyllome OS
 
@@ -26,7 +26,7 @@ dateCreated: 2021-11-13T11:50:48.789Z
 
 ### Tasks related to your guest OS
 
-*Although Phyllome OS thrives to pick good defaults that will work for many guest systems, further optimizations may be needed.* 
+*Although Phyllome OS strives to choose defaults that will work for many guest systems, further optimizations may be needed.* 
 
 > By design, Phyllome OS only supports modern UEFI-based guests operating systems compatible with virtio devices and that haven't reached their end of life.
 {.is-info}
