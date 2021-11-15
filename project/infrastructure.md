@@ -12,7 +12,7 @@ dateCreated: 2021-11-13T12:10:04.658Z
 
 ## Dedicated server
 
-Most services are self-hosted in a virtual machine, on a Fedora host.
+Most services are self-hosted in a virtual machine, on a Fedora Server host.
 
 ## Platform-as-a-Service (PaaS)
 

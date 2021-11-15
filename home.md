@@ -22,6 +22,8 @@ dateCreated: 2021-06-19T09:29:20.593Z
 
 *[Phyllome OS](https://phyllo.me/) is an operating system that makes it easier to run various guest systems locally using [off-the-shelf hardware](https://wiki.phyllo.me/deploy/prepare).*
 
+If you want to learn more about it, its goal and the context around it, have a look at the [white-paper](/https://files.phyllo.me/s/oYwfxYpZcbppwr6).
+
 ## Deploy
 
 *The section is meant to help users prepare their computer to host Phyllome OS, to pick the right version that will suit their needs, to understand its limitations, and to install it.*
