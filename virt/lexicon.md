@@ -8,9 +8,12 @@ editor: markdown
 dateCreated: 2021-11-13T11:58:43.776Z
 ---
 
-# Terms related to virtualization 
+> Section under construction.
+{.is-warning}
 
-### []{#anchor-8}Emulator
+## Terms related to virtualization 
+
+### Emulator
 
 Emulators or virtualizers are software that provide material components
 similar to physical hardware, but that are made of computer code instead
@@ -20,7 +23,7 @@ QEMU[^6] is a popular emulator that can act as a simulator or virtual
 machine monitor. In the latter case, it can leverage hardware
 acceleration,
 
-### []{#anchor-9}Hardware-assisted virtualization
+### Hardware-assisted virtualization
 
 Hardware-assisted virtualization is a feature of certain computer
 hardware made to take advantage of virtualization.
@@ -31,12 +34,12 @@ In other words, hardware-assisted virtualization translates into better
 performance for virtualized workloads, significantly reducing the gap in
 performance between a virtual machine and a physical one.
 
-### []{#anchor-10}Nested-virtualization
+### Nested-virtualization
 
 Nested-virtualization refers to the ability to run a virtual machine
 inside another virtual machine.
 
-### []{#anchor-11}Virtualization
+### Virtualization
 
 Most computers are made of hardware and software. By analogy, the brain
 that animates the cells to control a body can be thought as the
@@ -65,7 +68,7 @@ better use of resources through consolidation. For instance, with
 virtualization, multiple operating systems can run concurrently on a
 physical machine.
 
-### []{#anchor-12}Hypervisor
+### Hypervisor
 
 A hypervisor is an operating system or firmware that is designed to run
 guest systems: it handles scheduling, execution of hyper privileged
@@ -86,7 +89,7 @@ able to leverage hardware-assisted virtualization:
 -   Xen (2003)[^7].
 -   Kernel-based Virtual Machine (KVM) module for Linux (2007)[^8].
 
-### []{#anchor-13}Device
+### Device
 
 Devices are computer components that can be attached to machines. They
 can be classified in two ways : physical or emulated.
@@ -138,7 +141,7 @@ can be classified in two ways : physical or emulated.
             generic piece of software-based hardware which doesn't
             replicate a specific hardware component.
 
-### []{#anchor-14}Paravirtualization
+### Paravirtualization
 
 Paravirtualization refers to the emulation practice of letting an
 operating system running in a virtualized environment know that it is
@@ -151,7 +154,7 @@ devices). Such devices can communicate directly with the host, instead
 of emulating every single command of an IDE, SATA, SCSI or NVMe device,
 as it is the case for model-based emulation.
 
-### []{#anchor-15}Virtual machine
+### Virtual machine
 
 A virtual machine is a recreation of a real, physical, silicon-based
 computer using software. It performs almost exactly as a physical

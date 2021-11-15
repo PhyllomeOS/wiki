@@ -8,28 +8,28 @@ editor: markdown
 dateCreated: 2021-11-13T11:50:48.789Z
 ---
 
-## Go further
+> Section under construction
+{.is-warning}
 
-*This section is meant to introduce how to execute particular taks on Phyllome OS, including deployment of certain guest systems. Some of these tasks will be rendered obsolete with newer Phyllome OS versions.*
+# Go further
 
-### Tasks related to Phyllome OS
+*The section is meant to introduce how to execute particular taks on Phyllome OS, including deploying certain guest systems. Some of these tasks will be rendered obsolete with newer Phyllome OS versions.*
+
+## Tasks related to Phyllome OS
 
 * [Perform a few checks](/gofurther/checks) on Phyllome OS
 * [Configure the Virtual Machine Manager](/gofurther/virt-manager) manually or automatically
-* [Install a guest system using netboot.xyz](/gofurther/install-guest)
-* [Use virt-install to install a guest system](/gofurther/virt-install) 
-* [Deploy Phyllome OS inside Phyllome OS](/gofurther/inception)
+* [Manully install](/gofurther/install-guest) a Linux or Windows guest system using `netboot.xyz`
+* [Automatically deploy](/gofurther/virt-install) a RPM-based guest system with `virt-install` 
+* [Inception](/gofurther/inception) or Phyllome OS inside Phyllome OS inside Phyllome OS
 * [Migrate](/gofurther/migrate) an existing guest virtual machine to another Phyllome OS host
 * [Resize](/gofurther/resize) an existing virtual disk
 * [Encrypt](/gofurther/encrypt) virtual disk images using filesystem-level encryption
 * [Use the Cloud Hypervisor](/gofurther/cloud-hypervisor) to create a virtual machine
 
-### Tasks related to your guest OS
+## Tasks related to your guest OS
 
-*Although Phyllome OS strives to choose defaults that will work for many guest systems, further optimizations may be needed.* 
-
-> By design, Phyllome OS only supports modern UEFI-based guests operating systems compatible with virtio devices and that haven't reached their end of life.
-{.is-info}
+*Although Phyllome OS thrives to pick good defaults that will work for many guest systems, further optimizations may be needed.* 
 
 * Unix-like
 	* [Linux family](/gofurther/linux)
@@ -41,8 +41,5 @@ dateCreated: 2021-11-13T11:50:48.789Z
   * [ReactOS](/gofurther/reactos)
 * Independant
 	* [Sculpt OS](/gofurther/sculpt-os)
-  * [Fuschia OS](/gofurther/fuschia-os)
-
-> It is possible to deploy non-UEFI compatible operating systems within these guest systems, using so-called nested virtualization.
-{.is-info}
+  * [Fuchsia OS](/gofurther/fuchsia-os)
 

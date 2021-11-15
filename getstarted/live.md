@@ -8,6 +8,9 @@ editor: markdown
 dateCreated: 2021-11-13T11:36:55.647Z
 ---
 
+> Section under construction
+{.is-warning}
+
 # Phyllome OS as a live system
 
 > Phyllome OS is not production-ready, let alone ready to be used daily as a live system.

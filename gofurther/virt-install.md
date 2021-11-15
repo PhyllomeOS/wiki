@@ -8,11 +8,10 @@ editor: markdown
 dateCreated: 2021-11-12T15:27:40.366Z
 ---
 
+> Section under construction
+{.is-warning}
+
 # How to deploy common Linux systems
-
-## Using virt-install
-
-# Virt-install and Fedora guests
 
 ## Introduction
 

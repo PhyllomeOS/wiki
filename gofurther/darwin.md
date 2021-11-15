@@ -8,6 +8,9 @@ editor: markdown
 dateCreated: 2021-11-13T16:29:34.112Z
 ---
 
+> Section under construction
+{.is-warning}
+
 # Darwin-based operating systems
 
 > Phyllome OS **strongly** discourages users from virtualizing proprietary, darwin-based operating systems on non-Apple hardware. The Phyllome OS Project will take any possible measures to shutdown threads that mention such setup on platforms it has control over.

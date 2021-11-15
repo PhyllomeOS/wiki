@@ -8,6 +8,9 @@ editor: markdown
 dateCreated: 2021-11-13T11:37:31.498Z
 ---
 
+> Section under construction
+{.is-warning}
+
 # How to use Phyllome OS daily
 
 > Phyllome OS is not yet production ready. Use it if you wish to contribute.
@@ -20,11 +23,11 @@ As a result, using Phyllome OS means to put yourself in a situation where you do
 Concretely, to reach this state, and be able to use Phyllome OS daily without realizing that trully are living in a virtual world:
 
 * **Create a virtual machine**
-	* automatically using `virt-install`
-  * manually using `virt-manager`
+	* automatically, using `virt-install`
+  * manually, using `virt-manager`
 * **Install your favorite guest operating system** inside this virtual machine
-  * automatically using a kickstart file, for compatible guest systems
-  * manually, using the installer provided by your operating system editor 
+  * automatically, using a kickstart file, for compatible guest systems
+  * manually, using the installer provided by the editor of your favorite operating system 
 * **Learn how make the most out of it**
 
 As Phyllome OS evolves, one of the main goal is to shorten the time it would take for an end-user to have a fully operationnal virtual machine running with favorite operating system optimized virtual machine with their favorite operating system.   

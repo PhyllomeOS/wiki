@@ -8,6 +8,9 @@ editor: markdown
 dateCreated: 2021-11-13T11:34:07.852Z
 ---
 
+> Section under construction
+{.is-warning}
+
 # Create an installation medium
 
 > As of now, it is not yet possible to deploy Phyllome OS on a storage device using the official ISO file. In the meantime, please use a [Fedora Server ISO instead](https://getfedora.org/en/server/).

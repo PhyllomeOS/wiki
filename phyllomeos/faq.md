@@ -8,7 +8,6 @@ editor: markdown
 dateCreated: 2021-11-12T15:33:09.361Z
 ---
 
-
 ### Can you explain the whole project and its expected outcome(s) ?
 
 Traditionally, operating systems (OS) installed directly on physical hardware have unfiltered access to the underling system hardware, which they trust by default. In contrast, when deployed inside virtual machines, this access can be mediated at the hypervisor/host level, enhancing the security of the overall system by allowing the user to distrust parts of the hardware stack, a vision that is implemented thorougly by the [QubesOS](https://www.qubes-os.org/), which Phyllome OS draws inspiration from.

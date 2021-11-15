@@ -8,6 +8,9 @@ editor: markdown
 dateCreated: 2021-11-13T11:35:17.576Z
 ---
 
+> Section under construction
+{.is-warning}
+
 # How to deploy Phyllome OS in a virtual machine
 
 `To-do`

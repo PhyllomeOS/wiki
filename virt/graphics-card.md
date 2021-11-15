@@ -8,6 +8,9 @@ editor: markdown
 dateCreated: 2021-11-13T17:52:22.554Z
 ---
 
+> Section under construction.
+{.is-warning}
+
 # Graphics cards
 
 Phyllome leverages 3D acceleration within guest operating systems extensively, in three different modes depending on the situation.
