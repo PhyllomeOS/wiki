@@ -2,7 +2,7 @@
 title: Understand what you are signing up for
 description: 
 published: true
-date: 2021-11-15T11:35:47.325Z
+date: 2021-11-17T20:19:27.281Z
 tags: 
 editor: markdown
 dateCreated: 2021-11-13T11:19:38.215Z
@@ -13,7 +13,7 @@ dateCreated: 2021-11-13T11:19:38.215Z
 > Phyllome OS is not production-ready.
 {.is-warning}
 
-Phyllome OS makes a few assumptions, including the following : 
+Phyllome OS makes a few assumptions, including the following ones: 
 
 * **Virtual machines have become viable personal computing environments, including for desktop computing** 
 	* Due to their software-based nature, virtual machines are extremely flexible, and can for instance emulate features that their physical host may lack. 
@@ -24,9 +24,7 @@ Some limitations directly result from these assumptions.
 
 ## Limitations
 
-Relying on a virtual machine as its primarily personal environment has key advantages, such as the ability to more easily migrate to a new host computer or the ability to create multiple virtual computers out of a single physical computer. However, it also comes with several limitations in comparison to using a bare-metal operating system. 
-
-Some of these limitations will be tackled or greatly reduced one day, others might not:
+Relying on a virtual machine as its primarily personal environment has key advantages, such as the ability to more easily migrate to a new host computer or the ability to create multiple virtual computers out of a single physical computer. However, it also comes with several limitations in comparison to using a bare-metal operating system.  Some of these limitations will be tackled or greatly reduced one day, others might not.
 
 ### Performance-related
 
@@ -68,14 +66,34 @@ Also note that macOS or Windows can also be used to host virtual machines, just 
 
 [^3]: Take for instance the boot process, or before an operating system effectively takes control over the hardware. Major operating systems editors that are working directly with OEM integrators have a distinct advantage over editors that aren't: these major editors have almost unlimited resources, sometimes almost perfect control over hardware, and can therefore tame the underlying hardware, effectively controlling, measuring and attesting the entire boot process. To implement a user-backed root of trust on a particular hardware platform, one would need to take several extra measures, relying on something like [Heads](https://github.com/osresearch/heads) which, among other things, involves physically flashing a more open firmware to a motherboard, a complicated process that is available for a few hardware platforms only. Fortunately, some hardware integrators like [Purism](https://puri.sm/) or [System76](https://system76.com/) are backing security measures straight into hardware platforms, while at the same time respecting user freedom. 
 
-> **Still undecided?** You can give Phyllome OS a try, as a live system booting off a USB thumb drive, without impacting the existing operating system on your machine.
+> **Still undecided?** You can give Phyllome OS a try, as a live system booting off from a USB thumb drive, without impacting the existing operating system on your machine.
 
 ## Phyllome OS editions and versions
 
+### Versions
+
+Phyllome OS exists in two main editions: **Phyllome OS Desktop**, which features a grahical desktop environment, and **Phyllome OS Server**, which does not. Phyllome OS Server is made for power users or people that want more control. It includes all virtualization enhancements that Phyllome OS Desktop provides. 
+
+If you don't know which one to choose, you should probably pick the Desktop edition.
+
 ### Editions
 
-```Content to be fetched from the white-paper```
+Each edition comes with several versions, optimized for a particular combinaison of hardware.
 
+|  | Codename | Example | Target release | 
+|---|---|---|---|---|
+| *Intel CPU and Intel graphics cards* | **II** | Phyllome OS Desktop II | Alpha |
+| *Intel CPU and AMD graphics cards* | **IA** | Phyllome OS Desktop IA | Beta |
+| *Intel CPU and Nvidia graphics cards* | **IN** | Phyllome OS Server IN | RC |
+| *AMD CPU and Intel graphics cards* | **AI** | Phyllome OS Desktop AI | Beta |
+| *AMD CPU and AMD graphics cards* | **AA** | Phyllome OS Server AA | Beta |
+| *AMD CPU and Nvidia graphics cards* | **AN** | Phyllome OS Desktop AN | RC |
+
+The first letter refers to the CPU model, the second letter the graphics card model.
+
+Depending of your hardware, you need to pick the right edition.
+
+For example, if you possess an Intel CPU and a AMD graphics card, you should pick either Phyllome OS Desktop IA or Phyllome OS Server IA.
 
 ---
 
