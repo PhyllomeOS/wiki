@@ -2,7 +2,7 @@
 title: Preparation
 description: 
 published: true
-date: 2021-11-18T14:06:08.270Z
+date: 2021-11-18T14:07:43.767Z
 tags: 
 editor: markdown
 dateCreated: 2021-11-15T15:39:49.074Z
@@ -98,7 +98,7 @@ During the POST phase, you need to press a certain key to access the firmware co
 
 Just after pressing the `power-on` button, hit the right key to access the firmware configuration tool, usually <kbd>F2</kbd> or <kbd>Del</kbd>, but it depends on your model.
 
-> Do not hesitate to repeatedly press the key to make sure it is registered
+> Do not hesitate to repeatedly press the pertinent key to make sure it is registered.
 {.is-info}
 
 > Hardware manufacturers could not agree on a common keystroke to access the firmware configuration tool, so, if the given keys do not work out for you, please have a look at the documentation provided by the manufacturer of your computer.
@@ -108,7 +108,7 @@ Just after pressing the `power-on` button, hit the right key to access the firmw
 
 `to be done`
 
-### Make sure that hardware-assisted virtualization is enabled 
+## Make sure that hardware-assisted virtualization is enabled 
 
 `to be done`
 
