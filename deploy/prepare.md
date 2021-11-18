@@ -2,7 +2,7 @@
 title: Preparation
 description: 
 published: true
-date: 2021-11-18T11:54:29.386Z
+date: 2021-11-18T14:06:08.270Z
 tags: 
 editor: markdown
 dateCreated: 2021-11-15T15:39:49.074Z
@@ -13,33 +13,36 @@ dateCreated: 2021-11-15T15:39:49.074Z
 
 # Prepare the host computer
 
-## Requirements
+## Meet the requirements
 
-These instructions are valid for x86-64 computers that do ship with Linux or Windows.
+These instructions are valid for x86-64 computers that do ship with Linux, Windows or macOS.
 
-Phyllome OS targets x86 systems with hardware-assisted virtualization, with a strong preference for those providing IOMMU as well.
+Phyllome OS targets x86 systems with hardware-assisted virtualization, with a strong preference for those providing IOMMU as well (AMD Vi or Intel VT-d).
 
-It is expected that Phyllome OS will consume approximately 1 CPU core and 1 GB of RAM, which should be enough to accommodate a few
-virtual machines. For instance, on a system with a CPU with 4 cores and 8 GB of RAM, a guest virtual machine will be able to be assigned up to 3 cores and 7 GB of RAM.
+Sitting idle, Phyllome OS consumes approximately 1 CPU core and 1.5 GB of RAM. 
+
+> This requirement scales up with the number of virtual machines running on a dedicated OS. 
+{.is-info}
 
 ### Minimum requirements for Phyllome OS Desktop
 
-* x86 computer that supports the first generation of hardware-assisted virtualization extensions
+
+* **x86-64** computer that supports the first generation of hardware-assisted virtualization features
     * For AMD-based configurations, it means that AMD V is available and enabled
     * For Intel-based configurations, it means that Intel VT-x is available and enabled
-* 2-core processor
-* 8 GB of RAM
-* SSD-based storage device to store disk images and Phyllome OS
+* **2-core** processor
+* **8 GB** of RAM
+* **SSD**-based storage device to store disk images and Phyllome OS
 * Any graphics card (Linux or macOS guests only)
 
 ### Recommended requirements for Phyllome OS Desktop
 
-* x86 computer that supports the second generation of hardware-assisted virtualization extensions
+* **x86-64** computer that supports the second generation of hardware-assisted virtualization features
     * For AMD-based configurations, it means that AMD Vi is available and enabled
     * For Intel-based configurations, it means that Intel VT-d is available and enabled
-* 8-core processor
-* 16 GB of RAM
-* NVME-based storage device to store disk images and Phyllome OS
+* **8-core** processor
+* **16 GB** of RAM
+* **NVME**-based storage device to store disk images and Phyllome OS
 * Two graphics cards or a graphics card that supports vfio-mdev or SR-IOV
 
 ## Enable hardware-assisted virtualization
