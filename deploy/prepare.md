@@ -2,7 +2,7 @@
 title: Preparation
 description: 
 published: true
-date: 2021-11-17T22:13:28.351Z
+date: 2021-11-18T11:54:29.386Z
 tags: 
 editor: markdown
 dateCreated: 2021-11-15T15:39:49.074Z
@@ -46,9 +46,9 @@ virtual machines. For instance, on a system with a CPU with 4 cores and 8 GB of 
 
 ### Access the firmware
 
-![uefi_tianocore_first-screen.png](/uefi_tianocore_first-screen.png)
+*The Open Virtual Machine Firmware (OVMF), which is based on the TianoCore firmware, is the default firmware for EFI-based virtual machines. It can be accessed using the <kbd>Esc</kbd> key.*
 
-The Open Virtual Machine Firmware (OVMF), which is based on the TianoCore firmware, is the default firmware for EFI-based virtual machines. It can be accessed using the <kbd>Esc</kbd> key.
+![uefi_tianocore_first-screen.png](/uefi_tianocore_first-screen.png)
 
 * **Since Windows 8**: command-line instructions
 
@@ -93,14 +93,13 @@ Make sure the targeted computer is shut down.
 
 During the POST phase, you need to press a certain key to access the firmware configuration tool for your motherboard, which is part of your BIOS or UEFI. 
 
-Just after pressing the `power-on`, press one the following common keystrokes are <kbd>F2</kbd> or <kbd>Del</kbd>, depending on your model.
+Just after pressing the `power-on` button, hit the right key to access the firmware configuration tool, usually <kbd>F2</kbd> or <kbd>Del</kbd>, but it depends on your model.
 
 > Do not hesitate to repeatedly press the key to make sure it is registered
-{is.info}
+{.is-info}
 
 > Hardware manufacturers could not agree on a common keystroke to access the firmware configuration tool, so, if the given keys do not work out for you, please have a look at the documentation provided by the manufacturer of your computer.
-{is.info}
-
+{.is.info}
 
 ### Modify the firmware configuration
 
