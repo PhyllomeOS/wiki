@@ -2,7 +2,7 @@
 title: Preparation
 description: 
 published: true
-date: 2021-11-18T14:07:43.767Z
+date: 2021-11-19T21:54:56.075Z
 tags: 
 editor: markdown
 dateCreated: 2021-11-15T15:39:49.074Z
@@ -21,7 +21,7 @@ Phyllome OS targets x86 systems with hardware-assisted virtualization, with a st
 
 Sitting idle, Phyllome OS consumes approximately 1 CPU core and 1.5 GB of RAM. 
 
-> This requirement scales up with the number of virtual machines running on a dedicated host: the more virtual machines are running, the more ressources Phyllome OS will use.
+> This requirement scales up with the number of virtual machines running on a dedicated host: the more the virtual machines running, the more ressources Phyllome OS will use.
 {.is-info}
 
 ### Minimum requirements for Phyllome OS Desktop
