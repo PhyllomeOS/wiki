@@ -19,9 +19,6 @@ These instructions are valid for x86-64 computers that do ship with Linux, Windo
 
 Phyllome OS targets x86 systems with hardware-assisted virtualization, with a strong preference for those providing IOMMU-based hardware-assisted virtualization (AMD Vi or Intel VT-d).
 
-A CPU that supports hardware-assisted virtualization might not be enough, as the motherboard also requires to support this feature. Together with the lack of documentation, it makes the selection of a platform rather tricky.
-{.is-info}
-
 Sitting idle, Phyllome OS consumes approximately 1 CPU core and 1.5 GB of RAM. 
 
 > This requirement scales up with the number of virtual machines running on a dedicated host: the more virtual machines are running, the more ressources Phyllome OS will use.
@@ -30,20 +27,23 @@ Sitting idle, Phyllome OS consumes approximately 1 CPU core and 1.5 GB of RAM.
 ### Minimum requirements for Phyllome OS Desktop
 
 * **x86-64** computer that supports the first generation of hardware-assisted virtualization features
-    * For AMD-based configurations, it means that AMD V is available and enabled
+    * For AMD-based configurations, it means that AMD V is available and enabled, which is the case for most CPU models.
     * For Intel-based configurations, it means that Intel VT-x is available and enabled
 * **2-core** processor
 * **8 GB** of RAM
 * **SSD**-based storage device to store disk images and Phyllome OS
 * Any graphics card (Linux or macOS guests only)
 
-> For Intel-based configurations, you can check if your model supports Intel VT-d by looking for your model [here](https://ark.intel.com/content/www/us/en/ark/search/featurefilter.html?productType=873&2_VTX=true).
+> For Intel-based configurations, you can check if your model supports Intel VT-x by looking for your model [here](https://ark.intel.com/content/www/us/en/ark/search/featurefilter.html?productType=873&2_VTX=true).
 {.is-info}
+
+A CPU that supports hardware-assisted virtualization is not be enough, as the motherboard also requires to support this feature. Laptop motherboards seem to be lacking behind desktop motherboards when it comes to supporting this feature. 
+{.is-warning}
 
 ### Recommended requirements for Phyllome OS Desktop
 
 * **x86-64** computer that supports the second generation of hardware-assisted virtualization features
-    * For AMD-based configurations, it means that AMD Vi is available and enabled
+    * For AMD-based configurations, it means that AMD Vi is available and enabled, which is the case for most CPU models.
     * For Intel-based configurations, it means that Intel VT-d is available and enabled.
 * **8-core** processor
 * **16 GB** of RAM
@@ -52,7 +52,6 @@ Sitting idle, Phyllome OS consumes approximately 1 CPU core and 1.5 GB of RAM.
 
 > For Intel-based configurations, you can check if your model supports Intel VT-d by looking for your model [here](https://ark.intel.com/content/www/us/en/ark/search/featurefilter.html?productType=873&0_VTD=True).
 {.is-info}
-
 
 ## Enable hardware-assisted virtualization
 
@@ -97,7 +96,7 @@ shutdown /fw /r
 
 * **macOS-based computers**
 
-Hardware-assisted virtualization is a hit or miss on Apple computers, as there is no way to access the firmware configuration tool on these computers. Apple users can go to the install section directly. 
+Hardware-assisted virtualization is a hit or miss on Apple computers, as there is no way to access the firmware configuration tool on these computers. Apple users can go to the install section directly, create a USB stick and hope that hardware-assisted virtualization will be supported. 
 
 * **Other computers**
 
