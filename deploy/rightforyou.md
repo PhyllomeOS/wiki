@@ -2,7 +2,7 @@
 title: Understand what you are signing up for
 description: 
 published: true
-date: 2021-11-17T20:19:27.281Z
+date: 2021-11-19T21:53:05.302Z
 tags: 
 editor: markdown
 dateCreated: 2021-11-13T11:19:38.215Z
@@ -35,16 +35,7 @@ Each edition comes with several versions, optimized for a particular combinaison
 
 Depending of your hardware, you need to pick the right edition. For example, if you possess an Intel CPU and an AMD graphics card, you should pick either Phyllome OS Desktop IA or Phyllome OS Server IA.
 
-|  | Support since | |
-|---|---|---|
-| Phyllome OS Desktop II | Alpha |  
-| Phyllome OS Desktop IA | Beta |
-| Phyllome OS Desktop AA | Beta |
-| Phyllome OS Desktop AI | Beta |
-| Phyllome OS Desktop AN | Release candidate |
-| Phyllome OS Desktop IN | Release candidate |
-
-> As of now, only Phyllome OS Desktop II, also known as `dhi`, is supported. In other words, you need to use a computer with both an Intel CPU and an Intel GPU to leverage Phyllome OS.
+> As of now, only Phyllome OS Desktop II, also known as `dhi`, is supported. In other words, you need to use a computer with both an Intel CPU and an Intel GPU to leverage Phyllome OS. Support for other other editions are expected for the Beta.  
 {.is-info}
 
 ## Limitations
