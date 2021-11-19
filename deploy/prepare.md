@@ -17,15 +17,17 @@ dateCreated: 2021-11-15T15:39:49.074Z
 
 These instructions are valid for x86-64 computers that do ship with Linux, Windows or macOS.
 
-Phyllome OS targets x86 systems with hardware-assisted virtualization, with a strong preference for those providing IOMMU as well (AMD Vi or Intel VT-d).
+Phyllome OS targets x86 systems with hardware-assisted virtualization, with a strong preference for those providing IOMMU-based hardware-assisted virtualization (AMD Vi or Intel VT-d).
+
+A CPU that supports hardware-assisted virtualization might not be enough, as the motherboard also requires to support this feature. Together with the lack of documentation, it makes the selection of a platform rather tricky.
+{.is-info}
 
 Sitting idle, Phyllome OS consumes approximately 1 CPU core and 1.5 GB of RAM. 
 
-> This requirement scales up with the number of virtual machines running on a dedicated OS. 
+> This requirement scales up with the number of virtual machines running on a dedicated host: the more virtual machines are running, the more ressources Phyllome OS will use.
 {.is-info}
 
 ### Minimum requirements for Phyllome OS Desktop
-
 
 * **x86-64** computer that supports the first generation of hardware-assisted virtualization features
     * For AMD-based configurations, it means that AMD V is available and enabled
@@ -35,15 +37,22 @@ Sitting idle, Phyllome OS consumes approximately 1 CPU core and 1.5 GB of RAM.
 * **SSD**-based storage device to store disk images and Phyllome OS
 * Any graphics card (Linux or macOS guests only)
 
+> For Intel-based configurations, you can check if your model supports Intel VT-d by looking for your model [here](https://ark.intel.com/content/www/us/en/ark/search/featurefilter.html?productType=873&2_VTX=true).
+{.is-info}
+
 ### Recommended requirements for Phyllome OS Desktop
 
 * **x86-64** computer that supports the second generation of hardware-assisted virtualization features
     * For AMD-based configurations, it means that AMD Vi is available and enabled
-    * For Intel-based configurations, it means that Intel VT-d is available and enabled
+    * For Intel-based configurations, it means that Intel VT-d is available and enabled.
 * **8-core** processor
 * **16 GB** of RAM
 * **NVME**-based storage device to store disk images and Phyllome OS
 * Two graphics cards or a graphics card that supports vfio-mdev or SR-IOV
+
+> For Intel-based configurations, you can check if your model supports Intel VT-d by looking for your model [here](https://ark.intel.com/content/www/us/en/ark/search/featurefilter.html?productType=873&0_VTD=True).
+{.is-info}
+
 
 ## Enable hardware-assisted virtualization
 
@@ -88,7 +97,7 @@ shutdown /fw /r
 
 * **macOS-based computers**
 
-Hardware-assisted virtualization is a hit or miss on Apple computers, as there is no way to access the firmware on these computers. Apple users can jump to the section *Make sure that hardware-assisted virtualization is enabled* to check whether this feature is activated or not on their particular model.
+Hardware-assisted virtualization is a hit or miss on Apple computers, as there is no way to access the firmware configuration tool on these computers. Apple users can go to the install section directly. 
 
 * **Other computers**
 
@@ -96,31 +105,27 @@ Make sure the targeted computer is shut down.
 
 During the POST phase, you need to press a certain key to access the firmware configuration tool for your motherboard, which is part of your BIOS or UEFI. 
 
-Just after pressing the `power-on` button, hit the right key to access the firmware configuration tool, usually <kbd>F2</kbd> or <kbd>Del</kbd>, but it depends on your model.
+Just after pressing the `power-on` button, hit the right key to access the firmware configuration tool, usually <kbd>F2</kbd> or <kbd>Del</kbd>, but it may be another keystroke on your model.
 
-> Do not hesitate to repeatedly press the pertinent key to make sure it is registered.
+> Do not hesitate to repeatedly press the pertinent key as soon has your computer has started, to make sure it is registered.
 {.is-info}
-
-> Hardware manufacturers could not agree on a common keystroke to access the firmware configuration tool, so, if the given keys do not work out for you, please have a look at the documentation provided by the manufacturer of your computer.
-{.is.info}
 
 ### Modify the firmware configuration
 
-`to be done`
+> Unfortunately, most firmware configuration tool do differ, and the steps here might not be identic on your own platform.
+{.is-info}
 
-## Make sure that hardware-assisted virtualization is enabled 
+In general, the sought after features are found under the `security` tab. 
 
-`to be done`
+For an AMD-based computer, you need to look for references to `AMD SVM`, AMD V or AMD Vi. Conversingly, for an Intel-based computer, you need to look for `Intel VT-x` and `Intel VT-d`. It is also possible that the feature will be refered simply to as `virtualization`.
 
-* **Windows**
+Enable these options, choose to *save and exit* the configuration tool, which will reboot your computer.
 
-* **macOS**
+> While you are there, you could also change the boot order, to make sure that your computer will boot from an attached USB thumb drive first.
+{.is-info}
 
-* **Linux**
-
-> Failing to activate hardware-assisted virtualization will make running virtual machines extremly slow, if possible at all. If, for some reasons, it cannot be activated on your computer, you would be better off picking a Linux distribution which doesn't require it, such as [Debian](https://www.debian.org/distrib/).   
+> Failing to activate hardware-assisted virtualization will make running virtual machines extremly slow, if possible at all. If, for some reasons, it cannot be activated on your computer, for example because of a lack of hardware support, you would be better off picking a Linux distribution which doesn't require it, such as [Debian](https://www.debian.org/distrib/).   
 {.is-warning}
-
 
 ---
 
