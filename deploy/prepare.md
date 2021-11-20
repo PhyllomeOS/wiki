@@ -8,12 +8,9 @@ editor: markdown
 dateCreated: 2021-11-15T15:39:49.074Z
 ---
 
-> Section under construction
-{.is-warning}
-
 # Prepare the host computer
 
-## Meet the requirements
+## 1. Meet the requirements
 
 These instructions are valid for x86-64 computers that do ship with Linux, Windows or macOS.
 
@@ -53,7 +50,7 @@ A CPU that supports hardware-assisted virtualization is not be enough, as the mo
 > For Intel-based configurations, you can check if your model supports Intel VT-d by looking for your model [here](https://ark.intel.com/content/www/us/en/ark/search/featurefilter.html?productType=873&0_VTD=True).
 {.is-info}
 
-## Enable hardware-assisted virtualization
+## 2. Enable hardware-assisted virtualization
 
 ### Access the firmware
 
@@ -114,13 +111,13 @@ Just after pressing the `power-on` button, hit the right key to access the firmw
 > Unfortunately, most firmware configuration tool do differ, and the steps here might not be identic on your own platform.
 {.is-info}
 
-In general, the sought after features are found under the `security` tab. 
+In general, the sought after features are found under the `security` tab.
 
-For an AMD-based computer, you need to look for references to `AMD SVM`, AMD V or AMD Vi. Conversingly, for an Intel-based computer, you need to look for `Intel VT-x` and `Intel VT-d`. It is also possible that the feature will be refered simply to as `virtualization`.
+For an AMD-based computer, you need to look for references to `AMD SVM`, AMD V or AMD Vi. Conversingly, for an Intel-based computer, you need to look for `Intel VT-x` and `Intel VT-d`. It is also possible that the feature will be refered simply to as `virtualization`. In that case, you may not know it refers to IOMMU-based hardware-assisted virtualization or not.
 
-Enable these options, choose to *save and exit* the configuration tool, which will reboot your computer.
+Make sure you enable these options and choose to *save and exit* the configuration tool, which will reboot your computer.
 
-> While you are there, you could also change the boot order, to make sure that your computer will boot from an attached USB thumb drive first.
+> While you are there, you could also change the boot order, to make sure that your computer will boot from an attached USB thumb drive first when it will be time to try out Phyllome OS.
 {.is-info}
 
 > Failing to activate hardware-assisted virtualization will make running virtual machines extremly slow, if possible at all. If, for some reasons, it cannot be activated on your computer, for example because of a lack of hardware support, you would be better off picking a Linux distribution which doesn't require it, such as [Debian](https://www.debian.org/distrib/).   
