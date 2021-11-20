@@ -1,4 +1,4 @@
----
+b---
 title: Phyllome OS sticks with a USB thumb drive
 description: 
 published: true
@@ -13,10 +13,10 @@ dateCreated: 2021-11-13T11:34:07.852Z
 
 # Create an installation medium
 
-> As of now, it is not yet possible to deploy Phyllome OS on a storage device using the official ISO file. In the meantime, please use a [Fedora Server ISO instead](https://getfedora.org/en/server/).
+> If you intent to install Phyllome OS permanently on your computer, please use a [Fedora Server ISO instead](https://getfedora.org/en/server/). As of now, it is not yet possible to deploy Phyllome OS on a storage device using the official Phyllome OS ISO file.
 {.is-warning}
 
-*In this section, you will learn how to create a Phyllome OS Live medium to be able to boot Phyllome OS from thumb drive*
+*In this section, you will learn how to create a live medium that will allow you to boot Phyllome OS from a thumb drive*
 
 ## Download Phyllome OS
 
