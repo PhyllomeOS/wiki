@@ -2,7 +2,7 @@
 title: Phyllome OS meets a thumb drive
 description: 
 published: true
-date: 2021-11-21T16:00:44.995Z
+date: 2021-11-21T16:00:53.574Z
 tags: 
 editor: markdown
 dateCreated: 2021-11-13T11:34:07.852Z
@@ -102,7 +102,7 @@ Follow the normal procedure to install an application on your computer.
 
 ## 3. Boot from a USB flash drive
 
-Booting an alternative 
+Booting from an alternative 
 
 ### macOS
 
