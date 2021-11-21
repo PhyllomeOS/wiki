@@ -2,7 +2,7 @@
 title: Phyllome OS meets a thumb drive
 description: 
 published: true
-date: 2021-11-21T12:13:07.904Z
+date: 2021-11-21T12:14:29.306Z
 tags: 
 editor: markdown
 dateCreated: 2021-11-13T11:34:07.852Z
@@ -67,7 +67,9 @@ Follow the normal procedure to install an application on your computer.
 
 * **Use it**
 
-Insert a blank flash drive and open Etcher. You will be greeted with this screen. Click on *Flash from file*
+Insert a blank flash drive
+
+Open Etcher. You will be greeted with this screen. Click on *Flash from file*
 
 ![capture-balenaetcher-1.png](/balena-etcher/capture-balenaetcher-1.png)
 
@@ -75,7 +77,7 @@ Browse where the ISO is stored and select *Open*
 
 ![capture-balenaetcher-2.png](/balena-etcher/capture-balenaetcher-2.png)
 
-Etcher should have autodetected your USB flash drive. If it is not the case, press *Change* and pick the desired destination.
+Etcher should have autodetected your USB flash drive. If it is not the case, press *Change* on the welcome screen and pick the desired destination on the new window.
 
 ![capture-balenaetcher-3.png](/balena-etcher/capture-balenaetcher-3.png)
 
