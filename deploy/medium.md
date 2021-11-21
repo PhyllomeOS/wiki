@@ -2,7 +2,7 @@
 title: Phyllome OS meets a thumb drive
 description: 
 published: true
-date: 2021-11-21T16:34:44.735Z
+date: 2021-11-21T16:38:25.151Z
 tags: 
 editor: markdown
 dateCreated: 2021-11-13T11:34:07.852Z
@@ -128,4 +128,5 @@ On macOS, just after
 
 ---
 
-*When you are done, if you have followed the procedure with the Phyllome OS ISO, go to the section [Get started with the Live system](/getstarted/live). If you have followed the procedure using Fedora Server, with the intent of installing Phyllome OS permanently, please go to the [Install Phyllome OS page](https://wiki.phyllo.me/deploy/install) instead* 
+*If you have followed the procedure using the Phyllome OS ISO, go to the section [Get started with the live system](/getstarted/live).*
+*If you have followed the procedure using the Fedora Server ISO, with the intent of installing Phyllome OS permanently, please go to the [Install Phyllome OS page](https://wiki.phyllo.me/deploy/install) instead.* 
