@@ -2,7 +2,7 @@
 title: Preparation
 description: 
 published: true
-date: 2021-11-21T13:40:03.131Z
+date: 2021-11-21T13:42:09.084Z
 tags: 
 editor: markdown
 dateCreated: 2021-11-15T15:39:49.074Z
@@ -93,7 +93,7 @@ shutdown /fw /r
 
 * **macOS-based computers**
 
-Hardware-assisted virtualization is a hit or miss on Apple computers, as there is no way to access the firmware configuration tool on these computers. Apple users can go to the install section directly, create a USB stick and hope that hardware-assisted virtualization will be supported. 
+Hardware-assisted virtualization is a hit or miss on Apple computers, as there is no way to access the firmware configuration tool on these computers. Apple users can go to the [install section](https://wiki.phyllo.me/deploy/medium) directly, create a USB stick and hope that hardware-assisted virtualization will be supported. 
 
 * **Other computers**
 
