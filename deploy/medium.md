@@ -2,7 +2,7 @@
 title: Phyllome OS meets a thumb drive
 description: 
 published: true
-date: 2021-11-21T16:02:22.485Z
+date: 2021-11-21T16:34:44.735Z
 tags: 
 editor: markdown
 dateCreated: 2021-11-13T11:34:07.852Z
@@ -10,16 +10,16 @@ dateCreated: 2021-11-13T11:34:07.852Z
 
 # Create an installation medium
 
-*In this section, you will learn how to download Phyllome OS and how to create a live medium that will allow you to boot it from a thumb drive.*
-
-> If you intent to install Phyllome OS permanently on your computer, follow this procedure but use a [Fedora Server ISO instead](https://getfedora.org/en/server/), as it is not yet possible to install Phyllome OS from the live image.
-{.is-warning}
+*In this section, you will learn how to download Phyllome OS and how to create a live medium that will allow you to boot it from a USB flash drive.*
 
 ## 1. Download Phyllome OS 
 
 The Phyllome OS ISOs files are made available [on GitHub](https://github.com/PhyllomeOS/phyllomeos/releases).
 
-As of now, only the Phyllome OS Desktop II edition is available as an ISO file. The `II edition` is tuned for Intel CPUs and Intel GPUs. It is also known as `ldhi`, for *live*, *desktop*, *hypervisor*, and *intel*. 
+As of now, only the *Phyllome OS Desktop II edition* is available as an ISO file. The *II edition* is tuned for Intel CPUs and Intel GPUs. It is also known as *ldhi*, for *live*, *desktop*, *hypervisor*, and *intel*. 
+
+> If you intent to install Phyllome OS permanently on your computer, use a [Fedora Server ISO instead](https://getfedora.org/en/server/) as it is not yet possible to install Phyllome OS from the live image. The steps below are made to be generic, and should be valid regardless of the ISO you use
+{.is-warning}
 
 * [**The direct link**](https://github.com/PhyllomeOS/phyllomeos/releases/download/v.0.2.0-alpha/phyllome-live_ldhi_v0.2.0-alpha_x86_64.iso) to download the ISO. It will take some time to load. 
 
@@ -69,7 +69,7 @@ Follow the normal procedure to install an application on your computer.
 
 * Insert a blank flash drive on a free USB slot on your computer
 
-* Open Etcher. You will be greeted by the screen bellow. Click on *Flash from file*
+* Open Etcher. You will be greeted by the screen below. Click on *Flash from file*
 
 ![capture-balenaetcher-1.png](/balena-etcher/capture-balenaetcher-1.png)
 
@@ -86,7 +86,7 @@ Follow the normal procedure to install an application on your computer.
 > **Warning:** clicking *Flash* will **destroy** any data on the target device
 {.is-danger}
 
-> A prompt might appear, asking for your password or a confirmation.  
+> A prompt might appear, asking for your password or a confirmation
 {.is-info}
 
 ![capture-balenaetcher-4.png](/balena-etcher/capture-balenaetcher-4.png)
@@ -102,9 +102,27 @@ Follow the normal procedure to install an application on your computer.
 
 ## 3. Boot from a USB flash drive
 
-Using Booting Phyllome OS  
+By default, when a computer boots up, it will look for an operating system on the internal storage device first. If there is one, it will load this operating system and ignore any other media, such as a USB flash drive that may plug to the computer.
+
+To boot from a USB flash drive, one would have to either temporary or permanently alter the so-called boot order. The boot order instructs at what point and where it should look for an operating system. The following section illustrates how to change the boot order *temporary*.
+
+> The process to change the boot order depends on your current computer platform. Please follow the instruction that matches your platform.
+{.is-info}
+
+> Booting from a USB flash drive is a **non-destructive** process, which means that it won't affect any pre-existing operating system that may be installed on your computer. As a precautious, it may be good to backup your data or, even better, to use computer with no personnal data on it.
+{.is-info}
 
 ### macOS
+
+Make sure that your computer is turned-off. 
+On macOS, just after 
+
+
+### Windows
+
+### Linux
+
+
 
 
 
