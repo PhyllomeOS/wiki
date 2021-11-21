@@ -2,7 +2,7 @@
 title: Phyllome OS meets a thumb drive
 description: 
 published: true
-date: 2021-11-21T17:52:21.017Z
+date: 2021-11-21T17:54:11.431Z
 tags: 
 editor: markdown
 dateCreated: 2021-11-13T11:34:07.852Z
@@ -33,7 +33,9 @@ The following instructions may have to be adapted depending on the operating sys
 * *General requirements*
     * A fast USB 3.0 flash drive of at least 2 GB
 
-### Command-line instructions (Linux-only): flash a USB disk using the `dd` command line tool
+### Command-line instructions (Linux-only):
+
+This method uses the `dd` command line tool.
 
 The next command assumes that the ISO file is available in the *Downloads* folder and that the target medium is called `sdz`. You can identify the correct target device using the `lsblk` command line tool. Modify the command according to your context. 
 
@@ -47,7 +49,7 @@ The next command assumes that the ISO file is available in the *Downloads* folde
 dd bs=4MB if=~/Downloads/phyllome-live_ldhi_v0.2.0-alpha_x86_64.iso of=/dev/sdz
 ```
 
-### Manual instructions: flash a USB disk using Etcher
+### Manual instructions (Cross-platform):
 
 The instructions are designed with Etcher in mind. Other tools such as [Rufus](https://rufus.ie/en/), [Unetbootin](https://unetbootin.github.io/) or [Ventoy](https://www.ventoy.net/en/index.html) are likely to work too.  
 
@@ -124,7 +126,7 @@ To boot from a USB flash drive, one would have to either temporary or permanentl
 {.is-info}
 
 ### Windows 8 and later versions
- 
+
 ### Other computers
 
 
