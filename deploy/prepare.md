@@ -2,7 +2,7 @@
 title: Preparation
 description: 
 published: true
-date: 2021-11-19T21:54:56.075Z
+date: 2021-11-21T13:40:03.131Z
 tags: 
 editor: markdown
 dateCreated: 2021-11-15T15:39:49.074Z
@@ -12,9 +12,9 @@ dateCreated: 2021-11-15T15:39:49.074Z
 
 ## 1. Meet the requirements
 
-These instructions are valid for x86-64 computers that do ship with Linux, Windows or macOS.
+These instructions are valid for computers that ship with Linux, Windows or macOS. 
 
-Phyllome OS targets x86 systems with hardware-assisted virtualization, with a strong preference for those providing IOMMU-based hardware-assisted virtualization (AMD Vi or Intel VT-d).
+Phyllome OS targets x86 systems with hardware-assisted virtualization, with a strong preference for those providing IOMMU-based hardware-assisted virtualization (AMD Vi or Intel VT-d). 
 
 Sitting idle, Phyllome OS consumes approximately 1 CPU core and 1.5 GB of RAM. 
 
@@ -27,7 +27,7 @@ Sitting idle, Phyllome OS consumes approximately 1 CPU core and 1.5 GB of RAM.
     * For AMD-based configurations, it means that AMD V is available and enabled, which is the case for most CPU models.
     * For Intel-based configurations, it means that Intel VT-x is available and enabled
 * **2-core** processor
-* **8 GB** of RAM
+* **4 GB** of RAM
 * **SSD**-based storage device to store disk images and Phyllome OS
 * Any graphics card (Linux or macOS guests only)
 
