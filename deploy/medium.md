@@ -2,7 +2,7 @@
 title: Phyllome OS meets a thumb drive
 description: 
 published: true
-date: 2021-11-21T13:50:54.245Z
+date: 2021-11-21T13:54:20.101Z
 tags: 
 editor: markdown
 dateCreated: 2021-11-13T11:34:07.852Z
@@ -98,6 +98,11 @@ Wait a few minutes...
 {.is-success}
 
 ![capture-balenaetcher-6.png](/balena-etcher/capture-balenaetcher-6.png)
+
+## 3. Boot from a USB flash drive
+
+`to be done`
+
 
 ---
 
