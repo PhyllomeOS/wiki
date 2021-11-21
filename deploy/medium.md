@@ -1,4 +1,14 @@
-b---
+---
+title: Phyllome OS sticks with a USB thumb drive
+description: 
+published: true
+date: 2021-11-21T11:33:36.047Z
+tags: 
+editor: markdown
+dateCreated: 2021-11-13T11:34:07.852Z
+---
+
+---
 title: Phyllome OS sticks with a USB thumb drive
 description: 
 published: true
