@@ -2,7 +2,7 @@
 title: Phyllome OS meets a thumb drive
 description: 
 published: true
-date: 2021-11-21T12:14:29.306Z
+date: 2021-11-21T12:19:35.151Z
 tags: 
 editor: markdown
 dateCreated: 2021-11-13T11:34:07.852Z
@@ -81,7 +81,7 @@ Etcher should have autodetected your USB flash drive. If it is not the case, pre
 
 ![capture-balenaetcher-3.png](/balena-etcher/capture-balenaetcher-3.png)
 
-Select *Flash* when you are ready 
+Select *Flash* when you are ready
 
 > Selecting *Flash* will **destroy** any data on the target device
 {.is-danger}
@@ -99,4 +99,4 @@ Wait a few minutes...
 
 ---
 
-*When you are done, go to the section [Get started with the Live system](/getstarted/live)* 
+*When you are done, if you have followed the procedure with the Phyllome OS ISO, go to the section [Get started with the Live system](/getstarted/live). If you have followed the procedure using Fedora Server, with the intend of installing Phyllome OS permanently, please follow [this link](https://wiki.phyllo.me/deploy/install) instead to deploy it* 
