@@ -2,7 +2,7 @@
 title: Phyllome OS meets a thumb drive
 description: 
 published: true
-date: 2021-11-21T13:43:30.574Z
+date: 2021-11-21T13:44:14.594Z
 tags: 
 editor: markdown
 dateCreated: 2021-11-13T11:34:07.852Z
@@ -33,7 +33,7 @@ The following instructions may have to be adapted depending on the operating sys
 * *General requirements*
     * A fast USB 3.0 flash drive of at least 2 GB
 
-### Command-line instructions: flash a USB disk using the `dd` command line tool on Linux
+### Command-line instructions (Linux-only): flash a USB disk using the `dd` command line tool
 
 The next command assumes that the ISO file is available in the *Downloads* folder and that the target medium is called `sdz`. You can identify the correct target device using the `lsblk` command line tool. Modify the command according to your context. 
 
