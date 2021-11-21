@@ -2,7 +2,7 @@
 title: Phyllome OS meets a thumb drive
 description: 
 published: true
-date: 2021-11-21T12:11:48.917Z
+date: 2021-11-21T12:12:31.274Z
 tags: 
 editor: markdown
 dateCreated: 2021-11-13T11:34:07.852Z
@@ -12,7 +12,7 @@ dateCreated: 2021-11-13T11:34:07.852Z
 
 *In this section, you will learn how to download Phyllome OS and how to create a live medium that will allow you to boot it from a thumb drive.*
 
-> If you intent to install Phyllome OS permanently on your computer, please use a [Fedora Server ISO instead](https://getfedora.org/en/server/)
+> If you intent to install Phyllome OS permanently on your computer, follow this procedure but please use a [Fedora Server ISO instead](https://getfedora.org/en/server/)
 {.is-warning}
 
 The Phyllome OS ISOs files are made available [on GitHub](https://github.com/PhyllomeOS/phyllomeos/releases).
