@@ -2,7 +2,7 @@
 title: Phyllome OS meets a thumb drive
 description: 
 published: true
-date: 2021-11-21T16:40:18.566Z
+date: 2021-11-21T16:49:58.661Z
 tags: 
 editor: markdown
 dateCreated: 2021-11-13T11:34:07.852Z
@@ -115,7 +115,13 @@ To boot from a USB flash drive, one would have to either temporary or permanentl
 ### macOS
 
 * Make sure that your computer is turned-off. 
+* Locate the <kbd>Alt</kbd> / <kbd>Option</kbd> key on your keyboard.
+* Turn your computer on and immediately press the <kbd>Alt</kbd> / <kbd>Option</kbd> key continuously.
+* The startup manager should appear after a few seconds.
+* Click on the option called *EFI* to boot Phyllome OS. 
 
+> Other Mac startup key combinations can be found [here](https://support.apple.com/en-us/HT201255). 
+{.is-info}
 
 ### Windows
 
