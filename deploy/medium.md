@@ -2,7 +2,7 @@
 title: Phyllome OS meets a thumb drive
 description: 
 published: true
-date: 2021-11-21T13:54:20.101Z
+date: 2021-11-21T16:00:44.995Z
 tags: 
 editor: markdown
 dateCreated: 2021-11-13T11:34:07.852Z
@@ -40,7 +40,7 @@ The next command assumes that the ISO file is available in the *Downloads* folde
 > This command requires root privileges
 {.is-info}
 
-> This command will **destroy** any data on the target device
+> **Warning:** This command will **destroy** any data on the target device
 {.is-danger}
 
 ```
@@ -54,43 +54,44 @@ The instructions are designed with Etcher in mind. Other tools such as [Rufus](h
 > Etcher is an open-source, cross platform tool for flashing images to a target medium. It is developed and made available by [balena](https://www.balena.io/). 
 {.is-info}
 
-* **Download Etcher**
+#### Install Etcher
 
 You can download Etcher on [the official website](https://www.balena.io/etcher/).
 
 Pick the right version depending on your platform.
-
-* **Install it**
 
 Follow the normal procedure to install an application on your computer.
 
 > An account with administrator rights will be needed.
 {.is-info}
 
-* **Use it**
+#### Use it
 
-Insert a blank flash drive
+* Insert a blank flash drive on a free USB slot on your computer
 
-Open Etcher. You will be greeted by this screen. Click on *Flash from file*
+* Open Etcher. You will be greeted by the screen bellow. Click on *Flash from file*
 
 ![capture-balenaetcher-1.png](/balena-etcher/capture-balenaetcher-1.png)
 
-Browse where the ISO is stored and select *Open*
+* Browse where the ISO is stored and select *Open*
 
 ![capture-balenaetcher-2.png](/balena-etcher/capture-balenaetcher-2.png)
 
-Etcher should have autodetected your USB flash drive. If this is not the case, press *Change* on the welcome screen and pick the desired destination on the new window.
+* Etcher should have autodetected your USB flash drive. If this is not the case, press *Change* on the welcome screen and pick the desired destination on the new window.
 
 ![capture-balenaetcher-3.png](/balena-etcher/capture-balenaetcher-3.png)
 
-Select *Flash* when you are ready
+* Select *Flash* when you are ready
 
-> Selecting *Flash* will **destroy** any data on the target device
+> **Warning:** clicking *Flash* will **destroy** any data on the target device
 {.is-danger}
+
+> A prompt might appear, asking for your password or a confirmation.  
+{.is-info}
 
 ![capture-balenaetcher-4.png](/balena-etcher/capture-balenaetcher-4.png)
 
-Wait a few minutes...
+* Wait a few minutes...
 
 ![capture-balenaetcher-5.png](/balena-etcher/capture-balenaetcher-5.png)
 
@@ -101,7 +102,10 @@ Wait a few minutes...
 
 ## 3. Boot from a USB flash drive
 
-`to be done`
+Booting an alternative 
+
+### macOS
+
 
 
 ---
