@@ -2,14 +2,11 @@
 title: Phyllome OS sticks with a USB thumb drive
 description: 
 published: true
-date: 2021-11-21T11:46:36.965Z
+date: 2021-11-21T12:06:19.426Z
 tags: 
 editor: markdown
 dateCreated: 2021-11-13T11:34:07.852Z
 ---
-
-> Section under construction
-{.is-warning}
 
 # Create an installation medium
 
@@ -29,32 +26,30 @@ As of now, only the Phyllome OS Desktop II edition is available as an ISO file. 
 > As of now, there is no checksum available, and the release is not signed using GPG keys. Among other things, it means that there is no garanty about the authenticity of the file or its integrity, whatsoever. Alternatively, a safer is to deploy Phyllome OS [in a virtual machine](https://github.com/PhyllomeOS/phyllomeos#how-to-hack-phyllome-os) or to deploy it directly on a host using [this method](/deploy/live)
 {.is-warning}
 
-## How to put it on a USB Stick 
+## Load Phyllome OS on a USB flash drive 
 
 The following instructions may have to be adapted depending on the operating system that you are currently using.
 
 * *General requirements*
-    * A fast USB 3.0 flash drive 
-    * 2 GB
+    * A fast USB 3.0 flash drive of at least 2 GB
 
 ### Command-line instructions: flash a USB disk using the `dd` command line tool on Linux
 
 The next command assumes that the ISO file is available in the *Downloads* folder and that the target medium is called `sdz`. You can identify the correct target device using the `lsblk` command line tool. Modify the command according to your context. 
 
-> This command will destroy any data on the target device
-{.is-warning}
-
 > This command requires root privileges
 {.is-info}
+
+> This command will **destroy** any data on the target device
+{.is-warning}
 
 ```
 dd bs=4MB if=~/Downloads/phyllome-live_ldhi_v0.2.0-alpha_x86_64.iso of=/dev/sdz
 ```
 
-
 ### Manual instructions: flash a USB disk using Etcher
 
-The instructions are designed with Etcher in mind
+The instructions are designed with Etcher in mind. Other tools such as [Rufus](https://rufus.ie/en/), [Unetbootin](https://unetbootin.github.io/) or [Ventoy](https://www.ventoy.net/en/index.html) are likely to work too.  
 
 > Etcher is an open-source, cross platform tool for flashing images to a target medium. It is developped and made available by [balena](https://www.balena.io/). 
 {.is-info}
@@ -73,6 +68,35 @@ Follow the normal procedure to install an application on your computer.
 {.is-info}
 
 * **Use it**
+
+Insert a blank flash drive and open Etcher. You will be greeted with this screen. Click on *Flash from file*
+
+![capture-balenaetcher-1.png](/balena-etcher/capture-balenaetcher-1.png)
+
+Browse where the ISO is stored and select *Open*
+
+![capture-balenaetcher-2.png](/balena-etcher/capture-balenaetcher-2.png)
+
+Etcher should have autodetected your USB flash drive. If it is not the case, press *Change* and pick the desired destination.
+
+![capture-balenaetcher-3.png](/balena-etcher/capture-balenaetcher-3.png)
+
+Select *Flash* when you are ready 
+
+> Selecting *Flash* will **destroy** any data on the target device
+{.is-warning}
+
+![capture-balenaetcher-4.png](/balena-etcher/capture-balenaetcher-4.png)
+
+Wait a few minutes...
+
+![capture-balenaetcher-5.png](/balena-etcher/capture-balenaetcher-5.png)
+
+> Congratulations, the USB flash drive is now ready to use!
+{.is-success}
+
+![capture-balenaetcher-6.png](/balena-etcher/capture-balenaetcher-6.png)
+
 
 
 
