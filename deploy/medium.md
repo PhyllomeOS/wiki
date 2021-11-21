@@ -2,7 +2,7 @@
 title: Phyllome OS meets a thumb drive
 description: 
 published: true
-date: 2021-11-21T17:15:55.955Z
+date: 2021-11-21T17:52:21.017Z
 tags: 
 editor: markdown
 dateCreated: 2021-11-13T11:34:07.852Z
@@ -18,8 +18,8 @@ The Phyllome OS ISOs files are made available [on GitHub](https://github.com/Phy
 
 As of now, only the *Phyllome OS Desktop II edition* is available as an ISO file. The *II edition* is tuned for Intel CPUs and Intel GPUs. It is also known as *ldhi*, for *live*, *desktop*, *hypervisor*, and *intel*. 
 
-> If you intent to install Phyllome OS permanently on your computer, use a [Fedora Server ISO instead](https://getfedora.org/en/server/) as it is not yet possible to install Phyllome OS from the live image. The steps below are made to be generic, and should be valid regardless of the ISO you use
-{.is-warning}
+> If you intent to install Phyllome OS permanently on your computer, use a [Fedora Server ISO instead](https://getfedora.org/en/server/), as it is not yet possible to install Phyllome OS from the live image. The steps below are made to be generic, and should be valid regardless of the ISO you use
+{.is-info}
 
 * [**The direct link**](https://github.com/PhyllomeOS/phyllomeos/releases/download/v.0.2.0-alpha/phyllome-live_ldhi_v0.2.0-alpha_x86_64.iso) to download the ISO. It will take some time to load. 
 
