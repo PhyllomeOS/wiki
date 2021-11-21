@@ -1,8 +1,8 @@
 ---
-title: Phyllome OS sticks with a USB thumb drive
+title: Phyllome OS meets a thumb drive
 description: 
 published: true
-date: 2021-11-21T12:06:19.426Z
+date: 2021-11-21T12:11:48.917Z
 tags: 
 editor: markdown
 dateCreated: 2021-11-13T11:34:07.852Z
@@ -13,9 +13,7 @@ dateCreated: 2021-11-13T11:34:07.852Z
 *In this section, you will learn how to download Phyllome OS and how to create a live medium that will allow you to boot it from a thumb drive.*
 
 > If you intent to install Phyllome OS permanently on your computer, please use a [Fedora Server ISO instead](https://getfedora.org/en/server/)
-{.is-info}
-
-## Download Phyllome OS
+{.is-warning}
 
 The Phyllome OS ISOs files are made available [on GitHub](https://github.com/PhyllomeOS/phyllomeos/releases).
 
@@ -41,7 +39,7 @@ The next command assumes that the ISO file is available in the *Downloads* folde
 {.is-info}
 
 > This command will **destroy** any data on the target device
-{.is-warning}
+{.is-danger}
 
 ```
 dd bs=4MB if=~/Downloads/phyllome-live_ldhi_v0.2.0-alpha_x86_64.iso of=/dev/sdz
@@ -84,7 +82,7 @@ Etcher should have autodetected your USB flash drive. If it is not the case, pre
 Select *Flash* when you are ready 
 
 > Selecting *Flash* will **destroy** any data on the target device
-{.is-warning}
+{.is-danger}
 
 ![capture-balenaetcher-4.png](/balena-etcher/capture-balenaetcher-4.png)
 
@@ -97,10 +95,6 @@ Wait a few minutes...
 
 ![capture-balenaetcher-6.png](/balena-etcher/capture-balenaetcher-6.png)
 
-
-
-
-
 ---
 
-*When you are done, please go to the section [Install from a live medium](/deploy/live)*
+*When you are done, go to the section [Get started with the Live system](/getstarted/live)* 
