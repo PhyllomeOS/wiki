@@ -2,7 +2,7 @@
 title: Homepage
 description: 
 published: true
-date: 2021-11-19T21:58:53.703Z
+date: 2021-11-21T17:50:51.130Z
 tags: 
 editor: markdown
 dateCreated: 2021-06-19T09:29:20.593Z
@@ -33,7 +33,7 @@ If you want to learn more about it, its goal and the context around it, have a l
 * **Install**
   * [Prepare your computer](/deploy/prepare)
   * [Create an installation medium](/deploy/medium)
-  * [Install from a thumb drive](/deploy/install) (*default method*)
+  * [Install from a USB flash drive](/deploy/install) (*default method*)
 	* ...and [**more**](https://wiki.phyllo.me/en/deploy)
 
 ## Get started
