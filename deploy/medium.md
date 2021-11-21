@@ -2,17 +2,7 @@
 title: Phyllome OS sticks with a USB thumb drive
 description: 
 published: true
-date: 2021-11-21T11:33:36.047Z
-tags: 
-editor: markdown
-dateCreated: 2021-11-13T11:34:07.852Z
----
-
----
-title: Phyllome OS sticks with a USB thumb drive
-description: 
-published: true
-date: 2021-11-13T17:23:30.443Z
+date: 2021-11-21T11:46:36.965Z
 tags: 
 editor: markdown
 dateCreated: 2021-11-13T11:34:07.852Z
@@ -23,30 +13,69 @@ dateCreated: 2021-11-13T11:34:07.852Z
 
 # Create an installation medium
 
-> If you intent to install Phyllome OS permanently on your computer, please use a [Fedora Server ISO instead](https://getfedora.org/en/server/). As of now, it is not yet possible to deploy Phyllome OS on a storage device using the official Phyllome OS ISO file.
-{.is-warning}
+*In this section, you will learn how to download Phyllome OS and how to create a live medium that will allow you to boot it from a thumb drive.*
 
-*In this section, you will learn how to create a live medium that will allow you to boot Phyllome OS from a thumb drive*
+> If you intent to install Phyllome OS permanently on your computer, please use a [Fedora Server ISO instead](https://getfedora.org/en/server/)
+{.is-info}
 
 ## Download Phyllome OS
 
-`to be done`
+The Phyllome OS ISOs files are made available [on GitHub](https://github.com/PhyllomeOS/phyllomeos/releases).
 
-## Put it on a USB stick
+As of now, only the Phyllome OS Desktop II edition is available as an ISO file. The `II edition` is tuned for Intel CPUs and Intel GPUs. It is also known as `ldhi`, for *live*, *desktop*, *hypervisor*, and *intel*. 
 
-Please follow the instructions depending on the OS you currently use.
+* [**The direct link**](https://github.com/PhyllomeOS/phyllomeos/releases/download/v.0.2.0-alpha/phyllome-live_ldhi_v0.2.0-alpha_x86_64.iso) to download the ISO. It will take some time to load. 
 
-### Linux
+> As of now, there is no checksum available, and the release is not signed using GPG keys. Among other things, it means that there is no garanty about the authenticity of the file or its integrity, whatsoever. Alternatively, a safer is to deploy Phyllome OS [in a virtual machine](https://github.com/PhyllomeOS/phyllomeos#how-to-hack-phyllome-os) or to deploy it directly on a host using [this method](/deploy/live)
+{.is-warning}
 
-`to be done`
+## How to put it on a USB Stick 
 
-### macOS
+The following instructions may have to be adapted depending on the operating system that you are currently using.
 
-`to be done`
+* *General requirements*
+    * A fast USB 3.0 flash drive 
+    * 2 GB
 
-### Windows 
+### Command-line instructions: flash a USB disk using the `dd` command line tool on Linux
 
-`to be done`
+The next command assumes that the ISO file is available in the *Downloads* folder and that the target medium is called `sdz`. You can identify the correct target device using the `lsblk` command line tool. Modify the command according to your context. 
+
+> This command will destroy any data on the target device
+{.is-warning}
+
+> This command requires root privileges
+{.is-info}
+
+```
+dd bs=4MB if=~/Downloads/phyllome-live_ldhi_v0.2.0-alpha_x86_64.iso of=/dev/sdz
+```
+
+
+### Manual instructions: flash a USB disk using Etcher
+
+The instructions are designed with Etcher in mind
+
+> Etcher is an open-source, cross platform tool for flashing images to a target medium. It is developped and made available by [balena](https://www.balena.io/). 
+{.is-info}
+
+* **Download Etcher**
+
+You can download Etcher on [the official website](https://www.balena.io/etcher/).
+
+Pick the right version depending on your platform.
+
+* **Install it**
+
+Follow the normal procedure to install an application on your computer.
+
+> An account with administrator rights will be needed.
+{.is-info}
+
+* **Use it**
+
+
+
 
 ---
 
