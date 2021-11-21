@@ -2,7 +2,7 @@
 title: Phyllome OS meets a thumb drive
 description: 
 published: true
-date: 2021-11-21T16:49:58.661Z
+date: 2021-11-21T17:15:55.955Z
 tags: 
 editor: markdown
 dateCreated: 2021-11-13T11:34:07.852Z
@@ -123,9 +123,9 @@ To boot from a USB flash drive, one would have to either temporary or permanentl
 > Other Mac startup key combinations can be found [here](https://support.apple.com/en-us/HT201255). 
 {.is-info}
 
-### Windows
-
-### Linux
+### Windows 8 and later versions
+ 
+### Other computers
 
 
 
