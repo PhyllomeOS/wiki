@@ -2,7 +2,7 @@
 title: Phyllome OS meets a thumb drive
 description: 
 published: true
-date: 2021-11-21T13:44:14.594Z
+date: 2021-11-21T13:50:54.245Z
 tags: 
 editor: markdown
 dateCreated: 2021-11-13T11:34:07.852Z
@@ -23,7 +23,7 @@ As of now, only the Phyllome OS Desktop II edition is available as an ISO file. 
 
 * [**The direct link**](https://github.com/PhyllomeOS/phyllomeos/releases/download/v.0.2.0-alpha/phyllome-live_ldhi_v0.2.0-alpha_x86_64.iso) to download the ISO. It will take some time to load. 
 
-> As of now, there is no checksum available, and the release is not signed using GPG keys. Among other things, it means that there is no garanty about the authenticity of the file or its integrity, whatsoever. Alternatively, a safer is to deploy Phyllome OS [in a virtual machine](https://github.com/PhyllomeOS/phyllomeos#how-to-hack-phyllome-os) or to deploy it directly on a host using [this method](/deploy/live)
+> As of now, there is no checksum available, and the release is not signed using GPG keys. Among other things, it means that there is no guarantee about the authenticity of the file or its integrity, whatsoever. Alternatively, a safer is to deploy Phyllome OS [in a virtual machine](https://github.com/PhyllomeOS/phyllomeos#how-to-hack-phyllome-os) or to deploy it directly on a host using [this method](/deploy/live)
 {.is-warning}
 
 ## 2. Load Phyllome OS on a USB flash drive 
@@ -51,7 +51,7 @@ dd bs=4MB if=~/Downloads/phyllome-live_ldhi_v0.2.0-alpha_x86_64.iso of=/dev/sdz
 
 The instructions are designed with Etcher in mind. Other tools such as [Rufus](https://rufus.ie/en/), [Unetbootin](https://unetbootin.github.io/) or [Ventoy](https://www.ventoy.net/en/index.html) are likely to work too.  
 
-> Etcher is an open-source, cross platform tool for flashing images to a target medium. It is developped and made available by [balena](https://www.balena.io/). 
+> Etcher is an open-source, cross platform tool for flashing images to a target medium. It is developed and made available by [balena](https://www.balena.io/). 
 {.is-info}
 
 * **Download Etcher**
@@ -71,7 +71,7 @@ Follow the normal procedure to install an application on your computer.
 
 Insert a blank flash drive
 
-Open Etcher. You will be greeted with this screen. Click on *Flash from file*
+Open Etcher. You will be greeted by this screen. Click on *Flash from file*
 
 ![capture-balenaetcher-1.png](/balena-etcher/capture-balenaetcher-1.png)
 
@@ -79,7 +79,7 @@ Browse where the ISO is stored and select *Open*
 
 ![capture-balenaetcher-2.png](/balena-etcher/capture-balenaetcher-2.png)
 
-Etcher should have autodetected your USB flash drive. If it is not the case, press *Change* on the welcome screen and pick the desired destination on the new window.
+Etcher should have autodetected your USB flash drive. If this is not the case, press *Change* on the welcome screen and pick the desired destination on the new window.
 
 ![capture-balenaetcher-3.png](/balena-etcher/capture-balenaetcher-3.png)
 
@@ -101,4 +101,4 @@ Wait a few minutes...
 
 ---
 
-*When you are done, if you have followed the procedure with the Phyllome OS ISO, go to the section [Get started with the Live system](/getstarted/live). If you have followed the procedure using Fedora Server, with the intend of installing Phyllome OS permanently, please go to the [Install Phyllome OS page](https://wiki.phyllo.me/deploy/install) instead* 
+*When you are done, if you have followed the procedure with the Phyllome OS ISO, go to the section [Get started with the Live system](/getstarted/live). If you have followed the procedure using Fedora Server, with the intent of installing Phyllome OS permanently, please go to the [Install Phyllome OS page](https://wiki.phyllo.me/deploy/install) instead* 
