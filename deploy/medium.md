@@ -2,7 +2,7 @@
 title: Phyllome OS meets a thumb drive
 description: 
 published: true
-date: 2021-11-21T12:20:59.108Z
+date: 2021-11-21T13:43:30.574Z
 tags: 
 editor: markdown
 dateCreated: 2021-11-13T11:34:07.852Z
@@ -15,6 +15,8 @@ dateCreated: 2021-11-13T11:34:07.852Z
 > If you intent to install Phyllome OS permanently on your computer, follow this procedure but use a [Fedora Server ISO instead](https://getfedora.org/en/server/), as it is not yet possible to install Phyllome OS from the live image.
 {.is-warning}
 
+## 1. Download Phyllome OS 
+
 The Phyllome OS ISOs files are made available [on GitHub](https://github.com/PhyllomeOS/phyllomeos/releases).
 
 As of now, only the Phyllome OS Desktop II edition is available as an ISO file. The `II edition` is tuned for Intel CPUs and Intel GPUs. It is also known as `ldhi`, for *live*, *desktop*, *hypervisor*, and *intel*. 
@@ -24,7 +26,7 @@ As of now, only the Phyllome OS Desktop II edition is available as an ISO file. 
 > As of now, there is no checksum available, and the release is not signed using GPG keys. Among other things, it means that there is no garanty about the authenticity of the file or its integrity, whatsoever. Alternatively, a safer is to deploy Phyllome OS [in a virtual machine](https://github.com/PhyllomeOS/phyllomeos#how-to-hack-phyllome-os) or to deploy it directly on a host using [this method](/deploy/live)
 {.is-warning}
 
-## Load Phyllome OS on a USB flash drive 
+## 2. Load Phyllome OS on a USB flash drive 
 
 The following instructions may have to be adapted depending on the operating system that you are currently using.
 
