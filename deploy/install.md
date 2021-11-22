@@ -2,7 +2,7 @@
 title: Install Phyllome OS
 description: 
 published: true
-date: 2021-11-22T16:45:28.838Z
+date: 2021-11-22T17:03:36.044Z
 tags: 
 editor: markdown
 dateCreated: 2021-11-14T16:19:00.348Z
@@ -14,9 +14,6 @@ dateCreated: 2021-11-14T16:19:00.348Z
 {.is-info}
 
 *To install Phyllome OS permanently, you will need to plug the loaded USB flash drive to your targeted computer, to turn this computer on, to select the USB flash drive when it is booting up, and to modify a default GRUB command. These steps are explained below.* 
-
-> If you already have Fedora installed on your computer, you may skip this section and go straight to the *Alter the GRUB instructions* section below.
-{.is-info}
 
 > This page is intended for users that would like to install Phyllome OS permanently on their computer. As a result, following these instructions will permanently modify the content of the target device, erasing it. Proceed with caution. 
 {.is-warning}
