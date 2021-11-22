@@ -2,7 +2,7 @@
 title: Install Phyllome OS
 description: 
 published: true
-date: 2021-11-22T16:44:04.686Z
+date: 2021-11-22T16:44:12.658Z
 tags: 
 editor: markdown
 dateCreated: 2021-11-14T16:19:00.348Z
@@ -86,7 +86,7 @@ After a few minutes, you should be greeted with a welcome screen.
 
 ![screenshot_uefi_2021-11-11_143000.png](/grub-kickstart/screenshot_uefi_2021-11-11_143000.png)
 
-Go to the [First-launch configuration section](/deploy/install#first-launch-configuration) to learn what to do next.
+Go to the [First-launch configuration section](/deploy/install#first-launch) to learn what to do next.
 
 ### BIOS-based firmware
 
