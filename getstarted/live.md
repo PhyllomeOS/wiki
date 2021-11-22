@@ -2,14 +2,11 @@
 title: Get started with the Live system
 description: 
 published: true
-date: 2021-11-22T15:52:44.218Z
+date: 2021-11-22T20:54:09.582Z
 tags: 
 editor: markdown
 dateCreated: 2021-11-13T11:36:55.647Z
 ---
-
-> Section under construction
-{.is-warning}
 
 # Phyllome OS as a live system
 
