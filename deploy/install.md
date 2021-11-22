@@ -2,7 +2,7 @@
 title: Install Phyllome OS
 description: 
 published: true
-date: 2021-11-22T17:03:36.044Z
+date: 2021-11-22T17:07:04.583Z
 tags: 
 editor: markdown
 dateCreated: 2021-11-14T16:19:00.348Z
@@ -13,10 +13,9 @@ dateCreated: 2021-11-14T16:19:00.348Z
 > As of now, it is only possible to deploy Phyllome OS using an **offical Fedora ISO file** and an online kickstart file. It you don't have a USB flash drive ready to use, please go back to the last section.
 {.is-info}
 
-*To install Phyllome OS permanently, you will need to plug the loaded USB flash drive to your targeted computer, to turn this computer on, to select the USB flash drive when it is booting up, and to modify a default GRUB command. These steps are explained below.* 
+*This page is intended for users that would like to install Phyllome OS permanently on their computer. As a result, following these instructions will permanently modify the content of the target device, erasing it. Proceed with **caution**.*
 
-> This page is intended for users that would like to install Phyllome OS permanently on their computer. As a result, following these instructions will permanently modify the content of the target device, erasing it. Proceed with caution. 
-{.is-warning}
+*To install Phyllome OS permanently, you will need to plug the loaded USB flash drive to your targeted computer, to turn this computer on, to select the USB flash drive when it is booting up, and to modify a default GRUB command. These steps are explained below.* 
 
 ## Boot from a USB flash drive
 
