@@ -2,7 +2,7 @@
 title: Install Phyllome OS
 description: 
 published: true
-date: 2021-11-22T16:11:37.379Z
+date: 2021-11-22T16:35:47.012Z
 tags: 
 editor: markdown
 dateCreated: 2021-11-14T16:19:00.348Z
@@ -58,33 +58,41 @@ One needs to alter the GRUB instructions before the USB flash drive can load the
 
 ### EFI-based firmware
 
-On the GRUB splash screen, navigate to the first entry using your keyboard arrow key and press <kbd>e</kbd>.
+* On the GRUB splash screen, navigate to the first entry using your keyboard arrow key and press <kbd>e</kbd>.
 
 ![screenshot_uefi_2021-11-22_154226.png](/grub-kickstart/screenshot_uefi_2021-11-22_154226.png)
 
-On the new screen, navigate after the *quiet* word.
+* On the new screen, navigate after the *quiet* word.
 
 ![screenshot_uefi_2021-11-22_154238.png](/grub-kickstart/screenshot_uefi_2021-11-22_154238.png)
 
-> GRUB defaults to the US keyboard layout. Have a look at [this online ressource](https://en.wikipedia.org/wiki/QWERTY#/media/File:KB_United_States.svg) to find the corresponding keys if you are having a hard time finding the right keystroke.
+> GRUB defaults to the US keyboard layout. Have a look at [this online ressource](https://en.wikipedia.org/wiki/QWERTY#/media/File:KB_United_States.svg) to find the corresponding keys if you are having a hard time finding the right keystroke
 {.is-info}
 
-> This next instruction will trigger an automated process that will **destroy** any data located on the internal disk.
+> **Danger Zone**: the next instruction will trigger an automated process that will **destroy** any data located on the internal disk in your computer. 
 {.is-danger}
 
-Leave a blank space after the `quiet` word and write exactly the following `inst.ks=https://ks.phyllo.me/dii`, then press <kbd>Ctrl</kbd> + <kbd>x</kbd> simultaneously.
+* Leave a blank space after the `quiet` word and write exactly the following `inst.ks=https://ks.phyllo.me/dii`, then press <kbd>Ctrl</kbd> + <kbd>x</kbd> simultaneously.
 
 ![screenshot_uefi_2021-11-22_155450.png](/grub-kickstart/screenshot_uefi_2021-11-22_155450.png)
 
-This will trigger the automated installation of Phyllome OS.
+* The command will trigger the automated installation of Phyllome OS. 
 
+> The shortened URL `https://ks.phyllo.me/dii` points to the latest Desktop version of Phyllome OS, tweaked for Intel CPUs and GPUs, and whose kickstart file is available here: https://raw.githubusercontent.com/PhyllomeOS/phyllomeos/main/leaves/flat-dhi.cfg
 
+![screenshot_uefi_2021-11-11_130934.png](/grub-kickstart/screenshot_uefi_2021-11-11_130934.png)
+
+After a few minutes, you should be greeted with a welcome screen.
+
+![screenshot_uefi_2021-11-11_143000.png](/grub-kickstart/screenshot_uefi_2021-11-11_143000.png)
 
 
 
 ### BIOS-based firmware
 
+---
 
+*Please go to the [Get Started section](https://wiki.phyllo.me/getstarted/disk) to learn what to do next.*
 
 
 
