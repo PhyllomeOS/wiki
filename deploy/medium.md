@@ -2,13 +2,13 @@
 title: Phyllome OS meets a thumb drive
 description: 
 published: true
-date: 2021-11-22T17:05:28.472Z
+date: 2021-11-22T20:53:04.109Z
 tags: 
 editor: markdown
 dateCreated: 2021-11-13T11:34:07.852Z
 ---
 
-# Create an installation medium
+# Create a bootable USB flash drive
 
 *In this section, you will learn how to download Phyllome OS and how to create a live medium that will allow you to boot it from a USB flash drive.*
 
