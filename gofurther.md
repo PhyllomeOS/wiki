@@ -2,7 +2,7 @@
 title: Tasks
 description: 
 published: true
-date: 2021-11-21T17:18:11.619Z
+date: 2021-11-22T21:22:52.194Z
 tags: 
 editor: markdown
 dateCreated: 2021-11-13T11:40:46.114Z
@@ -24,7 +24,7 @@ dateCreated: 2021-11-13T11:40:46.114Z
 * [Encrypt](/gofurther/encrypt) virtual disk images using filesystem-level encryption
 * [Install and use the Cloud Hypervisor](/gofurther/cloud-hypervisor) to create a virtual machine
 
-## Tasks related to your guest OS
+## Tasks related to the guest OS
 
 *Although Phyllome OS thrives to pick good defaults that will work for many guest systems, further optimizations may be needed.* 
 
