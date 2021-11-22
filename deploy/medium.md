@@ -2,7 +2,7 @@
 title: Phyllome OS meets a thumb drive
 description: 
 published: true
-date: 2021-11-22T14:32:49.796Z
+date: 2021-11-22T17:05:28.472Z
 tags: 
 editor: markdown
 dateCreated: 2021-11-13T11:34:07.852Z
@@ -10,13 +10,9 @@ dateCreated: 2021-11-13T11:34:07.852Z
 
 # Create an installation medium
 
-> Section under construction
-{.is-warning}
-
-
 *In this section, you will learn how to download Phyllome OS and how to create a live medium that will allow you to boot it from a USB flash drive.*
 
-## 1. Download Phyllome OS 
+## Download Phyllome OS 
 
 The Phyllome OS ISOs files are made available [on GitHub](https://github.com/PhyllomeOS/phyllomeos/releases).
 
@@ -30,21 +26,18 @@ As of now, only the *Phyllome OS Desktop II edition* is available as an ISO file
 > As of now, there is no checksum available, and the release is not signed using GPG keys. Among other things, it means that there is no guarantee about the authenticity of the file or its integrity, whatsoever. Alternatively, a safer is to deploy Phyllome OS [in a virtual machine](https://github.com/PhyllomeOS/phyllomeos#how-to-hack-phyllome-os) or to deploy it directly on a host using [this method](/deploy/live)
 {.is-warning}
 
-## 2. Load Phyllome OS on a USB flash drive 
+## Load Phyllome OS on a USB flash drive 
 
 The following instructions may have to be adapted depending on the operating system that you are currently using.
 
 * *General requirements*
     * A fast USB 3.0 flash drive of at least 2 GB
 
-### Command-line instructions (Linux-only):
+### Command-line instructions (Linux-only)
 
 This method uses the `dd` command line tool.
 
-The next command assumes that the ISO file is available in the *Downloads* folder and that the target medium is called `sdz`. You can identify the correct target device using the `lsblk` command line tool. Modify the command according to your context. 
-
-> This command requires root privileges
-{.is-info}
+The next command, which requires root privileges, assumes that the ISO file is available in the *Downloads* folder and that the target medium is called `sdz`. You can identify the correct target device using the `lsblk` command line tool. Modify the command according to your context. 
 
 > **Warning:** This command will **destroy** any data on the target device
 {.is-danger}
@@ -53,7 +46,7 @@ The next command assumes that the ISO file is available in the *Downloads* folde
 dd bs=4MB if=~/Downloads/phyllome-live_ldhi_v0.2.0-alpha_x86_64.iso of=/dev/sdz
 ```
 
-### Manual instructions (Cross-platform):
+### Manual instructions (Cross-platform)
 
 The instructions are designed with Etcher in mind. Other tools such as [Rufus](https://rufus.ie/en/), [Unetbootin](https://unetbootin.github.io/) or [Ventoy](https://www.ventoy.net/en/index.html) are likely to work too.  
 
