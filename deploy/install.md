@@ -2,7 +2,7 @@
 title: Install Phyllome OS
 description: 
 published: true
-date: 2021-11-22T21:00:02.195Z
+date: 2021-11-22T21:21:46.374Z
 tags: 
 editor: markdown
 dateCreated: 2021-11-14T16:19:00.348Z
@@ -13,9 +13,15 @@ dateCreated: 2021-11-14T16:19:00.348Z
 > As of now, it is only possible to deploy Phyllome OS using an [**offical Fedora ISO file**](https://getfedora.org/en/server/). It you don't have a USB flash drive ready to use, please go back to the last section.
 {.is-info}
 
-*This page is intended for users that would like to install Phyllome OS permanently on their computer. Installing Phyllome OS means booting from a USB flash drive and fetching an online file that contains instructions to automatically deploy it on a target storage device. This is a destructive process so please be cautious*
+*This page is intended for users that would like to install Phyllome OS permanently on their computer. Installing Phyllome OS means booting from a [bootable USB flash drive](/deploy/medium) and fetching [an online kickstart file](https://raw.githubusercontent.com/PhyllomeOS/phyllomeos/main/leaves/flat-dhi.cfg). A kickstart file contains instructions to automatically deploy an operating system. This is a **destructive** process so please be cautious.*
+
+*If you wish to learn more about how kickstart files are used to create Phyllome OS, please have a look at [the official git repository](https://github.com/PhyllomeOS/phyllomeos).*
 
 ## Boot from a USB flash drive
+
+* General requirements
+	* A wired Internet connection is required. A file will be fetched online during the installation process.  
+  * A storage device. The kickstart file will look for a storage device and install Phyllome OS. If there is no disk available, the installation will fail. 
 
 The following section illustrates how to change the boot order *temporarily*. The process to change the boot order depends on your current computer platform. Please follow the instruction that matches your platform.
 
@@ -60,25 +66,25 @@ One needs to alter the GRUB instructions before the USB flash drive can load the
 > GRUB defaults to the US keyboard layout. Have a look at [this online ressource](https://en.wikipedia.org/wiki/QWERTY#/media/File:KB_United_States.svg) to find the corresponding keys if you are having a hard time finding the right keystroke
 {.is-info}
 
-> **Danger Zone**: the next instruction will trigger an automated process that will **destroy** any data located on the internal disk in your computer. 
+> **Danger Zone**: the next instruction will trigger an automated process that will **destroy** any data located on the internal disk present in your computer. 
 {.is-danger}
 
-* Leave a blank space after the `quiet` word and write exactly the following `inst.ks=https://ks.phyllo.me/dii`, then press <kbd>Ctrl</kbd> + <kbd>x</kbd> simultaneously.
+* Leave a blank space after the `quiet` word and write exactly the following `inst.ks=https://ks.phyllo.me/dii`, then press <kbd>Ctrl</kbd> + <kbd>x</kbd> simultaneously. This command will trigger the automated installation of Phyllome OS. 
 
 ![screenshot_uefi_2021-11-22_155450.png](/grub-kickstart/screenshot_uefi_2021-11-22_155450.png)
 
-* The command will trigger the automated installation of Phyllome OS. 
-
-> The shortened URL `https://ks.phyllo.me/dii` points to the latest Desktop version of Phyllome OS, tweaked for Intel CPUs and GPUs. The kickstart file is available here: https://raw.githubusercontent.com/PhyllomeOS/phyllomeos/main/leaves/flat-dhi.cfg
+> The shortened URL `https://ks.phyllo.me/dii` points to the latest Desktop version of Phyllome OS, tweaked for Intel CPUs and GPUs. The kickstart file is available here: https://raw.githubusercontent.com/PhyllomeOS/phyllomeos/main/leaves/flat-dhi.cfg. Any valid kickstart file may be used.
 {.is-info}
+
+* During the installation process, you can use <kbd>Alt</kbd> + <kbd>Tab</kbd> to cycle through tabs, and look at the logs in real-time
 
 ![screenshot_uefi_2021-11-11_130934.png](/grub-kickstart/screenshot_uefi_2021-11-11_130934.png)
 
-After a few minutes, you should be greeted with a welcome screen.
+* After a few minutes, you should be greeted with a welcome screen.
 
 ![screenshot_uefi_2021-11-11_143000.png](/grub-kickstart/screenshot_uefi_2021-11-11_143000.png)
 
-Go to the [First-launch configuration section](/deploy/install#first-launch) to learn what to do next.
+* Go to the [First-launch configuration section](/deploy/install#first-launch) to learn what to do next.
 
 ### BIOS-based firmware
 
