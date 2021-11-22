@@ -2,7 +2,7 @@
 title: Get started with the Live system
 description: 
 published: true
-date: 2021-11-22T14:35:43.128Z
+date: 2021-11-22T15:52:44.218Z
 tags: 
 editor: markdown
 dateCreated: 2021-11-13T11:36:55.647Z
@@ -57,7 +57,6 @@ To boot from a USB flash drive, one would have to either temporary or permanentl
 
 >  At the moment, changes applied to a Phyllome OS Live medium do not persist across reboots.
 {.is-info}
-
 
 ---
 
