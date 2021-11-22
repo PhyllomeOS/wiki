@@ -2,7 +2,7 @@
 title: Phyllome OS meets a thumb drive
 description: 
 published: true
-date: 2021-11-21T20:22:31.254Z
+date: 2021-11-22T14:32:49.796Z
 tags: 
 editor: markdown
 dateCreated: 2021-11-13T11:34:07.852Z
@@ -105,37 +105,6 @@ Follow the normal procedure to install an application on your computer.
 {.is-success}
 
 ![capture-balenaetcher-6.png](/balena-etcher/capture-balenaetcher-6.png)
-
-## 3. Boot from a USB flash drive
-
-By default, when a computer boots up, it will look for an operating system on the internal storage device first. If there is one, it will load this operating system and ignore any other media, such as any USB flash drive that may be plugged to the computer.
-
-To boot from a USB flash drive, one would have to either temporary or permanently alter the so-called boot order. The boot order instructs at what point and where it should look for an operating system. The following section illustrates how to change the boot order *temporary*.
-
-> The process to change the boot order depends on your current computer platform. Please follow the instruction that matches your platform.
-{.is-info}
-
-> Booting from a USB flash drive is a **non-destructive** process, which means that it won't affect any pre-existing operating system that may be installed on your computer. As a precautious, it may be good to backup your data or, even better, to use a computer with no personnal data on it.
-{.is-info}
-
-### macOS
-
-* Make sure that your computer is turned-off. 
-* Locate the <kbd>Alt</kbd> / <kbd>Option</kbd> key on your keyboard.
-* Turn your computer on and immediately press the <kbd>Alt</kbd> / <kbd>Option</kbd> key continuously.
-* The startup manager should appear after a few seconds.
-* Click on the option called *EFI* to boot Phyllome OS. 
-
-> Other Mac startup key combinations can be found [here](https://support.apple.com/en-us/HT201255). 
-{.is-info}
-
-### Windows 8 and later versions
-
-### Other computers
-
-
-
-
 
 ---
 
