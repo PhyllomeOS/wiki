@@ -2,7 +2,7 @@
 title: Install Phyllome OS
 description: 
 published: true
-date: 2021-11-22T20:50:17.762Z
+date: 2021-11-22T21:00:02.195Z
 tags: 
 editor: markdown
 dateCreated: 2021-11-14T16:19:00.348Z
@@ -16,9 +16,6 @@ dateCreated: 2021-11-14T16:19:00.348Z
 *This page is intended for users that would like to install Phyllome OS permanently on their computer. Installing Phyllome OS means booting from a USB flash drive and fetching an online file that contains instructions to automatically deploy it on a target storage device. This is a destructive process so please be cautious*
 
 ## Boot from a USB flash drive
-
-> By default, when a computer boots up, it will look for an operating system on the internal storage device first. If there is one, it will load this operating system and ignore any other media, such as any USB flash drive that may be plugged to the computer. To boot from a USB flash drive, one would have to either temporary or permanently alter the so-called boot order. The boot order instructs at what point and where it should look for an operating system. 
-{.is-info}
 
 The following section illustrates how to change the boot order *temporarily*. The process to change the boot order depends on your current computer platform. Please follow the instruction that matches your platform.
 
