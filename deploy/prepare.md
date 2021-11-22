@@ -2,7 +2,7 @@
 title: Preparation
 description: 
 published: true
-date: 2021-11-22T20:57:53.552Z
+date: 2021-11-22T20:58:29.302Z
 tags: 
 editor: markdown
 dateCreated: 2021-11-15T15:39:49.074Z
@@ -10,7 +10,7 @@ dateCreated: 2021-11-15T15:39:49.074Z
 
 # Prepare the host computer
 
-## 1. Meet the requirements
+## Meet the requirements
 
 These instructions are valid for most computers that ship with Linux, Windows or macOS. 
 
@@ -47,7 +47,7 @@ Phyllome OS targets [x86-64 systems](https://en.wikipedia.org/wiki/X86-64) with 
 > For Intel-based configurations, you can check if your model supports **Intel VT-d** by following [this link](https://ark.intel.com/content/www/us/en/ark/search/featurefilter.html?productType=873&0_VTD=True).
 {.is-info}
 
-## 2. Enable hardware-assisted virtualization
+## Enable hardware-assisted virtualization
 
 Unfortunately, even on supported computer platforms, hardware-assisted virtualization is rarely turned on by default. In other words, it is not enough for a computer platform to support hardware-assisted virtualization: it is very likely that it has to be explicitly enabled.
 
