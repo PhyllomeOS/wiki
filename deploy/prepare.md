@@ -2,7 +2,7 @@
 title: Preparation
 description: 
 published: true
-date: 2021-11-21T15:51:26.312Z
+date: 2021-11-22T20:57:53.552Z
 tags: 
 editor: markdown
 dateCreated: 2021-11-15T15:39:49.074Z
@@ -25,7 +25,7 @@ Phyllome OS targets [x86-64 systems](https://en.wikipedia.org/wiki/X86-64) with 
 ### Minimum requirements for Phyllome OS Desktop
 
 * **x86-64** computer that supports the first generation of hardware-assisted virtualization features
-    * For AMD-based configurations, it means that AMD V is available and enabled (*see next section bellow to learn how to enable this feature*)
+    * For AMD-based configurations, it means that AMD V is available and enabled (*see next section below to learn how to enable this feature*)
     * For Intel-based configurations, it means that Intel VT-x is available and enabled
 * **2-core** processor
 * **4 GB** of RAM
@@ -49,13 +49,9 @@ Phyllome OS targets [x86-64 systems](https://en.wikipedia.org/wiki/X86-64) with 
 
 ## 2. Enable hardware-assisted virtualization
 
-Unfortunately, even on supported computer platforms, hardware-assisted virtualization is rarely turned on by default.
+Unfortunately, even on supported computer platforms, hardware-assisted virtualization is rarely turned on by default. In other words, it is not enough for a computer platform to support hardware-assisted virtualization: it is very likely that it has to be explicitly enabled.
 
-In other words, it is not enough for a computer platform to support hardware-assisted virtualization: it is very likely that it has to be explicitly enabled.
-
-The process to activate this feature requires accessing the firmware configuration tool for your motherboard, which is part of your BIOS or UEFI.
-
-This process is described in the following section.
+The process to activate this feature requires accessing the firmware configuration tool for your motherboard, which is part of your BIOS or UEFI. This process is described in the following section.
 
 > *Did you know that the Open Virtual Machine Firmware (OVMF), which is based on [TianoCore](https://www.tianocore.org/), is the default firmware for EFI-based virtual machines? Its configuration utility can be accessed using the <kbd>Esc</kbd> key.*
 {.is-info}
@@ -118,9 +114,9 @@ Just after pressing the <kbd>power</kbd> button, hit the right key to access the
 
 ### Modify the firmware configuration
 
-Unfortunately, most firmware configuration tool do differ, and the steps here might not be identic on your own platform. In general, the sought after features are found under the `security` tab.
+Unfortunately, most firmware configuration tool do differ, and the steps here might not be identical on your platform. In general, the sought after features are found under the *security* tab.
 
-For an AMD-based computer, you need to look for references to *AMD SVM*, AMD V or AMD Vi. Conversingly, for an Intel-based computer, you need to look for *Intel VT-x* and *Intel VT-d*. It is also possible that the feature will be refered simply to as *virtualization*. In that case, you may not know it refers to IOMMU-based hardware-assisted virtualization or not.
+For an AMD-based computer, you need to look for references to *AMD SVM*, AMD V or AMD Vi. For an Intel-based computer, you need to look for *Intel VT-x* and *Intel VT-d*. It is also possible that the feature will be referred simply to as *virtualization*. In that case, you may not know it refers to IOMMU-based hardware-assisted virtualization or not.
 
 Make sure you enable these options and choose to *save and exit* the configuration tool, which will reboot your computer.
 
