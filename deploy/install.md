@@ -2,7 +2,7 @@
 title: Install Phyllome OS
 description: 
 published: true
-date: 2021-11-22T16:43:56.213Z
+date: 2021-11-22T16:44:04.686Z
 tags: 
 editor: markdown
 dateCreated: 2021-11-14T16:19:00.348Z
@@ -93,7 +93,7 @@ Go to the [First-launch configuration section](/deploy/install#first-launch-conf
 > Section under construction
 {.is-warning}
 
-## First-launch configuration
+## First-launch
 
 
 ---
