@@ -2,7 +2,7 @@
 title: Get started with Phyllome OS
 description: 
 published: true
-date: 2021-11-23T15:53:10.242Z
+date: 2021-11-23T15:54:21.555Z
 tags: 
 editor: markdown
 dateCreated: 2021-11-13T11:37:31.498Z
@@ -10,7 +10,7 @@ dateCreated: 2021-11-13T11:37:31.498Z
 
 # How to use Phyllome OS
 
-*This section explains how to further configure Phyllome OS, and how to deploy your favorite operating system within it.*   
+*This section explains how to further configure Phyllome OS, and how to deploy a tiny and live operating system within it.*   
 
 ## Post-installation configuration
 
