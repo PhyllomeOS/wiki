@@ -2,7 +2,7 @@
 title: Understand what you are signing up for
 description: 
 published: true
-date: 2021-11-23T16:00:03.810Z
+date: 2021-11-23T16:00:15.866Z
 tags: 
 editor: markdown
 dateCreated: 2021-11-13T11:19:38.215Z
@@ -12,7 +12,7 @@ dateCreated: 2021-11-13T11:19:38.215Z
 
 ## Understand the Phyllome OS philosophy
 
-> *Phyllome OS has one goal: to let users bring their favorite operating system and to run them well. Eventually, users should be able to reach **the state of virtual enlightenment** (tm), and stop worrying about the fact that their favorite operating system is running inside a virtual machine, just as humans should stop worrying about living in a poorly designed computer simulation* ([perhaps?](https://en.wikipedia.org/wiki/Simulation_hypothesis)).
+> *Phyllome OS has one goal: to let users bring their favorite operating system and to run them well. Eventually, users should be able to reach **the state of virtual enlightenment** (tm), and stop worrying about the fact that their favorite operating system is running inside a virtual machine, just as humans should stop worrying about living in a computer simulation* ([perhaps?](https://en.wikipedia.org/wiki/Simulation_hypothesis)).
 
 By definition, the host, Phyllome OS, is trying to be as discrete as possible, so that users won't actually have to spend much time to manage it. Users should be able to spend their time using their favorite personal computing environment, rather than messing around with Phyllome OS itself. Although, we very much encourage you to [hack it](https://github.com/PhyllomeOS/phyllomeos#how-to-hack-phyllome-os).
 
