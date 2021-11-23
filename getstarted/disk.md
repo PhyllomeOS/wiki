@@ -2,7 +2,7 @@
 title: Get started with Phyllome OS
 description: 
 published: true
-date: 2021-11-23T15:50:24.887Z
+date: 2021-11-23T15:53:10.242Z
 tags: 
 editor: markdown
 dateCreated: 2021-11-13T11:37:31.498Z
@@ -111,7 +111,7 @@ The following script, which also doesn't require root privileges, will create a 
 
 ![post-install-conf-6.png](/post-launch/post-install-conf-6.png)
 
-When you are done messing around, input the following and you will be back in Phyllome OS
+When you are done messing around, input the following, and you will be back in Phyllome OS
 
 ```
 sudo poweroff
