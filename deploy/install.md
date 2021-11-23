@@ -2,7 +2,7 @@
 title: Install Phyllome OS
 description: 
 published: true
-date: 2021-11-22T21:21:46.374Z
+date: 2021-11-23T09:36:25.163Z
 tags: 
 editor: markdown
 dateCreated: 2021-11-14T16:19:00.348Z
@@ -41,7 +41,7 @@ The following section illustrates how to change the boot order *temporarily*. Th
 > Section under construction
 {.is-warning}
 
-### Other computers
+### Other operating systems
 
 > Section under construction
 {.is-warning}
@@ -73,7 +73,7 @@ One needs to alter the GRUB instructions before the USB flash drive can load the
 
 ![screenshot_uefi_2021-11-22_155450.png](/grub-kickstart/screenshot_uefi_2021-11-22_155450.png)
 
-> The shortened URL `https://ks.phyllo.me/dii` points to the latest Desktop version of Phyllome OS, tweaked for Intel CPUs and GPUs. The kickstart file is available here: https://raw.githubusercontent.com/PhyllomeOS/phyllomeos/main/leaves/flat-dhi.cfg. Any valid kickstart file may be used.
+> The shortened URL `https://ks.phyllo.me/dii` points to the latest Desktop version of Phyllome OS, tweaked for Intel CPUs and GPUs. The shortened link points to the kickstart file available here: https://raw.githubusercontent.com/PhyllomeOS/phyllomeos/main/leaves/flat-dhi.cfg. Any valid kickstart file may be used.
 {.is-info}
 
 * During the installation process, you can use <kbd>Alt</kbd> + <kbd>Tab</kbd> to cycle through tabs, and look at the logs in real-time
@@ -93,8 +93,51 @@ One needs to alter the GRUB instructions before the USB flash drive can load the
 
 ## First-launch
 
-> Section under construction
-{.is-warning}
+* **Welcome screen**: on first-launch, for the *Desktop edition*, you will be greeted with the GNOME Welcome Screen. As of now, only English is available out of the box. Click *Next* when you are ready.  
+
+![first-launch-1.png](/first-launch/first-launch-1.png)
+
+* **Keyboard layout**: you can select your favorite keyboard layout by clicking on the three stacked vertical dots at the bottom of the screen.
+
+> By default, Phyllome OS is set to use the *fr-CH* keyboard layout. This keyboard layout is used by people living in [Romandy](https://en.wikipedia.org/wiki/Romandy), Switzerland, where Phyllome OS original author is coming from.
+{.is-info}
+
+![first-launch-2.png](/first-launch/first-launch-2.png)
+
+* **Time zone**: you can pick your current location by clicking on the map or writing it down inside the box. The time will be adjusted according to the provided location. 
+
+![first-launch-3.png](/first-launch/first-launch-3.png)
+
+* **Online Accounts**: Phyllome OS strongly discourages the use of *Online Accounts*, and therefore provides no option here. Click on *Skip* to go to the next screen.
+
+> Phyllome OS is **not** designed to be a safe place for storing persistent or personal data, as it doesn't provide full-disk encryption by default. Phyllome OS instead relies on filesystem-level encryption to protect virtual machine disks, and encourage its users to rely on another layer of encryption as provided by their operating system inside their virtual machine, whenever available.
+{.is-info}
+
+![first-launch-4.png](/first-launch/first-launch-4.png)
+
+* **Create a user account**: you are invited to create a user account, which by default will be granted administrator or root privileges. Click on *Next* when you are done.
+
+![first-launch-5.png](/first-launch/first-launch-5.png)
+
+* **Provide a password**: please do provide a strong password. In case you ever forget it, write it down on a piece of paper and store it somewhere safe, or/and rely on an online password manager like [Bitwarden](https://bitwarden.com/) with [multi-factor authentication](https://en.wikipedia.org/wiki/Multi-factor_authentication) enabled. Click on *Next* when you are done.
+
+> Phyllome OS will eventually rely on the user password as provided here to decrypt the folder containing virtual machine disks. Loosing the password will mean loosing any access to the virtual machine disks.
+{.is-info}
+
+![first-launch-6.png](/first-launch/first-launch-6.png)
+
+* **Setup complete**: Click on start *Start Using Generic*. 
+
+![first-launch-7.png](/first-launch/first-launch-7.png)
+
+* **Provide password**: The Virtual Machine Manager is set to auto-launch, and requires elevated permission. Please provide the user password you just set-up and click on *Authenticate* to start using Phyllome OS. 
+
+![first-launch-9.png](/first-launch/first-launch-9.png)
+
+> Congratulations, you are done! 
+{.is-success}
+
+![first-launch-10.png](/first-launch/first-launch-10.png)
 
 ---
 
