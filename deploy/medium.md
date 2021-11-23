@@ -2,7 +2,7 @@
 title: Phyllome OS meets a thumb drive
 description: 
 published: true
-date: 2021-11-22T20:53:04.109Z
+date: 2021-11-23T20:30:10.268Z
 tags: 
 editor: markdown
 dateCreated: 2021-11-13T11:34:07.852Z
@@ -101,5 +101,5 @@ Follow the normal procedure to install an application on your computer.
 
 ---
 
+*If you have followed the procedure using the Fedora Server ISO, with the intent of installing Phyllome OS permanently, please go to the [Install Phyllome OS page](https://wiki.phyllo.me/deploy/install).* 
 *If you have followed the procedure using the Phyllome OS ISO, go to the section [Get started with the live system](/getstarted/live).*
-*If you have followed the procedure using the Fedora Server ISO, with the intent of installing Phyllome OS permanently, please go to the [Install Phyllome OS page](https://wiki.phyllo.me/deploy/install) instead.* 
