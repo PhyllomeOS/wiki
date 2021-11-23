@@ -2,7 +2,7 @@
 title: Homepage
 description: 
 published: true
-date: 2021-11-23T09:21:57.260Z
+date: 2021-11-23T09:33:07.629Z
 tags: 
 editor: markdown
 dateCreated: 2021-06-19T09:29:20.593Z
@@ -16,16 +16,16 @@ dateCreated: 2021-06-19T09:29:20.593Z
 
 *[Phyllome OS](https://phyllo.me/) is an operating system that makes it easier to run various guest systems locally using [off-the-shelf hardware](https://wiki.phyllo.me/deploy/prepare).*
 
-If you want to learn more about it, its goal and the context around it, have a look at the [white-paper](https://files.phyllo.me/s/oYwfxYpZcbppwr6).
+*If you want to learn more about it, its goal and the context around it, have a look at the [white-paper](https://files.phyllo.me/s/oYwfxYpZcbppwr6).*
 
 > If you would rather avoid JavaScript altogether, or wish to download the content of this wiki locally, feel free to clone [this repository](https://github.com/PhyllomeOS/wiki).
 {.is-info}
 
 ## Deploy
 
-*This section is meant to help users prepare their computers to host Phyllome OS,  pick the version that will suit their needs,  understand Phyllome OS' limitations, and install it.*
+*This section is meant to help users prepare their computers to host Phyllome OS, pick the version that will suit their needs, understand Phyllome OS' limitations, and install it.*
 
-> Phyllome OS is not production-ready. The alpha version [has been released](https://github.com/PhyllomeOS/phyllomeos/releases) on November the 15h, 2021. The beta version is expected somewhere in 2022. And the final product will be released *when it is ready*.
+> Phyllome OS is **not** production-ready. The alpha version [has been released](https://github.com/PhyllomeOS/phyllomeos/releases) on November the 15h, 2021. The beta version is expected somewhere in 2022. And the production-ready version will be released *when it is done*. As of November 2021, it is a self-funded and mostly solo project. [Contributions are welcome!](/project/contribute)
 > {.is-warning}
 
 * **Choose**
@@ -85,6 +85,7 @@ If you want to learn more about it, its goal and the context around it, have a l
 
 ### Contribute
 
+* [How to contribute](/project/contribute)
 * [How to join](/project/join)
 * [Current infrastructure](/project/infrastructure)
 
@@ -92,6 +93,6 @@ If you want to learn more about it, its goal and the context around it, have a l
 
 * **The website**: https://phyllo.me
 * **The wiki**: https://wiki.phyllo.me
-* **The issue board**: https://kanboard.phyllo.me/
+* **The issue board**: https://kanboard.phyllo.me
 * **GitHub repositories**: https://github.com/PhyllomeOS
 
