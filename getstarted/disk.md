@@ -2,7 +2,7 @@
 title: Get started with Phyllome OS
 description: 
 published: true
-date: 2021-11-23T15:12:13.472Z
+date: 2021-11-23T15:23:11.524Z
 tags: 
 editor: markdown
 dateCreated: 2021-11-13T11:37:31.498Z
@@ -50,21 +50,39 @@ Open the terminal and run the following script as a regular user:
 ```
 /usr/sbin/configure-vmm-and-desktop.sh
 ```
-#### Create a virtual machine
+*The updated desktop background. Notice that there is now a new URI called QEMU/KVM User session*
 
-The following script, which also doesn't require root privileges, will create a virtual machine called `my-first-live-vm`. This virtual machine will start automatically and will be added to `virt-manager`.
+![post-install-conf-1.png](/post-launch/post-install-conf-1.png)
+
+#### Create a virtual machine without any attached disk
+
+The following script, which also doesn't require root privileges, will create a virtual machine called `my-first-live-vm`. This virtual machine will be started automatically and added to `virt-manager`.
 
 ```
 /usr/sbin/create-live-vm.sh
 ```
+*Notice the new icon under QEMU/KVM: this is the new virtual machine that has just been created. Go to the section to learn how to interact with it.*
 
-> That's it, congratulations! 
-{.is-success}
+![post-install-conf-2.png](/post-launch/post-install-conf-2.png)
 
 ## Access your virtual machine display
 
 
+![post-install-conf-10.png](/post-launch/post-install-conf-10.png)
+![post-install-conf-10.png](/post-launch/post-install-conf-10.png)
+![post-install-conf-10.png](/post-launch/post-install-conf-10.png)
+![post-install-conf-10.png](/post-launch/post-install-conf-10.png)
+![post-install-conf-10.png](/post-launch/post-install-conf-10.png)
+![post-install-conf-10.png](/post-launch/post-install-conf-10.png)
+![post-install-conf-10.png](/post-launch/post-install-conf-10.png)
+![post-install-conf-10.png](/post-launch/post-install-conf-10.png)
+![post-install-conf-10.png](/post-launch/post-install-conf-10.png)
+![post-install-conf-10.png](/post-launch/post-install-conf-10.png)
+![post-install-conf-10.png](/post-launch/post-install-conf-10.png)
+![post-install-conf-10.png](/post-launch/post-install-conf-10.png)
 
+> That's it, congratulations! 
+{.is-success}
 
 ---
 
