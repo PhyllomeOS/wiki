@@ -2,7 +2,7 @@
 title: Install Phyllome OS
 description: 
 published: true
-date: 2021-11-23T09:41:41.110Z
+date: 2021-11-23T11:32:38.876Z
 tags: 
 editor: markdown
 dateCreated: 2021-11-14T16:19:00.348Z
@@ -99,7 +99,7 @@ One needs to alter the GRUB instructions before the USB flash drive can load the
 
 * **Keyboard layout**: you can select your favorite keyboard layout by clicking on the three stacked vertical dots at the bottom of the screen.
 
-> By default, Phyllome OS is set to use the *fr-CH* keyboard layout. This keyboard layout is used by people living in [Romandy](https://en.wikipedia.org/wiki/Romandy), Switzerland, where Phyllome OS original author is coming from.
+> By default, Phyllome OS is set to use the *fr-CH* keyboard layout. This keyboard layout is used by people living in [Romandy](https://en.wikipedia.org/wiki/Romandy), Switzerland, which is also where the original author of Phyllome OS is from.
 {.is-info}
 
 ![first-launch-2.png](/first-launch/first-launch-2.png)
