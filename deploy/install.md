@@ -2,7 +2,7 @@
 title: Install Phyllome OS
 description: 
 published: true
-date: 2021-11-23T09:37:55.610Z
+date: 2021-11-23T09:41:41.110Z
 tags: 
 editor: markdown
 dateCreated: 2021-11-14T16:19:00.348Z
@@ -138,6 +138,9 @@ One needs to alter the GRUB instructions before the USB flash drive can load the
 {.is-success}
 
 ![first-launch-10.png](/first-launch/first-launch-10.png)
+
+> Don't forget to remove the USB flash drive from your computer, so that next time your computer will boot, it will use the internal disk where Phyllome OS has been deployed.
+{.is-info}
 
 ---
 
