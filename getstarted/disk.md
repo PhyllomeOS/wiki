@@ -2,7 +2,7 @@
 title: Get started with Phyllome OS
 description: 
 published: true
-date: 2021-11-23T10:47:06.695Z
+date: 2021-11-23T11:17:29.284Z
 tags: 
 editor: markdown
 dateCreated: 2021-11-13T11:37:31.498Z
@@ -14,15 +14,19 @@ dateCreated: 2021-11-13T11:37:31.498Z
 
 ## Understand the Phyllome OS philosophy
 
-> Phyllome OS has one goal: to let users bring their favorite operating system and to run them well
+> *Phyllome OS has one goal: to let users bring their favorite operating system and to run them well. Eventually, users should be able to reach **the state of virtual enlightenment** (tm), and stop worrying about the fact that their favorite operating system is running inside a virtual machine, just as humans should stop worrying about living in a computer simulation* ([perhaps?](https://en.wikipedia.org/wiki/Simulation_hypothesis)).
 
-By definition, the host, Phyllome OS, is trying to be as discrete as possible, so that users won't actually have to spend much time to manage it. Users should be able to spend their time using their favorite personal computing environment, rather than messing around with Phyllome OS itself.[^1] The host is meant to be a great place for guest operating systems to thrive.
+By definition, the host, Phyllome OS, is trying to be as discrete as possible, so that users won't actually have to spend much time to manage it. Users should be able to spend their time using their favorite personal computing environment, rather than messing around with Phyllome OS itself.[^1] 
 
-Eventually, users will be able to reach *the state of virtual enlightenment* (tm), and stop worrying about the fact that their favorite operating system is running inside a virtual machine, just as humans should stop worrying about living in a computer simulation ([perhaps](https://en.wikipedia.org/wiki/Simulation_hypothesis)).
+However, if the host is meant to be a great place for guest operating systems to thrive, it is up to the user to manage the lifecycle of their guest operating system. Phyllome OS provides an optimized virtual machine model tuned to host modern operating systems, but do not intent to provide automated ways to deploy guest operating systems (such as [Infrastructure as code solutions](https://en.wikipedia.org/wiki/Infrastructure_as_code) or an instance initialization software like [cloud-init](https://github.com/canonical/cloud-init)). 
+
+In other words, contrary to end-to-end operating systems like [Qubes OS](https://www.qubes-os.org/) or the upcoming [Spectrum](https://spectrum-os.org/), which are offering ready to use templates or/and applications isolated in virtual machines by default, Phyllome OS delegates to end-users the task to install their favorite operating system, while trying to provide the best possible defaults for each operating system. In this regard, its model is closer to [Promox](https://www.proxmox.com/en/), which doesn't make assumptions about how an operating system will be deployed.
 
 ## Overall view
 
-After Phyllome OS has been successfully installed, a few tasks are required before it can be used to its fullest potential.
+After Phyllome OS [has been successfully installed](/deploy/install) and [the first-launch is process is done](/deploy/install#first-launch), a few tasks are required before it can be used to its fullest potential.
+
+As Phyllome OS evolves, one of the main goal is to shorten the time it would take for an end-user to have a fully operational virtual machine running with favorite operating system optimized virtual machine with their favorite operating system. 
 
 * **Run a few post-installation scripts**
 * **Create a virtual machine**
@@ -33,7 +37,6 @@ After Phyllome OS has been successfully installed, a few tasks are required befo
   * automatically, using a kickstart file, for compatible guest systems
 * **Learn how make the most out of it**
 
-As Phyllome OS evolves, one of the main goal is to shorten the time it would take for an end-user to have a fully operationnal virtual machine running with favorite operating system optimized virtual machine with their favorite operating system.   
 
 ## Post-installation configuration
 
