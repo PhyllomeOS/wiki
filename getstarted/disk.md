@@ -2,7 +2,7 @@
 title: Get started with Phyllome OS
 description: 
 published: true
-date: 2021-11-23T11:19:32.811Z
+date: 2021-11-23T11:25:51.814Z
 tags: 
 editor: markdown
 dateCreated: 2021-11-13T11:37:31.498Z
@@ -22,15 +22,17 @@ However, if the host is meant to be a great place for guest operating systems to
 
 In other words, contrary to end-to-end operating systems like [Qubes OS](https://www.qubes-os.org/) or the upcoming [Spectrum](https://spectrum-os.org/), which are offering ready to use templates or/and applications isolated in virtual machines by default, Phyllome OS delegates to end-users the task to install their favorite operating system, while trying to provide the best possible defaults for each operating system. In this regard, its model is closer to [Promox](https://www.proxmox.com/en/), which doesn't make assumptions about how an operating system will be deployed.
 
-## Overall view
+## Post-installation configuration
 
 After Phyllome OS [has been successfully installed](/deploy/install) and [the first-launch is process is done](/deploy/install#first-launch), a few tasks are required before it can be used to its fullest potential.
 
-As Phyllome OS evolves, one of the main goal is to shorten the time it would take for an end-user to have a fully operational virtual machine running with favorite operating system optimized virtual machine with their favorite operating system. 
+> As Phyllome OS evolves, one of the main goal is to shorten the time it would take for an end-user to have a fully operational virtual machine loaded with the installer of their favorite operating system, to the point that a user may not see the Phyllome OS Desktop environnement at all.
+{.is-info}
 
-* **Run a few post-installation scripts**
+### Post-installation scripts
 
 
+## What to do next
 
 * **Create a virtual machine**
   * manually, using `virt-manager` (*default*)
@@ -38,11 +40,7 @@ As Phyllome OS evolves, one of the main goal is to shorten the time it would tak
 * **Install your favorite guest operating system** inside this virtual machine
   * manually, using the installer provided by the editor of your favorite operating system 
   * automatically, using a kickstart file, for compatible guest systems
-* **Learn how make the most out of it**
-
-
-## Post-installation configuration
-
+* **Learn how to make the most out of it**
 
 ---
 
