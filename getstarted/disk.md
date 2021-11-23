@@ -2,7 +2,7 @@
 title: Get started with Phyllome OS
 description: 
 published: true
-date: 2021-11-23T15:05:20.189Z
+date: 2021-11-23T15:12:13.472Z
 tags: 
 editor: markdown
 dateCreated: 2021-11-13T11:37:31.498Z
@@ -61,7 +61,7 @@ The following script, which also doesn't require root privileges, will create a 
 > That's it, congratulations! 
 {.is-success}
 
-## Manipulate the console
+## Access your virtual machine display
 
 
 
