@@ -2,7 +2,7 @@
 title: Understand what you are signing up for
 description: 
 published: true
-date: 2021-11-19T21:53:05.302Z
+date: 2021-11-23T13:01:30.076Z
 tags: 
 editor: markdown
 dateCreated: 2021-11-13T11:19:38.215Z
@@ -10,20 +10,23 @@ dateCreated: 2021-11-13T11:19:38.215Z
 
 # Is Phyllome OS right for you?
 
-## Phyllome OS editions and versions
+## Understand the Phyllome OS philosophy
 
-> Phyllome OS is not production-ready.
-{.is-warning}
+> *Phyllome OS has one goal: to let users bring their favorite operating system and to run them well. Eventually, users should be able to reach **the state of virtual enlightenment** (tm), and stop worrying about the fact that their favorite operating system is running inside a virtual machine, just as humans should stop worrying about living in a computer simulation* ([perhaps?](https://en.wikipedia.org/wiki/Simulation_hypothesis)).
+
+By definition, the host, Phyllome OS, is trying to be as discrete as possible, so that users won't actually have to spend much time to manage it. Users should be able to spend their time using their favorite personal computing environment, rather than messing around with Phyllome OS itself.[^1] 
+
+However, if the host is meant to be a great place for guest operating systems to thrive, it is up to the user to manage the lifecycle of their guest operating system. Phyllome OS provides an optimized virtual machine model tuned to host modern operating systems, but, at the exception of some RPM-based guests operating systems including Phyllome OS itself, does not intent to provide automated ways to deploy guest operating systems (at the moment [Infrastructure as code solutions](https://en.wikipedia.org/wiki/Infrastructure_as_code) or instance initialization software like [cloud-init](https://github.com/canonical/cloud-init) do not seem generic enough to satisfy every modern desktop-based operating systems' idiosyncrasies).
+
+In other words, contrary to end-to-end operating systems like [Qubes OS](https://www.qubes-os.org/) or the upcoming [Spectrum](https://spectrum-os.org/), which are offering ready to use templates or/and applications isolated in virtual machines by default, Phyllome OS delegates to end-users the task to install their favorite operating system, while trying to provide the best possible underlying defaults for each operating system. In this regard, its model is closer to [Promox](https://www.proxmox.com/en/), which doesn't make assumptions about how a guest operating system will be deployed.
+
+## Phyllome OS versions
 
 ### Versions
 
 Phyllome OS exists in two main editions: **Phyllome OS Desktop**, which features a grahical desktop environment, and **Phyllome OS Server**, which does not. Phyllome OS Server is made for power users. It includes all virtualization enhancements that Phyllome OS Desktop provides. 
 
-If you don't know which one to choose, you should probably pick the Desktop edition.
-
-### Editions
-
-Each edition comes with several versions, optimized for a particular combinaison of hardware.
+If you don't know which one to choose, you should probably pick the Desktop edition. Each edition comes with several versions, optimized for a particular combinaison of hardware.
 
 |  | Intel graphics cards | AMD graphics cards | Nvidia graphics cards | 
 |---|---|---|---|
@@ -35,7 +38,7 @@ Each edition comes with several versions, optimized for a particular combinaison
 
 Depending of your hardware, you need to pick the right edition. For example, if you possess an Intel CPU and an AMD graphics card, you should pick either Phyllome OS Desktop IA or Phyllome OS Server IA.
 
-> As of now, only Phyllome OS Desktop II, also known as `dhi`, is supported. In other words, you need to use a computer with both an Intel CPU and an Intel GPU to leverage Phyllome OS. Support for other other editions are expected for the Beta.  
+> As of now, **only Phyllome OS Desktop II is supported**. In other words, you need to use a computer with both an Intel CPU and an Intel GPU to leverage Phyllome OS. Support for other other editions are expected for the Beta.  
 {.is-info}
 
 ## Limitations
