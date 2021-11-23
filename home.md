@@ -2,7 +2,7 @@
 title: Homepage
 description: 
 published: true
-date: 2021-11-21T17:50:51.130Z
+date: 2021-11-23T09:21:57.260Z
 tags: 
 editor: markdown
 dateCreated: 2021-06-19T09:29:20.593Z
@@ -25,7 +25,7 @@ If you want to learn more about it, its goal and the context around it, have a l
 
 *This section is meant to help users prepare their computers to host Phyllome OS,  pick the version that will suit their needs,  understand Phyllome OS' limitations, and install it.*
 
-> Phyllome OS is not production-ready. The alpha version [has been released](https://github.com/PhyllomeOS/phyllomeos/releases) on November the 15h, 2021.
+> Phyllome OS is not production-ready. The alpha version [has been released](https://github.com/PhyllomeOS/phyllomeos/releases) on November the 15h, 2021. The beta version is expected somewhere in 2022. And the final product will be released *when it is ready*.
 > {.is-warning}
 
 * **Choose**
