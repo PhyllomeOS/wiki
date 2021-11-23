@@ -2,7 +2,7 @@
 title: Install Phyllome OS
 description: 
 published: true
-date: 2021-11-23T09:36:25.163Z
+date: 2021-11-23T09:37:55.610Z
 tags: 
 editor: markdown
 dateCreated: 2021-11-14T16:19:00.348Z
@@ -13,7 +13,7 @@ dateCreated: 2021-11-14T16:19:00.348Z
 > As of now, it is only possible to deploy Phyllome OS using an [**offical Fedora ISO file**](https://getfedora.org/en/server/). It you don't have a USB flash drive ready to use, please go back to the last section.
 {.is-info}
 
-*This page is intended for users that would like to install Phyllome OS permanently on their computer. Installing Phyllome OS means booting from a [bootable USB flash drive](/deploy/medium) and fetching [an online kickstart file](https://raw.githubusercontent.com/PhyllomeOS/phyllomeos/main/leaves/flat-dhi.cfg). A kickstart file contains instructions to automatically deploy an operating system. This is a **destructive** process so please be cautious.*
+*This page is intended for users that would like to install Phyllome OS permanently on their computer. Installing Phyllome OS means booting from a [bootable USB flash drive](/deploy/medium) and fetching [an online kickstart file](https://raw.githubusercontent.com/PhyllomeOS/phyllomeos/main/leaves/flat-dhi.cfg). A kickstart file contains instructions to automatically deploy an operating system. This is a **destructive** process, so please be cautious.*
 
 *If you wish to learn more about how kickstart files are used to create Phyllome OS, please have a look at [the official git repository](https://github.com/PhyllomeOS/phyllomeos).*
 
@@ -130,7 +130,7 @@ One needs to alter the GRUB instructions before the USB flash drive can load the
 
 ![first-launch-7.png](/first-launch/first-launch-7.png)
 
-* **Provide password**: The Virtual Machine Manager is set to auto-launch, and requires elevated permission. Please provide the user password you just set-up and click on *Authenticate* to start using Phyllome OS. 
+* **Provide password**: The Virtual Machine Manager is set to auto-launch, and requires elevated permission. Please provide the user password you just set up and click on *Authenticate* to start using Phyllome OS. 
 
 ![first-launch-9.png](/first-launch/first-launch-9.png)
 
