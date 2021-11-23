@@ -2,7 +2,7 @@
 title: Get started with Phyllome OS
 description: 
 published: true
-date: 2021-11-23T11:19:05.350Z
+date: 2021-11-23T11:19:32.811Z
 tags: 
 editor: markdown
 dateCreated: 2021-11-13T11:37:31.498Z
@@ -29,6 +29,9 @@ After Phyllome OS [has been successfully installed](/deploy/install) and [the fi
 As Phyllome OS evolves, one of the main goal is to shorten the time it would take for an end-user to have a fully operational virtual machine running with favorite operating system optimized virtual machine with their favorite operating system. 
 
 * **Run a few post-installation scripts**
+
+
+
 * **Create a virtual machine**
   * manually, using `virt-manager` (*default*)
   * automatically, using `virt-install` (*for power users*)
