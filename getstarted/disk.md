@@ -2,7 +2,7 @@
 title: Get started with Phyllome OS
 description: 
 published: true
-date: 2021-11-23T15:46:58.531Z
+date: 2021-11-23T15:50:24.887Z
 tags: 
 editor: markdown
 dateCreated: 2021-11-13T11:37:31.498Z
@@ -14,7 +14,7 @@ dateCreated: 2021-11-13T11:37:31.498Z
 
 ## Post-installation configuration
 
-After Phyllome OS [has been successfully installed](/deploy/install) and [the first-launch process has been completed](/deploy/install#first-launch), a few tasks are required before it can be used to its fullest potential.
+After Phyllome OS [has been successfully installed](/deploy/install) and [its first-launch process completed](/deploy/install#first-launch), a few tasks are required before it can be used to its fullest potential.
 
 > As Phyllome OS evolves, one of the main goal is to shorten the time it would take for an end-user to have a fully operational virtual machine loaded with the installer of their favorite operating system, to the point that a user may not see the Phyllome OS environnement at all.
 {.is-info}
@@ -54,7 +54,7 @@ Open the terminal and run the following script as a regular user:
 
 ![post-install-conf-1.png](/post-launch/post-install-conf-1.png)
 
-#### Create a virtual machine without any attached disk
+#### Create and run a virtual machine without any attached disk
 
 The following script, which also doesn't require root privileges, will create a virtual machine called `my-first-live-vm`. This virtual machine will be started automatically and added to `virt-manager`.
 
@@ -71,7 +71,7 @@ The following script, which also doesn't require root privileges, will create a 
 
 ![post-install-conf-3.png](/post-launch/post-install-conf-3.png)
 
-> Phyllome OS ships with a small ISO file that can do network boot, allowing it to do network-based installations of the most popular Linux distributions, among other niceties. The public website is available here https://netboot.xyz/  
+> Phyllome OS ships with a small ISO crafted by the team behind [netboot.xyz](https://netboot.xyz/), and that can do network boot, allowing it to do network-based installations of the most popular Linux distributions, among other niceties.
 {.is-info}
 
 ![post-install-conf-11.png](/post-launch/post-install-conf-11.png)
