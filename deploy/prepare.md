@@ -2,7 +2,7 @@
 title: Preparation
 description: 
 published: true
-date: 2021-11-22T20:58:29.302Z
+date: 2021-11-25T13:28:34.121Z
 tags: 
 editor: markdown
 dateCreated: 2021-11-15T15:39:49.074Z
@@ -114,11 +114,29 @@ Just after pressing the <kbd>power</kbd> button, hit the right key to access the
 
 ### Modify the firmware configuration
 
-Unfortunately, most firmware configuration tool do differ, and the steps here might not be identical on your platform. In general, the sought after features are found under the *security* tab.
+Unfortunately, most firmware configuration tool do differ, and the steps here might not be identical on your current platform. In general, the sought after features are found under the *Security* tab.
 
-For an AMD-based computer, you need to look for references to *AMD SVM*, AMD V or AMD Vi. For an Intel-based computer, you need to look for *Intel VT-x* and *Intel VT-d*. It is also possible that the feature will be referred simply to as *virtualization*. In that case, you may not know it refers to IOMMU-based hardware-assisted virtualization or not.
+For an AMD-based computer, you need to look for references to *AMD SVM*, AMD V or AMD Vi. For an Intel-based computer, you need to look for *Intel VT-x* and *Intel VT-d*. It is also possible that the feature will be referred simply to as *Virtualization*. In that case, you may not know if it actually refers to IOMMU-based hardware-assisted virtualization.
 
 Make sure you enable these options and choose to *save and exit* the configuration tool, which will reboot your computer.
+
+#### Visual walk-through for an Intel NUC
+
+Here is a visual walk-through for an Intel NUC computer.
+
+* After you have pressed the <kbd>F2</kbd> key on boot, this screen should appear.
+
+![efi-1.png](/inte-efi/efi-1.png)
+
+* Go to the *Security* tab. Under the *Security Features* menu, you will find two options, *Intel Virtualization Technology* and *Intel VT for Directed I/O (VT-d)*. 
+
+![efi-2.png](/inte-efi/efi-2.png)
+
+* Check these boxes
+
+![efi-4.png](/inte-efi/efi-4.png)
+
+Then *save and exit* the configuration tool, which will reboot your computer.
 
 > While you are there, you could also change the boot order, to make sure that your computer will boot from an attached USB thumb drive first when it will be time to try out Phyllome OS.
 {.is-info}
