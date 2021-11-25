@@ -2,7 +2,7 @@
 title: Netboot for all
 description: 
 published: true
-date: 2021-11-25T13:55:48.883Z
+date: 2021-11-25T13:58:10.457Z
 tags: 
 editor: markdown
 dateCreated: 2021-11-13T11:43:58.697Z
@@ -20,7 +20,7 @@ By default, `netboot.xyz.iso` should already be located under `var/lib/libvirt/i
 wget https://boot.netboot.xyz/ipxe/netboot.xyz.iso -P /var/lib/libvirt/iso/
 ```
 
-#### Create and run a virtual machine without any attached disk
+## Run the script
 
 The following script, which also doesn't require root privileges, will create a virtual machine called `my-first-live-vm`. This virtual machine will be started automatically and added to `virt-manager`.
 
@@ -85,4 +85,8 @@ sudo poweroff
 
 > That's it, congratulations! 
 {.is-success}
+
+---
+
+*Are you looking for other tasks to execute on your system? If so, go the [suggested tasks section](/gofurther)*
 
