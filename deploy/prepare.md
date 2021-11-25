@@ -2,7 +2,7 @@
 title: Preparation
 description: 
 published: true
-date: 2021-11-25T13:28:34.121Z
+date: 2021-11-25T13:37:33.947Z
 tags: 
 editor: markdown
 dateCreated: 2021-11-15T15:39:49.074Z
@@ -120,7 +120,7 @@ For an AMD-based computer, you need to look for references to *AMD SVM*, AMD V o
 
 Make sure you enable these options and choose to *save and exit* the configuration tool, which will reboot your computer.
 
-#### Visual walk-through for an Intel NUC
+#### Visual walk-through for Intel-based NUC
 
 Here is a visual walk-through for an Intel NUC computer.
 
@@ -140,6 +140,24 @@ Then *save and exit* the configuration tool, which will reboot your computer.
 
 > While you are there, you could also change the boot order, to make sure that your computer will boot from an attached USB thumb drive first when it will be time to try out Phyllome OS.
 {.is-info}
+
+#### Modifying the boot order
+
+* Go to the *Boot* tab
+
+![efi_boot-order-1.png](/inte-efi/efi_boot-order-1.png)
+
+* Under the *UEFI Boot Priority* menu, you may notice that Fedora, which is installed on the internal storage device, is in the first position    
+
+![efi_boot-order-2.png](/inte-efi/efi_boot-order-2.png)
+
+* Move the USB Flash Drive to the first position instead, as shown in the screenshot below
+
+![efi_boot-order-3.png](/inte-efi/efi_boot-order-3.png)
+
+* That's it. Save changes and exist. Note that it is advisable to revert these changes after a sucessfull installation, or to only change the bootloader temporary.
+
+
 
 > **Failing to activate hardware-assisted virtualization** will make running virtual machines extremly **slow**, if possible at all. If, for some reasons, it cannot be activated on your computer, for example because of a lack of hardware support, you would be better off picking a Linux distribution which doesn't require it, such as [Debian](https://www.debian.org/distrib/).   
 {.is-warning}
