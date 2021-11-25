@@ -2,20 +2,15 @@
 title: Netboot for all
 description: 
 published: true
-date: 2021-11-14T18:40:21.600Z
+date: 2021-11-25T13:55:32.912Z
 tags: 
 editor: markdown
 dateCreated: 2021-11-13T11:43:58.697Z
 ---
 
-> Section under construction
-{.is-warning}
+# Deploy a live guest OS
 
-# Install a guest OS
-
-## Forewords
-
-As of now, `netboot.xyz` is the main way to install a guest operating system inside Phyllome OS. It is compatible with most (but not all) guest operating systems.
+As of now, `netboot.xyz` is one of the main way to deploy or use a guest operating system inside Phyllome OS. It is compatible with most (but not all) guest operating systems. This small guide will show you how to deploy a live system inside Phyllome OS.
 
 ## Preparation
 
@@ -25,37 +20,69 @@ By default, `netboot.xyz.iso` should already be located under `var/lib/libvirt/i
 wget https://boot.netboot.xyz/ipxe/netboot.xyz.iso -P /var/lib/libvirt/iso/
 ```
 
-## Create a virtual machine using `virt-install`
+#### Create and run a virtual machine without any attached disk
 
-The command below will create a virtual machine without a disk.  
+The following script, which also doesn't require root privileges, will create a virtual machine called `my-first-live-vm`. This virtual machine will be started automatically and added to `virt-manager`.
 
 ```
-virt-install \
-    --connect qemu:///system \
-    --virt-type kvm \
-    --arch x86_64 \
-    --machine q35 \
-    --name live-with-netboot-xyz \
-    --boot uefi \
-    --cpu host-model,topology.sockets=1,topology.cores=1,topology.threads=1 \
-    --vcpus 1 \
-    --memory 2048 \
-    --video virtio \
-    --channel spicevmc \
-    --autoconsole none \
-    --sound none \
-    --controller type=virtio-serial \
-    --controller type=usb,model=none \
-    --controller type=scsi,model=virtio-scsi \
-    --network network=default,model=virtio \
-    --input type=keyboard,bus=virtio \
-    --input type=tablet,bus=virtio \
-    --rng /dev/urandom,model=virtio \
-    --disk none \
-    --cdrom=/var/lib/libvirt/iso/netboot.xyz.iso \
-    --install no_install=yes
+/usr/sbin/create-live-vm.sh
+```
+*Notice the new icon under QEMU/KVM: this is the new virtual machine that has just been created. Go to the section to learn how to interact with it.*
+
+![post-install-conf-2.png](/post-launch/post-install-conf-2.png)
+
+## Access your virtual machine display
+
+* Double-click on *my-first-live-vm* to open its virtual display, then click on *Connect to console*. 
+
+![post-install-conf-3.png](/post-launch/post-install-conf-3.png)
+
+> Phyllome OS ships with a small ISO crafted by the team behind [netboot.xyz](https://netboot.xyz/), and that can do network boot, allowing it to do network-based installations of the most popular Linux distributions, among other niceties.
+{.is-info}
+
+![post-install-conf-11.png](/post-launch/post-install-conf-11.png)
+
+* After a few seconds, you will be greeted by the following screen.  
+
+![post-install-conf-4.png](/post-launch/post-install-conf-4.png)
+
+* Under the menu, go to *View* and select *Full Screen* 
+
+![post-install-conf-5.png](/post-launch/post-install-conf-5.png)
+
+* Go to *Live CDs*
+
+> There is no disk attached to this virtual machine. As a result, only Live CDs will work out-the-box.
+{.is-info}
+
+![post-install-conf-10.png](/post-launch/post-install-conf-10.png)
+
+* Scroll down this list
+
+![post-install-conf-13.png](/post-launch/post-install-conf-13.png)
+
+* Stop at *Tiny Core Linux* and press <kbd>Enter</kbd>
+
+![post-install-conf-14.png](/post-launch/post-install-conf-14.png)
+
+* Select *Tiny Core Linux x86_64*
+
+![post-install-conf-15.png](/post-launch/post-install-conf-15.png)
+
+* Select *Tiny Core Linux CorePure*
+
+![post-install-conf-16.png](/post-launch/post-install-conf-16.png)
+
+* Enjoy your disposable virtual machine 
+
+![post-install-conf-6.png](/post-launch/post-install-conf-6.png)
+
+* When you are done messing around, input the following, and you will be back in Phyllome OS
+
+```
+sudo poweroff
 ```
 
-## Create a virtual machine using `virt-manager`
+> That's it, congratulations! 
+{.is-success}
 
-`to-be done`
