@@ -2,7 +2,7 @@
 title: Preparation
 description: 
 published: true
-date: 2021-11-25T13:39:34.275Z
+date: 2021-11-25T13:42:18.626Z
 tags: 
 editor: markdown
 dateCreated: 2021-11-15T15:39:49.074Z
@@ -142,6 +142,8 @@ Then *save and exit* the configuration tool, which will reboot your computer.
 {.is-info}
 
 #### Modify the boot order permanently
+
+This section will show you how to modify the boot order permanently, so you can boot from a USB flash drive attached to your computer, a necessary step to install or use Phyllome OS as a live system. 
 
 * Go to the *Boot* tab
 
