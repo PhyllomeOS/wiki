@@ -2,7 +2,7 @@
 title: Homepage
 description: 
 published: true
-date: 2021-11-25T16:09:37.861Z
+date: 2021-11-25T16:11:28.642Z
 tags: 
 editor: markdown
 dateCreated: 2021-06-19T09:29:20.593Z
@@ -45,23 +45,21 @@ dateCreated: 2021-06-19T09:29:20.593Z
 
 ## Go further
 
-*This section is meant to introduce the execution of particular taks on Phyllome OS, including deployment of certain guest systems. Some of these tasks will be rendered obsolete with newer Phyllome OS versions.*
+### Tasks related to the guest OS
+
+*Although Phyllome OS thrives to pick good defaults that will work for many guest systems, further optimizations may be needed.* 
+
+* [Install a Linux guest](/gofurther/install-guest) system using an ISO file
+* [Install a Windows guest](/gofurther/install-windows-guest) system using an ISO file
+* ...and [**more**](https://wiki.phyllo.me/en/gofurther)
+
+*This section is meant to introduce the execution of particular taks on Phyllome OS. Some of these tasks will be rendered obsolete with newer Phyllome OS versions.*
 
 ### Tasks related to Phyllome OS
 
 * [Perform a few checks](/gofurther/checks) on Phyllome OS
 * [Encrypt](/gofurther/encrypt) virtual disk images using filesystem-level encryption
 * [Install and use the Cloud Hypervisor](/gofurther/cloud-hypervisor) to create a virtual machine
-* ...and [**more**](https://wiki.phyllo.me/en/gofurther)
-
-### Tasks related to the guest OS
-
-*Although Phyllome OS thrives to pick good defaults that will work for many guest systems, further optimizations may be needed.* 
-
-### Unix-like
-	
-* [Install](/gofurther/install-guest) a Linux guest system using an ISO file
-* [Install](/gofurther/install-windows-guest) a Windows guest system using an ISO file
 * ...and [**more**](https://wiki.phyllo.me/en/gofurther)
 
 ## About Phyllome OS 
