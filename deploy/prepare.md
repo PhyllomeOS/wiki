@@ -2,7 +2,7 @@
 title: Preparation
 description: 
 published: true
-date: 2021-11-25T13:42:18.626Z
+date: 2021-11-25T13:45:30.039Z
 tags: 
 editor: markdown
 dateCreated: 2021-11-15T15:39:49.074Z
@@ -96,6 +96,8 @@ shutdown /fw /r
 * Hit *Restart*
 
 ![screenshot_win10pro_2021-11-17_220200.png](/windows-access-firmware/screenshot_win10pro_2021-11-17_220200.png)
+
+* Go to the section [Modify the firmware configuration](/deploy/prepare#modify-the-firmware-configuration) to learn what to do next.
 
 #### macOS-based computers
 
