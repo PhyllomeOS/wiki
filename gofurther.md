@@ -2,24 +2,13 @@
 title: Tasks
 description: 
 published: true
-date: 2021-11-25T14:58:32.492Z
+date: 2021-11-25T16:12:30.333Z
 tags: 
 editor: markdown
 dateCreated: 2021-11-13T11:40:46.114Z
 ---
 
 # Go further
-
-*The section is meant to introduce how to execute particular tasks on Phyllome OS, including deploying certain guest systems. Some of these tasks will be rendered obsolete with newer Phyllome OS versions.*
-
-## Tasks related to Phyllome OS
-
-* [Perform a few checks](/gofurther/checks) on Phyllome OS
-* [Migrate](/gofurther/migrate) an existing guest virtual machine to another Phyllome OS host
-* [Resize](/gofurther/resize) an existing virtual disk
-* [Encrypt](/gofurther/encrypt) virtual disk images using filesystem-level encryption
-* [Install and use the Cloud Hypervisor](/gofurther/cloud-hypervisor) to create a virtual machine
-* [Inception](/gofurther/inception) or install Phyllome OS inside Phyllome OS inside Phyllome OS
 
 ## Tasks related to the guest OS
 
@@ -44,3 +33,14 @@ dateCreated: 2021-11-13T11:40:46.114Z
 
 * [Sculpt OS](/gofurther/sculpt-os)
 * [Fuchsia OS](/gofurther/fuchsia-os)
+
+*The section is meant to introduce how to execute particular tasks on Phyllome OS. Some of these tasks will be rendered obsolete with newer Phyllome OS versions.*
+
+## Tasks related to Phyllome OS
+
+* [Perform a few checks](/gofurther/checks) on Phyllome OS
+* [Migrate](/gofurther/migrate) an existing guest virtual machine to another Phyllome OS host
+* [Resize](/gofurther/resize) an existing virtual disk
+* [Encrypt](/gofurther/encrypt) virtual disk images using filesystem-level encryption
+* [Install and use the Cloud Hypervisor](/gofurther/cloud-hypervisor) to create a virtual machine
+* [Inception](/gofurther/inception) or install Phyllome OS inside Phyllome OS inside Phyllome OS
