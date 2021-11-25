@@ -2,7 +2,7 @@
 title: Preparation
 description: 
 published: true
-date: 2021-11-25T13:37:33.947Z
+date: 2021-11-25T13:39:09.430Z
 tags: 
 editor: markdown
 dateCreated: 2021-11-15T15:39:49.074Z
@@ -120,7 +120,7 @@ For an AMD-based computer, you need to look for references to *AMD SVM*, AMD V o
 
 Make sure you enable these options and choose to *save and exit* the configuration tool, which will reboot your computer.
 
-#### Visual walk-through for Intel-based NUC
+#### A visual walk-through for Intel-based NUC
 
 Here is a visual walk-through for an Intel NUC computer.
 
@@ -155,7 +155,7 @@ Then *save and exit* the configuration tool, which will reboot your computer.
 
 ![efi_boot-order-3.png](/inte-efi/efi_boot-order-3.png)
 
-* That's it. Save changes and exist. Note that it is advisable to revert these changes after a sucessfull installation, or to only change the bootloader temporary.
+* That's it. Save changes and exist. Note that it is advisable to revert these changes after a successful installation, or to only change the bootloader temporary.
 
 
 
