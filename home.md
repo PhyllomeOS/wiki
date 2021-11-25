@@ -2,7 +2,7 @@
 title: Homepage
 description: 
 published: true
-date: 2021-11-25T15:03:34.662Z
+date: 2021-11-25T15:57:55.773Z
 tags: 
 editor: markdown
 dateCreated: 2021-06-19T09:29:20.593Z
@@ -54,7 +54,7 @@ dateCreated: 2021-06-19T09:29:20.593Z
 * [Install and use the Cloud Hypervisor](/gofurther/cloud-hypervisor) to create a virtual machine
 * ...and [**more**](https://wiki.phyllo.me/en/gofurther)
 
-## Tasks related to the guest OS
+### Tasks related to the guest OS
 
 *Although Phyllome OS thrives to pick good defaults that will work for many guest systems, further optimizations may be needed.* 
 
