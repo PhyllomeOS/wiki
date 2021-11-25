@@ -2,7 +2,7 @@
 title: Get started with Phyllome OS
 description: 
 published: true
-date: 2021-11-25T13:58:46.554Z
+date: 2021-11-25T14:05:37.382Z
 tags: 
 editor: markdown
 dateCreated: 2021-11-13T11:37:31.498Z
@@ -10,7 +10,7 @@ dateCreated: 2021-11-13T11:37:31.498Z
 
 # How to use Phyllome OS
 
-*This section explains how to further configure Phyllome OS, and how to deploy a tiny and live operating system within it.*   
+*This section explains how to further configure Phyllome OS and how to use in a general sense.*   
 
 ## Post-installation configuration
 
@@ -38,11 +38,9 @@ sudo usermod -a -G libvirt $(whoami)
 > Phyllome OS will eventually switch to the *qemu:///session* URI, which doesn't require elevated privileges. Have a look at [this great blog post](https://blog.wikichoon.com/2016/01/qemusystem-vs-qemusession.html) to understand some of the differences between the *session* and the *system* URI.  
 {.is-info}
 
-### Run a few scripts
+### Desktop enhancements
 
 During the installation process, [a few scripts are fetched](https://github.com/PhyllomeOS/phyllomeos/tree/main/post) and stored under the `/usr/sbin` directory. They need to be run to further customize Phyllome OS.
-
-#### Desktop enhancements
 
 The following script will change the desktop background and pick opinionated defaults for the Virtual Machine Manager. It will also add a new User session URI for the Virtual Machine Manager. 
 
@@ -51,10 +49,13 @@ Open the terminal and run the following script as a regular user:
 ```
 /usr/sbin/configure-vmm-and-desktop.sh
 ```
-*The updated desktop background. Notice that there is now a new URI called QEMU/KVM User session*
+* The updated desktop background is shown in the screenshot below. Notice that there is now a new URI called QEMU/KVM User session
 
 ![post-install-conf-1.png](/post-launch/post-install-conf-1.png)
 
+## Install a guest operating system
+
+Generally speaking, installing your favorite guest operating system inside Phyllome OS requires that you fetch an official ISO from the editor of the said operating system, that you make it accessible to `libvirt` and that you go through the installation.
 
 ---
 
