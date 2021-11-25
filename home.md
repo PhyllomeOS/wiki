@@ -2,7 +2,7 @@
 title: Homepage
 description: 
 published: true
-date: 2021-11-25T15:57:55.773Z
+date: 2021-11-25T16:09:24.980Z
 tags: 
 editor: markdown
 dateCreated: 2021-06-19T09:29:20.593Z
@@ -94,6 +94,6 @@ dateCreated: 2021-06-19T09:29:20.593Z
 
 * **The website**: https://phyllo.me
 * **The wiki**: https://wiki.phyllo.me
-* **The issue board**: https://kanboard.phyllo.me
+* **The issue board**: [https://kanboard.phyllo.me](https://kanboard.phyllo.me/b/CH7qd98J2v7egmodk/development)
 * **GitHub repositories**: https://github.com/PhyllomeOS
 
