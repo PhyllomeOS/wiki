@@ -2,13 +2,13 @@
 title: Netboot for all
 description: 
 published: true
-date: 2021-11-25T13:55:32.912Z
+date: 2021-11-25T13:55:48.883Z
 tags: 
 editor: markdown
 dateCreated: 2021-11-13T11:43:58.697Z
 ---
 
-# Deploy a live guest OS
+# Use a live guest OS
 
 As of now, `netboot.xyz` is one of the main way to deploy or use a guest operating system inside Phyllome OS. It is compatible with most (but not all) guest operating systems. This small guide will show you how to deploy a live system inside Phyllome OS.
 
