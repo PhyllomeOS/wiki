@@ -2,7 +2,7 @@
 title: Get started with Phyllome OS
 description: 
 published: true
-date: 2021-11-25T14:05:37.382Z
+date: 2021-11-25T14:05:48.873Z
 tags: 
 editor: markdown
 dateCreated: 2021-11-13T11:37:31.498Z
@@ -53,7 +53,7 @@ Open the terminal and run the following script as a regular user:
 
 ![post-install-conf-1.png](/post-launch/post-install-conf-1.png)
 
-## Install a guest operating system
+## Install and use a guest operating system
 
 Generally speaking, installing your favorite guest operating system inside Phyllome OS requires that you fetch an official ISO from the editor of the said operating system, that you make it accessible to `libvirt` and that you go through the installation.
 
