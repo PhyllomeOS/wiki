@@ -2,7 +2,7 @@
 title: Preparation
 description: 
 published: true
-date: 2021-11-25T13:39:09.430Z
+date: 2021-11-25T13:39:34.275Z
 tags: 
 editor: markdown
 dateCreated: 2021-11-15T15:39:49.074Z
@@ -141,7 +141,7 @@ Then *save and exit* the configuration tool, which will reboot your computer.
 > While you are there, you could also change the boot order, to make sure that your computer will boot from an attached USB thumb drive first when it will be time to try out Phyllome OS.
 {.is-info}
 
-#### Modifying the boot order
+#### Modify the boot order permanently
 
 * Go to the *Boot* tab
 
