@@ -2,7 +2,7 @@
 title: Homepage
 description: 
 published: true
-date: 2021-11-23T10:02:04.781Z
+date: 2021-11-25T15:03:34.662Z
 tags: 
 editor: markdown
 dateCreated: 2021-06-19T09:29:20.593Z
@@ -50,17 +50,18 @@ dateCreated: 2021-06-19T09:29:20.593Z
 ### Tasks related to Phyllome OS
 
 * [Perform a few checks](/gofurther/checks) on Phyllome OS
-* [Configure the Virtual Machine Manager](/gofurther/virt-manager) manually or automatically
-* [Install a guest system using netboot.xyz](/gofurther/install-guest)
+* [Encrypt](/gofurther/encrypt) virtual disk images using filesystem-level encryption
+* [Install and use the Cloud Hypervisor](/gofurther/cloud-hypervisor) to create a virtual machine
 * ...and [**more**](https://wiki.phyllo.me/en/gofurther)
 
-### Tasks related to your guest OS
+## Tasks related to the guest OS
 
-*Although Phyllome OS strives to choose defaults that will work for many guest systems, further optimizations may be needed.* 
+*Although Phyllome OS thrives to pick good defaults that will work for many guest systems, further optimizations may be needed.* 
 
-* [Linux family](/gofurther/linux)
-* [Darwin family](/gofurther/darwin)
-* [Windows NT family](/gofurther/windows)
+### Unix-like
+	
+* [Install](/gofurther/install-guest) a Linux guest system using an ISO file
+* [Install](/gofurther/install-windows-guest) a Windows guest system using an ISO file
 * ...and [**more**](https://wiki.phyllo.me/en/gofurther)
 
 ## About Phyllome OS 
