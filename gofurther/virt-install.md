@@ -2,7 +2,7 @@
 title: Linux family
 description: 
 published: true
-date: 2021-11-26T21:06:35.123Z
+date: 2021-11-26T21:07:25.649Z
 tags: 
 editor: markdown
 dateCreated: 2021-11-12T15:27:40.366Z
@@ -76,7 +76,7 @@ virt-install \
     --location=/var/lib/libvirt/iso/Fedora-Server-dvd-x86_64-35-1.2.iso \
     --initrd-inject virtual-desktop.cfg --extra-args "inst.ks=file:/virtual-desktop.cfg"
 ```
-### Remote installation with local kickstart
+## Automated installation using a local kickstart file 
 
 * Fetch a kickstart script using wget and put it in the current working directory
 
