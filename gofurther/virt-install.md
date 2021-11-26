@@ -2,7 +2,7 @@
 title: Linux family
 description: 
 published: true
-date: 2021-11-26T21:12:08.948Z
+date: 2021-11-26T21:12:15.561Z
 tags: 
 editor: markdown
 dateCreated: 2021-11-12T15:27:40.366Z
@@ -94,7 +94,7 @@ wget https://raw.githubusercontent.com/PhyllomeOS/phyllomeos/main/leaves/virtual
 > If using a custom kickstart script, make sure it includes `repo` information
 {.is-warning}
 
-* Deploy a UEFI-based stripped down desktop based on GNOME Shell using a local kickstart file
+* Deploy a stripped down desktop based on GNOME Shell using a local kickstart file
 
 ```
 virt-install \
