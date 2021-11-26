@@ -2,7 +2,7 @@
 title: Linux family
 description: 
 published: true
-date: 2021-11-26T20:23:34.560Z
+date: 2021-11-26T20:24:17.493Z
 tags: 
 editor: markdown
 dateCreated: 2021-11-12T15:27:40.366Z
@@ -158,7 +158,7 @@ virt-install \
     --machine q35 \
     --name virtual-desktop \
     --boot uefi \
-    --cpu host-model,topology.sockets=1,topology.cores=1,topology.threads=1 \
+    --cpu host-model,topology.sockets=1,topology.cores=2,topology.threads=1 \
     --vcpus 2 \
     --memory 4096 \
     --video virtio \
