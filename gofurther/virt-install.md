@@ -2,7 +2,7 @@
 title: Linux family
 description: 
 published: true
-date: 2021-11-26T21:07:25.649Z
+date: 2021-11-26T21:12:08.948Z
 tags: 
 editor: markdown
 dateCreated: 2021-11-12T15:27:40.366Z
@@ -46,6 +46,10 @@ wget https://raw.githubusercontent.com/PhyllomeOS/phyllomeos/main/leaves/virtual
 
 * Deploy a UEFI-based machine with Fedora Server using the relative path of the local kickstart file
 
+> Warning: doesn't work as intended.
+{.is-danger}
+
+
 ```
 virt-install \
     --connect qemu:///session \
@@ -78,40 +82,49 @@ virt-install \
 ```
 ## Automated installation using a local kickstart file 
 
-* Fetch a kickstart script using wget and put it in the current working directory
+* Use the following `wget` command to fetch a standalone kickstart file made to deploy a stripped down desktop based on GNOME Shell, and put it in the working directory
 
 ```
-$ wget https://git.phyllo.me/home/kickstart/raw/branch/main/leaves/vmd.cfg 
+wget https://raw.githubusercontent.com/PhyllomeOS/phyllomeos/main/leaves/virtual-desktop.cfg
 ```
 
-> If using a custom kickstart script, make sure it includes repo information
+> Please verify the content of the script if you intent to use this virtual machine in production, for instance by using the following command `cat virtual-desktop.cfg`
+{.is-info}
+
+> If using a custom kickstart script, make sure it includes `repo` information
 {.is-warning}
 
+* Deploy a UEFI-based stripped down desktop based on GNOME Shell using a local kickstart file
+
 ```
-$ virt-install \
-    --connect qemu:///system \
+virt-install \
+    --connect qemu:///session \
+    --os-variant detect=off \
     --virt-type kvm \
     --arch x86_64 \
     --machine q35 \
-    --name vmd \
+    --name virtual-desktop \
     --boot uefi \
-    --cpu host-model,topology.sockets=1,topology.cores=2,topology.threads=2 \
-    --vcpus 4 \
-    --memory 8192 \
+    --cpu host-model,topology.sockets=1,topology.cores=2,topology.threads=1 \
+    --vcpus 2 \
+    --memory 4096 \
     --video virtio \
+    --graphics spice,listen=none \
     --channel spicevmc \
+    --channel unix,target.type=virtio,target.name=org.qemu.guest_agent.0 \
     --autoconsole none \
+    --console pty,target.type=virtio \
     --sound none \
+    --network type=user,model=virtio \
     --controller type=virtio-serial \
     --controller type=usb,model=none \
     --controller type=scsi,model=virtio-scsi \
-    --network network=default,model=virtio \
     --input type=keyboard,bus=virtio \
     --input type=tablet,bus=virtio \
     --rng /dev/urandom,model=virtio \
-    --disk path=/var/lib/libvirt/images/vmd.img,format=raw,bus=virtio,cache=writeback,size=5 \
-    --location=https://download.fedoraproject.org/pub/fedora/linux/releases/34/Everything/x86_64/os/ \
-    --initrd-inject bmd.cfg --extra-args "inst.ks=file:/bmd.cfg"
+    --disk path=/var/lib/libvirt/images/virtual-desktop.img,format=raw,bus=virtio,cache=writeback,size=10 \
+    --location=https://download.fedoraproject.org/pub/fedora/linux/releases/35/Everything/x86_64/os/ \
+    --initrd-inject virtual-desktop.cfg --extra-args "inst.ks=file:/virtual-desktop.cfg"
 ```
 
 ### Remote installation with remote kickstart
