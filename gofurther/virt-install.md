@@ -2,7 +2,7 @@
 title: Linux family
 description: 
 published: true
-date: 2021-11-13T10:08:38.243Z
+date: 2021-11-26T19:51:06.779Z
 tags: 
 editor: markdown
 dateCreated: 2021-11-12T15:27:40.366Z
@@ -151,29 +151,35 @@ $ virt-install \
 
 ``` 
 virt-install \
-    --connect qemu:///system \
+    --connect qemu:///session \
+    --metadata description="Works with all GPUs on the host including Nvidia and does expect an EFI-based Linux guest" \
+    --os-variant detect=off \
     --virt-type kvm \
     --arch x86_64 \
     --machine q35 \
-    --name flat-dmd \
+    --name linux-egl-headless-gl \
     --boot uefi \
-    --cpu host-model,topology.sockets=1,topology.cores=2,topology.threads=2 \
-    --vcpus 4 \
-    --memory 8192 \
+    --cpu host-model,topology.sockets=1,topology.cores=1,topology.threads=1 \
+    --vcpus 1 \
+    --memory 2048 \
     --video virtio \
+    --graphics spice,listen=none \
+    --graphics egl-headless,gl.enable=yes \
     --channel spicevmc \
+    --channel unix,target.type=virtio,target.name=org.qemu.guest_agent.0 \
     --autoconsole none \
+    --console pty,target.type=virtio \
     --sound none \
+    --network type=user,model=virtio \
     --controller type=virtio-serial \
     --controller type=usb,model=none \
     --controller type=scsi,model=virtio-scsi \
-    --network network=default,model=virtio \
     --input type=keyboard,bus=virtio \
     --input type=tablet,bus=virtio \
     --rng /dev/urandom,model=virtio \
-    --disk path=/var/lib/libvirt/images/flat-dmd.img,format=raw,bus=virtio,cache=writeback,size=5 \
-    --location=https://download.fedoraproject.org/pub/fedora/linux/releases/34/Everything/x86_64/os/ \
-    --extra-args="inst.ks=https://git.phyllo.me/home/kickstart/raw/branch/main/flat/flat-dmd.cfg"
+    --disk path=/var/lib/libvirt/images/phyllome-desktop.img,format=raw,bus=virtio,cache=writeback,size=5 \
+    --location=https://download.fedoraproject.org/pub/fedora/linux/releases/35/Everything/x86_64/os/ \
+    --extra-args="inst.ks=https://raw.githubusercontent.com/PhyllomeOS/phyllomeos/main/leaves/phyllome-desktop.cfg"
 ```
 
 ### Local deployment without installation
