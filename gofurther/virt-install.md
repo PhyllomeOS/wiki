@@ -2,65 +2,28 @@
 title: Linux family
 description: 
 published: true
-date: 2021-11-26T20:24:17.493Z
+date: 2021-11-26T20:40:46.772Z
 tags: 
 editor: markdown
 dateCreated: 2021-11-12T15:27:40.366Z
 ---
 
-> Section under construction
-{.is-warning}
+# Deploy common Linux systems automatically
 
-# How to deploy common Linux systems
+`virt-install` is a command-line utility that can be used to create virtual machines. It is preinstalled on Phyllome OS. 
 
-## Introduction
-
-*virt-install* is a command-line utility to install virtual machines. 
-
-### Prerequesites 
-
-* These prerequesites are for Fedora only, as Phyllome OS ships with virt-install by default.
-
-Install the *virt-install* command-line tool on Fedora :
+* For Fedora, you can install it using the following command:
 
 ```
 # dnf install virt-install
 ```
 
-## Manual installation
-
-Use the following command to automatically launch the Fedora installation process. It will also automatically create a disk image to install Fedora on. Make sure you have at least 20 GB of free space.
-
-```
-$ virt-install --install fedora32
-
-Using fedora32 --location https://download.fedoraproject.org/pub/fedora/linux/releases/32/Everything/x86_64/os
-Using default --name fedora32
-Using fedora32 default --memory 2048
-Using fedora32 default --disk size=20
-
-Starting install...
-Retrieving file vmlinuz...                                                                             |  10 MB  00:00:00     
-Retrieving file initrd.img...                                                                          |  74 MB  00:00:03     
-Allocating 'fedora32-2.qcow2'                                                                          |  20 GB  00:00:00     
-Running graphical console command: virt-viewer --connect qemu:///session --wait fedora32
-```
-
-It should automatically launch the guest console. Eventually, you should see the Anaconda installer first page.
-
-Other options include : `android-x86-9.0`, `centos8`, `clearlinux`, `debian9`, `macosx10.7`, `nixos-20.03`, `ubuntu20.04`, `win10`
-
-> The virt-install package that comes with Fedora 34 doesn't work yet with argument *fedora34*
-{.is-warning}
-
-## Automated installation 
-
-### Local iso and kickstart
+## Automated installation using an ISO file and a local kickstart
 
 > Requires an Internet connection
 {.is-info}
 
-* Fetch a Fedora iso file using wget and put it in the current working directory
+* Fetch a Fedora ISO file using wget and put it in the current working directory
 
 ```
 $ wget https://download.fedoraproject.org/pub/fedora/linux/releases/34/Server/x86_64/iso/Fedora-Server-dvd-x86_64-34-1.2.iso
@@ -72,9 +35,8 @@ $ wget https://download.fedoraproject.org/pub/fedora/linux/releases/34/Server/x8
 $ wget https://git.phyllo.me/home/kickstart/raw/branch/main/leaves/imd.cfg 
 ```
 
-> If using a custom kickstart script, make sure it includes the cdrom option.
+> If using a custom kickstart script, make sure it does include the `cdrom` option.
 {.is-warning}
-
 
 * Deploy a UEFI-based machine with Fedora Server using the relative path of the local kickstart file
 
@@ -163,7 +125,6 @@ virt-install \
     --memory 4096 \
     --video virtio \
     --graphics spice,listen=none \
-    --graphics egl-headless,gl.enable=yes \
     --channel spicevmc \
     --channel unix,target.type=virtio,target.name=org.qemu.guest_agent.0 \
     --autoconsole none \
