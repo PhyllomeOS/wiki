@@ -2,7 +2,7 @@
 title: Linux family
 description: 
 published: true
-date: 2021-11-26T21:12:15.561Z
+date: 2021-11-26T21:17:43.841Z
 tags: 
 editor: markdown
 dateCreated: 2021-11-12T15:27:40.366Z
@@ -46,9 +46,8 @@ wget https://raw.githubusercontent.com/PhyllomeOS/phyllomeos/main/leaves/virtual
 
 * Deploy a UEFI-based machine with Fedora Server using the relative path of the local kickstart file
 
-> Warning: doesn't work as intended.
+> Warning: doesn't work as intended. The kickstart file won't have to be modified to include the `cdrom` option and the ISO would have to include the necessary packages. 
 {.is-danger}
-
 
 ```
 virt-install \
@@ -127,9 +126,9 @@ virt-install \
     --initrd-inject virtual-desktop.cfg --extra-args "inst.ks=file:/virtual-desktop.cfg"
 ```
 
-### Remote installation with remote kickstart
+## Automated installation using a remote kickstart file 
 
-* Alternatively, same as above but without fetching the kickstart file. The last line has to be swapped with : 
+* Alternatively, you can do the same as above but with an Internet-accessible kickstart file. The last line has to be swapped with : 
 
 ``` 
 virt-install \
@@ -164,27 +163,31 @@ virt-install \
 
 ### Local deployment without installation
 
-The idea here is to define a virtual machine and use the netboot.xyz.iso as a way to boot into an installer. 
+The idea here is to define a virtual machine and use the `netboot.xyz.iso` as a way to boot into an installer. 
 
 ```
 virt-install \
-    --connect qemu:///system \
+    --connect qemu:///session \
+    --os-variant detect=off \
     --virt-type kvm \
     --arch x86_64 \
     --machine q35 \
-    --name live-with-netboot-xyz \
+    --name virtual-desktop \
     --boot uefi \
-    --cpu host-model,topology.sockets=1,topology.cores=1,topology.threads=1 \
-    --vcpus 1 \
-    --memory 2048 \
+    --cpu host-model,topology.sockets=1,topology.cores=2,topology.threads=1 \
+    --vcpus 2 \
+    --memory 4096 \
     --video virtio \
+    --graphics spice,listen=none \
     --channel spicevmc \
+    --channel unix,target.type=virtio,target.name=org.qemu.guest_agent.0 \
     --autoconsole none \
+    --console pty,target.type=virtio \
     --sound none \
+    --network type=user,model=virtio \
     --controller type=virtio-serial \
     --controller type=usb,model=none \
     --controller type=scsi,model=virtio-scsi \
-    --network network=default,model=virtio \
     --input type=keyboard,bus=virtio \
     --input type=tablet,bus=virtio \
     --rng /dev/urandom,model=virtio \
@@ -195,12 +198,15 @@ virt-install \
 
 ### Built-in unattended mode
 
-virt-install can rely on libosinfo's unattended install support to deploy fedora34 without any user intervention:
+* `virt-install` can rely on libosinfo's unattended installation support to deploy fedora32 without any user intervention:
 
 `virt-install --install fedora32 --unattended`
 
 ### Cloud-init
 
-Cloud-init may be used alongside virt-install:
+> Under construction
+{.is-warning}
+
+`cloud-init` may be used alongside `virt-install`:
 
 `virt-install --install fedora34,cloud=yes --cloud-init root-password-generate=on ssh-key=/home/user/.ssh/test_rsa.pub disable=on`
