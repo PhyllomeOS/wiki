@@ -2,13 +2,13 @@
 title: Linux family
 description: 
 published: true
-date: 2021-11-26T21:17:43.841Z
+date: 2021-11-26T21:18:08.520Z
 tags: 
 editor: markdown
 dateCreated: 2021-11-12T15:27:40.366Z
 ---
 
-# Deploy RPM-based Linux distributions automatically
+# Use virt-install to deploy RPM-based Linux distributions automatically
 
 `virt-install` is a command-line utility that can be used to create virtual machines. It comes preinstalled with Phyllome OS. 
 
