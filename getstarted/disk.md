@@ -2,7 +2,7 @@
 title: Get started with Phyllome OS
 description: 
 published: true
-date: 2021-11-25T14:44:31.847Z
+date: 2021-11-26T16:02:39.694Z
 tags: 
 editor: markdown
 dateCreated: 2021-11-13T11:37:31.498Z
@@ -52,6 +52,15 @@ Open the terminal and run the following script as a regular user:
 * The updated desktop background is shown in the screenshot below. Notice that there is now a new URI called QEMU/KVM User session
 
 ![post-install-conf-1.png](/post-launch/post-install-conf-1.png)
+
+### Update GRUB and reboot
+
+Unfortunately, the GRUB config won't correctly update during the kickstart phase, so it has to be done manually.
+
+```
+sudo grub2-mkconfig -o /boot/grub2/grub.cfg
+```
+When the is done, please reboot: `sudo reboot`
 
 ## Install and use a guest operating system
 
