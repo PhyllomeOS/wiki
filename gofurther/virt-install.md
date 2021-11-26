@@ -2,7 +2,7 @@
 title: Linux family
 description: 
 published: true
-date: 2021-11-26T21:18:08.520Z
+date: 2021-11-26T21:24:17.505Z
 tags: 
 editor: markdown
 dateCreated: 2021-11-12T15:27:40.366Z
@@ -75,7 +75,7 @@ virt-install \
     --input type=keyboard,bus=virtio \
     --input type=tablet,bus=virtio \
     --rng /dev/urandom,model=virtio \
-    --disk path=/var/lib/libvirt/images/virtual-desktop.img,format=raw,bus=virtio,cache=writeback,size=10 \
+    --disk path=~/.local/share/libvirt/images/virtual-desktop.img,format=raw,bus=virtio,cache=writeback,size=10 \
     --location=/var/lib/libvirt/iso/Fedora-Server-dvd-x86_64-35-1.2.iso \
     --initrd-inject virtual-desktop.cfg --extra-args "inst.ks=file:/virtual-desktop.cfg"
 ```
@@ -121,7 +121,7 @@ virt-install \
     --input type=keyboard,bus=virtio \
     --input type=tablet,bus=virtio \
     --rng /dev/urandom,model=virtio \
-    --disk path=/var/lib/libvirt/images/virtual-desktop.img,format=raw,bus=virtio,cache=writeback,size=10 \
+    --disk path=~/.local/share/libvirt/images/virtual-desktop.img,format=raw,bus=virtio,cache=writeback,size=10 \
     --location=https://download.fedoraproject.org/pub/fedora/linux/releases/35/Everything/x86_64/os/ \
     --initrd-inject virtual-desktop.cfg --extra-args "inst.ks=file:/virtual-desktop.cfg"
 ```
@@ -156,7 +156,7 @@ virt-install \
     --input type=keyboard,bus=virtio \
     --input type=tablet,bus=virtio \
     --rng /dev/urandom,model=virtio \
-    --disk path=/var/lib/libvirt/images/phyllome-desktop.img,format=raw,bus=virtio,cache=writeback,size=10 \
+    --disk path=~/.local/share/libvirt/images/virtual-desktop.img,format=raw,bus=virtio,cache=writeback,size=10 \
     --location=https://download.fedoraproject.org/pub/fedora/linux/releases/35/Everything/x86_64/os/ \
     --extra-args="inst.ks=https://raw.githubusercontent.com/PhyllomeOS/phyllomeos/main/leaves/virtual-desktop.cfg"
 ```
