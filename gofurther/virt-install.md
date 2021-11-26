@@ -2,7 +2,7 @@
 title: Linux family
 description: 
 published: true
-date: 2021-11-26T19:51:06.779Z
+date: 2021-11-26T20:23:34.560Z
 tags: 
 editor: markdown
 dateCreated: 2021-11-12T15:27:40.366Z
@@ -152,16 +152,15 @@ $ virt-install \
 ``` 
 virt-install \
     --connect qemu:///session \
-    --metadata description="Works with all GPUs on the host including Nvidia and does expect an EFI-based Linux guest" \
     --os-variant detect=off \
     --virt-type kvm \
     --arch x86_64 \
     --machine q35 \
-    --name linux-egl-headless-gl \
+    --name virtual-desktop \
     --boot uefi \
     --cpu host-model,topology.sockets=1,topology.cores=1,topology.threads=1 \
-    --vcpus 1 \
-    --memory 2048 \
+    --vcpus 2 \
+    --memory 4096 \
     --video virtio \
     --graphics spice,listen=none \
     --graphics egl-headless,gl.enable=yes \
@@ -177,9 +176,9 @@ virt-install \
     --input type=keyboard,bus=virtio \
     --input type=tablet,bus=virtio \
     --rng /dev/urandom,model=virtio \
-    --disk path=/var/lib/libvirt/images/phyllome-desktop.img,format=raw,bus=virtio,cache=writeback,size=5 \
+    --disk path=/var/lib/libvirt/images/phyllome-desktop.img,format=raw,bus=virtio,cache=writeback,size=10 \
     --location=https://download.fedoraproject.org/pub/fedora/linux/releases/35/Everything/x86_64/os/ \
-    --extra-args="inst.ks=https://raw.githubusercontent.com/PhyllomeOS/phyllomeos/main/leaves/phyllome-desktop.cfg"
+    --extra-args="inst.ks=https://raw.githubusercontent.com/PhyllomeOS/phyllomeos/main/leaves/virtual-desktop.cfg"
 ```
 
 ### Local deployment without installation
