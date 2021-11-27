@@ -2,7 +2,7 @@
 title: Linux family
 description: 
 published: true
-date: 2021-11-27T19:50:31.159Z
+date: 2021-11-27T19:54:24.861Z
 tags: 
 editor: markdown
 dateCreated: 2021-11-12T15:27:40.366Z
@@ -76,7 +76,7 @@ virt-install \
     --input type=tablet,bus=virtio \
     --rng /dev/urandom,model=virtio \
     --disk path=~/.local/share/libvirt/images/virtual-phyllome-desktop-cdrom.img,format=raw,bus=virtio,cache=writeback,size=10 \
-    --location=~/Downloads/Fedora-Everything-netinst-x86_64-35-1.2.iso \
+    --location=/tmp/Fedora-Everything-netinst-x86_64-35-1.2.iso \
     --initrd-inject virtual-phyllome-desktop.cfg --extra-args "inst.ks=file:/virtual-phyllome-desktop-cdrom.cfg"
 ```
 ## Automated installation using a local kickstart file 
