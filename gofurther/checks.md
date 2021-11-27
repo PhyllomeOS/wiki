@@ -2,7 +2,7 @@
 title: Performs a few checks on Phyllome OS
 description: 
 published: true
-date: 2021-11-27T11:38:00.341Z
+date: 2021-11-27T11:40:12.742Z
 tags: 
 editor: markdown
 dateCreated: 2021-11-13T11:39:13.790Z
@@ -70,6 +70,10 @@ flags		: fpu vme de  [...] svm [...] sme sev sev_es
 
 ### IOMMU-related checks
 
+> Under construction
+{.is-warning}
+
+
 If your computer ships with advanced hardware virtualization features (*AMD Vi* or Intel *VT-d*), Phyllome OS should have automatically activated them. 
 
 * Verify if that is the case by using the following command, courtesy of the [Archlinux wiki](https://wiki.archlinux.org/title/PCI_passthrough_via_OVMF#Enabling_IOMMU). 
@@ -120,3 +124,7 @@ IOMMU Group 14:
 IOMMU Group 15:
 	0b:00.4 Audio device [0403]: Advanced Micro Devices, Inc. [AMD] Starship/Matisse HD Audio Controller [1022:1487]
 ```
+### Intel GVT-d related checks
+
+> Under construction
+{.is-warning}
