@@ -2,7 +2,7 @@
 title: Performs a few checks on Phyllome OS
 description: 
 published: true
-date: 2021-11-27T15:25:02.182Z
+date: 2021-11-27T15:27:15.262Z
 tags: 
 editor: markdown
 dateCreated: 2021-11-13T11:39:13.790Z
@@ -50,16 +50,23 @@ virt-host-validate
 
 ### Check for hardware virtualization
 
-* Another more generic way to check whether *hardware virtualization* is activated or not is the following command:
+* Another more generic way to check whether *hardware virtualization* is activated or not is the following command fo Intel CPUs:
 
 ```
-cat /proc/cpuinfo | grep '(vmx|svm)'
+cat /proc/cpuinfo | grep vmx
 ```
+
+* And this command for AMD CPUs
+```
+cat /proc/cpuinfo | grep svm
+```
+
+
 
 * Look for `svm` for AMD-based processors, or `vmx` for Intel-based processors.
 
 ```
-[groot@phyllome ~]$ cat /proc/cpuinfo | grep svm '(vmx|svm)'
+[groot@phyllome ~]$ cat /proc/cpuinfo | grep svm
 flags		: fpu vme de  [...] svm [...] sme sev sev_es
 ```
 
