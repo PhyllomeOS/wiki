@@ -2,7 +2,7 @@
 title: Linux family
 description: 
 published: true
-date: 2021-11-27T09:59:11.745Z
+date: 2021-11-27T10:51:10.917Z
 tags: 
 editor: markdown
 dateCreated: 2021-11-12T15:27:40.366Z
@@ -46,7 +46,7 @@ wget https://raw.githubusercontent.com/PhyllomeOS/phyllomeos/main/leaves/virtual
 
 * Deploy a UEFI-based machine with Fedora Server using the relative path of the local kickstart file
 
-> Warning: doesn't work as intended. The kickstart file won't have to be modified to include the `cdrom` option and the ISO would have to include the necessary packages. 
+> **Warning**: doesn't work as intended. The kickstart file won't have to be modified to include the `cdrom` option and the ISO would have to include the necessary packages. 
 {.is-danger}
 
 ```
