@@ -2,7 +2,7 @@
 title: Linux family
 description: 
 published: true
-date: 2021-11-27T10:51:10.917Z
+date: 2021-11-27T15:00:38.562Z
 tags: 
 editor: markdown
 dateCreated: 2021-11-12T15:27:40.366Z
@@ -35,7 +35,7 @@ mv Fedora-Server-dvd-x86_64-35-1.2.iso /var/lib/libvirt/iso
 * Use the following `wget` command to fetch a standalone kickstart file made to deploy a stripped down desktop based on GNOME Shell, and put it in the working directory
 
 ```
-wget https://raw.githubusercontent.com/PhyllomeOS/phyllomeos/main/leaves/virtual-desktop.cfg
+wget https://raw.githubusercontent.com/PhyllomeOS/phyllomeos/main/leaves/virtual-phyllome-desktop.cfg
 ```
 
 > Please verify the content of the script if you intent to use this virtual machine in production, for instance by using the following command `cat virtual-desktop.cfg`
@@ -56,7 +56,7 @@ virt-install \
     --virt-type kvm \
     --arch x86_64 \
     --machine q35 \
-    --name virtual-desktop \
+    --name virtual-phyllome-desktop \
     --boot uefi \
     --cpu host-model,topology.sockets=1,topology.cores=2,topology.threads=1 \
     --vcpus 2 \
@@ -75,16 +75,16 @@ virt-install \
     --input type=keyboard,bus=virtio \
     --input type=tablet,bus=virtio \
     --rng /dev/urandom,model=virtio \
-    --disk path=~/.local/share/libvirt/images/virtual-desktop.img,format=raw,bus=virtio,cache=writeback,size=10 \
+    --disk path=~/.local/share/libvirt/images/virtual-phyllome-desktop.img,format=raw,bus=virtio,cache=writeback,size=10 \
     --location=/var/lib/libvirt/iso/Fedora-Server-dvd-x86_64-35-1.2.iso \
-    --initrd-inject virtual-desktop.cfg --extra-args "inst.ks=file:/virtual-desktop.cfg"
+    --initrd-inject virtual-phyllome-desktop.cfg --extra-args "inst.ks=file:/virtual-phyllome-desktop.cfg"
 ```
 ## Automated installation using a local kickstart file 
 
 * Use the following `wget` command to fetch a standalone kickstart file made to deploy a stripped down desktop based on GNOME Shell, and put it in the working directory
 
 ```
-wget https://raw.githubusercontent.com/PhyllomeOS/phyllomeos/main/leaves/virtual-desktop.cfg
+wget https://raw.githubusercontent.com/PhyllomeOS/phyllomeos/main/leaves/phyllome-virtual-desktop.cfg
 ```
 
 > Please verify the content of the script if you intent to use this virtual machine in production, for instance by using the following command `cat virtual-desktop.cfg`
@@ -102,7 +102,7 @@ virt-install \
     --virt-type kvm \
     --arch x86_64 \
     --machine q35 \
-    --name virtual-desktop \
+    --name virtual-phyllome-desktop \
     --boot uefi \
     --cpu host-model,topology.sockets=1,topology.cores=2,topology.threads=1 \
     --vcpus 2 \
@@ -123,7 +123,7 @@ virt-install \
     --rng /dev/urandom,model=virtio \
     --disk path=~/.local/share/libvirt/images/virtual-desktop.img,format=raw,bus=virtio,cache=writeback,size=10 \
     --location=https://download.fedoraproject.org/pub/fedora/linux/releases/35/Everything/x86_64/os/ \
-    --initrd-inject virtual-desktop.cfg --extra-args "inst.ks=file:/virtual-desktop.cfg"
+    --initrd-inject virtual-phyllome-desktop.cfg --extra-args "inst.ks=file:/virtual-phyllome-desktop.cfg"
 ```
 
 ## Automated installation using a remote kickstart file 
@@ -137,7 +137,7 @@ virt-install \
     --virt-type kvm \
     --arch x86_64 \
     --machine q35 \
-    --name virtual-desktop \
+    --name virtual-phyllome-desktop \
     --boot uefi \
     --cpu host-model,topology.sockets=1,topology.cores=2,topology.threads=1 \
     --vcpus 2 \
@@ -156,9 +156,9 @@ virt-install \
     --input type=keyboard,bus=virtio \
     --input type=tablet,bus=virtio \
     --rng /dev/urandom,model=virtio \
-    --disk path=~/.local/share/libvirt/images/virtual-desktop.img,format=raw,bus=virtio,cache=writeback,size=10 \
+    --disk path=~/.local/share/libvirt/images/virtual-phyllome-desktop.img,format=raw,bus=virtio,cache=writeback,size=10 \
     --location=https://download.fedoraproject.org/pub/fedora/linux/releases/35/Everything/x86_64/os/ \
-    --extra-args="inst.ks=https://raw.githubusercontent.com/PhyllomeOS/phyllomeos/main/leaves/virtual-desktop.cfg"
+    --extra-args="inst.ks=https://raw.githubusercontent.com/PhyllomeOS/phyllomeos/main/leaves/virtual-phyllome-desktop.cfg"
 ```
 
 ### Local deployment without installation
