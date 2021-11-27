@@ -2,7 +2,7 @@
 title: Linux family
 description: 
 published: true
-date: 2021-11-27T19:54:24.861Z
+date: 2021-11-27T19:58:24.391Z
 tags: 
 editor: markdown
 dateCreated: 2021-11-12T15:27:40.366Z
@@ -19,6 +19,10 @@ dnf install virt-install
 ```
 
 ## Automated installation using an ISO file and a local kickstart file
+
+> Under construction. Doesn't work
+{.is-warning}
+
 
 * Use the following `wget` command to fetch the official Fedora Server ISO file and to put it in the current working directory
 
@@ -77,7 +81,7 @@ virt-install \
     --rng /dev/urandom,model=virtio \
     --disk path=~/.local/share/libvirt/images/virtual-phyllome-desktop-cdrom.img,format=raw,bus=virtio,cache=writeback,size=10 \
     --location=/tmp/Fedora-Everything-netinst-x86_64-35-1.2.iso \
-    --initrd-inject virtual-phyllome-desktop.cfg --extra-args "inst.ks=file:/virtual-phyllome-desktop-cdrom.cfg"
+    --initrd-inject virtual-phyllome-desktop-cdrom.cfg --extra-args "inst.ks=file:/virtual-phyllome-desktop-cdrom.cfg"
 ```
 ## Automated installation using a local kickstart file 
 
