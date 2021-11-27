@@ -2,7 +2,7 @@
 title: Understand what you are signing up for
 description: 
 published: true
-date: 2021-11-23T16:00:15.866Z
+date: 2021-11-27T13:44:54.523Z
 tags: 
 editor: markdown
 dateCreated: 2021-11-13T11:19:38.215Z
@@ -51,21 +51,22 @@ Relying on a virtual machine as its primarily personal environment has key advan
 
 ### Versions
 
-Phyllome OS exists in two main editions: **Phyllome OS Desktop**, which features a graphical desktop environment, and **Phyllome OS Server**, which does not. Phyllome OS Server is made for power users. It includes all virtualization enhancements that Phyllome OS Desktop provides. 
+Phyllome OS exists in two main versions: **Phyllome OS Desktop**, which features a graphical desktop environment, and **Phyllome OS Server**, which does not. Phyllome OS Server is made for power users. It includes all virtualization enhancements that Phyllome OS Desktop provides, without the GNOME-based desktop environment. 
 
-If you don't know which one to choose, you should probably pick the Desktop edition. Each edition comes with several versions, optimized for a particular combination of hardware.
+If you don't know which one to choose, you should probably pick the Desktop version, which in turns comes in many flavors. There is a generic one, Phyllome OS Desktop, without out-of-the box support for nested virtualization. There are also other editions optimized for a particular combination of hardware.
 
-|  | Intel's graphics cards | AMD's graphics cards | Nvidia's graphics cards | 
-|---|---|---|---|
-| *Intel CPU* | Phyllome OS Desktop II | Phyllome OS Desktop IA | Phyllome OS Desktop IN |
-| *AMD CPU* | Phyllome OS Desktop AI  | Phyllome OS Desktop AA | Phyllome OS Desktop AN |
+|  | GPU-agnostic | Intel's graphics cards | AMD's graphics cards | Nvidia's graphics cards | 
+|---|---|---|---|---|
+| *Intel CPU* | N/A | Phyllome OS Desktop II | Phyllome OS Desktop IA | Phyllome OS Desktop IN |
+| *AMD CPU* | N/A | Phyllome OS Desktop AI  | Phyllome OS Desktop AA | Phyllome OS Desktop AN |
+| CPU-agnostic | Phyllome OS Desktop | N/A  | N/A | N/A |
 
 > The first letter refers to the CPU manufacturer, the second letter to the GPU manufacturers.
 {.is-info}
 
 Depending on your hardware, you need to pick the right edition. For example, if you possess an Intel CPU and an AMD graphics card, you should pick either Phyllome OS Desktop IA or Phyllome OS Server IA.
 
-> As of now, **only Phyllome OS Desktop II is supported**. In other words, you need to use a computer with both an Intel CPU and an Intel GPU to leverage Phyllome OS. Support for other other editions are expected for the Beta.  
+> As of now, **only Phyllome OS Desktop II is supported**. In other words, as of now, you need to use a computer with both an Intel CPU and an Intel GPU to leverage Phyllome OS. Support for other other editions are expected for the Beta.  
 {.is-info}
 
 ## Choosing a desktop-oriented OS
