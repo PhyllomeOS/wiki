@@ -2,7 +2,7 @@
 title: Linux family
 description: 
 published: true
-date: 2021-11-26T21:24:17.505Z
+date: 2021-11-27T09:59:11.745Z
 tags: 
 editor: markdown
 dateCreated: 2021-11-12T15:27:40.366Z
@@ -196,17 +196,4 @@ virt-install \
     --install no_install=yes
 ```
 
-### Built-in unattended mode
-
-* `virt-install` can rely on libosinfo's unattended installation support to deploy fedora32 without any user intervention:
-
-`virt-install --install fedora32 --unattended`
-
-### Cloud-init
-
-> Under construction
-{.is-warning}
-
-`cloud-init` may be used alongside `virt-install`:
-
-`virt-install --install fedora34,cloud=yes --cloud-init root-password-generate=on ssh-key=/home/user/.ssh/test_rsa.pub disable=on`
+---
