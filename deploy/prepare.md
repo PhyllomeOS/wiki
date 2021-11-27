@@ -2,7 +2,7 @@
 title: Preparation
 description: 
 published: true
-date: 2021-11-25T13:45:30.039Z
+date: 2021-11-27T14:51:34.121Z
 tags: 
 editor: markdown
 dateCreated: 2021-11-15T15:39:49.074Z
@@ -24,7 +24,8 @@ Phyllome OS targets [x86-64 systems](https://en.wikipedia.org/wiki/X86-64) with 
 
 ### Minimum requirements for Phyllome OS Desktop
 
-* **x86-64** computer that supports the first generation of hardware-assisted virtualization features
+* A **x86-64** computer 
+* **Hardware-assisted virtualization** enabled, first generation
     * For AMD-based configurations, it means that AMD V is available and enabled (*see next section below to learn how to enable this feature*)
     * For Intel-based configurations, it means that Intel VT-x is available and enabled
 * **2-core** processor
@@ -37,6 +38,7 @@ Phyllome OS targets [x86-64 systems](https://en.wikipedia.org/wiki/X86-64) with 
 ### Recommended requirements for Phyllome OS Desktop
 
 * **x86-64** computer that supports the second generation of hardware-assisted virtualization features
+* **Hardware-assisted virtualization** enabled, second generation
     * For AMD-based configurations, it means that AMD Vi is available and enabled
     * For Intel-based configurations, it means that Intel VT-d is available and enabled.
 * **8-core** processor
