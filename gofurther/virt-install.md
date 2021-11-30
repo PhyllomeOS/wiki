@@ -2,7 +2,7 @@
 title: Linux family
 description: 
 published: true
-date: 2021-11-27T19:58:24.391Z
+date: 2021-11-30T17:57:17.787Z
 tags: 
 editor: markdown
 dateCreated: 2021-11-12T15:27:40.366Z
@@ -60,7 +60,7 @@ virt-install \
     --virt-type kvm \
     --arch x86_64 \
     --machine q35 \
-    --name virtual-phyllome-desktop-cdrom \
+    --name virtual-desktop-cdrom \
     --boot uefi \
     --cpu host-model,topology.sockets=1,topology.cores=2,topology.threads=1 \
     --vcpus 2 \
@@ -81,7 +81,7 @@ virt-install \
     --rng /dev/urandom,model=virtio \
     --disk path=~/.local/share/libvirt/images/virtual-phyllome-desktop-cdrom.img,format=raw,bus=virtio,cache=writeback,size=10 \
     --location=/tmp/Fedora-Everything-netinst-x86_64-35-1.2.iso \
-    --initrd-inject virtual-phyllome-desktop-cdrom.cfg --extra-args "inst.ks=file:/virtual-phyllome-desktop-cdrom.cfg"
+    --initrd-inject virtual-desktop-cdrom.cfg --extra-args "inst.ks=file:/virtual-phyllome-desktop-cdrom.cfg"
 ```
 ## Automated installation using a local kickstart file 
 
@@ -106,7 +106,7 @@ virt-install \
     --virt-type kvm \
     --arch x86_64 \
     --machine q35 \
-    --name virtual-phyllome-desktop \
+    --name virtual-desktop \
     --boot uefi \
     --cpu host-model,topology.sockets=1,topology.cores=2,topology.threads=1 \
     --vcpus 2 \
@@ -127,7 +127,7 @@ virt-install \
     --rng /dev/urandom,model=virtio \
     --disk path=~/.local/share/libvirt/images/virtual-desktop.img,format=raw,bus=virtio,cache=writeback,size=10 \
     --location=https://download.fedoraproject.org/pub/fedora/linux/releases/35/Everything/x86_64/os/ \
-    --initrd-inject virtual-phyllome-desktop.cfg --extra-args "inst.ks=file:/virtual-phyllome-desktop.cfg"
+    --initrd-inject virtual-desktop.cfg --extra-args "inst.ks=file:/virtual-desktop.cfg"
 ```
 
 ## Automated installation using a remote kickstart file 
@@ -141,7 +141,7 @@ virt-install \
     --virt-type kvm \
     --arch x86_64 \
     --machine q35 \
-    --name virtual-phyllome-desktop \
+    --name virtual-desktop \
     --boot uefi \
     --cpu host-model,topology.sockets=1,topology.cores=2,topology.threads=1 \
     --vcpus 2 \
@@ -162,7 +162,7 @@ virt-install \
     --rng /dev/urandom,model=virtio \
     --disk path=~/.local/share/libvirt/images/virtual-phyllome-desktop.img,format=raw,bus=virtio,cache=writeback,size=10 \
     --location=https://download.fedoraproject.org/pub/fedora/linux/releases/35/Everything/x86_64/os/ \
-    --extra-args="inst.ks=https://raw.githubusercontent.com/PhyllomeOS/phyllomeos/main/leaves/virtual-phyllome-desktop.cfg"
+    --extra-args="inst.ks=https://raw.githubusercontent.com/PhyllomeOS/phyllomeos/main/leaves/virtual-desktop.cfg"
 ```
 
 ### Local deployment without installation
