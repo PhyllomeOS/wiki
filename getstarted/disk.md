@@ -2,7 +2,7 @@
 title: Get started with Phyllome OS
 description: 
 published: true
-date: 2021-12-12T17:29:01.738Z
+date: 2021-12-12T17:30:50.603Z
 tags: 
 editor: markdown
 dateCreated: 2021-11-13T11:37:31.498Z
@@ -17,17 +17,14 @@ dateCreated: 2021-11-13T11:37:31.498Z
 After Phyllome OS [has been successfully installed](/deploy/install) and [its first-launch process completed](/deploy/install#first-launch), a few tasks are required before it can be used to its fullest potential.
 
 > As Phyllome OS evolves, one of the main goal is to shorten the time it would take for an end-user to have a fully operational virtual machine loaded with the installer of their favorite operating system, to the point that a user may not see the Phyllome OS environment
-at all.
+at all. The following post-installation configuration will, hopefully, be made obsolete in a future Phyllome OS version. 
 {.is-info}
 
-> The following post-installation configuration will, hopefully, be made obsolete in a future Phyllome OS version. 
-{.is-info}
-
-### Grant the current user the ability to manage virtual machines
+### Grant the current user the ability to manage system-based virtual machines
 
 Any new user, including the one that has been created during the first-launch set up, won't be part of the `libvirt` group. It  means that it won't be able to manage the *qemu:///system*, which runs `libvirt` as root.
 
-To avoid a password prompt each time the Virtual Machine Manager is launched, you can add the current user to the `libvirt` by using the following command, in the terminal:
+To avoid a password prompt each time you connect to *qemu:///system*, you can add the current user to the `libvirt` by using the following command, in the terminal:
 
 ```
 sudo usermod -a -G libvirt $(whoami)
