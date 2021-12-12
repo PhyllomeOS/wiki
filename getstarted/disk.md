@@ -2,7 +2,7 @@
 title: Get started with Phyllome OS
 description: 
 published: true
-date: 2021-11-26T16:02:39.694Z
+date: 2021-12-12T17:29:01.738Z
 tags: 
 editor: markdown
 dateCreated: 2021-11-13T11:37:31.498Z
@@ -32,26 +32,9 @@ To avoid a password prompt each time the Virtual Machine Manager is launched, yo
 ```
 sudo usermod -a -G libvirt $(whoami)
 ```
-> A known bug affects the terminal: extra spaces between letters. To solve it, click on the burger menu (the three stacked horizontal lines) then go to *Preferences > Profiles > Unnamed* and check the box called *Custom font*. 
-{.is-warning}
 
 > Phyllome OS will eventually switch to the *qemu:///session* URI, which doesn't require elevated privileges. Have a look at [this great blog post](https://blog.wikichoon.com/2016/01/qemusystem-vs-qemusession.html) to understand some of the differences between the *session* and the *system* URI.  
 {.is-info}
-
-### Desktop enhancements
-
-During the installation process, [a few scripts are fetched](https://github.com/PhyllomeOS/phyllomeos/tree/main/post) and stored under the `/usr/sbin` directory. They need to be run to further customize Phyllome OS.
-
-The following script will change the desktop background and pick opinionated defaults for the Virtual Machine Manager. It will also add a new User session URI for the Virtual Machine Manager. 
-
-Open the terminal and run the following script as a regular user:
-
-```
-/usr/sbin/configure-vmm-and-desktop.sh
-```
-* The updated desktop background is shown in the screenshot below. Notice that there is now a new URI called QEMU/KVM User session
-
-![post-install-conf-1.png](/post-launch/post-install-conf-1.png)
 
 ### Update GRUB and reboot
 
