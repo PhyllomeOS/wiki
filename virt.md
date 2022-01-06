@@ -2,7 +2,7 @@
 title: Virtualization for the rest of us
 description: 
 published: true
-date: 2022-01-06T16:50:38.004Z
+date: 2022-01-06T16:51:06.632Z
 tags: 
 editor: markdown
 dateCreated: 2021-11-13T12:08:53.048Z
@@ -21,6 +21,7 @@ dateCreated: 2021-11-13T12:08:53.048Z
   * [CPU](/virt/cpu)
   * [Memory](/virt/memory)
   * [Storage](/virt/storage)
+  * [Network](/virt/network)
   * [Display](/virt/display)
 
 ## Software
