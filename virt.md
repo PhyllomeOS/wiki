@@ -2,15 +2,17 @@
 title: Virtualization for the rest of us
 description: 
 published: true
-date: 2021-11-13T19:18:01.829Z
+date: 2022-01-06T11:29:47.645Z
 tags: 
 editor: markdown
 dateCreated: 2021-11-13T12:08:53.048Z
 ---
 
-## On open-source virtualization
+# On open-source virtualization
 
 *In this section, the focus is on KVM virtualization, and its associated tools, including QEMU, the Linux kernel, libvirt, etc., mostly in the context of Phyllome OS.* 
+
+## Hardware
 
 * [Anatomy of a virtual machine](/virt/vm)
 	* [Chipsets](/virt/chipset)
@@ -19,8 +21,35 @@ dateCreated: 2021-11-13T12:08:53.048Z
   * [Memory](/virt/memory)
   * [Storage](/virt/storage)
   * [Display](/virt/display)
-* [Linux Kernel modules](/virt/kernel-modules) related to virtualization
-* [Virtualization-related paths](/virt/linux-paths) on Linux
-* [XML](/virt/xml) commented 
+
+## Software
+
+### The host
+
+* [Linux Kernel modules](/virt/kernel-modules) related to virtualization.
+* [Virtualization-related paths](/virt/linux-paths) on Phyllome OS
+* [XML](/virt/xml) commented
+
+### Guests
+
+*This idea of this section is to provide a reference for guest operating systems.
+
+* [Linux family](/virt/linux)
+* [BSD family](/virt/bsd)
+* [OpenSolaris and derivatives](/virt/opensolaris)
+* [Darwin and derivatives](/virt/darwin)
+
+#### Windows NT
+	
+* [Windows family](/virt/windows)
+* [ReactOS](/virt/reactos)
+
+#### Independent
+
+* [Sculpt OS](/virt/sculpt-os)
+* [Fuchsia OS](/virt/fuchsia-os)
+
+## Resources
+
 * [Lexicon](/virt/lexicon) 
 * [External resources](/virt/resources)
