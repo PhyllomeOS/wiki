@@ -2,7 +2,7 @@
 title: ReactOS
 description: 
 published: true
-date: 2022-01-06T19:05:14.351Z
+date: 2022-01-06T20:48:10.970Z
 tags: 
 editor: markdown
 dateCreated: 2021-11-13T11:52:33.257Z
@@ -105,17 +105,75 @@ mv reactos-bootcd-0.4.15-dev-3628-ga6bf77e-x86-gcc-lin-dbg /var/lib/libvirt/imag
 
 ![reactos_installation-11.png](/screenshots/reactos_installation-11.png)
 
-### Go through the first-boot and initial-setup
+### Go through the first boot and initial setup
+
+* *ReactOS' bootloader in all its glory. Wait a few seconds or press <kbd>ENTER</kbd> to start ReactOS
 
 ![reactos_boot-1.png](/screenshots/reactos_boot-1.png)
+
+* *Some devices may be automatically installed. Wait a few seconds...*
 
 ![reactos_boot-2.png](/screenshots/reactos_boot-2.png)
 
-![reactos_boot-1.png](/screenshots/reactos_boot-1.png)
+> Starting now, your mouse could be used to navigate around.
+{.is-info}
+
+* *The first boot Wizard for ReactOS should eventually appear. Press <kbd>ENTER</kbd> or click on* "Next"
+
+![reactos_boot-3.png](/screenshots/reactos_boot-3.png)
+
+* *ReactOS relies on other Open Source projets to function, which it takes time to acknowledge. Press <kbd>ENTER</kbd> or click on "Next"*
+
+![reactos_boot-4.png](/screenshots/reactos_boot-4.png)
+
+* *ReactOS relies on other Open Source projets to function, which it takes time to acknowledge. Press <kbd>ENTER</kbd> or click on "Next"*
+
+![reactos_boot-5.png](/screenshots/reactos_boot-5.png)
+
+* *The system language and local can be customized here. If you are satisfied with the default settings, press <kbd>ENTER</kbd> or click on "Next". Otherwise, please modify the settings.*
+
+![reactos_boot-6.png](/screenshots/reactos_boot-6.png)
+
+* *Pick a username and, eventually, an organization, then press <kbd>ENTER</kbd> or click on "Next" to go to the next screen.*
+
+![reactos_boot-8.png](/screenshots/reactos_boot-8.png)
+
+* *Choose an administrator password, and eventualy a computer name, then press <kbd>ENTER</kbd> or click on "Next" to go to the next screen.*
+
+![reactos_boot-10.png](/screenshots/reactos_boot-10.png)
+
+* *Make sure you pick the right timezone then press <kbd>ENTER</kbd> or click on "Next" to go to the next screen.*
+
+![reactos_boot-11.png](/screenshots/reactos_boot-11.png)
+
+* *You can pick the theme of your liking. Press <kbd>ENTER</kbd> or click on "Next" to go to the next screen when you are done.*
+
+![reactos_boot-12.png](/screenshots/reactos_boot-12.png)
+
+* *Here, you should not have to configure anything for ReactOS to have LAN and Internet access, through the newly supported `virtio-net` device. Press <kbd>ENTER</kbd> or click on "Next" to go to the next screen.*
+
+![reactos_boot-13.png](/screenshots/reactos_boot-13.png)
+
+* *If you wish to share files with other computers on your network, joining a Workgroup would be a first step. Press <kbd>ENTER</kbd> or click on "Next" to go to the next screen.*
+
+![reactos_boot-14.png](/screenshots/reactos_boot-14.png)
+
+* *That's it. Press <kbd>ENTER</kbd> or click on "Finish" to reboot your computer.*
+
+![reactos_boot-15.png](/screenshots/reactos_boot-15.png)
+
+### Go through the first boot and initial setup
+
+![reactos_first-boot-1.png](/screenshots/reactos_first-boot-1.png)
+
+![reactos_first-boot-2.png](/screenshots/reactos_first-boot-2.png)
+
+![reactos_boot-2.png](/screenshots/reactos_boot-2.png)
+
+![reactos_boot-3.png](/screenshots/reactos_boot-3.png)
+
 
 ---
-
-![reactos_boot-1.png](/screenshots/reactos_boot-1.png)
 
 * Official resource https://reactos.org/wiki/QEMU
 
