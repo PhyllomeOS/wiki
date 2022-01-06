@@ -2,7 +2,7 @@
 title: ReactOS reference
 description: 
 published: true
-date: 2022-01-06T22:21:39.934Z
+date: 2022-01-06T22:56:15.812Z
 tags: 
 editor: markdown
 dateCreated: 2022-01-06T21:53:31.225Z
@@ -17,7 +17,7 @@ dateCreated: 2022-01-06T21:53:31.225Z
 | *Chipset* | i440fx only |
 | *Firmware* | BIOS only but UEFI is under-way |
 | *virtio-gpu* | No |
-| *virtio-net* | **Yes** |
+| *virtio-net* | Yes |
 | *virtio-blk* | No |
 | *virtio-scsi* | No |
 | *virtio-keyboard* | No |
@@ -25,8 +25,8 @@ dateCreated: 2022-01-06T21:53:31.225Z
 
 ## Resources around virtualization and ReactOS
 
-* Official resource on QEMU and ReactOS: https://reactos.org/wiki/QEMU
-* Official supported hardware list: https://reactos.org/wiki/Supported_Hardware
-* A Docker image for the ReactOS operating system: https://github.com/hectorm/docker-qemu-reactos
-* Current effort to integrate ReactOS and QubesOS: https://github.com/QubesOS/qubes-issues/issues/2809
-* GSoC 2018 idea to port more paravirtualized devices to ReactOS: https://reactos.org/wiki/Google_Summer_of_Code_2018_Ideas#Paravirtualization_Support
+* [Official resource on running ReactOS with QEMU](https://reactos.org/wiki/QEMU)
+* [Hardware support list](https://reactos.org/wiki/Supported_Hardware) for ReactOS
+* [Git repository](https://github.com/hectorm/docker-qemu-reactos) providing a Docker image for the ReactOS operating system
+* [Current effort](https://github.com/QubesOS/qubes-issues/issues/2809) to integrate ReactOS and QubesOS
+* [GSoC 2018 project idea](https://reactos.org/wiki/Google_Summer_of_Code_2018_Ideas#Paravirtualization_Support) to port more paravirtualized devices to ReactOS.
