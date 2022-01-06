@@ -2,7 +2,7 @@
 title: Homepage
 description: 
 published: true
-date: 2021-11-25T16:12:06.080Z
+date: 2022-01-06T17:58:23.695Z
 tags: 
 editor: markdown
 dateCreated: 2021-06-19T09:29:20.593Z
@@ -62,6 +62,25 @@ dateCreated: 2021-06-19T09:29:20.593Z
 * [Install and use the Cloud Hypervisor](/gofurther/cloud-hypervisor) to create a virtual machine
 * ...and [**more**](https://wiki.phyllo.me/en/gofurther)
 
+## Open-source virtualization
+
+*In this section, the focus is on KVM virtualization and its associated tools, including QEMU, the Linux kernel, libvirt, etc., mostly in the context of Phyllome OS.* 
+
+### Hardware
+
+* [Anatomy of a virtual machine](/virt/vm)
+* ...and [**more**](https://wiki.phyllo.me/en/virt)
+
+### Software
+
+
+* ...and [**more**](https://wiki.phyllo.me/en/virt)
+
+### Resources
+
+* [Lexicon](/virt/lexicon) 
+* [External resources](/virt/resources)
+
 ## About Phyllome OS 
 
 *In this section, the context around Phyllome OS is explained and its internals are described* 
@@ -71,18 +90,7 @@ dateCreated: 2021-06-19T09:29:20.593Z
 * [Use cases](/phyllomeos/use-cases)
 * ...and [**more**](https://wiki.phyllo.me/en/phyllomeos)
 
-### On open-source virtualization
-
-*In this section, the focus is on KVM virtualization and its associated tools, including QEMU, the Linux kernel, libvirt, etc., mostly in the context of Phyllome OS.* 
-
-* [Anatomy of a virtual machine](/virt/vm)
-* [Lexicon](/virt/lexicon) 
-* [External resources](/virt/resources)
-* ...and [**more**](https://wiki.phyllo.me/en/virt)
-
-## The Phyllome OS Project
-
-### Contribute
+### The project
 
 * [How to contribute](/project/contribute)
 * [How to join](/project/join)
