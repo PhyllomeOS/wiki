@@ -2,7 +2,7 @@
 title: ReactOS reference
 description: 
 published: true
-date: 2022-01-06T22:06:35.692Z
+date: 2022-01-06T22:21:39.934Z
 tags: 
 editor: markdown
 dateCreated: 2022-01-06T21:53:31.225Z
@@ -23,6 +23,10 @@ dateCreated: 2022-01-06T21:53:31.225Z
 | *virtio-keyboard* | No |
 | *virtio-tablet* | No |
 
-## Resources
+## Resources around virtualization and ReactOS
 
-* Official resource https://reactos.org/wiki/QEMU
+* Official resource on QEMU and ReactOS: https://reactos.org/wiki/QEMU
+* Official supported hardware list: https://reactos.org/wiki/Supported_Hardware
+* A Docker image for the ReactOS operating system: https://github.com/hectorm/docker-qemu-reactos
+* Current effort to integrate ReactOS and QubesOS: https://github.com/QubesOS/qubes-issues/issues/2809
+* GSoC 2018 idea to port more paravirtualized devices to ReactOS: https://reactos.org/wiki/Google_Summer_of_Code_2018_Ideas#Paravirtualization_Support
