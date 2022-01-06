@@ -2,7 +2,7 @@
 title: Virtualization for the rest of us
 description: 
 published: true
-date: 2022-01-06T11:29:47.645Z
+date: 2022-01-06T16:13:37.758Z
 tags: 
 editor: markdown
 dateCreated: 2021-11-13T12:08:53.048Z
@@ -32,7 +32,9 @@ dateCreated: 2021-11-13T12:08:53.048Z
 
 ### Guests
 
-*This idea of this section is to provide a reference for guest operating systems.
+*This idea of this section is to provide a reference for guest operating systems used in virtual machines*
+
+#### Unix-based
 
 * [Linux family](/virt/linux)
 * [BSD family](/virt/bsd)
