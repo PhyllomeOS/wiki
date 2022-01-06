@@ -2,7 +2,7 @@
 title: ReactOS
 description: 
 published: true
-date: 2022-01-06T20:51:51.277Z
+date: 2022-01-06T22:07:58.032Z
 tags: 
 editor: markdown
 dateCreated: 2021-11-13T11:52:33.257Z
@@ -12,12 +12,24 @@ dateCreated: 2021-11-13T11:52:33.257Z
 
 [ReactOS](https://reactos.org/) is an open-source operating system meant to behave exactly like Windows XP, Windows Server 2003 and later versions of Windows.
 
-In theory, it can run any software and work with any drivers developped for early version of Windows. In practice, it is still under heavy-development and may not work as expected.
+In theory, it can run any software and work with any drivers developed for these older versions of Windows. Decades old software or pieces of equipments that no longer ship with drivers to run with the latest iterations of the Windows operating system may work with ReactOS.
+
+In practice, it is still under heavy-development and may not work as expected.
+
+> **Phyllome OS support**
+Support for the more modern PCI-Express-enabled Q35 chipset, UEFI or other virtio-devices, which Phyllome OS favors, is still lacking, Performance of the display won't be optimal, resulting in screen tearing. More information can be found [here](/virt/reactos).
+{.is-info}
 
 ## Installation
 
-> ReactOS is currently in **Alpha stage** and does **not** work with most virtio-devices. Performance of the display interface will not be optimal.
+> ReactOS is currently in **Alpha stage** and not production ready.  
 {.is-warning}
+
+There are basically three steps you need to make before you can use this binary-compatible and open-source replica of Windows: 
+
+* Download a medium to install the system
+* Install the system
+* Configure the system
 
 ### Download
 
@@ -107,15 +119,15 @@ mv reactos-bootcd-0.4.15-dev-3628-ga6bf77e-x86-gcc-lin-dbg /var/lib/libvirt/imag
 
 ### Go through the first boot and initial setup
 
-* *ReactOS' bootloader in all its glory. Wait a few seconds or press <kbd>ENTER</kbd> to start ReactOS
+* *Freeloader: ReactOS' bootloader in all its glory. Wait a few seconds or press <kbd>ENTER</kbd> to start ReactOS*
 
 ![reactos_boot-1.png](/screenshots/reactos_boot-1.png)
 
-* *Some devices may be automatically installed. Wait a few seconds...*
+* *Some devices will be automatically installed. Wait a few seconds...*
 
 ![reactos_boot-2.png](/screenshots/reactos_boot-2.png)
 
-> Starting now, your mouse could be used to navigate around.
+> Starting now, your mouse can be used to navigate around.
 {.is-info}
 
 * *The first boot Wizard for ReactOS should eventually appear. Press <kbd>ENTER</kbd> or click on* "Next"
@@ -134,11 +146,11 @@ mv reactos-bootcd-0.4.15-dev-3628-ga6bf77e-x86-gcc-lin-dbg /var/lib/libvirt/imag
 
 ![reactos_boot-6.png](/screenshots/reactos_boot-6.png)
 
-* *Pick a username and, eventually, an organization, then press <kbd>ENTER</kbd> or click on "Next" to go to the next screen.*
+* *Pick a username and, optionaly, an organization, then press <kbd>ENTER</kbd> or click on "Next" to go to the next screen.*
 
 ![reactos_boot-8.png](/screenshots/reactos_boot-8.png)
 
-* *Choose an administrator password, and eventualy a computer name, then press <kbd>ENTER</kbd> or click on "Next" to go to the next screen.*
+* *Choose an administrator password, and possibly a computer name, then press <kbd>ENTER</kbd> or click on "Next" to go to the next screen.*
 
 ![reactos_boot-10.png](/screenshots/reactos_boot-10.png)
 
@@ -164,31 +176,21 @@ mv reactos-bootcd-0.4.15-dev-3628-ga6bf77e-x86-gcc-lin-dbg /var/lib/libvirt/imag
 
 ### Go through the first boot and initial setup
 
+* *Take a few seconds to admire great splash screen*
+
 ![reactos_first-boot-1.png](/screenshots/reactos_first-boot-1.png)
+
+* *The system will automatically open a session with the user you created (that is pretty clever, as there is no need to remember the password I already forgot :')). A few windows may open, prompting you to install some devices. Unless you know what you are doing, cancel these prompts to land on the pristine desktop.*
 
 ![reactos_first-boot-2.png](/screenshots/reactos_first-boot-2.png)
 
-![reactos_boot-2.png](/screenshots/reactos_boot-2.png)
+* *As already stated, support for the more modern PCI-Express-enabled Q35 chipset, UEFI or other virtio-devices is not yet there. You may still enjoy the ride, try to install these old software that has long been forgotten in a drawer or this decade old printer collecting dust, and that no operating system would dare to interact with anymore*
 
-![reactos_boot-3.png](/screenshots/reactos_boot-3.png)
+![reactos_first-boot-3.png](/screenshots/reactos_first-boot-3.png)
 
+> Congratulations, you have successfully installed ReactOS!
+{.is-success}
 
 ---
 
-* Official resource https://reactos.org/wiki/QEMU
-
-
-> It accepts donations: https://reactos.org/donate/
-
-## State of support
-
-| **Hardware** | ReactOS 4.14 |
-| :-- | -- |
-| *Chipset* | i440fx only |
-| *Firmware* | BIOS only |
-| *virtio-gpu* | No |
-| *virtio-net* | **Yes** |
-| *virtio-blk* | No |
-| *virtio-scsi* | No |
-| *virtio-keyboard* | No |
-| *virtio-tablet* | No |
+* *Are you ready to try out other operating systems or learn how to execute certain tasks? If so, please follow [the link](https://wiki.phyllo.me/e/en/gofurther/)*
