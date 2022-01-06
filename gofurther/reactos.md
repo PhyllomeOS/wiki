@@ -2,7 +2,7 @@
 title: ReactOS
 description: 
 published: true
-date: 2022-01-06T20:48:10.970Z
+date: 2022-01-06T20:51:51.277Z
 tags: 
 editor: markdown
 dateCreated: 2021-11-13T11:52:33.257Z
@@ -126,7 +126,7 @@ mv reactos-bootcd-0.4.15-dev-3628-ga6bf77e-x86-gcc-lin-dbg /var/lib/libvirt/imag
 
 ![reactos_boot-4.png](/screenshots/reactos_boot-4.png)
 
-* *ReactOS relies on other Open Source projets to function, which it takes time to acknowledge. Press <kbd>ENTER</kbd> or click on "Next"*
+* *ReactOS can behave as a server or as a workstation. If you are unsure, choose workstation. Press <kbd>ENTER</kbd> or click on "Next"*
 
 ![reactos_boot-5.png](/screenshots/reactos_boot-5.png)
 
