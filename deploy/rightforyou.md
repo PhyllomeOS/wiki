@@ -2,7 +2,7 @@
 title: Understand what you are signing up for
 description: 
 published: true
-date: 2022-01-07T11:27:12.869Z
+date: 2022-01-07T14:04:08.663Z
 tags: 
 editor: markdown
 dateCreated: 2021-11-13T11:19:38.215Z
@@ -21,7 +21,7 @@ dateCreated: 2021-11-13T11:19:38.215Z
   * Learning how to leverage this new state of affairs.
 
 > Phyllome OS has just started its journey and there is still a long, *years-long*, way to go to achieve its vision. 
-It has several, [significative limitations](/phyllomeos/cons-and-pros), so make sure you understand them; depending on what you wish to achieve, you may instead prefer [to favor other operating systems](https://wiki.phyllo.me/en/phyllomeos/comparaison); [support](/virt#guests) for guest systems differs widely. 
+It has several [significative limitations](/phyllomeos/cons-and-pros), so make sure you understand them; depending on what you wish to achieve, you may instead prefer [to favor other operating systems](https://wiki.phyllo.me/en/phyllomeos/comparaison); [support](/virt#guests) for guest systems differs widely. 
 {.is-warning}
 
 ## Phyllome OS Desktop and Phyllome OS Server 
