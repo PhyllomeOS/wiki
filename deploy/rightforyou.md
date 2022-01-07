@@ -2,7 +2,7 @@
 title: Understand what you are signing up for
 description: 
 published: true
-date: 2022-01-07T14:04:23.048Z
+date: 2022-01-07T14:10:57.349Z
 tags: 
 editor: markdown
 dateCreated: 2021-11-13T11:19:38.215Z
@@ -36,7 +36,7 @@ Phyllome OS exists in two main versions:
 
 Phyllome OS Desktop and Phyllome OS Server also comes with several editions optimized for a particular combination of hardware.
 
-> As of now, **only Phyllome OS Desktop II is officially supported**. A computer with both an Intel CPU and an Intel GPU is expected to leverage Phyllome OS. Support for other other editions are expected for the Beta realease.  
+> As of now, **only Phyllome OS Desktop II is officially supported**. A computer with both an Intel CPU and an Intel GPU (gen 4th to gen 9th) is expected, so it can leverage most features Phyllome OS can offer. Support for other other editions are expected for the Beta realease.  
 {.is-info}
 
 |  | GPU-agnostic[^1] | Intel GPUs[^2] |
@@ -45,7 +45,7 @@ Phyllome OS Desktop and Phyllome OS Server also comes with several editions opti
 | *AMD CPU* | Phyllome OS Desktop A | N/A  |
 | CPU-agnostic | Phyllome OS Desktop | N/A  |
 
-[^1]: Will work with almost any GPUs that Linux can drive. Some limitations applies to most recent Nvidia offerings.
+[^1]: GPUs agnostic editions will work with almost any GPUs that Linux can drive. Some severe limitations applies to [most recent Nvidia offerings](https://nouveau.freedesktop.org/FeatureMatrix.html). In general, **Nvidia GPUs are strongly discouraged**, at least until Nvidia stop hindering the development of open-source drivers for its GPUs.
 [^2]: Only Broadwell-based SoC (4th generation) to the 9th generation are supported. If you possess a more recent, for instance Tiger Lake SoC, please pick Phyllome OS Desktop I
 
 ---
