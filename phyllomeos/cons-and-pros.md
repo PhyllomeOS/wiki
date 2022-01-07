@@ -2,7 +2,7 @@
 title: Limitations and advantages
 description: 
 published: true
-date: 2022-01-07T10:28:44.474Z
+date: 2022-01-07T10:29:12.083Z
 tags: 
 editor: markdown
 dateCreated: 2022-01-07T10:28:18.542Z
@@ -18,7 +18,7 @@ Phyllome OS makes a few assumptions, including the following ones:
 * **Phyllome OS, the host operating system, should not be modified post-deployment**
 	* Two Phyllome OS hosts should barely differ, allowing virtual machines to be migrated from one host to the next.
 
-### Limitations
+### Current limitations
 
 Relying on a virtual machine as its primarily personal environment comes with several limitations in comparison to using an operating system installed on the hardware (aka known as bare-metal computing). Some of these limitations will be tackled or greatly mitigate one day, others might not.
 
