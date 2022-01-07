@@ -2,7 +2,7 @@
 title: Understand what you are signing up for
 description: 
 published: true
-date: 2022-01-07T09:09:24.526Z
+date: 2022-01-07T09:09:54.976Z
 tags: 
 editor: markdown
 dateCreated: 2021-11-13T11:19:38.215Z
@@ -20,7 +20,7 @@ However, if the host is meant to be a great place for guest operating systems to
 
 In other words, contrary to end-to-end operating systems like [Qubes OS](https://www.qubes-os.org/) or the upcoming [Spectrum](https://spectrum-os.org/), which are offering ready to use templates or/and applications isolated in virtual machines by default, Phyllome OS delegates to end-users the task to install their favorite operating system, while trying to provide the best possible underlying defaults for each operating system. In this regard, its model is closer to [Proxmox](https://www.proxmox.com/en/), which doesn't make assumptions about how a guest operating system will be deployed.
 
-## Limitations
+## Assomptions
 
 Phyllome OS makes a few assumptions, including the following ones: 
 
@@ -28,7 +28,9 @@ Phyllome OS makes a few assumptions, including the following ones:
 	* Due to their software-based nature, virtual machines are extremely flexible, and can for instance emulate features that their physical host may lack. 
 * **The host operating system should not be modified, in general**
 	* Two Phyllome OS hosts should barely differ, allowing virtual machines to be migrated from one host to the next.
-  
+
+## Limitations
+
 Some limitations directly result from these assumptions.
 
 Relying on a virtual machine as its primarily personal environment has key advantages, such as the ability to more easily migrate to a new host computer or the ability to create multiple virtual computers out of a single physical computer. However, it also comes with several limitations in comparison to using a bare-metal operating system.  Some of these limitations will be tackled or greatly reduced one day, others might not.
