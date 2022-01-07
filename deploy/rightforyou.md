@@ -2,7 +2,7 @@
 title: Understand what you are signing up for
 description: 
 published: true
-date: 2022-01-07T10:52:31.901Z
+date: 2022-01-07T10:55:28.810Z
 tags: 
 editor: markdown
 dateCreated: 2021-11-13T11:19:38.215Z
@@ -16,7 +16,6 @@ dateCreated: 2021-11-13T11:19:38.215Z
 
 * The host, Phyllome OS, is designed to be as discrete as possible.
 * Phyllome OS should mostly take care of itself, so that users can spend their time using their favorite personal computing environment. 
-	* That being said, we very much encourage users to [hack it](https://github.com/PhyllomeOS/phyllomeos#how-to-hack-phyllome-os), suggest new features and report bugs using [the issues system](https://github.com/PhyllomeOS/phyllomeos/issues).
 * Eventually, users should be able to reach *the state of virtual enlightenment* (tm), which means accepting the fact that their favorite operating system is running inside a virtual machine, and being able to take advantage of that state of affairs.
 
 > Phyllome OS has just started its journey and there is still a long, *years-long*, way to go to achieve its vision. It has several, [critical]() limitations.  
