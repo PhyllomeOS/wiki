@@ -2,7 +2,7 @@
 title: Limitations and advantages
 description: 
 published: true
-date: 2022-01-07T10:28:18.542Z
+date: 2022-01-07T10:28:44.474Z
 tags: 
 editor: markdown
 dateCreated: 2022-01-07T10:28:18.542Z
@@ -37,7 +37,7 @@ Relying on a virtual machine as its primarily personal environment comes with se
 
 * **Lack of guest systems' integration**. Phyllome OS provides an optimized virtual machine model tuned to host modern operating systems, but, at the exception to some RPM-based guests operating systems including Phyllome OS itself, does not intent to provide automated ways to deploy guest operating systems (at the moment [Infrastructure as code solutions](https://en.wikipedia.org/wiki/Infrastructure_as_code) or instance initialization software like [cloud-init](https://github.com/canonical/cloud-init) do not seem generic enough to satisfy every modern desktop-based operating systems' idiosyncrasies). In other words, contrary to end-to-end operating systems like [Qubes OS](https://www.qubes-os.org/) or the upcoming [Spectrum](https://spectrum-os.org/), which are offering ready to use templates or/and applications isolated in virtual machines by default, Phyllome OS delegates to end-users the task to install their favorite operating system, while trying to provide the best possible underlying defaults for each operating system. In this regard, its model is closer to [Proxmox](https://www.proxmox.com/en/), which doesn't make assumptions about how a guest operating system will be deployed.
 
-## Advantages
+### Advantages
 
 * **Flexibility**. Due to their software-based nature, virtual machines are extremely flexible, and can for instance emulate features that their physical host may lack (i.e.: a [TPM](https://en.wikipedia.org/wiki/Trusted_Platform_Module); an extra network card). 
 
