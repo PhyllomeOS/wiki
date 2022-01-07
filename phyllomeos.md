@@ -2,7 +2,7 @@
 title: Phyllome OS
 description: 
 published: true
-date: 2022-01-07T10:28:08.736Z
+date: 2022-01-07T10:35:50.259Z
 tags: 
 editor: markdown
 dateCreated: 2021-11-12T15:32:17.900Z
@@ -15,6 +15,7 @@ dateCreated: 2021-11-12T15:32:17.900Z
 * [Context](/phyllomeos/context)
 * [Purpose](/phyllomeos/purpose)
 * [Limitations and advantages](/phyllomeos/cons-and-pros)
+* [Comparaison](/phyllomeos/comparaison)
 * [Use cases](/phyllomeos/use-cases)
 * [Architecture](/phyllomeos/architecture)
 * [FAQ](/phyllomeos/FAQ)
