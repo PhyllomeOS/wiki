@@ -2,7 +2,7 @@
 title: Preparation
 description: 
 published: true
-date: 2021-11-27T14:51:34.121Z
+date: 2022-01-07T14:30:34.978Z
 tags: 
 editor: markdown
 dateCreated: 2021-11-15T15:39:49.074Z
@@ -14,9 +14,9 @@ dateCreated: 2021-11-15T15:39:49.074Z
 
 These instructions are valid for most computers that ship with Linux, Windows or macOS. 
 
-Phyllome OS targets [x86-64 systems](https://en.wikipedia.org/wiki/X86-64) with hardware-assisted virtualization, with a strong preference for those providing IOMMU-based hardware-assisted virtualization (AMD Vi or Intel VT-d). 
+Phyllome OS targets [x86-64 systems](https://en.wikipedia.org/wiki/X86-64) supporting hardware-assisted virtualization, with a strong preference for those providing IOMMU-based virtualization as well (AMD Vi or Intel VT-d). 
 
-> Sitting idle, Phyllome OS consumes approximately 1 CPU core and 1.5 GB of RAM. This requirement scales up with the number of virtual machines running on a dedicated host: the more the virtual machines running, the more ressources Phyllome OS will use
+> Sitting idle, Phyllome OS consumes approximately 1 CPU core and 1.5 GB of RAM. This requirement scales up with the number of virtual machines running on any dedicated host: the more the virtual machines are running, the more ressources Phyllome OS will use
 {.is-info}
 
 > A CPU that supports hardware-assisted virtualization is not be enough, as the motherboard also requires to support this feature. Laptop motherboards seem to be lagging behind desktop motherboards when it comes to supporting this feature. As a result of this, desktop motherboards are usually better candidates for Phyllome OS  
