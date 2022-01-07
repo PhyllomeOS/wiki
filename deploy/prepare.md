@@ -2,7 +2,7 @@
 title: Preparation
 description: 
 published: true
-date: 2022-01-07T14:30:34.978Z
+date: 2022-01-07T14:33:07.376Z
 tags: 
 editor: markdown
 dateCreated: 2021-11-15T15:39:49.074Z
@@ -41,7 +41,7 @@ Phyllome OS targets [x86-64 systems](https://en.wikipedia.org/wiki/X86-64) suppo
 * **Hardware-assisted virtualization** enabled, second generation
     * For AMD-based configurations, it means that AMD Vi is available and enabled
     * For Intel-based configurations, it means that Intel VT-d is available and enabled.
-* **8-core** processor
+* **4-core** processor
 * **16 GB** of RAM
 * **NVME**-based storage device to store disk images and Phyllome OS
 * Two graphics cards or a graphics card that supports vfio-mdev or SR-IOV
@@ -51,16 +51,17 @@ Phyllome OS targets [x86-64 systems](https://en.wikipedia.org/wiki/X86-64) suppo
 
 ## Enable hardware-assisted virtualization
 
-Unfortunately, even on supported computer platforms, hardware-assisted virtualization is rarely turned on by default. In other words, it is not enough for a computer platform to support hardware-assisted virtualization: it is very likely that it has to be explicitly enabled.
+Unfortunately, even on supported computer platforms, hardware-assisted virtualization is rarely turned on by default. In other words, it is not enough for a computer platform to support hardware-assisted virtualization: it needs to be explicitly enabled.
 
-The process to activate this feature requires accessing the firmware configuration tool for your motherboard, which is part of your BIOS or UEFI. This process is described in the following section.
+The process to activate this feature requires accessing the firmware configuration tool for your motherboard, which is part of your BIOS or UEFI. This process, which differs depending on your current OS, is described in the following section.
 
 > *Did you know that the Open Virtual Machine Firmware (OVMF), which is based on [TianoCore](https://www.tianocore.org/), is the default firmware for EFI-based virtual machines? Its configuration utility can be accessed using the <kbd>Esc</kbd> key.*
 {.is-info}
 
+![uefi_tianocore_first-screen.png](/uefi_tianocore_first-screen.png)
+
 *The TianoCore splash screen*
 
-![uefi_tianocore_first-screen.png](/uefi_tianocore_first-screen.png)
 
 ### Accessing the firmware
 
