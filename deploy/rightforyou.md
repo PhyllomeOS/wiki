@@ -2,7 +2,7 @@
 title: Understand what you are signing up for
 description: 
 published: true
-date: 2022-01-07T14:04:08.663Z
+date: 2022-01-07T14:04:23.048Z
 tags: 
 editor: markdown
 dateCreated: 2021-11-13T11:19:38.215Z
@@ -29,7 +29,7 @@ It has several [significative limitations](/phyllomeos/cons-and-pros), so make s
 Phyllome OS exists in two main versions: 
 
 * **Phyllome OS Desktop**, which features a graphical desktop environment. 
-* **Phyllome OS Server**, which does not feature a graphical desktop environment (also known as headless mode)
+* **Phyllome OS Server**, which does not feature a graphical desktop environment.
 
 > Phyllome OS Server is made for power users. It includes all virtualization enhancements that Phyllome OS Desktop provides, minus the Desktop Environment. If you don't know which one to choose, you should most certainly pick the Desktop version. 
 {.is-info}
