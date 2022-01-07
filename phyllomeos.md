@@ -2,7 +2,7 @@
 title: Phyllome OS
 description: 
 published: true
-date: 2022-01-07T10:23:40.305Z
+date: 2022-01-07T10:27:47.092Z
 tags: 
 editor: markdown
 dateCreated: 2021-11-12T15:32:17.900Z
@@ -19,3 +19,7 @@ dateCreated: 2021-11-12T15:32:17.900Z
 * [Architecture](/phyllomeos/architecture)
 * [FAQ](/phyllomeos/FAQ)
 * [Software bill of materials](/phyllomeos/sbom)
+
+---
+
+*[Go back on level](https://wiki.phyllo.me/)*
