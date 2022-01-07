@@ -2,7 +2,7 @@
 title: Understand what you are signing up for
 description: 
 published: true
-date: 2022-01-07T14:28:27.632Z
+date: 2022-01-07T14:29:05.401Z
 tags: 
 editor: markdown
 dateCreated: 2021-11-13T11:19:38.215Z
@@ -46,7 +46,7 @@ Phyllome OS Desktop and Phyllome OS Server also comes with several editions opti
 | CPU-agnostic | **Phyllome OS Desktop** and **Phyllome OS Server** | N/A  |
 
 [^1]: GPUs agnostic editions will work with almost any GPUs that Linux can drive. Some severe limitations apply to [most recent Nvidia offerings](https://nouveau.freedesktop.org/FeatureMatrix.html). In general, **Nvidia GPUs are strongly discouraged** in all capacities, at least until Nvidia stop actively hindering the development of open-source drivers for its GPUs.
-[^2]: Only [Broadwell-based SoC](https://en.wikipedia.org/wiki/Broadwell_(microarchitecture)) (5th generation) to [Cascade Lake-based SoC](https://en.wikipedia.org/wiki/Cascade_Lake_(microarchitecture)) (9th generation) are supported. If you possess a more recent SoC from Intel, for instance one based on the Tiger Lake SoC, please pick Phyllome OS Desktop I or Phyllome OS Desktop.
+[^2]: Only [Broadwell-based SoC](https://en.wikipedia.org/wiki/Broadwell_(microarchitecture)) (5th generation) to [Cascade Lake-based SoC](https://en.wikipedia.org/wiki/Cascade_Lake_(microarchitecture)) (9th generation) are supported. If you possess a more recent SoC from Intel, for instance one based on the Tiger Lake SoC, please pick Phyllome OS Desktop I or Phyllome OS Desktop instead.
 
 ---
 
