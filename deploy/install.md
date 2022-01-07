@@ -2,7 +2,7 @@
 title: Install Phyllome OS
 description: 
 published: true
-date: 2021-11-23T11:32:38.876Z
+date: 2022-01-07T14:36:17.713Z
 tags: 
 editor: markdown
 dateCreated: 2021-11-14T16:19:00.348Z
@@ -73,7 +73,7 @@ One needs to alter the GRUB instructions before the USB flash drive can load the
 
 ![screenshot_uefi_2021-11-22_155450.png](/grub-kickstart/screenshot_uefi_2021-11-22_155450.png)
 
-> The shortened URL `https://ks.phyllo.me/dii` points to the latest Desktop version of Phyllome OS, tweaked for Intel CPUs and GPUs. The shortened link points to the kickstart file available here: https://raw.githubusercontent.com/PhyllomeOS/phyllomeos/main/leaves/flat-dhi.cfg. Any valid kickstart file may be used.
+> The shortened URL `https://ks.phyllo.me/dii` points to the latest Desktop version of Phyllome OS, tweaked for Intel CPUs and GPUs (gen 5th to gen 9th). The shortened link points to the kickstart file available here: https://raw.githubusercontent.com/PhyllomeOS/phyllomeos/main/leaves/flat-dhi.cfg. Any valid kickstart file may be used.
 {.is-info}
 
 * During the installation process, you can use <kbd>Alt</kbd> + <kbd>Tab</kbd> to cycle through tabs, and look at the logs in real-time
