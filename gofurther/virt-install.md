@@ -2,7 +2,7 @@
 title: Linux family
 description: 
 published: true
-date: 2022-01-11T15:21:57.078Z
+date: 2022-01-11T15:25:31.899Z
 tags: 
 editor: markdown
 dateCreated: 2021-11-12T15:27:40.366Z
@@ -47,7 +47,7 @@ virt-install \
     --rng /dev/urandom,model=virtio \
     --disk path=/var/lib/libvirt/images/virtual-desktop.img,format=raw,bus=virtio,cache=writeback,size=10 \
     --location=https://download.fedoraproject.org/pub/fedora/linux/releases/35/Everything/x86_64/os/ \
-    --extra-args="https://raw.githubusercontent.com/PhyllomeOS/phyllomeos/main/dishes/virtual-desktop.cfg"
+    --extra-args="inst.ks=https://raw.githubusercontent.com/PhyllomeOS/phyllomeos/main/dishes/virtual-desktop.cfg"
 ```
 
 ## Deployment using a local kickstart file
