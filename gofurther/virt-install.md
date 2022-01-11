@@ -2,7 +2,7 @@
 title: Linux family
 description: 
 published: true
-date: 2022-01-11T14:50:07.400Z
+date: 2022-01-11T15:21:57.078Z
 tags: 
 editor: markdown
 dateCreated: 2021-11-12T15:27:40.366Z
@@ -38,7 +38,7 @@ virt-install \
     --autoconsole none \
     --console pty,target.type=virtio \
     --sound none \
-    --network type=user,model=virtio \
+    --network type=default,model=virtio \
     --controller type=virtio-serial \
     --controller type=usb,model=none \
     --controller type=scsi,model=virtio-scsi \
@@ -85,7 +85,7 @@ virt-install \
     --autoconsole none \
     --console pty,target.type=virtio \
     --sound none \
-    --network type=user,model=virtio \
+    --network type=default,model=virtio \
     --controller type=virtio-serial \
     --controller type=usb,model=none \
     --controller type=scsi,model=virtio-scsi \
@@ -120,7 +120,7 @@ virt-install \
     --autoconsole none \
     --console pty,target.type=virtio \
     --sound none \
-    --network type=user,model=virtio \
+    --network type=default,model=virtio \
     --controller type=virtio-serial \
     --controller type=usb,model=none \
     --controller type=scsi,model=virtio-scsi \
@@ -184,7 +184,7 @@ virt-install \
     --autoconsole none \
     --console pty,target.type=virtio \
     --sound none \
-    --network type=user,model=virtio \
+    --network type=default,model=virtio \
     --controller type=virtio-serial \
     --controller type=usb,model=none \
     --controller type=scsi,model=virtio-scsi \
