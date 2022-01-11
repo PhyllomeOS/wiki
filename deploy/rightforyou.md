@@ -2,7 +2,7 @@
 title: Understand what you are signing up for
 description: 
 published: true
-date: 2022-01-07T14:29:05.401Z
+date: 2022-01-11T15:57:28.009Z
 tags: 
 editor: markdown
 dateCreated: 2021-11-13T11:19:38.215Z
@@ -50,5 +50,5 @@ Phyllome OS Desktop and Phyllome OS Server also comes with several editions opti
 
 ---
 
-*Ready to try it out? If soplease go to [the next section](/deploy/prepare) to prepare your host computer.*
+*Ready to try it out? If soplease go to [**the next section**](/deploy/prepare) to prepare your host computer.*
 
