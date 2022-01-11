@@ -2,7 +2,7 @@
 title: Linux family
 description: 
 published: true
-date: 2022-01-11T14:49:23.674Z
+date: 2022-01-11T14:50:07.400Z
 tags: 
 editor: markdown
 dateCreated: 2021-11-12T15:27:40.366Z
@@ -12,7 +12,7 @@ dateCreated: 2021-11-12T15:27:40.366Z
 
 * `virt-install` is a command-line utility that can be used to create virtual machines. It comes preinstalled with Phyllome OS. 
 
-## Remote
+## Deployment using a hosted kickstart file
 
 * The following command will deploy a virtual machine with a stripped-down GNOME desktop environment. Adjust the settings according to your needs.
 
@@ -50,7 +50,7 @@ virt-install \
     --extra-args="https://raw.githubusercontent.com/PhyllomeOS/phyllomeos/main/dishes/virtual-desktop.cfg"
 ```
 
-## Automated installation using a local kickstart file 
+## Deployment using a local kickstart file
 
 * Use the following `wget` command to fetch a standalone kickstart file made to deploy a stripped-down desktop system with GNOME Shell, and put it in the working directory
 
