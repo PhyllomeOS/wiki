@@ -2,7 +2,7 @@
 title: Preparation
 description: 
 published: true
-date: 2022-01-07T14:33:07.376Z
+date: 2022-01-11T15:58:36.410Z
 tags: 
 editor: markdown
 dateCreated: 2021-11-15T15:39:49.074Z
@@ -171,4 +171,4 @@ This section will show you how to modify the boot order permanently, so you can 
 
 ---
 
-*If the activation is successful, you can go to the next section [to prepare an installation medium](https://wiki.phyllo.me/deploy/medium).*
+*If the activation is successful, you can go to [**the next section**](https://wiki.phyllo.me/deploy/medium) to prepare an installation medium.*
