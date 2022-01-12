@@ -2,13 +2,13 @@
 title: ReactOS reference
 description: 
 published: true
-date: 2022-01-12T11:13:08.761Z
+date: 2022-01-12T11:13:15.206Z
 tags: 
 editor: markdown
 dateCreated: 2022-01-06T21:53:31.225Z
 ---
 
-# ReactOS virtualization reference
+# ReactOS reference
 
 > The current state of support for ReactOS in Phyllome OS is bad. 
 Porting new paravirtual devices to ReactOS would improve the support. See [here](https://reactos.org/contributing/) on how you can contribute to ReactOS.
