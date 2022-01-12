@@ -2,7 +2,7 @@
 title: Understand what you are signing up for
 description: 
 published: true
-date: 2022-01-11T15:57:28.009Z
+date: 2022-01-12T14:32:45.468Z
 tags: 
 editor: markdown
 dateCreated: 2021-11-13T11:19:38.215Z
@@ -36,7 +36,7 @@ Phyllome OS exists in two main versions:
 
 Phyllome OS Desktop and Phyllome OS Server also comes with several editions optimized for a particular combination of hardware. At some point, there will be merged into one.
 
-> As of now, **only Phyllome OS Desktop II is officially supported**. A computer with both an Intel CPU and an Intel GPU (gen 5th to gen 9th) is expected, so it can leverage most features Phyllome OS can offer. Support for other other editions are expected for the Beta realease.  
+> As of now, **only Phyllome OS Desktop II** is officially supported. A computer with both an Intel CPU and an Intel GPU (gen 5th to gen 9th) is expected, so it can leverage most features Phyllome OS can offer. Support for other other editions are expected for the Beta realease.  
 {.is-info}
 
 |  | GPU-agnostic[^1] | Intel GPUs[^2] |
