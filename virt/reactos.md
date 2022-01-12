@@ -2,7 +2,7 @@
 title: ReactOS reference
 description: 
 published: true
-date: 2022-01-12T13:31:22.754Z
+date: 2022-01-12T14:47:42.749Z
 tags: 
 editor: markdown
 dateCreated: 2022-01-06T21:53:31.225Z
@@ -15,7 +15,7 @@ dateCreated: 2022-01-06T21:53:31.225Z
 
 ## State of support
 
-> Porting new paravirtual devices to ReactOS would significantly improve the experience of running ReactOS inside Phyllome OS. See [here](https://reactos.org/contributing/) on how you can contribute to ReactOS
+> Porting new paravirtual devices to ReactOS would significantly improve the experience of running ReactOS inside Phyllome OS, and other virtualization solutions leveraging [paravirtual hardware](https://wiki.phyllo.me/e/en/virt/virtio). See [here](https://reactos.org/contributing/) on how you can contribute to ReactOS
 {.is-info}
 
 | **Hardware** | ReactOS 4.13 | ReactOS 4.14 |
