@@ -2,13 +2,13 @@
 title: On paravirtualized hardware
 description: 
 published: true
-date: 2022-01-12T16:26:03.354Z
+date: 2022-01-12T16:45:51.012Z
 tags: 
 editor: markdown
 dateCreated: 2022-01-12T14:22:51.514Z
 ---
 
-> **Section under construction**
+> *Section under construction*
 {.is-warning}
 
 
