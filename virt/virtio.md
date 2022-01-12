@@ -2,7 +2,7 @@
 title: On paravirtualized hardware
 description: 
 published: true
-date: 2022-01-12T16:01:26.136Z
+date: 2022-01-12T16:19:38.453Z
 tags: 
 editor: markdown
 dateCreated: 2022-01-12T14:22:51.514Z
@@ -14,15 +14,19 @@ dateCreated: 2022-01-12T14:22:51.514Z
 
 In this section, the focus is oriented towards Virtual I/O Devices (VIRTIO), also known as the `virtio` family of devices:
 
+> This list is not meant to be exhaustive
+{.is-info}
+
+
 ## Graphical frame buffer
 
-* [`virtio-gpu`](/virt/virtio/gpu): paravirtual GPU. 
-	* Provides a subset of the host GPU capabilities to a guest virtual machine
+* [`virtio-gpu`](/virt/virtio/gpu): 
+	* Paravirtual GPU that provides a subset of the host GPU capabilities to a guest virtual machine
 
 ## Video decoding/encoding
 
-* [`virtio-video`](/virt/virtio/video): paravirtual video device
-	* Provides encoding and decoding capabilities to a guest virtual machine
+* [`virtio-video`](/virt/virtio/video): 
+	* Paravirtual video device that provides encoding and decoding capabilities to a guest virtual machine
 
 ## Sound
 
@@ -32,6 +36,7 @@ In this section, the focus is oriented towards Virtual I/O Devices (VIRTIO), als
 
 * [`virtio-blk`](/virt/virtio/blk)
 * [`virtio-scsi`](/virt/virtio/scsi)
+* [`virtio-fs`](/virt/virtio/fs)
 
 ## Network
 
@@ -40,8 +45,15 @@ In this section, the focus is oriented towards Virtual I/O Devices (VIRTIO), als
 ## Input devices
 
 * [`virtio-kbd`](/virt/virtio/blk)
-* [`virtio-`](/virt/virtio/scsi)
+* [`virtio-tablet`](/virt/virtio/tabket)
 
+## Miscellaneous
+
+* [`virtio-rng`](/virt/virtio/rng)
+* [`virtio-crypto`](/virt/virtio/crypto)
+* [`virtio-balloon`](/virt/virtio/balloon)
+* [`virtio-iommu`](/virt/virtio/iommu)
+* [`virtio-console`](/virt/virtio/console)
 
 ## Virtual I/O Devices specifications
 
@@ -50,19 +62,19 @@ In this section, the focus is oriented towards Virtual I/O Devices (VIRTIO), als
 
 * Below is a table showing support of `virtio` devices depending on the specification version
 
-| **Paravirtual device** | Spec 1.0 | Spec 1.1 | Spec 1.2 |
+| **Paravirtual device** | Spec. 1.0 | Spec. 1.1 | Spec. 1.2 |
 | :- | :-: | :-: | :-: |
-| *virtio-gpu* | No | No | **Yes** |
-| *virtio-video* | No | No | **Yes** |
-| *virtio-snd* | No | No | **Yes** |
-| *virtio-blk* | No | No | No |
-| *virtio-scsi* | No | No | No |
-| *virtio-fs* | No | No | No |
-| *virtio-net* | No |  No | No |
-| *virtio-keyboard* | No | No | No |
-| *virtio-tablet* | No | No | No |
-| *virtio-wayland* | No | No | No |
-| *virtio-console* | No | No | No |
+| *`virtio-gpu`* | No | **Yes** | **Yes** |
+| *`virtio-video`* | No | No | **Yes** |
+| *`virtio-snd`* | No | No | **Yes** |
+| *`virtio-blk`* | **Yes** | **Yes** | **Yes** |
+| *`virtio-scsi`* | **Yes** | **Yes** | **Yes** |
+| *`virtio-fs`* | No | No | ? |
+| *`virtio-net`* | **Yes** |  **Yes** | **Yes** |
+| *`virtio-keyboard`* | No | No | ? |
+| *`virtio-tablet`* | No | No | ? |
+| *`virtio-wayland`* | No | No | ? |
+| *`virtio-console`* | **Yes** | **Yes** | **Yes** |
 
 ## Resources
 
