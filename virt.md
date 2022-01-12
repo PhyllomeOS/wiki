@@ -2,7 +2,7 @@
 title: Virtualization for the rest of us
 description: 
 published: true
-date: 2022-01-12T13:51:10.534Z
+date: 2022-01-12T13:51:52.239Z
 tags: 
 editor: markdown
 dateCreated: 2021-11-13T12:08:53.048Z
@@ -15,7 +15,7 @@ dateCreated: 2021-11-13T12:08:53.048Z
 ## Hardware
 
 * [Anatomy of a virtual machine](/virt/vm)
-	* [Architectures](/virt/architectures)
+	* [Architecture](/virt/architecture)
 	* [Chipset](/virt/chipset)
   * [Firmware](/virt/firmware)
   * [CPU](/virt/cpu)
