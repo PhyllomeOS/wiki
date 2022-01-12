@@ -2,7 +2,7 @@
 title: On paravirtualized hardware
 description: 
 published: true
-date: 2022-01-12T16:20:46.861Z
+date: 2022-01-12T16:26:03.354Z
 tags: 
 editor: markdown
 dateCreated: 2022-01-12T14:22:51.514Z
@@ -62,7 +62,7 @@ In this section, the focus is oriented towards Virtual I/O Devices (VIRTIO), als
 
 ## Virtual I/O Devices specifications
 
-> [OASIS Open](https://www.oasis-open.org/org/) is a non-profit hosting standards related to the IT sector. They host VIRTIO specifications and its technical comittee.
+> [OASIS Open](https://www.oasis-open.org/org/) is a non-profit hosting standards related to the IT sector. They host VIRTIO specifications and its technical committee.
 {.is-info}
 
 * Below is a table showing support of `virtio` devices depending on the specification version
