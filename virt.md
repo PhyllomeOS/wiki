@@ -2,7 +2,7 @@
 title: Virtualization for the rest of us
 description: 
 published: true
-date: 2022-01-07T09:52:53.662Z
+date: 2022-01-12T13:45:10.564Z
 tags: 
 editor: markdown
 dateCreated: 2021-11-13T12:08:53.048Z
@@ -24,15 +24,13 @@ dateCreated: 2021-11-13T12:08:53.048Z
   * [Network](/virt/network)
   * [Display](/virt/display)
 
-## Software
+## Host
 
-### The host
-
-* [Linux Kernel modules](/virt/kernel-modules) related to virtualization.
+* [Linux Kernel modules](/virt/kernel-modules) related to virtualization
 * [Virtualization-related paths](/virt/linux-paths) on Phyllome OS
 * [XML](/virt/xml) commented
 
-### Guests
+## Guests
 
 > Support for guest systems differs widely. In general, free and open-source operating systems such as Linux distributions are better supported than proprietary operating systems.
 {.is-warning}
@@ -41,19 +39,19 @@ dateCreated: 2021-11-13T12:08:53.048Z
 
 * [Main guests support matrix](/virt/guest-support)
 
-#### Unix-based
+### Unix-based
 
 * [Linux family](/virt/linux)
 * [BSD family](/virt/bsd)
 * [OpenSolaris and derivatives](/virt/opensolaris)
 * [Darwin and derivatives](/virt/darwin)
 
-#### Windows NT
+### Windows NT
 	
 * [Windows family](/virt/windows)
 * [ReactOS](/virt/reactos)
 
-#### Independent
+### Independent
 
 * [Sculpt OS](/virt/sculpt-os)
 * [Fuchsia OS](/virt/fuchsia-os)
