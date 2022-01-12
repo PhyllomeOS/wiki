@@ -2,7 +2,7 @@
 title: Virtualization for the rest of us
 description: 
 published: true
-date: 2022-01-12T16:27:06.246Z
+date: 2022-01-12T18:07:19.595Z
 tags: 
 editor: markdown
 dateCreated: 2021-11-13T12:08:53.048Z
@@ -59,3 +59,7 @@ dateCreated: 2021-11-13T12:08:53.048Z
 
 * [Lexicon](/virt/lexicon) 
 * [External resources](/virt/resources)
+
+---
+
+*[Go to the parent page](https://wiki.phyllo.me/e/en/virt)*
