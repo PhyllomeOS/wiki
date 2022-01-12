@@ -2,7 +2,7 @@
 title: ReactOS reference
 description: 
 published: true
-date: 2022-01-06T23:00:35.796Z
+date: 2022-01-12T11:13:08.761Z
 tags: 
 editor: markdown
 dateCreated: 2022-01-06T21:53:31.225Z
@@ -10,23 +10,34 @@ dateCreated: 2022-01-06T21:53:31.225Z
 
 # ReactOS virtualization reference
 
+> The current state of support for ReactOS in Phyllome OS is bad. 
+Porting new paravirtual devices to ReactOS would improve the support. See [here](https://reactos.org/contributing/) on how you can contribute to ReactOS.
+{.is-info}
+
 ## State of support
 
-| **Hardware** | ReactOS 4.14 |
+| **Hardware** | ReactOS 4.13 | ReactOS 4.14 |
 | :-- | -- |
-| *Chipset* | i440fx only |
-| *Firmware* | BIOS only but UEFI is under-way |
-| *virtio-gpu* | No |
-| *virtio-net* | Yes |
-| *virtio-blk* | No |
-| *virtio-scsi* | No |
-| *virtio-keyboard* | No |
-| *virtio-tablet* | No |
+| *Chipset* | i440fx | i440fx |
+| *Firmware* | SeaBIOS [^1] | SeaBIOS |
+| *virtio-gpu* | No | No |
+| *virtio-net* | No | **Yes** [^2] |
+| *virtio-blk* | No | No |
+| *virtio-scsi* | No | No |
+| *virtio-fs* | No | No |
+| *virtio-console* | No | No | 
+| *virtio-keyboard* | No | No |
+| *virtio-tablet* | No | No |
 
-## Resources around virtualization and ReactOS
+## Resources
 
-* [Official resource on running ReactOS with QEMU](https://reactos.org/wiki/QEMU)
+* [Official resource](https://reactos.org/wiki/QEMU) on running ReactOS with QEMU
 * [Hardware support list](https://reactos.org/wiki/Supported_Hardware) for ReactOS
 * [Git repository](https://github.com/hectorm/docker-qemu-reactos) providing a Docker image for the ReactOS operating system
 * [Current effort](https://github.com/QubesOS/qubes-issues/issues/2809) to integrate ReactOS and QubesOS
-* [GSoC 2018 project idea](https://reactos.org/wiki/Google_Summer_of_Code_2018_Ideas#Paravirtualization_Support) to port more paravirtualized devices to ReactOS.
+* [GSoC 2018 project idea](https://reactos.org/wiki/Google_Summer_of_Code_2018_Ideas#Paravirtualization_Support) to port more paravirtualized devices to ReactOS
+
+## Notes
+
+[^1]: Support for [UEFI](https://reactos.org/wiki/UEFI), and potentially OVMF, is under-way.
+[^2]: See [here](https://doxygen.reactos.org/d1/dc8/virtio__types_8h.html#a5a27dcd221caab788e973f6964d84aa9) for the source code reference for `virtio-net` 
