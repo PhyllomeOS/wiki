@@ -2,7 +2,7 @@
 title: Get started with Phyllome OS
 description: 
 published: true
-date: 2021-12-12T17:30:50.603Z
+date: 2022-01-12T20:28:39.560Z
 tags: 
 editor: markdown
 dateCreated: 2021-11-13T11:37:31.498Z
@@ -16,8 +16,7 @@ dateCreated: 2021-11-13T11:37:31.498Z
 
 After Phyllome OS [has been successfully installed](/deploy/install) and [its first-launch process completed](/deploy/install#first-launch), a few tasks are required before it can be used to its fullest potential.
 
-> As Phyllome OS evolves, one of the main goal is to shorten the time it would take for an end-user to have a fully operational virtual machine loaded with the installer of their favorite operating system, to the point that a user may not see the Phyllome OS environment
-at all. The following post-installation configuration will, hopefully, be made obsolete in a future Phyllome OS version. 
+> As Phyllome OS evolves, the following post-installation configuration will, hopefully, be made obsolete 
 {.is-info}
 
 ### Grant the current user the ability to manage system-based virtual machines
