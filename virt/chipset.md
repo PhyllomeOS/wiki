@@ -2,7 +2,7 @@
 title: Chipset
 description: 
 published: true
-date: 2022-01-12T13:29:10.843Z
+date: 2022-01-12T13:32:27.236Z
 tags: 
 editor: markdown
 dateCreated: 2021-11-13T11:56:47.463Z
@@ -16,7 +16,7 @@ dateCreated: 2021-11-13T11:56:47.463Z
 {.is-info}
 
 | **Support** | i440fx | Q35 | virt |
-| :-- | -- | -- |
+| :-- | -- | -- | -- |
 | *PS/2 devices* | **Yes** | **Yes** | No | 
 | *USB Controller* | **Yes** | **Yes** | ? | 
 | *SATA Controller* | No | **Yes** | ? |
