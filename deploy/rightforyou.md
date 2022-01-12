@@ -2,7 +2,7 @@
 title: Understand what you are signing up for
 description: 
 published: true
-date: 2022-01-12T14:32:45.468Z
+date: 2022-01-12T18:12:53.278Z
 tags: 
 editor: markdown
 dateCreated: 2021-11-13T11:19:38.215Z
