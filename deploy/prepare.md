@@ -2,7 +2,7 @@
 title: Preparation
 description: 
 published: true
-date: 2022-01-11T15:58:36.410Z
+date: 2022-01-12T18:14:48.644Z
 tags: 
 editor: markdown
 dateCreated: 2021-11-15T15:39:49.074Z
@@ -19,7 +19,7 @@ Phyllome OS targets [x86-64 systems](https://en.wikipedia.org/wiki/X86-64) suppo
 > Sitting idle, Phyllome OS consumes approximately 1 CPU core and 1.5 GB of RAM. This requirement scales up with the number of virtual machines running on any dedicated host: the more the virtual machines are running, the more ressources Phyllome OS will use
 {.is-info}
 
-> A CPU that supports hardware-assisted virtualization is not be enough, as the motherboard also requires to support this feature. Laptop motherboards seem to be lagging behind desktop motherboards when it comes to supporting this feature. As a result of this, desktop motherboards are usually better candidates for Phyllome OS  
+> A CPU that supports hardware-assisted virtualization is not be enough, as the motherboard also requires to support this feature. Laptop motherboards seem to be lagging behind desktop motherboards when it comes to supporting this feature. As a result of this, **desktop motherboards** are usually better candidates for Phyllome OS  
 {.is-warning}
 
 ### Minimum requirements for Phyllome OS Desktop
