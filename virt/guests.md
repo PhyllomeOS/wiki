@@ -2,7 +2,7 @@
 title: Guests support
 description: 
 published: true
-date: 2022-01-12T16:40:01.135Z
+date: 2022-01-12T18:02:19.810Z
 tags: 
 editor: markdown
 dateCreated: 2022-01-12T14:25:25.960Z
@@ -18,9 +18,9 @@ dateCreated: 2022-01-12T14:25:25.960Z
 | | Linux | Darwin | Windows |
 | :- | :-: | :-: | :-: |
 | *[Chipset](/virt/chipset)* | `i440fx` `Q35` | `Q35` | `i440fx` `Q35` |
-| *[Firmware](/virt/firmware)* | `SeaBIOS` `OVMF` `RHF` | SeaBIOS |
-| *`virtio-gpu`* | No | **Yes** | **Yes** |
-| *`virtio-video`* | No | No | **Yes** |
+| *[Platform Firmware](/virt/firmware)* | `SeaBIOS` `OVMF` `RHF` [^1] | `OVMF` | `SeaBIOS` `OVMF` `RHF` |
+| *`virtio-gpu`* | **Yes** | No | No |
+| *`virtio-video`* | Upcoming | No | **Yes** |
 | *`virtio-snd`* | No | No | **Yes** |
 | *`virtio-blk`* | **Yes** | **Yes** | **Yes** |
 | *`virtio-scsi`* | **Yes** | **Yes** | **Yes** |
@@ -28,8 +28,5 @@ dateCreated: 2022-01-12T14:25:25.960Z
 | *`virtio-net`* | **Yes** |  **Yes** | **Yes** |
 | *`virtio-keyboard`* | No | No | ? |
 | *`virtio-tablet`* | No | No | ? |
-| *`virtio-wayland`* | No | No | ? |
-| *`virtio-console`* | **Yes** | **Yes** | **Yes** |
 
-
-Rust Hypervisor Firmware
+[^1]: RST stands for the Rust Hypervisor Firmware
