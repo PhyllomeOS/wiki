@@ -2,7 +2,7 @@
 title: Virtualization for the rest of us
 description: 
 published: true
-date: 2022-01-12T14:24:03.073Z
+date: 2022-01-12T16:23:29.585Z
 tags: 
 editor: markdown
 dateCreated: 2021-11-13T12:08:53.048Z
@@ -24,7 +24,7 @@ dateCreated: 2021-11-13T12:08:53.048Z
   * [Network](/virt/network)
   * [Display](/virt/display)
 * [Paravirtualized hardware](/virt/virtio) (`virtio`)
-	* []
+ 
 ## Host
 
 * [Linux Kernel modules](/virt/kernel-modules) related to virtualization
