@@ -2,7 +2,7 @@
 title: Homepage
 description: 
 published: true
-date: 2022-01-12T18:11:05.165Z
+date: 2022-01-12T18:12:11.611Z
 tags: 
 editor: markdown
 dateCreated: 2021-06-19T09:29:20.593Z
@@ -14,9 +14,7 @@ dateCreated: 2021-06-19T09:29:20.593Z
 
 *In this wiki, you will find guides about how to install, use and hack Phyllome OS, as well as more general information about open-source virtualization and the project behind this specialized OS.*
 
-*[Phyllome OS](https://phyllo.me/) is an operating system that makes it easier to run various guest systems locally using [off-the-shelf hardware](https://wiki.phyllo.me/deploy/prepare).*
-
-*If you want to learn more about it, its goal and the context around it, have a look at the [white-paper](https://files.phyllo.me/s/oYwfxYpZcbppwr6).*
+*[Phyllome OS](https://phyllo.me/) is an operating system that makes it easier to run various guest systems locally using [off-the-shelf hardware](https://wiki.phyllo.me/deploy/prepare). If you want to learn more about it, its goal and the context around it, have a look at the [white-paper](https://files.phyllo.me/s/oYwfxYpZcbppwr6).*
 
 > If you would rather avoid JavaScript altogether, or wish to download the content of this wiki locally, feel free to clone [this repository](https://github.com/PhyllomeOS/wiki).
 {.is-info}
@@ -27,9 +25,6 @@ dateCreated: 2021-06-19T09:29:20.593Z
 ## Deploy
 
 *This section is meant to help users prepare their computers to host Phyllome OS, pick the version that will suit their needs, understand Phyllome OS' limitations, and install it.*
-
-> Phyllome OS is **not** production-ready. The alpha version [has been released](https://github.com/PhyllomeOS/phyllomeos/releases) on November the 15h, 2021. The beta version is expected somewhere in 2022. And the production-ready version will be released *when it is done*. As of November 2021, it is a self-funded, experimental and mostly solo project, but [contributions are welcome!](/project/contribute)
-> {.is-warning}
 
 * **Choose**
 	* [Is Phyllome OS right for you?](/deploy/rightforyou)
