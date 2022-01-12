@@ -2,28 +2,25 @@
 title: Lexicon
 description: 
 published: true
-date: 2021-11-13T18:47:23.476Z
+date: 2022-01-12T15:43:12.102Z
 tags: 
 editor: markdown
 dateCreated: 2021-11-13T11:58:43.776Z
 ---
 
-> Section under construction.
-{.is-warning}
+# Key terms related to virtualization 
 
-## Terms related to virtualization 
-
-### Emulator
+## Emulator
 
 Emulators or virtualizers are software that provide material components
 similar to physical hardware, but that are made of computer code instead
 of silicon, -- virtual hardware --, such as virtual floppy disks.
 
-QEMU[^6] is a popular emulator that can act as a simulator or virtual
+QEMU is a popular emulator that can act as a simulator or virtual
 machine monitor. In the latter case, it can leverage hardware
 acceleration,
 
-### Hardware-assisted virtualization
+## Hardware-assisted virtualization
 
 Hardware-assisted virtualization is a feature of certain computer
 hardware made to take advantage of virtualization.
@@ -34,12 +31,12 @@ In other words, hardware-assisted virtualization translates into better
 performance for virtualized workloads, significantly reducing the gap in
 performance between a virtual machine and a physical one.
 
-### Nested-virtualization
+## Nested-virtualization
 
 Nested-virtualization refers to the ability to run a virtual machine
 inside another virtual machine.
 
-### Virtualization
+## Virtualization
 
 Most computers are made of hardware and software. By analogy, the brain
 that animates the cells to control a body can be thought as the
@@ -53,12 +50,12 @@ machines.
 
 There are roughly three types of virtualization:
 
--   **Simulation or emulation**: when a computer is fully emulated and
+*   **Simulation or emulation**: when a computer is fully emulated and
     can be made to look like any device to an operating system
--   **Partition**: when computer resources are split such that each
+*   **Partition**: when computer resources are split such that each
     operating system can only see a subset of available hardware
     resources
--   **Paravirtualization**: when both hardware and software-assisted
+*   **Paravirtualization**: when both hardware and software-assisted
     virtualization is being used. In this case, the guest is aware that
     it is running in the virtualized environment, and acts accordingly.
 
@@ -68,7 +65,7 @@ better use of resources through consolidation. For instance, with
 virtualization, multiple operating systems can run concurrently on a
 physical machine.
 
-### Hypervisor
+## Hypervisor
 
 A hypervisor is an operating system or firmware that is designed to run
 guest systems: it handles scheduling, execution of hyper privileged
@@ -86,56 +83,51 @@ virtual hardware.
 As of 2021, there are two major open-source hypervisor that are both are
 able to leverage hardware-assisted virtualization:
 
--   Xen (2003)[^7].
--   Kernel-based Virtual Machine (KVM) module for Linux (2007)[^8].
+-   Xen (2003)
+-   Kernel-based Virtual Machine (KVM) module for Linux (2007)
 
-### Device
+## Device
 
 Devices are computer components that can be attached to machines. They
 can be classified in two ways : physical or emulated.
 
-+--------+-------------------+----------------+------------------------+
-|        | Physical hardware | Emulated :     | Emulated : paravirtual |
-|        |                   |                |                        |
-|        |                   | model-based    |                        |
-+--------+-------------------+----------------+------------------------+
-| Design | Specific          | Specific       | Generic                |
-+--------+-------------------+----------------+------------------------+
-| Type   | Silicon-based     | Software-based | Software-based         |
-+--------+-------------------+----------------+------------------------+
+| | Physical hardware | Emulated: model-based | Emulated: paravirtual |
+| :- | :-: | :-: | :-: |
+| *Design* | Specific | Specific | Generic |
+| *Type* | Silicon-based  | Software-based | Software-based  |
 
--   Physical
+*   Physical
 
-    -   Physical components refer to devices that can be attached to a
+    *   Physical components refer to devices that can be attached to a
         system. For instance, a dedicated physical graphics card
         attached to a physical system can be directly attached to a
         virtual machine, which then becomes responsible for managing it,
         a technique called *passthrough*. The PCI-SIG standards provide
         IOMMU-related specifications to allow a host operating system to
-        not have a driver for a particular device[^9] and passthrough
+        not have a driver for a particular device and passthrough
         the device to the guest. The guest will have a device with
         nearly native performance, and use the standard vendor's drivers
         for the device.
-    -   The PCI-SIG standards also provide a way to partition compatible
+    *   The PCI-SIG standards also provide a way to partition compatible
         devices using so-called Virtual Functions (VFs). In this case,
         the host manages the way a physical device is used by the guest.
         Both host and guest must have specific device drivers. It offers
         nearly native performance.
 
--   Emulated
+*   Emulated
 
-    -   Model-based
+    *   Model-based
 
-        -   Model-based emulated hardware are designed after real
+        *   Model-based emulated hardware are designed after real
             devices, but are made out of computer code, not silicon. The
-            i440fx and Q35[^10] chipsets are both instances of emulated
+            i440fx and Q35 chipsets are both instances of emulated
             hardware. This is the slowest (but most compatible) way to
             provide a device to a guest. An emulated GPU is not going to
             be fast enough in an emulated mode to do 3D rendering.
 
-    -   Paravirtual
+    *   Paravirtual
 
-        -   Paravirtual hardware, also known as paravirtualized Virtual
+        *   Paravirtual hardware, also known as paravirtualized Virtual
             I/O devices or simply virtio, are also made out of computer
             code. Contrary to emulated hardware, they function as a
             generic piece of software-based hardware which doesn't
@@ -145,7 +137,7 @@ can be classified in two ways : physical or emulated.
 
 Paravirtualization refers to the emulation practice of letting an
 operating system running in a virtualized environment know that it is
-running in such an environment[^11].
+running in such an environment.
 
 Under this configuration, more efficient communication methods are
 available between the host and the guest, including VirtIO devices
