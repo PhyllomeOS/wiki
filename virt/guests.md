@@ -2,7 +2,7 @@
 title: Guests support
 description: 
 published: true
-date: 2022-01-12T16:38:57.157Z
+date: 2022-01-12T16:40:01.135Z
 tags: 
 editor: markdown
 dateCreated: 2022-01-12T14:25:25.960Z
@@ -17,7 +17,7 @@ dateCreated: 2022-01-12T14:25:25.960Z
 
 | | Linux | Darwin | Windows |
 | :- | :-: | :-: | :-: |
-| *[Chipset](/virt/chipset)* | `i440fx` | `i440fx` |
+| *[Chipset](/virt/chipset)* | `i440fx` `Q35` | `Q35` | `i440fx` `Q35` |
 | *[Firmware](/virt/firmware)* | `SeaBIOS` `OVMF` `RHF` | SeaBIOS |
 | *`virtio-gpu`* | No | **Yes** | **Yes** |
 | *`virtio-video`* | No | No | **Yes** |
