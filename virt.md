@@ -2,15 +2,15 @@
 title: Virtualization for the rest of us
 description: 
 published: true
-date: 2022-01-12T13:51:52.239Z
+date: 2022-01-12T14:24:03.073Z
 tags: 
 editor: markdown
 dateCreated: 2021-11-13T12:08:53.048Z
 ---
 
-# On open-source virtualization
+# On KVM virtualization
 
-*In this section, the focus is on KVM virtualization, and its associated tools, including QEMU, the Linux kernel, libvirt, etc., mostly in the context of Phyllome OS.* 
+*In this section, the focus is on KVM virtualization, and its associated tools, including `QEMU`, the Linux Kernel, `libvirt`, etc., mostly in the context of Phyllome OS.* 
 
 ## Hardware
 
@@ -24,17 +24,15 @@ dateCreated: 2021-11-13T12:08:53.048Z
   * [Network](/virt/network)
   * [Display](/virt/display)
 * [Paravirtualized hardware](/virt/virtio) (`virtio`)
-
+	* []
 ## Host
 
 * [Linux Kernel modules](/virt/kernel-modules) related to virtualization
 * [Virtualization-related paths](/virt/linux-paths) on Phyllome OS
 * [XML](/virt/xml) commented
+* [GPU virtualization](/virt/gpu)
 
 ## Guests
-
-> Support for guest systems differs widely. In general, free and open-source operating systems such as Linux distributions are better supported than proprietary operating systems.
-{.is-warning}
 
 *This idea of this section is to provide a reference for guest operating systems used in virtual machines*
 
