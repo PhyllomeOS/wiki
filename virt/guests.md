@@ -2,7 +2,7 @@
 title: Guests support
 description: 
 published: true
-date: 2022-01-12T18:04:58.862Z
+date: 2022-01-12T18:05:21.448Z
 tags: 
 editor: markdown
 dateCreated: 2022-01-12T14:25:25.960Z
@@ -20,8 +20,8 @@ dateCreated: 2022-01-12T14:25:25.960Z
 | *[Chipset](/virt/chipset)* | `i440fx` `Q35` | `Q35` | `i440fx` `Q35` |
 | *[Platform Firmware](/virt/firmware)* | `SeaBIOS` `OVMF` `RHF` [^1] | `OVMF` | `SeaBIOS` `OVMF` `RHF` |
 | *`virtio-gpu`* | **Yes** | No | No |
-| *`virtio-video`* | Upcoming | No | No |
-| *`virtio-snd`* | Upcoming | No | No |
+| *`virtio-video`* | *Upcoming* | No | No |
+| *`virtio-snd`* | *Upcoming* | No | No |
 | *`virtio-blk`* | **Yes** | **Yes** | **Yes** |
 | *`virtio-scsi`* | **Yes** | **Yes** | **Yes** |
 | *`virtio-fs`* | **Yes** | No | **Yes** |
