@@ -2,7 +2,7 @@
 title: Homepage
 description: 
 published: true
-date: 2022-01-12T16:45:34.603Z
+date: 2022-01-12T18:11:05.165Z
 tags: 
 editor: markdown
 dateCreated: 2021-06-19T09:29:20.593Z
@@ -69,20 +69,26 @@ dateCreated: 2021-06-19T09:29:20.593Z
 
 *In this section, the focus is on KVM virtualization and its associated tools, including QEMU, the Linux kernel, libvirt, etc., mostly in the context of Phyllome OS.* 
 
+
 ### Hardware
 
-* [Anatomy of a virtual machine](/virt/vm)
+* [Paravirtualized hardware](/virt/virtio) (`virtio`)
 * ...and [**more**](https://wiki.phyllo.me/en/virt)
 
-### Software
+### Host
 
-* [Linux Kernel modules](/virt/kernel-modules) related to virtualization.
+* [Linux Kernel modules](/virt/kernel-modules) related to virtualization
+* ...and [**more**](https://wiki.phyllo.me/en/virt)
+
+### Guests
+
+* [Guests support matrix](/virt/guests)
 * ...and [**more**](https://wiki.phyllo.me/en/virt)
 
 ### Resources
 
 * [Lexicon](/virt/lexicon) 
-* [External resources](/virt/resources)
+* ...and [**more**](https://wiki.phyllo.me/en/virt)
 
 ## About Phyllome OS 
 
