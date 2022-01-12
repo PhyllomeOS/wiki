@@ -2,7 +2,7 @@
 title: Guests support
 description: 
 published: true
-date: 2022-01-12T18:04:04.405Z
+date: 2022-01-12T18:04:58.862Z
 tags: 
 editor: markdown
 dateCreated: 2022-01-12T14:25:25.960Z
@@ -30,3 +30,7 @@ dateCreated: 2022-01-12T14:25:25.960Z
 | *`virtio-tablet`* | **Yes** | No | **Yes** |
 
 [^1]: RHF stands for the Rust Hypervisor Firmware
+
+---
+
+*[Go to the parent page](https://wiki.phyllo.me/e/en/virt/)*
