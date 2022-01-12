@@ -2,27 +2,45 @@
 title: On paravirtualized hardware
 description: 
 published: true
-date: 2022-01-12T15:52:50.547Z
+date: 2022-01-12T16:01:26.136Z
 tags: 
 editor: markdown
 dateCreated: 2022-01-12T14:22:51.514Z
 ---
 
-# Paravirtual devices
+# Paravirtual hardware
 
 *Paravirtual hardware are emulated hardware or devices that can be found in a virtual environment. Contrary to other emulated hardware, they don't intend to mimic a particular piece of real hardware. More details on the [lexicon](/virt/lexicon)*
 
 In this section, the focus is oriented towards Virtual I/O Devices (VIRTIO), also known as the `virtio` family of devices:
 
-* **Graphical frame buffer:** 
-	* [`virtio-gpu`](/virt/virtio/gpu)
-* **Video decoding/encoding:**
-	* [`virtio-video`](/virt/virtio/video)
-* **Sound:**
-	* [`virtio-snd`](/virt/virtio/snd)
-* **Block storage:**
-	* [`virtio-blk`](/virt/virtio/blk)
-  * [`virtio-scsi`](/virt/virtio/scsi)
+## Graphical frame buffer
+
+* [`virtio-gpu`](/virt/virtio/gpu): paravirtual GPU. 
+	* Provides a subset of the host GPU capabilities to a guest virtual machine
+
+## Video decoding/encoding
+
+* [`virtio-video`](/virt/virtio/video): paravirtual video device
+	* Provides encoding and decoding capabilities to a guest virtual machine
+
+## Sound
+
+* [`virtio-snd`](/virt/virtio/snd)
+
+## Storage
+
+* [`virtio-blk`](/virt/virtio/blk)
+* [`virtio-scsi`](/virt/virtio/scsi)
+
+## Network
+
+* [`virtio-net`](/virt/virtio/net)
+
+## Input devices
+
+* [`virtio-kbd`](/virt/virtio/blk)
+* [`virtio-`](/virt/virtio/scsi)
 
 
 ## Virtual I/O Devices specifications
@@ -34,13 +52,13 @@ In this section, the focus is oriented towards Virtual I/O Devices (VIRTIO), als
 
 | **Paravirtual device** | Spec 1.0 | Spec 1.1 | Spec 1.2 |
 | :- | :-: | :-: | :-: |
-| *virtio-gpu* | No | No | No |
-| *virtio-video* | No | No | No |
-| *virtio-snd* | No | No | No |
+| *virtio-gpu* | No | No | **Yes** |
+| *virtio-video* | No | No | **Yes** |
+| *virtio-snd* | No | No | **Yes** |
 | *virtio-blk* | No | No | No |
 | *virtio-scsi* | No | No | No |
-| *virtio-net* | No |  No | No |
 | *virtio-fs* | No | No | No |
+| *virtio-net* | No |  No | No |
 | *virtio-keyboard* | No | No | No |
 | *virtio-tablet* | No | No | No |
 | *virtio-wayland* | No | No | No |
