@@ -2,13 +2,13 @@
 title: Guests support
 description: 
 published: true
-date: 2022-01-12T18:02:19.810Z
+date: 2022-01-12T18:04:04.405Z
 tags: 
 editor: markdown
 dateCreated: 2022-01-12T14:25:25.960Z
 ---
 
-# Guests support matrix
+# General guests support matrix
 
 > Support for guest systems differs widely. In general, free and open-source operating systems such as Linux distributions are better supported than proprietary operating systems.
 {.is-info}
@@ -20,13 +20,13 @@ dateCreated: 2022-01-12T14:25:25.960Z
 | *[Chipset](/virt/chipset)* | `i440fx` `Q35` | `Q35` | `i440fx` `Q35` |
 | *[Platform Firmware](/virt/firmware)* | `SeaBIOS` `OVMF` `RHF` [^1] | `OVMF` | `SeaBIOS` `OVMF` `RHF` |
 | *`virtio-gpu`* | **Yes** | No | No |
-| *`virtio-video`* | Upcoming | No | **Yes** |
-| *`virtio-snd`* | No | No | **Yes** |
+| *`virtio-video`* | Upcoming | No | No |
+| *`virtio-snd`* | Upcoming | No | No |
 | *`virtio-blk`* | **Yes** | **Yes** | **Yes** |
 | *`virtio-scsi`* | **Yes** | **Yes** | **Yes** |
-| *`virtio-fs`* | No | No | ? |
+| *`virtio-fs`* | **Yes** | No | **Yes** |
 | *`virtio-net`* | **Yes** |  **Yes** | **Yes** |
-| *`virtio-keyboard`* | No | No | ? |
-| *`virtio-tablet`* | No | No | ? |
+| *`virtio-keyboard`* | **Yes** | No | **Yes** |
+| *`virtio-tablet`* | **Yes** | No | **Yes** |
 
-[^1]: RST stands for the Rust Hypervisor Firmware
+[^1]: RHF stands for the Rust Hypervisor Firmware
