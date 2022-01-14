@@ -2,7 +2,7 @@
 title: Understand what you are signing up for
 description: 
 published: true
-date: 2022-01-12T18:12:53.278Z
+date: 2022-01-14T19:48:05.732Z
 tags: 
 editor: markdown
 dateCreated: 2021-11-13T11:19:38.215Z
@@ -40,7 +40,7 @@ Phyllome OS Desktop and Phyllome OS Server also comes with several editions opti
 {.is-info}
 
 |  | GPU-agnostic[^1] | Intel GPUs[^2] |
-|---|---|---|---|
+|---|---|---|
 | *Intel CPU* | **Phyllome OS Desktop I** and **Phyllome OS Server I** | **Phyllome OS Desktop II** and **Phyllome OS Server II** | 
 | *AMD CPU* | **Phyllome OS Desktop A** and **Phyllome OS Server A** | N/A  |
 | CPU-agnostic | **Phyllome OS Desktop** and **Phyllome OS Server** | N/A  |
