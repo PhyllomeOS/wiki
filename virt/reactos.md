@@ -2,7 +2,7 @@
 title: ReactOS reference
 description: 
 published: true
-date: 2022-01-12T16:23:17.634Z
+date: 2022-01-14T11:05:08.632Z
 tags: 
 editor: markdown
 dateCreated: 2022-01-06T21:53:31.225Z
@@ -43,7 +43,7 @@ dateCreated: 2022-01-06T21:53:31.225Z
 
 ---
 
-*Go back to [KVM virtualization](/https://wiki.phyllo.me/e/en/virt)* 
+*Go back to [KVM virtualization](https://wiki.phyllo.me/e/en/virt)* 
 
 ---
 #### Footnotes
