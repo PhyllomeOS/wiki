@@ -2,7 +2,7 @@
 title: Guests support
 description: 
 published: true
-date: 2022-01-12T18:05:21.448Z
+date: 2022-01-15T12:59:45.229Z
 tags: 
 editor: markdown
 dateCreated: 2022-01-12T14:25:25.960Z
@@ -17,13 +17,13 @@ dateCreated: 2022-01-12T14:25:25.960Z
 
 | | Linux | Darwin | Windows |
 | :- | :-: | :-: | :-: |
-| *[Chipset](/virt/chipset)* | `i440fx` `Q35` | `Q35` | `i440fx` `Q35` |
+| *[Chipset](/virt/chipset)* | `i440fx` `Q35` `virt` | `Q35` | `i440fx` `Q35` `virt` |
 | *[Platform Firmware](/virt/firmware)* | `SeaBIOS` `OVMF` `RHF` [^1] | `OVMF` | `SeaBIOS` `OVMF` `RHF` |
 | *`virtio-gpu`* | **Yes** | No | No |
 | *`virtio-video`* | *Upcoming* | No | No |
 | *`virtio-snd`* | *Upcoming* | No | No |
 | *`virtio-blk`* | **Yes** | **Yes** | **Yes** |
-| *`virtio-scsi`* | **Yes** | **Yes** | **Yes** |
+| *`virtio-scsi`* | **Yes** | No | **Yes** |
 | *`virtio-fs`* | **Yes** | No | **Yes** |
 | *`virtio-net`* | **Yes** |  **Yes** | **Yes** |
 | *`virtio-keyboard`* | **Yes** | No | **Yes** |
