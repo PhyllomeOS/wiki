@@ -2,7 +2,7 @@
 title: Homepage
 description: 
 published: true
-date: 2022-01-17T14:16:34.588Z
+date: 2022-01-17T14:20:49.673Z
 tags: 
 editor: markdown
 dateCreated: 2021-06-19T09:29:20.593Z
@@ -50,7 +50,7 @@ dateCreated: 2021-06-19T09:29:20.593Z
 *Although Phyllome OS thrives to pick good defaults that will work for many guest operating systems, further optimizations may be needed depending on the system you wish to use.* 
 
 * [Install a Linux guest](/gofurther/install-guest) system using an ISO file
-* [Unattended deployment of RPM-based guests](/gofurther/virt-install) using a kickstart file
+* [Unattended deployment of a RPM-based guest](/gofurther/virt-install) using a kickstart file
 * [Install a Windows guest](/gofurther/install-windows-guest) system using an ISO file
 * ...and [**more**](https://wiki.phyllo.me/en/gofurther)
 
@@ -63,7 +63,7 @@ dateCreated: 2021-06-19T09:29:20.593Z
 * [Install and use the Cloud Hypervisor](/gofurther/cloud-hypervisor) to create a virtual machine
 * ...and [**more**](https://wiki.phyllo.me/en/gofurther)
 
-## On KVM Virtualization
+## On KVM virtualization
 
 *In this section, the focus is on KVM virtualization and its associated tools, including QEMU, the Linux kernel, `libvirt`, etc., mostly in the context of Phyllome OS.*
 
