@@ -2,7 +2,7 @@
 title: Homepage
 description: 
 published: true
-date: 2022-01-17T10:52:59.282Z
+date: 2022-01-17T14:10:40.586Z
 tags: 
 editor: markdown
 dateCreated: 2021-06-19T09:29:20.593Z
@@ -14,12 +14,14 @@ dateCreated: 2021-06-19T09:29:20.593Z
 
 *In this wiki, you will find guides about how to install, use and hack Phyllome OS, as well as more general information about open-source virtualization and the project behind this specialized OS.*
 
-*[Phyllome OS](https://phyllo.me/) is an operating system that makes it easier to run various guest systems locally using [off-the-shelf hardware](https://wiki.phyllo.me/deploy/prepare). If you want to learn more about it, its goal and the context around it, have a look at the [white-paper](https://files.phyllo.me/s/oYwfxYpZcbppwr6).*
+***What is Phyllome OS?** [Phyllome OS](https://phyllo.me/) is an operating system that makes it easier to run various guest systems locally using [off-the-shelf hardware](https://wiki.phyllo.me/deploy/prepare). If you want to learn more about it, its goal and the context around it, have a look at the [white-paper](https://files.phyllo.me/s/oYwfxYpZcbppwr6).*
+
+---
 
 > If you would rather avoid JavaScript altogether, or wish to download the content of this wiki locally, feel free to clone [this repository](https://github.com/PhyllomeOS/wiki).
 {.is-info}
 
-> This is the **alpha version** of this wiki. There will be a lot of mistakes. Contributions are welcome using [Git](https://github.com/PhyllomeOS/wiki). Contributions will be possible through the web interface at a later date.
+> This is the **alpha version** of this wiki. There will be mistakes. Contributions are welcome using [Git](https://github.com/PhyllomeOS/wiki). Contributions will be possible through the web interface at a later date.
 > {.is-warning}
 
 ## Deploy
