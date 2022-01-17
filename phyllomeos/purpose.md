@@ -2,7 +2,7 @@
 title: Purpose
 description: 
 published: true
-date: 2022-01-17T15:55:32.158Z
+date: 2022-01-17T16:30:42.133Z
 tags: 
 editor: markdown
 dateCreated: 2021-11-12T15:31:30.659Z
@@ -22,7 +22,7 @@ Most of the time, users pick hardware that ships with their favorite operating s
 
 Virtualization provides a partial answer to this problem as it allows the abstraction of the underlying hardware, presenting generic software-based hardware to the operating system. In other words, by means of virtualization, a specific physical computer can be made to look generic to an operating system.
 
-There are many types of [virtualization](virt/lexicon#virtualization). Phyllome OS is primarily focused on paravirtualization, which assumes that an operating system running in a virtualized environment is aware of it. For any operating systems to run well in such an environment, one would only have to focus on developing and maintaining a set of generic drivers for virtual hardware, a task that is well under way for many popular operating systems, including Linux-based, Darwin-based or Windows NT-based operating systems
+There are many types of [virtualization](/virt/lexicon#virtualization). Phyllome OS is primarily focused on paravirtualization, which assumes that an operating system running in a virtualized environment is aware of it. For any operating systems to run well in such an environment, one would only have to focus on developing and maintaining a set of generic drivers for virtual hardware, a task that is well under way for many popular operating systems, including Linux-based, Darwin-based or Windows NT-based operating systems
 
 Virtualization, however, is only a partial answer to this problem. Allowing compatibility with physical hardware, including USB controllers or graphic cards, one would still need to use a base operating system that can provide software to drive these  physical devices. Most Linux distributions, including as Fedora or Debian, ship with a large selection of such drivers, and as such represent another part of the solution to this problem. Moreover, for certain hardware such as Network Interface Cards (NICs), Linux drivers are now shipping first. In other words, the industry is developing drivers for Linux first, at least for certain categories of components
 
