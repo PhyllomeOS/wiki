@@ -2,7 +2,7 @@
 title: Homepage
 description: 
 published: true
-date: 2022-01-17T14:22:18.212Z
+date: 2022-01-17T15:34:33.013Z
 tags: 
 editor: markdown
 dateCreated: 2021-06-19T09:29:20.593Z
@@ -96,7 +96,7 @@ dateCreated: 2021-06-19T09:29:20.593Z
 * [Use cases](/phyllomeos/use-cases)
 * ...and [**more**](https://wiki.phyllo.me/en/phyllomeos)
 
-### The project
+### About the project
 
 * [How to contribute](/project/contribute)
 * [How to join](/project/join)
@@ -107,5 +107,6 @@ dateCreated: 2021-06-19T09:29:20.593Z
 * **The website**: https://phyllo.me
 * **This wiki**: https://wiki.phyllo.me
 * **The issue board**: [https://kanboard.phyllo.me](https://kanboard.phyllo.me/b/CH7qd98J2v7egmodk/development)
+* **The public forum**: https://forum.phyllo.me
 * **GitHub repositories**: https://github.com/PhyllomeOS
 
