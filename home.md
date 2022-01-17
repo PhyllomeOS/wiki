@@ -2,33 +2,31 @@
 title: Homepage
 description: 
 published: true
-date: 2022-01-17T19:15:06.367Z
+date: 2022-01-17T19:53:22.459Z
 tags: 
 editor: markdown
 dateCreated: 2021-06-19T09:29:20.593Z
 ---
 
-# Phyllome OS wiki
+# The Phyllome OS wiki
 
-`Welcome to the Phyllome OS wiki! `
+`Welcome!`
 
-*In this wiki, you will find guides about how to install, use and hack Phyllome OS, as well as more general information about open-source virtualization and the project behind this specialized OS.*
+*In this wiki, you will find guides about [how to install](/deploy/install), [use](/getstarted/disk) and hack Phyllome OS, as well as more generic information on the underlying [technologies](/virt) that are being used, Phyllome OS [itself](/phyllomeos) and the surrounding [project](/project).*
 
-*What is Phyllome OS? [Phyllome OS](https://phyllo.me/) is an operating system that makes it easier to run various guest systems locally using [off-the-shelf hardware](https://wiki.phyllo.me/deploy/prepare). If you want to learn more about it, its goal and the context around it, have a look at the [white-paper](https://files.phyllo.me/s/oYwfxYpZcbppwr6).*
+Phyllome[^1] OS is an operating system that makes it easier to run [various guest operating systems](/gofurther) locally using [off-the-shelf hardware](/deploy/prepare).
 
-> *Phyllome refers to the "foliar part of a plant; any organ homologous with a leaf, or [any organ] produced by metamorphosis of a leaf"* [^1]
-
-[^1]: https://en.wiktionary.org/wiki/phyllome
+[^1]: According to [the wiktionary](https://en.wiktionary.org/wiki/phyllome), Phyllome [refers](https://en.wiktionary.org/wiki/phyllome) to the "foliar part of a plant; any organ homologous with a leaf, or [any organ] produced by metamorphosis of a leaf" [^1]
 
 > If you would rather avoid JavaScript altogether, or wish to download the content of this wiki locally, feel free to clone [this repository](https://github.com/PhyllomeOS/wiki).
 {.is-info}
 
-> This is the **alpha version** of this wiki. There will be mistakes. Contributions are welcome using [Git](https://github.com/PhyllomeOS/wiki). Contributions will be possible through the web interface at a later date.
+> This is the *alpha version* of this wiki. Contributions are welcome using [Git](https://github.com/PhyllomeOS/wiki).
 > {.is-warning}
 
 ## Deploy
 
-*This section is meant to help users prepare their computers to host Phyllome OS, pick the version that will suit their needs, understand Phyllome OS' limitations, and install it.*
+*[This section](/deploy) is meant to help users install Phyllome OS*
 
 * [Is Phyllome OS right for you?](/deploy/rightforyou)
 * [Prepare your computer](/deploy/prepare)
