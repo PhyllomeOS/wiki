@@ -2,7 +2,7 @@
 title: Homepage
 description: 
 published: true
-date: 2022-01-17T20:16:27.994Z
+date: 2022-01-17T20:17:23.424Z
 tags: 
 editor: markdown
 dateCreated: 2021-06-19T09:29:20.593Z
@@ -26,7 +26,7 @@ Phyllome[^1] OS is an operating system that makes it easier to run [various oper
 
 ## Deploy
 
-*[This section](/deploy) is meant to help users install Phyllome OS*.
+*[This section](/deploy) is meant to help users install Phyllome OS.*
 
 * [Is Phyllome OS right for you?](/deploy/rightforyou)
 * [Prepare your computer](/deploy/prepare)
@@ -54,7 +54,7 @@ Phyllome[^1] OS is an operating system that makes it easier to run [various oper
 
 ### The host
 
-*[This section](/gofurther#tasks_related_to_phyllome_os) illustrates how to execute certain tasks related to Phyllome OS*.
+*[This section](/gofurther#tasks_related_to_phyllome_os) illustrates how to execute certain tasks related to Phyllome OS.*
 
 * [Perform a few checks](/gofurther/checks) on Phyllome OS
 * [Encrypt](/gofurther/encrypt) virtual disk images using filesystem-level encryption
