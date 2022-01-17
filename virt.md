@@ -2,7 +2,7 @@
 title: Virtualization for the rest of us
 description: 
 published: true
-date: 2022-01-17T20:22:31.666Z
+date: 2022-01-17T20:22:45.845Z
 tags: 
 editor: markdown
 dateCreated: 2021-11-13T12:08:53.048Z
@@ -57,7 +57,7 @@ dateCreated: 2021-11-13T12:08:53.048Z
 
 ## Resources
 
-* [A very short story](/virt/history) of virtualization
+* [A very short history](/virt/history) of virtualization
 * [Lexicon](/virt/lexicon) 
 * [External resources](/virt/resources)
 
