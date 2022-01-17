@@ -2,7 +2,7 @@
 title: Homepage
 description: 
 published: true
-date: 2022-01-17T15:42:48.488Z
+date: 2022-01-17T19:07:00.840Z
 tags: 
 editor: markdown
 dateCreated: 2021-06-19T09:29:20.593Z
@@ -26,7 +26,7 @@ dateCreated: 2021-06-19T09:29:20.593Z
 > This is the **alpha version** of this wiki. There will be mistakes. Contributions are welcome using [Git](https://github.com/PhyllomeOS/wiki). Contributions will be possible through the web interface at a later date.
 > {.is-warning}
 
-### Deploy
+## Deploy
 
 *This section is meant to help users prepare their computers to host Phyllome OS, pick the version that will suit their needs, understand Phyllome OS' limitations, and install it.*
 
