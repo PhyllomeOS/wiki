@@ -2,18 +2,15 @@
 title: Context
 description: 
 published: true
-date: 2022-01-17T16:29:22.672Z
+date: 2022-01-17T16:30:09.293Z
 tags: 
 editor: markdown
 dateCreated: 2021-11-12T15:31:13.657Z
 ---
 
-> *Section under construction. Sources are missing.*
-{.is-warning}
+# Context
 
-## Context
-
-### Public clouds and open source software
+## Public clouds and open source software
 
 Public clouds provide on-demand computing resources over the Internet. The largest are called hyperscalers.
 
@@ -35,7 +32,7 @@ These providers also add their own custom software to the core engine that prope
 
 *Isn't there an equivalent to these custom building blocks available for everyone to reuse?*
 
-#### The rise of robust general-purpose hypervisors
+## The rise of robust general-purpose hypervisors
 
 Rust-vmm (or Rust-Virtual Machine Monitor) is an ongoing effort among software and hardware companies, including some hyperscalers, to share more of their codebase. Rust-vmm provides a platform to share reusable virtualization-related code by means of Rust-crates [^7].
 
