@@ -2,7 +2,7 @@
 title: Linux family
 description: 
 published: true
-date: 2022-01-17T14:20:16.836Z
+date: 2022-01-17T15:21:00.336Z
 tags: 
 editor: markdown
 dateCreated: 2021-11-12T15:27:40.366Z
@@ -14,7 +14,7 @@ dateCreated: 2021-11-12T15:27:40.366Z
 
 ## Deployment using a hosted kickstart file
 
-* The following command will deploy a virtual machine with a stripped-down GNOME desktop environment. Adjust the settings according to your needs.
+* The following command will create a virtual machine with a 10G virtual disk and deploy an RPM-based operating system with a stripped-down GNOME desktop environment inside. Most settings can be modified after the installation.
 
 > Please verify the content of [the kickstart script](https://raw.githubusercontent.com/PhyllomeOS/phyllomeos/main/dishes/virtual-desktop.cfg) used to automate the installation. You may replace the kickstart script by a kickstart script of your choice.
 {.is-info}
@@ -197,3 +197,5 @@ virt-install \
 ```
 
 ---
+
+***[Go to parent page](/gofurther)***
