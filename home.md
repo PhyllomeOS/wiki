@@ -2,7 +2,7 @@
 title: Homepage
 description: 
 published: true
-date: 2022-01-17T14:10:40.586Z
+date: 2022-01-17T14:16:34.588Z
 tags: 
 editor: markdown
 dateCreated: 2021-06-19T09:29:20.593Z
@@ -24,7 +24,7 @@ dateCreated: 2021-06-19T09:29:20.593Z
 > This is the **alpha version** of this wiki. There will be mistakes. Contributions are welcome using [Git](https://github.com/PhyllomeOS/wiki). Contributions will be possible through the web interface at a later date.
 > {.is-warning}
 
-## Deploy
+### Deploy
 
 *This section is meant to help users prepare their computers to host Phyllome OS, pick the version that will suit their needs, understand Phyllome OS' limitations, and install it.*
 
@@ -36,26 +36,27 @@ dateCreated: 2021-06-19T09:29:20.593Z
   * [Install from a USB flash drive](/deploy/install) (*default method*)
 	* ...and [**more**](https://wiki.phyllo.me/en/deploy)
 
-## Get started
+### Get started
 
 *This section is meant to introduce uses of Phyllome OS in a general way.*
 
 * [Use it as a live system](/getstarted/live) (*to test it*)
 * [Use it as an installed system](/getstarted/disk) (*for daily use*)
 
-## Go further
+### Go further
 
-### Tasks related to the guest OS
+#### Guest OS
 
-*Although Phyllome OS thrives to pick good defaults that will work for many guest systems, further optimizations may be needed.* 
+*Although Phyllome OS thrives to pick good defaults that will work for many guest operating systems, further optimizations may be needed depending on the system you wish to use.* 
 
 * [Install a Linux guest](/gofurther/install-guest) system using an ISO file
+* [Unattended deployment of RPM-based guests](/gofurther/virt-install) using a kickstart file
 * [Install a Windows guest](/gofurther/install-windows-guest) system using an ISO file
 * ...and [**more**](https://wiki.phyllo.me/en/gofurther)
 
 *This section is meant to introduce the execution of particular taks on Phyllome OS. Some of these tasks will be rendered obsolete with newer Phyllome OS versions.*
 
-### Tasks related to Phyllome OS
+#### Around Phyllome OS
 
 * [Perform a few checks](/gofurther/checks) on Phyllome OS
 * [Encrypt](/gofurther/encrypt) virtual disk images using filesystem-level encryption
@@ -64,8 +65,7 @@ dateCreated: 2021-06-19T09:29:20.593Z
 
 ## On KVM Virtualization
 
-*In this section, the focus is on KVM virtualization and its associated tools, including QEMU, the Linux kernel, libvirt, etc., mostly in the context of Phyllome OS.* 
-
+*In this section, the focus is on KVM virtualization and its associated tools, including QEMU, the Linux kernel, `libvirt`, etc., mostly in the context of Phyllome OS.*
 
 ### Hardware
 
