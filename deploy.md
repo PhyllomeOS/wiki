@@ -2,7 +2,7 @@
 title: On some ways to deploy Phyllome OS
 description: 
 published: true
-date: 2022-01-17T19:02:21.217Z
+date: 2022-01-17T19:49:46.418Z
 tags: 
 editor: markdown
 dateCreated: 2021-11-13T11:19:53.459Z
@@ -10,15 +10,14 @@ dateCreated: 2021-11-13T11:19:53.459Z
 
 # Deployments
 
-*The section is meant to help users prepare their computer to host Phyllome OS, to pick the right version that will suit their needs, to understand its limitations, and to install it.*
+*This section is meant to help users install Phyllome OS*
 
-* **Choose**
-	* [Is Phyllome OS right for you?](/deploy/rightforyou)
-* **Install**
-  * [Prepare](/deploy/prepare)
-  * [Create an installation medium](/deploy/medium)
-  * [Install from a USB flash drive](/deploy/install) 
-  * [Deployment in a virtual machine](/deploy/vm)
-  * [From source](/deploy/source)
+* [Is Phyllome OS right for you?](/deploy/rightforyou)
+* [Prepare your computer](/deploy/prepare)
+* [Create an installation medium](/deploy/medium)
+* [Install from a USB flash drive](/deploy/install) (*default method*)
+* [Deployment in a virtual machine](/deploy/vm)
+* [From source](/deploy/source)
+
 --- 
 *Already have a working medium or installation? Go to the [Get started section](/getstarted)*
