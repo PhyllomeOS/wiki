@@ -2,7 +2,7 @@
 title: Infrastructure
 description: 
 published: true
-date: 2021-11-14T18:44:52.262Z
+date: 2022-01-17T11:08:47.578Z
 tags: 
 editor: markdown
 dateCreated: 2021-11-13T12:10:04.658Z
@@ -26,7 +26,9 @@ OpenLDAP is made through so you can access most applications using a single acco
 
 Alas, there is no SSO, so you will have to login to each application at first.
 
-## Website
+The following application are hosted on this PaaS
+
+### Website
 
 * **Description**: [Grav](https://getgrav.org/) is used as a Content Management System (CMS) 
 * **Location**: https://phyllo.me
@@ -35,36 +37,36 @@ Alas, there is no SSO, so you will have to login to each application at first.
 
 Learn about Grav by checking out the dedicated [Learn Grav](http://learn.getgrav.org) site.
 
-## Collaborative writing
+### Collaborative writing
 
 * **Description**: [HedgeDoc](https://hedgedoc.org/) is used for collaborative writing 
 * **Location**: https://docs.phyllo.me
 * **Maintainer**: lukas@phyllo.me
 * **Access**: Core team only
 
-## File hosting
+### File hosting
 
 * **Description**: [Nextcloud](https://nextcloud.com/) is used for hosting files 
 * **Location**: https://files.phyllo.me/
 * **Maintainer**: lukas@phyllo.me
 * **Access**: Core team only
 
-### Users
+#### Users
 
-#### Webdav access
+##### Webdav access
 
 Replace `admin` by your username
 Webdav access : https://files.phyllo.me/remote.php/dav/files/admin/
 
-### Admininstration
+#### Admininstration
 
-#### Enabled apps
+##### Enabled apps
 
 Apps that were actively enabled post-installation:
 
 * Default encryption module
 
-#### Disabled apps
+##### Disabled apps
 
 Apps that were actively disabled post-installation:
 
@@ -92,28 +94,28 @@ Apps that were actively disabled post-installation:
 * Notifications
 * Photos
 
-## Git
+### Git
 
 * **Description**: [Gitea](https://gitea.io/en-us/) is used as a backup for git repositories stored on Git 
 * **Location**: https://git.phyllo.me
 * **Maintainer**: lukas@phyllo.me
 * **Access**: Core team only
 
-## Issue tracking
+### Issue tracking
 
 * **Description**: [Wekan](https://wekan.github.io/) is used for issue tracking
 * **Location**: https://kanboard.phyllo.me/
 * **Maintainer**: lukas@phyllo.me
 * **Access**: Core team only
 
-## Mail
+### Mail
 
 * **Description**: [rainloop](https://www.rainloop.net/) and the cloudron internal email server are used to provide email mailboxes for users
 * **Location**: https://mail.phyllo.me/
 * **Maintainer**: lukas@phyllo.me
 * **Access**: Core team only
 
-## Wiki
+### Wiki
 
 * **Description** : [Wiki.js](https://js.wiki/) is used to power the wiki 
 * **Location** : https://wiki.phyllo.me
