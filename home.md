@@ -2,7 +2,7 @@
 title: Homepage
 description: 
 published: true
-date: 2022-01-12T18:12:11.611Z
+date: 2022-01-17T10:52:59.282Z
 tags: 
 editor: markdown
 dateCreated: 2021-06-19T09:29:20.593Z
@@ -19,7 +19,7 @@ dateCreated: 2021-06-19T09:29:20.593Z
 > If you would rather avoid JavaScript altogether, or wish to download the content of this wiki locally, feel free to clone [this repository](https://github.com/PhyllomeOS/wiki).
 {.is-info}
 
-> This is the **alpha version** of this wiki. There will be a lot of mistakes. Contributions are welcome using [Git](https://github.com/PhyllomeOS/wiki). Later on, contributions will be opened through the web interface.
+> This is the **alpha version** of this wiki. There will be a lot of mistakes. Contributions are welcome using [Git](https://github.com/PhyllomeOS/wiki). Contributions will be possible through the web interface at a later date.
 > {.is-warning}
 
 ## Deploy
