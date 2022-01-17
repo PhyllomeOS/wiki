@@ -2,7 +2,7 @@
 title: Homepage
 description: 
 published: true
-date: 2022-01-17T15:34:33.013Z
+date: 2022-01-17T15:42:48.488Z
 tags: 
 editor: markdown
 dateCreated: 2021-06-19T09:29:20.593Z
@@ -14,9 +14,11 @@ dateCreated: 2021-06-19T09:29:20.593Z
 
 *In this wiki, you will find guides about how to install, use and hack Phyllome OS, as well as more general information about open-source virtualization and the project behind this specialized OS.*
 
-***What is Phyllome OS?** [Phyllome OS](https://phyllo.me/) is an operating system that makes it easier to run various guest systems locally using [off-the-shelf hardware](https://wiki.phyllo.me/deploy/prepare). If you want to learn more about it, its goal and the context around it, have a look at the [white-paper](https://files.phyllo.me/s/oYwfxYpZcbppwr6).*
+*What is Phyllome OS? [Phyllome OS](https://phyllo.me/) is an operating system that makes it easier to run various guest systems locally using [off-the-shelf hardware](https://wiki.phyllo.me/deploy/prepare). If you want to learn more about it, its goal and the context around it, have a look at the [white-paper](https://files.phyllo.me/s/oYwfxYpZcbppwr6).*
 
----
+> *Phyllome refers to the "foliar part of a plant; any organ homologous with a leaf, or [any organ] produced by metamorphosis of a leaf"* [^1]
+
+[^1]: https://en.wiktionary.org/wiki/phyllome
 
 > If you would rather avoid JavaScript altogether, or wish to download the content of this wiki locally, feel free to clone [this repository](https://github.com/PhyllomeOS/wiki).
 {.is-info}
