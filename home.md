@@ -2,7 +2,7 @@
 title: Homepage
 description: 
 published: true
-date: 2022-01-17T20:07:14.248Z
+date: 2022-01-17T20:16:27.994Z
 tags: 
 editor: markdown
 dateCreated: 2021-06-19T09:29:20.593Z
@@ -54,7 +54,7 @@ Phyllome[^1] OS is an operating system that makes it easier to run [various oper
 
 ### The host
 
-*This section is meant to introduce the execution of particular taks on Phyllome OS. Some of these tasks will be rendered obsolete with newer Phyllome OS versions.*
+*[This section](/gofurther#tasks_related_to_phyllome_os) illustrates how to execute certain tasks related to Phyllome OS*.
 
 * [Perform a few checks](/gofurther/checks) on Phyllome OS
 * [Encrypt](/gofurther/encrypt) virtual disk images using filesystem-level encryption
@@ -63,7 +63,7 @@ Phyllome[^1] OS is an operating system that makes it easier to run [various oper
 
 ## On KVM virtualization
 
-*In this section, the focus is on KVM virtualization and its associated tools, including QEMU, the Linux kernel, `libvirt`, etc., mostly in the context of Phyllome OS.*
+*[This section](/virt) provides information about the technologies used by Phyllome OS.*
 
 ### Guests
 
@@ -87,7 +87,7 @@ Phyllome[^1] OS is an operating system that makes it easier to run [various oper
 
 ## About Phyllome OS
 
-*In [this section](/phyllomeos), the context around Phyllome OS is explained and its internals are described* 
+*[This section](/phyllomeos) describes the context around Phyllome OS and its design*. 
 
 * [Context](/phyllomeos/context)
 * [Purpose](/phyllomeos/purpose)
@@ -95,6 +95,8 @@ Phyllome[^1] OS is an operating system that makes it easier to run [various oper
 * ...and [**more**](https://wiki.phyllo.me/en/phyllomeos)
 
 ### About the project
+
+*[This section](/project) describes the project around Phyllome OS*.
 
 * [How to contribute](/project/contribute)
 * [How to join](/project/join)
