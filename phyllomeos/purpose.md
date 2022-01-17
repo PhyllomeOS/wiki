@@ -2,7 +2,7 @@
 title: Purpose
 description: 
 published: true
-date: 2022-01-17T15:46:19.776Z
+date: 2022-01-17T15:46:38.801Z
 tags: 
 editor: markdown
 dateCreated: 2021-11-12T15:31:30.659Z
@@ -10,10 +10,7 @@ dateCreated: 2021-11-12T15:31:30.659Z
 
 # Phyllome OS in a nutshell
 
-> *Why would one prefers to use an operating system running in a virtual machine?*
-
-The goal of Phyllome OS is to make it possible to run most operating systems locally on most 
-hardware.
+The goal of Phyllome OS is to make it possible to run most operating systems locally on most hardware.
 
 ## Problematic
 
