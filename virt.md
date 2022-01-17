@@ -2,7 +2,7 @@
 title: Virtualization for the rest of us
 description: 
 published: true
-date: 2022-01-17T19:12:03.778Z
+date: 2022-01-17T19:12:10.240Z
 tags: 
 editor: markdown
 dateCreated: 2021-11-13T12:08:53.048Z
@@ -10,7 +10,7 @@ dateCreated: 2021-11-13T12:08:53.048Z
 
 # On KVM virtualization
 
-*In this section, the focus is on KVM virtualization, and its associated tools, including `QEMU`, the Linux Kernel, `libvirt`, etc., mostly in the context of Phyllome OS.* 
+*In this section, the focus is on KVM virtualization, and its associated tools, including QEMU, the Linux Kernel, `libvirt`, etc., mostly in the context of Phyllome OS.* 
 
 ## Guests
 
