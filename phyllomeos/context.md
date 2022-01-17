@@ -2,7 +2,7 @@
 title: Context
 description: 
 published: true
-date: 2022-01-17T14:47:42.107Z
+date: 2022-01-17T14:55:20.910Z
 tags: 
 editor: markdown
 dateCreated: 2021-11-12T15:31:13.657Z
@@ -25,7 +25,7 @@ In particular, the Linux operating system and its Kernel-based Virtual Machine (
 These providers also add their own custom software to the core engine that propels their platform. Unfortunately, this custom software
 remains for internal use only.
 
-Isn't there an equivalent to these custom building blocks available for everyone to reuse ?
+Isn't there an equivalent to these custom building blocks available for everyone to reuse?
 
 #### The rise of robust general-purpose hypervisors
 
@@ -49,12 +49,12 @@ At least three key projects using Linux and KVM are also taking advantage of Rus
 
 | | crosvm | firecracker | Cloud Hypervisor |
 | :- | :-: | :-: | :-: |
-| QEMU | No | No | No |
-| KVM | *Upcoming* | No | No |
-| Desktop-friendly | Yes | No | No |
-| Support for non-Unix guests | No | No | Yes |
+| *QEMU* | No | No | No |
+| *KVM* | *Upcoming* | No | No |
+| *Desktop-friendly* | Yes | No | No |
+| *Support for non-Unix guests* | No | No | Yes |
 
-Until recently, any attempt to create a local-first, free and open-source operating system that could run atop affordable,virtualization-friendly hardware using basic building blocks similar to those used by major public clouds would rightfully be met
+Until recently, any attempt to create a local-first, free and open-source operating system that could run atop affordable, virtualization-friendly hardware using basic building blocks similar to those used by major public clouds would rightfully be met
 with skepticism.
 
 Thanks to the rust-vmm umbrella project, assembling such an operating system is now becoming a possibility.
@@ -80,4 +80,4 @@ The Phyllome Project aims to build a community around open source virtualization
 
 ---
 
-*[Go back to the main page](https://wiki.phyllo.me/)*
+*[**Go back to parent page**](/phyllomeos)*
