@@ -2,7 +2,7 @@
 title: Homepage
 description: 
 published: true
-date: 2022-01-17T14:20:49.673Z
+date: 2022-01-17T14:22:18.212Z
 tags: 
 editor: markdown
 dateCreated: 2021-06-19T09:29:20.593Z
@@ -87,9 +87,9 @@ dateCreated: 2021-06-19T09:29:20.593Z
 * [Lexicon](/virt/lexicon) 
 * ...and [**more**](https://wiki.phyllo.me/en/virt)
 
-## About Phyllome OS 
+## About Phyllome OS
 
-*In this section, the context around Phyllome OS is explained and its internals are described* 
+*In [this section](/phyllomeos), the context around Phyllome OS is explained and its internals are described* 
 
 * [Context](/phyllomeos/context)
 * [Purpose](/phyllomeos/purpose)
