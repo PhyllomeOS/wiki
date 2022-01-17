@@ -2,7 +2,7 @@
 title: Infrastructure
 description: 
 published: true
-date: 2022-01-17T11:08:47.578Z
+date: 2022-01-17T14:45:35.300Z
 tags: 
 editor: markdown
 dateCreated: 2021-11-13T12:10:04.658Z
@@ -10,9 +10,10 @@ dateCreated: 2021-11-13T12:10:04.658Z
 
 # Current infrastructure
 
-## Dedicated server
+## Maintenance window
 
-Most services are self-hosted in a virtual machine, on a Fedora Server host.
+> Every first Tuesday of the month, between 20h00 to 21h00 (CEST Time), a maintenance windows is scheduled. During that time, any self-hosted services listed below may become unaccessible.
+{.is-warning}
 
 ## Platform-as-a-Service (PaaS)
 
@@ -20,13 +21,13 @@ Most services are self-hosted in a virtual machine, on a Fedora Server host.
 * **Location**: https://my.phyllo.me
 * **Maintainer** : lukas@phyllo.me
 
-Cloudron.io is a PaaS used to deploy and keep web applications up-do-date. It is our beloved single point-of-failure.
+Most services are self-hosted in an Ubuntu 20.04 virtual machine, on a Fedora Server 35 host.
 
-OpenLDAP is made through so you can access most applications using a single account.
+Cloudron.io is a PaaS used to deploy and keep the web applications listed below up-do-date. It is our beloved single point-of-failure.
 
-Alas, there is no SSO, so you will have to login to each application at first.
+OpenLDAP is being used, so you can access most applications using a single account. Alas, there is no SSO, so the first time, you will have to log in into each application.
 
-The following application are hosted on this PaaS
+## Web applications
 
 ### Website
 
@@ -58,7 +59,7 @@ Learn about Grav by checking out the dedicated [Learn Grav](http://learn.getgrav
 Replace `admin` by your username
 Webdav access : https://files.phyllo.me/remote.php/dav/files/admin/
 
-#### Admininstration
+#### Administration
 
 ##### Enabled apps
 
@@ -78,7 +79,7 @@ Apps that were actively disabled post-installation:
 * Dashboard
 * External storage support
 * Monitoring
-* Nextcloud annoucements
+* Nextcloud announcements
 * Recommendations
 * Talk
 * Text
