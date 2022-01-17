@@ -2,7 +2,7 @@
 title: Homepage
 description: 
 published: true
-date: 2022-01-17T19:07:00.840Z
+date: 2022-01-17T19:12:15.302Z
 tags: 
 editor: markdown
 dateCreated: 2021-06-19T09:29:20.593Z
@@ -56,9 +56,9 @@ dateCreated: 2021-06-19T09:29:20.593Z
 * [Install a Windows guest](/gofurther/install-windows-guest) system using an ISO file
 * ...and [**more**](https://wiki.phyllo.me/en/gofurther)
 
-*This section is meant to introduce the execution of particular taks on Phyllome OS. Some of these tasks will be rendered obsolete with newer Phyllome OS versions.*
+#### The host
 
-#### Around Phyllome OS
+*This section is meant to introduce the execution of particular taks on Phyllome OS. Some of these tasks will be rendered obsolete with newer Phyllome OS versions.*
 
 * [Perform a few checks](/gofurther/checks) on Phyllome OS
 * [Encrypt](/gofurther/encrypt) virtual disk images using filesystem-level encryption
@@ -69,19 +69,19 @@ dateCreated: 2021-06-19T09:29:20.593Z
 
 *In this section, the focus is on KVM virtualization and its associated tools, including QEMU, the Linux kernel, `libvirt`, etc., mostly in the context of Phyllome OS.*
 
-### Hardware
+### Guests
 
-* [Paravirtualized hardware](/virt/virtio) (`virtio`)
+* [Guests support matrix](/virt/guests)
 * ...and [**more**](https://wiki.phyllo.me/en/virt)
 
-### Host
+### The host
 
 * [Linux Kernel modules](/virt/kernel-modules) related to virtualization
 * ...and [**more**](https://wiki.phyllo.me/en/virt)
 
-### Guests
+### Virtual hardware
 
-* [Guests support matrix](/virt/guests)
+* [Paravirtualized hardware](/virt/virtio) (`virtio`)
 * ...and [**more**](https://wiki.phyllo.me/en/virt)
 
 ### Resources
