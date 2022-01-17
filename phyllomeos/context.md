@@ -2,13 +2,13 @@
 title: Context
 description: 
 published: true
-date: 2021-11-12T15:31:13.657Z
+date: 2022-01-17T14:47:42.107Z
 tags: 
 editor: markdown
 dateCreated: 2021-11-12T15:31:13.657Z
 ---
 
-> Section under construction. Sources are missing.
+> *Section under construction. Sources are missing.*
 {.is-warning}
 
 ## Context
@@ -35,25 +35,24 @@ As of 2021, this project offers the closest open-source equivalent to the aforem
 
 At least three key projects using Linux and KVM are also taking advantage of Rust-vmm :
 
-* crosvm (2010 --)
+* **crosvm** (2010 --)
     * Crosvm means the Chrome OS Virtual Machine Monitor. It allows the virtualization of guest systems on devices running Chrome OS and Chromium OS, its open-source counterpart. It is the oldest project of its kind, upon which others are built or forked.
     * The ongoing Spectrum (2020) project is a promising attempt to built a secure desktop OS around Chromium OS, crosvm and the Nix declarative package management system.
 
-* firecracker (2018 --)
+* **firecracker** (2018 --)
     * Originally built for desktop systems, crosvm has also been reused as a foundation for firecracker, the serverless computing platform which powers AWS Lambda. This is a story not unlike that of KVM, which was originally built with desktop workloads in mind but later gained traction as a solution for other workloads.
 
-* Cloud Hypervisor (2019 --)
+* **Cloud Hypervisor** (2019 --)
     * Cloud Hypervisor may be considered as the spiritual successor to the now-defunct NEMU project. NEMU provided a stripped-down version of QEMU.
     * Contrary to crosvm and projects that rely on it, it is possible to run non-Linux virtual guest systems on Cloud Hypervisor, provided that they support UEFI. 
     * As of today, there is no desktop-oriented operating system intended to take advantage of Cloud Hypervisor.
 
-  ----------------------------- -------- ------------- ------------------
-                                crosvm   firecracker   Cloud Hypervisor
-  QEMU                          No       No            No
-  KVM                           Yes      Yes           Yes
-  Desktop-friendly              Yes      No            No
-  Support for non-Unix guests   No       No            Yes
-  ----------------------------- -------- ------------- ------------------
+| | crosvm | firecracker | Cloud Hypervisor |
+| :- | :-: | :-: | :-: |
+| QEMU | No | No | No |
+| KVM | *Upcoming* | No | No |
+| Desktop-friendly | Yes | No | No |
+| Support for non-Unix guests | No | No | Yes |
 
 Until recently, any attempt to create a local-first, free and open-source operating system that could run atop affordable,virtualization-friendly hardware using basic building blocks similar to those used by major public clouds would rightfully be met
 with skepticism.
@@ -78,3 +77,7 @@ As with popular existing operating systems, Phyllome OS is designed to be instal
 ### The Phyllome OS Project
 
 The Phyllome Project aims to build a community around open source virtualization and to make the development of Phyllome OS sustainable. The project relies on self-hosted open source software.
+
+---
+
+*[Go back to the main page](https://wiki.phyllo.me/)*
