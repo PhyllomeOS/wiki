@@ -2,7 +2,7 @@
 title: On some ways to deploy Phyllome OS
 description: 
 published: true
-date: 2022-01-17T19:49:46.418Z
+date: 2022-01-17T20:07:51.954Z
 tags: 
 editor: markdown
 dateCreated: 2021-11-13T11:19:53.459Z
@@ -10,7 +10,7 @@ dateCreated: 2021-11-13T11:19:53.459Z
 
 # Deployments
 
-*This section is meant to help users install Phyllome OS*
+*This section is meant to help users install Phyllome OS*.
 
 * [Is Phyllome OS right for you?](/deploy/rightforyou)
 * [Prepare your computer](/deploy/prepare)
