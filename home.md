@@ -2,7 +2,7 @@
 title: Homepage
 description: 
 published: true
-date: 2022-01-17T19:53:22.459Z
+date: 2022-01-17T19:59:17.760Z
 tags: 
 editor: markdown
 dateCreated: 2021-06-19T09:29:20.593Z
@@ -12,9 +12,9 @@ dateCreated: 2021-06-19T09:29:20.593Z
 
 `Welcome!`
 
-*In this wiki, you will find guides about [how to install](/deploy/install), [use](/getstarted/disk) and hack Phyllome OS, as well as more generic information on the underlying [technologies](/virt) that are being used, Phyllome OS [itself](/phyllomeos) and the surrounding [project](/project).*
+*In this wiki, you will find guides about [how to install](/deploy/install), [use](/getstarted/disk) and hack Phyllome OS, as well as more generic information on the underlying [technologies](/virt), Phyllome OS [itself](/phyllomeos) and the surrounding [project](/project).*
 
-Phyllome[^1] OS is an operating system that makes it easier to run [various guest operating systems](/gofurther) locally using [off-the-shelf hardware](/deploy/prepare).
+Phyllome[^1] OS is an operating system that makes it easier to run [various operating systems](/gofurther) locally using [off-the-shelf hardware](/deploy/prepare).
 
 [^1]: According to [the wiktionary](https://en.wiktionary.org/wiki/phyllome), Phyllome [refers](https://en.wiktionary.org/wiki/phyllome) to the "foliar part of a plant; any organ homologous with a leaf, or [any organ] produced by metamorphosis of a leaf" [^1]
 
@@ -26,7 +26,7 @@ Phyllome[^1] OS is an operating system that makes it easier to run [various gues
 
 ## Deploy
 
-*[This section](/deploy) is meant to help users install Phyllome OS*
+*[This section](/deploy) is meant to help users install Phyllome OS*.
 
 * [Is Phyllome OS right for you?](/deploy/rightforyou)
 * [Prepare your computer](/deploy/prepare)
@@ -36,7 +36,7 @@ Phyllome[^1] OS is an operating system that makes it easier to run [various gues
 
 ## Get started
 
-*This section is meant to introduce uses of Phyllome OS in a general way.*
+*[This section](/getstarted) is meant to introduce how to use Phyllome OS in a general way.*
 
 * [Use it as a live system](/getstarted/live) (*to test it*)
 * [Use it as an installed system](/getstarted/disk) (*for daily use*)
