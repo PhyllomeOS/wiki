@@ -2,7 +2,7 @@
 title: Homepage
 description: 
 published: true
-date: 2022-01-17T19:59:17.760Z
+date: 2022-01-17T20:07:14.248Z
 tags: 
 editor: markdown
 dateCreated: 2021-06-19T09:29:20.593Z
@@ -45,11 +45,11 @@ Phyllome[^1] OS is an operating system that makes it easier to run [various oper
 
 ### Guests
 
-*Although Phyllome OS thrives to pick good defaults that will work for many guest operating systems, further optimizations may be needed depending on the system you wish to use.* 
+*[This section](/gofurther) illustrates how to deploy supported guests and further optimize them.* 
 
-* [Install a Linux guest](/gofurther/install-guest) system using an ISO file
-* [Unattended deployment of a RPM-based guest](/gofurther/virt-install) using a kickstart file
-* [Install a Windows guest](/gofurther/install-windows-guest) system using an ISO file
+* [Use netboot.xyz](/gofurther/install-guest) to deploy a Linux guest
+* [Unattended deployment](/gofurther/virt-install) of a RPM-based guest using a kickstart file
+* [Install Windows](/gofurther/install-windows-guest) using an ISO file
 * ...and [**more**](https://wiki.phyllo.me/en/gofurther)
 
 ### The host
