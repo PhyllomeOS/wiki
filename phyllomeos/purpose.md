@@ -2,7 +2,7 @@
 title: Purpose
 description: 
 published: true
-date: 2022-01-17T15:50:44.996Z
+date: 2022-01-17T15:54:43.480Z
 tags: 
 editor: markdown
 dateCreated: 2021-11-12T15:31:30.659Z
@@ -32,7 +32,7 @@ Let’s wrap it up: the idea behind Phyllome OS is to rely on Linux to provide d
 
 [^2]: For instance, to provide storage block capacity, a developer of a specific operating system like Sculpt OS or ReactOS would only need to develop support for virtio-blk for its environment, and resort to Linux to interact with the hardware directly.
 
-Technically speaking, Phyllome OS is an operating system, a free and open source Linux  distribution, a Fedora Remix based on Fedora Server designed  to leverage hardware-assisted virtualization to run graphically-accelerated UNIX and non-UNIX-based operating systems locally, in a virtual machine, using off-the-shelf hardware and open source software.
+Technically speaking, Phyllome OS is an operating system, a free and open source Linux distribution, a Fedora Remix based on Fedora Server designed to leverage hardware-assisted virtualization to run graphically-accelerated UNIX and non-UNIX-based operating systems locally, in a virtual machine, using off-the-shelf hardware and open source software.
 
 
 ---
