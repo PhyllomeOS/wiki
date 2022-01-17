@@ -2,7 +2,7 @@
 title: Lexicon
 description: 
 published: true
-date: 2022-01-17T16:32:45.665Z
+date: 2022-01-17T20:30:53.069Z
 tags: 
 editor: markdown
 dateCreated: 2021-11-13T11:58:43.776Z
@@ -94,4 +94,4 @@ The expression "virtual machine" is often abbreviated VM. VMs are also often ref
 
 ---
 
-*[**Go back to parent page**](https://wiki.phyllo.me/phyllomeos)*
+*[**Go back to parent page**](/virt)*
