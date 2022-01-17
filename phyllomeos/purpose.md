@@ -2,38 +2,30 @@
 title: Purpose
 description: 
 published: true
-date: 2022-01-17T15:10:53.963Z
+date: 2022-01-17T15:46:19.776Z
 tags: 
 editor: markdown
 dateCreated: 2021-11-12T15:31:30.659Z
 ---
 
-## Purpose
+# Phyllome OS in a nutshell
 
 > *Why would one prefers to use an operating system running in a virtual machine?*
 
-There are muliple reasons one would want to rely on virtual machines. Let's list some advantages, but also some limitations.
+The goal of Phyllome OS is to make it possible to run most operating systems locally on most 
+hardware.
 
-### Advantages
+## Problematic
 
-A software-based/backed computer, or simply a virtual machine, has many advantages over a silicon-based computer:
+An operating system must have drivers to allow it to interact with hardware components and devices such as USB controllers or graphic cards. Each driver has to be specifically written to work with a particular operating system. To support running most operating systems on a specific piece of hardware, one would have to develop and maintain a set of drivers for each one those operating systems, an almost insurmountable task as there are dozen unique operating systems out there.
 
-* **Cost**: the cost of creating a virtual machine tends to zero. Virtual machines are made out of computer code, and it is basically free to copy or to duplicate them.
-* **Flexibility**: a software-backed computer, alongside its operating system, can be migrated to new physical hosts. In other words, when a user acquires a new physical computer, the entire computing environment may be copy/pasted to the new machine.
-* **Compatibility**: contrary to silicon-based computers, which tend to be optimized to work at most with only a handful operating systems, a virtual machine can be designed to work with most operating systems.
-* **Support**: Adding a layer of abstraction between the operating system and the virtualization-friendly hardware allows for support of newer operating systems, beyond what the physical hardware can support. Windows 11 requires a Trusted Platform Module (TPM) to be present. By using a virtual machine alongside a virtual TPM on unsupported hardware, one could still run Windows 11.
+Most of the time, users pick hardware that ships with their favorite operating system: most hardware is tied to a specific operating system. Therefore, user choice is severely restricted to only a certain set of computers [^1]. Isn’t there a shortcut available, to allow users to run their favorite operating system on most hardware, provided that the operating system license allows it?
 
-### Limitations
+[^1]: Popular and proprietary operating systems such as macOS Big Sur or Windows 11 are optimized to only run on a  limited set of computers. This state of affairs significantly limits users’ choice and may incite them to renew their hardware frequently, as operating systems providers may decide to drop support for older hardware models for any number of reasons.
 
-Alas, it also comes with limitations, including but not limited to :
+Virtualization provides a partial answer to this problem as it allows the abstraction of the underlying hardware, presenting generic software-based hardware to the operating system. In other words, by means of virtualization, a specific physical computer can be made to look generic to an operating system.
 
-* **Limited out-of-the box hardware support**: hardware-assisted virtualization is available on many computers but rarely activated by default and not always correctly implemented. Users remain a the mercy of good platform firmware and may have to explicitly activate hardware-assisted virtualization in the BIOS/UEFI. Hardware components are often not correctly isolated in IOMMU groups.
-    * Offering first-class support for only a handful of curated computers might provide an answer, at the price of compatibility. 
-    * When it comes to IOMMU groups, a workaround might have to be used for models that do not offer well-isolated IOMMU groups, a workaround that has security implications.
-
-* Reliance on devices or controllers passthrough to cover edge cases: virtual hardware do not cover all features a user may expect to have, including out of the box support for Bluetooth, wireless, or sound adapters. For those cases, USB or PCI Passthrough might be used.
-    * Again, offering first-class support for only a handful of curated computers might provide an answer, at the price of compatibility.
-    * New virtual hardware are expected, including paravirtualized sound cards, which will improve the situation.
+There are many types of virtualization3. Phyllome OS is primarily focused on paravirtualization, which assumes that an operating system running in a virtualized environment is aware of it. For any operating systems to run well in such an environment, one would only have to focus on developing and maintaining a set of generic drivers for virtual hardware, a task that is well under way for many popular operating systems, including Linux-based, Darwin-based or Windows NT-based operating systems
 
 ---
 
