@@ -2,7 +2,7 @@
 title: FAQ
 description: 
 published: true
-date: 2021-11-13T18:50:00.181Z
+date: 2022-01-17T20:38:43.331Z
 tags: 
 editor: markdown
 dateCreated: 2021-11-12T15:33:09.361Z
@@ -23,7 +23,7 @@ According to the [Wiktionnary](https://en.wiktionary.org/wiki/phyllome), phyllom
 
 ### When will it be released ?
 
-The alpha is targeted to ship in November 2021. 
+The alpha version has been [released](https://github.com/PhyllomeOS/phyllomeos/releases) in November 2021. 
 
 ### Who is behind it ?
 
