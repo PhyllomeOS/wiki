@@ -2,7 +2,7 @@
 title: Purpose
 description: 
 published: true
-date: 2022-01-17T15:54:43.480Z
+date: 2022-01-17T15:55:32.158Z
 tags: 
 editor: markdown
 dateCreated: 2021-11-12T15:31:30.659Z
@@ -37,4 +37,4 @@ Technically speaking, Phyllome OS is an operating system, a free and open source
 
 ---
 
-*[**Go back to parent page**](https://wiki.phyllo.me/)*
+*[**Go back to parent page**](https://wiki.phyllo.me/phyllomeos)*
