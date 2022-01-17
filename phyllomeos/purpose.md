@@ -2,7 +2,7 @@
 title: Purpose
 description: 
 published: true
-date: 2022-01-17T15:46:38.801Z
+date: 2022-01-17T15:47:54.785Z
 tags: 
 editor: markdown
 dateCreated: 2021-11-12T15:31:30.659Z
@@ -22,7 +22,7 @@ Most of the time, users pick hardware that ships with their favorite operating s
 
 Virtualization provides a partial answer to this problem as it allows the abstraction of the underlying hardware, presenting generic software-based hardware to the operating system. In other words, by means of virtualization, a specific physical computer can be made to look generic to an operating system.
 
-There are many types of virtualization3. Phyllome OS is primarily focused on paravirtualization, which assumes that an operating system running in a virtualized environment is aware of it. For any operating systems to run well in such an environment, one would only have to focus on developing and maintaining a set of generic drivers for virtual hardware, a task that is well under way for many popular operating systems, including Linux-based, Darwin-based or Windows NT-based operating systems
+There are many types of [virtualization](virt/lexicon#virtualization). Phyllome OS is primarily focused on paravirtualization, which assumes that an operating system running in a virtualized environment is aware of it. For any operating systems to run well in such an environment, one would only have to focus on developing and maintaining a set of generic drivers for virtual hardware, a task that is well under way for many popular operating systems, including Linux-based, Darwin-based or Windows NT-based operating systems
 
 ---
 
