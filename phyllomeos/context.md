@@ -2,7 +2,7 @@
 title: Context
 description: 
 published: true
-date: 2022-01-17T16:26:00.864Z
+date: 2022-01-17T16:29:22.672Z
 tags: 
 editor: markdown
 dateCreated: 2021-11-12T15:31:13.657Z
@@ -71,6 +71,8 @@ Until recently, any attempt to create a local-first, free and open-source operat
 Thanks to the rust-vmm umbrella project, assembling such an operating system is now becoming a possibility.
 
 Phyllome OS intends to tap into some modern software- and hardware-related innovations used in the cloud and make them available to a wider audience locally: to bring some of the cloud back home, so to speak.
+
+Read [Phyllome OS purpose](https://wiki.phyllo.me/phyllomeos/purpose) to find out how.
 
 ---
 
