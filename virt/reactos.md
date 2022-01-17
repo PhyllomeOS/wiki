@@ -2,7 +2,7 @@
 title: ReactOS reference
 description: 
 published: true
-date: 2022-01-14T11:05:08.632Z
+date: 2022-01-17T14:50:56.388Z
 tags: 
 editor: markdown
 dateCreated: 2022-01-06T21:53:31.225Z
@@ -12,7 +12,7 @@ dateCreated: 2022-01-06T21:53:31.225Z
 
 ## State of support
 
-> The current state of support for ReactOS in Phyllome OS is very limited
+> *Support for ReactOS in Phyllome OS is very limited.*
 {.is-warning}
 
 | **Hardware** | ReactOS 4.13 | ReactOS 4.14 |
