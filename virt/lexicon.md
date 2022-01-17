@@ -2,7 +2,7 @@
 title: Lexicon
 description: 
 published: true
-date: 2022-01-14T10:47:46.633Z
+date: 2022-01-17T16:32:45.665Z
 tags: 
 editor: markdown
 dateCreated: 2021-11-13T11:58:43.776Z
@@ -65,12 +65,12 @@ Devices are computer components that can be attached to machines. They can be cl
 | *Design* | Specific | Specific | Generic |
 | *Type* | Silicon-based  | Software-based | Software-based  |
 
-*   Physical
+*   **Physical**
 
     *   Physical components refer to devices that can be attached to a system. For instance, a dedicated physical graphics card attached to a physical system can be directly attached to a virtual machine, which then becomes responsible for managing it, a technique called *passthrough*. The PCI-SIG standards provide IOMMU-related specifications to allow a host operating system to not have a driver for a particular device and passthrough the device to the guest. The guest will have a device with nearly native performance, and use the standard vendor's drivers for the device.
     *   The PCI-SIG standards also provide a way to partition compatible devices using so-called Virtual Functions (VFs). In this case, the host manages the way a physical device is used by the guest. Both host and guest must have specific device drivers. It offers nearly native performance.
 
-*   Emulated
+*   **Emulated**
 
     *   Model-based
 
@@ -91,3 +91,7 @@ Under this configuration, more efficient communication methods are available bet
 A virtual machine is a recreation of a real, physical, silicon-based computer using software. It performs almost exactly as a physical computer, and can thus host an operating system.
 
 The expression "virtual machine" is often abbreviated VM. VMs are also often referred to as guests, in contrast to the hosts that host them.
+
+---
+
+*[**Go back to parent page**](https://wiki.phyllo.me/phyllomeos)*
