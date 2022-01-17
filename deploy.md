@@ -2,7 +2,7 @@
 title: On some ways to deploy Phyllome OS
 description: 
 published: true
-date: 2021-11-21T17:51:36.298Z
+date: 2022-01-17T19:02:21.217Z
 tags: 
 editor: markdown
 dateCreated: 2021-11-13T11:19:53.459Z
@@ -18,7 +18,7 @@ dateCreated: 2021-11-13T11:19:53.459Z
   * [Prepare](/deploy/prepare)
   * [Create an installation medium](/deploy/medium)
   * [Install from a USB flash drive](/deploy/install) 
-  * [Deploy in a virtual machine](/deploy/vm)
+  * [Deployment in a virtual machine](/deploy/vm)
   * [From source](/deploy/source)
 --- 
 *Already have a working medium or installation? Go to the [Get started section](/getstarted)*
