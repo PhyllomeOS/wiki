@@ -2,7 +2,7 @@
 title: Homepage
 description: 
 published: true
-date: 2022-01-17T19:12:15.302Z
+date: 2022-01-17T19:15:06.367Z
 tags: 
 editor: markdown
 dateCreated: 2021-06-19T09:29:20.593Z
@@ -30,24 +30,22 @@ dateCreated: 2021-06-19T09:29:20.593Z
 
 *This section is meant to help users prepare their computers to host Phyllome OS, pick the version that will suit their needs, understand Phyllome OS' limitations, and install it.*
 
-* **Choose**
-	* [Is Phyllome OS right for you?](/deploy/rightforyou)
-* **Install**
-  * [Prepare your computer](/deploy/prepare)
-  * [Create an installation medium](/deploy/medium)
-  * [Install from a USB flash drive](/deploy/install) (*default method*)
-	* ...and [**more**](https://wiki.phyllo.me/en/deploy)
+* [Is Phyllome OS right for you?](/deploy/rightforyou)
+* [Prepare your computer](/deploy/prepare)
+* [Create an installation medium](/deploy/medium)
+* [Install from a USB flash drive](/deploy/install) (*default method*)
+* ...and [**more**](https://wiki.phyllo.me/en/deploy)
 
-### Get started
+## Get started
 
 *This section is meant to introduce uses of Phyllome OS in a general way.*
 
 * [Use it as a live system](/getstarted/live) (*to test it*)
 * [Use it as an installed system](/getstarted/disk) (*for daily use*)
 
-### Go further
+## Go further
 
-#### Guest OS
+### Guests
 
 *Although Phyllome OS thrives to pick good defaults that will work for many guest operating systems, further optimizations may be needed depending on the system you wish to use.* 
 
@@ -56,7 +54,7 @@ dateCreated: 2021-06-19T09:29:20.593Z
 * [Install a Windows guest](/gofurther/install-windows-guest) system using an ISO file
 * ...and [**more**](https://wiki.phyllo.me/en/gofurther)
 
-#### The host
+### The host
 
 *This section is meant to introduce the execution of particular taks on Phyllome OS. Some of these tasks will be rendered obsolete with newer Phyllome OS versions.*
 
