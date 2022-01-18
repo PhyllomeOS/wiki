@@ -2,7 +2,7 @@
 title: Homepage
 description: 
 published: true
-date: 2022-01-17T20:19:52.186Z
+date: 2022-01-18T08:18:41.978Z
 tags: 
 editor: markdown
 dateCreated: 2021-06-19T09:29:20.593Z
@@ -10,7 +10,7 @@ dateCreated: 2021-06-19T09:29:20.593Z
 
 # The Phyllome OS wiki
 
-`Welcome``
+`Welcome!`
 
 *In this wiki, you will find guides about [how to install](/deploy/install), [use](/getstarted/disk) and hack Phyllome OS, as well as more generic information on the underlying [technologies](/virt), Phyllome OS [itself](/phyllomeos) and the surrounding [project](/project).*
 
