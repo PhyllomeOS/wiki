@@ -2,7 +2,7 @@
 title: Tasks
 description: 
 published: true
-date: 2021-11-26T16:14:24.015Z
+date: 2022-01-18T08:20:14.489Z
 tags: 
 editor: markdown
 dateCreated: 2021-11-13T11:40:46.114Z
@@ -44,3 +44,4 @@ dateCreated: 2021-11-13T11:40:46.114Z
 * [Encrypt](/gofurther/encrypt) virtual disk images using filesystem-level encryption
 * [Install and use the Cloud Hypervisor](/gofurther/cloud-hypervisor) to create a virtual machine
 * [Inception](/gofurther/inception) or install Phyllome OS inside Phyllome OS inside Phyllome OS
+* [Hack](/gofurther/hack) and develop Phyllome OS
