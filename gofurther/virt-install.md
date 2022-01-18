@@ -2,7 +2,7 @@
 title: Linux family
 description: 
 published: true
-date: 2022-01-17T15:21:00.336Z
+date: 2022-01-18T08:30:37.341Z
 tags: 
 editor: markdown
 dateCreated: 2021-11-12T15:27:40.366Z
@@ -18,6 +18,8 @@ dateCreated: 2021-11-12T15:27:40.366Z
 
 > Please verify the content of [the kickstart script](https://raw.githubusercontent.com/PhyllomeOS/phyllomeos/main/dishes/virtual-desktop.cfg) used to automate the installation. You may replace the kickstart script by a kickstart script of your choice.
 {.is-info}
+
+* Copy the command below, open you favorite terminal, paste the content, and press <kbd>enter</kbd>.  
 
 ```
 virt-install \
