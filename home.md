@@ -2,7 +2,7 @@
 title: Homepage
 description: 
 published: true
-date: 2022-01-18T08:40:49.290Z
+date: 2022-01-18T10:45:07.505Z
 tags: 
 editor: markdown
 dateCreated: 2021-06-19T09:29:20.593Z
@@ -61,7 +61,7 @@ Phyllome[^1] OS is an operating system that makes it easier to run [various oper
 * [Install and use the Cloud Hypervisor](/gofurther/cloud-hypervisor) to create a virtual machine
 * ...and [**more**](https://wiki.phyllo.me/en/gofurther)
 
-## On KVM virtualization
+## References
 
 *[This section](/virt) provides information about technologies used by Phyllome OS.*
 
