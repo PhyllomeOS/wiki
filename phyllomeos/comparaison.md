@@ -2,7 +2,7 @@
 title: Comparaison
 description: 
 published: true
-date: 2022-01-07T11:13:31.045Z
+date: 2022-01-18T09:59:01.609Z
 tags: 
 editor: markdown
 dateCreated: 2022-01-07T10:39:15.878Z
@@ -10,40 +10,48 @@ dateCreated: 2022-01-07T10:39:15.878Z
 
 # Comparaison
 
-## Choosing a desktop-oriented OS
+Phyllome OS draws inspiration from numerous other projects, including desktop-oriented systems such as [Qubes OS](https://www.qubes-os.org/), [Tails](https://tails.boum.org/), and [Fedora Silverblue](https://silverblue.fedoraproject.org/), as well as others specialized in running container workloads, such as [Fedora CoreOS](https://silverblue.fedoraproject.org/) and [RancherOS](https://rancher.com/).
 
-> This section might removed as it is confusing as of now. Phyllome OS is not really a replacement for bare-metal operating systems.
-{.is-warning}
+When it comes to virtualization-friendly, open-source, desktop-oriented operating systems, two projects stand out: Qubes OS and [Spectrum](https://spectrum-os.org/). How do they compare to Phyllome OS?
 
-Here is a table to help you pick a **desktop-oriented** operating system. 
+## Qubes OS
 
-How to read this table? For instance: *If you care most about virtualization and put security first, you would be better off picking [Qubes OS](https://www.qubes-os.org/) or the upcoming [Spectrum](https://spectrum-os.org/) instead of Phyllome OS.*
+Like Phyllome OS, Qubes OS is based on Fedora but relies on Xen, the other popular open-source hypervisor for Linux. 
 
-|  | Security | Usability | 
-|---|---|---| 
-| *Virtualization* | [Qubes OS](https://www.qubes-os.org/) or [Spectrum](https://spectrum-os.org/) | **Phyllome OS Desktop** | 
-| *Bare-metal* | [Sculpt](https://en.wikipedia.org/wiki/Genode#Sculpt) or [Fuchsia](https://en.wikipedia.org/wiki/Fuchsia_(operating_system)) | [Linux](https://en.wikipedia.org/wiki/List_of_Linux_distributions) or [BSD distro](https://en.wikipedia.org/wiki/List_of_BSD_operating_systems), [macOS](https://en.wikipedia.org/wiki/MacOS), [Windows](https://en.wikipedia.org/wiki/Microsoft_Windows) or [Chrome OS](https://en.wikipedia.org/wiki/Chrome_OS) | 
+Xen strongly isolates components of the hardware stack, including the USB and network controllers. By design, it works in parallel rather than alongside Linux, as KVM does. KVM’s more tight integration with the Linux Kernel can be considered an advantage or a disadvantage.
 
-> In general, the vast majority of users will stick to the bottom-right corner of the table, because that is the operating system that ships preinstalled together with their hardware.
-{.is-info}
+Out of security concerns, Qubes OS does not yet support 3D-accelerated virtual machines, even though its parent project Xen does support this functionality. Phyllome OS intends to support 3D acceleration inside virtual machines, even if it means increasing the attack surface.
 
-This table is not meant to be clear-cut, or definitive. 
+## Spectrum
 
-* For example, Phyllome OS is intended to be easy-to-use, but still isn't.
-* Spectrum, which appears to be based on Chromium OS, might well end up being easier to use.
-* Out of the box, Chrome OS [^1], or even Windows [^2], might be considered  more secure than most Linux desktop-oriented distributions [^3], at the price of greatly limiting user freedom and privacy, however. 
-* Due to their tight integration, some BSDs distributions might be considered more secure than some Linux distributions. * People might find Windows easier to use than, say, Ubuntu. 
-* Finally, just as Phyllome OS, Qubes OS is compatible with running Windows-based guest systems. In other words, using virtualization, a user might be able to access more usable operating systems, and in the case of Phyllome OS, one may even host Qubes OS inside Phyllome OS, for instance to test out Qubes OS.
-* Also note that macOS or Windows can also be used to host virtual machines, just as any Linux or BSDs distributions. 
+Just as with Qubes OS, Spectrum’s main focus is secure computing. Spectrum uses Nix, a declarative packet manager. It is built atop crosvm and thus doesn’t rely on QEMU, largely reducing the attack surface. Through a re-implementation of the virtio-wayland device, which is used in Chrome OS to securely run Linux apps alongside the main OS, Spectrum will eventually allow its guests’ virtual machines to have a GPU capable of efficiently accelerating 3D applications.
 
-[^1]: See for instance the paper [*Security of Google Chromebook* (PDF)](http://dhanus.mit.edu/docs/ChromeOSSecurity.pdf) by Katherine Fang, Deborah Hanus, Yuzhi Zheng. 
+By design, Spectrum won't support operating systems that don't rely on the Wayland protocol.
 
-[^2]: A common pain point for Linux security are desktop environments (DE), which have a limited user base scattered across many different DE: there is a lot of complexity due to adding desktop environments atop the Linux kernel and its associated tools. Simple bugs might still lurk in the codebase for a long time. See for instance [*Is the Linux desktop less secure than Windows 10: Or how super mario music can own your system* (PDF)](https://archive.fosdem.org/2017/schedule/event/linux_desktop_versus_windows10/attachments/slides/1730/export/events/attachments/linux_desktop_versus_windows10/slides/1730/fosdem_linux_desktop_security.pdf), by M.Hanno Böck (2017).
+|  | Qubes OS | Spectrum | Phyllome OS 1.0 | 
+| :- | :-: | :-: | 
+| *Emulator* | QEMU[^1] | crosvm | Cloud Hypervisor |
+| *Hypervisor* | Xen | KVM | KVM |
+| *Virtual chipset* | i440fx? / Q35? | ? | virt |
+| *Default filesystem* | Ext4? | Ext4? | F2F2 |
+| *Non-Linux guests support* | Yes | No | Yes |
+| Based on | Fedora | Chromium OS | Fedora CoreOS |
+| Desktop Environment | Xfce | Aura? | GNOME Shell/Headless|
+| Package management | RPM | Nix | RPM-ostree |
+| Rolling release | No | Yes? | Yes |
+| Live edition | No | No | Yes |
+| OS as the center of the UX | Yes | Yes | No |
+| Encryption | dm-crypt | dm-crypt | fscrypt |
+| Security-focused | yes | yes | no |
 
-[^3]: Take for instance the boot process, or before an operating system effectively takes control over the hardware. Major operating systems editors that are working directly with OEM integrators have a distinct advantage over editors that aren't: these major editors have almost unlimited resources, sometimes almost perfect control over hardware, and can therefore tame the underlying hardware, effectively controlling, measuring and attesting the entire boot process. To implement a user-backed root of trust on a particular hardware platform, one would need to take several extra measures, relying on something like [Heads](https://github.com/osresearch/heads) which, among other things, involves physically flashing a more open firmware to a motherboard, a complicated process. Fortunately, some hardware integrators like [Purism](https://puri.sm/) or [System76](https://system76.com/) are backing security measures straight into hardware platforms, while at the same time respecting user freedom. 
+[^1]: Since 2017, Xen, upon which Qubes OS relies, is also exploring the possibility to [avoid using QEMU](https://wiki.xenproject.org/wiki/Xen_Project_Software_Overview#Guest_Types) for guests using hardware-assisted virtualization. See the diagram on the “Guest Types” section:“Xen Project Software Official Overview.”.
 
-> **Still undecided?** You can give Phyllome OS a try, as a live system booting off from a USB thumb drive, without impacting the existing operating system on your machine.
+From a design perspective, Qubes OS and Spectrum are end-to-end operating systems, whereas Phyllome OS is only a wrapper around the user’s preferred operating system. Thanks to nested-virtualization, it could even be used to host those operating systems, but in this configuration, the attack surface would be significantly increased, and the performance would take a significant hit, especially for nested guests.
+
+In Phyllome OS, the main computing activity will happen inside the user’s virtual machine. In QubesOS, Dom0 (“domain zero”) is at the center of the user’s experience. 
+
+In summary, despite some shared characteristics, Phyllome OS is not meant to be a replacement for Qubes OS or Spectrum, but could become a test bed for these operating systems.
 
 ---
 
-*[Go back one level](/phyllomeos/)*
+*[**Go to parent level**](/phyllomeos/)*
