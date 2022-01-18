@@ -2,7 +2,7 @@
 title: Lexicon
 description: 
 published: true
-date: 2022-01-18T09:26:30.045Z
+date: 2022-01-18T15:27:13.558Z
 tags: 
 editor: markdown
 dateCreated: 2021-11-13T11:58:43.776Z
@@ -10,16 +10,16 @@ dateCreated: 2021-11-13T11:58:43.776Z
 
 # Lexicon
 
-**Table of Contents**:
+## Table of Contents
 
-1. [Device](/virt/lexicon#device)
-2. [Emulator](/virt/lexicon#emulator)
-3. [Hardware-assisted virtualization](/virt/lexicon#hardware-assisted-virtualization)
-4. [Hypervisor](/virt/lexicon#hypervisor)
-5. [Nested-virtualization](/virt/lexicon#nested-virtualization)
-6. [Paravirtualization](/virt/lexicon#paravirtualization)
-7. [Virtual machine](/virt/lexicon#virtual-machine)
-8. [Virtualization](/virt/lexicon#virtualization)
+1. [*Device*](/virt/lexicon#device)
+2. [*Emulator*](/virt/lexicon#emulator)
+3. [*Hardware-assisted virtualization*](/virt/lexicon#hardware-assisted-virtualization)
+4. [*Hypervisor*](/virt/lexicon#hypervisor)
+5. [*Nested-virtualization*](/virt/lexicon#nested-virtualization)
+6. [*Paravirtualization*](/virt/lexicon#paravirtualization)
+7. [*Virtual machine*](/virt/lexicon#virtual-machine)
+8. [*Virtualization*](/virt/lexicon#virtualization)
 
 ## Device
 
@@ -43,11 +43,11 @@ Devices are computer components that can be attached to machines. They can be cl
 
         *   Model-based emulated hardware are designed after real devices, but are made out of computer code, not silicon. The i440fx and Q35 chipsets[^5] are both instances of emulated hardware. This is the slowest (but most compatible) way to provide a device to a guest. An emulated GPU is not going to be fast enough in an emulated mode to do 3D rendering.
 
-[^5]: The Q35 chipset, contrary to i440fx, provides a PCI Express (PCIe) bus. Alas, the i440fx, despite its limitations to PCI-only, does  support passthrough of PCIe devices, as long as the driver follows suit. Thanks to Stefan Reiter for pointing that out.
-
     *   Paravirtual
 
         *   Paravirtual hardware, also known as paravirtualized Virtual I/O devices or simply virtio, are also made out of computer code. Contrary to emulated hardware, they function as a generic piece of software-based hardware which doesn't replicate a specific hardware component.
+
+[^5]: The Q35 chipset, contrary to i440fx, provides a PCI Express (PCIe) bus. Alas, the i440fx, despite its limitations to PCI-only, does  support passthrough of PCIe devices, as long as the driver follows suit. Thanks to Stefan Reiter for pointing that out.
 
 ## Emulator
 
