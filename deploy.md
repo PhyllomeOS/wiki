@@ -2,7 +2,7 @@
 title: On some ways to deploy Phyllome OS
 description: 
 published: true
-date: 2022-01-17T20:07:51.954Z
+date: 2022-01-18T08:24:04.359Z
 tags: 
 editor: markdown
 dateCreated: 2021-11-13T11:19:53.459Z
@@ -20,4 +20,4 @@ dateCreated: 2021-11-13T11:19:53.459Z
 * [From source](/deploy/source)
 
 --- 
-*Already have a working medium or installation? Go to the [Get started section](/getstarted)*
+*Already have a working medium or installation? Then go to the [Get started section](/getstarted)*
