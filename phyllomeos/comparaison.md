@@ -2,7 +2,7 @@
 title: Comparaison
 description: 
 published: true
-date: 2022-01-18T10:01:48.564Z
+date: 2022-01-18T11:00:26.497Z
 tags: 
 editor: markdown
 dateCreated: 2022-01-07T10:39:15.878Z
@@ -29,20 +29,21 @@ Just as with Qubes OS, Spectrum’s main focus is secure computing. Spectrum use
 By design, Spectrum won't support operating systems that don't rely on the Wayland protocol.
 
 |  | Qubes OS | Spectrum | Phyllome OS 1.0 | 
-| :- | :-: | :-: | 
+| :- | :-: | :-: | :-: |
 | *Emulator* | QEMU[^1] | crosvm | Cloud Hypervisor |
 | *Hypervisor* | Xen | KVM | KVM |
 | *Virtual chipset* | i440fx? / Q35? | ? | virt |
 | *Default filesystem* | Ext4? | Ext4? | F2F2 |
 | *Non-Linux guests support* | Yes | No | Yes |
-| Based on | Fedora | Chromium OS? | Fedora CoreOS |
-| Desktop Environment | Xfce | Aura? | GNOME Shell/Headless|
-| Package management | RPM | Nix | RPM-ostree |
-| Rolling release | No | Yes? | Yes |
-| Live edition | No | No | Yes |
-| OS as the center of the UX | Yes | Yes | No |
-| Security-focused | yes | yes | no |
-| Encryption | [dm-crypt](https://www.kernel.org/doc/html/latest/admin-guide/device-mapper/dm-crypt.html) | [dm-crypt](https://www.kernel.org/doc/html/latest/admin-guide/device-mapper/dm-crypt.html) | [fscrypt](https://www.kernel.org/doc/html/v4.18/filesystems/fscrypt.html) |
+| *Based on* | Fedora | Chromium OS? | Fedora CoreOS |
+| *Desktop Environment* | Xfce | Aura? | GNOME Shell/Headless|
+| *Package management* | RPM | Nix | RPM-ostree |
+| *Rolling release* | No | Yes? | Yes |
+| *Live edition* | No | No | Yes |
+| *OS as the center of the UX* | Yes | Yes | No |
+| *Portability of VMs* | No | No | Yes |
+| *Security-focused* | yes | yes | no |
+| *Encryption* | [dm-crypt](https://www.kernel.org/doc/html/latest/admin-guide/device-mapper/dm-crypt.html) | [dm-crypt](https://www.kernel.org/doc/html/latest/admin-guide/device-mapper/dm-crypt.html) | [fscrypt](https://www.kernel.org/doc/html/v4.18/filesystems/fscrypt.html) |
 
 
 [^1]: Since 2017, Xen, upon which Qubes OS relies, is also exploring the possibility to [avoid using QEMU](https://wiki.xenproject.org/wiki/Xen_Project_Software_Overview#Guest_Types) for guests using hardware-assisted virtualization. See the diagram on the “Guest Types” section:“Xen Project Software Official Overview.”.
