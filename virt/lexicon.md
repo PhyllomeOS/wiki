@@ -2,7 +2,7 @@
 title: Lexicon
 description: 
 published: true
-date: 2022-01-18T09:26:08.539Z
+date: 2022-01-18T09:26:30.045Z
 tags: 
 editor: markdown
 dateCreated: 2021-11-13T11:58:43.776Z
@@ -10,7 +10,7 @@ dateCreated: 2021-11-13T11:58:43.776Z
 
 # Lexicon
 
-**Table of Contents**
+**Table of Contents**:
 
 1. [Device](/virt/lexicon#device)
 2. [Emulator](/virt/lexicon#emulator)
