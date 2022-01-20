@@ -2,7 +2,7 @@
 title: Virtualization for the rest of us
 description: 
 published: true
-date: 2022-01-20T10:58:33.334Z
+date: 2022-01-20T13:28:56.466Z
 tags: 
 editor: markdown
 dateCreated: 2021-11-13T12:08:53.048Z
@@ -36,7 +36,7 @@ dateCreated: 2021-11-13T12:08:53.048Z
 
 ## Physical hardware
 
-*[This sub-section](/virt/hardware) will include about the physical hardware.*
+*This sub-section will include about the physical hardware.*
 
 ## Resources
 
