@@ -2,7 +2,7 @@
 title: Tasks
 description: 
 published: true
-date: 2022-01-20T10:48:18.302Z
+date: 2022-01-20T10:49:14.401Z
 tags: 
 editor: markdown
 dateCreated: 2021-11-13T11:40:46.114Z
@@ -16,9 +16,8 @@ dateCreated: 2021-11-13T11:40:46.114Z
 
 ### Unix-like
 	
-* [Linux family](/gofurther/linux)
-	* [Install](/gofurther/install-guest) a Linux guest system using an ISO file
-	* [Automatically deploy](/gofurther/virt-install) an RPM-based guest system with `virt-install` and a kickstart file 
+* [Install](/gofurther/install-guest) a Linux guest system using an ISO file
+* [Automatically deploy](/gofurther/virt-install) an RPM-based guest system with `virt-install` and a kickstart file 
 
 ### Windows NT
 
