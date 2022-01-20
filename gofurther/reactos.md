@@ -2,7 +2,7 @@
 title: ReactOS
 description: 
 published: true
-date: 2022-01-20T10:52:16.681Z
+date: 2022-01-20T13:26:23.710Z
 tags: 
 editor: markdown
 dateCreated: 2021-11-13T11:52:33.257Z
@@ -17,8 +17,8 @@ In theory, it can run any software and work with any drivers developed for these
 In practice, it is still under heavy-development and may not work as expected.
 
 > **Phyllome OS support**
-Support for the more modern PCI-Express-enabled Q35 chipset, UEFI or other virtio-devices, which Phyllome OS favors, is still lacking, Performance of the display won't be optimal, resulting in screen tearing. More information can be found [here](/virt/guest/reactos).
-{.is-info}
+Support for the more modern PCI-Express-enabled Q35 chipset, UEFI or other virtio-devices, which Phyllome OS favors, is still lacking in ReactOS. Performance of the display won't be optimal, resulting in screen tearing. More information can be found [here](/virt/guest/reactos).
+{.is-warning}
 
 ## Installation
 
