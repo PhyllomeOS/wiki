@@ -2,13 +2,13 @@
 title: Kernel modules
 description: 
 published: true
-date: 2022-01-20T10:13:28.359Z
+date: 2022-01-20T10:21:12.359Z
 tags: 
 editor: markdown
 dateCreated: 2021-11-13T11:58:03.276Z
 ---
 
-> Section under construction.
+> *Section under construction*.
 {.is-warning}
 
 # List of kernel modules found on a hypervisor
