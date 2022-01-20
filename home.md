@@ -2,7 +2,7 @@
 title: Homepage
 description: 
 published: true
-date: 2022-01-20T09:59:20.556Z
+date: 2022-01-20T10:32:31.376Z
 tags: 
 editor: markdown
 dateCreated: 2021-06-19T09:29:20.593Z
@@ -43,7 +43,7 @@ Phyllome[^1] OS is an operating system that makes it easier to run [various oper
 
 ## Go further
 
-### Guests
+### Guest operating systems
 
 *[This section](/gofurther) illustrates how to deploy supported guests and further optimize them.* 
 
@@ -52,7 +52,7 @@ Phyllome[^1] OS is an operating system that makes it easier to run [various oper
 * [Install Windows](/gofurther/install-windows-guest) using an ISO file
 * ...and [**more**](https://wiki.phyllo.me/en/gofurther)
 
-### The host
+### The host operating system
 
 *[This section](/gofurther#tasks_related_to_phyllome_os) illustrates how to execute certain tasks related to Phyllome OS.*
 
@@ -65,29 +65,11 @@ Phyllome[^1] OS is an operating system that makes it easier to run [various oper
 
 *[This section](/virt) provides information about technologies used by Phyllome OS.*
 
-### Guest operating systems
-
-* [Guest support](/virt/guests)
-* ...and [**more**](https://wiki.phyllo.me/en/virt)
-
-### The host operating system
-
-* [Linux Kernel modules](/virt/kernel-modules) related to virtualization
-* ...and [**more**](https://wiki.phyllo.me/en/virt)
-
-### Virtual hardware
-
-* [Paravirtualized hardware](/virt/virtio) (`virtio`)
-* ...and [**more**](https://wiki.phyllo.me/en/virt)
-
-### Bare-metal hardware
-
-* ...and [**more**](https://wiki.phyllo.me/en/virt)
-
-### Resources
-
+* [Guest support](/virt/guest)
+* [Linux Kernel modules](/virt/host/modules) related to virtualization
+* [Paravirtualized hardware](/virt/vm/virtio) (`virtio`)
 * [Lexicon](/virt/lexicon) 
-* ...and [**more**](https://wiki.phyllo.me/en/virt)
+* ...and [**more**](/virt)
 
 ## About Phyllome OS
 
