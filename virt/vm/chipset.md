@@ -2,7 +2,7 @@
 title: Chipset
 description: 
 published: true
-date: 2022-01-12T13:43:46.399Z
+date: 2022-01-20T13:27:40.164Z
 tags: 
 editor: markdown
 dateCreated: 2021-11-13T11:56:47.463Z
@@ -26,7 +26,7 @@ dateCreated: 2021-11-13T11:56:47.463Z
 | *TPM Support* | No | **Yes** | ? |
 | *PCI-Express Bus* | No | **Yes** | **Yes** |
 | *PCI Bus* | **Yes** | No | No |
-| Virtual Function I/O | No | **Yes** | **Yes** |
+| *Virtual Function I/O* | No | **Yes** | **Yes** |
 
 ## Dedicated page (upcoming)
 
