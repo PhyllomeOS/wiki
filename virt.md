@@ -2,7 +2,7 @@
 title: Virtualization for the rest of us
 description: 
 published: true
-date: 2022-01-17T20:22:45.845Z
+date: 2022-01-20T09:46:50.761Z
 tags: 
 editor: markdown
 dateCreated: 2021-11-13T12:08:53.048Z
@@ -16,7 +16,7 @@ dateCreated: 2021-11-13T12:08:53.048Z
 
 *This idea of this section is to provide a reference for guest operating systems used in virtual machines*
 
-* [Guests support matrix](/virt/guests)
+* [Guests support matrix](/virt/guest)
 
 ### Unix-based
 
