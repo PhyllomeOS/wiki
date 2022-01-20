@@ -2,7 +2,7 @@
 title: Design
 description: 
 published: true
-date: 2022-01-18T10:28:26.221Z
+date: 2022-01-20T11:16:54.755Z
 tags: 
 editor: markdown
 dateCreated: 2022-01-18T10:28:26.221Z
@@ -31,3 +31,7 @@ dateCreated: 2022-01-18T10:28:26.221Z
   
 * **Be compatible with proprietary operating systems**
 	* hyllome OS strongly favors virtual machines running free software and will support running Linux systems natively, with the widest number of features and virtual devices. Alas, on the desktop, the vast majority of users still rely on proprietary operating systems. Phyllome OS will do its best to take into account the needs of those users too, and to offer a good experience with virtualization.
+  
+---
+
+*[**Go to parent page**](/phyllomeos/)*
