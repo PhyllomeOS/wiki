@@ -2,7 +2,7 @@
 title: Guests support
 description: 
 published: true
-date: 2022-01-20T12:07:35.342Z
+date: 2022-01-20T12:09:22.138Z
 tags: 
 editor: markdown
 dateCreated: 2022-01-12T14:25:25.960Z
@@ -35,7 +35,7 @@ The UNIX family is by far the most prolific family of all.
 ### Windows-family
 
 * **Windows**
-	* Windows and ReactOS
+	* Windows and [ReactOS](/virt/guest/reactos)
 
 ### Independent
 
