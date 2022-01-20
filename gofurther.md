@@ -2,7 +2,7 @@
 title: Tasks
 description: 
 published: true
-date: 2022-01-20T10:58:41.106Z
+date: 2022-01-20T13:22:19.456Z
 tags: 
 editor: markdown
 dateCreated: 2021-11-13T11:40:46.114Z
@@ -21,7 +21,7 @@ dateCreated: 2021-11-13T11:40:46.114Z
 
 ### Windows NT
 
-* [ReactOS](/gofurther/reactos)
+* [Install ReactOS](/gofurther/reactos)
 
 ## Tasks related to Phyllome OS
 
