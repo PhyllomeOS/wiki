@@ -2,7 +2,7 @@
 title: Guests support
 description: 
 published: true
-date: 2022-01-20T12:09:22.138Z
+date: 2022-01-20T13:19:24.027Z
 tags: 
 editor: markdown
 dateCreated: 2022-01-12T14:25:25.960Z
@@ -20,12 +20,10 @@ As of today, without accounting for Linux distributions, there are dozens of pro
 
 ### UNIX-family
 
-The UNIX family is by far the most prolific family of all.
+When it comes to its longevity and number of variants, the UNIX family is by far the most prolific family of all.
 
 * **Linux**
-	* Debian, Fedora, etc.
-  * The Android Open-Source Project (AOSP)
-  * ChromiumOS
+	* Debian, Fedora, Android, Chromium OS, etc.
 * **BSD** 
 	* OpenBSD, FreeBSD, etc.
   * Darwin-based operating systems, such as macOS
@@ -41,7 +39,6 @@ The UNIX family is by far the most prolific family of all.
 
 * **SculptOS**
 * **FuschiaOS**
-
 
 ## Support matrix
 
