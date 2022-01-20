@@ -2,7 +2,7 @@
 title: Guests support
 description: 
 published: true
-date: 2022-01-15T12:59:45.229Z
+date: 2022-01-20T11:11:16.478Z
 tags: 
 editor: markdown
 dateCreated: 2022-01-12T14:25:25.960Z
@@ -33,4 +33,4 @@ dateCreated: 2022-01-12T14:25:25.960Z
 
 ---
 
-*[Go to the parent page](https://wiki.phyllo.me/e/en/virt/)*
+*[**Go to parent page**](/virt/)*
