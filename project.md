@@ -2,7 +2,7 @@
 title: Information about the project
 description: 
 published: true
-date: 2022-01-20T10:56:51.481Z
+date: 2022-01-20T11:01:02.053Z
 tags: 
 editor: markdown
 dateCreated: 2021-11-13T12:49:36.667Z
@@ -18,4 +18,4 @@ dateCreated: 2021-11-13T12:49:36.667Z
 
 ---
 
-*[**Go back to the main page**](/)*
+*[**Go back to homepage**](/)*
