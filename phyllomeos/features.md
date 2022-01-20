@@ -2,7 +2,7 @@
 title: Features
 description: 
 published: true
-date: 2022-01-20T10:33:40.572Z
+date: 2022-01-20T11:17:03.303Z
 tags: 
 editor: markdown
 dateCreated: 2022-01-18T10:44:15.279Z
@@ -29,3 +29,7 @@ Below are the targeted features for the stable version, also known as Phyllome O
 | *UEFI* | Yes |
 | *Secure Boot* | Yes |
 | *TPM* | Yes |
+
+---
+
+*[**Go to parent page**](/phyllomeos/)*
