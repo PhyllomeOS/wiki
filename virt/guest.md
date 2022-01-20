@@ -2,7 +2,7 @@
 title: Guests support
 description: 
 published: true
-date: 2022-01-20T11:42:37.903Z
+date: 2022-01-20T12:07:13.476Z
 tags: 
 editor: markdown
 dateCreated: 2022-01-12T14:25:25.960Z
@@ -12,14 +12,42 @@ dateCreated: 2022-01-12T14:25:25.960Z
 
 > *Phyllome OS 🤎 other operating systems. It is meant to be a cozy platform for almost any modern operating systems to thrive.*
 
-Although Phyllome OS would like to support as many operating systems as possible, due to limited resources and the intent to be forward compatible with the Cloud Hypervisor, it will mainly focus on modern, UEFI-compatible operating systems that are shipping with support for `virtio` devices.
+Although Phyllome OS would like to support as many operating systems as possible, due to limited resources and the intent to be forward compatible with the Cloud Hypervisor, it will mainly focus on modern, UEFI-compatible operating systems that are shipping with at least some support for `virtio` devices. If favors free and open-source software operating systems.
+
+## Category of operating systems
+
+As of today, without accounting for Linux distributions, there are dozens of production-ready operating systems. There are two families of operating systems that dominate this space, the Unix family and the Windows family. Everything else will be categorized as independent. 
+
+### UNIX-family
+
+The UNIX family is by far the most prolific family of all.
+
+* **Linux**
+	* Debian, Fedora, etc.
+  * The Android Open-Source Project (AOSP)
+  * ChromiumOS
+* **BSD** 
+	* OpenBSD, FreeBSD, etc.
+  * Darwin-based operating systems, such as macOS
+* **Solaris**
+	* OpenSolaris, Illumnos, etc.
+
+### Windows-family
+
+* **Windows**
+	* Windows and ReactOS
+
+### Independent
+
+* 
+
 
 ## Support matrix
 
 > *Support for guest systems differs widely. In general, free and open-source operating systems such as Linux distributions are better supported than proprietary operating systems*.
 {.is-info}
 
-* The table below only show support for the latest operating systems.
+* *The table below only show support for the latest operating systems.*
 
 | | Linux | Darwin | Windows |
 | :- | :-: | :-: | :-: |
