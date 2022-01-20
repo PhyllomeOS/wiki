@@ -2,7 +2,7 @@
 title: Virtualization for the rest of us
 description: 
 published: true
-date: 2022-01-20T10:28:19.734Z
+date: 2022-01-20T10:58:33.334Z
 tags: 
 editor: markdown
 dateCreated: 2021-11-13T12:08:53.048Z
@@ -47,4 +47,4 @@ dateCreated: 2021-11-13T12:08:53.048Z
 
 ---
 
-*[**Go back to parent page**](https://wiki.phyllo.me/)*
+*[**Go back to homepage**](/)*
