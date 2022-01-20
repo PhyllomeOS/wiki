@@ -2,7 +2,7 @@
 title: Virtualization for the rest of us
 description: 
 published: true
-date: 2022-01-20T09:46:50.761Z
+date: 2022-01-20T10:13:47.276Z
 tags: 
 editor: markdown
 dateCreated: 2021-11-13T12:08:53.048Z
@@ -12,32 +12,18 @@ dateCreated: 2021-11-13T12:08:53.048Z
 
 *In this section, the focus is on KVM virtualization, and its associated tools, including QEMU, the Linux Kernel, `libvirt`, etc., mostly in the context of Phyllome OS.* 
 
-## Guests
+## Guest operating systems
 
-*This idea of this section is to provide a reference for guest operating systems used in virtual machines*
+*[This section](/virt/guest) provides a reference for guest operating systems used in KVM-powered virtual machines, and their current support.*
 
-* [Guests support matrix](/virt/guest)
+* [ReactOS](/virt/guest/reactos)
+* ...and [**more**](/virt/guest)
 
-### Unix-based
+## The host operating system
 
-* [Linux family](/virt/linux)
-* [BSD family](/virt/bsd)
-* [OpenSolaris and derivatives](/virt/opensolaris)
-* [Darwin and derivatives](/virt/darwin)
+*[This section](/virt/host) provides a reference for the host operating system.*
 
-### Windows NT
-	
-* [Windows family](/virt/windows)
-* [ReactOS](/virt/reactos)
-
-### Independent
-
-* [Sculpt OS](/virt/sculpt-os)
-* [Fuchsia OS](/virt/fuchsia-os)
-
-## The host
-
-* [Linux Kernel modules](/virt/kernel-modules) related to virtualization
+* [Linux Kernel modules](/virt/host/modules) related to virtualization
 * [Virtualization-related paths](/virt/linux-paths) on Phyllome OS
 * [XML](/virt/xml) commented
 * [GPU virtualization](/virt/gpu)
@@ -55,10 +41,13 @@ dateCreated: 2021-11-13T12:08:53.048Z
   * [Display](/virt/display)
 * [Paravirtualized hardware](/virt/virtio) (`virtio`)
 
+### Bare-metal hardware
+
 ## Resources
 
 * [A very short history](/virt/history) of virtualization
-* [Lexicon](/virt/lexicon) 
+* [Lexicon](/virt/lexicon)
+* [Projects](/virt/projects)
 * [External resources](/virt/resources)
 
 ---
