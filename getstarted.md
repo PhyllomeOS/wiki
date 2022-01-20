@@ -2,7 +2,7 @@
 title: Get started
 description: 
 published: true
-date: 2021-11-21T13:52:26.901Z
+date: 2022-01-20T11:00:26.951Z
 tags: 
 editor: markdown
 dateCreated: 2021-11-13T11:37:12.103Z
@@ -17,6 +17,6 @@ dateCreated: 2021-11-13T11:37:12.103Z
 
 ---
 
-*If you haven't deploy Phyllome OS, please go to the [Deploy](/deploy) section.* 
+*If you haven't deploy Phyllome OS, please go to the [**Deploy**](/deploy) section.* 
 
-*If you already have a working system installed and would like to explore what to do next, please go to the [next section](/gofurther).*
+*If you already have a working system installed and would like to explore what to do next, please go to the [**Next section**](/gofurther).*
