@@ -2,7 +2,7 @@
 title: ReactOS reference
 description: 
 published: true
-date: 2022-01-18T15:23:09.134Z
+date: 2022-01-20T13:26:56.588Z
 tags: 
 editor: markdown
 dateCreated: 2022-01-06T21:53:31.225Z
@@ -17,8 +17,8 @@ dateCreated: 2022-01-06T21:53:31.225Z
 
 | **Hardware** | ReactOS 4.13 | ReactOS 4.14 |
 | :- | :-: | :-: |
-| *[Chipset](/virt/chipset)* | i440fx | i440fx |
-| *[Firmware](/virt/firmware)* | SeaBIOS [^1] | SeaBIOS |
+| *[Chipset](/virt/vm/chipset)* | i440fx | i440fx |
+| *Firmware* | SeaBIOS [^1] | SeaBIOS |
 | *virtio-gpu* | No | No |
 | *virtio-video* | No | No |
 | *virtio-snd* | No | No |
