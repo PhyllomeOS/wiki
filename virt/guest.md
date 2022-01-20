@@ -2,15 +2,19 @@
 title: Guests support
 description: 
 published: true
-date: 2022-01-20T11:11:16.478Z
+date: 2022-01-20T11:23:54.261Z
 tags: 
 editor: markdown
 dateCreated: 2022-01-12T14:25:25.960Z
 ---
 
-# General guests support matrix
+# Guest operating system
 
-> Support for guest systems differs widely. In general, free and open-source operating systems such as Linux distributions are better supported than proprietary operating systems.
+Phyllome OS 🤎 other operating systems. It is meant to be a cozy platform for almost any modern operating systems to thrive.
+
+## Support matrix
+
+> *Support for guest systems differs widely. In general, free and open-source operating systems such as Linux distributions are better supported than proprietary operating systems*.
 {.is-info}
 
 * The table bellow only show support for the latest operating systems.
@@ -30,6 +34,10 @@ dateCreated: 2022-01-12T14:25:25.960Z
 | *`virtio-tablet`* | **Yes** | No | **Yes** |
 
 [^1]: RHF stands for the Rust Hypervisor Firmware
+
+## Resource
+
+* [All operating systems](https://distrowatch.com/search.php?ostype=All&category=All&origin=All&basedon=All&notbasedon=None&desktop=All&architecture=All&package=All&rolling=All&isosize=All&netinstall=All&language=All&defaultinit=All&status=Active#simple) listed on Distrowatch
 
 ---
 
