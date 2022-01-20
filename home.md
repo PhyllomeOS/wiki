@@ -2,7 +2,7 @@
 title: Homepage
 description: 
 published: true
-date: 2022-01-20T09:50:41.815Z
+date: 2022-01-20T09:59:20.556Z
 tags: 
 editor: markdown
 dateCreated: 2021-06-19T09:29:20.593Z
@@ -65,12 +65,12 @@ Phyllome[^1] OS is an operating system that makes it easier to run [various oper
 
 *[This section](/virt) provides information about technologies used by Phyllome OS.*
 
-### Guests
+### Guest operating systems
 
-* [Guests support matrix](/virt/guests)
+* [Guest support](/virt/guests)
 * ...and [**more**](https://wiki.phyllo.me/en/virt)
 
-### The host
+### The host operating system
 
 * [Linux Kernel modules](/virt/kernel-modules) related to virtualization
 * ...and [**more**](https://wiki.phyllo.me/en/virt)
@@ -78,6 +78,10 @@ Phyllome[^1] OS is an operating system that makes it easier to run [various oper
 ### Virtual hardware
 
 * [Paravirtualized hardware](/virt/virtio) (`virtio`)
+* ...and [**more**](https://wiki.phyllo.me/en/virt)
+
+### Bare-metal hardware
+
 * ...and [**more**](https://wiki.phyllo.me/en/virt)
 
 ### Resources
