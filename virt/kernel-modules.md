@@ -2,7 +2,7 @@
 title: Kernel modules
 description: 
 published: true
-date: 2021-11-13T18:48:57.771Z
+date: 2022-01-20T10:13:28.359Z
 tags: 
 editor: markdown
 dateCreated: 2021-11-13T11:58:03.276Z
