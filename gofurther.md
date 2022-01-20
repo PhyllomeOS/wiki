@@ -2,7 +2,7 @@
 title: Tasks
 description: 
 published: true
-date: 2022-01-20T10:49:14.401Z
+date: 2022-01-20T10:51:45.145Z
 tags: 
 editor: markdown
 dateCreated: 2021-11-13T11:40:46.114Z
@@ -28,9 +28,5 @@ dateCreated: 2021-11-13T11:40:46.114Z
 *The section is meant to introduce how to execute particular tasks on Phyllome OS. Some of these tasks will be rendered obsolete with newer Phyllome OS versions.*
 
 * [Perform a few checks](/gofurther/checks) on Phyllome OS
-* [Migrate](/gofurther/migrate) an existing guest virtual machine to another Phyllome OS host
 * [Resize](/gofurther/resize) an existing virtual disk
-* [Encrypt](/gofurther/encrypt) virtual disk images using filesystem-level encryption
-* [Install and use the Cloud Hypervisor](/gofurther/cloud-hypervisor) to create a virtual machine
-* [Inception](/gofurther/inception) or install Phyllome OS inside Phyllome OS inside Phyllome OS
 * [Hack](/gofurther/hack) and develop Phyllome OS
