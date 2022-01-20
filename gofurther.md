@@ -2,7 +2,7 @@
 title: Tasks
 description: 
 published: true
-date: 2022-01-20T10:51:45.145Z
+date: 2022-01-20T10:58:41.106Z
 tags: 
 editor: markdown
 dateCreated: 2021-11-13T11:40:46.114Z
@@ -30,3 +30,7 @@ dateCreated: 2021-11-13T11:40:46.114Z
 * [Perform a few checks](/gofurther/checks) on Phyllome OS
 * [Resize](/gofurther/resize) an existing virtual disk
 * [Hack](/gofurther/hack) and develop Phyllome OS
+
+---
+
+*[**Go back to homepage**](/)*
