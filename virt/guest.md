@@ -2,7 +2,7 @@
 title: Guests support
 description: 
 published: true
-date: 2022-01-20T12:07:13.476Z
+date: 2022-01-20T12:07:35.342Z
 tags: 
 editor: markdown
 dateCreated: 2022-01-12T14:25:25.960Z
@@ -39,7 +39,8 @@ The UNIX family is by far the most prolific family of all.
 
 ### Independent
 
-* 
+* **SculptOS**
+* **FuschiaOS**
 
 
 ## Support matrix
