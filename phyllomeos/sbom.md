@@ -2,13 +2,13 @@
 title: Software bill of materials (SBOM)
 description: 
 published: true
-date: 2021-11-13T17:45:59.804Z
+date: 2022-01-20T13:31:23.632Z
 tags: 
 editor: markdown
 dateCreated: 2021-11-12T15:32:04.404Z
 ---
 
-> Section under construction.
+> *Section under construction*.
 {.is-warning}
 
 # List of software
