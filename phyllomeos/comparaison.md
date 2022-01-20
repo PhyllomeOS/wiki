@@ -2,7 +2,7 @@
 title: Comparaison
 description: 
 published: true
-date: 2022-01-18T11:00:26.497Z
+date: 2022-01-20T11:16:31.940Z
 tags: 
 editor: markdown
 dateCreated: 2022-01-07T10:39:15.878Z
@@ -56,4 +56,4 @@ In summary, despite some shared characteristics, Phyllome OS is not meant to be 
 
 ---
 
-*[**Go to parent level**](/phyllomeos/)*
+*[**Go to parent page**](/phyllomeos/)*
