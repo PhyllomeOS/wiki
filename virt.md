@@ -2,7 +2,7 @@
 title: Virtualization for the rest of us
 description: 
 published: true
-date: 2022-01-20T10:13:47.276Z
+date: 2022-01-20T10:16:49.810Z
 tags: 
 editor: markdown
 dateCreated: 2021-11-13T12:08:53.048Z
@@ -24,9 +24,8 @@ dateCreated: 2021-11-13T12:08:53.048Z
 *[This section](/virt/host) provides a reference for the host operating system.*
 
 * [Linux Kernel modules](/virt/host/modules) related to virtualization
-* [Virtualization-related paths](/virt/linux-paths) on Phyllome OS
-* [XML](/virt/xml) commented
-* [GPU virtualization](/virt/gpu)
+* [Virtualization-related paths](/virt/host/paths) on Phyllome OS
+* [XML](/virt/host/xml) commented
 
 ## Virtual hardware
 
