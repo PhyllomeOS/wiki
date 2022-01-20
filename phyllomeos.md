@@ -2,7 +2,7 @@
 title: Phyllome OS
 description: 
 published: true
-date: 2022-01-18T10:48:48.947Z
+date: 2022-01-20T10:56:37.679Z
 tags: 
 editor: markdown
 dateCreated: 2021-11-12T15:32:17.900Z
@@ -24,4 +24,4 @@ dateCreated: 2021-11-12T15:32:17.900Z
 
 ---
 
-*[Go back to the main page](https://wiki.phyllo.me/)*
+*[**Go back to the main page**](/)*
