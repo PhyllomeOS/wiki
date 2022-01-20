@@ -2,7 +2,7 @@
 title: Tasks
 description: 
 published: true
-date: 2022-01-18T08:20:14.489Z
+date: 2022-01-20T10:48:18.302Z
 tags: 
 editor: markdown
 dateCreated: 2021-11-13T11:40:46.114Z
@@ -19,20 +19,10 @@ dateCreated: 2021-11-13T11:40:46.114Z
 * [Linux family](/gofurther/linux)
 	* [Install](/gofurther/install-guest) a Linux guest system using an ISO file
 	* [Automatically deploy](/gofurther/virt-install) an RPM-based guest system with `virt-install` and a kickstart file 
-* [BSD family](/gofurther/bsd)
-* [OpenSolaris and derivatives](/gofurther/opensolaris)
-* [Darwin and derivatives](/gofurther/darwin)
 
 ### Windows NT
-	
-* [Windows family](/gofurther/windows)
-	* [Install](/gofurther/install-windows-guest) a Windows guest system using an ISO file
+
 * [ReactOS](/gofurther/reactos)
-
-### Independent
-
-* [Sculpt OS](/gofurther/sculpt-os)
-* [Fuchsia OS](/gofurther/fuchsia-os)
 
 ## Tasks related to Phyllome OS
 
