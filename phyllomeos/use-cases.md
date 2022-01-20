@@ -2,7 +2,7 @@
 title: Illustrations or what you may do with Phyllome OS
 description: 
 published: true
-date: 2022-01-18T10:47:49.580Z
+date: 2022-01-20T11:16:45.952Z
 tags: 
 editor: markdown
 dateCreated: 2021-11-11T19:07:41.722Z
@@ -21,3 +21,7 @@ dateCreated: 2021-11-11T19:07:41.722Z
 
 * **Go beyond what your physical hardware is capable of**
 	* A virtual display in a virtual machine can be set to a resolution that exceeds what the underling physical display is capable of, and such a virtual display may be accessible remotely, over the network. 
+
+---
+
+*[**Go to parent page**](/phyllomeos/)*
