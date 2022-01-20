@@ -2,7 +2,7 @@
 title: Homepage
 description: 
 published: true
-date: 2022-01-20T10:32:31.376Z
+date: 2022-01-20T10:55:19.291Z
 tags: 
 editor: markdown
 dateCreated: 2021-06-19T09:29:20.593Z
@@ -50,16 +50,15 @@ Phyllome[^1] OS is an operating system that makes it easier to run [various oper
 * [Use netboot.xyz](/gofurther/install-guest) to deploy a Linux guest
 * [Unattended deployment](/gofurther/virt-install) of a RPM-based guest using a kickstart file
 * [Install Windows](/gofurther/install-windows-guest) using an ISO file
-* ...and [**more**](https://wiki.phyllo.me/en/gofurther)
+* ...and [**more**](/gofurther)
 
 ### The host operating system
 
 *[This section](/gofurther#tasks_related_to_phyllome_os) illustrates how to execute certain tasks related to Phyllome OS.*
 
 * [Perform a few checks](/gofurther/checks) on Phyllome OS
-* [Encrypt](/gofurther/encrypt) virtual disk images using filesystem-level encryption
-* [Install and use the Cloud Hypervisor](/gofurther/cloud-hypervisor) to create a virtual machine
-* ...and [**more**](https://wiki.phyllo.me/en/gofurther)
+* [Resize an existing disk](/gofurther/resize)
+* ...and [**more**](/gofurther)
 
 ## References
 
