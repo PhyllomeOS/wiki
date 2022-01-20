@@ -2,13 +2,13 @@
 title: Resize an existing virtual disk
 description: 
 published: true
-date: 2021-11-13T17:49:11.922Z
+date: 2022-01-20T10:54:10.378Z
 tags: 
 editor: markdown
 dateCreated: 2021-11-13T11:41:29.087Z
 ---
 
-> Section under construction
+> *Section under construction*
 {.is-warning}
 
 # Resize a disk
