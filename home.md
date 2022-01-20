@@ -2,7 +2,7 @@
 title: Homepage
 description: 
 published: true
-date: 2022-01-18T10:45:07.505Z
+date: 2022-01-20T09:47:10.656Z
 tags: 
 editor: markdown
 dateCreated: 2021-06-19T09:29:20.593Z
@@ -67,7 +67,7 @@ Phyllome[^1] OS is an operating system that makes it easier to run [various oper
 
 ### Guests
 
-* [Guests support matrix](/virt/guests)
+* [Guests support matrix](/virt/guest)
 * ...and [**more**](https://wiki.phyllo.me/en/virt)
 
 ### The host
