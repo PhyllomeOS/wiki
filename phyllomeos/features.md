@@ -2,7 +2,7 @@
 title: Features
 description: 
 published: true
-date: 2022-01-18T10:44:15.279Z
+date: 2022-01-20T10:33:40.572Z
 tags: 
 editor: markdown
 dateCreated: 2022-01-18T10:44:15.279Z
@@ -25,7 +25,7 @@ Below are the targeted features for the stable version, also known as Phyllome O
 | *Sound* | PCI Passthrough |
 | *Bluetooth* | PCI Passthrough |
 | *USB controllers* | PCI Passthrough |
-| *Display modes* | Spice and VNC [^3 |
+| *Display modes* | Spice and VNC |
 | *UEFI* | Yes |
 | *Secure Boot* | Yes |
 | *TPM* | Yes |
