@@ -2,7 +2,7 @@
 title: On paravirtualized hardware
 description: 
 published: true
-date: 2022-01-20T11:36:12.069Z
+date: 2022-01-20T11:39:03.642Z
 tags: 
 editor: markdown
 dateCreated: 2022-01-12T14:22:51.514Z
@@ -81,7 +81,7 @@ In this section, the focus is oriented towards Virtual I/O Devices (VIRTIO), als
 | *`virtio-wayland`* | No | No | ? |
 | *`virtio-console`* | **Yes** | **Yes** | **Yes** |
 
-## Resources
+## Resourcess
 
 * Specifications
 	* [Version 1.0](https://docs.oasis-open.org/virtio/virtio/v1.0/virtio-v1.0.html) of the specification for Virtual I/O Devices
