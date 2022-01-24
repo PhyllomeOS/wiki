@@ -2,13 +2,13 @@
 title: Install Phyllome OS in a virtual machine
 description: 
 published: true
-date: 2021-11-13T17:12:26.031Z
+date: 2022-01-24T11:29:37.204Z
 tags: 
 editor: markdown
 dateCreated: 2021-11-13T11:35:17.576Z
 ---
 
-> Section under construction
+> *Section under construction*
 {.is-warning}
 
 # How to deploy Phyllome OS in a virtual machine
