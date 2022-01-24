@@ -2,7 +2,7 @@
 title: Homepage
 description: 
 published: true
-date: 2022-01-20T13:20:40.105Z
+date: 2022-01-24T11:27:07.838Z
 tags: 
 editor: markdown
 dateCreated: 2021-06-19T09:29:20.593Z
@@ -12,7 +12,7 @@ dateCreated: 2021-06-19T09:29:20.593Z
 
 `Welcome!`
 
-*In this wiki, you will find guides about [how to install](/deploy/install), [use](/getstarted/disk) and [hack](/gofurther/hack) Phyllome OS, as well as more generic information on the [underlying technologies](/virt), Phyllome OS [itself](/phyllomeos) and the surrounding [project](/project).*
+*In this wiki, you will find guides about [how to install](/deploy/install), [use](/getstarted/disk) and [hack](/gofurther/hack) Phyllome OS. You will also find more generic information on the [underlying technologies](/virt), Phyllome OS [itself](/phyllomeos) and the surrounding [project](/project).*
 
 Phyllome[^1] OS is an operating system that makes it easier to run [various operating systems](/gofurther) locally using [off-the-shelf hardware](/deploy/prepare) and [virtualization](/virt/lexicon#virtualization) technologies.
 
