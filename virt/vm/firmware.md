@@ -2,7 +2,7 @@
 title: Firmware
 description: 
 published: true
-date: 2022-01-25T16:10:41.217Z
+date: 2022-01-25T16:16:35.737Z
 tags: 
 editor: markdown
 dateCreated: 2022-01-25T14:50:10.751Z
@@ -26,7 +26,7 @@ Virtual devices, including virtual motherboards, are also shipping with firmware
 
 ### Rust Hypervisor Firmware
 
-The Rust Hypervisor Firmware (RHF) is a UEFI compatible firmware. It is focused on simplicity and performance and is designed for virtual workloads. It ships by default with the Cloud Hypervisor.
+The [Rust Hypervisor Firmware](https://github.com/cloud-hypervisor/rust-hypervisor-firmware) (RHF) is a UEFI compatible firmware. It is focused on simplicity and performance and is designed for virtual workloads. It ships by default alongside the Cloud Hypervisor.
 
 ## Comparaison
 
@@ -36,5 +36,9 @@ The Rust Hypervisor Firmware (RHF) is a UEFI compatible firmware. It is focused 
 | *UEFI* | No | **Yes** | **Yes** |
 | *Secureboot* | No | **Yes** | **Yes** |
 | *Chipset support* | `i440fx` `Q35` | `i440fx` `Q35` | `Q35`? `virt` | 
-| *Guest support* | **Windows** / **Linux** | **Windows** / **Linux** / **Darwin** | **Windows** / **Linux** |
+| *Guest support* | **Linux** / **Windows** | **Linux** / **Darwin** / **Windows** | **Windows** / **Linux** |
 | *Virtual Function I/O* | No | Yes | Yes |
+
+---
+
+*[**Go back to parent page**](/virt/vm)*
