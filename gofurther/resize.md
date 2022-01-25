@@ -2,7 +2,7 @@
 title: Resize an existing virtual disk
 description: 
 published: true
-date: 2022-01-25T14:07:18.572Z
+date: 2022-01-25T14:42:54.804Z
 tags: 
 editor: markdown
 dateCreated: 2021-11-13T11:41:29.087Z
@@ -91,3 +91,5 @@ On Fedora-related distributions, `virt-resize` is provided by the `guestfs-tools
 ```
 # dnf install guestfs-tools
 ```
+
+*[**Go to parent page**](/gofurther/)*
