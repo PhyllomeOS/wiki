@@ -2,7 +2,7 @@
 title: Firmware
 description: 
 published: true
-date: 2022-01-25T16:19:07.886Z
+date: 2022-01-25T20:55:02.510Z
 tags: 
 editor: markdown
 dateCreated: 2022-01-25T14:50:10.751Z
@@ -10,25 +10,26 @@ dateCreated: 2022-01-25T14:50:10.751Z
 
 # Platform firmware
 
-> *Firmware are software that are tightly integrated with the hardware. Almost every devices are shipping with some kind of firmware associated to it. For instance, motherboards include such programs, which in their case is tasked to properly boot hardware devices such as RAM modules, check their state and make them ready-to-use by an operating system.*
+Virtual devices, including virtual chipsets, are shipping alongside platform firmware. 
 
-Virtual devices, including virtual motherboards, are also shipping with firmware, or platform firmware. 
+> ***Definition**: Firmware are software that are tightly integrated with the hardware. Almost every devices are shipping with some kind of firmware associated to it. For instance, motherboards include such programs, which in their case is tasked to properly boot hardware devices such as RAM modules, check their state and make them ready-to-use by an operating system.*
+{.is-info}
 
 ## Available platform firmware for virtual machines
 
 ### SeaBIOS
 
-[SeaBIOS](https://www.seabios.org/SeaBIOS) is an implementation of a x86 BIOS which relies on [Coreboot](https://www.coreboot.org/) and can be used to boot virtual machines. It is not compatible with UEFI but, as a result, is simpler.
+[SeaBIOS](https://www.seabios.org/SeaBIOS) is an implementation of a x86 BIOS which relies on [Coreboot](https://www.coreboot.org/) and can be used to boot virtual machines. It is incompatible with UEFI but, as a result, is simpler.
 
 ### OVMF
 
-[OVMF](https://github.com/tianocore/tianocore.github.io/wiki/OVMF), which stands for Open Virtual Machine Firmware, is a UEFI compatible firmware. It is part of the larger [TianoCore](https://www.tianocore.org/) project, which provides an open-source implementation of a platform firmware that follows UEFI specifications. It is the default method to boot UEFI-based operating systems.
+[OVMF](https://github.com/tianocore/tianocore.github.io/wiki/OVMF), which stands for Open Virtual Machine Firmware, is a UEFI compatible firmware. It is part of the larger [TianoCore](https://www.tianocore.org/) project, which provides an open-source implementation of a platform firmware that follows UEFI specifications. It is the default method to boot UEFI-based operating systems in a virtual machine.
 
 ### Rust Hypervisor Firmware
 
-The [Rust Hypervisor Firmware](https://github.com/cloud-hypervisor/rust-hypervisor-firmware) (RHF) is a UEFI compatible firmware. It is focused on simplicity and performance and is designed for virtual workloads. It ships by default alongside the Cloud Hypervisor.
+The [Rust Hypervisor Firmware](https://github.com/cloud-hypervisor/rust-hypervisor-firmware) (RHF) is a UEFI compatible firmware. It is focused on simplicity and performance and is designed for virtual workloads. It is tightly integrated with the Cloud Hypervisor.
 
-## Comparaison
+## Comparison
 
 | | SeaBIOS | OVMF | RHF | 
 | :-- | :-: | :-: | :-: |
@@ -36,7 +37,7 @@ The [Rust Hypervisor Firmware](https://github.com/cloud-hypervisor/rust-hypervis
 | *UEFI* | No | **Yes** | **Yes** |
 | *Secureboot* | No | **Yes** | **Yes** |
 | *Chipset support* | `i440fx` `Q35` | `i440fx` `Q35` | `Q35`? `virt` | 
-| *Guest support* | **Linux** / **Windows** | **Linux** / **Darwin** / **Windows** | **Windows** / **Linux** |
+| *Guest support* | **Linux** / **Windows** | **Linux** / **Darwin** / **Windows** | **Linux** / **Windows** |
 | *Virtual Function I/O* | No | Yes | Yes |
 
 ---
