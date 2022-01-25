@@ -2,22 +2,35 @@
 title: Chipset
 description: 
 published: true
-date: 2022-01-25T14:48:33.609Z
+date: 2022-01-25T21:53:38.960Z
 tags: 
 editor: markdown
 dateCreated: 2021-11-13T11:56:47.463Z
 ---
 
-# Emulated chipsets
+# Virtual chipsets
 
-## Description
+Just as physical computers, virtual machines are build around a central chipset. 
 
-> There are two kinds of emulated chipsets that are currently supported by Phyllome OS: `i440fx` and `Q35`. Eventually, the `virt` model, which ships alongside the Cloud Hypervisor, will also be supported. 
-{.is-info}
+## Available chipsets for virtual machines
 
-| **Support** | i440fx | Q35 | virt |
+### i440fx
+
+The `i440fx` virtual chipset is a legacy chipset, compatible with PCI.
+
+### Q35
+
+The `Q35` virtual chipset is based on a modern chipset, compatible with PCI-Express.
+
+### virt
+
+The `virt` virtual chipset is the most modern chipset, compatible with PCI-Express. It only supports [virtio-devices](/virt/vm/virtio).
+
+## Comparison
+
+|  | `i440fx` | `Q35` | `virt` |
 | :- | :-: | :-: | :-: |
-| *Firmware* | SeaBIOS OVMF | SeaBIOS OVMF | Rust firmware |
+| *Firmware* | [SeaBIOS](/virt/vm/firmware#seabios) / [OVMF](/virt/vm/firmware#ovmf) | [SeaBIOS](/virt/vm/firmware#seabios) / [OVMF](/virt/vm/firmware#ovmf) | [OVMF](/virt/vm/firmware#ovmf) **?** / [RHF](/virt/vm/firmware#rust-hypervisor-firmware)  |
 | *PS/2 devices* | **Yes** | **Yes** | No | 
 | *USB Controller* | **Yes** | **Yes** | ? | 
 | *SATA Controller* | No | **Yes** | ? |
@@ -28,15 +41,14 @@ dateCreated: 2021-11-13T11:56:47.463Z
 | *PCI Bus* | **Yes** | No | No |
 | *Virtual Function I/O* | No | **Yes** | **Yes** |
 
-## Dedicated page (upcoming)
-
-> To be created and populated. It would be great to talk about these virtual chipsets versions (now there is the `Q35 6.1`). is there any breaking changes between revisions?
+> The *`i440fx` and `Q35` chipsets are currently supported by Phyllome OS. Early support for the `virt` model is expected for the Beta version*
 {.is-info}
-
-* `i440fx`
-* `Q35`
-* `virt`
 
 ## Resources
 
 * [Official documentation](https://wiki.qemu.org/Features/Q35) on Q35 
+
+
+---
+
+*[**Go back to parent page**](/virt/vm)*
