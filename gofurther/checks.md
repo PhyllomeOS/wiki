@@ -2,24 +2,19 @@
 title: Performs a few checks on Phyllome OS
 description: 
 published: true
-date: 2021-11-27T15:27:15.262Z
+date: 2022-01-25T14:42:37.414Z
 tags: 
 editor: markdown
 dateCreated: 2021-11-13T11:39:13.790Z
 ---
 
-# Check your system
+# Checkup
 
-Before diving further, it is a good idea to check if everything has been set-up correctly. 
+Before creating your first virtual machine, it is a good idea to check if everything is correctly set up.
 
-## Validate generic features on the host
+## Perform a global checkup
 
-> Those commands are valid for each and every Phyllome OS editions
-{.is-info}
-
-### Perform a global check 
-
-The command-line tool `virt-host-validate` can let you quickly check if hardware virtualization is activated, among other features. 
+The command-line tool `virt-host-validate` allows you to check whether virtualization features are activated or not.
 
 * Use the following command to check your system:
 ``` 
@@ -39,29 +34,32 @@ virt-host-validate
   QEMU: Checking for cgroup 'cpuacct' controller support                     : PASS
   QEMU: Checking for cgroup 'cpuset' controller support                      : PASS
   QEMU: Checking for cgroup 'memory' controller support                      : PASS
-  QEMU: Checking for cgroup 'devices' controller support                     : WARN (Enable 'devices' in kernel Kconfig file or mount/enable cgroup controller in your system)
+  QEMU: Checking for cgroup 'devices' controller support                     : WARN[^1] (Enable 'devices' in kernel Kconfig file or mount/enable cgroup controller in your system)
   QEMU: Checking for cgroup 'blkio' controller support                       : PASS
   QEMU: Checking for device assignment IOMMU support                         : PASS
   QEMU: Checking if IOMMU is enabled by kernel                               : PASS
 ```
 
-> The warning message for *cgroup devices* can be disregarded. This is a [not an issue](https://gitlab.com/libvirt/libvirt/-/issues/94). This warning will not show up if the `virt-host-validate` command is executed as *root* or with a user with sudo privileges
+[^1]: The warning message for *cgroup devices* can be disregarded, as it won't show up if the `virt-host-validate` command is executed as *root*. [Related discussion](https://gitlab.com/libvirt/libvirt/-/issues/94).
+
+> If `/dev/kvm` is not found, please ensure that your hardware [is indeed compatible](/deploy/prepare#meet-the-requirements) and that hardware-assisted virtualization [has been activated](/deploy/prepare#enable-hardware-assisted-virtualization) in the BIOS/EFI.
 {.is-info}
 
-### Check for hardware virtualization
 
-* Another more generic way to check whether *hardware virtualization* is activated or not is the following command fo Intel CPUs:
+## Specific checkup
+
+### Hardware-assisted virtualization (1st gen)
+
+* For Intel CPUs, you can use the following more specific command to check whether *hardware virtualization* is activated:
 
 ```
 cat /proc/cpuinfo | grep vmx
 ```
 
-* And this command for AMD CPUs
+* For AMD CPUs, the following command can be used:
 ```
 cat /proc/cpuinfo | grep svm
 ```
-
-
 
 * Look for `svm` for AMD-based processors, or `vmx` for Intel-based processors.
 
@@ -70,25 +68,16 @@ cat /proc/cpuinfo | grep svm
 flags		: fpu vme de  [...] svm [...] sme sev sev_es
 ```
 
-## Validate specific features on the host
+### Hardware-assisted virtualization (2st gen, IOMMU-based)
 
-> Those commands are valid for only specific Phyllome OS editions
-{.is-info}
+Your computer may be compatible with advanced hardware virtualization features (*AMD Vi* or Intel *VT-d*). 
 
-### IOMMU-related checks
-
-> Under construction
-{.is-warning}
-
-
-If your computer ships with advanced hardware virtualization features (*AMD Vi* or Intel *VT-d*), Phyllome OS should have automatically activated them. 
-
-* Verify if that is the case by using the following command, courtesy of the [Archlinux wiki](https://wiki.archlinux.org/title/PCI_passthrough_via_OVMF#Enabling_IOMMU). 
+* Check the presence of IOMMU-based hardware-assisted virtualization using the following command, courtesy of the [Archlinux wiki](https://wiki.archlinux.org/title/PCI_passthrough_via_OVMF#Enabling_IOMMU). 
 
 ```
 dmesg | grep -i -e DMAR -e IOMMU
 ``` 
-* Make sure the result look like this:
+* Make sure the result looks like this:
 ```
 [    0.600228] iommu: Default domain type: Translated 
 [    0.624416] pci 0000:00:00.2: AMD-Vi: IOMMU performance counters supported
@@ -98,7 +87,7 @@ dmesg | grep -i -e DMAR -e IOMMU
 [    0.627236] pci 0000:00:00.2: AMD-Vi: Found IOMMU cap 0x40
 [    0.627987] perf/amd_iommu: Detected AMD IOMMU #0 (2 banks, 4 counters/bank).
 ```
-* You may also want to learn how isolated your devices are. To do that, use the following script, courtesy of the [Archlinux wiki](https://wiki.archlinux.org/title/PCI_passthrough_via_OVMF#Ensuring_that_the_groups_are_valid):
+* You may also want to learn how well isolated your devices are. To do so, use the following script, courtesy of the [Archlinux wiki](https://wiki.archlinux.org/title/PCI_passthrough_via_OVMF#Ensuring_that_the_groups_are_valid):
 
 ```
 #!/bin/bash
@@ -110,6 +99,8 @@ for g in `find /sys/kernel/iommu_groups/* -maxdepth 0 -type d | sort -V`; do
     done;
 done;
 ```
+
+* In the following case, devices are rather poorly isolated. The use of the ACS override patch may be warranted (more on that later).
 
 ```
 IOMMU Group 0:
@@ -131,7 +122,7 @@ IOMMU Group 14:
 IOMMU Group 15:
 	0b:00.4 Audio device [0403]: Advanced Micro Devices, Inc. [AMD] Starship/Matisse HD Audio Controller [1022:1487]
 ```
-### Intel GVT-d related checks
 
-> Under construction
-{.is-warning}
+---
+
+*[**Go to parent page**](/gofurther/)*
