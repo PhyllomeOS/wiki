@@ -2,7 +2,7 @@
 title: Features
 description: 
 published: true
-date: 2022-01-20T11:17:03.303Z
+date: 2022-01-25T14:45:50.714Z
 tags: 
 editor: markdown
 dateCreated: 2022-01-18T10:44:15.279Z
@@ -15,16 +15,16 @@ Below are the targeted features for the stable version, also known as Phyllome O
 | | Phyllome OS alpha features |
 | :- | :-: |
 | *Nested-virtualization* | Yes |
-| *Paravirtualization* | Complete support on Linux guests |
+| *Paravirtualization* | Full support on Linux guests |
 | *IOMMU support* | Yes |
-| *VM Migration* | Cold migration only |
-| *VM Snapshots* | No |
-| *VM Cloning* | Yes |
+| *Migration* | Cold migration only |
+| *Snapshots* | No |
+| *Cloning* | Yes |
 | *Virtual disks format* | RAW only |
 | *PCI Passthrough* | Yes |
 | *Sound* | PCI Passthrough |
 | *Bluetooth* | PCI Passthrough |
-| *USB controllers* | PCI Passthrough |
+| *USB* | PCI Passthrough |
 | *Display modes* | Spice and VNC |
 | *UEFI* | Yes |
 | *Secure Boot* | Yes |
