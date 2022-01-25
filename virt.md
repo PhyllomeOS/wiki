@@ -2,7 +2,7 @@
 title: Virtualization for the rest of us
 description: 
 published: true
-date: 2022-01-25T21:59:00.185Z
+date: 2022-01-25T22:00:59.669Z
 tags: 
 editor: markdown
 dateCreated: 2021-11-13T12:08:53.048Z
@@ -33,7 +33,7 @@ dateCreated: 2021-11-13T12:08:53.048Z
 
 * [Chipset](/virt/vm/chipset)
 * [Firmware](/virt/vm/firmware)
-* [Paravirtualized hardware](/virt/vm/virtio) (`virtio`)
+* [Virtual I/O Devices](/virt/vm/virtio) (`virtio`)
 
 ## Physical hardware
 
