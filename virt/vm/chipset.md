@@ -2,7 +2,7 @@
 title: Chipset
 description: 
 published: true
-date: 2022-01-20T13:28:23.198Z
+date: 2022-01-25T14:48:33.609Z
 tags: 
 editor: markdown
 dateCreated: 2021-11-13T11:56:47.463Z
@@ -21,7 +21,7 @@ dateCreated: 2021-11-13T11:56:47.463Z
 | *PS/2 devices* | **Yes** | **Yes** | No | 
 | *USB Controller* | **Yes** | **Yes** | ? | 
 | *SATA Controller* | No | **Yes** | ? |
-| *IDE Controller* | Yes | No | No |
+| *IDE Controller* | **Yes** | No | No |
 | *Floppy Controller* | **Yes** | No | No |
 | *TPM Support* | No | **Yes** | ? |
 | *PCI-Express Bus* | No | **Yes** | **Yes** |
