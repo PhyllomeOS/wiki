@@ -2,7 +2,7 @@
 title: Firmware
 description: 
 published: true
-date: 2022-01-25T16:16:35.737Z
+date: 2022-01-25T16:17:08.366Z
 tags: 
 editor: markdown
 dateCreated: 2022-01-25T14:50:10.751Z
@@ -10,7 +10,7 @@ dateCreated: 2022-01-25T14:50:10.751Z
 
 # Platform firmware
 
-Firmware are software that are tightly integrated with the hardware. Almost every devices are shipping with some kind of firmware associated to it. For instance, motherboards include such programs, which in their case is tasked to properly boot hardware devices such as RAM modules, check their state and make them ready-to-use by an operating system.
+> *Firmware are software that are tightly integrated with the hardware. Almost every devices are shipping with some kind of firmware associated to it. For instance, motherboards include such programs, which in their case is tasked to properly boot hardware devices such as RAM modules, check their state and make them ready-to-use by an operating system.*
 
 Virtual devices, including virtual motherboards, are also shipping with firmware, or platform firmware. 
 
