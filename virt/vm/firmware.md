@@ -2,7 +2,7 @@
 title: Firmware
 description: 
 published: true
-date: 2022-01-25T16:17:08.366Z
+date: 2022-01-25T16:19:07.886Z
 tags: 
 editor: markdown
 dateCreated: 2022-01-25T14:50:10.751Z
