@@ -2,57 +2,53 @@
 title: On paravirtualized hardware
 description: 
 published: true
-date: 2022-01-20T11:39:03.642Z
+date: 2022-01-25T21:48:19.363Z
 tags: 
 editor: markdown
 dateCreated: 2022-01-12T14:22:51.514Z
 ---
 
-> *Section under construction*
-{.is-warning}
-
-
-
 # Paravirtual hardware
 
-*Paravirtual hardware are emulated hardware or devices that can be found in a virtual environment. Contrary to other emulated hardware, they don't intend to mimic a particular piece of real hardware. More details on the [lexicon](/virt/lexicon)*
+[Paravirtual hardware](/virt/lexicon#paravirtualization) are emulated hardware or devices that can be found in a virtual environment. Contrary to other emulated hardware, they don't intend to mimic a particular piece of real hardware.
 
-In this section, the focus is oriented towards Virtual I/O Devices (VIRTIO), also known as the `virtio` family of devices:
+In this section, the focus is oriented towards Virtual I/O Devices (VIRTIO), better known as the `virtio` family of devices.
 
-> This list is not meant to be exhaustive
+## List of paravirtual devices
+
+> *This list is not meant to be exhaustive*
 {.is-info}
 
+### Graphical frame buffer
 
-## Graphical frame buffer
-
-* [`virtio-gpu`](/virt/virtio/gpu): 
+* [`virtio-gpu`](/virt/virtio/snd)
 	* Paravirtual GPU that provides a subset of the host GPU capabilities to a guest virtual machine
 
-## Video decoding/encoding
+### Video decoding/encoding
 
-* [`virtio-video`](/virt/virtio/video): 
+* [`virtio-video`](/virt/virtio/snd)
 	* Paravirtual video device that provides encoding and decoding capabilities to a guest virtual machine
 
-## Sound
+### Sound
 
 * [`virtio-snd`](/virt/virtio/snd)
 
-## Storage
+### Storage
 
 * [`virtio-blk`](/virt/virtio/blk)
 * [`virtio-scsi`](/virt/virtio/scsi)
 * [`virtio-fs`](/virt/virtio/fs)
 
-## Network
+### Network
 
 * [`virtio-net`](/virt/virtio/net)
 
-## Input devices
+### Input devices
 
 * [`virtio-kbd`](/virt/virtio/blk)
 * [`virtio-tablet`](/virt/virtio/tabket)
 
-## Miscellaneous
+### Miscellaneous
 
 * [`virtio-rng`](/virt/virtio/rng)
 * [`virtio-crypto`](/virt/virtio/crypto)
@@ -87,4 +83,8 @@ In this section, the focus is oriented towards Virtual I/O Devices (VIRTIO), als
 	* [Version 1.0](https://docs.oasis-open.org/virtio/virtio/v1.0/virtio-v1.0.html) of the specification for Virtual I/O Devices
 	* [Version 1.1](https://docs.oasis-open.org/virtio/virtio/v1.1/csprd01/virtio-v1.1-csprd01.html) of the specification for Virtual I/O Devices
 * OASIS Virtual I/O Device (VIRTIO) [Technical Commitee's Page](https://www.oasis-open.org/committees/tc_home.php?wg_abbrev=virtio)
-* `virtio` entry on [OSDev.org](https://wiki.osdev.org/Virtio)
+* `virtio` [entry on OSDev.org](https://wiki.osdev.org/Virtio)
+
+---
+
+*[**Go back to parent page**](/virt/vm)*
