@@ -2,56 +2,55 @@
 title: Resize an existing virtual disk
 description: 
 published: true
-date: 2022-01-20T10:54:10.378Z
+date: 2022-01-25T14:07:18.572Z
 tags: 
 editor: markdown
 dateCreated: 2021-11-13T11:41:29.087Z
 ---
 
-> *Section under construction*
-{.is-warning}
-
 # Resize a disk
 
-## Introduction
-
-As per the software description : "*qemu-img allows you to create, convert and modify images offline. It can handle all image formats supported by QEMU.*"
-
-Expanding a new disk implies creating a new blank image of the desired size and "copy" the existing disk into this new bigger image using virt-resize.
-
-> In-place expansion is not supported, which mean than a copy of the disk to be expanded has to be created
+> *Instructions only applies to Linux guests.*
 {.is-info}
- 
-## Installation
 
-* On Fedora-related distributions, `virt-resize` is provided by the `guestfs-tools` package : 
+## Background
 
-```
-# dnf install guestfs-tools
-```
+A virtual machine's disk may have to be resized, typically due to lack of space. This page explains how to do so.
+
+The process involves creating a new blank virtual disk of the desired size and grow the former disk into the new one. 
 
 ## Usage
 
-* **Create a new disk image**
+> *In-place expansion is not supported. A new disk of the desired size has to be created.* 
+{.is-info}
 
-In-place expansion is not supported. A new disk of the desired size has to be created. 
-
-Use the following command to create `phyllome_but_bigger.img`, a disk of 15 GiB 
+* *Move to the location that contains the existing image*
 
 ```
-$ qemu-img create -f raw phyllome-bigger.img 15G
+cd /var/lib/libvirt/images
 ```
 
-* **Expand the root partition**
 
-> This command only works if the root partition is located on vda3 and if the disk image filesystem uses EXT4.  
+* *Create a new disk image*
+
+Use the following command to create a disk of 15 GB called `phyllome-bigger.img`. 
+
+```
+qemu-img create -f raw phyllome-bigger.img 15G
+```
+
+* *Expand the root partition*
+
+> *This command expects the root partition to be located on the vda3 partition. It has only been tested against the `ext4`filesystem.*  
 {.is-warning}
 
-This command bellow requires root privileges. 
+```
+virt-resize --expand /dev/vda3 phyllome.img phyllome-bigger.img
+``` 
+
+* *The following should appear*
 
 ```
-# virt-resize --expand /dev/vda3 phyllome.img phyllome_but_bigger.img
-
 [   0.0] Examining phyllome.img
 **********
 
@@ -77,6 +76,18 @@ Resize operation completed with no errors.  Before deleting the old disk,
 carefully check that the resized disk boots and works correctly.
 ```
 
-* **Inform your virtual machine to use the new disk**
+* *Switch to the new disk for your virtual machine*
 
 *To-do*
+
+## Resources
+
+As per the software description : "*qemu-img allows you to create, convert and modify images offline. It can handle all image formats supported by QEMU.*"
+
+* *Installation*
+
+On Fedora-related distributions, `virt-resize` is provided by the `guestfs-tools` package : 
+
+```
+# dnf install guestfs-tools
+```
