@@ -2,7 +2,7 @@
 title: Performs a few checks on Phyllome OS
 description: 
 published: true
-date: 2022-01-28T08:40:06.280Z
+date: 2022-01-28T08:40:38.881Z
 tags: 
 editor: markdown
 dateCreated: 2021-11-13T11:39:13.790Z
@@ -42,7 +42,7 @@ virt-host-validate
 
 [^1]: The warning message for *cgroup devices* can be disregarded, as it won't show up if the `virt-host-validate` command is executed as *root*. [Related discussion](https://gitlab.com/libvirt/libvirt/-/issues/94).
 
-> If `/dev/kvm` is not found, please ensure that your hardware [is indeed compatible](/deploy/prepare#meet-the-requirements) and that hardware-assisted virtualization [has been activated](/deploy/prepare#enable-hardware-assisted-virtualization) in the BIOS/EFI.
+> *If `/dev/kvm` is not found, please ensure that your hardware [is indeed compatible](/deploy/prepare#meet-the-requirements) and that hardware-assisted virtualization [has been activated](/deploy/prepare#enable-hardware-assisted-virtualization) in the BIOS/EFI.*
 {.is-info}
 
 
