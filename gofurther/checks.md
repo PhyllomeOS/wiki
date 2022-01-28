@@ -2,7 +2,7 @@
 title: Performs a few checks on Phyllome OS
 description: 
 published: true
-date: 2022-01-25T14:42:37.414Z
+date: 2022-01-28T08:40:06.280Z
 tags: 
 editor: markdown
 dateCreated: 2021-11-13T11:39:13.790Z
@@ -72,7 +72,9 @@ flags		: fpu vme de  [...] svm [...] sme sev sev_es
 
 Your computer may be compatible with advanced hardware virtualization features (*AMD Vi* or Intel *VT-d*). 
 
-* Check the presence of IOMMU-based hardware-assisted virtualization using the following command, courtesy of the [Archlinux wiki](https://wiki.archlinux.org/title/PCI_passthrough_via_OVMF#Enabling_IOMMU). 
+* Check the presence of IOMMU-based hardware-assisted virtualization using the following command [^2]: 
+
+[^2]: Courtesy of the [Archlinux wiki](https://wiki.archlinux.org/title/PCI_passthrough_via_OVMF#Enabling_IOMMU).
 
 ```
 dmesg | grep -i -e DMAR -e IOMMU
@@ -87,11 +89,9 @@ dmesg | grep -i -e DMAR -e IOMMU
 [    0.627236] pci 0000:00:00.2: AMD-Vi: Found IOMMU cap 0x40
 [    0.627987] perf/amd_iommu: Detected AMD IOMMU #0 (2 banks, 4 counters/bank).
 ```
-* You may also want to learn how well isolated your devices are. To do so, use the following script, courtesy of the [Archlinux wiki](https://wiki.archlinux.org/title/PCI_passthrough_via_OVMF#Ensuring_that_the_groups_are_valid):
+* You may also want to learn how well isolated your devices are. To do so, copy and paste the following script[^1] in your terminal:
 
 ```
-#!/bin/bash
-shopt -s nullglob
 for g in `find /sys/kernel/iommu_groups/* -maxdepth 0 -type d | sort -V`; do
     echo "IOMMU Group ${g##*/}:"
     for d in $g/devices/*; do
@@ -99,6 +99,8 @@ for g in `find /sys/kernel/iommu_groups/* -maxdepth 0 -type d | sort -V`; do
     done;
 done;
 ```
+
+[^1]: Courtesy of the [Archlinux wiki](https://wiki.archlinux.org/title/PCI_passthrough_via_OVMF#Ensuring_that_the_groups_are_valid)
 
 * In the following case, devices are rather poorly isolated. The use of the ACS override patch may be warranted (more on that later).
 
