@@ -2,7 +2,7 @@
 title: Security in Phyllome OS
 description: 
 published: true
-date: 2022-01-31T12:50:53.781Z
+date: 2022-01-31T12:58:59.367Z
 tags: 
 editor: markdown
 dateCreated: 2022-01-31T12:35:54.544Z
@@ -34,8 +34,11 @@ It provides early support for Filesystem-level encryption, which is just one lin
 
 For any virtual disks that will contain personal data, users are strongly advised to use full-disk encryption as provided by their guest operating system.
 
+## Anti-features
 
+### Graphic virtualization
 
+Phyllome OS heavily relies on GPU or graphic virtualization, most notably through `virtio-gpu`, but also with `vfio-pci` or `vfio-mdev`. Granting a virtual machine 3D capabilities is not considered safe. Measures will be taken to reduce the risk, or at least to inform the user of potential security risks associated with certain techniques. 
 
 ---
 
