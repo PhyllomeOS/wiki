@@ -2,7 +2,7 @@
 title: Security in Phyllome OS
 description: 
 published: true
-date: 2022-01-31T12:50:37.829Z
+date: 2022-01-31T12:50:53.781Z
 tags: 
 editor: markdown
 dateCreated: 2022-01-31T12:35:54.544Z
@@ -15,7 +15,7 @@ dateCreated: 2022-01-31T12:35:54.544Z
 
 Phyllome OS is a Fedora Remix and as such directly inherits every single security measures in place for Fedora-related distributions, such as SELinux. It also brings some unique security-related features.
 
-* **List of of unique security-related features**
+* **List of unique security-related features**
 	* Unprivileged virtual machines with `qemu:///session`, by default
 	* Filesystem-level encryption with `fscrypt`
   * Minimal installations
