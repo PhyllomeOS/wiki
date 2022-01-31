@@ -2,7 +2,7 @@
 title: Encrypt the directory that contains virtual disk images
 description: 
 published: true
-date: 2022-01-31T13:14:38.667Z
+date: 2022-01-31T13:20:57.143Z
 tags: 
 editor: markdown
 dateCreated: 2022-01-31T12:30:06.985Z
@@ -226,7 +226,7 @@ session     [success=1 default=ignore]                   pam_succeed_if.so servi
 session     required                                     pam_unix.so
 ```
 
-> *According to [fscrypt documentation](https://github.com/google/fscrypt#enabling-the-pam-module-on-other-linux-distros): "*The Auth and Session functionality of `pam_fscrypt.so` are used to automatically unlock directories when logging in as a user, and lock them when logging out [and] [t]he Password functionality [...] is used to automatically rewrap a user's login protector when their unix passphrase changes."*
+> *According to [fscrypt documentation](https://github.com/google/fscrypt#enabling-the-pam-module-on-other-linux-distros): "The Auth and Session functionality of `pam_fscrypt.so` are used to automatically unlock directories when logging in as a user, and lock them when logging out [and] [t]he Password functionality [...] is used to automatically rewrap a user's login protector when their unix passphrase changes."*
 {.is-info}
 
 * Copy the content of *system-auth* file to the *password-auth* file.
@@ -340,7 +340,7 @@ This is the right way
 
 ## Encrypt virtual disks
 
-* Encrypt default directory containing virtual disks for the current user
+* Encrypt default directory containing virtual disks for the current user:
 
 ```
 fscrypt encrypt ~/.local/share/libvirt/images --source=pam_passphrase
@@ -350,13 +350,6 @@ fscrypt encrypt ~/.local/share/libvirt/images --source=pam_passphrase
 {.is-warning}
 
 * Ok, that's it, finally. All virtual disks created will benefit from this layer of encryption.
-
-### Post-installation cleaning (untested)
-
-```
-# dnf remove -y git golang m4
-$ rm -rf ~/go
-```
 
 ## Resources
 
@@ -382,7 +375,7 @@ Then reboot.
 
 ### Paths
 
-* Where authselect stores its default and vendor-specific configs:
+* Where *authselect* stores its default and vendor-specific configs:
 ```
 /usr/share/authselect/
 ```
@@ -392,7 +385,7 @@ Then reboot.
 /usr/lib64/security/
 ```
 
-* Where authselect stores the current profile
+* Where *authselect* stores the current profile
 
 ```
 /etc/authselect
@@ -404,18 +397,20 @@ Then reboot.
 /usr/share/doc/pam-devel
 ```
 
-/usr/local/share/pam-configs/fscrypt
+* Default directories fscrypt:
 
-Created global config file at "/etc/fscrypt.conf".
-Metadata directories created at "/.fscrypt".
+```
+/usr/local/share/pam-configs/fscrypt
+/etc/fscrypt.conf
+~/.fscrypt
+```
 
 ### External Resources
 
-*The `fscrypt` PAM module implements the Auth, Session, and Password
-[types](http://www.linux-pam.org/Linux-PAM-html/sag-configuration-file.html).*
-
-* [fscrypt official repo](https://github.com/google/fscrypt)
+* `fscrypt` [official repo](https://github.com/google/fscrypt)
 * [PAM and Fedora](https://docs.fedoraproject.org/en-US/Fedora/17/html/Security_Guide/sect-Security_Guide-Pluggable_Authenticati1542858)
-* [fscrypt for ext4 encryption on the Archwiki](https://wiki.archlinux.org/title/Fscrypt)
-* [See here for an RPM package for altlinux](https://altlinux.pkgs.org/sisyphus/classic-x86_64/fscrypt-0.3.0.0.5.e479779-alt1.x86_64.rpm.html)
- 
+* [fscrypt](https://wiki.archlinux.org/title/Fscrypt) and Archlinux
+
+---
+
+*[**Go to parent page**](/gofurther/)*
