@@ -2,7 +2,7 @@
 title: Encrypt the directory that contains virtual disk images
 description: 
 published: true
-date: 2022-01-31T12:30:06.985Z
+date: 2022-01-31T13:14:38.667Z
 tags: 
 editor: markdown
 dateCreated: 2022-01-31T12:30:06.985Z
@@ -10,12 +10,13 @@ dateCreated: 2022-01-31T12:30:06.985Z
 
 # Encrypt virtual disk images
 
-> *Integration of filesystem-level encryption in Phyllome OS is a work-in-progress*
+> *Integration of filesystem-level encryption in Phyllome OS is a work-in-progress.*
 {.is-warning}
 
-## Context
+> *Go to [the security page](https://wiki.phyllo.me/e/en/phyllomeos/security) to learn more about Phyllome OS security*
+{.is-info}
 
-At the moment, Phyllome OS does **not** provide any kind of encryption by default at the host level. Filesystem-level encryption is just one layer of protection. For any virtual disks that contains personnal data, users are strongly advised to use full disk encryption as provided by their guest operating system.
+## Introduction
 
 This guide will show you how to compile [^1] and configure `fscrypt` to encrypt virtual disk images. It will also show you how to configure [PAM](http://www.linux-pam.org/) to work alongside `fscrypt`
 
@@ -23,9 +24,6 @@ This guide will show you how to compile [^1] and configure `fscrypt` to encrypt 
 
 > *[`fscrypt`](https://github.com/google/fscrypt) provides filesystem-level encryption and its library [is part](https://www.kernel.org/doc/html/v4.18/filesystems/fscrypt.html) of the Linux kernel. It is widely used by Android-based devices, but only compatible with a handful of filesystems*
 {.is-info}
-
-> *`fscrypt` does **not** support in-place encryption. Only previously empty directories can be encrypted. If you wish to encrypt a directory which already contains files, move these files outside of the directory, encrypt it, and put the files back in* 
-{.is-warning}
 
 ## Installation
 
@@ -43,7 +41,7 @@ sudo dnf install -y git golang pam-devel m4 authselect
 go get -d github.com/google/fscrypt/...
 ```
 
-* Move to the install folder:
+* Move to the installation folder:
 
 ```
 cd ~/go/pkg/mod/github.com/google/fscrypt\@v0.3.1/
@@ -52,11 +50,13 @@ cd ~/go/pkg/mod/github.com/google/fscrypt\@v0.3.1/
 > If a new version is released, for instance `v0.3.2`, update the above path accordingly
 {.is-info}
 
-* Run `make install`, which will install `fscrypt` to `/usr/local/bin`, `pam_fscrypt.so` to `/usr/local/lib/security`, and `pam_fscrypt/config` to `/usr/local/share/pam-configs`.*
+* *Run `make install`*
 
 ```
 sudo make install
+```
 
+```
 fatal: not a git repository (or any of the parent directories): .git
 install -d /usr/local/bin
 install bin/fscrypt /usr/local/bin
@@ -68,7 +68,7 @@ install bin/config /usr/local/share/pam-configs/fscrypt
 install -Dm644 cmd/fscrypt/fscrypt_bash_completion /usr/local/share/bash-completion/completions/fscrypt
 ```
 
-> The error message seems innocuous
+> *The error message seems innocuous*
 {.is-info}
 
 * Move `pam_fscrypt.so` to `/usr/lib64/security/`, where it belongs:
@@ -81,10 +81,11 @@ sudo mv /usr/local/lib/security/pam_fscrypt.so /usr/lib64/security/pam_fscrypt.s
 
 * Identify the `root` partition (`/`) using the command line utility `lsblk`:
 
-`lsblk`
+```
+lsblk
+```
 
 ``` 
-[groot@phyllome ~]$ lsblk
 NAME                                       MAJ:MIN RM  SIZE RO TYPE  MOUNTPOINTS
 zram0                                      251:0    0  7.8G  0 disk  [SWAP]
 nvme0n1                                    252:0    0   50G  0 disk  
@@ -128,10 +129,13 @@ Created global config file at "/etc/fscrypt.conf".
 Metadata directories created at "/.fscrypt".
 ```
 
-* Verify: 
+* Verify fscrypt status: 
 
 ```
 fscrypt status
+```
+
+```
 filesystems supporting encryption: 1
 filesystems with fscrypt metadata: 1
 
@@ -142,19 +146,19 @@ MOUNTPOINT  DEVICE          FILESYSTEM  ENCRYPTION     FSCRYPT
 
 ### PAM configuration
 
-* Select the minimal profile with `authselect`
+* Select the minimal profile with `authselect`:
 
 ```
 sudo authselect select minimal --force
 ```
 
-* Activate the `ecryptfs` feature
+* Activate the `ecryptfs` feature:
 
 ```
 sudo authselect enable-feature with-ecryptfs
 ```
 
-* Create a new profile based on the minimal profile and call it phyllome:
+* Create a new profile based on the minimal profile and call it *phyllome*:
 
 ``` 
 sudo authselect create-profile phyllome --base-on=minimal 
@@ -222,10 +226,10 @@ session     [success=1 default=ignore]                   pam_succeed_if.so servi
 session     required                                     pam_unix.so
 ```
 
-> *According to [fscrypt documentation](https://github.com/google/fscrypt#enabling-the-pam-module-on-other-linux-distros), *The Auth and Session functionality of `pam_fscrypt.so` are used to automatically unlock directories when logging in as a user, and lock them when logging out [and] [t]he Password functionality [...] is used to automatically rewrap a user's login protector when their unix passphrase changes."* *
+> *According to [fscrypt documentation](https://github.com/google/fscrypt#enabling-the-pam-module-on-other-linux-distros): "*The Auth and Session functionality of `pam_fscrypt.so` are used to automatically unlock directories when logging in as a user, and lock them when logging out [and] [t]he Password functionality [...] is used to automatically rewrap a user's login protector when their unix passphrase changes."*
 {.is-info}
 
-* Copy content of *system-auth* file into a the *password-auth* file.
+* Copy the content of *system-auth* file to the *password-auth* file.
 
 > *Unsure which file is the canonic one*
 {.is-info}
@@ -245,49 +249,54 @@ session     [default=1]                pam_lastlog.so nowtmp {if "with-silent-la
 session     optional                   pam_lastlog.so silent noupdate showfailed
 ``` 
 
-* Create the fscrypt file under the `/etc/pam.d/` directory and add the following line to it to allow PAM to be able to check the UNIX passhphrase
+* Create the fscrypt file under the `/etc/pam.d/` directory and add the following line to it to allow PAM to be able to check the UNIX passphrase:
 
 ```
-nano /etc/pam.d/fscrypt
+sudo nano /etc/pam.d/fscrypt
 ```
 
-`auth        required    pam_unix.so`
+```
+auth        required    pam_unix.so
+```
 
-* Finally, apply changes to phyllome profile
+* Finally, apply changes to phyllome profile:
 
 ```
-authselect apply-changes
+sudo authselect apply-changes
+```
+
+```
 Changes were successfully applied.
 ```
 
 ### Tame SELinux
 
-> *This is a work in progress. New policices will have to be designed for SELinux to work nicely with fscrypt.
+> *This is a work in progress. New policices will have to be designed for SELinux to work nicely with `fscrypt`.*
 {.is-warning}
 
-* Create a directory to store user-created SELinux policies and move there
+* Create a directory to store user-created SELinux policies and move there:
 
 ```
 sudo mkdir /opt/selinux && cd /opt/selinux/
 ```
 
-* Allowing `systemd` to access 1000.count file
+* Allow `systemd` to access 1000.count file:
 ```
-ausearch -c '(systemd)' --raw | audit2allow -M my-systemd
+sudo ausearch -c '(systemd)' --raw | audit2allow -M my-systemd
 ``` 
 ```
-semodule -X 300 -i my-systemd.pp
+sudo semodule -X 300 -i my-systemd.pp
 ```
 
 ### Test
 
-* Create a directory called `secret` in your home directory 
+* Create a directory called `secret` in your home directory:
 
 ```
 mkdir ~/secret
 ```
 
-* Encrypt the directory using your login passhprase
+* Encrypt the directory using your login passphrase:
 
 ```
 fscrypt encrypt ~/secret --source=pam_passphrase
@@ -301,13 +310,13 @@ Enter login passphrase for test:
 "/home/groot/secret" is now encrypted, unlocked, and ready for use.
 ``` 
 
-* Add a file to this directory
+* Add a file to this directory:
 
 ```
 touch ~/secret/recipe-for-pancakes-by-john-locke
 ```
 
-* Reboot and make sure the file can be red after login
+* Reboot and make sure the file can be red after login:
 
 ```
 cat ~/secret/recipe-for-pancakes-by-john-locke
@@ -326,6 +335,9 @@ Pancakes
 This is the right way
 ```
 
+> *If a message like `key unavailable` appears, have a look a the [troubleshooting section](/gofurther/encrypt#troubleshooting) bellow*.
+{.is-info}
+
 ## Encrypt virtual disks
 
 * Encrypt default directory containing virtual disks for the current user
@@ -336,6 +348,8 @@ fscrypt encrypt ~/.local/share/libvirt/images --source=pam_passphrase
 
 > *`fscrypt` does **not** support in-place encryption. Only previously empty directories can be encrypted. If you wish to encrypt a directory which already contains files, move these files outside of the directory, encrypt it, and put the files back in* 
 {.is-warning}
+
+* Ok, that's it, finally. All virtual disks created will benefit from this layer of encryption.
 
 ### Post-installation cleaning (untested)
 
