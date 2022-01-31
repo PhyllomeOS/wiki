@@ -2,7 +2,7 @@
 title: Tasks
 description: 
 published: true
-date: 2022-01-20T13:22:19.456Z
+date: 2022-01-31T09:57:27.802Z
 tags: 
 editor: markdown
 dateCreated: 2021-11-13T11:40:46.114Z
@@ -29,6 +29,7 @@ dateCreated: 2021-11-13T11:40:46.114Z
 
 * [Perform a few checks](/gofurther/checks) on Phyllome OS
 * [Resize](/gofurther/resize) an existing virtual disk
+* [Encrypt](/gofurther/encrypt) the directory that contains virtual disks
 * [Hack](/gofurther/hack) and develop Phyllome OS
 
 ---
