@@ -2,7 +2,7 @@
 title: Context
 description: 
 published: true
-date: 2022-01-20T13:32:00.390Z
+date: 2022-02-08T20:56:54.325Z
 tags: 
 editor: markdown
 dateCreated: 2021-11-12T15:31:13.657Z
@@ -58,7 +58,7 @@ At least three key projects using Linux and KVM are also taking advantage of Rus
 | :- | :-: | :-: | :-: |
 | *QEMU* | No | No | No |
 | *KVM* | **Yes** | **Yes** | **Yes** |
-| *Desktop-friendly* | **Yes** | No | No |
+| *Desktop-oriented* | **Yes** | No | No |
 | *Support for non-Unix guests* | No | No | **Yes** |
 
 Until recently, any attempt to create a local-first, free and open-source operating system that could run atop affordable, virtualization-friendly hardware[^8] using basic building blocks similar to those used by major public clouds would rightfully be met with skepticism.
