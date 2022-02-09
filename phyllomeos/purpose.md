@@ -2,7 +2,7 @@
 title: Purpose
 description: 
 published: true
-date: 2022-01-20T11:16:21.089Z
+date: 2022-02-09T19:56:22.345Z
 tags: 
 editor: markdown
 dateCreated: 2021-11-12T15:31:30.659Z
@@ -14,17 +14,19 @@ The goal of Phyllome OS is to make it possible to run most operating systems loc
 
 ## Problematic
 
-An operating system must have drivers to allow it to interact with hardware components and devices such as USB controllers or graphic cards. Each driver has to be specifically written to work with a particular operating system. To support running most operating systems on a specific piece of hardware, one would have to develop and maintain a set of drivers for each one those operating systems, an almost insurmountable task as there are dozen unique operating systems out there.
+An operating system must possess drivers to allow it to interact with hardware components, devices or peripherals such as storage controllers, graphic cards or keyboards. Each driver has to be specifically written to work with a particular operating system. To support running most operating systems on a specific piece of hardware, one needs to develop and maintain a set of drivers for each one those operating systems. This is an almost insurmountable task as there are dozen unique operating systems out there.
 
-Most of the time, users pick hardware that ships with their favorite operating system: most hardware is tied to a specific operating system. Therefore, user choice is severely restricted to only a certain set of computers [^1]. Isn’t there a shortcut available, to allow users to run their favorite operating system on most hardware, provided that the operating system license allows it?
+Most of the time, users pick hardware that ships with their favorite operating system: most hardware is tied to a specific operating system. Therefore, user choice is severely restricted to only a certain set of computers [^1]. 
+
+Isn’t there a shortcut available, to allow users to run their favorite operating system on most hardware, provided that the operating system license allows it?
 
 [^1]: Popular and proprietary operating systems such as macOS Big Sur or Windows 11 are optimized to only run on a  limited set of computers. This state of affairs significantly limits users’ choice and may incite them to renew their hardware frequently, as operating systems providers may decide to drop support for older hardware models for any number of reasons.
 
-[Virtualization](/virt/lexicon#virtualization) provides a partial answer to this problem as it allows the abstraction of the underlying hardware, presenting generic software-based hardware to the operating system. In other words, by means of virtualization, a specific physical computer can be made to look generic to an operating system.
+[Virtualization](/virt/lexicon#virtualization) provides a partial answer to this problem as it allows the abstraction of the underlying hardware, presenting generic software-based hardware to the operating system. In other words, by means of virtualization, a specific physical computer can be abstraced away and made to look generic to an operating system.
 
-There are many types of virtualization. Phyllome OS is primarily focused on paravirtualization, which assumes that an operating system running in a virtualized environment is aware of it. For any operating systems to run well in such an environment, one would only have to focus on developing and maintaining a set of generic drivers for virtual hardware, a task that is well under way for many popular operating systems, including Linux-based, Darwin-based or Windows NT-based operating systems
+There are many types of virtualization. Phyllome OS is primarily focused on paravirtualization, which assumes that an operating system running in a virtualized environment is aware of being virtualized. For any operating systems to run well in such an environment, one would only have to focus on developing and maintaining a set of generic drivers for virtual hardware, a task that is well under way for many popular operating systems, including Linux-based, Darwin-based or Windows NT-based operating systems.
 
-Virtualization, however, is only a partial answer to this problem. Allowing compatibility with physical hardware, including USB controllers or graphic cards, one would still need to use a base operating system that can provide software to drive these  physical devices. Most Linux distributions, including as Fedora or Debian, ship with a large selection of such drivers, and as such represent another part of the solution to this problem. Moreover, for certain hardware such as Network Interface Cards (NICs), Linux drivers are now shipping first. In other words, the industry is developing drivers for Linux first, at least for certain categories of components
+Virtualization, however, is only a partial answer to this problem. To be compatible with physical hardware, including USB controllers or graphic cards, one would still need to use a base operating system that can provide software to drive these physical devices. Most Linux distributions, including Fedora or Debian, ship with a large selection of such drivers, and as such represent another part of the solution to this problem. The industry is developing drivers for Linux first, at least for certain categories of components such as Network Interface Cards (NICs).
 
 ## In summary 
 
