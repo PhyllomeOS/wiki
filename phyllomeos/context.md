@@ -2,7 +2,7 @@
 title: Context
 description: 
 published: true
-date: 2022-02-08T20:56:54.325Z
+date: 2022-02-09T19:48:05.182Z
 tags: 
 editor: markdown
 dateCreated: 2021-11-12T15:31:13.657Z
@@ -34,7 +34,7 @@ These providers also add their own custom software to the core engine that prope
 
 ## The rise of robust general-purpose hypervisors
 
-Rust-vmm (or Rust-Virtual Machine Monitor) is an ongoing effort among software and hardware companies, including some hyperscalers, to share more of their codebase. Rust-vmm provides a platform to share reusable virtualization-related code by means of Rust-crates [^7].
+[Rust-vmm](https://github.com/rust-vmm/community) (or Rust-Virtual Machine Monitor) is an ongoing effort among software and hardware companies, including some hyperscalers, to share more of their codebase. Rust-vmm provides a platform to share reusable virtualization-related code by means of Rust-crates [^7].
 
 [^7]: Crates are snippets of Rust code which provide certain functions or sets of functions.
 
