@@ -2,13 +2,13 @@
 title: Features
 description: 
 published: true
-date: 2022-01-25T14:45:50.714Z
+date: 2022-02-09T19:49:58.423Z
 tags: 
 editor: markdown
 dateCreated: 2022-01-18T10:44:15.279Z
 ---
 
-# Features
+# Roadmap
 
 Below are the targeted features for the stable version, also known as Phyllome OS 1.0.
 
