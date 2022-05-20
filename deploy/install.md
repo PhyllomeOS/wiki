@@ -2,7 +2,7 @@
 title: Install Phyllome OS
 description: 
 published: true
-date: 2022-01-07T14:36:17.713Z
+date: 2022-05-20T20:00:32.735Z
 tags: 
 editor: markdown
 dateCreated: 2021-11-14T16:19:00.348Z
@@ -30,7 +30,7 @@ The following section illustrates how to change the boot order *temporarily*. Th
 * Make sure that your computer is turned-off. 
 * Plug the USB flash drive loaded with the official Fedora ISO.
 * Locate the <kbd>Alt</kbd> / <kbd>Option</kbd> key on your keyboard.
-* Turn your computer on and immediately press the <kbd>Alt</kbd> / <kbd>Option</kbd> key continuously.
+* Turn your computer on and immediately hold down the <kbd>Alt</kbd> / <kbd>Option</kbd> key.
 * The startup manager should appear after a few seconds.
 * Click on the option called *EFI* and the GRUB splash screen will appear. Go to the section below to learn what to do next.
 
