@@ -2,7 +2,7 @@
 title: Install Phyllome OS
 description: 
 published: true
-date: 2022-05-20T20:00:32.735Z
+date: 2022-05-20T20:28:19.443Z
 tags: 
 editor: markdown
 dateCreated: 2021-11-14T16:19:00.348Z
@@ -59,17 +59,17 @@ One needs to alter the GRUB instructions before the USB flash drive can load the
 
 ![screenshot_uefi_2021-11-22_154226.png](/grub-kickstart/screenshot_uefi_2021-11-22_154226.png)
 
-* On the new screen, navigate after the *quiet* word.
+* On the new screen, use the arrow keys to place your cursor just after the word `quiet`.
 
 ![screenshot_uefi_2021-11-22_154238.png](/grub-kickstart/screenshot_uefi_2021-11-22_154238.png)
 
-> GRUB defaults to the US keyboard layout. Have a look at [this online ressource](https://en.wikipedia.org/wiki/QWERTY#/media/File:KB_United_States.svg) to find the corresponding keys if you are having a hard time finding the right keystroke
+> GRUB defaults to the US keyboard layout. Have a look at [this online resource](https://en.wikipedia.org/wiki/QWERTY#/media/File:KB_United_States.svg) to find the corresponding keys if you are not using a US keyboard layout
 {.is-info}
 
-> **Danger Zone**: the next instruction will trigger an automated process that will **destroy** any data located on the internal disk present in your computer. 
+> **Danger Zone**: the next instruction will trigger a process that will automatically **destroy** any data located on the internal disk present in your computer
 {.is-danger}
 
-* Leave a blank space after the `quiet` word and write exactly the following `inst.ks=https://ks.phyllo.me/dii`, then press <kbd>Ctrl</kbd> + <kbd>x</kbd> simultaneously. This command will trigger the automated installation of Phyllome OS. 
+* Leave a blank space after the word `quiet` and write exactly the following `inst.ks=https://ks.phyllo.me/dii`, then press <kbd>Ctrl</kbd> + <kbd>x</kbd> simultaneously or <kbd>F10</kbd>. This command will trigger the automated installation of Phyllome OS. 
 
 ![screenshot_uefi_2021-11-22_155450.png](/grub-kickstart/screenshot_uefi_2021-11-22_155450.png)
 
