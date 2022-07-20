@@ -2,7 +2,7 @@
 title: Tasks
 description: 
 published: true
-date: 2022-01-31T09:57:45.504Z
+date: 2022-07-20T21:14:52.800Z
 tags: 
 editor: markdown
 dateCreated: 2021-11-13T11:40:46.114Z
@@ -10,9 +10,9 @@ dateCreated: 2021-11-13T11:40:46.114Z
 
 # Go further
 
-## Tasks related to the guest OS
+## Install a guest operating system
 
-*Although Phyllome OS thrives to pick good defaults that will work for many guest systems, further optimizations may be needed.* 
+*Although Phyllome OS thrives to pick good defaults that will work for many guest systems, further optimizations may be needed.*
 
 ### Unix-like
 	
