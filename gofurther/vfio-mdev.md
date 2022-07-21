@@ -2,7 +2,7 @@
 title: Virtual Function I/O Mediated devices (vfio-mdev)
 description: Create and Configure Virtual Function I/O Mediated devices (vfio-mdev)
 published: true
-date: 2022-07-21T21:10:41.046Z
+date: 2022-07-21T21:23:57.267Z
 tags: 
 editor: markdown
 dateCreated: 2022-07-21T21:10:41.046Z
@@ -112,7 +112,7 @@ mdevctl list -d
 * Add that segment to a virtual machine's definition. Modify the UUID address according to the previously generated UUID.
 
 ```
-    <hostdev mode="subsystem" type="mdev" managed="no" model="vfio-pci" display="on">
+    <hostdev mode="subsystem" type="mdev" managed="no" model="vfio-pci" display="on" ramfb="on">
       <source>
         <address uuid="7686131b-b229-4768-a02c-35d1dbed7c66"/>
       </source>
@@ -120,7 +120,7 @@ mdevctl list -d
     </hostdev>
 ```
 
-* Notice the display on, and the the RAMFB section, which allows to see the output before an operating system takes over.
+* Notice RAMFB option, which allows to see the output of a virtual monitor before an operating system takes over.
 
 ## Remove any video device
 
