@@ -2,7 +2,7 @@
 title: Tasks
 description: 
 published: true
-date: 2022-07-20T21:14:52.800Z
+date: 2022-07-21T21:07:38.255Z
 tags: 
 editor: markdown
 dateCreated: 2021-11-13T11:40:46.114Z
@@ -29,6 +29,7 @@ dateCreated: 2021-11-13T11:40:46.114Z
 
 * [Perform a few checks](/gofurther/checks) on Phyllome OS
 * [Resize](/gofurther/resize) an existing virtual disk
+* [Configure](/gofurther/vfio-mdev) Virtual Function I/O Mediated devices (vfio-mdev)
 * [Encrypt](/gofurther/encrypt) the directory that contains virtual disks for your current user
 * [Hack](/gofurther/hack) and develop Phyllome OS
 
