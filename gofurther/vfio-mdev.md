@@ -2,7 +2,7 @@
 title: Virtual Function I/O Mediated devices (vfio-mdev)
 description: Create and Configure Virtual Function I/O Mediated devices (vfio-mdev)
 published: true
-date: 2022-07-21T21:23:57.267Z
+date: 2022-07-23T10:33:04.565Z
 tags: 
 editor: markdown
 dateCreated: 2022-07-21T21:10:41.046Z
@@ -10,31 +10,37 @@ dateCreated: 2022-07-21T21:10:41.046Z
 
 # Configure Virtual Function I/O Mediated devices (vfio-mdev)
 
-Virtual Function I/O Mediated devices (vfio-mdev) allows you to split your GPU into virtual GPUs (vGPus), which are multiple virtual instances that can be managed using the native driver of your GPU. 
+Virtual Function I/O Mediated devices (vfio-mdev) allows you to split your a compatible GPU into multiple virtual GPUs (vGPUs). These vGPUs can then be assigned to a virtual machine.
 
-These instructions only cover Intel GPUs that are compatible with Virtual Function I/O (VFIO) Mediated devices (gen 5th to gen 9th, perhaps 10th). 
-
-For Xe Intel graphics (11th and onward) and other cards, use SR-IOV-based GPUs.
+> These instructions only cover Intel GPUs that are compatible with vfio-mdev (5th to 9th-10th generation). Intel Xe Graphics (12th generation and onward) do not support vfio-mdev but SR-IOV.
+{.is-info}
 
 ## Preparation
 
-* Make sure to update the grub first
+### Update the GRUB 
+
+* On a freshly deployed edition of Phyllome OS optimized for Intel Graphics such as [Phyllome OS Desktop II](https://wiki.phyllo.me/deploy/rightforyou), make sure that the GRUB has been updated.
 
 ```
 sudo grub2-mkconfig -o /boot/grub2/grub.cfg
 ```
 
-* Reboot
+* Then reboot your computer
 
 ```
-Reboot
+sudo reboot
 ```
 
-* Modify available GPU Aperture size (GPU memory) in the BIOS/UEFI.
+### Modify GPU Memory in BIOS/UEFI
 
-```
-To-do
-```
+> Only available for Intel Graphics cards
+{.is-info}
+
+Some computers allow you to modify the GPU memory allocated your desktop-based computers. It will reserve system memory for the GPUs.
+
+To do so, you need to enter the BIOS/UEFI and to look for a setting called GPU Aperture size, or GPU memory. 
+
+Use the highest value possible, but make sure you have enough system memory to accomodate both the GPU and your operating system. 
 
 ## Create a virtual GPU
 
