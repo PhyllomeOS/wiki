@@ -2,17 +2,17 @@
 title: Virtual Function I/O Mediated devices (vfio-mdev)
 description: Create and Configure Virtual Function I/O Mediated devices (vfio-mdev)
 published: true
-date: 2022-07-23T10:33:04.565Z
+date: 2022-07-24T16:37:28.365Z
 tags: 
 editor: markdown
 dateCreated: 2022-07-21T21:10:41.046Z
 ---
 
-# Configure Virtual Function I/O Mediated devices (vfio-mdev)
+# Configure Virtual Function I/O Mediated devices
 
-Virtual Function I/O Mediated devices (vfio-mdev) allows you to split your a compatible GPU into multiple virtual GPUs (vGPUs). These vGPUs can then be assigned to a virtual machine.
+Virtual Function I/O Mediated devices (vfio-mdev) allows you to split a compatible GPU into multiple virtual GPUs (vGPUs). These vGPUs can then be assigned to a virtual machine, just as real GPUs.
 
-> These instructions only cover Intel GPUs that are compatible with vfio-mdev (5th to 9th-10th generation). Intel Xe Graphics (12th generation and onward) do not support vfio-mdev but SR-IOV.
+> These instructions only cover Intel GPUs that are compatible with vfio-mdev (5th to 10th generation). Since generation 11th, Intel graphics do not support vfio-mdev but SR-IOV.
 {.is-info}
 
 ## Preparation
@@ -44,6 +44,8 @@ Use the highest value possible, but make sure you have enough system memory to a
 
 ## Create a virtual GPU
 
+Upon reboot, you should then be able to list available GPUs using the `mdevctl` command. 
+
 * List available virtual GPUs
 
 ```
@@ -70,10 +72,9 @@ mdevctl types
     Description: low_gm_size: 64MB, high_gm_size: 384MB, fence: 4, resolution: 1024x768, weight: 2
 ```
 
-* You may need to increase GPU aperture size, or memory, if there is no available instance
+* You may need to increase GPU aperture size if there is no available instance.
 
-
-The `i915-GVTg_V5_4` kind seems to offer the best trade-offs between the available resolution and the number of available instances.
+In this case, the `i915-GVTg_V5_4` kind seems to offer the best trade-offs between the available resolution and the number of available instances.
 
 * Generate unique id
 
@@ -130,10 +131,9 @@ mdevctl list -d
 
 ## Remove any video device
 
-* Remove any video device
-
+* Remove any video device, such as virtio-gpu. Or pick `none`.
 
 ## Resources
 
-* Official page: https://www.kernel.org/doc/html/latest/driver-api/vfio-mediated-device.html
+* Official page for vfio-mdev: https://www.kernel.org/doc/html/latest/driver-api/vfio-mediated-device.html
 * Archlinux's entry on Intel GVT-g: https://wiki.archlinux.org/title/Intel_GVT-g
