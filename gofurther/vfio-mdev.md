@@ -2,7 +2,7 @@
 title: Virtual Function I/O Mediated devices (vfio-mdev)
 description: Create and Configure Virtual Function I/O Mediated devices (vfio-mdev)
 published: true
-date: 2022-07-24T16:37:28.365Z
+date: 2022-07-27T23:53:40.933Z
 tags: 
 editor: markdown
 dateCreated: 2022-07-21T21:10:41.046Z
@@ -76,7 +76,7 @@ mdevctl types
 
 In this case, the `i915-GVTg_V5_4` kind seems to offer the best trade-offs between the available resolution and the number of available instances.
 
-* Generate unique id
+* Generate a universally unique identifier (UUID) with the following command:
 
 ```
 uuidgen
@@ -86,7 +86,7 @@ uuidgen
 7686131b-b229-4768-a02c-35d1dbed7c66
 ```
 
-* Start a vGPU based off this id and of type `i915-GVTg_V5_4`
+* Start a vGPU based on the kind `i915-GVTg_V5_4` using the previously generated UUID
  
 ```
 sudo mdevctl start -u 7686131b-b229-4768-a02c-35d1dbed7c66 -p 0000:00:02.0 --type i915-GVTg_V5_4
@@ -98,13 +98,13 @@ sudo mdevctl start -u 7686131b-b229-4768-a02c-35d1dbed7c66 -p 0000:00:02.0 --typ
 sudo mdevctl define -u 7686131b-b229-4768-a02c-35d1dbed7c66
 ```
 
-* Set it to auto-start when the host has boot up.
+* Set the vGPU to auto-start after the host boots up, so that it is available to guest virtual machines without further action 
 
 ```
 sudo mdevctl modify -u 7686131b-b229-4768-a02c-35d1dbed7c66 --auto
 ``` 
 
-* Verify it has successfully been created
+* Finally, verify that the vGPU has successfully been created and is set to auto-start:
 
 ```
 mdevctl list -d
@@ -114,26 +114,59 @@ mdevctl list -d
 7686131b-b229-4768-a02c-35d1dbed7c66 0000:00:02.0 i915-GVTg_V5_4 auto (active)
 ```
 
+Great you have 
+
 ## Assign a virtual GPU to a virtual machine
 
-* Add that segment to a virtual machine's definition. Modify the UUID address according to the previously generated UUID.
+* Add that segment to a virtual machine's definition. Make sure the provided ```uuid``` matches the previously generated UUID.
 
 ```
+<domain>
+[...]
+<device>
+[...]
     <hostdev mode="subsystem" type="mdev" managed="no" model="vfio-pci" display="on" ramfb="on">
       <source>
         <address uuid="7686131b-b229-4768-a02c-35d1dbed7c66"/>
       </source>
       <address type="pci" domain="0x0000" bus="0x09" slot="0x00" function="0x0"/>
     </hostdev>
+[...]
+</device>
+[...]
+</domain>
 ```
 
-* Notice RAMFB option, which allows to see the output of a virtual monitor before an operating system takes over.
+> Notice that the RAMFB is set to on, which activates Drect Memory Access Buffers (DMA-BUFs), making available the output of a virtual monitor before the guest operating system takes over 
+{.is-info}
+
+## Configure Spice / SDL
+
+*To-do*
 
 ## Remove any video device
 
-* Remove any video device, such as virtio-gpu. Or pick `none`.
+* Remove any video device such as `virtio-gpu` and set the last one to the `none`.
+
+
+```
+<domain>
+[...]
+<device>
+[...]
+    <video>
+    	<model type="none"/>
+    </video>
+[...]
+</device>
+[...]
+</domain>
+```
+
+* Then starts the domain
 
 ## Resources
 
 * Official page for vfio-mdev: https://www.kernel.org/doc/html/latest/driver-api/vfio-mediated-device.html
 * Archlinux's entry on Intel GVT-g: https://wiki.archlinux.org/title/Intel_GVT-g
+* DMA-BUF Linux documentation: https://www.kernel.org/doc/html/latest/driver-api/dma-buf.html
