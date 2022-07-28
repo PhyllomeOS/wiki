@@ -2,7 +2,7 @@
 title: Get started with Phyllome OS
 description: 
 published: true
-date: 2022-07-28T01:05:34.821Z
+date: 2022-07-28T01:06:37.558Z
 tags: 
 editor: markdown
 dateCreated: 2021-11-13T11:37:31.498Z
@@ -12,7 +12,7 @@ dateCreated: 2021-11-13T11:37:31.498Z
 
 *This section explains how to further configure Phyllome OS and how to use in a general sense.*   
 
-https://wiki.phyllo.me/gofurther#install-a-guest-operating-system
+* TLDR: [Install a guest operating system](https://wiki.phyllo.me/gofurther#install-a-guest-operating-system)
 
 ## Post-installation configuration
 
@@ -57,11 +57,6 @@ When the is done, please reboot: `sudo reboot`
 
 > System memory will be reserved for the GPU, so make sure you have enough system memory to accomodate both the GPU and your operating system. 
 {.is-warning}
-
-
-## 
-https://wiki.phyllo.me/gofurther#install-a-guest-operating-system
-
 
 
 ---
