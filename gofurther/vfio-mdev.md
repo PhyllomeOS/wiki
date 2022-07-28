@@ -2,7 +2,7 @@
 title: Virtual Function I/O Mediated devices (vfio-mdev)
 description: Create and Configure Virtual Function I/O Mediated devices (vfio-mdev)
 published: true
-date: 2022-07-27T23:53:40.933Z
+date: 2022-07-28T01:25:56.298Z
 tags: 
 editor: markdown
 dateCreated: 2022-07-21T21:10:41.046Z
@@ -10,43 +10,40 @@ dateCreated: 2022-07-21T21:10:41.046Z
 
 # Configure Virtual Function I/O Mediated devices
 
-Virtual Function I/O Mediated devices (vfio-mdev) allows you to split a compatible GPU into multiple virtual GPUs (vGPUs). These vGPUs can then be assigned to a virtual machine, just as real GPUs.
+> *These instructions only cover Intel GPUs that are compatible with vfio-mdev (5th to 10th generation). Since generation 11th, vfio-mdev has been replaced by SR-IOV.*
+{.is-warning}
 
-> These instructions only cover Intel GPUs that are compatible with vfio-mdev (5th to 10th generation). Since generation 11th, Intel graphics do not support vfio-mdev but SR-IOV.
-{.is-info}
+GPUs compatible with [Virtual Function I/O Mediated devices](https://www.kernel.org/doc/html/latest/driver-api/vfio-mediated-device.html) (vfio-mdev) can be split into multiple virtual GPUs (vGPUs). 
+
+vGPUs can be assigned to virtual machines or containers. 
+
+*How to do so?* 
 
 ## Preparation
 
-### Update the GRUB 
+* Make sure the GRUB has been updated after [the first boot](https://wiki.phyllo.me/getstarted/disk#update-grub-and-reboot)
 
-* On a freshly deployed edition of Phyllome OS optimized for Intel Graphics such as [Phyllome OS Desktop II](https://wiki.phyllo.me/deploy/rightforyou), make sure that the GRUB has been updated.
+### Modify the system allocated to the GPU in the BIOS/UEFI
 
-```
-sudo grub2-mkconfig -o /boot/grub2/grub.cfg
-```
-
-* Then reboot your computer
-
-```
-sudo reboot
-```
-
-### Modify GPU Memory in BIOS/UEFI
-
-> Only available for Intel Graphics cards
+> Some computers allow you to modify the system memory allocated or shared with the integrated GPU, which may allow you to create more vGPUs.
 {.is-info}
 
-Some computers allow you to modify the GPU memory allocated your desktop-based computers. It will reserve system memory for the GPUs.
+> For Intel integrated graphics cards only; rarely available on laptops computers.
+{.is-warning}
 
-To do so, you need to enter the BIOS/UEFI and to look for a setting called GPU Aperture size, or GPU memory. 
+* Before the host operating system boots up, you need to enter the BIOS/UEFI and to look for a setting called *GPU aperture size*, or *GPU shared memory*. 
 
-Use the highest value possible, but make sure you have enough system memory to accomodate both the GPU and your operating system. 
+* Use the highest possible value.
+
+> System memory will be reserved for the GPU, so make sure you have enough system memory to accomodate both the GPU and your operating system. 
+{.is-warning}
+
 
 ## Create a virtual GPU
 
 Upon reboot, you should then be able to list available GPUs using the `mdevctl` command. 
 
-* List available virtual GPUs
+* List available virtual GPUs:
 
 ```
 mdevctl types
@@ -72,7 +69,9 @@ mdevctl types
     Description: low_gm_size: 64MB, high_gm_size: 384MB, fence: 4, resolution: 1024x768, weight: 2
 ```
 
-* You may need to increase GPU aperture size if there is no available instance.
+> Increasing the system memory allocated to the GPU (GPU aperture size), as shown in the previous section, may increase the number and kind of available instances.
+{.is-info}
+
 
 In this case, the `i915-GVTg_V5_4` kind seems to offer the best trade-offs between the available resolution and the number of available instances.
 
@@ -168,5 +167,5 @@ Great you have
 ## Resources
 
 * Official page for vfio-mdev: https://www.kernel.org/doc/html/latest/driver-api/vfio-mediated-device.html
-* Archlinux's entry on Intel GVT-g: https://wiki.archlinux.org/title/Intel_GVT-g
+* Archlinux's *must read entry* on Intel GVT-g: https://wiki.archlinux.org/title/Intel_GVT-g
 * DMA-BUF Linux documentation: https://www.kernel.org/doc/html/latest/driver-api/dma-buf.html
