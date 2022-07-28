@@ -2,7 +2,7 @@
 title: Tasks
 description: 
 published: true
-date: 2022-07-28T00:19:53.924Z
+date: 2022-07-28T00:23:13.725Z
 tags: 
 editor: markdown
 dateCreated: 2021-11-13T11:40:46.114Z
@@ -14,7 +14,7 @@ dateCreated: 2021-11-13T11:40:46.114Z
 
 *Although Phyllome OS thrives to pick good defaults that will work for many guest systems, further optimizations may be needed.*
 
-Generally speaking, installing your favorite guest operating system inside Phyllome OS requires that you fetch an official ISO from the editor of the said operating system, that you make it accessible to `libvirt` and that you go through the installation.
+A guest operating system can be installed in different ways, such as using the official ISO image of a guest operating editor, or automatically through Internet, using `virt-install`.
 
 ### Unix-like
 	
@@ -24,6 +24,10 @@ Generally speaking, installing your favorite guest operating system inside Phyll
 ### Windows NT
 
 * [Install ReactOS](/gofurther/reactos)
+
+### Darwin-based
+
+* *To-do*
 
 ## Tasks related to Phyllome OS
 
