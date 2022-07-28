@@ -2,7 +2,7 @@
 title: Get started with Phyllome OS
 description: 
 published: true
-date: 2022-01-12T20:39:06.191Z
+date: 2022-07-28T01:05:34.821Z
 tags: 
 editor: markdown
 dateCreated: 2021-11-13T11:37:31.498Z
@@ -11,6 +11,8 @@ dateCreated: 2021-11-13T11:37:31.498Z
 # How to use Phyllome OS
 
 *This section explains how to further configure Phyllome OS and how to use in a general sense.*   
+
+https://wiki.phyllo.me/gofurther#install-a-guest-operating-system
 
 ## Post-installation configuration
 
@@ -41,12 +43,26 @@ sudo grub2-mkconfig -o /boot/grub2/grub.cfg
 ```
 When the is done, please reboot: `sudo reboot`
 
-## Install and use a guest operating system
+### Modify the system allocated to the GPU in the BIOS/UEFI (vfio-mdev only)
 
-Generally speaking, installing your favorite guest operating system inside Phyllome OS requires that you fetch an official ISO from the editor of the said operating system, that you make it accessible to `libvirt` and that you go through the installation.
+> Some computers allow you to modify the system memory allocated or shared with the integrated GPU, which may allow you to create more vGPUs.
+{.is-info}
 
->  Under construction
+> For Intel integrated graphics cards only; rarely available on laptops computers.
 {.is-warning}
+
+* Before the host operating system boots up, you need to enter the BIOS/UEFI and to look for a setting called *GPU aperture size*, or *GPU shared memory*. 
+
+* Use the highest possible value.
+
+> System memory will be reserved for the GPU, so make sure you have enough system memory to accomodate both the GPU and your operating system. 
+{.is-warning}
+
+
+## 
+https://wiki.phyllo.me/gofurther#install-a-guest-operating-system
+
+
 
 ---
 
