@@ -2,7 +2,7 @@
 title: Tasks
 description: 
 published: true
-date: 2022-07-28T00:23:13.725Z
+date: 2022-07-28T00:24:18.884Z
 tags: 
 editor: markdown
 dateCreated: 2021-11-13T11:40:46.114Z
@@ -14,7 +14,7 @@ dateCreated: 2021-11-13T11:40:46.114Z
 
 *Although Phyllome OS thrives to pick good defaults that will work for many guest systems, further optimizations may be needed.*
 
-A guest operating system can be installed in different ways, such as using the official ISO image of a guest operating editor, or automatically through Internet, using `virt-install`.
+A guest operating system can be installed in different ways, such as using the installer on an ISO image or automatically through Internet, using `virt-install`.
 
 ### Unix-like
 	
