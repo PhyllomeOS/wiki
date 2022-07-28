@@ -2,7 +2,7 @@
 title: Tasks
 description: 
 published: true
-date: 2022-07-21T21:07:38.255Z
+date: 2022-07-28T00:19:53.924Z
 tags: 
 editor: markdown
 dateCreated: 2021-11-13T11:40:46.114Z
@@ -13,6 +13,8 @@ dateCreated: 2021-11-13T11:40:46.114Z
 ## Install a guest operating system
 
 *Although Phyllome OS thrives to pick good defaults that will work for many guest systems, further optimizations may be needed.*
+
+Generally speaking, installing your favorite guest operating system inside Phyllome OS requires that you fetch an official ISO from the editor of the said operating system, that you make it accessible to `libvirt` and that you go through the installation.
 
 ### Unix-like
 	
