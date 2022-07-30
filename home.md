@@ -2,7 +2,7 @@
 title: Homepage
 description: 
 published: true
-date: 2022-07-30T01:06:38.012Z
+date: 2022-07-30T01:15:25.001Z
 tags: 
 editor: markdown
 dateCreated: 2021-06-19T09:29:20.593Z
@@ -14,19 +14,22 @@ dateCreated: 2021-06-19T09:29:20.593Z
 
 *In this wiki, you will find guides about [how to install](/deploy/install), [use](/getstarted/disk) and [hack](/gofurther/hack) Phyllome OS. You will also find more generic information on the [underlying technologies](/virt), Phyllome OS [itself](/phyllomeos) and the surrounding [project](/project).*
 
+> *For unauthenticated users, contributions are welcome using [Git](https://github.com/PhyllomeOS/wiki)*
+> {.is-info}
+
 Phyllome[^1] OS is an operating system that makes it easier to run [various operating systems](/gofurther) locally using [off-the-shelf hardware](/deploy/prepare) and [virtualization](/virt/lexicon#virtualization) technologies.
 
 [^1]: According to [the Wiktionary](https://en.wiktionary.org/wiki/phyllome), Phyllome refers to the "foliar part of a plant; any organ homologous with a leaf, or [any organ] produced by metamorphosis of a leaf"
 
-> If you would rather avoid JavaScript altogether, or wish to download the content of this wiki locally, feel free to clone [this repository](https://github.com/PhyllomeOS/wiki).
+> *If you would rather avoid JavaScript altogether, or wish to download the content of this wiki locally, feel free to clone [this repository](https://github.com/PhyllomeOS/wiki).*
 {.is-info}
 
-> This is the *alpha version* of this wiki. Contributions are welcome using [Git](https://github.com/PhyllomeOS/wiki).
+> *This is the *alpha version* of this wiki.* 
 > {.is-warning}
 
-## Deploy
+## Install the host Phyllome OS
 
-*[This section](/deploy) is meant to help users install Phyllome OS.*
+*[This section](/deploy) illustrates how to install Phyllome OS on a compatible computer*
 
 * [Is Phyllome OS right for you?](/deploy/rightforyou)
 * [Prepare your computer](/deploy/prepare)
@@ -36,24 +39,20 @@ Phyllome[^1] OS is an operating system that makes it easier to run [various oper
 
 * ...and [**more**](https://wiki.phyllo.me/en/deploy)
 
-## Get started
+## Deploy guests in the host
 
-*[This section](/getstarted) is meant to introduce how to deploy your common operating systems within Phyllome OS*
+*[This section](/getstarted) describes how to deploy common operating systems within Phyllome OS*
 
-### Unix-like
+* **Unix-like**
+	* [Install](/gofurther/install-guest) a Linux guest system over the internet
+	* [Automatically deploy](/gofurther/virt-install) an RPM-based guest system with `virt-install` and a kickstart file 
 
-* [Install](/gofurther/install-guest) a Linux guest system over the internet
-* [Automatically deploy](/gofurther/virt-install) an RPM-based guest system with `virt-install` and a kickstart file 
+* **Windows NT**
+  * [Install ReactOS](/gofurther/reactos)
+  * [Install Windows 11 (*to be created*)](/gofurther/windows11)
 
-### Windows NT
-
-* [Install ReactOS](/gofurther/reactos)
-* [Install Windows 11 (*to be created*)](/gofurther/windows11)
-
-### Darwin-based
-
-* [Install macOS (*to be created*)](/gofurther/macos)
-
+* **Darwin-based**
+  * [Install macOS (*to be created*)](/gofurther/macos)
 
 * ...and [**more**](https://wiki.phyllo.me/en/getstarted#guest-operating-system-installations)
 
