@@ -2,7 +2,7 @@
 title: Homepage
 description: 
 published: true
-date: 2022-01-24T11:27:07.838Z
+date: 2022-07-30T00:17:09.592Z
 tags: 
 editor: markdown
 dateCreated: 2021-06-19T09:29:20.593Z
@@ -40,6 +40,24 @@ Phyllome[^1] OS is an operating system that makes it easier to run [various oper
 
 * [Use it as a live system](/getstarted/live) (*to test it*)
 * [Use it as an installed system](/getstarted/disk) (*for daily use*)
+
+### Guest operating system installations
+
+A guest operating system can be installed in different ways, such as using the installer on an ISO image or automatically through Internet, using `virt-install`.
+
+#### Unix-like
+	
+* [Install](/gofurther/install-guest) a Linux guest system using an ISO file
+* [Automatically deploy](/gofurther/virt-install) an RPM-based guest system with `virt-install` and a kickstart file 
+
+#### Windows NT
+
+* [Install ReactOS](/gofurther/reactos)
+
+#### Darwin-based
+
+* *To-do*
+
 
 ## Go further
 
