@@ -2,7 +2,7 @@
 title: Homepage
 description: 
 published: true
-date: 2022-07-30T00:48:26.954Z
+date: 2022-07-30T01:06:38.012Z
 tags: 
 editor: markdown
 dateCreated: 2021-06-19T09:29:20.593Z
@@ -31,19 +31,18 @@ Phyllome[^1] OS is an operating system that makes it easier to run [various oper
 * [Is Phyllome OS right for you?](/deploy/rightforyou)
 * [Prepare your computer](/deploy/prepare)
 * [Create an installation medium](/deploy/medium)
-* [Install from a USB flash drive](/deploy/install) (*default method*)
+* [Install from the installation medium](/deploy/install) (*default method*)
+* [Post-installation configuration](/deploy/post-installation)
+
 * ...and [**more**](https://wiki.phyllo.me/en/deploy)
 
 ## Get started
 
-*[This section](/getstarted) is meant to introduce how to use Phyllome OS in a general way.*
-
-* [Use it as a live system](/getstarted/live) (*to test it*)
-* [Use it as an installed system](/getstarted/disk) (*for daily use*)
+*[This section](/getstarted) is meant to introduce how to deploy your common operating systems within Phyllome OS*
 
 ### Unix-like
 
-* [Install](/gofurther/install-guest) a Linux guest system using an ISO file
+* [Install](/gofurther/install-guest) a Linux guest system over the internet
 * [Automatically deploy](/gofurther/virt-install) an RPM-based guest system with `virt-install` and a kickstart file 
 
 ### Windows NT
@@ -51,12 +50,18 @@ Phyllome[^1] OS is an operating system that makes it easier to run [various oper
 * [Install ReactOS](/gofurther/reactos)
 * [Install Windows 11 (*to be created*)](/gofurther/windows11)
 
+### Darwin-based
+
+* [Install macOS (*to be created*)](/gofurther/macos)
+
+
 * ...and [**more**](https://wiki.phyllo.me/en/getstarted#guest-operating-system-installations)
 
 ## Go further
 
 *[This section](/gofurther#tasks_related_to_phyllome_os) illustrates specific tasks related to Phyllome OS.*
 
+* [Use Phyllome as a live system](/getstarted/live) (*to test it*)
 * [Perform a few checks](/gofurther/checks) on Phyllome OS
 * [Resize an existing disk](/gofurther/resize)
 * ...and [**more**](/gofurther)
