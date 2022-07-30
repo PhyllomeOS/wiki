@@ -2,7 +2,7 @@
 title: Homepage
 description: 
 published: true
-date: 2022-07-30T00:44:02.567Z
+date: 2022-07-30T00:48:26.954Z
 tags: 
 editor: markdown
 dateCreated: 2021-06-19T09:29:20.593Z
@@ -41,37 +41,21 @@ Phyllome[^1] OS is an operating system that makes it easier to run [various oper
 * [Use it as a live system](/getstarted/live) (*to test it*)
 * [Use it as an installed system](/getstarted/disk) (*for daily use*)
 
-### Guest operating system installations
-
-A guest operating system can be installed in different ways, such as using the installer on an ISO image or automatically through Internet, using `virt-install`.
-
-#### Unix-like
+### Unix-like
 
 * [Install](/gofurther/install-guest) a Linux guest system using an ISO file
 * [Automatically deploy](/gofurther/virt-install) an RPM-based guest system with `virt-install` and a kickstart file 
 
-#### Windows NT
+### Windows NT
 
 * [Install ReactOS](/gofurther/reactos)
-* [Install Windows 11 (*to-create*)](/gofurther/windows11)
+* [Install Windows 11 (*to be created*)](/gofurther/windows11)
 
 * ...and [**more**](https://wiki.phyllo.me/en/getstarted#guest-operating-system-installations)
 
-
-
 ## Go further
 
-### Guest operating systems
-
-*[This section](/gofurther) illustrates how to deploy supported guests and further optimize them.* 
-
-* [Use netboot.xyz](/gofurther/install-guest) to deploy a Linux guest
-* [Unattended deployment](/gofurther/virt-install) of a RPM-based guest using a kickstart file
-* ...and [**more**](/gofurther)
-
-### The host operating system
-
-*[This section](/gofurther#tasks_related_to_phyllome_os) illustrates how to execute certain tasks related to Phyllome OS.*
+*[This section](/gofurther#tasks_related_to_phyllome_os) illustrates specific tasks related to Phyllome OS.*
 
 * [Perform a few checks](/gofurther/checks) on Phyllome OS
 * [Resize an existing disk](/gofurther/resize)
