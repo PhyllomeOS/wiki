@@ -2,7 +2,7 @@
 title: Homepage
 description: 
 published: true
-date: 2022-07-30T00:43:40.003Z
+date: 2022-07-30T00:44:02.567Z
 tags: 
 editor: markdown
 dateCreated: 2021-06-19T09:29:20.593Z
@@ -53,7 +53,7 @@ A guest operating system can be installed in different ways, such as using the i
 #### Windows NT
 
 * [Install ReactOS](/gofurther/reactos)
-* [Install Windows 11](/gofurther/windows11)
+* [Install Windows 11 (*to-create*)](/gofurther/windows11)
 
 * ...and [**more**](https://wiki.phyllo.me/en/getstarted#guest-operating-system-installations)
 
