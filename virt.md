@@ -2,7 +2,7 @@
 title: Virtualization for the rest of us
 description: 
 published: true
-date: 2022-01-25T22:00:59.669Z
+date: 2022-07-31T09:07:16.354Z
 tags: 
 editor: markdown
 dateCreated: 2021-11-13T12:08:53.048Z
@@ -26,6 +26,7 @@ dateCreated: 2021-11-13T12:08:53.048Z
 * [Linux Kernel modules](/virt/host/modules) related to virtualization
 * [Virtualization-related paths](/virt/host/paths) on Phyllome OS
 * [XML](/virt/host/xml) commented
+* [Virtual I/O Devices](/virt/vm/virtio) (`virtio`)
 
 ## Virtual hardware
 
@@ -33,11 +34,8 @@ dateCreated: 2021-11-13T12:08:53.048Z
 
 * [Chipset](/virt/vm/chipset)
 * [Firmware](/virt/vm/firmware)
-* [Virtual I/O Devices](/virt/vm/virtio) (`virtio`)
-
-## Physical hardware
-
-*This sub-section will include about the physical hardware.*
+* [Display](/virt/vm/display)
+* [Input](/virt/vm/input)
 
 ## Resources
 
