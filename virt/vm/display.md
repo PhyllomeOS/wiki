@@ -2,7 +2,7 @@
 title: Display
 description: How to access a virtual machine's display
 published: true
-date: 2022-07-31T09:22:05.854Z
+date: 2022-08-01T10:17:16.909Z
 tags: 
 editor: markdown
 dateCreated: 2022-07-31T09:22:05.854Z
@@ -31,7 +31,7 @@ The Simple DirectMedia Layer is a local-only low-latency display.
 > *It is currently only avalable with virtual machines created using the QEMU/KVM **User Session** mode.*
 {.is-warning}
 
-* Example of an XML configuration, with OpenGL enabled. This example requires 3D-capable graphic card, such as **virtio-gpu**.
+* Example of an XML configuration, with OpenGL enabled. This example requires 3D-capable graphic card, such as ``virtio-gpu``.
 
 ```
 <graphics type="sdl" display=":0.0">
