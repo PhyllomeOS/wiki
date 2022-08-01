@@ -2,7 +2,7 @@
 title: Display
 description: How to access a virtual machine's display
 published: true
-date: 2022-08-01T10:17:16.909Z
+date: 2022-08-01T10:20:00.982Z
 tags: 
 editor: markdown
 dateCreated: 2022-07-31T09:22:05.854Z
@@ -10,9 +10,11 @@ dateCreated: 2022-07-31T09:22:05.854Z
 
 # Display
 
-A virtual display can be attached to a virtual machine to allow interacting with it. It is a requirement for high-performance computing.
+A virtual display can be attached to a virtual machine to se the content of it. It is a must-have for in non-headless scenarios.
 
 ## Summary
+
+* *to-be done. Add table here*.
 
 ## Specific displays
 
