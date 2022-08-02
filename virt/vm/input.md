@@ -2,7 +2,7 @@
 title: Input devices
 description: How to share input devices with a virtual machine
 published: true
-date: 2022-08-01T10:42:14.864Z
+date: 2022-08-02T09:59:31.526Z
 tags: 
 editor: markdown
 dateCreated: 2022-08-01T10:42:14.864Z
@@ -42,7 +42,7 @@ pci-0000:09:00.0-event-mouse  platform-i8042-serio-1-mouse
 sudo cat /dev/input/by-path/pci-0000:08:00.0-event-kbd
 ```
 
-* If gibberish symbols should appear on your console as you type, it means that the device has been correctly identified, and that you can <kbd>Ctrl+Y</kbd>
+* If gibberish symbols appear on your console as you type, it means that the device has been correctly identified, and that you can <kbd>Ctrl+Z</kbd>
 
 ```
 ��b����b����b�!��b���b�� ��b����b����b����b����b��fdsa��b�( ��b�(��b!��b��bR��bR��bW��bW��b�!��b�f��b4 ��b4��bV��bV��bX��bXdsa��b!:	!��b!:	��b>:	 ��b>:	��b�
