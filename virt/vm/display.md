@@ -2,7 +2,7 @@
 title: Display
 description: How to access a virtual machine's display
 published: true
-date: 2022-08-12T23:47:40.458Z
+date: 2022-08-12T23:55:26.857Z
 tags: 
 editor: markdown
 dateCreated: 2022-07-31T09:22:05.854Z
@@ -38,9 +38,12 @@ The Simple DirectMedia Layer is a local-only low-latency display.
 > *Mouse grab does not currently work in SDL*
 {.is-warning}
 
+* The display resolution of your guest display should not exceed that of your physical screen.
+
+
 #### SELinux configuration
 
-By default, SELinux will block access to X Windows Server for the virtualization stack. 
+By default, SELinux will block access to X Windows Server for the virtualization stack. An exception has to be set.
 
 * Set new rule
 
@@ -70,7 +73,9 @@ sudo semodule -X 300 -i my-qemusystemx86.pp
   <gl enable="yes"/>
 </graphics>
 ```
-The display resolution of your newly created should not exceed that of your physical screen.
+
+You can identify your display using the following command: `echo $DISPLAY`
+
 
 ### Xephyr
 
