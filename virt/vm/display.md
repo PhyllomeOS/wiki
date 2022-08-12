@@ -2,7 +2,7 @@
 title: Display
 description: How to access a virtual machine's display
 published: true
-date: 2022-08-12T23:56:09.140Z
+date: 2022-08-12T23:57:15.072Z
 tags: 
 editor: markdown
 dateCreated: 2022-07-31T09:22:05.854Z
@@ -64,7 +64,7 @@ k
 sudo semodule -X 300 -i my-qemusystemx86.pp
 ```
 
-#### XML SDL
+#### XML SDL example
 
 * Example of an XML SDL configuration, with OpenGL enabled. This example requires a 3D-capable graphic card to be attached to the guest computer, such as ``virtio-gpu`` or ``vfio-pci``.
 
