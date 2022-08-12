@@ -2,7 +2,7 @@
 title: Display
 description: How to access a virtual machine's display
 published: true
-date: 2022-08-12T23:55:26.857Z
+date: 2022-08-12T23:56:09.140Z
 tags: 
 editor: markdown
 dateCreated: 2022-07-31T09:22:05.854Z
@@ -74,7 +74,8 @@ sudo semodule -X 300 -i my-qemusystemx86.pp
 </graphics>
 ```
 
-You can identify your display using the following command: `echo $DISPLAY`
+> *You can identify your display using the following command: `echo $DISPLAY`*
+{.is-info}
 
 
 ### Xephyr
