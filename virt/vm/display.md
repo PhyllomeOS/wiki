@@ -2,7 +2,7 @@
 title: Display
 description: How to access a virtual machine's display
 published: true
-date: 2022-08-24T23:19:53.906Z
+date: 2022-08-24T23:21:10.609Z
 tags: 
 editor: markdown
 dateCreated: 2022-07-31T09:22:05.854Z
@@ -84,7 +84,7 @@ sudo semodule -X 300 -i my-qemusystemx86.pp
 
 ### D-Bus
 
-> *The D-Bus display is only available since version 7.4.0 of *libvirt**
+> *The D-Bus display is only available since version 7.4.0 of *`libvirt`**
 {.is-warning}
 
 [D-Bus](https://www.freedesktop.org/wiki/Software/dbus/) is a  Desktop-oriented middleware that can be used to create a display for a virtual machine.  
