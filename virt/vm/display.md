@@ -2,7 +2,7 @@
 title: Display
 description: How to access a virtual machine's display
 published: true
-date: 2022-08-12T23:57:15.072Z
+date: 2022-08-24T23:13:49.450Z
 tags: 
 editor: markdown
 dateCreated: 2022-07-31T09:22:05.854Z
@@ -10,9 +10,14 @@ dateCreated: 2022-07-31T09:22:05.854Z
 
 # Display
 
-A virtual display can be attached to a virtual machine to se the content of it. It is a must-have for non-headless scenarios.
+A virtual display can be attached to a virtual machine, letting a user see the content of it. It is a must-have for non-headless scenario.
+
 
 ## Summary
+
+> *[Official ressource](https://libvirt.org/formatdomain.html#graphical-framebuffers) for `libvirt`-compatible displays, including various XML examples*
+> 
+{.is-info}
 
 * *to-be done. Add table here*.
 
@@ -77,6 +82,25 @@ sudo semodule -X 300 -i my-qemusystemx86.pp
 > *You can identify your display using the following command: `echo $DISPLAY`*
 {.is-info}
 
+### D-Bus
+
+> The D-Bus display is only available since version 7.4.0 of *libvirt*
+{.is-warning}
+
+[D-Bus](https://www.freedesktop.org/wiki/Software/dbus/) is a  Desktop-oriented middleware that can be used to create a display for a virtual machine.  
+
+Export and enable a video backend, add OpenGL support and peer-to-peer connection :
+```
+<graphics type='dbus'/>
+	 <p2p value="on"/>
+   <gl enable="yes"/>
+</graphics>
+```
+Export and enable an audio backend :
+
+<graphics type='dbus' ...>
+  <audio id='1'>
+</graphics>
 
 ### Xephyr
 
@@ -98,7 +122,5 @@ sudo semodule -X 300 -i my-qemusystemx86.pp
 
 * *to-be done*
 
-### Dbus
 
-* *to-be done*
 
