@@ -2,7 +2,7 @@
 title: Display
 description: How to access a virtual machine's display
 published: true
-date: 2022-08-24T23:43:55.725Z
+date: 2022-08-24T23:45:25.923Z
 tags: 
 editor: markdown
 dateCreated: 2022-07-31T09:22:05.854Z
@@ -89,11 +89,14 @@ sudo semodule -X 300 -i my-qemusystemx86.pp
 
 [D-Bus](https://www.freedesktop.org/wiki/Software/dbus/) is a  Desktop-oriented middleware that can be used to create a display for a virtual machine.  
 
+> *[Detailed presentation](https://bootlin.com/pub/conferences/2016/meetup/dbus/josserand-dbus-meetup.pdf) on D-Bus*
+{.is-info}
+
 * Export and enable a video backend, add support for OpenGL and peer-to-peer connection:
 
 Does not display at the moment. 
 
-SELinux needs to be disabled 
+SELinux needs to be disabled.
 
 ```
 <graphics type="dbus"/>
