@@ -2,7 +2,7 @@
 title: Display
 description: How to access a virtual machine's display
 published: true
-date: 2022-08-24T23:21:10.609Z
+date: 2022-08-24T23:36:35.673Z
 tags: 
 editor: markdown
 dateCreated: 2022-07-31T09:22:05.854Z
@@ -98,6 +98,15 @@ sudo semodule -X 300 -i my-qemusystemx86.pp
 </graphics>
 ```
 
+It will look like that when launched: 
+
+```
+<graphics type="dbus" address="unix:path=/run/user/1000/libvirt/qemu/run/dbus/8-user-d-bus-dbus.sock">
+  <gl enable="yes" rendernode="/dev/dri/renderD128"/>
+</graphics>
+```
+
+
 * Export and enable an audio backend:
 
 ```
@@ -105,6 +114,7 @@ sudo semodule -X 300 -i my-qemusystemx86.pp
   <audio id="1">
 </graphics>
 ``` 
+
 
 ### Xephyr
 
