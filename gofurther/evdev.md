@@ -2,15 +2,24 @@
 title: Share an input device with a guest using evdev
 description: 
 published: true
-date: 2022-08-13T00:26:02.801Z
+date: 2022-08-25T10:40:44.666Z
 tags: 
 editor: markdown
 dateCreated: 2022-08-13T00:26:02.801Z
 ---
 
-# Sharing an input device with a guest
+# Share an input device
 
-## evdev XML conf.
+> *Input grabbing on Wayland doesn't currently work as expected. Destkop environments based on the X session manager may work better in this regard*
+{.is-warning}
+
+There are multiple ways to share an input device with a virtual machine. 
+
+## Event device
+
+Event device or simply `evdev` is a generic input event interface that is part of the Linux kernel.
+
+The following is a XML snippet example for sharing a mouse and a keyboard.
 
 ```
 <input type='evdev'>
@@ -20,3 +29,8 @@ dateCreated: 2022-08-13T00:26:02.801Z
       <source dev='/dev/input/by-path/platform-i8042-serio-0-event-kbd' grab='all' repeat='on'/>
 </input>
 ```
+
+Replace the `platform-i8042-serio-1-event-mouse` value with the value under `/dev/input/by-path/*` or `/dev/input/by-id/*`
+
+
+
