@@ -2,7 +2,7 @@
 title: Homepage
 description: 
 published: true
-date: 2022-07-30T01:15:25.001Z
+date: 2022-09-28T12:47:24.501Z
 tags: 
 editor: markdown
 dateCreated: 2021-06-19T09:29:20.593Z
@@ -97,6 +97,5 @@ Phyllome[^1] OS is an operating system that makes it easier to run [various oper
 * **The website**: https://phyllo.me
 * **This wiki**: https://wiki.phyllo.me
 * **The issue board**: [https://kanboard.phyllo.me](https://kanboard.phyllo.me/b/CH7qd98J2v7egmodk/development)
-* **The public forum**: https://forum.phyllo.me
 * **GitHub's repositories**: https://github.com/PhyllomeOS
 
