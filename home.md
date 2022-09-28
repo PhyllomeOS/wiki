@@ -2,7 +2,7 @@
 title: Homepage
 description: 
 published: true
-date: 2022-09-28T12:47:24.501Z
+date: 2022-09-28T12:52:05.624Z
 tags: 
 editor: markdown
 dateCreated: 2021-06-19T09:29:20.593Z
@@ -14,9 +14,6 @@ dateCreated: 2021-06-19T09:29:20.593Z
 
 *In this wiki, you will find guides about [how to install](/deploy/install), [use](/getstarted/disk) and [hack](/gofurther/hack) Phyllome OS. You will also find more generic information on the [underlying technologies](/virt), Phyllome OS [itself](/phyllomeos) and the surrounding [project](/project).*
 
-> *For unauthenticated users, contributions are welcome using [Git](https://github.com/PhyllomeOS/wiki)*
-> {.is-info}
-
 Phyllome[^1] OS is an operating system that makes it easier to run [various operating systems](/gofurther) locally using [off-the-shelf hardware](/deploy/prepare) and [virtualization](/virt/lexicon#virtualization) technologies.
 
 [^1]: According to [the Wiktionary](https://en.wiktionary.org/wiki/phyllome), Phyllome refers to the "foliar part of a plant; any organ homologous with a leaf, or [any organ] produced by metamorphosis of a leaf"
@@ -24,8 +21,6 @@ Phyllome[^1] OS is an operating system that makes it easier to run [various oper
 > *If you would rather avoid JavaScript altogether, or wish to download the content of this wiki locally, feel free to clone [this repository](https://github.com/PhyllomeOS/wiki).*
 {.is-info}
 
-> *This is the *alpha version* of this wiki.* 
-> {.is-warning}
 
 ## Install the host Phyllome OS
 
@@ -87,6 +82,8 @@ Phyllome[^1] OS is an operating system that makes it easier to run [various oper
 ### About the project
 
 *[This section](/project) describes the project around Phyllome OS*.
+
+
 
 * [How to contribute](/project/contribute)
 * [How to join](/project/join)
