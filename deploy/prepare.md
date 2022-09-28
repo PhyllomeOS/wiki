@@ -2,7 +2,7 @@
 title: Preparation
 description: 
 published: true
-date: 2022-01-12T18:14:48.644Z
+date: 2022-09-28T12:57:20.646Z
 tags: 
 editor: markdown
 dateCreated: 2021-11-15T15:39:49.074Z
@@ -16,10 +16,10 @@ These instructions are valid for most computers that ship with Linux, Windows or
 
 Phyllome OS targets [x86-64 systems](https://en.wikipedia.org/wiki/X86-64) supporting hardware-assisted virtualization, with a strong preference for those providing IOMMU-based virtualization as well (AMD Vi or Intel VT-d). 
 
-> Sitting idle, Phyllome OS consumes approximately 1 CPU core and 1.5 GB of RAM. This requirement scales up with the number of virtual machines running on any dedicated host: the more the virtual machines are running, the more ressources Phyllome OS will use
+> *Sitting idle, Phyllome OS consumes approximately 1 CPU core and 1.5 GB of RAM. This requirement scales up with the number of virtual machines running on any dedicated host: the more the virtual machines are running, the more ressources Phyllome OS will use*
 {.is-info}
 
-> A CPU that supports hardware-assisted virtualization is not be enough, as the motherboard also requires to support this feature. Laptop motherboards seem to be lagging behind desktop motherboards when it comes to supporting this feature. As a result of this, **desktop motherboards** are usually better candidates for Phyllome OS  
+> *A CPU that supports hardware-assisted virtualization is not be enough, as the motherboard also requires to support this feature. Laptop motherboards seem to be lagging behind desktop motherboards when it comes to supporting this feature. As a result of this, **desktop motherboards** are usually better candidates for Phyllome OS* 
 {.is-warning}
 
 ### Minimum requirements for Phyllome OS Desktop
@@ -32,7 +32,7 @@ Phyllome OS targets [x86-64 systems](https://en.wikipedia.org/wiki/X86-64) suppo
 * **4 GB** of RAM
 * **SSD**-based storage device to store disk images and Phyllome OS
 
-> For Intel-based configurations, you can check if your model supports **Intel VT-x** by following [this link](https://ark.intel.com/content/www/us/en/ark/search/featurefilter.html?productType=873&2_VTX=true).
+> *For Intel-based configurations, you can check if your model supports **Intel VT-x** by following [this link](https://ark.intel.com/content/www/us/en/ark/search/featurefilter.html?productType=873&2_VTX=true).*
 {.is-info}
 
 ### Recommended requirements for Phyllome OS Desktop
@@ -46,7 +46,7 @@ Phyllome OS targets [x86-64 systems](https://en.wikipedia.org/wiki/X86-64) suppo
 * **NVME**-based storage device to store disk images and Phyllome OS
 * Two graphics cards or a graphics card that supports vfio-mdev or SR-IOV
 
-> For Intel-based configurations, you can check if your model supports **Intel VT-d** by following [this link](https://ark.intel.com/content/www/us/en/ark/search/featurefilter.html?productType=873&0_VTD=True).
+> *For Intel-based configurations, you can check if your model supports **Intel VT-d** by following [this link](https://ark.intel.com/content/www/us/en/ark/search/featurefilter.html?productType=873&0_VTD=True).*
 {.is-info}
 
 ## Enable hardware-assisted virtualization
@@ -61,7 +61,6 @@ The process to activate this feature requires accessing the firmware configurati
 ![uefi_tianocore_first-screen.png](/uefi_tianocore_first-screen.png)
 
 *The TianoCore splash screen*
-
 
 ### Accessing the firmware
 
@@ -114,7 +113,7 @@ During the POST phase, you need to press a certain key to access the firmware co
 
 Just after pressing the <kbd>power</kbd> button, hit the right key to access the firmware configuration tool, usually <kbd>F2</kbd> or <kbd>Del</kbd>, but it may be another keystroke on your model.
 
-> Do not hesitate to repeatedly press the pertinent key as soon has your computer has started, to make sure it is registered
+> *Do not hesitate to repeatedly press the pertinent key as soon has your computer has started, to make sure it is registered*
 {.is-info}
 
 ### Modify the firmware configuration
@@ -143,7 +142,7 @@ Here is a visual walk-through for an Intel NUC computer.
 
 Then *save and exit* the configuration tool, which will reboot your computer.
 
-> While you are there, you could also change the boot order, to make sure that your computer will boot from an attached USB thumb drive first when it will be time to try out Phyllome OS.
+> *While you are there, you could also change the boot order, to make sure that your computer will boot from an attached USB thumb drive first when it will be time to try out Phyllome OS.*
 {.is-info}
 
 #### Modify the boot order permanently
@@ -164,9 +163,7 @@ This section will show you how to modify the boot order permanently, so you can 
 
 * That's it. Save changes and exist. Note that it is advisable to revert these changes after a successful installation, or to only change the bootloader temporary.
 
-
-
-> **Failing to activate hardware-assisted virtualization** will make running virtual machines extremly **slow**, if possible at all. If, for some reasons, it cannot be activated on your computer, for example because of a lack of hardware support, you would be better off picking a Linux distribution which doesn't require it, such as [Debian](https://www.debian.org/distrib/).   
+> ***Failing to activate hardware-assisted virtualization** will make running virtual machines extremly **slow**, or not possible at all. If, for some reasons, it cannot be activated on your computer, for example because of a lack of hardware support, you would be better off picking a Linux distribution which doesn't require it, such as [Debian](https://www.debian.org/distrib/).*
 {.is-warning}
 
 ---
