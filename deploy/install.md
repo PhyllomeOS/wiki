@@ -2,7 +2,7 @@
 title: Install Phyllome OS
 description: 
 published: true
-date: 2022-10-31T20:55:47.449Z
+date: 2022-10-31T21:03:10.535Z
 tags: 
 editor: markdown
 dateCreated: 2021-11-14T16:19:00.348Z
@@ -10,14 +10,7 @@ dateCreated: 2021-11-14T16:19:00.348Z
 
 # How to install Phyllome OS
 
-> As of now, it is only possible to deploy Phyllome OS from an [**offical Fedora Everything ISO file**](https://alt.fedoraproject.org/en/). 
-{.is-info}
-
-*This page is intended for users that would like to install Phyllome OS permanently on their computer.* 
-
-*If you wish to learn more about how kickstart files are used to create Phyllome OS, please have a look at [the official git repository](https://github.com/PhyllomeOS/phyllomeos).*
-
-## Boot from a USB flash drive
+*This page is intended for users that would like to install Phyllome OS permanently on their computer. To use it as a live system, please [see this page](https://wiki.phyllo.me/getstarted/live).* 
 
 Installing Phyllome OS means booting from a [bootable USB flash drive](/deploy/medium) and fetching [an online kickstart file](https://raw.githubusercontent.com/PhyllomeOS/phyllomeos/main/leaves/flat-dhi.cfg). A kickstart file contains instructions to automatically deploy an operating system. This is a *destructive* process, so please be cautious.
 
@@ -27,6 +20,16 @@ Installing Phyllome OS means booting from a [bootable USB flash drive](/deploy/m
   * A wired Internet connection is required. Many files will be fetched online during the installation process.  
   * A storage device. 
   	* The kickstart file will look for a storage device and install Phyllome OS. If there is no disk available, the installation will fail. 
+
+## Create a a bootable USB flash drive
+
+> *As of now, it is only possible to deploy Phyllome OS from an [**offical Fedora Everything ISO file**](https://alt.fedoraproject.org/en/)*. 
+{.is-info}
+
+* Go back to [the last section](https://wiki.phyllo.me/deploy/medium). to learn how to create a bootable USB flash drive.
+
+## Boot from the USB flash drive
+
 
 The following section illustrates how to change the boot order *temporarily*. The process to change the boot order depends on your current computer platform. Please follow the instruction that matches your platform.
 
@@ -78,7 +81,7 @@ One needs to alter the GRUB instructions before the USB flash drive can load the
 
 ![screenshot_uefi_2021-11-22_155450.png](/grub-kickstart/screenshot_uefi_2021-11-22_155450.png)
 
-> The shortened URL `https://ks.phyllo.me/dii` points to the latest Desktop version of Phyllome OS, tweaked for Intel CPUs and GPUs (gen 5th to gen 9th). The shortened link points to the kickstart file available here: https://raw.githubusercontent.com/PhyllomeOS/phyllomeos/main/leaves/flat-dhi.cfg. Any valid kickstart file may be used.
+> *The shortened URL `https://ks.phyllo.me/dii` points to the latest Desktop version of Phyllome OS, tweaked for Intel CPUs and GPUs (gen 5th to gen 9th). The shortened link points to the kickstart file available here: https://raw.githubusercontent.com/PhyllomeOS/phyllomeos/main/dishes/phyllome-desktop-intelcpu-intelgpu.cfg. Any valid kickstart file may be used.*
 {.is-info}
 
 * During the installation process, you can use <kbd>Alt</kbd> + <kbd>Tab</kbd> to cycle through tabs, and look at the logs in real-time
@@ -90,6 +93,11 @@ One needs to alter the GRUB instructions before the USB flash drive can load the
 ![screenshot_uefi_2021-11-11_143000.png](/grub-kickstart/screenshot_uefi_2021-11-11_143000.png)
 
 * Go to the [First-launch configuration section](/deploy/install#first-launch) to learn what to do next.
+
+> *If you wish to learn more about how kickstart files are used to create Phyllome OS, please have a look at [the official git repository](https://github.com/PhyllomeOS/phyllomeos).*
+{.is-info}
+
+
 
 ### BIOS-based firmware
 
