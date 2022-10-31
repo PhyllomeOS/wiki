@@ -2,7 +2,7 @@
 title: Install Phyllome OS
 description: 
 published: true
-date: 2022-10-31T21:03:10.535Z
+date: 2022-10-31T21:04:45.751Z
 tags: 
 editor: markdown
 dateCreated: 2021-11-14T16:19:00.348Z
@@ -29,7 +29,6 @@ Installing Phyllome OS means booting from a [bootable USB flash drive](/deploy/m
 * Go back to [the last section](https://wiki.phyllo.me/deploy/medium). to learn how to create a bootable USB flash drive.
 
 ## Boot from the USB flash drive
-
 
 The following section illustrates how to change the boot order *temporarily*. The process to change the boot order depends on your current computer platform. Please follow the instruction that matches your platform.
 
@@ -71,10 +70,10 @@ One needs to alter the GRUB instructions before the USB flash drive can load the
 
 ![screenshot_uefi_2021-11-22_154238.png](/grub-kickstart/screenshot_uefi_2021-11-22_154238.png)
 
-> GRUB defaults to the US keyboard layout. Have a look at [this online resource](https://en.wikipedia.org/wiki/QWERTY#/media/File:KB_United_States.svg) to find the corresponding keys if you are not using a US keyboard layout
+> *GRUB defaults to the US keyboard layout. Have a look at [this online resource](https://en.wikipedia.org/wiki/QWERTY#/media/File:KB_United_States.svg) to find the corresponding keys if you are not using a US keyboard layout*
 {.is-info}
 
-> **Danger Zone**: the next instruction will trigger a process that will automatically **destroy** any data located on the internal disk present in your computer
+> ***Danger Zone**: the next instruction will trigger a process that will automatically **destroy** any data located on the internal disk present in your computer*
 {.is-danger}
 
 * Leave a blank space after the word `quiet` and write exactly the following `inst.ks=https://ks.phyllo.me/dii`, then press <kbd>Ctrl</kbd> + <kbd>x</kbd> simultaneously or <kbd>F10</kbd>. This command will trigger the automated installation of Phyllome OS. 
@@ -112,7 +111,7 @@ One needs to alter the GRUB instructions before the USB flash drive can load the
 
 * **Keyboard layout**: you can select your favorite keyboard layout by clicking on the three stacked vertical dots at the bottom of the screen.
 
-> By default, Phyllome OS is set to use the *fr-CH* keyboard layout. This keyboard layout is used by people living in [Romandy](https://en.wikipedia.org/wiki/Romandy), Switzerland, which is also where the original author of Phyllome OS is from.
+> *By default, Phyllome OS is set to use the *fr-CH* keyboard layout. This keyboard layout is used by people living in [Romandy](https://en.wikipedia.org/wiki/Romandy), Switzerland, which is also where the original author of Phyllome OS is from.*
 {.is-info}
 
 ![first-launch-2.png](/first-launch/first-launch-2.png)
@@ -134,7 +133,7 @@ One needs to alter the GRUB instructions before the USB flash drive can load the
 
 * **Provide a password**: please do provide a strong password. In case you ever forget it, write it down on a piece of paper and store it somewhere safe, or/and rely on an online password manager like [Bitwarden](https://bitwarden.com/) with [multi-factor authentication](https://en.wikipedia.org/wiki/Multi-factor_authentication) enabled. Click on *Next* when you are done.
 
-> Phyllome OS will eventually rely on the user password as provided here to decrypt the folder containing virtual machine disks. Loosing the password will mean loosing any access to the virtual machine disks.
+> *Phyllome OS will eventually rely on the user password as provided here to decrypt the folder containing virtual machine disks. Loosing the password will mean loosing any access to the virtual machine disks.*
 {.is-info}
 
 ![first-launch-6.png](/first-launch/first-launch-6.png)
@@ -152,7 +151,7 @@ One needs to alter the GRUB instructions before the USB flash drive can load the
 
 ![first-launch-10.png](/first-launch/first-launch-10.png)
 
-> Don't forget to remove the USB flash drive from your computer, so that next time your computer will boot, it will use the internal disk where Phyllome OS has been deployed.
+> *Don't forget to remove the USB flash drive from your computer, so that next time your computer will boot, it will use the internal disk where Phyllome OS has been deployed.*
 {.is-info}
 
 ---
