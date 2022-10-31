@@ -2,7 +2,7 @@
 title: Install Phyllome OS
 description: 
 published: true
-date: 2022-10-31T21:04:45.751Z
+date: 2022-10-31T21:38:32.855Z
 tags: 
 editor: markdown
 dateCreated: 2021-11-14T16:19:00.348Z
@@ -21,9 +21,9 @@ Installing Phyllome OS means booting from a [bootable USB flash drive](/deploy/m
   * A storage device. 
   	* The kickstart file will look for a storage device and install Phyllome OS. If there is no disk available, the installation will fail. 
 
-## Create a a bootable USB flash drive
+## Create a bootable USB flash drive
 
-> *As of now, it is only possible to deploy Phyllome OS from an [**offical Fedora Everything ISO file**](https://alt.fedoraproject.org/en/)*. 
+> *As of now, it is only possible to deploy Phyllome OS from an [**official Fedora Everything ISO file**](https://alt.fedoraproject.org/en/)*. 
 {.is-info}
 
 * Go back to [the last section](https://wiki.phyllo.me/deploy/medium). to learn how to create a bootable USB flash drive.
