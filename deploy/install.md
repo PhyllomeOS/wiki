@@ -2,7 +2,7 @@
 title: Install Phyllome OS
 description: 
 published: true
-date: 2022-05-20T20:28:19.443Z
+date: 2022-10-31T20:47:41.108Z
 tags: 
 editor: markdown
 dateCreated: 2021-11-14T16:19:00.348Z
@@ -10,18 +10,23 @@ dateCreated: 2021-11-14T16:19:00.348Z
 
 # How to install Phyllome OS
 
-> As of now, it is only possible to deploy Phyllome OS using an [**offical Fedora ISO file**](https://getfedora.org/en/server/). It you don't have a USB flash drive ready to use, please go back to the last section.
+> As of now, it is only possible to deploy Phyllome OS from an [**offical Fedora Everything ISO file**](https://alt.fedoraproject.org/en/). 
 {.is-info}
 
-*This page is intended for users that would like to install Phyllome OS permanently on their computer. Installing Phyllome OS means booting from a [bootable USB flash drive](/deploy/medium) and fetching [an online kickstart file](https://raw.githubusercontent.com/PhyllomeOS/phyllomeos/main/leaves/flat-dhi.cfg). A kickstart file contains instructions to automatically deploy an operating system. This is a **destructive** process, so please be cautious.*
+*This page is intended for users that would like to install Phyllome OS permanently on their computer.* 
 
 *If you wish to learn more about how kickstart files are used to create Phyllome OS, please have a look at [the official git repository](https://github.com/PhyllomeOS/phyllomeos).*
 
 ## Boot from a USB flash drive
 
+Installing Phyllome OS means booting from a [bootable USB flash drive](/deploy/medium) and fetching [an online kickstart file](https://raw.githubusercontent.com/PhyllomeOS/phyllomeos/main/leaves/flat-dhi.cfg). A kickstart file contains instructions to automatically deploy an operating system. This is a *destructive* process, so please be cautious.
+
 * General requirements
-	* A wired Internet connection is required. A file will be fetched online during the installation process.  
-  * A storage device. The kickstart file will look for a storage device and install Phyllome OS. If there is no disk available, the installation will fail. 
+	* A bootable USB flash drive.
+	   * If you don't have a USB flash drive ready to use, please go back to [the last section](https://wiki.phyllo.me/deploy/medium).
+  * A wired Internet connection is required. Many files will be fetched online during the installation process.  
+  * A storage device. 
+  	* The kickstart file will look for a storage device and install Phyllome OS. If there is no disk available, the installation will fail. 
 
 The following section illustrates how to change the boot order *temporarily*. The process to change the boot order depends on your current computer platform. Please follow the instruction that matches your platform.
 
