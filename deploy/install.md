@@ -2,31 +2,32 @@
 title: Install Phyllome OS
 description: 
 published: true
-date: 2022-10-31T21:38:32.855Z
+date: 2022-11-01T19:47:27.947Z
 tags: 
 editor: markdown
 dateCreated: 2021-11-14T16:19:00.348Z
 ---
 
-# How to install Phyllome OS
+# Install Phyllome OS
 
 *This page is intended for users that would like to install Phyllome OS permanently on their computer. To use it as a live system, please [see this page](https://wiki.phyllo.me/getstarted/live).* 
 
-Installing Phyllome OS means booting from a [bootable USB flash drive](/deploy/medium) and fetching [an online kickstart file](https://raw.githubusercontent.com/PhyllomeOS/phyllomeos/main/leaves/flat-dhi.cfg). A kickstart file contains instructions to automatically deploy an operating system. This is a *destructive* process, so please be cautious.
+Installing Phyllome OS means booting from a [bootable USB flash drive](/deploy/medium) and fetching [an online kickstart file](https://raw.githubusercontent.com/PhyllomeOS/phyllomeos/main/leaves/flat-dhi.cfg). A kickstart file contains instructions to automatically deploy an operating system.
 
-* General requirements
-	* A bootable USB flash drive.
-	   * If you don't have a USB flash drive ready to use, please go back to [the last section](https://wiki.phyllo.me/deploy/medium).
-  * A wired Internet connection is required. Many files will be fetched online during the installation process.  
-  * A storage device. 
-  	* The kickstart file will look for a storage device and install Phyllome OS. If there is no disk available, the installation will fail. 
+* General requirements:
+	* **A bootable USB flash drive**
+	   * *If you don't have a USB flash drive ready to use, please go back to [the last section](https://wiki.phyllo.me/deploy/medium)*
+  * **A wired Internet connection**
+  	 * *Many files will be fetched online during the installation process*  
+  * **A storage device**
+  	* *The kickstart file will look for a storage device and install Phyllome OS on it. If there is no disk available, the installation will fail* 
 
 ## Create a bootable USB flash drive
 
 > *As of now, it is only possible to deploy Phyllome OS from an [**official Fedora Everything ISO file**](https://alt.fedoraproject.org/en/)*. 
 {.is-info}
 
-* Go back to [the last section](https://wiki.phyllo.me/deploy/medium). to learn how to create a bootable USB flash drive.
+* Go back to [the last section](https://wiki.phyllo.me/deploy/medium) to learn how to create a bootable USB flash drive.
 
 ## Boot from the USB flash drive
 
