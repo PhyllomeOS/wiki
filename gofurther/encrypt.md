@@ -2,7 +2,7 @@
 title: Encrypt the directory that contains virtual disk images
 description: 
 published: true
-date: 2022-01-31T13:20:57.143Z
+date: 2022-12-09T22:03:54.501Z
 tags: 
 editor: markdown
 dateCreated: 2022-01-31T12:30:06.985Z
@@ -10,11 +10,8 @@ dateCreated: 2022-01-31T12:30:06.985Z
 
 # Encrypt virtual disk images
 
-> *Integration of filesystem-level encryption in Phyllome OS is a work-in-progress.*
+> *Integration of filesystem-level encryption in Phyllome OS is a work-in-progress*
 {.is-warning}
-
-> *Go to [the security page](https://wiki.phyllo.me/e/en/phyllomeos/security) to learn more about Phyllome OS security*
-{.is-info}
 
 ## Introduction
 
@@ -38,16 +35,16 @@ sudo dnf install -y git golang pam-devel m4 authselect
 * Fetch the source code:
 
 ```
-go get -d github.com/google/fscrypt/...
+go install github.com/google/fscrypt/cmd/fscrypt@latest
 ```
 
-* Move to the installation folder:
+* Move to the installation folder (assuming v.0.3.3):
 
 ```
-cd ~/go/pkg/mod/github.com/google/fscrypt\@v0.3.1/
+cd ~/go/pkg/mod/github.com/google/fscrypt\@v0.3.3/
 ```
 
-> If a new version is released, for instance `v0.3.2`, update the above path accordingly
+> *If a new version is released, for instance `v0.3.4`, update the above path accordingly*
 {.is-info}
 
 * *Run `make install`*
@@ -57,7 +54,7 @@ sudo make install
 ```
 
 ```
-fatal: not a git repository (or any of the parent directories): .git
+[...]
 install -d /usr/local/bin
 install bin/fscrypt /usr/local/bin
 install -d /usr/local/lib/security
@@ -67,9 +64,6 @@ install -d /usr/local/share/pam-configs
 install bin/config /usr/local/share/pam-configs/fscrypt
 install -Dm644 cmd/fscrypt/fscrypt_bash_completion /usr/local/share/bash-completion/completions/fscrypt
 ```
-
-> *The error message seems innocuous*
-{.is-info}
 
 * Move `pam_fscrypt.so` to `/usr/lib64/security/`, where it belongs:
 
