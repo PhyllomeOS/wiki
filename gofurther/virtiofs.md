@@ -2,7 +2,7 @@
 title: Share a host directory with a guest using virtiofs 
 description: 
 published: true
-date: 2023-01-24T16:27:16.582Z
+date: 2023-01-24T16:49:37.566Z
 tags: 
 editor: markdown
 dateCreated: 2022-08-13T00:16:17.437Z
@@ -13,10 +13,12 @@ dateCreated: 2022-08-13T00:16:17.437Z
 > *As of January 2023, virtio-fs is only available for virtual machines managed by the system libvirt instance (`qemu:///system`)*
 {.is-info}
 
-> *As of January 2023, virtio-fs does not feature a read-only mode. Do not share a host directory with a untrusted guest*.
+> *As of January 2023, virtio-fs does not feature a read-only mode. Do not share a host directory with an untrusted guest*.
 {.is-warning}
 
-[Virtio-fs](https://virtio-fs.gitlab.io/), shorts for virtio shared filesystem, allows you to share a directory located on the host with a guest. It is designed to be fast and optimized for local usage, when the host and the guest are located on the same physical machine. 
+[Virtio-fs](https://virtio-fs.gitlab.io/), shorts for virtio shared filesystem, allows you to share a directory located on the host with a guest. 
+
+It is designed to be fast and optimized for local usage, when the host and the guest are located on the same physical machine. 
 
 ## The guest
 
@@ -63,4 +65,5 @@ dateCreated: 2022-08-13T00:16:17.437Z
 
 * Official website: https://virtio-fs.gitlab.io/index.html#status
 * In the context of a Windows guest: https://github.com/virtio-win/kvm-guest-drivers-windows/wiki/VirtIO-FS:-Shared-file-system
+* https://wiki.archlinux.org/title/Libvirt#Sharing_data_between_host_and_guest
 
