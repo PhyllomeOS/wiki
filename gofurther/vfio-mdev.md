@@ -2,7 +2,7 @@
 title: Virtual Function I/O Mediated devices (vfio-mdev)
 description: Create and Configure Virtual Function I/O Mediated devices (vfio-mdev)
 published: true
-date: 2022-07-28T01:25:56.298Z
+date: 2023-01-29T20:12:01.722Z
 tags: 
 editor: markdown
 dateCreated: 2022-07-21T21:10:41.046Z
@@ -10,12 +10,14 @@ dateCreated: 2022-07-21T21:10:41.046Z
 
 # Configure Virtual Function I/O Mediated devices
 
-> *These instructions only cover Intel GPUs that are compatible with vfio-mdev (5th to 10th generation). Since generation 11th, vfio-mdev has been replaced by SR-IOV.*
+> These instructions only cover Intel GPUs that are compatible with vfio-mdev (5th to 10th generation). Since generation 11th, vfio-mdev has been superseded by SR-IOV.
 {.is-warning}
 
 GPUs compatible with [Virtual Function I/O Mediated devices](https://www.kernel.org/doc/html/latest/driver-api/vfio-mediated-device.html) (vfio-mdev) can be split into multiple virtual GPUs (vGPUs). 
 
-vGPUs can be assigned to virtual machines or containers. 
+In turned, these vGPUs can then be assigned to virtual machines or containers.
+
+Contrary to paravirtualized GPUs (e.g. virtio-gpu), virtual GPUs do not need specialized drivers.
 
 *How to do so?* 
 
@@ -24,19 +26,17 @@ vGPUs can be assigned to virtual machines or containers.
 * Make sure the GRUB has been updated after [the first boot](https://wiki.phyllo.me/getstarted/disk#update-grub-and-reboot)
 
 ### Modify the system allocated to the GPU in the BIOS/UEFI
-
+ 
 > Some computers allow you to modify the system memory allocated or shared with the integrated GPU, which may allow you to create more vGPUs.
 {.is-info}
 
-> For Intel integrated graphics cards only; rarely available on laptops computers.
-{.is-warning}
 
 * Before the host operating system boots up, you need to enter the BIOS/UEFI and to look for a setting called *GPU aperture size*, or *GPU shared memory*. 
 
 * Use the highest possible value.
 
 > System memory will be reserved for the GPU, so make sure you have enough system memory to accomodate both the GPU and your operating system. 
-{.is-warning}
+{.is-info}
 
 
 ## Create a virtual GPU
