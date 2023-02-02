@@ -2,7 +2,7 @@
 title: Share a host directory with a guest using virtiofs 
 description: 
 published: true
-date: 2023-01-24T16:49:37.566Z
+date: 2023-02-02T19:05:40.611Z
 tags: 
 editor: markdown
 dateCreated: 2022-08-13T00:16:17.437Z
@@ -10,15 +10,17 @@ dateCreated: 2022-08-13T00:16:17.437Z
 
 # Sharing a directory 
 
-> *As of January 2023, virtio-fs is only available for virtual machines managed by the system libvirt instance (`qemu:///system`)*
-{.is-info}
-
-> *As of January 2023, virtio-fs does not feature a read-only mode. Do not share a host directory with an untrusted guest*.
+> For KVM/QEMU, as of January 2023, virtio-fs is only available for virtual machines managed by the system libvirt instance (`qemu:///system`)
 {.is-warning}
 
-[Virtio-fs](https://virtio-fs.gitlab.io/), shorts for virtio shared filesystem, allows you to share a directory located on the host with a guest. 
+> As of January 2023, virtio-fs does not support read-only mode, meaning a guest will be able to write to the host's folder.
+{.is-warning}
+
+[Virtio-fs](https://virtio-fs.gitlab.io/), shorts for virtio shared filesystem, allows for a directory located on the host to be shared with a guest. 
 
 It is designed to be fast and optimized for local usage, when the host and the guest are located on the same physical machine. 
+
+Just as with other virtio devices, it requires specialized drivers to be written for the guest operating system.
 
 ## The guest
 
@@ -46,8 +48,8 @@ It is designed to be fast and optimized for local usage, when the host and the g
     [...]
         <filesystem type="mount" accessmode="passthrough">
             <driver type="virtiofs"/>
-            <source dir="/mnt/"> # The host directory to be shared with the guest
-            <target dir="share"/> # Contrary to what the name implies, this is the tag used inside the guest
+            <source dir="/opt/share"> # The host directory to be shared with the guest
+            <target dir="share"> # The target dir value refers to the tag used inside the guest to describe the share.
         </filesystem>
     [...]
     </devices>
@@ -57,7 +59,7 @@ It is designed to be fast and optimized for local usage, when the host and the g
 
 ### Mount the folder inside the guest
 
-* Inside the guest VM, mount the folder using the following commmand to mount the `/mnt` host directory on the guest, using also the `/mnt` point: 
+* Inside the guest VM, mount the folder using the following command to mount the `/mnt` host directory on the guest, using also the `/mnt` point: 
 
 `# mount -t virtiofs share /mnt/`
 
