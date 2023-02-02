@@ -2,7 +2,7 @@
 title: Share a host directory with a guest using virtiofs 
 description: 
 published: true
-date: 2023-02-02T19:05:40.611Z
+date: 2023-02-02T19:13:08.447Z
 tags: 
 editor: markdown
 dateCreated: 2022-08-13T00:16:17.437Z
@@ -39,7 +39,7 @@ Just as with other virtio devices, it requires specialized drivers to be written
 </domain>
 ```
 
-* A filesystem device has to be added.
+* Add the filesystem device to the guest. In this the following case, the directory `/opt/share/` will be shared with the guest:
 
 ```    
 <domain type="kvm">
@@ -49,7 +49,7 @@ Just as with other virtio devices, it requires specialized drivers to be written
         <filesystem type="mount" accessmode="passthrough">
             <driver type="virtiofs"/>
             <source dir="/opt/share"> # The host directory to be shared with the guest
-            <target dir="share"> # The target dir value refers to the tag used inside the guest to describe the share.
+            <target dir="share"> # The target dir value refers to the mount tag used inside the guest, not the target dir inside the guest
         </filesystem>
     [...]
     </devices>
@@ -59,9 +59,23 @@ Just as with other virtio devices, it requires specialized drivers to be written
 
 ### Mount the folder inside the guest
 
-* Inside the guest VM, mount the folder using the following command to mount the `/mnt` host directory on the guest, using also the `/mnt` point: 
+* Inside the guest VM, mount the folder using the following command to mount the `/opt/share` host directory to the guest, using also the `/mnt` point: 
 
 `# mount -t virtiofs share /mnt/`
+
+* To make it permanent, edit `/etc/fstab` to look like the following:
+
+```
+share /mnt/ virtiofs rw,noatime,_netdev 0 0
+```
+
+* Make sure it works before rebooting the guest virtual machine, by un-mounting the share
+
+`# umount /mnt/` 
+
+* and then mounting all share available in fstab:
+
+`# mount all`
 
 ## Resources
 
