@@ -2,7 +2,7 @@
 title: Kernel modules
 description: 
 published: true
-date: 2023-02-05T17:33:05.770Z
+date: 2023-02-05T17:42:41.494Z
 tags: 
 editor: markdown
 dateCreated: 2021-11-13T11:58:03.276Z
@@ -15,7 +15,7 @@ dateCreated: 2021-11-13T11:58:03.276Z
 
 ## IOMMU-enablement 
 
-By default, Linux distributions do not generally enable IOMMU groups, a prerequisite to use VFIO passthrough. 
+By default, Linux distributions do not generally enable IOMMU groups, a prerequisite to share real hardware to virtual machines using modern virtualization techniques.
 
 ### With GRUB as a bootloader
 
@@ -38,8 +38,8 @@ By default, Linux distributions do not generally enable IOMMU groups, a prerequi
 
 ```
 cat /etc/default/grub
-
 ```
+
 Then, one needs to regenerate GRUB.
 
 * On Debian-based distributions:
@@ -66,6 +66,13 @@ echo "options kvm_intel nested=1" >> /etc/modprobe.d/kvm.conf
 
 ``` 
 echo "options kvm_amd nested=1" >> /etc/modprobe.d/kvm.conf
+```
+
+* Enabling VMCS shadowing may give a large performance boost on Haswell CPUs and later. Append that `enable_shadow_vmcs=1` to *kvm.conf*. It should look like that:
+
+```
+cat /etc/modprobe.d/kvm.conf
+options kvm_intel nested=1 enable_shadow_vmcs=1
 ```
 
 ## Virtualization-related kernel modules 
@@ -117,3 +124,7 @@ irqbypass # "IRQ bypass manager utility module"
 net_failover # "Failover driver for Paravirtual drivers"
 failover # "Generic failover infrastructure/interface"
 ```
+
+## Ressources
+
+* https://storpool.com/blog/nested-virtualization-with-kvm-and-opennebula/
