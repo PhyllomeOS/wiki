@@ -2,18 +2,30 @@
 title: Kernel modules
 description: 
 published: true
-date: 2022-01-20T10:21:12.359Z
+date: 2023-02-05T10:36:24.310Z
 tags: 
 editor: markdown
 dateCreated: 2021-11-13T11:58:03.276Z
 ---
 
-> *Section under construction*.
+# Host-specific configuration and information
+
+> Section under construction
 {.is-warning}
 
-# List of kernel modules found on a hypervisor
+## Hardware-assisted virtualization 
 
-This list is only concerned about kernel modules that relates to virtualization. Their description is fetched using the `modinfo` command.
+> Section under construction
+{.is-warning}
+
+## Nested virtualization
+
+> Section under construction
+{.is-warning}
+
+## Linux virtualization-related kernel modules 
+
+This list is only concerned about kernel modules that relates to virtualization. Their description can be found using the `modinfo` command.
 
 ```
 kvm_intel # "" 
