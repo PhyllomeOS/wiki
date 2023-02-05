@@ -2,7 +2,7 @@
 title: Kernel modules
 description: 
 published: true
-date: 2023-02-05T17:42:41.494Z
+date: 2023-02-05T17:42:55.058Z
 tags: 
 editor: markdown
 dateCreated: 2021-11-13T11:58:03.276Z
@@ -13,7 +13,7 @@ dateCreated: 2021-11-13T11:58:03.276Z
 > Section under construction
 {.is-warning}
 
-## IOMMU-enablement 
+## IOMMU-enablement
 
 By default, Linux distributions do not generally enable IOMMU groups, a prerequisite to share real hardware to virtual machines using modern virtualization techniques.
 
