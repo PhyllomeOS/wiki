@@ -2,7 +2,7 @@
 title: Kernel modules
 description: 
 published: true
-date: 2023-02-05T17:31:27.749Z
+date: 2023-02-05T17:33:05.770Z
 tags: 
 editor: markdown
 dateCreated: 2021-11-13T11:58:03.276Z
@@ -54,18 +54,18 @@ Then, one needs to regenerate GRUB.
 
 ## Nested virtualization
 
-Nested virtualization is rarely enabled on Linux distributions.
+Nested virtualization is rarely enabled on Linux distributions. 
 
 * For Intel-based CPUs:
 
 ``` 
-echo "options kvm_intel nested=1" >> /etc/modprobe.d/kvm.conf # Add support for nested-virtualization
+echo "options kvm_intel nested=1" >> /etc/modprobe.d/kvm.conf
 ```
 
 * For AMD-based CPUs:
 
 ``` 
-echo "options kvm_amd nested=1" >> /etc/modprobe.d/kvm.conf # Add support for nested-virtualization
+echo "options kvm_amd nested=1" >> /etc/modprobe.d/kvm.conf
 ```
 
 ## Virtualization-related kernel modules 
