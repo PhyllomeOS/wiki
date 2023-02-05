@@ -2,29 +2,73 @@
 title: Kernel modules
 description: 
 published: true
-date: 2023-02-05T11:36:49.334Z
+date: 2023-02-05T17:31:27.749Z
 tags: 
 editor: markdown
 dateCreated: 2021-11-13T11:58:03.276Z
 ---
 
-# Host-specific configuration and information
+# Host configuration and information
 
 > Section under construction
 {.is-warning}
 
-## Hardware-assisted virtualization 
+## IOMMU-enablement 
+
+By default, Linux distributions do not generally enable IOMMU groups, a prerequisite to use VFIO passthrough. 
+
+### With GRUB as a bootloader
+
+* For Intel CPUs, the following command adds the necessary bits:
+
+```
+# sed -i 's/\(quiet\)/\1 intel_iommu=on iommu=pt rd.driver.pre=vfio-pci/i' /etc/default/grub # Load kernel modules in GRUB.
+``` 
+
+> `iommu=pt` makes sure that only devices that can be pass to a virtual machine will be flagged as such. `rd.driver.pre=vfio-pci` makes sure that the `vfio-pci` driver is loaded early in the boot process.
+{.is-info}
+
+* For AMD CPUs, IOMMU groups are created by default, so the command is a bit different:
+
+```
+# sed -i 's/\(quiet\)/\1 iommu=pt rd.driver.pre=vfio-pci/i' /etc/default/grub # Load kernel modules in GRUB.
+``` 
+
+* It should then look like this:
+
+```
+cat /etc/default/grub
+
+```
+Then, one needs to regenerate GRUB.
+
+* On Debian-based distributions:
+```
+# update-grub
+```
+
+### With systemd-boot as a bootloader
 
 > Section under construction
 {.is-warning}
 
 ## Nested virtualization
 
-> Section under construction
-{.is-warning}
+Nested virtualization is rarely enabled on Linux distributions.
 
+* For Intel-based CPUs:
 
-## Linux virtualization-related kernel modules 
+``` 
+echo "options kvm_intel nested=1" >> /etc/modprobe.d/kvm.conf # Add support for nested-virtualization
+```
+
+* For AMD-based CPUs:
+
+``` 
+echo "options kvm_amd nested=1" >> /etc/modprobe.d/kvm.conf # Add support for nested-virtualization
+```
+
+## Virtualization-related kernel modules 
 
 This list is only concerned about kernel modules that relates to virtualization. Their description can be found using the `modinfo` command.
 
