@@ -2,7 +2,7 @@
 title: Share an input device with a guest using evdev
 description: 
 published: true
-date: 2023-02-08T18:57:32.721Z
+date: 2023-02-08T18:57:59.712Z
 tags: 
 editor: markdown
 dateCreated: 2022-08-13T00:26:02.801Z
@@ -37,13 +37,10 @@ Replace the `platform-i8042-serio-1-event-mouse` value with the value under `/de
 If there are multiple possible options, the input device has to have `event` in the name. 
 
 ```
-sudo cat /dev/input/by-path/pci-0000:09:00.0-event-mouse
+# cat /dev/input/by-path/pci-0000:09:00.0-event-mouse
 ```
 
 ```
 ��c      $
-��c���c���c�$��c�$��c׏��c׏��c
-��c                          3
-��c����c����cd���cd���c�2��c�2��cz��cz��c�Q��c�Q��c����c����c����c����cda
-                                                                         ��cda
+��c���c���c�$��c�$��c׏��c׏��c                                             
 ```    
