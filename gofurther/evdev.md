@@ -2,7 +2,7 @@
 title: Share an input device with a guest using evdev
 description: 
 published: true
-date: 2022-08-25T20:26:02.610Z
+date: 2023-02-08T18:57:32.721Z
 tags: 
 editor: markdown
 dateCreated: 2022-08-13T00:26:02.801Z
@@ -10,12 +10,14 @@ dateCreated: 2022-08-13T00:26:02.801Z
 
 # Share an input device
 
-> *Input grabbing on Wayland doesn't currently work as expected. Destkop environments based on the X session manager may work better in this regard*
+## Virtio-input
+
+> Input grabbing on Wayland doesn't currently work as expected. Destkop environments based on the X session manager may work better.
 {.is-warning}
 
-There are multiple ways to share an input device with a virtual machine. 
-
 ## Event device
+
+Libvirt offers a very low-latency way to share an input device device with a local virtual machine, using the linux evdev event interface.
 
 Event device or simply `evdev` is a generic input event interface that is part of the Linux kernel.
 
