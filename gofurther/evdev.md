@@ -2,7 +2,7 @@
 title: Share an input device with a guest using evdev
 description: 
 published: true
-date: 2023-02-08T18:57:59.712Z
+date: 2023-02-08T19:09:01.244Z
 tags: 
 editor: markdown
 dateCreated: 2022-08-13T00:26:02.801Z
@@ -10,9 +10,11 @@ dateCreated: 2022-08-13T00:26:02.801Z
 
 # Share an input device
 
+In this section, we focus on sharing a device locally.
+
 ## Virtio-input
 
-> Input grabbing on Wayland doesn't currently work as expected. Destkop environments based on the X session manager may work better.
+> Input grabbing on Wayland doesn't currently work as expected using Spice or VNC. Destkop environments based on the X session manager may work better.
 {.is-warning}
 
 ## Event device
