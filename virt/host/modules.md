@@ -2,7 +2,7 @@
 title: Kernel modules
 description: 
 published: true
-date: 2023-02-05T17:42:55.058Z
+date: 2023-02-08T18:42:56.268Z
 tags: 
 editor: markdown
 dateCreated: 2021-11-13T11:58:03.276Z
@@ -37,7 +37,7 @@ By default, Linux distributions do not generally enable IOMMU groups, a prerequi
 * It should then look like this:
 
 ```
-cat /etc/default/grub
+$ cat /etc/default/grub
 ```
 
 Then, one needs to regenerate GRUB.
@@ -68,7 +68,9 @@ echo "options kvm_intel nested=1" >> /etc/modprobe.d/kvm.conf
 echo "options kvm_amd nested=1" >> /etc/modprobe.d/kvm.conf
 ```
 
-* Enabling VMCS shadowing may give a large performance boost on Haswell CPUs and later. Append that `enable_shadow_vmcs=1` to *kvm.conf*. It should look like that:
+### VMCS Shadowing (Intel-only)
+
+* Enabling VMCS shadowing may give [a performance boost](https://storpool.com/blog/nested-virtualization-with-kvm-and-opennebula) on Haswell CPUs and later. Append that `enable_shadow_vmcs=1` to *kvm.conf*. It should look like that:
 
 ```
 cat /etc/modprobe.d/kvm.conf
