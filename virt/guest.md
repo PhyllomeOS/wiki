@@ -2,7 +2,7 @@
 title: Guests support
 description: 
 published: true
-date: 2023-02-11T21:49:03.236Z
+date: 2023-02-11T21:58:25.082Z
 tags: 
 editor: markdown
 dateCreated: 2022-01-12T14:25:25.960Z
@@ -12,7 +12,7 @@ dateCreated: 2022-01-12T14:25:25.960Z
 
 > Phyllome OS 🤎 other operating systems. It is meant to be a cozy platform for almost any modern operating systems to thrive.
 
-Although Phyllome OS would like to support as many operating systems as possible, it focuses mainly on modern, UEFI-compatible operating systems that are shipping with at least some support for `virtio` devices. 
+Although Phyllome OS would like to support as many operating systems as possible, it mainly focuses on modern, UEFI-compatible operating systems that are shipping with at least some support for `virtio` devices. 
 
 ## Category of operating systems
 
@@ -42,15 +42,15 @@ When it comes to its longevity and number of variants, the UNIX family is by far
 
 ## Support matrix
 
-> *Support for guest systems differs widely. In general, free and open-source operating systems such as Linux distributions are better supported than proprietary operating systems*.
+> Support for guest systems differs widely. In general, free and open-source operating systems such as Linux distributions are better supported than proprietary operating systems.
 {.is-info}
 
 * *The table below only show support for the latest operating systems.*
 
 | | Linux | Darwin | Windows |
 | :- | :-: | :-: | :-: |
-| *[Chipset](/virt/chipset)* | `i440fx` `Q35` `virt` | `Q35` | `i440fx` `Q35` `virt` |
-| *[Platform Firmware](/virt/firmware)* | `SeaBIOS` `OVMF` `RHF` [^1] | `OVMF` | `SeaBIOS` `OVMF` `RHF` |
+| *Chipset* | `i440fx` `Q35` `virt` | `Q35` | `i440fx` `Q35` `virt` |
+| *Platform Firmware* | `SeaBIOS` `OVMF` `RHF` [^1] | `OVMF` | `SeaBIOS` `OVMF` `RHF` |
 | *`virtio-gpu`* | **Yes** | No | No |
 | *`virtio-video`* | *Upcoming* | No | No |
 | *`virtio-snd`* | *Upcoming* | No | No |
