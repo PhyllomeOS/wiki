@@ -2,7 +2,7 @@
 title: Guests support
 description: 
 published: true
-date: 2022-01-24T11:30:43.337Z
+date: 2023-02-11T21:47:31.633Z
 tags: 
 editor: markdown
 dateCreated: 2022-01-12T14:25:25.960Z
@@ -10,9 +10,9 @@ dateCreated: 2022-01-12T14:25:25.960Z
 
 # Guest operating system
 
-> *Phyllome OS 🤎 other operating systems. It is meant to be a cozy platform for almost any modern operating systems to thrive.*
+> Phyllome OS 🤎 other operating systems. It is meant to be a cozy platform for almost any modern operating systems to thrive.
 
-Although Phyllome OS would like to support as many operating systems as possible, it will mainly focus on modern, UEFI-compatible operating systems that are shipping with at least some support for `virtio` devices. 
+Although Phyllome OS would like to support as many operating systems as possible, it focuses mainly on modern, UEFI-compatible operating systems that are shipping with at least some support for `virtio` devices. 
 
 ## Category of operating systems
 
