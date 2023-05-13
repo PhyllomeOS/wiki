@@ -2,13 +2,13 @@
 title: Linux family
 description: 
 published: true
-date: 2023-05-13T16:08:54.690Z
+date: 2023-05-13T16:09:39.731Z
 tags: 
 editor: markdown
 dateCreated: 2021-11-12T15:27:40.366Z
 ---
 
-# Unattended deployment of a RPM-based guest
+# Unattended deployment of an RPM-based guest
 
 * `virt-install` is a command-line utility that can be used to create virtual machines. It comes preinstalled with Phyllome OS. 
 
