@@ -2,7 +2,7 @@
 title: Share an input device with a guest using evdev
 description: 
 published: true
-date: 2023-05-13T15:57:17.551Z
+date: 2023-05-13T15:58:27.426Z
 tags: 
 editor: markdown
 dateCreated: 2022-08-13T00:26:02.801Z
@@ -16,7 +16,11 @@ In this section, we focus on sharing a locally attached input device with a gues
 
 Since version 7.4.0, Libvirt added a low-latency local-only way to share an input device with a guest, using the [Linux evdev event interface](https://www.kernel.org/doc/html/latest/input/input.html?highlight=evdev#evdev).
 
-- List input devices based on their identification, only listing those with an *event* in their name and excluding these with *if*: `ls /dev/input/by-id/* | grep event | grep -v if`
+- List input devices based on their identification, only listing those with an *event* in their name and excluding these with *if*: 
+
+```
+ls /dev/input/by-id/* | grep event | grep -v if
+```
 
 ```
 /dev/input/by-id/usb-Corsair_CORSAIR_HARPOON_RGB_PRO_Gaming_Mouse_1902B02BAF5E04655DEB612AF5001C05-event-mouse
@@ -25,7 +29,7 @@ Since version 7.4.0, Libvirt added a low-latency local-only way to share an inpu
 /dev/input/by-id/usb-Logitech_USB_Optical_Mouse-event-mouse
 ```
 
-- Before attempting to share a device, make sure that the correct one is selected by registering its inputs in the console:
+- Make sure that the correct one is selected by registring its inputs in the console:
 
 ```
 cat /dev/input/by-id/usb-Logitech_G513_RGB_MECHANICAL_GAMING_KEYBOARD_156930783132-event-kbd
