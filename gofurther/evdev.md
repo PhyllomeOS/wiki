@@ -2,7 +2,7 @@
 title: Share an input device with a guest using evdev
 description: 
 published: true
-date: 2023-05-13T15:58:27.426Z
+date: 2023-05-13T15:59:19.571Z
 tags: 
 editor: markdown
 dateCreated: 2022-08-13T00:26:02.801Z
@@ -12,9 +12,9 @@ dateCreated: 2022-08-13T00:26:02.801Z
 
 In this section, we focus on sharing a locally attached input device with a guest virtual machine.
 
-## Evdev event device
+## Using Evdev
 
-Since version 7.4.0, Libvirt added a low-latency local-only way to share an input device with a guest, using the [Linux evdev event interface](https://www.kernel.org/doc/html/latest/input/input.html?highlight=evdev#evdev).
+Since version 7.4.0, Libvirt added a low-latency local-only way to share an input device with a guest, using the [Linux evdev event interface](https://www.kernel.org/doc/html/latest/input/input.html?highlight=evdev#evdev). 
 
 - List input devices based on their identification, only listing those with an *event* in their name and excluding these with *if*: 
 
@@ -49,6 +49,7 @@ cat /dev/input/by-id/usb-Logitech_G513_RGB_MECHANICAL_GAMING_KEYBOARD_1569307831
       <source dev='/dev/input/by-id/usb-Logitech_G513_RGB_MECHANICAL_GAMING_KEYBOARD_156930783132-event-kbd' grab='all' repeat='on'/>
 </input>
 ```
+
 
 > Press <kbd>Left Ctrl + Right Ctrl</kbd> simultaneously to switch your devices between the guest and the host.
 {.is-info}
