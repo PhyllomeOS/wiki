@@ -2,7 +2,7 @@
 title: Share an input device with a guest using evdev
 description: 
 published: true
-date: 2023-05-13T15:14:05.325Z
+date: 2023-05-13T15:56:21.915Z
 tags: 
 editor: markdown
 dateCreated: 2022-08-13T00:26:02.801Z
@@ -12,36 +12,46 @@ dateCreated: 2022-08-13T00:26:02.801Z
 
 In this section, we focus on sharing a locally attached input device with a guest virtual machine.
 
-## Event device
+## Evdev event device
 
-Libvirt offers a low-latency way to share an input device with a local virtual machine, using the [Linux evdev event interface](https://www.kernel.org/doc/html/latest/input/input.html?highlight=evdev#evdev).
+Since version 7.4.0, Libvirt added a low-latency local-only way to share an input device with a guest, using the [Linux evdev event interface](https://www.kernel.org/doc/html/latest/input/input.html?highlight=evdev#evdev).
 
-The following is an XML snippet example for sharing a mouse and a keyboard.
-
-```
-<input type='evdev'>
-      <source dev='/dev/input/by-path/platform-i8042-serio-1-event-mouse/'>
-</input>
-<input type='evdev'>
-      <source dev='/dev/input/by-path/platform-i8042-serio-0-event-kbd' grab='all' repeat='on'/>
-</input>
-```
-
-Replace the `platform-i8042-serio-1-event-mouse` value with the value under `/dev/input/by-path/*` or `/dev/input/by-id/*`
-
-If there are multiple possible options, the input device has to have `event` in the name. 
+- List input devices based on their identification, only listing those with an *event* in their name and excluding these with *if*: `ls /dev/input/by-id/* | grep event | grep -v if`
 
 ```
-# cat /dev/input/by-path/pci-0000:09:00.0-event-mouse
+/dev/input/by-id/usb-Corsair_CORSAIR_HARPOON_RGB_PRO_Gaming_Mouse_1902B02BAF5E04655DEB612AF5001C05-event-mouse
+/dev/input/by-id/usb-Logitech_G513_RGB_MECHANICAL_GAMING_KEYBOARD_156930783132-event-kbd
+/dev/input/by-id/usb-Logitech_USB_Keyboard-event-kbd
+/dev/input/by-id/usb-Logitech_USB_Optical_Mouse-event-mouse
 ```
+
+- Before attempting to share a device, make sure that the correct one is selected by registering its inputs in the console:
+
+```
+cat /dev/input/by-id/usb-Logitech_G513_RGB_MECHANICAL_GAMING_KEYBOARD_156930783132-event-kbd
+```
+
+- Clicking or typing on the device you wish to share should display gibberish characters on the screen:
 
 ```
 ��c      $
 ��c���c���c�$��c�$��c׏��c׏��c                                             
 ```    
 
-## Virtio-input
+- Add the following snippet to the XML domain definition of an existing virtual machine, inside the `<device>` section:
 
-> Input grabbing on Wayland doesn't currently work as expected using Spice or VNC. Destkop environments based on the X session manager may work better.
-{.is-warning}
+```
+<input type='evdev'>
+      <source dev='/dev/input/by-id/usb-Logitech_G513_RGB_MECHANICAL_GAMING_KEYBOARD_156930783132-event-kbd' grab='all' repeat='on'/>
+</input>
+```
+
+- Then start the machine!
+
+Press <kbd>Left Ctrl + Right Ctrl</kbd> simultaneously to switch your device between 
+
+
+## Resources
+
+* https://libvirt.org/formatdomain.html#input-devices
 
