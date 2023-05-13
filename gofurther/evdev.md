@@ -2,7 +2,7 @@
 title: Share an input device with a guest using evdev
 description: 
 published: true
-date: 2023-05-13T15:04:02.628Z
+date: 2023-05-13T15:14:05.325Z
 tags: 
 editor: markdown
 dateCreated: 2022-08-13T00:26:02.801Z
@@ -14,9 +14,7 @@ In this section, we focus on sharing a locally attached input device with a gues
 
 ## Event device
 
-*Libvirt* offers a low-latency way to share an input device device with a local virtual machine, using the linux evdev event interface.
-
-Event device or simply `evdev` is a generic input event interface that is part of the Linux kernel.
+Libvirt offers a low-latency way to share an input device with a local virtual machine, using the [Linux evdev event interface](https://www.kernel.org/doc/html/latest/input/input.html?highlight=evdev#evdev).
 
 The following is an XML snippet example for sharing a mouse and a keyboard.
 
