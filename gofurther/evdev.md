@@ -2,7 +2,7 @@
 title: Share an input device with a guest using evdev
 description: 
 published: true
-date: 2023-05-13T15:56:21.915Z
+date: 2023-05-13T15:57:17.551Z
 tags: 
 editor: markdown
 dateCreated: 2022-08-13T00:26:02.801Z
@@ -46,10 +46,8 @@ cat /dev/input/by-id/usb-Logitech_G513_RGB_MECHANICAL_GAMING_KEYBOARD_1569307831
 </input>
 ```
 
-- Then start the machine!
-
-Press <kbd>Left Ctrl + Right Ctrl</kbd> simultaneously to switch your device between 
-
+> Press <kbd>Left Ctrl + Right Ctrl</kbd> simultaneously to switch your devices between the guest and the host.
+{.is-info}
 
 ## Resources
 
