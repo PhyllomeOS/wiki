@@ -2,7 +2,7 @@
 title: Tasks
 description: 
 published: true
-date: 2022-08-13T00:20:35.430Z
+date: 2023-05-14T19:48:00.758Z
 tags: 
 editor: markdown
 dateCreated: 2021-11-13T11:40:46.114Z
@@ -17,7 +17,7 @@ dateCreated: 2021-11-13T11:40:46.114Z
 * [Encrypt](/gofurther/encrypt) a directory containing virtual disk images
 * [Share a directory](/gofurther/virtiofs) with a guest using `virtiofs`
 * [Share an input device](/gofurther/evdev) with a guest using `evdev`
-* [Configure](/gofurther/vfio-mdev) Virtual Function I/O Mediated devices (vfio-mdev)
+* [Configure](/gofurther/vfio-mdev) `vfio-mdev`
 * [Hack](/gofurther/hack) and develop Phyllome OS
 
 ---
