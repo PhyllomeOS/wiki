@@ -2,48 +2,32 @@
 title: Virtual Function I/O Mediated devices (vfio-mdev)
 description: Create and Configure Virtual Function I/O Mediated devices (vfio-mdev)
 published: true
-date: 2023-01-29T20:12:01.722Z
+date: 2023-05-14T20:10:36.548Z
 tags: 
 editor: markdown
 dateCreated: 2022-07-21T21:10:41.046Z
 ---
 
-# Configure Virtual Function I/O Mediated devices
+# Configure *vfio-mdev*
 
-> These instructions only cover Intel GPUs that are compatible with vfio-mdev (5th to 10th generation). Since generation 11th, vfio-mdev has been superseded by SR-IOV.
+> These instructions only cover **Intel GPUs** that are compatible with *vfio-mdev* (5th to 10th generation). Since generation 11th, *vfio-mdev* has been superseded by *SR-IOV*.
 {.is-warning}
 
 GPUs compatible with [Virtual Function I/O Mediated devices](https://www.kernel.org/doc/html/latest/driver-api/vfio-mediated-device.html) (vfio-mdev) can be split into multiple virtual GPUs (vGPUs). 
 
-In turned, these vGPUs can then be assigned to virtual machines or containers.
+Then, these vGPUs can be assigned to virtual machines or containers.
 
-Contrary to paravirtualized GPUs (e.g. virtio-gpu), virtual GPUs do not need specialized drivers.
-
-*How to do so?* 
+Contrary to paravirtualized GPUs (e.g. *virtio-gpu*), vGPUs can use the same driver as their parent GPU (e.g. a guest compatible with an Intel GPUs will be able to leverage an Intel-based vGPUs)
 
 ## Preparation
 
 * Make sure the GRUB has been updated after [the first boot](https://wiki.phyllo.me/getstarted/disk#update-grub-and-reboot)
 
-### Modify the system allocated to the GPU in the BIOS/UEFI
- 
-> Some computers allow you to modify the system memory allocated or shared with the integrated GPU, which may allow you to create more vGPUs.
-{.is-info}
+## Procedure
 
+### Create a virtual GPU
 
-* Before the host operating system boots up, you need to enter the BIOS/UEFI and to look for a setting called *GPU aperture size*, or *GPU shared memory*. 
-
-* Use the highest possible value.
-
-> System memory will be reserved for the GPU, so make sure you have enough system memory to accomodate both the GPU and your operating system. 
-{.is-info}
-
-
-## Create a virtual GPU
-
-Upon reboot, you should then be able to list available GPUs using the `mdevctl` command. 
-
-* List available virtual GPUs:
+List available GPUs using the `mdevctl` software:
 
 ```
 mdevctl types
@@ -69,7 +53,7 @@ mdevctl types
     Description: low_gm_size: 64MB, high_gm_size: 384MB, fence: 4, resolution: 1024x768, weight: 2
 ```
 
-> Increasing the system memory allocated to the GPU (GPU aperture size), as shown in the previous section, may increase the number and kind of available instances.
+> Increasing the memory allocated to the GPU in the BIOS/EFI may increase the number and kind of available instances.
 {.is-info}
 
 
@@ -91,13 +75,13 @@ uuidgen
 sudo mdevctl start -u 7686131b-b229-4768-a02c-35d1dbed7c66 -p 0000:00:02.0 --type i915-GVTg_V5_4
 ```
 
-* Define, or make this vGPU permanent.
+* Define, or make this vGPU permanent:
 
 ```
 sudo mdevctl define -u 7686131b-b229-4768-a02c-35d1dbed7c66
 ```
 
-* Set the vGPU to auto-start after the host boots up, so that it is available to guest virtual machines without further action 
+* Set the vGPU to auto-start after the host boots up:
 
 ```
 sudo mdevctl modify -u 7686131b-b229-4768-a02c-35d1dbed7c66 --auto
@@ -113,16 +97,14 @@ mdevctl list -d
 7686131b-b229-4768-a02c-35d1dbed7c66 0000:00:02.0 i915-GVTg_V5_4 auto (active)
 ```
 
-Great you have 
+### Assign a vGPU to a virtual machine
 
-## Assign a virtual GPU to a virtual machine
-
-* Add that segment to a virtual machine's definition. Make sure the provided ```uuid``` matches the previously generated UUID.
+* Add that segment to a virtual machine's definition. Make sure the provided `uuid` matches the previously generated UUID.
 
 ```
-<domain>
+<domain type="kvm">
 [...]
-<device>
+	<device>
 [...]
     <hostdev mode="subsystem" type="mdev" managed="no" model="vfio-pci" display="on" ramfb="on">
       <source>
@@ -131,41 +113,55 @@ Great you have
       <address type="pci" domain="0x0000" bus="0x09" slot="0x00" function="0x0"/>
     </hostdev>
 [...]
-</device>
+	</device>
 [...]
 </domain>
 ```
 
-> Notice that the RAMFB is set to on, which activates Drect Memory Access Buffers (DMA-BUFs), making available the output of a virtual monitor before the guest operating system takes over 
+> Notice that the RAMFB is set to on, which activates Drect Memory Access Buffers (DMA-BUFs), making the output of a virtual monitor available before the guest operating system takes over. 
 {.is-info}
 
-## Configure Spice / SDL
-
-*To-do*
-
-## Remove any video device
+## Remove any video device or display devices
 
 * Remove any video device such as `virtio-gpu` and set the last one to the `none`.
 
-
 ```
-<domain>
+<domain type="kvm">
 [...]
-<device>
+	<device>
 [...]
     <video>
     	<model type="none"/>
     </video>
 [...]
-</device>
+	</device>
 [...]
 </domain>
 ```
 
 * Then starts the domain
 
+## Configure Spice / SDL
+
+*To-do*
+
+## Troubleshooting
+
+### No or low number of available instances 
+
+Increasing the memory allocated to the GPU (a.k.a. the GPU aperture size) may increase the number of available instances.
+
+Some computers allow you to modify the memory allocated or shared with the integrated GPU, which may allow you to create more vGPUs.
+
+* Before the host operating system boots up, enter the BIOS/UEFI and look for a setting called *GPU aperture size*, or *GPU shared memory*. 
+
+* Use the highest possible value.
+
+> The memory will be reserved to the GPU, so make sure you have enough leftover memory to accomodate both the GPU and your operating system. 
+{.is-info}
+
 ## Resources
 
 * Official page for vfio-mdev: https://www.kernel.org/doc/html/latest/driver-api/vfio-mediated-device.html
-* Archlinux's *must read entry* on Intel GVT-g: https://wiki.archlinux.org/title/Intel_GVT-g
+* Archlinux's *must-read entry* on Intel GVT-g: https://wiki.archlinux.org/title/Intel_GVT-g
 * DMA-BUF Linux documentation: https://www.kernel.org/doc/html/latest/driver-api/dma-buf.html
