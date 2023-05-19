@@ -2,7 +2,7 @@
 title: Preparation
 description: 
 published: true
-date: 2023-05-19T22:15:04.801Z
+date: 2023-05-19T22:34:55.060Z
 tags: 
 editor: markdown
 dateCreated: 2021-11-15T15:39:49.074Z
@@ -16,7 +16,7 @@ Phyllome OS expects an [x86-64 system](https://en.wikipedia.org/wiki/X86-64) whi
 
 ### Minimum requirements
 
-- A **x86-64** computer which supports the **1st gen of hardware-assisted virtualization**
+- A **x86-64** computer which supports the **1st generation** of hardware-assisted virtualization 
 	- For AMD-based configurations: AMD V is available and [enabled](/deploy/prepare#enable-hardware-assisted-virtualization)
   - For Intel-based configurations: Intel VT-x [is available](https://ark.intel.com/content/www/us/en/ark/search/featurefilter.html?productType=873&2_VTX=true) and [enabled](/deploy/prepare#enable-hardware-assisted-virtualization)
 - **2-core** processor
@@ -27,7 +27,7 @@ Phyllome OS expects an [x86-64 system](https://en.wikipedia.org/wiki/X86-64) whi
 {.is-info}
 
 > Desktop motherboards are often better candidates for running virtualization-oriented workloads, as laptop motherboards often ship with chipsets that do not support hardware-assisted virtualization.
-{.is-warning}
+{.is-info}
 
 ### Recommended requirements
 
@@ -37,31 +37,22 @@ Phyllome OS expects an [x86-64 system](https://en.wikipedia.org/wiki/X86-64) whi
 * **4-core** processor
 * **16 GB** of RAM
 * **1 TB** of **SSD or NVMe**-based storage device to store disk images and Phyllome OS
-* Two graphics cards or a graphics card that supports vfio-mdev or SR-IOV
+* Two graphics cards or a graphics card that supports [*vfio-mdev*](/gofurther/vfio-mdev) or SR-IOV
 
-> Sitting idle, Phyllome OS consumes approximately 1 CPU core and 1.5 GB of RAM. This requirement scales up with the number of virtual machines running on a dedicated host: if one plan to run many virtual machines, the ressources allocated to Phyllome OS should be increased.
+> Sitting idle, Phyllome OS consumes approximately 1 CPU core and 1.5 GB of RAM. This requirement scales up with the number of running virtual machines.
 {.is-info}
 
-## Enable hardware-assisted virtualization
+## Enabling hardware-assisted virtualization
 
-Hardware-assisted virtualization is rarely turned on by default, even on computers that support it: it needs to be explicitly enabled.
-
-The process to activate this feature requires accessing the firmware configuration tool for your motherboard, part of your BIOS or UEFI. This process, which differs depending on your current OS, is described in the following section.
-
-> *Did you know that the Open Virtual Machine Firmware (OVMF), which is based on [TianoCore](https://www.tianocore.org/), is the default firmware for EFI-based virtual machines? Its configuration utility can be accessed using the <kbd>Esc</kbd> key.*
-{.is-info}
-
-![uefi_tianocore_first-screen.png](/uefi_tianocore_first-screen.png)
-
-*The TianoCore splash screen*
+Hardware-assisted virtualization is rarely turned on by default, even on computers that support it: this section explains how to enable it.
 
 ### Accessing the firmware
 
-The process to access the main motherboard firmware configuration utility differ depending on which operating system is currently installed on your computer.   
+Enabling hardware-assisted virtualization requires accessing the firmware configuration tool of your motherboard, better known as the BIOS or UEFI. This process differs depending on which operating system is currently installed on the computer you intend to install Phyllome OS on.
 
-#### Windows 8 and newer: command-line instructions
+#### Command-line instructions for Windows 8 and newer
 
-Press the <kbd>Win</kbd> and <kbd>X</kbd> keys simultaneously to make a context menu appears. Then press <kbd>Shift</kbd> and <kbd>a</kbd> to politely ask Windows to open `Powershell` using elevated privileges, and click on the `Yes` button to bypass the User Account Control pop-up. Finally, input the following command inside the command prompt and press `enter`.
+Press the <kbd>Win</kbd> and <kbd>X</kbd> keys simultaneously to make a context menu appear. Press <kbd>Shift</kbd> and <kbd>a</kbd> to open PowerShell using elevated privileges and click on the *Yes* button to bypass the User Account Control pop-up. Finally, input the following command inside the command prompt and press <kbd>Enter</kbd>.
 
 ```
 shutdown /fw /r
@@ -96,7 +87,7 @@ shutdown /fw /r
 
 #### macOS-based computers
 
-Hardware-assisted virtualization is a hit or miss on Apple computers, as there is no way to access the firmware configuration tool on these computers. Apple users can go to the [install section](https://wiki.phyllo.me/deploy/medium) directly, create a USB stick and hope that hardware-assisted virtualization will be supported. 
+Hardware-assisted virtualization is a hit or miss on Apple computers, as there is no way to access the firmware configuration tool on these computers. Apple users can go to the [installation section](https://wiki.phyllo.me/deploy/medium) directly, create a USB stick and hope that hardware-assisted virtualization will be supported. 
 
 #### Other computers
 
