@@ -2,7 +2,7 @@
 title: Homepage
 description: 
 published: true
-date: 2022-09-28T12:53:20.846Z
+date: 2023-05-19T21:26:42.303Z
 tags: 
 editor: markdown
 dateCreated: 2021-06-19T09:29:20.593Z
@@ -10,9 +10,7 @@ dateCreated: 2021-06-19T09:29:20.593Z
 
 # The Phyllome OS wiki
 
-`Welcome!`
-
-*In this wiki, you will find guides about [how to install](/deploy/install), [use](/getstarted/disk) and [hack](/gofurther/hack) Phyllome OS. You will also find more generic information on the [underlying technologies](/virt), Phyllome OS [itself](/phyllomeos) and the surrounding [project](/project).*
+In this wiki, you will find guides about [how to install](/deploy/install), [use](/getstarted/disk) and [hack](/gofurther/hack) Phyllome OS. You will also find more generic information on the [underlying technologies](/virt), Phyllome OS [itself](/phyllomeos) and the surrounding [project](/project).
 
 Phyllome[^1] OS is an operating system that makes it easier to run [various operating systems](/gofurther) locally using [off-the-shelf hardware](/deploy/prepare) and [virtualization](/virt/lexicon#virtualization) technologies.
 
@@ -21,10 +19,9 @@ Phyllome[^1] OS is an operating system that makes it easier to run [various oper
 > *If you would rather avoid JavaScript altogether, or wish to download the content of this wiki locally, feel free to clone [this repository](https://github.com/PhyllomeOS/wiki).*
 {.is-info}
 
-
 ## Install Phyllome OS
 
-*[This section](/deploy) illustrates how to install Phyllome OS on a compatible computer*
+*[This section](/deploy) illustrates how to install Phyllome OS on a computer*
 
 * [Is Phyllome OS right for you?](/deploy/rightforyou)
 * [Prepare your computer](/deploy/prepare)
