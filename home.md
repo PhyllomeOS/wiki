@@ -2,7 +2,7 @@
 title: Homepage
 description: 
 published: true
-date: 2023-05-19T21:26:42.303Z
+date: 2023-05-19T22:02:27.175Z
 tags: 
 editor: markdown
 dateCreated: 2021-06-19T09:29:20.593Z
@@ -16,7 +16,7 @@ Phyllome[^1] OS is an operating system that makes it easier to run [various oper
 
 [^1]: According to [the Wiktionary](https://en.wiktionary.org/wiki/phyllome), Phyllome refers to the "foliar part of a plant; any organ homologous with a leaf, or [any organ] produced by metamorphosis of a leaf"
 
-> *If you would rather avoid JavaScript altogether, or wish to download the content of this wiki locally, feel free to clone [this repository](https://github.com/PhyllomeOS/wiki).*
+> If you would rather avoid JavaScript altogether, or wish to download the content of this wiki locally, feel free to clone [this repository](https://github.com/PhyllomeOS/wiki).
 {.is-info}
 
 ## Install Phyllome OS
@@ -40,7 +40,7 @@ Phyllome[^1] OS is an operating system that makes it easier to run [various oper
 	* [Automatically deploy](/gofurther/virt-install) an RPM-based guest system with `virt-install` and a kickstart file 
 
 * **Windows NT**
-  * [Install ReactOS](/gofurther/reactos)
+  * [Install React OS](/gofurther/reactos)
   * [Install Windows 11 (*to be created*)](/gofurther/windows11)
 
 * **Darwin-based**
@@ -79,8 +79,6 @@ Phyllome[^1] OS is an operating system that makes it easier to run [various oper
 ### About the project
 
 *[This section](/project) describes the project around Phyllome OS*.
-
-
 
 * [How to contribute](/project/contribute)
 * [How to join](/project/join)
