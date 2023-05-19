@@ -2,7 +2,7 @@
 title: Preparation
 description: 
 published: true
-date: 2022-09-28T12:57:20.646Z
+date: 2023-05-19T22:15:04.801Z
 tags: 
 editor: markdown
 dateCreated: 2021-11-15T15:39:49.074Z
@@ -10,50 +10,43 @@ dateCreated: 2021-11-15T15:39:49.074Z
 
 # Prepare the host computer
 
-## Meet the requirements
+## Prerequisites
 
-These instructions are valid for most computers that ship with Linux, Windows or macOS. 
+Phyllome OS expects an [x86-64 system](https://en.wikipedia.org/wiki/X86-64) which supports [hardware-assisted virtualization](/virt/lexicon#hardware-assisted-virtualization).
 
-Phyllome OS targets [x86-64 systems](https://en.wikipedia.org/wiki/X86-64) supporting hardware-assisted virtualization, with a strong preference for those providing IOMMU-based virtualization as well (AMD Vi or Intel VT-d). 
+### Minimum requirements
 
-> *Sitting idle, Phyllome OS consumes approximately 1 CPU core and 1.5 GB of RAM. This requirement scales up with the number of virtual machines running on any dedicated host: the more the virtual machines are running, the more ressources Phyllome OS will use*
+- A **x86-64** computer which supports the **1st gen of hardware-assisted virtualization**
+	- For AMD-based configurations: AMD V is available and [enabled](/deploy/prepare#enable-hardware-assisted-virtualization)
+  - For Intel-based configurations: Intel VT-x [is available](https://ark.intel.com/content/www/us/en/ark/search/featurefilter.html?productType=873&2_VTX=true) and [enabled](/deploy/prepare#enable-hardware-assisted-virtualization)
+- **2-core** processor
+- **4 GB** of RAM
+- **250 GB** of **hard disk**-based storage device to store disk images and Phyllome OS
+
+> Most computers sold after 2015 support hardware-assisted virtualization.
 {.is-info}
 
-> *A CPU that supports hardware-assisted virtualization is not be enough, as the motherboard also requires to support this feature. Laptop motherboards seem to be lagging behind desktop motherboards when it comes to supporting this feature. As a result of this, **desktop motherboards** are usually better candidates for Phyllome OS* 
+> Desktop motherboards are often better candidates for running virtualization-oriented workloads, as laptop motherboards often ship with chipsets that do not support hardware-assisted virtualization.
 {.is-warning}
 
-### Minimum requirements for Phyllome OS Desktop
+### Recommended requirements
 
-* A **x86-64** computer 
-* **Hardware-assisted virtualization** enabled, first generation
-    * For AMD-based configurations, it means that AMD V is available and enabled (*see next section below to learn how to enable this feature*)
-    * For Intel-based configurations, it means that Intel VT-x is available and enabled
-* **2-core** processor
-* **4 GB** of RAM
-* **SSD**-based storage device to store disk images and Phyllome OS
-
-> *For Intel-based configurations, you can check if your model supports **Intel VT-x** by following [this link](https://ark.intel.com/content/www/us/en/ark/search/featurefilter.html?productType=873&2_VTX=true).*
-{.is-info}
-
-### Recommended requirements for Phyllome OS Desktop
-
-* **x86-64** computer that supports the second generation of hardware-assisted virtualization features
-* **Hardware-assisted virtualization** enabled, second generation
-    * For AMD-based configurations, it means that AMD Vi is available and enabled
-    * For Intel-based configurations, it means that Intel VT-d is available and enabled.
+- A **x86-64** computer that supports the **2nd gen of hardware-assisted virtualization**
+	- For AMD-based configurations: **AMD Vi** is available and [enabled](/deploy/prepare#enable-hardware-assisted-virtualization)
+  - For Intel-based configurations: **Intel VT-d** [is available](https://ark.intel.com/content/www/us/en/ark/search/featurefilter.html?productType=873&0_VTD=True) and [enabled](/deploy/prepare#enable-hardware-assisted-virtualization)
 * **4-core** processor
 * **16 GB** of RAM
-* **NVME**-based storage device to store disk images and Phyllome OS
+* **1 TB** of **SSD or NVMe**-based storage device to store disk images and Phyllome OS
 * Two graphics cards or a graphics card that supports vfio-mdev or SR-IOV
 
-> *For Intel-based configurations, you can check if your model supports **Intel VT-d** by following [this link](https://ark.intel.com/content/www/us/en/ark/search/featurefilter.html?productType=873&0_VTD=True).*
+> Sitting idle, Phyllome OS consumes approximately 1 CPU core and 1.5 GB of RAM. This requirement scales up with the number of virtual machines running on a dedicated host: if one plan to run many virtual machines, the ressources allocated to Phyllome OS should be increased.
 {.is-info}
 
 ## Enable hardware-assisted virtualization
 
-Unfortunately, even on supported computer platforms, hardware-assisted virtualization is rarely turned on by default. In other words, it is not enough for a computer platform to support hardware-assisted virtualization: it needs to be explicitly enabled.
+Hardware-assisted virtualization is rarely turned on by default, even on computers that support it: it needs to be explicitly enabled.
 
-The process to activate this feature requires accessing the firmware configuration tool for your motherboard, which is part of your BIOS or UEFI. This process, which differs depending on your current OS, is described in the following section.
+The process to activate this feature requires accessing the firmware configuration tool for your motherboard, part of your BIOS or UEFI. This process, which differs depending on your current OS, is described in the following section.
 
 > *Did you know that the Open Virtual Machine Firmware (OVMF), which is based on [TianoCore](https://www.tianocore.org/), is the default firmware for EFI-based virtual machines? Its configuration utility can be accessed using the <kbd>Esc</kbd> key.*
 {.is-info}
