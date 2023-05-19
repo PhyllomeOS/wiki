@@ -2,7 +2,7 @@
 title: Resources
 description: 
 published: true
-date: 2021-11-13T17:47:03.167Z
+date: 2023-05-19T17:26:33.880Z
 tags: 
 editor: markdown
 dateCreated: 2021-11-13T11:58:55.464Z
@@ -148,7 +148,7 @@ dateCreated: 2021-11-13T11:58:55.464Z
 * https://github.com/ekistece/Fedora-33-VFIO-guide/
 * www.reddit.com/r/VFIO/comments/h9zijx/fedora_32_and_gpu_passthrough_vfio/
 
-### vfio-snd
+### virtio-snd
 
 * New patch : https://lists.oasis-open.org/archives/virtio-dev/202003/msg00185.html
 
@@ -221,6 +221,7 @@ https://www.kraxel.org/blog/2019/09/display-devices-in-qemu/
 * Networking in Libvirt : https://wiki.libvirt.org/page/Networking
 * https://lukas.zapletalovi.com/2015/09/fedora-22-libvirt-with-bridge.html
 * How to Setup Bridge Networking with KVM on Ubuntu 20.04 : https://levelup.gitconnected.com/how-to-setup-bridge-networking-with-kvm-on-ubuntu-20-04-9c560b3e3991
+* https://stty.io/2019/05/13/qemu-vm-wireguard-vpn-tun-tap-networking/
 
 ### Bridge Wireless Cards
 
