@@ -2,7 +2,7 @@
 title: Display
 description: How to access a virtual machine's display
 published: true
-date: 2023-05-20T20:52:12.783Z
+date: 2023-05-20T20:59:54.276Z
 tags: 
 editor: markdown
 dateCreated: 2022-07-31T09:22:05.854Z
@@ -13,9 +13,6 @@ dateCreated: 2022-07-31T09:22:05.854Z
 A virtual display can be attached to a virtual machine. It is a must-have for non-headless scenarios.
 
 ## Summary
-
-> [Official ressource](https://libvirt.org/formatdomain.html#graphical-framebuffers) for libvirt-compatible displays, including various XML examples
-{.is-info}
 
 * *to-be done. Add table here*.
 
@@ -29,19 +26,12 @@ A virtual display can be attached to a virtual machine. It is a must-have for no
 
 * *to-be done*
 
-### SDL
+### SDL display
 
-The Simple DirectMedia Layer is a local-only low-latency display. 
-
-> *SDL is currently only avalable with virtual machines created using the QEMU/KVM **User Session** mode*
+> SDL is currently only avalable with virtual machines created using the QEMU/KVM **user Session** mode and **Xorg**.
 {.is-info}
 
-> *As of now, this method is not compatible with Wayland* {.is-info}
-
-> *Mouse grab does not currently work in SDL*
-{.is-warning}
-
-* The display resolution of your guest display should not exceed that of your physical screen.
+The Simple DirectMedia Layer (SDL)-powered display is a local-only low-latency display. 
 
 #### SELinux configuration
 
@@ -68,7 +58,13 @@ sudo semodule -X 300 -i my-qemusystemx86.pp
 
 #### XML SDL example
 
-* Example of an XML SDL configuration, with OpenGL enabled. This example requires a 3D-capable graphic card to be attached to the guest computer, such as ``virtio-gpu`` or ``vfio-pci``.
+> Mouse grab does not currently work with the SDL display
+{.is-warning}
+
+> The display resolution of your guest display should not exceed that of your physical screen.
+{.is-info}
+
+* Example of an XML SDL configuration, with OpenGL enabled. This example requires a 3D-capable graphic card to be attached to the guest computer, such as virtio-gpu.
 
 ```
 <graphics type="sdl" display=":0" xauth="/root/.Xauthority" fullscreen="yes">
@@ -76,18 +72,13 @@ sudo semodule -X 300 -i my-qemusystemx86.pp
 </graphics>
 ```
 
-> *You can identify your display using the following command: `echo $DISPLAY`*
+> You can identify your display using the following command: `echo $DISPLAY`.
 {.is-info}
 
-### D-Bus
+### D-Bus display
 
-> *The D-Bus display is only available since version 7.4.0 of *`libvirt`**
-{.is-warning}
+[D-Bus](https://www.freedesktop.org/wiki/Software/dbus/) is a desktop-oriented middleware that can be used to create a display for a virtual machine.  
 
-[D-Bus](https://www.freedesktop.org/wiki/Software/dbus/) is a  Desktop-oriented middleware that can be used to create a display for a virtual machine.  
-
-> *[Detailed presentation](https://bootlin.com/pub/conferences/2016/meetup/dbus/josserand-dbus-meetup.pdf) on D-Bus*
-{.is-info}
 
 * Export and enable a video backend, add support for OpenGL and peer-to-peer connection:
 
@@ -139,5 +130,8 @@ It will look like that when launched:
 
 * *to-be done*
 
+## Resources
 
+* [Detailed presentation](https://bootlin.com/pub/conferences/2016/meetup/dbus/josserand-dbus-meetup.pdf) on D-Bus
+* [Official resource](https://libvirt.org/formatdomain.html#graphical-framebuffers) for libvirt-compatible displays, including various XML examples
 
