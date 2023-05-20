@@ -2,7 +2,7 @@
 title: Display
 description: How to access a virtual machine's display
 published: true
-date: 2023-05-20T21:25:11.275Z
+date: 2023-05-20T21:29:47.985Z
 tags: 
 editor: markdown
 dateCreated: 2022-07-31T09:22:05.854Z
