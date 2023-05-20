@@ -2,7 +2,7 @@
 title: Preparation
 description: 
 published: true
-date: 2023-05-20T21:52:11.117Z
+date: 2023-05-20T21:53:54.117Z
 tags: 
 editor: markdown
 dateCreated: 2021-11-15T15:39:49.074Z
@@ -19,8 +19,8 @@ dateCreated: 2021-11-15T15:39:49.074Z
   - For Intel-based configurations: Intel VT-x [is available](https://ark.intel.com/content/www/us/en/ark/search/featurefilter.html?productType=873&2_VTX=true) and [enabled](/deploy/prepare#enable-hardware-assisted-virtualization)
 - **2-core** processor
 - **4 GB** of RAM
-- **5 GB** of **hard disk** device for Phyllome OS
-- A dedicated hard disk
+- **5 GB** of **hard disk** storage for Phyllome OS
+- **250 GB** of **hard disk** storage to store OS disk images
 
 > Most computers sold after 2015 support hardware-assisted virtualization.
 {.is-info}
