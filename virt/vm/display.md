@@ -2,7 +2,7 @@
 title: Display
 description: How to access a virtual machine's display
 published: true
-date: 2023-05-20T20:59:54.276Z
+date: 2023-05-20T21:19:37.040Z
 tags: 
 editor: markdown
 dateCreated: 2022-07-31T09:22:05.854Z
@@ -134,4 +134,5 @@ It will look like that when launched:
 
 * [Detailed presentation](https://bootlin.com/pub/conferences/2016/meetup/dbus/josserand-dbus-meetup.pdf) on D-Bus
 * [Official resource](https://libvirt.org/formatdomain.html#graphical-framebuffers) for libvirt-compatible displays, including various XML examples
-
+* [Libmks](https://gitlab.gnome.org/chergert/libmks) provides a "Mouse, Keyboard, and Screen" to QEMU using the D-Bus device support in QEMU and GTK 4. 
+* [QEMU D-Bus display experiment](https://gitlab.com/marcandre.lureau/qemu-display/) is a WIP Rust crates to interact with a -display dbus QEMU
