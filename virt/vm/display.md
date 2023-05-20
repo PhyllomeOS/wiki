@@ -2,7 +2,7 @@
 title: Display
 description: How to access a virtual machine's display
 published: true
-date: 2022-08-24T23:45:25.923Z
+date: 2023-05-20T20:25:48.806Z
 tags: 
 editor: markdown
 dateCreated: 2022-07-31T09:22:05.854Z
@@ -45,7 +45,6 @@ The Simple DirectMedia Layer is a local-only low-latency display.
 
 * The display resolution of your guest display should not exceed that of your physical screen.
 
-
 #### SELinux configuration
 
 By default, SELinux will block access to X Windows Server for the virtualization stack. An exception has to be set.
@@ -74,7 +73,7 @@ sudo semodule -X 300 -i my-qemusystemx86.pp
 * Example of an XML SDL configuration, with OpenGL enabled. This example requires a 3D-capable graphic card to be attached to the guest computer, such as ``virtio-gpu`` or ``vfio-pci``.
 
 ```
-<graphics type="sdl" display=":0.0">
+<graphics type="sdl" display=":0" fullscreen="yes">
   <gl enable="yes"/>
 </graphics>
 ```
