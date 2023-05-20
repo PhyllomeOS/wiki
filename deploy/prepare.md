@@ -2,7 +2,7 @@
 title: Preparation
 description: 
 published: true
-date: 2023-05-19T22:34:55.060Z
+date: 2023-05-20T21:52:11.117Z
 tags: 
 editor: markdown
 dateCreated: 2021-11-15T15:39:49.074Z
@@ -12,16 +12,15 @@ dateCreated: 2021-11-15T15:39:49.074Z
 
 ## Prerequisites
 
-Phyllome OS expects an [x86-64 system](https://en.wikipedia.org/wiki/X86-64) which supports [hardware-assisted virtualization](/virt/lexicon#hardware-assisted-virtualization).
-
 ### Minimum requirements
 
-- A **x86-64** computer which supports the **1st generation** of hardware-assisted virtualization 
+- A **[x86-64](https://en.wikipedia.org/wiki/X86-64)** computer which supports the **1st generation** of [hardware-assisted virtualization](/virt/lexicon#hardware-assisted-virtualization)
 	- For AMD-based configurations: AMD V is available and [enabled](/deploy/prepare#enable-hardware-assisted-virtualization)
   - For Intel-based configurations: Intel VT-x [is available](https://ark.intel.com/content/www/us/en/ark/search/featurefilter.html?productType=873&2_VTX=true) and [enabled](/deploy/prepare#enable-hardware-assisted-virtualization)
 - **2-core** processor
 - **4 GB** of RAM
-- **250 GB** of **hard disk**-based storage device to store disk images and Phyllome OS
+- **5 GB** of **hard disk** device for Phyllome OS
+- A dedicated hard disk
 
 > Most computers sold after 2015 support hardware-assisted virtualization.
 {.is-info}
