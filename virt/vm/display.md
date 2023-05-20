@@ -2,7 +2,7 @@
 title: Display
 description: How to access a virtual machine's display
 published: true
-date: 2023-05-20T21:19:37.040Z
+date: 2023-05-20T21:25:11.275Z
 tags: 
 editor: markdown
 dateCreated: 2022-07-31T09:22:05.854Z
@@ -28,10 +28,10 @@ A virtual display can be attached to a virtual machine. It is a must-have for no
 
 ### SDL display
 
-> SDL is currently only avalable with virtual machines created using the QEMU/KVM **user Session** mode and **Xorg**.
-{.is-info}
-
 The Simple DirectMedia Layer (SDL)-powered display is a local-only low-latency display. 
+
+> The SDL display is only avalable with virtual machines created using the QEMU/KVM **user Session** mode and **Xorg**.
+{.is-info}
 
 #### SELinux configuration
 
@@ -79,12 +79,7 @@ sudo semodule -X 300 -i my-qemusystemx86.pp
 
 [D-Bus](https://www.freedesktop.org/wiki/Software/dbus/) is a desktop-oriented middleware that can be used to create a display for a virtual machine.  
 
-
 * Export and enable a video backend, add support for OpenGL and peer-to-peer connection:
-
-Does not display at the moment. 
-
-SELinux needs to be disabled.
 
 ```
 <graphics type="dbus">
@@ -99,8 +94,6 @@ It will look like that when launched:
   <gl enable="yes" rendernode="/dev/dri/renderD128"/>
 </graphics>
 ```
-
-
 * Export and enable an audio backend:
 
 ```
@@ -108,7 +101,6 @@ It will look like that when launched:
   <audio id="1">
 </graphics>
 ``` 
-
 
 ### Xephyr
 
