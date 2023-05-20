@@ -2,7 +2,7 @@
 title: Display
 description: How to access a virtual machine's display
 published: true
-date: 2023-05-20T20:45:37.373Z
+date: 2023-05-20T20:48:34.898Z
 tags: 
 editor: markdown
 dateCreated: 2022-07-31T09:22:05.854Z
@@ -10,13 +10,11 @@ dateCreated: 2022-07-31T09:22:05.854Z
 
 # Display
 
-A virtual display can be attached to a virtual machine, letting a user see the content of it. It is a must-have for non-headless scenario.
-
+A virtual display can be attached to a virtual machine. It is a must-have for non-headless scenarios.
 
 ## Summary
 
-> *[Official ressource](https://libvirt.org/formatdomain.html#graphical-framebuffers) for `libvirt`-compatible displays, including various XML examples*
-> 
+> [Official ressource](https://libvirt.org/formatdomain.html#graphical-framebuffers) for libvirt-compatible displays, including various XML examples
 {.is-info}
 
 * *to-be done. Add table here*.
