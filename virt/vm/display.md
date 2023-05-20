@@ -2,7 +2,7 @@
 title: Display
 description: How to access a virtual machine's display
 published: true
-date: 2023-05-20T20:25:48.806Z
+date: 2023-05-20T20:45:37.373Z
 tags: 
 editor: markdown
 dateCreated: 2022-07-31T09:22:05.854Z
@@ -73,7 +73,7 @@ sudo semodule -X 300 -i my-qemusystemx86.pp
 * Example of an XML SDL configuration, with OpenGL enabled. This example requires a 3D-capable graphic card to be attached to the guest computer, such as ``virtio-gpu`` or ``vfio-pci``.
 
 ```
-<graphics type="sdl" display=":0" fullscreen="yes">
+<graphics type="sdl" display=":0" xauth="/root/.Xauthority" fullscreen="yes">
   <gl enable="yes"/>
 </graphics>
 ```
@@ -98,9 +98,8 @@ Does not display at the moment.
 SELinux needs to be disabled.
 
 ```
-<graphics type="dbus"/>
-	 <p2p value="on"/>
-   <gl enable="yes"/>
+<graphics type="dbus">
+  <gl enable="yes"/>
 </graphics>
 ```
 
