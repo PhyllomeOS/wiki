@@ -2,7 +2,7 @@
 title: Preparation
 description: 
 published: true
-date: 2023-05-20T21:53:54.117Z
+date: 2023-05-20T21:57:01.131Z
 tags: 
 editor: markdown
 dateCreated: 2021-11-15T15:39:49.074Z
@@ -17,10 +17,10 @@ dateCreated: 2021-11-15T15:39:49.074Z
 - A **[x86-64](https://en.wikipedia.org/wiki/X86-64)** computer which supports the **1st generation** of [hardware-assisted virtualization](/virt/lexicon#hardware-assisted-virtualization)
 	- For AMD-based configurations: AMD V is available and [enabled](/deploy/prepare#enable-hardware-assisted-virtualization)
   - For Intel-based configurations: Intel VT-x [is available](https://ark.intel.com/content/www/us/en/ark/search/featurefilter.html?productType=873&2_VTX=true) and [enabled](/deploy/prepare#enable-hardware-assisted-virtualization)
-- **2-core** processor
+- A **2-core** processor
 - **4 GB** of RAM
-- **5 GB** of **hard disk** storage for Phyllome OS
-- **250 GB** of **hard disk** storage to store OS disk images
+- **5 GB** of **hard disk** storage space for Phyllome OS
+- **250 GB** of **hard disk** storage space to store guest OS disk images
 
 > Most computers sold after 2015 support hardware-assisted virtualization.
 {.is-info}
@@ -33,10 +33,11 @@ dateCreated: 2021-11-15T15:39:49.074Z
 - A **x86-64** computer that supports the **2nd gen of hardware-assisted virtualization**
 	- For AMD-based configurations: **AMD Vi** is available and [enabled](/deploy/prepare#enable-hardware-assisted-virtualization)
   - For Intel-based configurations: **Intel VT-d** [is available](https://ark.intel.com/content/www/us/en/ark/search/featurefilter.html?productType=873&0_VTD=True) and [enabled](/deploy/prepare#enable-hardware-assisted-virtualization)
-* **4-core** processor
+* A **4-core** processor
 * **16 GB** of RAM
-* **1 TB** of **SSD or NVMe**-based storage device to store disk images and Phyllome OS
-* Two graphics cards or a graphics card that supports [*vfio-mdev*](/gofurther/vfio-mdev) or SR-IOV
+- **5 GB** of **SSD** or **NVMe** storage space for Phyllome OS
+* **1 TB** of **SSD** or **NVMe** storage space to store guest OS disk images
+* **Two graphics cards** or a graphics card that supports [vfio-mdev](/gofurther/vfio-mdev) or SR-IOV
 
 > Sitting idle, Phyllome OS consumes approximately 1 CPU core and 1.5 GB of RAM. This requirement scales up with the number of running virtual machines.
 {.is-info}
