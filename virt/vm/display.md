@@ -2,7 +2,7 @@
 title: Display
 description: How to access a virtual machine's display
 published: true
-date: 2023-05-20T20:48:34.898Z
+date: 2023-05-20T20:52:12.783Z
 tags: 
 editor: markdown
 dateCreated: 2022-07-31T09:22:05.854Z
@@ -19,7 +19,7 @@ A virtual display can be attached to a virtual machine. It is a must-have for no
 
 * *to-be done. Add table here*.
 
-## Specific displays
+## Display types
 
 ### VNC
 
