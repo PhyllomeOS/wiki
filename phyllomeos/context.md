@@ -2,7 +2,7 @@
 title: Context
 description: 
 published: true
-date: 2022-02-09T19:48:05.182Z
+date: 2023-05-27T19:48:26.476Z
 tags: 
 editor: markdown
 dateCreated: 2021-11-12T15:31:13.657Z
@@ -117,4 +117,4 @@ In summary, despite some shared characteristics, Phyllome OS is not meant to be 
 
 ---
 
-*[**Go back to parent page**](/phyllomeos)*
+*[**Go to parent page**](https://wiki.phyllo.me/)*
