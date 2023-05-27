@@ -19,7 +19,7 @@ dateCreated: 2021-11-15T15:39:49.074Z
   - For Intel-based configurations: Intel VT-x [is available](https://ark.intel.com/content/www/us/en/ark/search/featurefilter.html?productType=873&2_VTX=true) and [enabled](/deploy/prepare#enable-hardware-assisted-virtualization)
 - A **2-core** processor
 - **4 GB** of RAM
-- **5 GB** of **hard disk** storage space for Phyllome OS
+- **10 GB** of **hard disk** storage space for Phyllome OS
 - **250 GB** of **hard disk** storage space to store guest OS disk images
 
 > Most computers sold after 2015 support hardware-assisted virtualization.
@@ -61,27 +61,27 @@ shutdown /fw /r
 
 * Open the start-up menu and write "start-up", then select *Change advanced start-up options*
 
-![screenshot_win10pro_2021-11-17_223413.png](/windows-access-firmware/screenshot_win10pro_2021-11-17_223413.png)
+![windows-firmware-1.png](/wiki/assets/windows-access-firmware/windows-firmware-1.png)
 
 * Under the *Advanced start-up* section, click on *Restart now* 
 
-![screenshot_win10pro_2021-11-17_220109.png](/windows-access-firmware/screenshot_win10pro_2021-11-17_220109.png)
+![windows-firmware-2](/wiki/assets/windows-access-firmware/windows-firmware-2.png)
 
 * Select *Troubleshoot*
 
-![screenshot_win10pro_2021-11-17_224620.png](/windows-access-firmware/screenshot_win10pro_2021-11-17_224620.png)
+![windows-firmware-3](/wiki/assets/windows-access-firmware/windows-firmware-3.png)
 	
 * Then select *Advanced options*
 
-![screenshot_win10pro_2021-11-17_225032.png](/windows-access-firmware/screenshot_win10pro_2021-11-17_225032.png)
+![windows-firmware-4](/wiki/assets/windows-access-firmware/windows-firmware-4.png)
 
 * Select *UEFI Firmware Settings*
 
-![screenshot_win10pro_2021-11-17_220153.png](/windows-access-firmware/screenshot_win10pro_2021-11-17_220153.png)
+![windows-firmware-5](/wiki/assets/windows-access-firmware/windows-firmware-5.png)
 
 * Hit *Restart*
 
-![screenshot_win10pro_2021-11-17_220200.png](/windows-access-firmware/screenshot_win10pro_2021-11-17_220200.png)
+![windows-firmware-6](/wiki/assets/windows-access-firmware/windows-firmware-6.png)
 
 * Go to the section [Modify the firmware configuration](/deploy/prepare#modify-the-firmware-configuration) to learn what to do next.
 
@@ -114,15 +114,15 @@ Here is a visual walk-through for an Intel NUC computer.
 
 * After you have pressed the <kbd>F2</kbd> key on boot, this screen should appear.
 
-![efi-1.png](/inte-efi/efi-1.png)
+![efi-1.png](/wiki/assets/intel-efi/efi_boot-order-1.png)
 
 * Go to the *Security* tab. Under the *Security Features* menu, you will find two options, *Intel Virtualization Technology* and *Intel VT for Directed I/O (VT-d)*. 
 
-![efi-2.png](/inte-efi/efi-2.png)
+![efi-2.png](/wiki/assets/intel-efi/efi-2.png)
 
 * Check these boxes
 
-![efi-4.png](/inte-efi/efi-4.png)
+![efi-4.png](/wiki/assets/intel-efi/efi-4.png)
 
 Then *save and exit* the configuration tool, which will reboot your computer.
 
@@ -135,15 +135,15 @@ This section will show you how to modify the boot order permanently, so you can 
 
 * Go to the *Boot* tab
 
-![efi_boot-order-1.png](/inte-efi/efi_boot-order-1.png)
+![efi_boot-order-1.png](/wiki/assets/intel-efi/efi_boot-order-1.png)
 
 * Under the *UEFI Boot Priority* menu, you may notice that Fedora, which is installed on the internal storage device, is in the first position    
 
-![efi_boot-order-2.png](/inte-efi/efi_boot-order-2.png)
+![efi_boot-order-2.png](/wiki/assets/intel-efi/efi_boot-order-2.png)
 
 * Move the USB Flash Drive to the first position instead, as shown in the screenshot below
 
-![efi_boot-order-3.png](/inte-efi/efi_boot-order-3.png)
+![efi_boot-order-3.png](/wiki/assets/intel-efi/efi_boot-order-3.png)
 
 * That's it. Save changes and exist. Note that it is advisable to revert these changes after a successful installation, or to only change the bootloader temporary.
 
