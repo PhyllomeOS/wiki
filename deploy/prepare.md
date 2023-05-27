@@ -61,27 +61,27 @@ shutdown /fw /r
 
 * Open the start-up menu and write "start-up", then select *Change advanced start-up options*
 
-![windows-firmware-1.png](/wiki/assets/windows-access-firmware/windows-firmware-1.png)
+![windows-firmware-1.png](/assets/windows-access-firmware/windows-firmware-1.png)
 
 * Under the *Advanced start-up* section, click on *Restart now* 
 
-![windows-firmware-2](/wiki/assets/windows-access-firmware/windows-firmware-2.png)
+![windows-firmware-2](/assets/windows-access-firmware/windows-firmware-2.png)
 
 * Select *Troubleshoot*
 
-![windows-firmware-3](/wiki/assets/windows-access-firmware/windows-firmware-3.png)
+![windows-firmware-3](/assets/windows-access-firmware/windows-firmware-3.png)
 	
 * Then select *Advanced options*
 
-![windows-firmware-4](/wiki/assets/windows-access-firmware/windows-firmware-4.png)
+![windows-firmware-4](/assets/windows-access-firmware/windows-firmware-4.png)
 
 * Select *UEFI Firmware Settings*
 
-![windows-firmware-5](/wiki/assets/windows-access-firmware/windows-firmware-5.png)
+![windows-firmware-5](/assets/windows-access-firmware/windows-firmware-5.png)
 
 * Hit *Restart*
 
-![windows-firmware-6](/wiki/assets/windows-access-firmware/windows-firmware-6.png)
+![windows-firmware-6](/assets/windows-access-firmware/windows-firmware-6.png)
 
 * Go to the section [Modify the firmware configuration](/deploy/prepare#modify-the-firmware-configuration) to learn what to do next.
 
@@ -114,15 +114,15 @@ Here is a visual walk-through for an Intel NUC computer.
 
 * After you have pressed the <kbd>F2</kbd> key on boot, this screen should appear.
 
-![efi-1.png](/wiki/assets/intel-efi/efi_boot-order-1.png)
+![efi-1.png](/assets/intel-efi/efi_boot-order-1.png)
 
 * Go to the *Security* tab. Under the *Security Features* menu, you will find two options, *Intel Virtualization Technology* and *Intel VT for Directed I/O (VT-d)*. 
 
-![efi-2.png](/wiki/assets/intel-efi/efi-2.png)
+![efi-2.png](/assets/intel-efi/efi-2.png)
 
 * Check these boxes
 
-![efi-4.png](/wiki/assets/intel-efi/efi-4.png)
+![efi-4.png](/assets/intel-efi/efi-4.png)
 
 Then *save and exit* the configuration tool, which will reboot your computer.
 
@@ -135,15 +135,15 @@ This section will show you how to modify the boot order permanently, so you can 
 
 * Go to the *Boot* tab
 
-![efi_boot-order-1.png](/wiki/assets/intel-efi/efi_boot-order-1.png)
+![efi_boot-order-1.png](/assets/intel-efi/efi_boot-order-1.png)
 
 * Under the *UEFI Boot Priority* menu, you may notice that Fedora, which is installed on the internal storage device, is in the first position    
 
-![efi_boot-order-2.png](/wiki/assets/intel-efi/efi_boot-order-2.png)
+![efi_boot-order-2.png](/assets/intel-efi/efi_boot-order-2.png)
 
 * Move the USB Flash Drive to the first position instead, as shown in the screenshot below
 
-![efi_boot-order-3.png](/wiki/assets/intel-efi/efi_boot-order-3.png)
+![efi_boot-order-3.png](/assets/intel-efi/efi_boot-order-3.png)
 
 * That's it. Save changes and exist. Note that it is advisable to revert these changes after a successful installation, or to only change the bootloader temporary.
 

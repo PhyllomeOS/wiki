@@ -42,7 +42,7 @@ The following section illustrates how to change the boot order *temporarily*. Th
 * The startup manager should appear after a few seconds.
 * Click on the option called *EFI* and the GRUB splash screen will appear. Go to the section below to learn what to do next.
 
-![kickstart-1](/wiki/assets/grub-kickstart/kickstart-1.png)
+![kickstart-1](/assets/grub-kickstart/kickstart-1.png)
 
 ## Alter the GRUB instructions
 
@@ -55,11 +55,11 @@ One needs to alter the GRUB instructions before the USB flash drive can load the
 
 * On the GRUB splash screen, navigate to the first entry using your keyboard arrow key and press <kbd>e</kbd>.
 
-![kickstart-1](/wiki/assets/grub-kickstart/kickstart-2.png)
+![kickstart-1](/assets/grub-kickstart/kickstart-2.png)
 
 * On the new screen, use the arrow keys to place your cursor just after the word `quiet`.
 
-![kickstart-2](/wiki/assets/grub-kickstart/kickstart-3.png)
+![kickstart-2](/assets/grub-kickstart/kickstart-3.png)
 
 > *GRUB defaults to the US keyboard layout. Have a look at [this online resource](https://en.wikipedia.org/wiki/QWERTY#/media/File:KB_United_States.svg) to find the corresponding keys if you are not using a US keyboard layout*
 {.is-info}
@@ -69,18 +69,18 @@ One needs to alter the GRUB instructions before the USB flash drive can load the
 
 * Leave a blank space after the word `quiet` and write exactly the following `inst.ks=https://ks.phyllo.me/dii`, then press <kbd>Ctrl</kbd> + <kbd>x</kbd> simultaneously or <kbd>F10</kbd>. This command will trigger the automated installation of Phyllome OS. 
 
-![kickstart-3.png](/wiki/assets/grub-kickstart/kickstart-4.png)
+![kickstart-3.png](/assets/grub-kickstart/kickstart-4.png)
 
 > *The shortened URL `https://ks.phyllo.me/dii` points to the latest Desktop version of Phyllome OS, tweaked for Intel CPUs and GPUs (gen 5th to gen 9th). The shortened link points to the kickstart file available here: https://raw.githubusercontent.com/PhyllomeOS/phyllomeos/main/dishes/phyllome-desktop-intelcpu-intelgpu.cfg. Any valid kickstart file may be used.*
 {.is-info}
 
 * During the installation process, you can use <kbd>Alt</kbd> + <kbd>Tab</kbd> to cycle through tabs, and look at the logs in real-time
 
-![kickstart-4](/wiki/assets/grub-kickstart/kickstart-5.png)
+![kickstart-4](/assets/grub-kickstart/kickstart-5.png)
 
 * After a few minutes, you should be greeted with a welcome screen.
 
-![kickstart-5](/wiki/assets/grub-kickstart/kickstart-6.png)
+![kickstart-5](/assets/grub-kickstart/kickstart-6.png)
 
 * Go to the [First-launch configuration section](/deploy/install#first-launch) to learn what to do next.
 
@@ -96,49 +96,49 @@ One needs to alter the GRUB instructions before the USB flash drive can load the
 
 * **Welcome screen**: on first-launch, for the *Desktop edition*, you will be greeted with the GNOME Welcome Screen. As of now, only English is available out of the box. Click *Next* when you are ready.  
 
-![first-launch-1.png](/wiki/assets/first-launch/first-launch-1.png)
+![first-launch-1.png](/assets/first-launch/first-launch-1.png)
 
 * **Keyboard layout**: you can select your favorite keyboard layout by clicking on the three stacked vertical dots at the bottom of the screen.
 
 > *By default, Phyllome OS is set to use the *fr-CH* keyboard layout. This keyboard layout is used by people living in [Romandy](https://en.wikipedia.org/wiki/Romandy), Switzerland, which is also where the original author of Phyllome OS is from.*
 {.is-info}
 
-![first-launch-2.png](/wiki/assets/first-launch/first-launch-2.png)
+![first-launch-2.png](/assets/first-launch/first-launch-2.png)
 
 * **Time zone**: you can pick your current location by clicking on the map or writing it down inside the box. The time will be adjusted according to the provided location. 
 
-![first-launch-3.png](/wiki/assets/first-launch/first-launch-3.png)
+![first-launch-3.png](/assets/first-launch/first-launch-3.png)
 
 * **Online Accounts**: Phyllome OS strongly discourages the use of *Online Accounts*, and therefore provides no option here. Click on *Skip* to go to the next screen.
 
 > *Phyllome OS is **not** designed to be a safe place for storing persistent or personal data, as it doesn't provide full-disk encryption by default. Phyllome OS instead relies on filesystem-level encryption to protect virtual machine disks, and encourage its users to rely on another layer of encryption as provided by their operating system inside their virtual machine, whenever available.*
 {.is-info}
 
-![first-launch-4.png](/wiki/assets/first-launch/first-launch-4.png)
+![first-launch-4.png](/assets/first-launch/first-launch-4.png)
 
 * **Create a user account**: you are invited to create a user account, which by default will be granted administrator or root privileges. Click on *Next* when you are done.
 
-![first-launch-5.png](/wiki/assets/first-launch/first-launch-5.png)
+![first-launch-5.png](/assets/first-launch/first-launch-5.png)
 
 * **Provide a password**: please do provide a strong password. In case you ever forget it, write it down on a piece of paper and store it somewhere safe, or/and rely on an online password manager like [Bitwarden](https://bitwarden.com/) with [multi-factor authentication](https://en.wikipedia.org/wiki/Multi-factor_authentication) enabled. Click on *Next* when you are done.
 
 > *Phyllome OS will eventually rely on the user password as provided here to decrypt the folder containing virtual machine disks. Loosing the password will mean loosing any access to the virtual machine disks.*
 {.is-info}
 
-![first-launch-6.png](/wiki/assets/first-launch/first-launch-6.png)
+![first-launch-6.png](/assets/first-launch/first-launch-6.png)
 
 * **Setup complete**: Click on start *Start Using Generic*. 
 
-![first-launch-7.png](/wiki/assets/first-launch/first-launch-7.png)
+![first-launch-7.png](/assets/first-launch/first-launch-7.png)
 
 * **Provide password**: The Virtual Machine Manager is set to auto-launch, and requires elevated permission. Please provide the user password you just set up and click on *Authenticate* to start using Phyllome OS. 
 
-![first-launch-9.png](/wiki/assets/first-launch/first-launch-9.png)
+![first-launch-9.png](/assets/first-launch/first-launch-9.png)
 
 > *Congratulations, you are done!*
 {.is-success}
 
-![first-launch-10.png](/wiki/assets/first-launch/first-launch-10.png)
+![first-launch-10.png](/assets/first-launch/first-launch-10.png)
 
 > *Don't forget to remove the USB flash drive from your computer, so that next time your computer will boot, it will use the internal disk where Phyllome OS has been deployed.*
 {.is-info}
