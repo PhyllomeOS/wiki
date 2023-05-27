@@ -27,7 +27,6 @@ In this wiki, you will find guides about [how to install](#install) and [use](#g
 - [Prepare your computer](/deploy/prepare)
 - [Create an installation medium](/deploy/medium)
 - [Install from a USB flash drive](/deploy/install) *(recommended method)*
-- [Deployment in a virtual machine](/deploy/vm)
 
 ## Get started
 
@@ -35,19 +34,18 @@ In this wiki, you will find guides about [how to install](#install) and [use](#g
 
 ### Unix-like
 	
-- [Install](/gofurther/install-guest) a Linux guest system using an ISO file
-- [Automatically deploy](/gofurther/virt-install) an RPM-based guest system with `virt-install` and a kickstart file
+- [Install](/getstarted/install-guest) a Linux guest system using an ISO file
+- [Automatically deploy](/getstarted/virt-install) an RPM-based guest system with `virt-install` and a kickstart file
 
 ### Windows NT
 
-- [Install ReactOS](/gofurther/reactos)
+- [Install ReactOS](/getstarted/reactos)
 
 ## Go further
 
 *Go further with Phyllome OS*
 
 - [Use Phyllome OS as a live system](/gofurther/live) (*to test it*)
-- [Perform a few checks](/gofurther/checks) on Phyllome OS
 - [Resize](/gofurther/resize) an existing virtual disk
 - [Encrypt](/gofurther/encrypt) a directory containing virtual disk images
 - [Share a directory](/gofurther/virtiofs) with a guest using `virtiofs`
@@ -60,7 +58,6 @@ In this wiki, you will find guides about [how to install](#install) and [use](#g
 
 - [A very short history](/virt/history) of virtualization
 - [Lexicon](/virt/lexicon)
-- [Related projects](/virt/projects)
 - [External resources](/virt/resources)
 
 ### Guest operating systems
@@ -86,11 +83,7 @@ In this wiki, you will find guides about [how to install](#install) and [use](#g
 
 - [Context](/phyllomeos/context)
 - [Purpose](/phyllomeos/purpose)
-- [Limitations and advantages](/phyllomeos/cons-and-pros)
-- [Comparaison](/phyllomeos/comparaison)
-- [Use cases](/phyllomeos/use-cases)
-- [Design](/phyllomeos/design)
-- [Features](/phyllomeos/features)
+- [Roadmap](/phyllomeos/roadmap)
 - [Software bill of materials](/phyllomeos/sbom)
 - [Security](/phyllomeos/security)
 - [FAQ](/phyllomeos/faq)
