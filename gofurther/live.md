@@ -2,7 +2,7 @@
 title: Get started with the Live system
 description: 
 published: true
-date: 2021-11-22T20:54:09.582Z
+date: 2023-05-27T19:50:32.094Z
 tags: 
 editor: markdown
 dateCreated: 2021-11-13T11:36:55.647Z
@@ -57,4 +57,4 @@ To boot from a USB flash drive, one would have to either temporary or permanentl
 
 ---
 
-*Are you looking for things to do with your live system? If so, have a look at doing some [suggested tasks](/gofurther)*
+*[**Go to parent page**](https://wiki.phyllo.me/)*
