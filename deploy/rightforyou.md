@@ -2,17 +2,15 @@
 title: Understand what you are signing up for
 description: 
 published: true
-date: 2022-01-14T19:48:05.732Z
+date: 2023-05-27T21:33:07.233Z
 tags: 
 editor: markdown
 dateCreated: 2021-11-13T11:19:38.215Z
 ---
 
-# Is Phyllome OS right for you?
+# Phyllome OS Philosophy
 
-## Phyllome OS Philosophy
-
-> Phyllome OS has one primarly goal: *to let users bring their favorite operating system and to run them well*.
+> Phyllome OS has one goal: to let users run their favorite operating system well.
 
 * The host operating system, Phyllome OS, is designed to be as discrete as possible.
 * Phyllome OS should mostly take care of itself. 
@@ -21,7 +19,6 @@ dateCreated: 2021-11-13T11:19:38.215Z
   * Learning how to leverage this new state of affairs.
 
 > Phyllome OS has just started its journey and there is still a long, *years-long*, way to go to achieve its vision. 
-It has several [significative limitations](/phyllomeos/cons-and-pros), so make sure you understand them; depending on what you wish to achieve, you may instead prefer [to favor other operating systems](https://wiki.phyllo.me/en/phyllomeos/comparaison); finally, [support](/virt#guests) for guest systems differs widely. 
 {.is-warning}
 
 ## Phyllome OS Desktop and Phyllome OS Server 
@@ -50,5 +47,5 @@ Phyllome OS Desktop and Phyllome OS Server also comes with several editions opti
 
 ---
 
-*Ready to try it out? If soplease go to [**the next section**](/deploy/prepare) to prepare your host computer.*
+*Ready to try it out? If so, please go to [**the next section**](/deploy/prepare) to prepare your host computer.*
 
