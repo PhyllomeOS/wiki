@@ -25,7 +25,7 @@ The `Q35` virtual chipset is based on a modern chipset, compatible with PCI-Expr
 > Did you know that the Open Virtual Machine Firmware (OVMF), which is based on [TianoCore](https://www.tianocore.org/), is the default firmware for EFI-based virtual machines? Its configuration utility can be accessed using the <kbd>Esc</kbd> key.
 {.is-info}
 
-![uefi_tianocore_first-screen.png](/uefi_tianocore_first-screen.png)
+![uefi_tianocore_first-screen.png](/wiki/assets/tianocore/uefi_tianocore_first-screen.png)
 
 *The TianoCore splash screen*
 

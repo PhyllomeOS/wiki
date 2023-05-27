@@ -70,15 +70,15 @@ Follow the normal procedure to install an application on your computer.
 
 * Open Etcher. You will be greeted by the screen below. Click on *Flash from file*
 
-![capture-balenaetcher-1.png](/balena-etcher/capture-balenaetcher-1.png)
+![capture-balenaetcher-1.png](/wiki/assets/balena-etcher/capture-balenaetcher-1.png)
 
 * Browse where the ISO is stored and select *Open*
 
-![capture-balenaetcher-2.png](/balena-etcher/capture-balenaetcher-2.png)
+![capture-balenaetcher-2.png](/wiki/assets/balena-etcher/capture-balenaetcher-2.png)
 
 * Etcher should have autodetected your USB flash drive. If this is not the case, press *Change* on the welcome screen and pick the desired destination on the new window.
 
-![capture-balenaetcher-3.png](/balena-etcher/capture-balenaetcher-3.png)
+![capture-balenaetcher-3.png](/wiki/assets/balena-etcher/capture-balenaetcher-3.png)
 
 * Select *Flash* when you are ready
 
@@ -88,16 +88,16 @@ Follow the normal procedure to install an application on your computer.
 > A prompt might appear, asking for your password or a confirmation
 {.is-info}
 
-![capture-balenaetcher-4.png](/balena-etcher/capture-balenaetcher-4.png)
+![capture-balenaetcher-4.png](/wiki/assets/balena-etcher/capture-balenaetcher-4.png)
 
 * Wait a few minutes...
 
-![capture-balenaetcher-5.png](/balena-etcher/capture-balenaetcher-5.png)
+![capture-balenaetcher-5.png](/wiki/assets/balena-etcher/capture-balenaetcher-5.png)
 
 > Congratulations, the USB flash drive is now ready to use!
 {.is-success}
 
-![capture-balenaetcher-6.png](/balena-etcher/capture-balenaetcher-6.png)
+![capture-balenaetcher-6.png](/wiki/assets/balena-etcher/capture-balenaetcher-6.png)
 
 ---
 
