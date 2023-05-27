@@ -62,3 +62,6 @@ cat /dev/input/by-id/usb-Logitech_G513_RGB_MECHANICAL_GAMING_KEYBOARD_1569307831
 
 * https://libvirt.org/formatdomain.html#input-devices
 
+---
+
+*[**Go to parent page**](https://wiki.phyllo.me/)*

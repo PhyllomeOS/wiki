@@ -64,5 +64,6 @@ Edit the virtual machine's definition and replace `MOUSE_NAME` and `KEYBOARD_NAM
 
 * In-depth [Passthrough Post article](https://passthroughpo.st/using-evdev-passthrough-seamless-vm-input/) about evdev. 
 
+---
 
-
+*[**Go to parent page**](https://wiki.phyllo.me/)*

@@ -87,4 +87,4 @@ In this section, the focus is oriented towards Virtual I/O Devices (VIRTIO), bet
 
 ---
 
-*[**Go back to parent page**](/virt/vm)*
+*[**Go to parent page**](https://wiki.phyllo.me/)*

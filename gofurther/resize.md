@@ -94,4 +94,4 @@ On Fedora-related distributions, `virt-resize` is provided by the `guestfs-tools
 
 ---
 
-*[**Go to parent page**](/gofurther/)*
+*[**Go to parent page**](https://wiki.phyllo.me/)*

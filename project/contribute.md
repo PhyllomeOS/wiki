@@ -22,3 +22,7 @@ At the moment, there are few ways to contribute:
 
 > You can have a look at [the ongoing issues](https://kanboard.phyllo.me/b/CH7qd98J2v7egmodk/development) to get an indication on what to do next.
 {.is-info}
+
+---
+
+*[**Go to parent page**](https://wiki.phyllo.me/)*

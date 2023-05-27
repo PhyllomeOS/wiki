@@ -35,3 +35,7 @@ The Nvram contains the saved state of the UEFI configuration.
 * Any new virtual machines will be saved there :
 
 `/var/lib/libvirt/images`
+
+---
+
+*[**Go to parent page**](https://wiki.phyllo.me/)*

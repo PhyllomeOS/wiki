@@ -74,4 +74,4 @@ When it comes to its longevity and number of variants, the UNIX family is by far
   
 ---
 
-*[**Go to parent page**](/virt/)*
+*[**Go to parent page**](https://wiki.phyllo.me/)*

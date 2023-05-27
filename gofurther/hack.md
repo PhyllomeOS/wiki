@@ -14,4 +14,4 @@ Current instructions on how to develop Phyllome OS and modify the system can be 
 
 ---
 
-***[Go to parent page](/gofurther)***
+*[**Go to parent page**](https://wiki.phyllo.me/)*

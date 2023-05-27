@@ -8,42 +8,45 @@ editor: markdown
 dateCreated: 2021-11-13T11:55:14.298Z
 ---
 
-> Section under construction. Tables is broken. Would have to fix it.
-{.is-warning}
+Below are the targeted features for the alpha version.
 
-Take this table as an example:
+| | Phyllome OS alpha features |
+| :- | :-: |
+| *Nested-virtualization* | Yes |
+| *Paravirtualization* | Full support on Linux guests |
+| *IOMMU support* | Yes |
+| *Migration* | Cold migration only |
+| *Snapshots* | No |
+| *Cloning* | Yes |
+| *Virtual disks format* | RAW only |
+| *PCI Passthrough* | Yes |
+| *Sound* | PCI Passthrough |
+| *Bluetooth* | PCI Passthrough |
+| *USB* | PCI Passthrough |
+| *Display modes* | Spice and VNC |
+| *UEFI* | Yes |
+| *Secure Boot* | Yes |
+| *TPM* | Yes |
 
-| Description | vfio-pci | vfio-mdev | vfio-gpu |
-|---|---|---|---|
-| *Performance* | Near-native performance and full features set | Near-native performance and full features set | Degraded performance and limited features set |
-| *Guests support* | UNIX and non-UNIX guests | UNIX and non-UNIX guests | Works only on selected UNIX guests |
-| *Driver* | No special driver in the guest | No special driver in the guest | Requires a special driver in the guest |
-| *Number of host GPUs* | Two GPUs in most situations | A single GPU | A single GPU |
-| *GPU support* | Mostly GPU agnostic | Recent Intel integrated GPUs and some professional grade Nvidia GPUs | Mostly GPU agnostic |
+## Roadmap
 
-# Roadmap
-
-
-
-
- ------------------------------------------- ----------------------- ------------------- ---------------------------------------------------- ----------------------------
-                                              Fedora 34               Phyllome OS alpha   Phyllome OS beta                                     Phyllome OS 1.0
-  Out-of-the box support for virtualization   No                      Yes                 Yes                                                  Yes
-  Emulator/virtualizer                        QEMU                    QEMU                QEMU, Cloud Hypervisor (does CH support vfio-pci?)   Cloud Hypervisor
-  Virtual motherboard support                 i440fx / Q35            Q35                 Q35, virt                                            virt
-  Firmware                                    OVMF, SeaBIOS           OVMF                OVMF                                                 OVMF
-  Hypervisor                                  KVM                     KVM                 KVM                                                  KVM
-  Based on                                    Itself                  Fedora Server       Fedora Silverblue                                    Fedora Silverblue
-  Desktop-oriented (GNOME-shell)              Possible                Yes, GNOME-shell    Yes                                                  Yes
-  Package management                          RPM                     RPM                 RPM-ostree                                           RPM-ostree
-  Rolling release                             No                      No                  Yes                                                  Yes
-  Live-edition                                No                      No                  No                                                   Yes
-  Local first                                 Possible                Yes                 Yes                                                  Yes
-  Default filesystem                          Btrfs                   Ext4                Ext4                                                 F2FS
-  Host encryption                             Possible                No                  Filesystem-level (fscrypt)                           Filesystem-level (fscrypt)
-  GPU support                                 Intel, AMD and Nvidia   Intel               Intel and AMD                                        Intel AMD and Nvidia
-  Target release date                         Released                2021                2022                                                 2022
-  ------------------------------------------- ----------------------- ------------------- ---------------------------------------------------- ----------------------------
+| Fedora 34 | Phyllome OS alpha | Phyllome OS beta | Phyllome OS 1.0 |
+| :- | :-: | :-: | :-: |
+|Out-of-the box support for virtualization | No | Yes | Yes | Yes |
+| Emulator/virtualizer | QEMU | QEMU | QEMU, Cloud Hypervisor | Cloud Hypervisor |
+| Virtual chipset | i440fx / Q35 | Q35 | Q35, virt | virt |
+| Firmware | OVMF, SeaBIOS | OVMF | OVMF | OVMF |
+| Hypervisor | KVM | KVM | KVM | KVM |
+| Based on | Itself | Fedora Server | Fedora Silverblue | Fedora Silverblue |
+| Desktop-oriented | Possible | Yes | Yes | Yes |
+| Package management | RPM | RPM | RPM-ostree | RPM-ostree |
+| Rolling release | No | No | Yes | Yes |
+| Live-edition | No | No | No | Yes |
+| Local-first | Possible | Yes | Yes | Yes |
+| Default filesystem | Btrfs | Ext4 | Ext4 | F2FS| 
+| Host encryption | Possible | No | Filesystem-level encryption | Filesystem-level encryption | 
+| GPU support | Intel, AMD and Nvidia | Intel | Intel and AMD | Intel, AMD and Nvidia |
+| Target release date | Released | 2021 | 2022| 2022 |
 
 ### Beyond the first production-ready release
 
@@ -77,3 +80,7 @@ Here are some features that may be added later :
         Coreboot[^54].
 * **Support beyond the x86 architecture**
     * Support for hardware based on ARM and RISC-V architectures would be great.
+
+---
+
+*[**Go to parent page**](https://wiki.phyllo.me/)*

@@ -58,4 +58,4 @@ The `virt` virtual chipset is the most modern chipset, compatible with PCI-Expre
 
 ---
 
-*[**Go back to parent page**](/virt/vm)*
+*[**Go to parent page**](https://wiki.phyllo.me/)*

@@ -564,3 +564,7 @@ The following list is provided by the following command `dnf list --installed | 
 *  zram - "zram-generator - Systemd unit generator for zram swap devices"
 * zram-generator.x86_64         
 * zram-generator-defaults.noarch
+
+---
+
+*[**Go to parent page**](https://wiki.phyllo.me/)*

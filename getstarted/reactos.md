@@ -16,9 +16,28 @@ In theory, it can run any software and work with any drivers developed for these
 
 In practice, it is still under heavy-development and may not work as expected.
 
-> **Phyllome OS support**
+## State of support
+
 Support for the more modern PCI-Express-enabled Q35 chipset, UEFI or other virtio-devices, which Phyllome OS favors, is still lacking in ReactOS. Performance of the display won't be optimal, resulting in screen tearing. More information can be found [here](/virt/guest/reactos).
 {.is-warning}
+
+| **Hardware** | ReactOS 4.13 | ReactOS 4.14 |
+| :- | :-: | :-: |
+| *[Chipset](/virt/vm/chipset)* | i440fx | i440fx |
+| *Firmware* | SeaBIOS [^1] | SeaBIOS |
+| *virtio-gpu* | No | No |
+| *virtio-video* | No | No |
+| *virtio-snd* | No | No |
+| *virtio-blk* | No | No |
+| *virtio-scsi* | No | No |
+| *virtio-fs* | No | No |
+| *virtio-net* | No | **Yes** [^2] |
+| *virtio-keyboard* | No | No |
+| *virtio-tablet* | No | No |
+
+
+> Porting new paravirtual devices to ReactOS would significantly improve the experience of running ReactOS inside Phyllome OS, and other virtualization solutions leveraging [paravirtual hardware](https://wiki.phyllo.me/e/en/virt/virtio). See [here](https://reactos.org/contributing/) on how you can contribute to ReactOS
+{.is-info}
 
 ## Installation
 
@@ -191,6 +210,17 @@ mv reactos-bootcd-0.4.15-dev-3628-ga6bf77e-x86-gcc-lin-dbg /var/lib/libvirt/imag
 > Congratulations, you have successfully installed ReactOS!
 {.is-success}
 
+## Resources
+
+* [Official resource](https://reactos.org/wiki/QEMU) on running ReactOS with QEMU
+* [Hardware support list](https://reactos.org/wiki/Supported_Hardware) for ReactOS
+* [Git repository](https://github.com/hectorm/docker-qemu-reactos) providing a Docker image for the ReactOS operating system
+* [Current effort](https://github.com/QubesOS/qubes-issues/issues/2809) to integrate ReactOS and QubesOS
+* [GSoC 2018 project idea](https://reactos.org/wiki/Google_Summer_of_Code_2018_Ideas#Paravirtualization_Support) to port more paravirtualized devices to ReactOS
+
+[^1]: Support for [UEFI](https://reactos.org/wiki/UEFI), and potentially OVMF, is under-way.
+[^2]: See [here](https://doxygen.reactos.org/d1/dc8/virtio__types_8h.html#a5a27dcd221caab788e973f6964d84aa9) for the source code reference for `virtio-net` 
+
 ---
 
-* *Are you ready to try out other operating systems or learn how to execute certain tasks? If so, please follow [the link](https://wiki.phyllo.me/e/en/gofurther/)*
+*[**Go to parent page**](https://wiki.phyllo.me/)*

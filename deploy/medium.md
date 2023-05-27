@@ -102,4 +102,4 @@ Follow the normal procedure to install an application on your computer.
 ---
 
 *If you have followed the procedure using the Fedora Server ISO, with the intent of installing Phyllome OS permanently, please go to the [Install Phyllome OS page](https://wiki.phyllo.me/deploy/install).* 
-*If you have followed the procedure using the Phyllome OS ISO, go to the section [Get started with the live system](/getstarted/live).*
+*If you have followed the procedure using the Phyllome OS ISO, go to the section [Get started with the live system](/gofurther/live).*

@@ -197,7 +197,6 @@ virt-install \
     --location=/tmp/Fedora-Everything-netinst-x86_64-35-1.2.iso \
     --initrd-inject virtual-desktop-cdrom.cfg --extra-args "inst.ks=file:/virtual-phyllome-desktop-cdrom.cfg"
 ```
-
 ---
 
-***[Go to parent page](/gofurther)***
+*[**Go to parent page**](https://wiki.phyllo.me/)*

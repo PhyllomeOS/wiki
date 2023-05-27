@@ -8,10 +8,7 @@ editor: markdown
 dateCreated: 2021-11-13T17:52:22.554Z
 ---
 
-> Section under construction.
-{.is-warning}
-
-# Graphics cards
+# Graphic cards
 
 Phyllome leverages 3D acceleration within guest operating systems extensively, in three different modes depending on the situation.
 
@@ -26,3 +23,7 @@ Phyllome leverages 3D acceleration within guest operating systems extensively, i
 | *Driver* | No special driver in the guest | No special driver in the guest | Requires a special driver in the guest |
 | *Number of host GPUs* | Two GPUs in most situations | A single GPU | A single GPU |
 | *GPU support* | Mostly GPU agnostic | Recent Intel integrated GPUs and some professional grade Nvidia GPUs | Mostly GPU agnostic |
+
+---
+
+*[**Go to parent page**](https://wiki.phyllo.me/)*

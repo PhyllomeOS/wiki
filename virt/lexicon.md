@@ -115,4 +115,4 @@ Virtualization is used to better isolate resources on a physical computer and to
 
 ---
 
-*[**Go back to parent page**](/virt)*
+*[**Go to parent page**](https://wiki.phyllo.me/)*

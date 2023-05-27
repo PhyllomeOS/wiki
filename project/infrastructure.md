@@ -121,3 +121,7 @@ Apps that were actively disabled post-installation:
 * **Description** : [Wiki.js](https://js.wiki/) is used to power the wiki 
 * **Location** : https://wiki.phyllo.me
 * **Maintainer** : lukas@phyllo.me
+
+---
+
+*[**Go to parent page**](https://wiki.phyllo.me/)*

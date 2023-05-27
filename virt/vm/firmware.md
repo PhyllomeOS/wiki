@@ -42,4 +42,4 @@ The [Rust Hypervisor Firmware](https://github.com/cloud-hypervisor/rust-hypervis
 
 ---
 
-*[**Go back to parent page**](/virt/vm)*
+*[**Go to parent page**](https://wiki.phyllo.me/)*

@@ -19,6 +19,21 @@ Then, these vGPUs can be assigned to virtual machines or containers.
 
 Contrary to paravirtualized GPUs (e.g. *virtio-gpu*), vGPUs can use the same driver as their parent GPU (e.g. a guest compatible with an Intel GPUs will be able to leverage an Intel-based vGPUs)
 
+## Modify the system allocated to the GPU in the BIOS/UEFI
+
+> Some computers allow you to modify the system memory allocated or shared with the integrated GPU, which may allow you to create more vGPUs.
+{.is-info}
+
+> For Intel integrated graphics cards only; rarely available on laptops computers.
+{.is-warning}
+
+* Before the host operating system boots up, you need to enter the BIOS/UEFI and to look for a setting called *GPU aperture size*, or *GPU shared memory*. 
+
+* Use the highest possible value.
+
+> System memory will be reserved for the GPU, so make sure you have enough system memory to accomodate both the GPU and your operating system. 
+{.is-warning}
+
 ## Preparation
 
 * Make sure the GRUB has been updated after [the first boot](https://wiki.phyllo.me/getstarted/disk#update-grub-and-reboot)
@@ -165,3 +180,7 @@ Some computers allow you to modify the memory allocated or shared with the integ
 * Official page for vfio-mdev: https://www.kernel.org/doc/html/latest/driver-api/vfio-mediated-device.html
 * Archlinux's *must-read entry* on Intel GVT-g: https://wiki.archlinux.org/title/Intel_GVT-g
 * DMA-BUF Linux documentation: https://www.kernel.org/doc/html/latest/driver-api/dma-buf.html
+
+---
+
+*[**Go to parent page**](https://wiki.phyllo.me/)*

@@ -19,7 +19,6 @@ By default, `netboot.xyz.iso` should already be located under `var/lib/libvirt/i
 ```
 wget https://boot.netboot.xyz/ipxe/netboot.xyz.iso -P /var/lib/libvirt/iso/
 ```
-
 ## Run the script
 
 The following script, which also doesn't require root privileges, will create a virtual machine called `my-first-live-vm`. This virtual machine will be started automatically and added to `virt-manager`.
@@ -88,5 +87,4 @@ sudo poweroff
 
 ---
 
-*Are you looking for other tasks to execute on your system? If so, go the [suggested tasks section](/gofurther)*
-
+*[**Go to parent page**](https://wiki.phyllo.me/)*

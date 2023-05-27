@@ -128,3 +128,7 @@ It will look like that when launched:
 * [Official resource](https://libvirt.org/formatdomain.html#graphical-framebuffers) for libvirt-compatible displays, including various XML examples
 * [Libmks](https://gitlab.gnome.org/chergert/libmks) provides a "Mouse, Keyboard, and Screen" to QEMU using the D-Bus device support in QEMU and GTK 4. 
 * [QEMU D-Bus display experiment](https://gitlab.com/marcandre.lureau/qemu-display/) is a WIP Rust crates to interact with a -display dbus QEMU
+
+---
+
+*[**Go to parent page**](https://wiki.phyllo.me/)*

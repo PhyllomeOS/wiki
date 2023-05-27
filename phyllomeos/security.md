@@ -43,4 +43,4 @@ Phyllome OS heavily relies on GPU or graphic virtualization, most notably throug
 
 ---
 
-*[**Go back to parent page**](/phyllomeos)*
+*[**Go to parent page**](https://wiki.phyllo.me/)*

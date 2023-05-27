@@ -75,4 +75,4 @@ With this software stack deployed on virtualization-friendly hardware, an operat
 
 ---
 
-*[**Go back to parent page**](/virt)*
+*[**Go to parent page**](https://wiki.phyllo.me/)*

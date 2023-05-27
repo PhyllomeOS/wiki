@@ -10,84 +10,101 @@ dateCreated: 2021-06-19T09:29:20.593Z
 
 # The Phyllome OS wiki
 
-*Phyllome[^1] OS is an operating system that makes it easier to run [various operating systems](/gofurther) locally using [off-the-shelf hardware](/deploy/prepare) and [virtualization](/virt/lexicon#virtualization) technologies.*
+*Phyllome[^1] OS is an operating system that makes it easier to run [various operating systems](#go-further) locally using [off-the-shelf hardware](/deploy/prepare) and [virtualization](/virt/lexicon#virtualization) technologies.*
 
-In this wiki, you will find guides about [how to install](/deploy/install), [use](/getstarted/disk) and [hack](/gofurther/hack) Phyllome OS. You will also find more generic information on the [underlying technologies](/virt), Phyllome OS [itself](/phyllomeos) and the surrounding [project](/project).
+In this wiki, you will find guides about [how to install](#install) and [use](#get-started) Phyllome OS, as well as information on the [underlying technologies](#references), Phyllome OS [itself](#about-phyllome-os) and the surrounding [project](#about-the-project).
 
 [^1]: According to [the Wiktionary](https://en.wiktionary.org/wiki/phyllome), Phyllome refers to the "foliar part of a plant; any organ homologous with a leaf, or [any organ] produced by metamorphosis of a leaf"
 
-> If you would rather avoid JavaScript altogether, or wish to download the content of this wiki locally, feel free to clone [this repository](https://github.com/PhyllomeOS/wiki).
+> If you wish to download the content of this wiki locally, feel free to clone [this repository](https://github.com/PhyllomeOS/wiki).
 {.is-info}
 
-## Install Phyllome OS
+## Install
 
-*[This section](/deploy) illustrates how to install Phyllome OS on a computer*
+*How to install Phyllome OS*
 
-* [Is Phyllome OS right for you?](/deploy/rightforyou)
-* [Prepare your computer](/deploy/prepare)
-* [Create an installation medium](/deploy/medium)
-* [Install from the installation medium](/deploy/install) (*default method*)
-* [Post-installation configuration](/deploy/post-installation)
+- [Is Phyllome OS right for you?](/deploy/rightforyou)
+- [Prepare your computer](/deploy/prepare)
+- [Create an installation medium](/deploy/medium)
+- [Install from a USB flash drive](/deploy/install) *(recommended method)*
+- [Deployment in a virtual machine](/deploy/vm)
 
-* ...and [**more**](https://wiki.phyllo.me/en/deploy)
+## Get started
 
-## Deploy guests in Phyllome OS
+*How to deploy common operating systems inside Phyllome OS*
 
-*[This section](/getstarted) describes how to deploy common operating systems within Phyllome OS*
+### Unix-like
+	
+- [Install](/gofurther/install-guest) a Linux guest system using an ISO file
+- [Automatically deploy](/gofurther/virt-install) an RPM-based guest system with `virt-install` and a kickstart file
 
-* **Unix-like**
-	* [Install](/gofurther/install-guest) a Linux guest system over the internet
-	* [Automatically deploy](/gofurther/virt-install) an RPM-based guest system with `virt-install` and a kickstart file 
+### Windows NT
 
-* **Windows NT**
-  * [Install React OS](/gofurther/reactos)
-  * [Install Windows 11 (*to be created*)](/gofurther/windows11)
-
-* **Darwin-based**
-  * [Install macOS (*to be created*)](/gofurther/macos)
-
-* ...and [**more**](https://wiki.phyllo.me/en/getstarted#guest-operating-system-installations)
+- [Install ReactOS](/gofurther/reactos)
 
 ## Go further
 
-*[This section](/gofurther#tasks_related_to_phyllome_os) illustrates specific tasks related to Phyllome OS.*
+*Go further with Phyllome OS*
 
-* [Use Phyllome as a live system](/getstarted/live) (*to test it*)
-* [Perform a few checks](/gofurther/checks) on Phyllome OS
-* [Resize an existing disk](/gofurther/resize)
-* ...and [**more**](/gofurther)
+- [Use Phyllome OS as a live system](/gofurther/live) (*to test it*)
+- [Perform a few checks](/gofurther/checks) on Phyllome OS
+- [Resize](/gofurther/resize) an existing virtual disk
+- [Encrypt](/gofurther/encrypt) a directory containing virtual disk images
+- [Share a directory](/gofurther/virtiofs) with a guest using `virtiofs`
+- [Share an input device](/gofurther/evdev) with a guest using `evdev`
+- [Configure](/gofurther/vfio-mdev) `vfio-mdev`
 
 ## References
 
-*[This section](/virt) provides information about technologies used by Phyllome OS.*
+*Information about technologies used by Phyllome OS*
 
-* [Guest support](/virt/guest)
-* [Linux Kernel modules](/virt/host/modules) related to virtualization
-* [Paravirtualized hardware](/virt/vm/virtio) (`virtio`)
-* [Lexicon](/virt/lexicon) 
-* ...and [**more**](/virt)
+- [A very short history](/virt/history) of virtualization
+- [Lexicon](/virt/lexicon)
+- [Related projects](/virt/projects)
+- [External resources](/virt/resources)
+
+### Guest operating systems
+
+- [Running guest operating systems with KVM](/virt/guest.md)
+
+### The host operating system
+
+- [Linux Kernel modules](/virt/host/modules) related to virtualization
+- [Virtualization-related paths](/virt/host/paths) on Phyllome OS
+- [A libvirt XML](/virt/host/xml) commented
+- [Virtual I/O Devices](/virt/vm/virtio) (`virtio`)
+
+### (Virtual) hardware
+
+- [Chipset](/virt/vm/chipset)
+- [Firmware](/virt/vm/firmware)
+- [Display](/virt/vm/display)
+- [Input](/virt/vm/input)
+- [Graphic cards](/virt/vm/graphic-card)
 
 ## About Phyllome OS
 
-*[This section](/phyllomeos) describes the context around Phyllome OS and its design*. 
+- [Context](/phyllomeos/context)
+- [Purpose](/phyllomeos/purpose)
+- [Limitations and advantages](/phyllomeos/cons-and-pros)
+- [Comparaison](/phyllomeos/comparaison)
+- [Use cases](/phyllomeos/use-cases)
+- [Design](/phyllomeos/design)
+- [Features](/phyllomeos/features)
+- [Software bill of materials](/phyllomeos/sbom)
+- [Security](/phyllomeos/security)
+- [FAQ](/phyllomeos/faq)
 
-* [Context](/phyllomeos/context)
-* [Purpose](/phyllomeos/purpose)
-* [Use cases](/phyllomeos/use-cases)
-* ...and [**more**](https://wiki.phyllo.me/en/phyllomeos)
+## About the project
 
-### About the project
-
-*[This section](/project) describes the project around Phyllome OS*.
-
-* [How to contribute](/project/contribute)
-* [How to join](/project/join)
-* [Current infrastructure](/project/infrastructure)
+- [How to contribute](/project/contribute)
+- [How to join](/project/join)
+- [Current infrastructure](/project/infrastructure)
 
 ### Public presence
 
-* **The website**: https://phyllo.me
-* **This wiki**: https://wiki.phyllo.me
-* **The issue board**: [https://kanboard.phyllo.me](https://kanboard.phyllo.me/b/CH7qd98J2v7egmodk/development)
-* **GitHub's repositories**: https://github.com/PhyllomeOS
+- **The website**: https://phyllo.me
+- **This wiki**: https://wiki.phyllo.me
+- **The issue board**: [https://kanboard.phyllo.me](https://kanboard.phyllo.me/b/CH7qd98J2v7egmodk/development)
+- **GitHub's repositories**: https://github.com/PhyllomeOS
 

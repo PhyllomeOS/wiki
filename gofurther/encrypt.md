@@ -407,4 +407,4 @@ Then reboot.
 
 ---
 
-*[**Go to parent page**](/gofurther/)*
+*[**Go to parent page**](https://wiki.phyllo.me/)*

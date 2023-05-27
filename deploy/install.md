@@ -145,7 +145,7 @@ One needs to alter the GRUB instructions before the USB flash drive can load the
 
 ---
 
-*Please go to the [Get Started section](https://wiki.phyllo.me/getstarted/disk) to learn what to do next.*
+*Please go to the [Get Started section](/wiki/getstarted/) to learn what to do next.*
 
 
 

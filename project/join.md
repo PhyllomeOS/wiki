@@ -35,3 +35,7 @@ Please note that all contributions made to the project, through the official too
  
 > As a contributor, you waive your rights to profit from Phyllome OS. You will be added to the list of contributors.
 {.is-warning}
+
+---
+
+*[**Go to parent page**](https://wiki.phyllo.me/)*

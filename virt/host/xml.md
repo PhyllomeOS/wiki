@@ -245,3 +245,7 @@ This is the description of an XML file associated to a virtio-based virtual mach
 ## Reference
 
 For a more thorough description, see https://libvirt.org/formatdomain.html
+
+---
+
+*[**Go to parent page**](https://wiki.phyllo.me/)*

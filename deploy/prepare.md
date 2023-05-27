@@ -152,4 +152,4 @@ This section will show you how to modify the boot order permanently, so you can 
 
 ---
 
-*If the activation is successful, you can go to [**the next section**](https://wiki.phyllo.me/deploy/medium) to prepare an installation medium.*
+*If the activation is successful, you can go to [**the next section**](/deploy/medium) to prepare an installation medium.*
