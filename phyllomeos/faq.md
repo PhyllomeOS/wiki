@@ -2,7 +2,7 @@
 title: FAQ
 description: 
 published: true
-date: 2022-01-17T20:38:43.331Z
+date: 2023-05-27T19:47:29.021Z
 tags: 
 editor: markdown
 dateCreated: 2021-11-12T15:33:09.361Z
@@ -45,5 +45,9 @@ For a couple reasons :
 	* Fedora comes with a lot of packages, should the user want to extend Phyllome OS further. 
 
 * **Sane security by default**
-	* Fedora uses SELinux by default. 
+	* Fedora uses SELinux by default.
+  
+---
+
+*[**Go to parent page**](https://wiki.phyllo.me/)*
   
