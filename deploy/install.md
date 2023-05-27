@@ -2,7 +2,7 @@
 title: Install Phyllome OS
 description: 
 published: true
-date: 2022-11-01T19:59:08.389Z
+date: 2023-05-27T19:45:48.872Z
 tags: 
 editor: markdown
 dateCreated: 2021-11-14T16:19:00.348Z
@@ -145,7 +145,7 @@ One needs to alter the GRUB instructions before the USB flash drive can load the
 
 ---
 
-*Please go to the [Get Started section](/wiki/getstarted/) to learn what to do next.*
+*Please go to the [Get Started section](/wiki/#get-started) to learn what to do next.*
 
 
 
