@@ -2,7 +2,7 @@
 title: Share a host directory with a guest using virtiofs
 description: 
 published: true
-date: 2023-05-29T09:14:33.306Z
+date: 2023-05-29T09:14:51.426Z
 tags: 
 editor: markdown
 dateCreated: 2022-08-13T00:16:17.437Z
@@ -10,7 +10,7 @@ dateCreated: 2022-08-13T00:16:17.437Z
 
 # Sharing a directory between the host and the guest 
 
-## Virtio-fs in a nutschell
+## Virtio-fs in a nutshell
 
 [Virtio-fs](https://virtio-fs.gitlab.io/), shorts for *Virtio shared FileSystem*, allows for a directory located on the host to be shared with a guest. 
 
