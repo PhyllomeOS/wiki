@@ -35,7 +35,7 @@ dateCreated: 2021-11-15T15:39:49.074Z
   - For Intel-based configurations: **Intel VT-d** [is available](https://ark.intel.com/content/www/us/en/ark/search/featurefilter.html?productType=873&0_VTD=True) and [enabled](/deploy/prepare#enable-hardware-assisted-virtualization)
 * A **4-core** processor
 * **16 GB** of RAM
-- **5 GB** of **SSD** or **NVMe** storage space for Phyllome OS
+- **10 GB** of **SSD** or **NVMe** storage space for Phyllome OS
 * **1 TB** of **SSD** or **NVMe** storage space to store guest OS disk images
 * **Two graphics cards** or a graphics card that supports [vfio-mdev](/gofurther/vfio-mdev) or SR-IOV
 
