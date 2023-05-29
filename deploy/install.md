@@ -75,15 +75,10 @@ One needs to alter the GRUB instructions in order trigger the automated installa
 
 |  | Edition | Kickstart URL |
 |---|---|---|
-| *CPU and GPU agnostic* | **Phyllome OS Desktop** | 	
-[ks.phyllo.me/d](	
-https://ks.phyllo.me/d) |
-| *Intel CPU* | **Phyllome OS Desktop I** | [ks.phyllo.me/di](	
-https://ks.phyllo.me/d) | 
-| *AMD CPU* | **Phyllome OS Desktop A** | [ks.phyllo.me/da](	
-https://ks.phyllo.me/d)  |
-| *Intel CPU and GPU* | **Phyllome OS Desktop II** | [ks.phyllo.me/dii](	
-https://ks.phyllo.me/d)  |
+| *CPU and GPU agnostic* | **Phyllome OS Desktop** | [ks.phyllo.me/d](https://ks.phyllo.me/d) |
+| *Intel CPU* | **Phyllome OS Desktop I** | [ks.phyllo.me/di](https://ks.phyllo.me/di) | 
+| *AMD CPU* | **Phyllome OS Desktop A** | [ks.phyllo.me/da](https://ks.phyllo.me/da) |
+| *Intel CPU and GPU* | **Phyllome OS Desktop II** | [ks.phyllo.me/dii](https://ks.phyllo.me/dii) |
 
 > **Danger Zone**: the following instruction will trigger a process that will automatically **destroy** any data located on the internal disk present in your computer *without* asking for a confirmation*
 {.is-danger}
