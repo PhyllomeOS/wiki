@@ -10,7 +10,13 @@ dateCreated: 2021-11-12T15:31:30.659Z
 
 # Phyllome OS in a nutshell
 
-The goal of Phyllome OS is to make it possible to run most operating systems locally on most hardware.
+> Phyllome OS has one goal: to let users run their favorite operating system well.
+
+* The host operating system, Phyllome OS, is designed to be as discrete as possible.
+* Phyllome OS should mostly take care of itself. 
+* Eventually, users should be able to reach *the state of virtual enlightenment*, which boils down to:
+	* Accepting the fact that your favorite operating system is running inside a virtual machine.
+  * Learning how to leverage this new state of affairs.
 
 ## Problematic
 
