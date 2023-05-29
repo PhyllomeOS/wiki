@@ -23,10 +23,9 @@ In this wiki, you will find guides about [how to install](#install) and [use](#g
 
 *How to install Phyllome OS*
 
-- [Is Phyllome OS right for you?](/deploy/rightforyou)
 - [Prepare your computer](/deploy/prepare)
 - [Create an installation medium](/deploy/medium)
-- [Install from a USB flash drive](/deploy/install) *(recommended method)*
+- [Install from a USB flash drive](/deploy/install)
 
 ## Get started
 
@@ -45,7 +44,7 @@ In this wiki, you will find guides about [how to install](#install) and [use](#g
 
 *Go further with Phyllome OS*
 
-- [Use Phyllome OS as a live system](/gofurther/live) (*to test it*)
+- [Use Phyllome OS as a live system](/gofurther/live)
 - [Resize](/gofurther/resize) an existing virtual disk
 - [Encrypt](/gofurther/encrypt) a directory containing virtual disk images
 - [Share a directory](/gofurther/virtiofs) with a guest using `virtiofs`
@@ -84,15 +83,12 @@ In this wiki, you will find guides about [how to install](#install) and [use](#g
 - [Context](/phyllomeos/context)
 - [Purpose](/phyllomeos/purpose)
 - [Roadmap](/phyllomeos/roadmap)
-- [Software bill of materials](/phyllomeos/sbom)
-- [Security](/phyllomeos/security)
-- [FAQ](/phyllomeos/faq)
-
-## About the project
-
 - [How to contribute](/project/contribute)
 - [How to join](/project/join)
 - [Current infrastructure](/project/infrastructure)
+- [Software bill of materials](/phyllomeos/sbom)
+- [Security](/phyllomeos/security)
+- [FAQ](/phyllomeos/faq)
 
 ### Public presence
 
