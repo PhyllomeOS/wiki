@@ -55,7 +55,6 @@ The `virt` virtual chipset is the most modern chipset, compatible with PCI-Expre
 
 * [Official documentation](https://wiki.qemu.org/Features/Q35) on Q35 
 
-
 ---
 
 *[**Go to parent page**](https://wiki.phyllo.me/)*
