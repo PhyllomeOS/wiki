@@ -2,7 +2,7 @@
 title: Share a host directory with a guest using virtiofs
 description: 
 published: true
-date: 2023-05-29T09:14:51.426Z
+date: 2023-05-29T09:17:27.685Z
 tags: 
 editor: markdown
 dateCreated: 2022-08-13T00:16:17.437Z
@@ -18,7 +18,7 @@ It is designed to be fast and optimized for local usage, when the host and the g
 
 Just as with other `virtio` devices, `virtio-fs` requires specialized drivers to be written for the host and the guest operating system.
 
-## The guest
+## Guest configuration
 
 > For KVM/QEMU, as of January 2023, virtio-fs is only available for virtual machines managed by the system libvirt instance (`qemu:///system`)
 {.is-warning}
@@ -63,9 +63,11 @@ Just as with other `virtio` devices, `virtio-fs` requires specialized drivers to
 
 * Inside the guest VM, mount the folder using the following command to mount the `/opt/share` host directory to the guest, using also the `/mnt` point: 
 
-`# mount -t virtiofs share /mnt/`
+```
+# mount -t virtiofs share /mnt/
+```
 
-* To make it permanent, edit `/etc/fstab` to look like the following:
+* To make it permanent, add the following line to `/etc/fstab`:
 
 ```
 share /mnt/ virtiofs rw,noatime,_netdev 0 2
@@ -73,11 +75,15 @@ share /mnt/ virtiofs rw,noatime,_netdev 0 2
 
 * Make sure it works before rebooting the guest virtual machine, by un-mounting the share
 
-`# umount /mnt/` 
+```
+# umount /mnt/
+```
 
-* and then mounting all share available in fstab:
+* and then mounting all share available in `fstab`:
 
-`# mount all`
+```
+# mount all
+```
 
 ## Resources
 
