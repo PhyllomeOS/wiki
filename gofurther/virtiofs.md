@@ -2,7 +2,7 @@
 title: Share a host directory with a guest using virtiofs
 description: 
 published: true
-date: 2023-05-29T09:17:27.685Z
+date: 2023-05-29T09:19:33.982Z
 tags: 
 editor: markdown
 dateCreated: 2022-08-13T00:16:17.437Z
@@ -73,10 +73,10 @@ Just as with other `virtio` devices, `virtio-fs` requires specialized drivers to
 share /mnt/ virtiofs rw,noatime,_netdev 0 2
 ```
 
-* Make sure it works before rebooting the guest virtual machine, by un-mounting the share
+* Make sure it works before rebooting the guest virtual machine, by unmounting the share and reloading the `systemd` daemon`
 
 ```
-# umount /mnt/
+# umount /mnt/ && systemctl daemon-reload
 ```
 
 * and then mounting all share available in `fstab`:
