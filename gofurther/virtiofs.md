@@ -1,28 +1,30 @@
 ---
-title: Share a host directory with a guest using virtiofs 
+title: Share a host directory with a guest using virtiofs
 description: 
 published: true
-date: 2023-02-02T19:13:08.447Z
+date: 2023-05-29T09:14:33.306Z
 tags: 
 editor: markdown
 dateCreated: 2022-08-13T00:16:17.437Z
 ---
 
-# Sharing a directory 
+# Sharing a directory between the host and the guest 
+
+## Virtio-fs in a nutschell
+
+[Virtio-fs](https://virtio-fs.gitlab.io/), shorts for *Virtio shared FileSystem*, allows for a directory located on the host to be shared with a guest. 
+
+It is designed to be fast and optimized for local usage, when the host and the guest are located on the same physical machine. It is therefore a perfect fit for Phyllome OS. 
+
+Just as with other `virtio` devices, `virtio-fs` requires specialized drivers to be written for the host and the guest operating system.
+
+## The guest
 
 > For KVM/QEMU, as of January 2023, virtio-fs is only available for virtual machines managed by the system libvirt instance (`qemu:///system`)
 {.is-warning}
 
-> As of January 2023, virtio-fs does not support read-only mode, meaning a guest will be able to write to the host's folder.
+> As of January 2023, `virtio-fs` does not support read-only mode, meaning a guest will be able to write to the host's folder.
 {.is-warning}
-
-[Virtio-fs](https://virtio-fs.gitlab.io/), shorts for virtio shared filesystem, allows for a directory located on the host to be shared with a guest. 
-
-It is designed to be fast and optimized for local usage, when the host and the guest are located on the same physical machine. 
-
-Just as with other virtio devices, it requires specialized drivers to be written for the guest operating system.
-
-## The guest
 
 ### Edit XML configuration
 
@@ -66,7 +68,7 @@ Just as with other virtio devices, it requires specialized drivers to be written
 * To make it permanent, edit `/etc/fstab` to look like the following:
 
 ```
-share /mnt/ virtiofs rw,noatime,_netdev 0 0
+share /mnt/ virtiofs rw,noatime,_netdev 0 2
 ```
 
 * Make sure it works before rebooting the guest virtual machine, by un-mounting the share
