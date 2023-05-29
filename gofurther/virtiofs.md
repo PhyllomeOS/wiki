@@ -2,7 +2,7 @@
 title: Share a host directory with a guest using virtiofs
 description: 
 published: true
-date: 2023-05-29T09:19:33.982Z
+date: 2023-05-29T09:20:05.658Z
 tags: 
 editor: markdown
 dateCreated: 2022-08-13T00:16:17.437Z
@@ -82,7 +82,7 @@ share /mnt/ virtiofs rw,noatime,_netdev 0 2
 * and then mounting all share available in `fstab`:
 
 ```
-# mount all
+# mount -all
 ```
 
 ## Resources
