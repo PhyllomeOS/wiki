@@ -23,14 +23,10 @@ Before creating your first virtual machine, it is a good idea to check if everyt
 The command-line tool `virt-host-validate` allows you to check whether virtualization features are activated or not.
 
 * Use the following command to check your system:
-``` 
-virt-host-validate
-```
-
-* Make sure the result look like this:
 
 ```
-[groot@phyllome ~]$ virt-host-validate
+$ virt-host-validate
+
   QEMU: Checking for hardware virtualization                                 : PASS
   QEMU: Checking if device /dev/kvm exists                                   : PASS
   QEMU: Checking if device /dev/kvm is accessible                            : PASS
@@ -58,18 +54,19 @@ virt-host-validate
 * For Intel CPUs, you can use the following more specific command to check whether *hardware virtualization* is activated:
 
 ```
-cat /proc/cpuinfo | grep vmx
+$ cat /proc/cpuinfo | grep vmx
 ```
 
 * For AMD CPUs, the following command can be used:
+
 ```
-cat /proc/cpuinfo | grep svm
+$ cat /proc/cpuinfo | grep svm
 ```
 
 * Look for `svm` for AMD-based processors, or `vmx` for Intel-based processors.
 
 ```
-[groot@phyllome ~]$ cat /proc/cpuinfo | grep svm
+$ cat /proc/cpuinfo | grep svm
 flags		: fpu vme de  [...] svm [...] sme sev sev_es
 ```
 
@@ -137,7 +134,7 @@ Any new user, including the one that has been created during the first-launch se
 To avoid a password prompt each time you connect to *qemu:///system*, you can add the current user to the `libvirt` by using the following command, in the terminal:
 
 ```
-sudo usermod -a -G libvirt $(whoami)
+# usermod -a -G libvirt $(whoami)
 ```
 
 > Phyllome OS will eventually switch to the *qemu:///session* URI, which doesn't require elevated privileges. Have a look at [this great blog post](https://blog.wikichoon.com/2016/01/qemusystem-vs-qemusession.html) to understand some of the differences between the *session* and the *system* URI.  
@@ -148,12 +145,14 @@ sudo usermod -a -G libvirt $(whoami)
 Unfortunately, the GRUB config won't correctly update during the kickstart phase, so it has to be done manually.
 
 ```
-sudo grub2-mkconfig -o /boot/grub2/grub.cfg
+# grub2-mkconfig -o /boot/grub2/grub.cfg
 ```
-When the is done, please reboot: `sudo reboot`
+When the is done, please reboot: 
+
+```
+# reboot
+```
 
 ---
 
-*Are you looking for tasks to do with your system? If so, have a look at doing some [suggested tasks](/gofurther)*
-
-[^1]: Although, we very much encourage you to [hack it](https://github.com/PhyllomeOS/phyllomeos#how-to-hack-phyllome-os).
+*Are you looking for tasks to do with your system? If so, have a look at doing some [suggested tasks](https://wiki.phyllo.me/)*

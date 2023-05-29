@@ -147,7 +147,7 @@ This section will show you how to modify the boot order permanently, so you can 
 
 * That's it. Save changes and exist. Note that it is advisable to revert these changes after a successful installation, or to only change the bootloader temporary.
 
-> ***Failing to activate hardware-assisted virtualization** will make running virtual machines extremly **slow**, or not possible at all. If, for some reasons, it cannot be activated on your computer, for example because of a lack of hardware support, you would be better off picking a Linux distribution which doesn't require it, such as [Debian](https://www.debian.org/distrib/).*
+> **Failing to activate hardware-assisted virtualization** will make running virtual machines extremly **slow**, or not possible at all. If, for some reasons, it cannot be activated on your computer, for example because of a lack of hardware support, you would be better off picking a Linux distribution which doesn't require it, such as [Debian](https://www.debian.org/distrib/).
 {.is-warning}
 
 ---

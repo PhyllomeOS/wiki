@@ -10,28 +10,17 @@ dateCreated: 2021-11-13T11:34:07.852Z
 
 # Create a bootable USB flash drive
 
-*In this section, you will learn how to download Phyllome OS and how to create a live medium that will allow you to boot it from a USB flash drive.*
+*In this section, you will learn how to create a bootable USB medium that will allow you to install Phyllome on your computer.*
 
-## Download Phyllome OS 
-
-The Phyllome OS ISOs files are made available [on GitHub](https://github.com/PhyllomeOS/phyllomeos/releases).
-
-As of now, only the *Phyllome OS Desktop II edition* is available as an ISO file. The *II edition* is tuned for Intel CPUs and Intel GPUs. It is also known as *ldhi*, for *live*, *desktop*, *hypervisor*, and *intel*. 
-
-> If you intent to install Phyllome OS permanently on your computer, use a [Fedora Server ISO instead](https://getfedora.org/en/server/), as it is not yet possible to install Phyllome OS from the live image. The steps below are made to be generic, and should be valid regardless of the ISO you use
+> As it is not yet possible to install Phyllome OS from the live image., intent to install Phyllome OS permanently on your computer, you need to use a [Fedora Server ISO instead](https://getfedora.org/en/server/). The steps below are made to be generic, and should be valid regardless of the ISO you use
 {.is-info}
 
-* [**The direct link**](https://github.com/PhyllomeOS/phyllomeos/releases/download/v.0.2.0-alpha/phyllome-live_ldhi_v0.2.0-alpha_x86_64.iso) to download the ISO. It will take some time to load. 
-
-> As of now, there is no checksum available, and the release is not signed using GPG keys. Among other things, it means that there is no guarantee about the authenticity of the file or its integrity, whatsoever. Alternatively, a safer is to deploy Phyllome OS [in a virtual machine](https://github.com/PhyllomeOS/phyllomeos#how-to-hack-phyllome-os) or to deploy it directly on a host using [this method](/deploy/live)
-{.is-warning}
-
-## Load Phyllome OS on a USB flash drive 
+## Load the ISO on a USB flash drive 
 
 The following instructions may have to be adapted depending on the operating system that you are currently using.
 
 * *General requirements*
-    * A fast USB 3.0 flash drive of at least 2 GB
+    * A fast USB 3.0 flash drive of at least 10 GB
 
 ### Command-line instructions (Linux-only)
 
@@ -43,7 +32,7 @@ The next command, which requires root privileges, assumes that the ISO file is a
 {.is-danger}
 
 ```
-dd bs=4MB if=~/Downloads/phyllome-live_ldhi_v0.2.0-alpha_x86_64.iso of=/dev/sdz
+dd bs=4MB if=~/Downloads/Fedora-Server-dvd-x86_64-38-1.6 of=/dev/sdz
 ```
 
 ### Manual instructions (Cross-platform)
@@ -101,5 +90,4 @@ Follow the normal procedure to install an application on your computer.
 
 ---
 
-*If you have followed the procedure using the Fedora Server ISO, with the intent of installing Phyllome OS permanently, please go to the [Install Phyllome OS page](https://wiki.phyllo.me/deploy/install).* 
-*If you have followed the procedure using the Phyllome OS ISO, go to the section [Get started with the live system](/gofurther/live).*
+*Now that your USB flash drive is ready, please go to the [Install Phyllome OS page](https://wiki.phyllo.me/deploy/install).*
