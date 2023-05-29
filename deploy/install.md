@@ -2,7 +2,7 @@
 title: Install Phyllome OS
 description: 
 published: true
-date: 2023-05-27T19:52:44.764Z
+date: 2023-05-29T18:20:59.583Z
 tags: 
 editor: markdown
 dateCreated: 2021-11-14T16:19:00.348Z
@@ -38,7 +38,7 @@ Installing Phyllome OS involves booting from a [bootable USB flash drive](/deplo
 
 ## Boot from the USB flash drive
 
-The following section illustrates how to change the boot order *temporarily*. The process to change the boot order depends on your current computer platform. Please follow the instruction that matches your platform.
+The following section illustrates how to change the boot order *temporarily*. The process to change the boot order depends on your current computer platform. Please follow the instruction that match your platform.
 
 ### macOS
 
@@ -53,7 +53,7 @@ The following section illustrates how to change the boot order *temporarily*. Th
 
 ## Boot into the automated install process
 
-One needs to alter the GRUB instructions in order trigger the automated installation. 
+One needs to alter the GRUB instructions in order to trigger the automated installation. 
 
 > GRUB is universal bootloader that ship with many Linux distributions.
 {.is-info}
