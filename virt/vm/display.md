@@ -12,28 +12,22 @@ dateCreated: 2022-07-31T09:22:05.854Z
 
 A virtual display can be attached to a virtual machine. It is a must-have for non-headless scenarios.
 
-## Summary
-
-* *to-be done. Add table here*.
-
 ## Display types
-
-### VNC
-
-* *to-be done*
-
-### Spice
-
-* *to-be done*
 
 ### SDL display
 
-The Simple DirectMedia Layer (SDL)-powered display is a local-only low-latency display. 
+The [Simple DirectMedia Layer](https://www.libsdl.org/) (SDL)-powered display is a local-only low-latency display. 
 
-> The SDL display is only avalable with virtual machines created using the QEMU/KVM **user Session** mode and **Xorg**.
+> The SDL display is only avalable with virtual machines created using the QEMU/KVM **User Session**.
 {.is-info}
 
-#### SELinux configuration
+> Mouse grab does not currently work with the SDL display
+{.is-warning}
+
+> The display resolution of your guest display should not exceed that of your physical screen
+{.is-info}
+
+#### SELinux-related configuration
 
 By default, SELinux will block access to X Windows Server for the virtualization stack. An exception has to be set.
 
@@ -56,24 +50,32 @@ k
 sudo semodule -X 300 -i my-qemusystemx86.pp
 ```
 
-#### XML SDL example
+#### SDL XML configuration
 
-> Mouse grab does not currently work with the SDL display
-{.is-warning}
+* The default display can be identified using `echo $DISPLAY`. 
 
-> The display resolution of your guest display should not exceed that of your physical screen.
-{.is-info}
+``` 
+$ echo $DISPLAY
+:0
+```
 
-* Example of an XML SDL configuration, with OpenGL enabled. This example requires a 3D-capable graphic card to be attached to the guest computer, such as virtio-gpu.
+The same applies to `xauth`. On Wayland, it would look like that. 
+
+``` 
+$ echo $XAUTHORITY
+/run/user/1000/.mutter-Xwaylandauth.ARIY51
+```
+
+* Example of an XML SDL configuration, with OpenGL enabled. This example requires a 3D-capable graphic card to be attached to the guest computer, such as `virtio-gpu`.
 
 ```
-<graphics type="sdl" display=":0" xauth="/root/.Xauthority" fullscreen="yes">
+<graphics type="sdl" display=":0" xauth="/run/user/1000/.mutter-Xwaylandauth.ARIY51" fullscreen="yes">
   <gl enable="yes"/>
 </graphics>
 ```
 
-> You can identify your display using the following command: `echo $DISPLAY`.
-{.is-info}
+> The fullscreen attribute is not honored at the moment
+{.is-warning}
 
 ### D-Bus display
 
@@ -102,32 +104,13 @@ It will look like that when launched:
 </graphics>
 ``` 
 
-### Xephyr
-
-* *to-be done*
-
-### WebRTC
-
-* *to-be done*
-
-### Looking Glass
-
-* *to-be done*
-
-### virtio-wayland
-
-* *to-be done*
-
-### egl-headless
-
-* *to-be done*
-
 ## Resources
 
 * [Detailed presentation](https://bootlin.com/pub/conferences/2016/meetup/dbus/josserand-dbus-meetup.pdf) on D-Bus
 * [Official resource](https://libvirt.org/formatdomain.html#graphical-framebuffers) for libvirt-compatible displays, including various XML examples
 * [Libmks](https://gitlab.gnome.org/chergert/libmks) provides a "Mouse, Keyboard, and Screen" to QEMU using the D-Bus device support in QEMU and GTK 4. 
 * [QEMU D-Bus display experiment](https://gitlab.com/marcandre.lureau/qemu-display/) is a WIP Rust crates to interact with a -display dbus QEMU
+* [SDL graphics](https://fedoraproject.org/wiki/How_to_debug_Virtualization_problems#SDL_Graphics)
 
 ---
 
