@@ -14,10 +14,10 @@ As of now, `netboot.xyz` is one of the main way to deploy or use a guest operati
 
 ## Preparation
 
-By default, `netboot.xyz.iso` should already be located under `var/lib/libvirt/image/iso`. If it's not the case, please use the following command to fetch it, or navigate to [the website](https://netboot.xyz/):
+By default, `netboot.xyz.iso` should already be located under `/var/lib/libvirt/isos`. If it's not the case, please use the following command to fetch it, or navigate to [the website](https://netboot.xyz/):
 
 ```
-wget https://boot.netboot.xyz/ipxe/netboot.xyz.iso -P /var/lib/libvirt/image/isos/
+wget https://boot.netboot.xyz/ipxe/netboot.xyz.iso -P /var/lib/libvirt/isos/
 ```
 ![post-install-conf-2.png](/assets/post-launch/post-install-conf-2.png)
 
