@@ -39,7 +39,7 @@ dd bs=4MB if=~/Downloads/Fedora-Server-dvd-x86_64-38-1.6 of=/dev/sdz
 
 The instructions are designed with Etcher in mind. Other tools such as [Rufus](https://rufus.ie/en/), [Unetbootin](https://unetbootin.github.io/) or [Ventoy](https://www.ventoy.net/en/index.html) are likely to work too.  
 
-> Etcher is an open-source, cross platform tool for flashing images to a target medium. It is developed and made available by [balena](https://www.balena.io/). 
+> Etcher is an open-source, cross platform tool for flashing images to a target medium. It is developed and made available by [balena](https://www.balena.io/)
 {.is-info}
 
 #### Install Etcher
@@ -50,7 +50,7 @@ Pick the right version depending on your platform.
 
 Follow the normal procedure to install an application on your computer.
 
-> An account with administrator rights will be needed.
+> An account with administrator rights will be needed
 {.is-info}
 
 #### Use it
@@ -69,7 +69,7 @@ Follow the normal procedure to install an application on your computer.
 
 ![capture-balenaetcher-3.png](/assets/balena-etcher/capture-balenaetcher-3.png)
 
-* Select *Flash* when you are ready
+* Select *Flash* when you are ready.
 
 > **Warning:** clicking *Flash* will **destroy** any data on the target device
 {.is-danger}
@@ -79,7 +79,7 @@ Follow the normal procedure to install an application on your computer.
 
 ![capture-balenaetcher-4.png](/assets/balena-etcher/capture-balenaetcher-4.png)
 
-* Wait a few minutes...
+* Wait for a few minutes...
 
 ![capture-balenaetcher-5.png](/assets/balena-etcher/capture-balenaetcher-5.png)
 
