@@ -33,7 +33,7 @@ When it comes to its longevity and number of variants, the UNIX family is by far
 ### Windows-family
 
 * **Windows**
-	* Windows and [ReactOS](/virt/guest/reactos)
+	* Windows and ReactOS
 
 ### Independent
 
@@ -50,7 +50,7 @@ When it comes to its longevity and number of variants, the UNIX family is by far
 | | Linux | Darwin | Windows |
 | :- | :-: | :-: | :-: |
 | *Chipset* | `i440fx` `Q35` `virt` | `Q35` | `i440fx` `Q35` `virt` |
-| *Platform Firmware* | `SeaBIOS` `OVMF` `RHF` [^1] | `OVMF` | `SeaBIOS` `OVMF` `RHF` |
+| *Platform firmware* | [`SeaBIOS`](/virt/vm/firmware#seabios) [`OVMF`](/virt/vm/firmware#ovmf) [`RHF`](/virt/vm/firmware#rust-hypervisor-firmware) [^1] | [`OVMF`](/virt/vm/firmware#ovmf) | [`SeaBIOS`](/virt/vm/firmware#seabios) [`OVMF`](/virt/vm/firmware#ovmf) [`RHF`](/virt/vm/firmware#rust-hypervisor-firmware) |
 | *`virtio-gpu`* | **Yes** | No | No |
 | *`virtio-video`* | *Upcoming* | No | No |
 | *`virtio-snd`* | *Upcoming* | No | No |
