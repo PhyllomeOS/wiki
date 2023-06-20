@@ -67,16 +67,16 @@ In this wiki, you will find guides about [how to install](#install) and [use](#g
 
 - [Linux Kernel modules](/virt/host/modules) related to virtualization
 - [Virtualization-related paths](/virt/host/paths) on Phyllome OS
-- [A libvirt XML](/virt/host/xml) commented
-- [Virtual I/O Devices](/virt/vm/virtio) (`virtio`)
+- [A libvirt XML file](/virt/host/xml) commented
 
 ### (Virtual) hardware
 
-- [Chipset](/virt/vm/chipset)
+- [Chipsets](/virt/vm/chipset)
 - [Firmware](/virt/vm/firmware)
-- [Display](/virt/vm/display)
-- [Input](/virt/vm/input)
+- [Display devices](/virt/vm/display)
+- [Input devices](/virt/vm/input)
 - [Graphic cards](/virt/vm/graphic-card)
+- [Virtual I/O devices](/virt/vm/virtio) (`virtio`)
 
 ## About Phyllome OS
 
