@@ -10,7 +10,7 @@ dateCreated: 2021-11-13T11:56:47.463Z
 
 # Virtual chipsets
 
-Just as physical computers, virtual machines are built around a central chipset. 
+Just as with physical computers, virtual machines are built around a central chipset.
 
 ## Available chipsets for virtual machines
 
