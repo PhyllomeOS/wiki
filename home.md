@@ -2,7 +2,7 @@
 title: Homepage
 description: 
 published: true
-date: 2023-05-20T21:39:28.769Z
+date: 2023-06-21T23:53:28.274Z
 tags: 
 editor: markdown
 dateCreated: 2021-06-19T09:29:20.593Z
@@ -77,7 +77,6 @@ In this wiki, you will find guides about [how to install](#install) and [use](#g
 - [Chipsets](/virt/vm/chipset)
 - [Firmware](/virt/vm/firmware)
 - [Display devices](/virt/vm/display)
-- [Input devices](/virt/vm/input)
 - [Graphic cards](/virt/vm/graphic-card)
 - [Virtual I/O devices](/virt/vm/virtio) (`virtio`)
 
