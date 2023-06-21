@@ -146,10 +146,3 @@ One needs to alter the GRUB instructions in order to trigger the automated insta
 ---
 
 *[**You are ready to get started**](https://wiki.phyllo.me/#get-started)*
-
-
-
-
-
-
-
