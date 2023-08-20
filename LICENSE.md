@@ -1,8 +1,8 @@
 ---
 title: LICENSE
 description: 
-published: false
-date: 2023-08-20T11:56:35.416Z
+published: true
+date: 2023-08-20T12:06:12.433Z
 tags: 
 editor: markdown
 dateCreated: 2021-11-13T22:58:43.850Z
