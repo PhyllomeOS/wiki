@@ -1,8 +1,8 @@
 ---
-title: Code-of-Conduct
+title: CC
 description: 
 published: false
-date: 2023-08-20T11:56:12.893Z
+date: 2023-08-20T12:07:42.291Z
 tags: 
 editor: markdown
 dateCreated: 2021-11-14T12:14:59.863Z
