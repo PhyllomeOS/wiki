@@ -2,7 +2,7 @@
 title: Homepage
 description: 
 published: true
-date: 2023-08-20T14:27:14.784Z
+date: 2023-10-15T14:18:46.678Z
 tags: 
 editor: markdown
 dateCreated: 2021-06-19T09:29:20.593Z
@@ -64,7 +64,7 @@ In this wiki, you will find guides about [how to install](#install) and [use](#g
 
 ### Guest operating systems
 
-- [Running guest operating systems with KVM](/virt/guest.md)
+- [Guest operating systems support](/virt/guest.md)
 
 ### The host operating system
 
