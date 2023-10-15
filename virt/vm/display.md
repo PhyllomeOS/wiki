@@ -2,7 +2,7 @@
 title: Display
 description: How to access a virtual machine's display
 published: true
-date: 2023-05-20T21:29:47.985Z
+date: 2023-10-15T14:58:54.578Z
 tags: 
 editor: markdown
 dateCreated: 2022-07-31T09:22:05.854Z
@@ -81,7 +81,9 @@ $ echo $XAUTHORITY
 
 [D-Bus](https://www.freedesktop.org/wiki/Software/dbus/) is a desktop-oriented middleware that can be used to create a display for a virtual machine.  
 
-* Export and enable a video backend, add support for OpenGL and peer-to-peer connection:
+#### Libvirt
+
+* Add a D-Bus video backend and add enable for OpenGL:
 
 ```
 <graphics type="dbus">
@@ -89,20 +91,79 @@ $ echo $XAUTHORITY
 </graphics>
 ```
 
-It will look like that when launched: 
+> This equates to `-display dbus,gl=on` in QEMU
+> 
+{.is-info}
+
+When the virtual machine is launched, a specific D-Bus address will be choosen, as well as a rendering device: 
 
 ```
 <graphics type="dbus" address="unix:path=/run/user/1000/libvirt/qemu/run/dbus/8-user-d-bus-dbus.sock">
   <gl enable="yes" rendernode="/dev/dri/renderD128"/>
 </graphics>
 ```
-* Export and enable an audio backend:
+
+* Add a D-Bus audio backend:
 
 ```
 <graphics type="dbus">
   <audio id="1">
 </graphics>
+```
+
+#### Connect to the D-Bus display
+
+A third-party tool is required to interact to the D-Bus display. 
+
+[Libmks](https://gitlab.gnome.org/GNOME/libmks), which is under development, is such a tool. 
+
+> Due to [a bug](https://gitlab.gnome.org/GNOME/libmks/-/issues/16), it is currenlty only possible to connect a D-Bus display with plain QEMU
+{.is-warning}
+
+
+Libmks has to be built from source.
+
+- Clone the repository 
+
 ``` 
+git clone https://gitlab.gnome.org/GNOME/libmks
+``` 
+
+- Change directory
+
+```
+cd libmks
+```
+
+- Build it
+
+``` 
+meson setup build
+cd build
+ninja
+```
+
+- Launch a diskless virtual machine
+
+```
+qemu-system-x86_64 \
+  -enable-kvm \
+  -machine q35 \
+  -drive if=pflash,format=raw,readonly=on,file=/usr/share/edk2-ovmf/x64/OVMF_CODE.fd \
+  -cpu host \
+  -device virtio-vga-gl \
+  -m 4G \
+  -smp 2,sockets=1,dies=1,cores=2,threads=1 \
+  -display dbus,gl=on \
+  -device virtio-tablet-pci \
+  -device virtio-keyboard-pci \
+```
+
+- From another terminal tab or window, launch the previously built MKS using the following command 
+
+```
+./build/tools/mks
+```
 
 ## Resources
 
