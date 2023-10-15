@@ -2,7 +2,7 @@
 title: Display
 description: How to access a virtual machine's display
 published: true
-date: 2023-10-15T15:00:46.080Z
+date: 2023-10-15T15:02:10.196Z
 tags: 
 editor: markdown
 dateCreated: 2022-07-31T09:22:05.854Z
@@ -120,7 +120,6 @@ A third-party tool is required to interact to the D-Bus display.
 > Due to [a bug](https://gitlab.gnome.org/GNOME/libmks/-/issues/16), it is currenlty only possible to connect a D-Bus display with plain QEMU
 {.is-warning}
 
-
 Libmks has to be built from source.
 
 - Clone the repository 
@@ -164,6 +163,8 @@ qemu-system-x86_64 \
 ```
 ./build/tools/mks
 ```
+
+As there is no Live ISO or disk attached to the virtual machine, you will eventually land in the UEFI shell. 
 
 ## Resources
 
