@@ -2,7 +2,7 @@
 title: Firmware
 description: 
 published: true
-date: 2022-01-25T21:56:41.651Z
+date: 2023-10-15T14:30:00.632Z
 tags: 
 editor: markdown
 dateCreated: 2022-01-25T14:50:10.751Z
@@ -38,7 +38,7 @@ The [Rust Hypervisor Firmware](https://github.com/cloud-hypervisor/rust-hypervis
 | *Secureboot* | No | **Yes** | **Yes** |
 | *Chipset support* | [`i440fx`](/virt/vm/chipset#i440fx) / [`Q35`](/virt/vm/chipset#q35) | [`i440fx`](/virt/vm/chipset#i440fx) / [`Q35`](/virt/vm/chipset#q35) | [`Q35`](/virt/vm/chipset#q35)? / [`virt`](/virt/vm/chipset#virt) | 
 | *Guest support* | **Linux** / **Windows** | **Linux** / **Darwin** / **Windows** | **Linux** / **Windows** |
-| *Virtual Function I/O (VFIO)* | No | Yes | Yes |
+| *Virtual Function I/O (VFIO)* | No | **Yes** | **Yes** |
 
 ---
 
