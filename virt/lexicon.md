@@ -13,13 +13,14 @@ dateCreated: 2021-11-13T11:58:43.776Z
 ## Table of Contents
 
 1. [*Device*](/virt/lexicon#device)
-2. [*Emulator*](/virt/lexicon#emulator)
-3. [*Hardware-assisted virtualization*](/virt/lexicon#hardware-assisted-virtualization)
-4. [*Hypervisor*](/virt/lexicon#hypervisor)
-5. [*Nested-virtualization*](/virt/lexicon#nested-virtualization)
-6. [*Paravirtualization*](/virt/lexicon#paravirtualization)
-7. [*Virtual machine*](/virt/lexicon#virtual-machine)
-8. [*Virtualization*](/virt/lexicon#virtualization)
+1. [*Emulator*](/virt/lexicon#emulator)
+1. [*Hardware-assisted virtualization*](/virt/lexicon#hardware-assisted-virtualization)
+1. [*Firmware*](/virt/lexicon#firmware)
+1. [*Hypervisor*](/virt/lexicon#hypervisor)
+1. [*Nested-virtualization*](/virt/lexicon#nested-virtualization)
+1. [*Paravirtualization*](/virt/lexicon#paravirtualization)
+1. [*Virtual machine*](/virt/lexicon#virtual-machine)
+1. [*Virtualization*](/virt/lexicon#virtualization)
 
 ## Device
 
@@ -28,24 +29,23 @@ Devices are computer components that can be attached to machines. They can be cl
 | | Physical hardware | Emulated: model-based | Emulated: paravirtual |
 | :- | :-: | :-: | :-: |
 | *Design* | Specific | Specific | Generic |
-| *Type* | Silicon-based  | Software-based | Software-based  |
+| *Type* | Silicon-based | Software-based | Software-based |
 
-*   **Physical**
+* **Physical**
 
-    *   Physical components refer to devices that can be attached to a system. For instance, a dedicated physical graphics card attached to a physical system can be directly attached to a virtual machine, which then becomes responsible for managing it, a technique called *passthrough*. The PCI-SIG standards provide IOMMU-related specifications to allow a host operating system to not have a driver for a particular device[^4] and passthrough the device to the guest. The guest will have a device with nearly native performance, and use the standard vendor's drivers for the device.
-    *   The PCI-SIG standards also provide a way to partition compatible devices using so-called Virtual Functions (VFs). In this case, the host manages the way a physical device is used by the guest. Both host and guest must have specific device drivers. It offers nearly native performance.
+  * Physical components refer to devices that can be attached to a system. For instance, a dedicated physical graphics card attached to a physical system can be directly attached to a virtual machine, which then becomes responsible for managing it, a technique called *passthrough*. The PCI-SIG standards provide IOMMU-related specifications to allow a host operating system to not have a driver for a particular device[^4] and passthrough the device to the guest. The guest will have a device with nearly native performance, and use the standard vendor's drivers for the device.
+
+  * The PCI-SIG standards also provide a way to partition compatible devices using so-called Virtual Functions (VFs). In this case, the host manages the way a physical device is used by the guest. Both host and guest must have specific device drivers. It offers nearly native performance.
 
 [^4]: Thanks to Pasha Tatashin for pointing this out.
 
-*   **Emulated**
+* **Emulated**
 
-    *   Model-based
+  * Model-based emulated hardware are designed after real devices, but are made out of computer code, not silicon. The i440fx and Q35 chipsets[^5] are both instances of emulated hardware. This is the slowest (but most compatible) way to provide a device to a guest. An emulated GPU is not going to be fast enough in an emulated mode to do 3D rendering.
 
-        *   Model-based emulated hardware are designed after real devices, but are made out of computer code, not silicon. The i440fx and Q35 chipsets[^5] are both instances of emulated hardware. This is the slowest (but most compatible) way to provide a device to a guest. An emulated GPU is not going to be fast enough in an emulated mode to do 3D rendering.
+* **Paravirtual**
 
-    *   Paravirtual
-
-        *   Paravirtual hardware, also known as paravirtualized Virtual I/O devices or simply virtio, are also made out of computer code. Contrary to emulated hardware, they function as a generic piece of software-based hardware which doesn't replicate a specific hardware component.
+  * Paravirtual hardware, also known as paravirtualized Virtual I/O devices or simply virtio, are also made out of computer code. Contrary to emulated hardware, they function as a generic piece of software-based hardware which doesn't replicate a specific hardware component.
 
 [^5]: The Q35 chipset, contrary to i440fx, provides a PCI Express (PCIe) bus. Alas, the i440fx, despite its limitations to PCI-only, does  support passthrough of PCIe devices, as long as the driver follows suit. Thanks to Stefan Reiter for pointing that out.
 
@@ -56,6 +56,10 @@ Emulators or virtualizers are software that provide material components similar 
 QEMU[^1] is a popular emulator that can act as a simulator or virtual machine monitor. In the latter case, it can leverage hardware acceleration,
 
 [^1]: In its [online manual](https://qemu.readthedocs.io/en/latest/about/index.html), QEMU is described as follows: “QEMU is a generic and open source machine emulator and virtualizer. QEMU can be used in several different ways. The most common is for “system emulation”, where it provides a virtual model of an entire machine (CPU, memory and emulated devices) to run a guest OS. In this mode the CPU may be fully emulated, or it may work with a hypervisor such as KVM, Xen, Hax or Hypervisor. Framework to allow the guest to run directly on the host CPU.”
+
+## Firmware
+
+Firmware are software that are tightly integrated with the hardware. Almost all devices are shipping with some kind of firmware associated to it. For instance, motherboards include such programs, which in their case is tasked to properly boot hardware devices such as RAM modules, check their state and make them ready-to-use by an operating system.
 
 ## Hardware-assisted virtualization
 
@@ -75,12 +79,12 @@ The hypervisor and VMM work in tandem with emulators, which provide them virtual
 
 As of 2021, there are two major open-source hypervisor that are both are able to leverage hardware-assisted virtualization:
 
--   **Xen**[^2] (2003-).
--   **Kernel-based Virtual Machine module**[^3] (KVM) for Linux (2007-).
+- **Xen**[^2] (2003-).
+- **Kernel-based Virtual Machine module**[^3] (KVM) for Linux (2007-).
 
 [^2]: Originally developed at Cambridge, Xen was first released in 2003. It is primarily used alongside Linux, although Xen is compatible with other operating systems as well. Interestingly, it can function on hardware that lacks hardware-assisted virtualization. AWS is by far the largest Xen shop, but is slowly shifting towards KVM.
 
-[^3]: The Kernel-based Virtual Machine (KVM) module for Linux was first developed by Qumranet, Inc, a former  software company focusing on Desktop virtualization which was later acquired by Red Hat. Qumranet, Inc has also  developed the SPICE protocol, which among other things allows for interaction with a guest display machine over a network.
+[^3]: The Kernel-based Virtual Machine (KVM) module for Linux was first developed by Qumranet, Inc, a former software company focusing on Desktop virtualization which was later acquired by Red Hat. Qumranet, Inc has also  developed the SPICE protocol, which among other things allows for interaction with a guest display machine over a network.
 
 ## Nested-virtualization
 
@@ -107,9 +111,11 @@ machines.
 
 There are roughly three types of virtualization:
 
-*   **Simulation or emulation**: when a computer is fully emulated and can be made to look like any device to an operating system
-*   **Partition**: when computer resources are split such that each operating system can only see a subset of available hardware resources
-*   **Paravirtualization**: when both hardware and software-assisted virtualization is being used. In this case, the guest is aware that it is running in the virtualized environment, and acts accordingly.
+- **Simulation or emulation**: when a computer is fully emulated and can be made to look like any device to an operating system
+
+- **Partition**: when computer resources are split such that each operating system can only see a subset of available hardware resources
+
+- **Paravirtualization**: when both hardware and software-assisted virtualization is being used. In this case, the guest is aware that it is running in the virtualized environment, and acts accordingly.
 
 Virtualization is used to better isolate resources on a physical computer and to distribute them across various workloads, enabling better use of resources through consolidation. For instance, with virtualization, multiple operating systems can run concurrently on a physical machine.
 

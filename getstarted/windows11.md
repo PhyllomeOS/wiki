@@ -8,8 +8,10 @@ editor: markdown
 dateCreated: 2023-05-19T17:24:19.852Z
 ---
 
-# Windows
+# Windows 11
 
-## Resources 
+Windows requires Secureboot to be set up.
+
+## Resources
 
 * https://kevinlocke.name/bits/2021/12/10/windows-11-guest-virtio-libvirt/

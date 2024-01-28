@@ -13,25 +13,21 @@ dateCreated: 2022-01-31T12:35:54.544Z
 > *Phyllome OS is currently in alpha stage. It should not be used to store any sensitive data*
 {.is-warning}
 
-Phyllome OS is a Fedora Remix and as such directly inherits every single security measures in place for Fedora-related distributions, such as SELinux. It also brings some unique security-related features.
+Phyllome OS is a Fedora Remix that will eventually inherit security measures in place in Fedora.
 
-* **Unique security-related features**
-	* Unprivileged virtual machines with `qemu:///session`, by default
-	* Filesystem-level encryption with `fscrypt`
-  * Minimal sets of applications by default
-* **Planned features**
-	* Unattended installation of security updates
-  * `systemd` hardening
-  * `gnome-shell` hardening
-  * The Cloud Hypervisor for `vfio-pci`
+It also intends to bring some unique security-related features:
+
+- Unprivileged virtual machines creation with `qemu:///session`, by default
+- Filesystem-level encryption with `fscrypt`
+- Minimal set of applications
+- Unattended installation of security updates
+- Alternative virtual machine monitors like the Cloud Hypervisor
 
 ## Features
 
 ### Data at-rest encryption
 
-Currently, Phyllome OS does **not** provide any kind of encryption by default at the host level. 
-
-It provides early support for Filesystem-level encryption, which is just one line of defense. 
+Currently, Phyllome OS does ***not*** provide any kind of encryption by default at the host level. 
 
 For any virtual disks that will contain personal data, users are strongly advised to use full-disk encryption as provided by their guest operating system.
 

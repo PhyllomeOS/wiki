@@ -18,7 +18,7 @@ A virtual display can be attached to a virtual machine. It is a must-have for no
 
 The [Simple DirectMedia Layer](https://www.libsdl.org/) (SDL)-powered display is a local-only low-latency display. 
 
-> The SDL display is only avalable with virtual machines created using the QEMU/KVM **User Session**.
+> The SDL display is only avalable with virtual machines created using the QEMU/KVM **User Session**
 {.is-info}
 
 > Mouse grab does not currently work with the SDL display

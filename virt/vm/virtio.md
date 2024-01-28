@@ -21,12 +21,12 @@ In this section, the focus is oriented towards Virtual I/O Devices (VIRTIO), bet
 
 ### Graphical frame buffer
 
-* [`virtio-gpu`](/virt/virtio/snd)
+* [`virtio-gpu`](/virt/virtio/gpu)
 	* Paravirtual GPU that provides a subset of the host GPU capabilities to a guest virtual machine
 
 ### Video decoding/encoding
 
-* [`virtio-video`](/virt/virtio/snd)
+* [`virtio-video`](/virt/virtio/video)
 	* Paravirtual video device that provides encoding and decoding capabilities to a guest virtual machine
 
 ### Sound
@@ -77,7 +77,7 @@ In this section, the focus is oriented towards Virtual I/O Devices (VIRTIO), bet
 | *`virtio-wayland`* | No | No | ? |
 | *`virtio-console`* | **Yes** | **Yes** | **Yes** |
 
-## Resourcess
+## Resources
 
 * Specifications
 	* [Version 1.0](https://docs.oasis-open.org/virtio/virtio/v1.0/virtio-v1.0.html) of the specification for Virtual I/O Devices

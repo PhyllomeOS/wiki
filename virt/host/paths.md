@@ -8,7 +8,7 @@ editor: markdown
 dateCreated: 2021-11-13T11:58:19.844Z
 ---
 
-# Paths on Linux
+# Virtualization-related folders on Fedora-related Linux distributions
 
 This page lists where most of the stuff related to virtualization is located on a Linux operating system. This is based on Fedora. But it should be similar for other distributions.
 

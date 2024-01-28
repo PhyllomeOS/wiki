@@ -8,15 +8,17 @@ editor: markdown
 dateCreated: 2022-01-12T14:25:25.960Z
 ---
 
-# Guest operating system
+# Guest operating systems support
 
 > Phyllome OS 🤎 other operating systems. It is meant to be a cozy platform for almost any modern operating systems to thrive.
 
-Although Phyllome OS would like to support as many operating systems as possible, it mainly focuses on modern, UEFI-compatible operating systems that are shipping with at least some support for `virtio` devices. 
+Although Phyllome OS would like to support as many operating systems as possible, it mainly focuses on modern, UEFI-compatible operating systems that are shipping with at least some support for [virtio devices](/virt/lexicon#paravirtualization). 
 
 ## Category of operating systems
 
-As of today, without accounting for Linux distributions, there are dozens of production-ready operating systems. There are two families of operating systems that dominate this space, the Unix family and the Windows family. Everything else will be categorized as independent. 
+As of today, without accounting for Linux distributions, there are dozens of production-ready operating systems. 
+
+That being said, there are two families of operating systems that dominate this space, the Unix family and the Windows family. Everything else will be categorized as independent. 
 
 ### UNIX-family
 
@@ -49,17 +51,17 @@ When it comes to its longevity and number of variants, the UNIX family is by far
 
 | | Linux | Darwin | Windows |
 | :- | :-: | :-: | :-: |
-| *Chipset* | `i440fx` `Q35` `virt` | `Q35` | `i440fx` `Q35` `virt` |
-| *Platform firmware* | [`SeaBIOS`](/virt/vm/firmware#seabios) [`OVMF`](/virt/vm/firmware#ovmf) [`RHF`](/virt/vm/firmware#rust-hypervisor-firmware) [^1] | [`OVMF`](/virt/vm/firmware#ovmf) | [`SeaBIOS`](/virt/vm/firmware#seabios) [`OVMF`](/virt/vm/firmware#ovmf) [`RHF`](/virt/vm/firmware#rust-hypervisor-firmware) |
-| *`virtio-gpu`* | **Yes** | No | No |
-| *`virtio-video`* | *Upcoming* | No | No |
-| *`virtio-snd`* | *Upcoming* | No | No |
-| *`virtio-blk`* | **Yes** | **Yes** | **Yes** |
-| *`virtio-scsi`* | **Yes** | No | **Yes** |
-| *`virtio-fs`* | **Yes** | No | **Yes** |
-| *`virtio-net`* | **Yes** |  **Yes** | **Yes** |
-| *`virtio-keyboard`* | **Yes** | No | **Yes** |
-| *`virtio-tablet`* | **Yes** | No | **Yes** |
+| *Chipset* | i440fx, Q35, virt | Q35 | i440fx, Q35, virt |
+| *Platform firmware* | [SeaBIOS](/virt/vm/firmware#seabios) [OVMF](/virt/vm/firmware#ovmf) [RHF](/virt/vm/firmware#rust-hypervisor-firmware) [^1] | [OVMF](/virt/vm/firmware#ovmf) | [SeaBIOS](/virt/vm/firmware#seabios) [OVMF](/virt/vm/firmware#ovmf) [RHF](/virt/vm/firmware#rust-hypervisor-firmware) |
+| *virtio-gpu* | **Yes** | No | No |
+| *virtio-video* | *Upcoming* | No | No |
+| *virtio-snd* | *Upcoming* | No | No |
+| *virtio-blk* | **Yes** | **Yes** | **Yes** |
+| *virtio-scsi* | **Yes** | No | **Yes** |
+| *virtio-fs* | **Yes** | No | **Yes** |
+| *virtio-net* | **Yes** | **Yes** | **Yes** |
+| *virtio-keyboard* | **Yes** | No | **Yes** |
+| *virtio-tablet* | **Yes** | No | **Yes** |
 
 [^1]: RHF stands for the Rust Hypervisor Firmware
 

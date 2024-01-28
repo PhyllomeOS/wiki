@@ -26,18 +26,18 @@ In this wiki, you will find guides about [how to install](#install) and [use](#g
 
 *How to install Phyllome OS*
 
-- [Prepare your computer](/deploy/prepare)
+- [Prepare the target computer](/deploy/prepare)
 - [Create an installation medium](/deploy/medium)
-- [Install from a USB flash drive](/deploy/install)
+- [Installation](/deploy/install)
 
 ## Get started
 
-*How to deploy common operating systems inside Phyllome OS*
+*How to deploy your favorite operating systems inside Phyllome OS*
 
 ### Unix-like
 	
-- [Install](/getstarted/install-guest) a Linux guest system using an ISO file
-- [Automatically deploy](/getstarted/virt-install) an RPM-based guest system with `virt-install` and a kickstart file
+- [Install](/getstarted/install-guest) a Linux distribution using an ISO file
+- [Automatically provision](/getstarted/virt-install) a Linux distribution using a kickstart file
 
 ### Windows NT
 
@@ -48,54 +48,57 @@ In this wiki, you will find guides about [how to install](#install) and [use](#g
 *Go further with Phyllome OS*
 
 - [Use Phyllome OS as a live system](/gofurther/live)
-- [Resize](/gofurther/resize) an existing virtual disk
-- [Encrypt](/gofurther/encrypt) a directory containing virtual disk images
-- [Share a directory](/gofurther/virtiofs) with a guest using `virtiofs`
-- [Share an input device](/gofurther/evdev) with a guest using `evdev`
-- [Configure](/gofurther/vfio-mdev) `vfio-mdev`
+- [Resize](/gofurther/resize) a virtual disk
+- [Encrypt](/gofurther/encrypt) a directory
+- [Share a directory](/gofurther/virtiofs) with a guest using *virtiofs*
+- [Share an input device](/gofurther/evdev) with a guest using *evdev*
+- [Leverage](/gofurther/vfio-mdev) *vfio-mdev* to create multiple vGPUs
+- [Leverage other display options](/virt/vm/display)
 
-## References
+## Technical references
 
-*Information about technologies used by Phyllome OS*
+*Information about related technologies*
 
-- [A very short history](/virt/history) of virtualization
 - [Lexicon](/virt/lexicon)
 - [External resources](/virt/resources)
 
-### Guest operating systems
+### Virtualization software
 
-- [Guest operating systems support](/virt/guest.md)
-
-### The host operating system
-
+- [KVM-driven virtual machine monitors](/virt/host/vmms)
 - [Linux Kernel modules](/virt/host/modules) related to virtualization
 - [Virtualization-related paths](/virt/host/paths) on Phyllome OS
-- [A libvirt XML file](/virt/host/xml) commented
+- [A libvirt XML file](/virt/host/xml)
 
-### (Virtual) hardware
+### Virtual machine hardware
 
 - [Chipsets](/virt/vm/chipset)
 - [Firmware](/virt/vm/firmware)
-- [Display devices](/virt/vm/display)
 - [Graphic cards](/virt/vm/graphic-card)
-- [Virtual I/O devices](/virt/vm/virtio) (`virtio`)
+- [Virtual I/O (virtio) devices](/virt/vm/virtio)
 
 ## About Phyllome OS
 
+- [A very short history](/virt/history) of virtualization
 - [Context](/phyllomeos/context)
 - [Purpose](/phyllomeos/purpose)
 - [Roadmap](/phyllomeos/roadmap)
-- [How to contribute](/project/contribute)
-- [How to join](/project/join)
-- [Current infrastructure](/project/infrastructure)
+- [Guest operating systems support](/virt/guest.md)
 - [Software bill of materials](/phyllomeos/sbom)
 - [Security](/phyllomeos/security)
 - [FAQ](/phyllomeos/faq)
 
-### Public presence
+### About the project
 
-- **The website**: https://phyllo.me
-- **This wiki**: https://wiki.phyllo.me
-- **The issue board**: [https://kanboard.phyllo.me](https://kanboard.phyllo.me/b/CH7qd98J2v7egmodk/development)
-- **GitHub's repositories**: https://github.com/PhyllomeOS
+- [How to contribute](/project/contribute)
+- [How to join](/project/join)
+- [Current infrastructure](/project/infrastructure)
 
+---
+
+**The website**: https://phyllo.me
+
+**This wiki**: https://wiki.phyllo.me
+
+**The issue board**: [https://kanboard.phyllo.me](https://kanboard.phyllo.me/b/CH7qd98J2v7egmodk/development)
+
+**The forge**: https://git.phyllo.me
