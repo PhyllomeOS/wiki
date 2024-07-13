@@ -2,7 +2,7 @@
 title: Resize an existing virtual disk
 description: 
 published: true
-date: 2022-01-31T13:20:51.295Z
+date: 2024-07-13T13:11:07.613Z
 tags: 
 editor: markdown
 dateCreated: 2021-11-13T11:41:29.087Z
@@ -10,36 +10,35 @@ dateCreated: 2021-11-13T11:41:29.087Z
 
 # Resize a disk
 
-> *Instructions only applies to Linux guests.*
-{.is-info}
-
 ## Background
 
 A virtual machine's disk may have to be resized, typically due to lack of space. This page explains how to do so.
 
-The process involves creating a new blank virtual disk of the desired size and grow the former disk into the new one. 
+## Usage for Linux guests
 
-## Usage
-
-> *In-place expansion is not supported. A new disk of the desired size has to be created.* 
+> In-place expansion is not supported. A new disk of the desired size has to be created.
 {.is-info}
 
-* *Move to the location that contains the existing image*
+* Navigate to the location that contains the existing image.
 
 ```
 cd /var/lib/libvirt/images
 ```
 
+* Create a new blank disk image of the desired size
 
-* *Create a new disk image*
-
-Use the following command to create a disk of 15 GB called `phyllome-bigger.img`. 
+Use the following command to create a disk of 20 GB called `guest_20G.img`. 
 
 ```
-qemu-img create -f raw phyllome-bigger.img 15G
+qemu-img create -f raw guest_20G.img 20G
 ```
 
-* *Expand the root partition*
+* Identify the filesystem layout of the existing disk
+
+
+
+
+* Expand the root partition
 
 > *This command expects the root partition to be located on the vda3 partition. It has only been tested against the `ext4`filesystem.*  
 {.is-warning}
@@ -48,7 +47,7 @@ qemu-img create -f raw phyllome-bigger.img 15G
 virt-resize --expand /dev/vda3 phyllome.img phyllome-bigger.img
 ``` 
 
-* *The following should appear*
+* The following should appear
 
 ```
 [   0.0] Examining phyllome.img
