@@ -2,7 +2,7 @@
 title: Virtual Function I/O Mediated devices (vfio-mdev)
 description: Create and Configure Virtual Function I/O Mediated devices (vfio-mdev)
 published: true
-date: 2025-03-31T14:23:33.608Z
+date: 2025-03-31T14:57:05.801Z
 tags: 
 editor: markdown
 dateCreated: 2022-07-21T21:10:41.046Z
@@ -123,17 +123,20 @@ $ 7686131b-b229-4768-a02c-35d1dbed7c66 0000:00:02.0 i915-GVTg_V5_4 auto (active)
 [...]
 	<device>
 [...]
-    <hostdev mode="subsystem" type="mdev" managed="no" model="vfio-pci" display="on" ramfb="on">
+    <hostdev mode="subsystem" type="mdev" managed="no" model="vfio-pci" display="off" ramfb="off">
       <source>
         <address uuid="7686131b-b229-4768-a02c-35d1dbed7c66"/>
       </source>
-      <address type="pci" domain="0x0000" bus="0x09" slot="0x00" function="0x0"/>
     </hostdev>
 [...]
 	</device>
 [...]
 </domain>
 ```
+
+* Start the machine
+
+### Add a display device
 
 > Notice that the RAMFB is set to on, which activates Drect Memory Access Buffers (DMA-BUFs), making the output of a virtual monitor available before the guest operating system takes over. 
 {.is-info}
