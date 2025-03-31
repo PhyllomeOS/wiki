@@ -2,7 +2,7 @@
 title: Virtual Function I/O Mediated devices (vfio-mdev)
 description: Create and Configure Virtual Function I/O Mediated devices (vfio-mdev)
 published: true
-date: 2025-03-31T16:08:44.405Z
+date: 2025-03-31T17:11:14.232Z
 tags: 
 editor: markdown
 dateCreated: 2022-07-21T21:10:41.046Z
@@ -138,10 +138,8 @@ $ 7686131b-b229-4768-a02c-35d1dbed7c66 0000:00:02.0 i915-GVTg_V5_4 auto (active)
 
 ### Add a display device
 
-> It will only work locally
-{.is-info}
 
-- Add a spice display device
+- Add a Spice display device
 
 ```
 	<device>
@@ -154,7 +152,10 @@ $ 7686131b-b229-4768-a02c-35d1dbed7c66 0000:00:02.0 i915-GVTg_V5_4 auto (active)
 	</device>
 ```
 
-- Modify the vGPU setting to allow for a display and for RAMFB 
+> When associated with OpenGL, Spice will only work locally
+{.is-info}
+
+- Modify the vGPU setting to set display and RAMFB to *on* 
 
 ```
 <domain type="kvm">
