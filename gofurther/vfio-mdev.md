@@ -2,7 +2,7 @@
 title: Virtual Function I/O Mediated devices (vfio-mdev)
 description: Create and Configure Virtual Function I/O Mediated devices (vfio-mdev)
 published: true
-date: 2025-03-31T14:19:04.753Z
+date: 2025-03-31T14:23:33.608Z
 tags: 
 editor: markdown
 dateCreated: 2022-07-21T21:10:41.046Z
@@ -61,39 +61,57 @@ In the example above, the `i915-GVTg_V5_4` virtual type seems to offer the best 
 * Generate a universally unique identifier (UUID) with the following command:
 
 ```
-uuidgen
+$ uuidgen
 ```
 
 ```
-7686131b-b229-4768-a02c-35d1dbed7c66
+$ 7686131b-b229-4768-a02c-35d1dbed7c66
 ```
 
 * Start a vGPU based on the kind `i915-GVTg_V5_4` using the previously generated UUID
  
 ```
-sudo mdevctl start -u 7686131b-b229-4768-a02c-35d1dbed7c66 -p 0000:00:02.0 --type i915-GVTg_V5_4
+# mdevctl start -u 7686131b-b229-4768-a02c-35d1dbed7c66 -p 0000:00:02.0 --type i915-GVTg_V5_4
 ```
 
 * Define, or make this vGPU permanent:
 
 ```
-sudo mdevctl define -u 7686131b-b229-4768-a02c-35d1dbed7c66
+# mdevctl define -u 7686131b-b229-4768-a02c-35d1dbed7c66
 ```
 
 * Set the vGPU to auto-start after the host boots up:
 
 ```
-sudo mdevctl modify -u 7686131b-b229-4768-a02c-35d1dbed7c66 --auto
+# mdevctl modify -u 7686131b-b229-4768-a02c-35d1dbed7c66 --auto
 ``` 
 
 * Finally, verify that the vGPU has successfully been created and is set to auto-start:
 
 ```
-mdevctl list -d
+$ mdevctl list -d
 ``` 
 
 ```
-7686131b-b229-4768-a02c-35d1dbed7c66 0000:00:02.0 i915-GVTg_V5_4 auto (active)
+$ 7686131b-b229-4768-a02c-35d1dbed7c66 0000:00:02.0 i915-GVTg_V5_4 auto (active)
+```
+
+### Remove any video device or display devices
+
+* Remove any video device such as `virtio-gpu` and set the last one to the `none`.
+
+```
+<domain type="kvm">
+[...]
+	<device>
+[...]
+    <video>
+    	<model type="none"/>
+    </video>
+[...]
+	</device>
+[...]
+</domain>
 ```
 
 ### Assign a vGPU to a virtual machine
@@ -119,24 +137,6 @@ mdevctl list -d
 
 > Notice that the RAMFB is set to on, which activates Drect Memory Access Buffers (DMA-BUFs), making the output of a virtual monitor available before the guest operating system takes over. 
 {.is-info}
-
-## Remove any video device or display devices
-
-* Remove any video device such as `virtio-gpu` and set the last one to the `none`.
-
-```
-<domain type="kvm">
-[...]
-	<device>
-[...]
-    <video>
-    	<model type="none"/>
-    </video>
-[...]
-	</device>
-[...]
-</domain>
-```
 
 * Then starts the domain
 
