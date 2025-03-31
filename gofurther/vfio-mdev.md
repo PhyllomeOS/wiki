@@ -2,7 +2,7 @@
 title: Virtual Function I/O Mediated devices (vfio-mdev)
 description: Create and Configure Virtual Function I/O Mediated devices (vfio-mdev)
 published: true
-date: 2025-03-31T17:18:30.931Z
+date: 2025-03-31T17:21:00.391Z
 tags: 
 editor: markdown
 dateCreated: 2022-07-21T21:10:41.046Z
@@ -13,7 +13,7 @@ dateCreated: 2022-07-21T21:10:41.046Z
 > These instructions only cover **Intel GPUs** that are compatible with *vfio-mdev* (5th to 10th generation). Since generation 11th, *vfio-mdev* has been superseded by *SR-IOV*.
 {.is-warning}
 
-[Virtual Function I/O Mediated devices](https://www.kernel.org/doc/html/latest/driver-api/vfio-mediated-device.html) (vfio-mdev) allows a phyiscal GPU to be split into multiple virtual GPUs (vGPU). Such a vGPU can then be assigned to a virtual machine or a container.
+[Virtual Function I/O Mediated devices](https://www.kernel.org/doc/html/latest/driver-api/vfio-mediated-device.html) (vfio-mdev) allows a physical GPU to be split into multiple virtual GPUs (vGPU). Such a vGPU can then be assigned to a virtual machine or a container.
 
 Contrary to paravirtualized GPUs (e.g. *virtio-gpu*), vGPUs can use the same driver as their parent GPU (e.g. a guest compatible with an Intel GPUs will be able to leverage an Intel-based vGPUs)
 
@@ -186,10 +186,10 @@ On some computers, it is possible to increase the system memory allocated to the
 
 * Before the host operating system boots up, enter the BIOS/UEFI and look for a setting called *GPU aperture size* or *GPU shared memory*
 
-* Use the highest possible value, but not higher than the available system memory. 
+* Use the highest possible value, but not higher than the available system memory
 
-> System memory will be reserved for the GPU, so make sure you have enough system memory to accomodate both the GPU and your operating system. For instance, if you have a total of 16GB of system memory, it is recommanded to not allocate more than 4GB to the GPU.
-{.is-warning}
+> System memory will be reserved for the GPU, so make sure you have enough system memory to accomodate both the GPU and your operating system. For instance, if you have a total of 16GB of system memory, it is recommended to allocate no more than 4GB to the GPU
+{.is-info}
 
 ## Resources
 
