@@ -2,7 +2,7 @@
 title: Virtual Function I/O Mediated devices (vfio-mdev)
 description: Create and Configure Virtual Function I/O Mediated devices (vfio-mdev)
 published: true
-date: 2025-03-31T17:21:00.391Z
+date: 2025-03-31T17:22:19.964Z
 tags: 
 editor: markdown
 dateCreated: 2022-07-21T21:10:41.046Z
@@ -54,7 +54,7 @@ $ mdevctl types
     Description: low_gm_size: 64MB, high_gm_size: 384MB, fence: 4, resolution: 1024x768, weight: 2
 ```
 
-> Allocating more memory to the GPU in the platform firmware may increase the number of vGPUs one can create. See [Troubleshooting](#Troubleshooting) section below.
+> Allocating more memory to the GPU in the platform firmware may increase the number of vGPUs one can create. See [Troubleshooting](#troubleshooting) section below.
 {.is-info}
 
 In the example above, the `i915-GVTg_V5_4` virtual type seems to offer the best trade-offs between the available resolution and the number of available instances.
