@@ -2,7 +2,7 @@
 title: Linux family
 description: 
 published: true
-date: 2024-05-04T16:15:50.143Z
+date: 2025-03-31T14:27:25.512Z
 tags: 
 editor: markdown
 dateCreated: 2021-11-12T15:27:40.366Z
@@ -24,7 +24,7 @@ dateCreated: 2021-11-12T15:27:40.366Z
 ```
 virt-install \
     --connect qemu:///system \
-    --os-variant detect=off \
+    --os-variant fedora41 \
     --virt-type kvm \
     --arch x86_64 \
     --machine q35 \
@@ -48,7 +48,7 @@ virt-install \
     --input type=tablet,bus=virtio \
     --rng /dev/urandom,model=virtio \
     --disk path=/var/lib/libvirt/images/virtual-desktop.img,format=raw,bus=virtio,cache=writeback,size=10 \
-    --location=https://download.fedoraproject.org/pub/fedora/linux/releases/40/Everything/x86_64/os/ \
+    --location=https://download.fedoraproject.org/pub/fedora/linux/releases/41/Everything/x86_64/os/ \
     --extra-args="inst.ks=https://raw.githubusercontent.com/PhyllomeOS/phyllomeos/main/dishes/virtual-desktop.cfg"
 ```
 
@@ -68,7 +68,7 @@ wget https://raw.githubusercontent.com/PhyllomeOS/phyllomeos/main/dishes/virtual
 ```
 virt-install \
     --connect qemu:///system \
-    --os-variant detect=off \
+    --os-variant fedora41 \
     --virt-type kvm \
     --arch x86_64 \
     --machine q35 \
