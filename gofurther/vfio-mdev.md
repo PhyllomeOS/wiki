@@ -2,7 +2,7 @@
 title: Virtual Function I/O Mediated devices (vfio-mdev)
 description: Create and Configure Virtual Function I/O Mediated devices (vfio-mdev)
 published: true
-date: 2025-03-31T14:57:05.801Z
+date: 2025-03-31T15:25:58.233Z
 tags: 
 editor: markdown
 dateCreated: 2022-07-21T21:10:41.046Z
@@ -138,7 +138,20 @@ $ 7686131b-b229-4768-a02c-35d1dbed7c66 0000:00:02.0 i915-GVTg_V5_4 auto (active)
 
 ### Add a display device
 
-> Notice that the RAMFB is set to on, which activates Drect Memory Access Buffers (DMA-BUFs), making the output of a virtual monitor available before the guest operating system takes over. 
+#### Spice
+
+```
+	<device>
+[...]
+		<graphics type="spice">
+  			<listen type="none"/>
+  		<gl enable="yes" rendernode="/dev/dri/by-path/pci-0000:00:02.0-render"/>
+		</graphics>
+[...]
+	</device>
+```
+
+> RAMFB is set to on, which activates Drect Memory Access Buffers (DMA-BUFs), making the output of a virtual monitor available before the guest operating system takes over
 {.is-info}
 
 * Then starts the domain
