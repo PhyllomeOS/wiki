@@ -2,50 +2,35 @@
 title: Virtual Function I/O Mediated devices (vfio-mdev)
 description: Create and Configure Virtual Function I/O Mediated devices (vfio-mdev)
 published: true
-date: 2023-05-14T20:10:36.548Z
+date: 2025-03-31T14:19:04.753Z
 tags: 
 editor: markdown
 dateCreated: 2022-07-21T21:10:41.046Z
 ---
 
-# Configure *vfio-mdev*
+# *vfio-mdev* configuration
 
 > These instructions only cover **Intel GPUs** that are compatible with *vfio-mdev* (5th to 10th generation). Since generation 11th, *vfio-mdev* has been superseded by *SR-IOV*.
 {.is-warning}
 
-GPUs compatible with [Virtual Function I/O Mediated devices](https://www.kernel.org/doc/html/latest/driver-api/vfio-mediated-device.html) (vfio-mdev) can be split into multiple virtual GPUs (vGPUs). 
-
-Then, these vGPUs can be assigned to virtual machines or containers.
+[Virtual Function I/O Mediated devices](https://www.kernel.org/doc/html/latest/driver-api/vfio-mediated-device.html) (vfio-mdev) allows a phyiscal GPU to be split into multiple virtual GPUs (vGPU). Such a vGPU can then be assigned to a virtual machine or a container.
 
 Contrary to paravirtualized GPUs (e.g. *virtio-gpu*), vGPUs can use the same driver as their parent GPU (e.g. a guest compatible with an Intel GPUs will be able to leverage an Intel-based vGPUs)
 
-## Modify the system allocated to the GPU in the BIOS/UEFI
-
-> Some computers allow you to modify the system memory allocated or shared with the integrated GPU, which may allow you to create more vGPUs.
-{.is-info}
-
-> For Intel integrated graphics cards only; rarely available on laptops computers.
-{.is-warning}
-
-* Before the host operating system boots up, you need to enter the BIOS/UEFI and to look for a setting called *GPU aperture size*, or *GPU shared memory*. 
-
-* Use the highest possible value.
-
-> System memory will be reserved for the GPU, so make sure you have enough system memory to accomodate both the GPU and your operating system. 
-{.is-warning}
-
 ## Preparation
 
-* Make sure the GRUB has been updated after [the first boot](https://wiki.phyllo.me/getstarted/disk#update-grub-and-reboot)
+* [Install](/deploy/install) the *Phyllome OS Desktop II*
+
+* Make sure the GRUB has been updated after the first boot: `# grub2-mkconfig -o /boot/efi/EFI/fedora/grub.cfg`
 
 ## Procedure
 
 ### Create a virtual GPU
 
-List available GPUs using the `mdevctl` software:
+List all available vGPUs types:
 
 ```
-mdevctl types
+$ mdevctl types
 ```
 
 ```
@@ -68,11 +53,10 @@ mdevctl types
     Description: low_gm_size: 64MB, high_gm_size: 384MB, fence: 4, resolution: 1024x768, weight: 2
 ```
 
-> Increasing the memory allocated to the GPU in the BIOS/EFI may increase the number and kind of available instances.
+> Allocating more memory to the GPU in the platform firmware may increase the number of vGPUs one can create. See [Troubleshooting](#Troubleshooting) section below.
 {.is-info}
 
-
-In this case, the `i915-GVTg_V5_4` kind seems to offer the best trade-offs between the available resolution and the number of available instances.
+In the example above, the `i915-GVTg_V5_4` virtual type seems to offer the best trade-offs between the available resolution and the number of available instances.
 
 * Generate a universally unique identifier (UUID) with the following command:
 
@@ -156,24 +140,18 @@ mdevctl list -d
 
 * Then starts the domain
 
-## Configure Spice / SDL
-
-*To-do*
-
 ## Troubleshooting
 
-### No or low number of available instances 
+### Low number of available vGPU instances 
 
-Increasing the memory allocated to the GPU (a.k.a. the GPU aperture size) may increase the number of available instances.
+On some computers, it is possible to increase the system memory allocated to the integrated GPU. By doing so, you may be able to create more vGPUs.
 
-Some computers allow you to modify the memory allocated or shared with the integrated GPU, which may allow you to create more vGPUs.
+* Before the host operating system boots up, enter the BIOS/UEFI and look for a setting called *GPU aperture size* or *GPU shared memory*
 
-* Before the host operating system boots up, enter the BIOS/UEFI and look for a setting called *GPU aperture size*, or *GPU shared memory*. 
+* Use the highest possible value, but not higher than the available system memory. 
 
-* Use the highest possible value.
-
-> The memory will be reserved to the GPU, so make sure you have enough leftover memory to accomodate both the GPU and your operating system. 
-{.is-info}
+> System memory will be reserved for the GPU, so make sure you have enough system memory to accomodate both the GPU and your operating system. For instance, if you have a total of 16GB of system memory, it is recommanded to not allocate more than 4GB to the GPU.
+{.is-warning}
 
 ## Resources
 
