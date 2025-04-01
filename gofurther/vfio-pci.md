@@ -2,7 +2,7 @@
 title: Virtual Function I/O passthrough (vfio-pci)
 description: Pass a physical device to a guest sysstem
 published: true
-date: 2025-04-01T11:26:11.765Z
+date: 2025-04-01T16:12:32.063Z
 tags: 
 editor: markdown
 dateCreated: 2025-04-01T11:18:43.924Z
@@ -22,7 +22,7 @@ dateCreated: 2025-04-01T11:18:43.924Z
 
 ## Isolate the physical device
 
-* Copy paste the following:
+* List IOMMU groups and their associated devices (script courtesy of the [Arch Linux wiki](https://wiki.archlinux.org/title/PCI_passthrough_via_OVMF#Ensuring_that_the_groups_are_valid):
 
 ```
 $ shopt -s nullglob
@@ -32,9 +32,7 @@ for g in $(find /sys/kernel/iommu_groups/* -maxdepth 0 -type d | sort -V); do
         echo -e "\t$(lspci -nns ${d##*/})"
     done;
 done;
-```
 
-``` 
 IOMMU Group 0:
 	00:02.0 VGA compatible controller [0300]: Intel Corporation Iris Pro Graphics 580 [8086:193b] (rev 09)
 IOMMU Group 1:
@@ -48,16 +46,7 @@ IOMMU Group 4:
 	00:16.0 Communication controller [0780]: Intel Corporation 100 Series/C230 Series Chipset Family MEI Controller #1 [8086:a13a] (rev 31)
 IOMMU Group 5:
 	00:1c.0 PCI bridge [0604]: Intel Corporation 100 Series/C230 Series Chipset Family PCI Express Root Port #1 [8086:a110] (rev f1)
-IOMMU Group 6:
-	00:1c.1 PCI bridge [0604]: Intel Corporation 100 Series/C230 Series Chipset Family PCI Express Root Port #2 [8086:a111] (rev f1)
-IOMMU Group 7:
-	00:1c.2 PCI bridge [0604]: Intel Corporation 100 Series/C230 Series Chipset Family PCI Express Root Port #3 [8086:a112] (rev f1)
-IOMMU Group 8:
-	00:1c.4 PCI bridge [0604]: Intel Corporation 100 Series/C230 Series Chipset Family PCI Express Root Port #5 [8086:a114] (rev f1)
-IOMMU Group 9:
-	00:1d.0 PCI bridge [0604]: Intel Corporation 100 Series/C230 Series Chipset Family PCI Express Root Port #9 [8086:a118] (rev f1)
-IOMMU Group 10:
-	00:1d.4 PCI bridge [0604]: Intel Corporation 100 Series/C230 Series Chipset Family PCI Express Root Port #13 [8086:a11c] (rev f1)
+[...]
 IOMMU Group 11:
 	00:1f.0 ISA bridge [0601]: Intel Corporation HM170 Chipset LPC/eSPI Controller [8086:a14e] (rev 31)
 	00:1f.2 Memory controller [0580]: Intel Corporation 100 Series/C230 Series Chipset Family Power Management Controller [8086:a121] (rev 31)
@@ -73,120 +62,32 @@ IOMMU Group 15:
 	3d:00.0 Non-Volatile memory controller [0108]: Samsung Electronics Co Ltd NVMe SSD Controller SM951/PM951 [144d:a802] (rev 01)
 IOMMU Group 16:
 	3e:00.0 Non-Volatile memory controller [0108]: Intel Corporation SSD 660P Series [8086:f1a8] (rev 03)
-IOMMU Group 17:
-lspci: -s: Invalid slot number
-	
-IOMMU Group 18:
-lspci: -s: Invalid slot number
-	
-IOMMU Group 19:
-lspci: -s: Invalid slot number
-
-
-
-```
-List all available vGPUs types:
-
-```
-$ mdevctl types
-0000:00:02.0
-  i915-GVTg_V5_1
-    Available instances: 1
-    Device API: vfio-pci
-    Description: low_gm_size: 512MB, high_gm_size: 2048MB, fence: 4, resolution: 1920x1200, weight: 16
-  i915-GVTg_V5_2
-    Available instances: 2
-    Device API: vfio-pci
-    Description: low_gm_size: 256MB, high_gm_size: 1024MB, fence: 4, resolution: 1920x1200, weight: 8
-  i915-GVTg_V5_4
-    Available instances: 5
-    Device API: vfio-pci
-    Description: low_gm_size: 128MB, high_gm_size: 512MB, fence: 4, resolution: 1920x1200, weight: 4
-  i915-GVTg_V5_8
-    Available instances: 7
-    Device API: vfio-pci
-    Description: low_gm_size: 64MB, high_gm_size: 384MB, fence: 4, resolution: 1024x768, weight: 2
+[...]
 ```
 
-> Allocating more memory to the GPU in the platform firmware may increase the number of vGPUs one can create. See [*Troubleshooting*](#troubleshooting) section below
+> In general, but not always, devices associated to a particular IOMMU group have to be passed through a guest system together
 {.is-info}
 
-In the example above, the `i915-GVTg_V5_4` virtual type seems to offer the best trade-offs between the available resolution and the number of available instances.
+In the above example, most devices are well isolated, at the exception to  the USB controller and the HD audio controller
 
-* Generate a universally unique identifier (UUID) with the following command:
-
-```
-$ uuidgen
-7686131b-b229-4768-a02c-35d1dbed7c66
-```
-
-* Start a vGPU based on the kind `i915-GVTg_V5_4` using the previously generated UUID
- 
-```
-# mdevctl start --uuid 7686131b-b229-4768-a02c-35d1dbed7c66 -p 0000:00:02.0 --type i915-GVTg_V5_4
-```
-
-* Define, or make this vGPU permanent:
-
-```
-# mdevctl define --uuid 7686131b-b229-4768-a02c-35d1dbed7c66
-```
-
-* Set the vGPU to auto-start after the host boots up:
-
-```
-# mdevctl modify --uuid 7686131b-b229-4768-a02c-35d1dbed7c66 --auto
-``` 
-
-* Finally, verify that the vGPU has successfully been created and is set to auto-start:
-
-```
-$ mdevctl list --defined
-7686131b-b229-4768-a02c-35d1dbed7c66 0000:00:02.0 i915-GVTg_V5_4 auto (active)
-```
-
-### Remove any video device or display devices
-
-* Remove any video device such as `virtio-gpu` and set the last one to the `none`.
-
-```
-<domain type="kvm">
-[...]
-	<device>
-[...]
-    <video>
-    	<model type="none"/>
-    </video>
-[...]
-	</device>
-[...]
-</domain>
-```
-
-### Assign a vGPU to a virtual machine
-
-* Add that segment to a virtual machine's definition. Make sure the provided `uuid` matches the previously generated UUID.
-
-```
-<domain type="kvm">
-[...]
-	<device>
-[...]
-    <hostdev mode="subsystem" type="mdev" managed="no" model="vfio-pci" display="off" ramfb="off">
-      <source>
-        <address uuid="7686131b-b229-4768-a02c-35d1dbed7c66"/>
-      </source>
-    </hostdev>
-[...]
-	</device>
-[...]
-</domain>
-```
-
-* Start the machine in headless mode. It is possible to connect to this machine over a console interface. 
+| IOMMU Group | Device | ID  |
+| --- | --- | --- |
+| 0   | Intel Corporation Iris Pro Graphics 580 | 8086:193b |
+| 2   | Intel Gaussian Mixture Model - Neural Network Accelerator | 8086:1911 |
+| 3   | USB 3.0 xHCI Controller | 8086:a12f |
+| 3   | Thermal Subsystem | 8086:a131 |
+| 4   | MEI Controller | 8086:a13a |
+| 11  | HM170 Chipset LPC/eSPI Controller | 8086:a14e |
+| 11  | Power Management Controller | 8086:a121 |
+| 11  | HD Audio Controller | 8086:a170 |
+| 11  | SMBus | 8086:a123 |
+| 12  | Ethernet Connection (2) I219-LM | 8086:15b7 |
+| 13  | SD/MMC Card Reader Controller | 1217:8621 |
+| 14  | Intel Corporation Wireless 8260 | 8086:24f3 |
+| 15  | NVMe SSD Controller SM951/PM951 | 144d:a802 |
+| 16  | Intel Corporation SSD 660P Series | 8086:f1a8 |
 
 ## Add a display device
-
 
 ## Troubleshooting
 
