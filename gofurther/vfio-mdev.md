@@ -2,7 +2,7 @@
 title: Virtual Function I/O Mediated devices (vfio-mdev)
 description: Create and Configure Virtual Function I/O Mediated devices (vfio-mdev)
 published: true
-date: 2025-04-01T09:09:10.701Z
+date: 2025-04-01T09:12:12.326Z
 tags: 
 editor: markdown
 dateCreated: 2022-07-21T21:10:41.046Z
@@ -24,9 +24,7 @@ Contrary to paravirtualized GPUs (e.g. *virtio-gpu*), vGPUs can use the same dri
 * Make sure the GRUB has been updated after the first boot: 
 `# grub2-mkconfig -o /boot/efi/EFI/fedora/grub.cfg`
 
-## Procedure
-
-### Create a virtual GPU
+## Create a virtual GPU
 
 List all available vGPUs types:
 
@@ -54,7 +52,7 @@ $ mdevctl types
     Description: low_gm_size: 64MB, high_gm_size: 384MB, fence: 4, resolution: 1024x768, weight: 2
 ```
 
-> Allocating more memory to the GPU in the platform firmware may increase the number of vGPUs one can create. See [Troubleshooting](#troubleshooting) section below.
+> Allocating more memory to the GPU in the platform firmware may increase the number of vGPUs one can create. See [*Troubleshooting*](#troubleshooting) section below
 {.is-info}
 
 In the example above, the `i915-GVTg_V5_4` virtual type seems to offer the best trade-offs between the available resolution and the number of available instances.
@@ -137,7 +135,7 @@ $ 7686131b-b229-4768-a02c-35d1dbed7c66 0000:00:02.0 i915-GVTg_V5_4 auto (active)
 
 * Start the machine in headless mode. It is possible to connect to this machine over a console interface. 
 
-### Add a display device
+## Add a display device
 
 - Add a Spice display device
 
@@ -176,7 +174,7 @@ $ 7686131b-b229-4768-a02c-35d1dbed7c66 0000:00:02.0 i915-GVTg_V5_4 auto (active)
 > RAMFB is set to on, which activates Drect Memory Access Buffers (DMA-BUFs), making the output of a virtual monitor available before the guest operating system takes over
 {.is-info}
 
-* Then starts the domain
+* Starts the domain
 
 ## Troubleshooting
 
