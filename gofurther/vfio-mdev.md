@@ -2,7 +2,7 @@
 title: Virtual Function I/O Mediated devices (vfio-mdev)
 description: Create and Configure Virtual Function I/O Mediated devices (vfio-mdev)
 published: true
-date: 2025-04-01T09:24:28.812Z
+date: 2025-04-01T09:26:25.646Z
 tags: 
 editor: markdown
 dateCreated: 2022-07-21T21:10:41.046Z
@@ -82,7 +82,7 @@ $ uuidgen
 * Finally, verify that the vGPU has successfully been created and is set to auto-start:
 
 ```
-$ mdevctl list --define
+$ mdevctl list --defined
 7686131b-b229-4768-a02c-35d1dbed7c66 0000:00:02.0 i915-GVTg_V5_4 auto (active)
 ```
 
