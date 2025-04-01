@@ -2,7 +2,7 @@
 title: Virtual Function I/O Mediated devices (vfio-mdev)
 description: Create and Configure Virtual Function I/O Mediated devices (vfio-mdev)
 published: true
-date: 2025-04-01T09:19:42.125Z
+date: 2025-04-01T09:23:17.829Z
 tags: 
 editor: markdown
 dateCreated: 2022-07-21T21:10:41.046Z
@@ -172,12 +172,31 @@ $ mdevctl list --define
 - List all vGPUs
 
 ```
-mdevctl list -d
+$ mdevctl list -d
+5d189f35-d83b-48a8-b8d1-ac1684873493 0000:00:02.0 i915-GVTg_V5_4 auto (active)
 7686131b-b229-4768-a02c-35d1dbed7c66 0000:00:02.0 i915-GVTg_V5_4 auto (active)
+90f22bd6-d269-4afd-9560-ece3c6e93b0b 0000:00:02.0 i915-GVTg_V5_4 auto (active)
 ```
 
-- Stop the vGPU
+- Stop the vGPU with UUID `7686131b-b229-4768-a02c-35d1dbed7c66`
 
+```
+# mdevctl stop --uuid 7686131b-b229-4768-a02c-35d1dbed7c66
+```
+
+- Delete the vGPU
+
+```
+# mdevctl undefine --uuid 7686131b-b229-4768-a02c-35d1dbed7c66
+```
+
+- Verify
+
+```
+$ mdevctl list -d
+5d189f35-d83b-48a8-b8d1-ac1684873493 0000:00:02.0 i915-GVTg_V5_4 auto (active)
+90f22bd6-d269-4afd-9560-ece3c6e93b0b 0000:00:02.0 i915-GVTg_V5_4 auto (active)
+```
 
 ## Troubleshooting
 
