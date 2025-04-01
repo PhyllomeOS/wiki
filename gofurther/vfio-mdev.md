@@ -2,7 +2,7 @@
 title: Virtual Function I/O Mediated devices (vfio-mdev)
 description: Create and Configure Virtual Function I/O Mediated devices (vfio-mdev)
 published: true
-date: 2025-04-01T09:14:05.917Z
+date: 2025-04-01T09:19:42.125Z
 tags: 
 editor: markdown
 dateCreated: 2022-07-21T21:10:41.046Z
@@ -64,25 +64,25 @@ $ uuidgen
 * Start a vGPU based on the kind `i915-GVTg_V5_4` using the previously generated UUID
  
 ```
-# mdevctl start -u 7686131b-b229-4768-a02c-35d1dbed7c66 -p 0000:00:02.0 --type i915-GVTg_V5_4
+# mdevctl start --uuid 7686131b-b229-4768-a02c-35d1dbed7c66 -p 0000:00:02.0 --type i915-GVTg_V5_4
 ```
 
 * Define, or make this vGPU permanent:
 
 ```
-# mdevctl define -u 7686131b-b229-4768-a02c-35d1dbed7c66
+# mdevctl define --uuid 7686131b-b229-4768-a02c-35d1dbed7c66
 ```
 
 * Set the vGPU to auto-start after the host boots up:
 
 ```
-# mdevctl modify -u 7686131b-b229-4768-a02c-35d1dbed7c66 --auto
+# mdevctl modify --uuid 7686131b-b229-4768-a02c-35d1dbed7c66 --auto
 ``` 
 
 * Finally, verify that the vGPU has successfully been created and is set to auto-start:
 
 ```
-$ mdevctl list -d
+$ mdevctl list --define
 7686131b-b229-4768-a02c-35d1dbed7c66 0000:00:02.0 i915-GVTg_V5_4 auto (active)
 ```
 
@@ -169,13 +169,14 @@ $ mdevctl list -d
 
 ### Delete a vGPU
 
-- List vGPUs
+- List all vGPUs
 
 ```
 mdevctl list -d
 7686131b-b229-4768-a02c-35d1dbed7c66 0000:00:02.0 i915-GVTg_V5_4 auto (active)
-
 ```
+
+- Stop the vGPU
 
 
 ## Troubleshooting
