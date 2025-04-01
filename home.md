@@ -2,7 +2,7 @@
 title: Homepage
 description: 
 published: true
-date: 2023-10-15T14:18:46.678Z
+date: 2025-04-01T11:15:41.676Z
 tags: 
 editor: markdown
 dateCreated: 2021-06-19T09:29:20.593Z
@@ -50,10 +50,14 @@ In this wiki, you will find guides about [how to install](#install) and [use](#g
 - [Use Phyllome OS as a live system](/gofurther/live)
 - [Resize](/gofurther/resize) a virtual disk
 - [Encrypt](/gofurther/encrypt) a directory
-- [Share a directory](/gofurther/virtiofs) with a guest using *virtiofs*
-- [Share an input device](/gofurther/evdev) with a guest using *evdev*
-- [Leverage](/gofurther/vfio-mdev) *vfio-mdev* to create multiple vGPUs
-- [Leverage other display options](/virt/vm/display)
+- [Leverage display options](/virt/vm/display)
+
+### Sharing with a guest system
+
+- [Share a directory](/gofurther/virtiofs) using *virtiofs*
+- [Share an input device](/gofurther/evdev) using *evdev*
+- [Create and share](/gofurther/vfio-mdev) a virtual GPU using *vfio-mdev*
+- [Share a physical device](/gofurther/vfio-pci) using *vfio-pci* passthrough
 
 ## Technical references
 
