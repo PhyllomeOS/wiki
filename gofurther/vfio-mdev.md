@@ -2,7 +2,7 @@
 title: Virtual Function I/O Mediated devices (vfio-mdev)
 description: Create and Configure Virtual Function I/O Mediated devices (vfio-mdev)
 published: true
-date: 2025-04-01T09:00:45.884Z
+date: 2025-04-01T09:09:10.701Z
 tags: 
 editor: markdown
 dateCreated: 2022-07-21T21:10:41.046Z
@@ -191,10 +191,25 @@ On some computers, it is possible to increase the system memory allocated to the
 > System memory will be reserved for the GPU, so make sure you have enough system memory to accomodate both the GPU and your operating system. For instance, if you have a total of 16GB of system memory, it is recommended to allocate no more than 4GB to the GPU
 {.is-info}
 
+### Not all vGPUs are marked as active
+
+In the example below, two vGPUs are inactive. Attempts to enable them are failing.
+
+```
+$ mdevctl list -d
+5d189f35-d83b-48a8-b8d1-ac1684873493 0000:00:02.0 i915-GVTg_V5_4 auto (active)
+7686131b-b229-4768-a02c-35d1dbed7c66 0000:00:02.0 i915-GVTg_V5_4 auto (active)
+8aec14d3-cb64-40ff-8347-9a872180f4f2 0000:00:02.0 i915-GVTg_V5_4 auto
+90f22bd6-d269-4afd-9560-ece3c6e93b0b 0000:00:02.0 i915-GVTg_V5_4 auto (active)
+a4f23c92-5889-4ce9-b4a6-4d2b786a6b85 0000:00:02.0 i915-GVTg_V5_4 auto
+```
+
+In the said configuration, there is 2GB of GPU shared allocated to the physical GPU. As each of such vGPUs type requires 512MB, it cannot equate or exceed the 2GB of shared GPU memory. 
+
 ## Resources
 
 * Official page for vfio-mdev: https://www.kernel.org/doc/html/latest/driver-api/vfio-mediated-device.html
-* Archlinux's *must-read entry* on Intel GVT-g: https://wiki.archlinux.org/title/Intel_GVT-g
+* Arch Linux's *must-read entry* on Intel GVT-g: https://wiki.archlinux.org/title/Intel_GVT-g
 * DMA-BUF Linux documentation: https://www.kernel.org/doc/html/latest/driver-api/dma-buf.html
 
 ---
