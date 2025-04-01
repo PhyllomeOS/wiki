@@ -2,7 +2,7 @@
 title: Virtual Function I/O passthrough (vfio-pci)
 description: Pass a physical device to a guest sysstem
 published: true
-date: 2025-04-01T16:55:51.080Z
+date: 2025-04-01T17:06:37.513Z
 tags: 
 editor: markdown
 dateCreated: 2025-04-01T11:18:43.924Z
@@ -68,7 +68,9 @@ IOMMU Group 16:
 > In general, but not always, devices associated to a particular IOMMU group have to be passed through a guest system together
 {.is-info}
 
-In the above example, most devices are well isolated, at the exception to  the USB controller and the HD audio controller. As Phyllome OS is installed on the Intel SSD 660P NVMe SSD, this device should not be shared with a guest system.
+In the above example, most devices are well isolated, at the exception to  the USB controller and the HD audio controller. 
+
+As Phyllome OS is installed on the Intel SSD 660P NVMe SSD, this device should not be shared with a guest system.
 
 | IOMMU Group | Device | ID  |
 | --- | --- | --- |
@@ -86,6 +88,51 @@ In the above example, most devices are well isolated, at the exception to  the U
 | 14  | Intel Corporation Wireless 8260 | 8086:24f3 |
 | 15  | NVMe SSD Controller SM951/PM951 | 144d:a802 |
 | 16  | Intel Corporation SSD 660P Series | 8086:f1a8 |
+
+```
+  <hostdev mode="subsystem" type="pci" managed="yes">
+      <source>
+        <address domain="0x0000" bus="0x03" slot="0x00" function="0x0"/>
+      </source>
+      <address type="pci" domain="0x0000" bus="0x09" slot="0x00" function="0x0"/>
+    </hostdev>
+    <hostdev mode="subsystem" type="pci" managed="yes">
+      <source>
+        <address domain="0x0000" bus="0x02" slot="0x00" function="0x0"/>
+      </source>
+      <address type="pci" domain="0x0000" bus="0x0a" slot="0x00" function="0x0"/>
+    </hostdev>
+    <hostdev mode="subsystem" type="pci" managed="yes">
+      <source>
+        <address domain="0x0000" bus="0x00" slot="0x08" function="0x0"/>
+      </source>
+      <address type="pci" domain="0x0000" bus="0x10" slot="0x01" function="0x0"/>
+    </hostdev>
+    <hostdev mode="subsystem" type="pci" managed="yes">
+      <source>
+        <address domain="0x0000" bus="0x3d" slot="0x00" function="0x0"/>
+      </source>
+      <address type="pci" domain="0x0000" bus="0x0c" slot="0x00" function="0x0"/>
+    </hostdev>
+```
+
+- Let's have a look inside the guest system that has the physical devices attached to it:
+
+```
+$ lspci
+00:00.0 Host bridge: Intel Corporation 82G33/G31/P35/P31 Express DRAM Controller
+00:01.0 VGA compatible controller: Red Hat, Inc. Virtio 1.0 GPU (rev 01)
+00:02.0 PCI bridge: Red Hat, Inc. QEMU PCIe Root port
+[...]
+00:1f.0 ISA bridge: Intel Corporation 82801IB (ICH9) LPC Interface Controller (rev 02)
+00:1f.2 SATA controller: Intel Corporation 82801IR/IO/IH (ICH9R/DO/DH) 6 port SATA Controller [AHCI mode] (rev 02)
+[...]
+09:00.0 Network controller: Intel Corporation Wireless 8260 (rev 3a)
+0a:00.0 SD Host controller: O2 Micro, Inc. SD/MMC Card Reader Controller (rev 01)
+0b:00.0 PCI bridge: Red Hat, Inc. Device 000e
+0c:01.0 System peripheral: Intel Corporation Xeon E3-1200 v5/v6 / E3-1500 v5 / 6th/7th/8th Gen Core Processor Gaussian Mixture Model
+0d:00.0 Non-Volatile memory controller: Samsung Electronics Co Ltd NVMe SSD Controller SM951/PM951 (rev 01)
+``` 
 
 ## Add a display device
 
