@@ -2,7 +2,7 @@
 title: Virtual Function I/O passthrough (vfio-pci)
 description: Pass a physical device to a guest sysstem
 published: true
-date: 2025-04-01T17:59:22.972Z
+date: 2025-04-01T18:01:48.788Z
 tags: 
 editor: markdown
 dateCreated: 2025-04-01T11:18:43.924Z
@@ -95,25 +95,21 @@ As Phyllome OS is installed on the Intel SSD 660P NVMe SSD, this device should n
       <source>
         <address domain="0x0000" bus="0x03" slot="0x00" function="0x0"/>
       </source>
-      <address type="pci" domain="0x0000" bus="0x09" slot="0x00" function="0x0"/>
     </hostdev>
     <hostdev mode="subsystem" type="pci" managed="yes">
       <source>
         <address domain="0x0000" bus="0x02" slot="0x00" function="0x0"/>
       </source>
-      <address type="pci" domain="0x0000" bus="0x0a" slot="0x00" function="0x0"/>
     </hostdev>
     <hostdev mode="subsystem" type="pci" managed="yes">
       <source>
         <address domain="0x0000" bus="0x00" slot="0x08" function="0x0"/>
       </source>
-      <address type="pci" domain="0x0000" bus="0x10" slot="0x01" function="0x0"/>
     </hostdev>
     <hostdev mode="subsystem" type="pci" managed="yes">
       <source>
         <address domain="0x0000" bus="0x3d" slot="0x00" function="0x0"/>
       </source>
-      <address type="pci" domain="0x0000" bus="0x0c" slot="0x00" function="0x0"/>
     </hostdev>
 ```
 
