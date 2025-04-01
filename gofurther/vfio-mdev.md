@@ -2,7 +2,7 @@
 title: Virtual Function I/O Mediated devices (vfio-mdev)
 description: Create and Configure Virtual Function I/O Mediated devices (vfio-mdev)
 published: true
-date: 2025-04-01T09:26:25.646Z
+date: 2025-04-01T09:28:26.851Z
 tags: 
 editor: markdown
 dateCreated: 2022-07-21T21:10:41.046Z
@@ -10,14 +10,14 @@ dateCreated: 2022-07-21T21:10:41.046Z
 
 # *vfio-mdev* configuration
 
-> These instructions only cover **Intel GPUs** that are compatible with *vfio-mdev* (5th to 10th generation). Since generation 11th, *vfio-mdev* has been superseded by *SR-IOV*.
-{.is-warning}
-
 [Virtual Function I/O Mediated devices](https://www.kernel.org/doc/html/latest/driver-api/vfio-mediated-device.html) (vfio-mdev) allows a physical GPU to be split into multiple virtual GPUs (vGPU). Such a vGPU can then be assigned to a virtual machine or a container.
 
 Contrary to paravirtualized GPUs (e.g. *virtio-gpu*), vGPUs can use the same driver as their parent GPU (e.g. a guest compatible with an Intel GPUs will be able to leverage an Intel-based vGPUs)
 
 ## Preparation
+
+> These instructions only cover **Intel GPUs** that are compatible with *vfio-mdev* (5th to 10th generation). Since generation 11th, *vfio-mdev* has been superseded by *SR-IOV*
+{.is-info}
 
 * [Install](/deploy/install) the *Phyllome OS Desktop II*
 
