@@ -2,7 +2,7 @@
 title: Virtual Function I/O passthrough (vfio-pci)
 description: Pass a physical device to a guest sysstem
 published: true
-date: 2025-04-01T17:06:37.513Z
+date: 2025-04-01T17:59:22.972Z
 tags: 
 editor: markdown
 dateCreated: 2025-04-01T11:18:43.924Z
@@ -65,29 +65,30 @@ IOMMU Group 16:
 [...]
 ```
 
+In the above example, most devices are well isolated, at the exception to  the USB controller and the HD audio controller. 
+
 > In general, but not always, devices associated to a particular IOMMU group have to be passed through a guest system together
 {.is-info}
 
-In the above example, most devices are well isolated, at the exception to  the USB controller and the HD audio controller. 
 
 As Phyllome OS is installed on the Intel SSD 660P NVMe SSD, this device should not be shared with a guest system.
 
-| IOMMU Group | Device | ID  |
-| --- | --- | --- |
-| 0   | Intel Corporation Iris Pro Graphics 580 | 8086:193b |
-| 2   | Intel Gaussian Mixture Model - Neural Network Accelerator | 8086:1911 |
-| **3**   | USB 3.0 xHCI Controller | 8086:a12f |
-| **3**   | Thermal Subsystem | 8086:a131 |
-| 4   | MEI Controller | 8086:a13a |
-| **11**  | HM170 Chipset LPC/eSPI Controller | 8086:a14e |
-| **11**  | Power Management Controller | 8086:a121 |
-| **11**  | HD Audio Controller | 8086:a170 |
-| **11**  | SMBus | 8086:a123 |
-| 12  | Ethernet Connection (2) I219-LM | 8086:15b7 |
-| 13  | SD/MMC Card Reader Controller | 1217:8621 |
-| 14  | Intel Corporation Wireless 8260 | 8086:24f3 |
-| 15  | NVMe SSD Controller SM951/PM951 | 144d:a802 |
-| 16  | Intel Corporation SSD 660P Series | 8086:f1a8 |
+| IOMMU Group | Bus | Device | ID  | 
+| --- | --- | --- | --- |
+| 0   | 0x3d | Intel Corporation Iris Pro Graphics 580 | 8086:193b |
+| 2   | | Intel Gaussian Mixture Model - Neural Network Accelerator | 8086:1911 |
+| **3**   | | USB 3.0 xHCI Controller | 8086:a12f |
+| **3**   | | Thermal Subsystem | 8086:a131 |
+| 4   | | MEI Controller | 8086:a13a |
+| **11**  | | HM170 Chipset LPC/eSPI Controller | 8086:a14e |
+| **11**  | | Power Management Controller | 8086:a121 |
+| **11**  | | HD Audio Controller | 8086:a170 |
+| **11**  | 0x1f | SMBus | 8086:a123 |
+| 12  | 0x1d | Ethernet Connection I219-LM | 8086:15b7 |
+| 13  | 0x02 | SD/MMC Card Reader Controller | 1217:8621 |
+| 14  | 0x03 | Intel Corporation Wireless 8260 | 8086:24f3 |
+| 15  | 0x3d | NVMe SSD Controller SM951/PM951 | 144d:a802 |
+| 16  | 0x3e | Intel Corporation SSD 660P Series | 8086:f1a8 |
 
 ```
   <hostdev mode="subsystem" type="pci" managed="yes">
