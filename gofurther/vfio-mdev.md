@@ -2,7 +2,7 @@
 title: Virtual Function I/O Mediated devices (vfio-mdev)
 description: Create and Configure Virtual Function I/O Mediated devices (vfio-mdev)
 published: true
-date: 2025-04-01T09:12:12.326Z
+date: 2025-04-01T09:14:05.917Z
 tags: 
 editor: markdown
 dateCreated: 2022-07-21T21:10:41.046Z
@@ -30,9 +30,6 @@ List all available vGPUs types:
 
 ```
 $ mdevctl types
-```
-
-```
 0000:00:02.0
   i915-GVTg_V5_1
     Available instances: 1
@@ -61,10 +58,7 @@ In the example above, the `i915-GVTg_V5_4` virtual type seems to offer the best 
 
 ```
 $ uuidgen
-```
-
-```
-$ 7686131b-b229-4768-a02c-35d1dbed7c66
+7686131b-b229-4768-a02c-35d1dbed7c66
 ```
 
 * Start a vGPU based on the kind `i915-GVTg_V5_4` using the previously generated UUID
@@ -89,10 +83,7 @@ $ 7686131b-b229-4768-a02c-35d1dbed7c66
 
 ```
 $ mdevctl list -d
-``` 
-
-```
-$ 7686131b-b229-4768-a02c-35d1dbed7c66 0000:00:02.0 i915-GVTg_V5_4 auto (active)
+7686131b-b229-4768-a02c-35d1dbed7c66 0000:00:02.0 i915-GVTg_V5_4 auto (active)
 ```
 
 ### Remove any video device or display devices
@@ -175,6 +166,17 @@ $ 7686131b-b229-4768-a02c-35d1dbed7c66 0000:00:02.0 i915-GVTg_V5_4 auto (active)
 {.is-info}
 
 * Starts the domain
+
+### Delete a vGPU
+
+- List vGPUs
+
+```
+mdevctl list -d
+7686131b-b229-4768-a02c-35d1dbed7c66 0000:00:02.0 i915-GVTg_V5_4 auto (active)
+
+```
+
 
 ## Troubleshooting
 
