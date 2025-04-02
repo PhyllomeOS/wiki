@@ -2,7 +2,7 @@
 title: Virtual Function I/O passthrough (vfio-pci)
 description: Pass a physical device to a guest sysstem
 published: true
-date: 2025-04-02T17:16:40.166Z
+date: 2025-04-02T18:18:52.594Z
 tags: 
 editor: markdown
 dateCreated: 2025-04-01T11:18:43.924Z
@@ -158,7 +158,7 @@ IOMMU Group 3:
 | **3**   | 0x00 | 0x14 | 0x0 | USB 3.0 xHCI Controller | 8086:a12f |
 | **3**   | 0x00 | 0x14 | 0x2 | Thermal Subsystem | 8086:a131 |
 
-The two devices has to tbe shared with the guest at the same time. Edit the XML file associated to the domain and add the following:
+The two devices has to be shared with the guest at the same time. Edit the XML file associated to the domain and add the following:
 
 ```
 <domain type="kvm">
@@ -208,12 +208,6 @@ Bus 001 Device 004: ID 046d:c077 Logitech, Inc. Mouse
 Bus 001 Device 005: ID 046d:c31c Logitech, Inc. Keyboard K120
 Bus 002 Device 001: ID 1d6b:0003 Linux Foundation 3.0 root hub
 ``` 
-
-## Troubleshooting
-
-### "Please ensure all devices within the iommu_group are bound to their vfio bus driver."
-
-
 
 ---
 
