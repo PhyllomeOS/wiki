@@ -2,7 +2,7 @@
 title: Homepage
 description: 
 published: true
-date: 2025-04-02T15:18:33.690Z
+date: 2025-04-02T15:19:40.213Z
 tags: 
 editor: markdown
 dateCreated: 2021-06-19T09:29:20.593Z
@@ -28,7 +28,7 @@ In this wiki, you will find guides about [how to install](#install) and [use](#g
 
 - [Prepare the target computer](/deploy/prepare)
 - [Create an installation medium](/deploy/medium)
-- [Installation](/deploy/install)
+- [Install](/deploy/install)
 
 ## Get started
 
@@ -36,7 +36,7 @@ In this wiki, you will find guides about [how to install](#install) and [use](#g
 
 ### Unix-like
 	
-- [Install](/getstarted/install-guest) a Linux distribution using an ISO file
+- [Install a Linux distribution using an ISO file](/getstarted/install-guest) 
 - [Automatically provision](/getstarted/virt-install) a Linux distribution using a kickstart file
 
 ### Windows NT
