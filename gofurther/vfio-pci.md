@@ -2,7 +2,7 @@
 title: Virtual Function I/O passthrough (vfio-pci)
 description: Pass a physical device to a guest sysstem
 published: true
-date: 2025-04-01T18:01:48.788Z
+date: 2025-04-02T16:07:41.270Z
 tags: 
 editor: markdown
 dateCreated: 2025-04-01T11:18:43.924Z
@@ -15,12 +15,12 @@ dateCreated: 2025-04-01T11:18:43.924Z
 
 ## Preparation
 
-* [Install](/deploy/install) any version of *Phyllome OS*
+* [Install](/deploy/install) any version of Phyllome OS
 
 * Make sure the GRUB has been updated after the first boot: 
 `# grub2-mkconfig -o /boot/efi/EFI/fedora/grub.cfg`
 
-## Isolate the physical device
+## Collect information on the physical device to share
 
 * List IOMMU groups and their associated devices (script courtesy of the [Arch Linux wiki](https://wiki.archlinux.org/title/PCI_passthrough_via_OVMF#Ensuring_that_the_groups_are_valid):
 
@@ -65,58 +65,65 @@ IOMMU Group 16:
 [...]
 ```
 
-In the above example, most devices are well isolated, at the exception to  the USB controller and the HD audio controller. 
+In the above example, most devices are well isolated in their own IOMMU group, at the exception to  the USB controller and the HD audio controller. 
 
 > In general, but not always, devices associated to a particular IOMMU group have to be passed through a guest system together
 {.is-info}
 
+In our example, Phyllome OS is installed on the Intel SSD 660P NVMe SSD. This device should not be shared with a guest system.
 
-As Phyllome OS is installed on the Intel SSD 660P NVMe SSD, this device should not be shared with a guest system.
+| IOMMU Group | Bus | Slot | Function | Device | ID | 
+| --- | --- | --- | --- | --- | --- |
+| 0 | 0x00 | 0x02 | 0x0 | Intel Corporation Iris Pro Graphics 580 | 8086:193b |
+| 2 | 0x00 | 0x08 | 0x0 | Intel Gaussian Mixture Model - Neural Network Accelerator | 8086:1911 |
+| **3**   | 0x00 | 0x14 | 0x0 | USB 3.0 xHCI Controller | 8086:a12f |
+| **3**   | 0x00 | 0x14 | 0x2 | Thermal Subsystem | 8086:a131 |
+| 4  | 0x00 | 0x16 | 0x0 | MEI Controller | 8086:a13a |
+| **11** | 0x00 | 0x1f | 0x0 | M170 Chipset LPC/eSPI Controller | 8086:a14e |
+| **11** | 0x00 | 0x1f | 0x2 | Power Management Controller | 8086:a121 |
+| **11** | 0x00 | 0x1f | 0x3 | HD Audio Controller | 8086:a170 |
+| **11** | 0x00 | 0x1f | 0x4 | SMBus | 8086:a123 |
+| 12 | 0x00 | 0x1f | 0x4 | Ethernet Connection I219-LM | 8086:15b7 |
+| 13 | 0x02 | 0x00 | 0x0 | SD/MMC Card Reader Controller | 1217:8621 |
+| 14 | 0x03 | 0x00 | 0x0 | Intel Corporation Wireless 8260 | 8086:24f3 |
+| 15 | 0x3d | 0x00 | 0x0 | NVMe SSD Controller SM951/PM951 | 144d:a802 |
 
-| IOMMU Group | Bus | Device | ID  | 
-| --- | --- | --- | --- |
-| 0   | 0x3d | Intel Corporation Iris Pro Graphics 580 | 8086:193b |
-| 2   | | Intel Gaussian Mixture Model - Neural Network Accelerator | 8086:1911 |
-| **3**   | | USB 3.0 xHCI Controller | 8086:a12f |
-| **3**   | | Thermal Subsystem | 8086:a131 |
-| 4   | | MEI Controller | 8086:a13a |
-| **11**  | | HM170 Chipset LPC/eSPI Controller | 8086:a14e |
-| **11**  | | Power Management Controller | 8086:a121 |
-| **11**  | | HD Audio Controller | 8086:a170 |
-| **11**  | 0x1f | SMBus | 8086:a123 |
-| 12  | 0x1d | Ethernet Connection I219-LM | 8086:15b7 |
-| 13  | 0x02 | SD/MMC Card Reader Controller | 1217:8621 |
-| 14  | 0x03 | Intel Corporation Wireless 8260 | 8086:24f3 |
-| 15  | 0x3d | NVMe SSD Controller SM951/PM951 | 144d:a802 |
-| 16  | 0x3e | Intel Corporation SSD 660P Series | 8086:f1a8 |
+Let's focus on sharing the wireless controller, which is conveniently located on a IOMMU group of its own.
 
 ```
-  <hostdev mode="subsystem" type="pci" managed="yes">
-      <source>
-        <address domain="0x0000" bus="0x03" slot="0x00" function="0x0"/>
-      </source>
-    </hostdev>
-    <hostdev mode="subsystem" type="pci" managed="yes">
-      <source>
-        <address domain="0x0000" bus="0x02" slot="0x00" function="0x0"/>
-      </source>
-    </hostdev>
-    <hostdev mode="subsystem" type="pci" managed="yes">
-      <source>
-        <address domain="0x0000" bus="0x00" slot="0x08" function="0x0"/>
-      </source>
-    </hostdev>
-    <hostdev mode="subsystem" type="pci" managed="yes">
-      <source>
-        <address domain="0x0000" bus="0x3d" slot="0x00" function="0x0"/>
-      </source>
-    </hostdev>
+IOMMU Group 14:
+	03:00.0 Network controller [0280]: Intel Corporation Wireless 8260 [8086:24f3] (rev 3a)
 ```
 
-- Let's have a look inside the guest system that has the physical devices attached to it:
+The first digits corresponds to the bus, slot and function associated to the device.
+
+| IOMMU Group | Bus | Slot | Function | Device | ID | 
+| --- | --- | --- | --- | --- | --- |
+| 14 | 0x03 | 0x00 | 0x0 | Intel Corporation Wireless 8260 | 8086:24f3 |
+
+In order to share such wireless card with a guest, edit the XML file associated to the domain and add the following:
+
+```
+<domain type="kvm">
+[...]
+	<devices>
+[...]
+		<hostdev mode="subsystem" type="pci" managed="yes">
+  		<source>
+    		<address domain="0x0000" bus="0x00" slot="0x14" function="0x0"/>
+  		</source>
+		</hostdev>
+[...]
+	</devices>
+[...]
+</domain>
+```
+
+- Start the domain and have a look inside the guest system that has the physical devices attached to it:
 
 ```
 $ lspci
+
 00:00.0 Host bridge: Intel Corporation 82G33/G31/P35/P31 Express DRAM Controller
 00:01.0 VGA compatible controller: Red Hat, Inc. Virtio 1.0 GPU (rev 01)
 00:02.0 PCI bridge: Red Hat, Inc. QEMU PCIe Root port
@@ -127,26 +134,10 @@ $ lspci
 09:00.0 Network controller: Intel Corporation Wireless 8260 (rev 3a)
 0a:00.0 SD Host controller: O2 Micro, Inc. SD/MMC Card Reader Controller (rev 01)
 0b:00.0 PCI bridge: Red Hat, Inc. Device 000e
-0c:01.0 System peripheral: Intel Corporation Xeon E3-1200 v5/v6 / E3-1500 v5 / 6th/7th/8th Gen Core Processor Gaussian Mixture Model
-0d:00.0 Non-Volatile memory controller: Samsung Electronics Co Ltd NVMe SSD Controller SM951/PM951 (rev 01)
+09:00.0 Network controller: Intel Corporation Wireless 8260 (rev 3a)
 ``` 
 
-## Add a display device
-
-## Troubleshooting
-
-### Low number of available vGPU instances 
-
-
-
-### Not all vGPUs are marked as active
-
-
-## Resources
-
-* Official page for vfio-mdev: https://www.kernel.org/doc/html/latest/driver-api/vfio-mediated-device.html
-* Arch Linux's *must-read entry* on Intel GVT-g: https://wiki.archlinux.org/title/Intel_GVT-g
-* DMA-BUF Linux documentation: https://www.kernel.org/doc/html/latest/driver-api/dma-buf.html
+The wireless controller has been attached to bus 9 of the virtual chipset.
 
 ---
 
