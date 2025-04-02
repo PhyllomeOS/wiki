@@ -2,7 +2,7 @@
 title: Homepage
 description: 
 published: true
-date: 2025-04-02T15:22:24.036Z
+date: 2025-04-02T15:25:22.099Z
 tags: 
 editor: markdown
 dateCreated: 2021-06-19T09:29:20.593Z
@@ -33,12 +33,12 @@ In this wiki, you will find guides about [how to install](#install) and [use](#g
 
 ### Unix-like
 	
-- [Install a Linux distribution using an ISO file](/getstarted/install-guest) 
-- [Automatically provision](/getstarted/virt-install) a Linux distribution using a kickstart file
+- [Install a Linux distribution through the network](/getstarted/install-guest) 
+- [Automatically provision a Linux distribution](/getstarted/virt-install)
 
 ### Windows NT
 
-- [Install ReactOS](/getstarted/reactos)
+- [Install ReactOS manually](/getstarted/reactos)
 
 ## Go further
 
