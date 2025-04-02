@@ -2,7 +2,7 @@
 title: Homepage
 description: 
 published: true
-date: 2025-04-01T11:15:41.676Z
+date: 2025-04-02T15:18:33.690Z
 tags: 
 editor: markdown
 dateCreated: 2021-06-19T09:29:20.593Z
@@ -52,12 +52,12 @@ In this wiki, you will find guides about [how to install](#install) and [use](#g
 - [Encrypt](/gofurther/encrypt) a directory
 - [Leverage display options](/virt/vm/display)
 
-### Sharing with a guest system
+### Sharing ressources with a guest system
 
-- [Share a directory](/gofurther/virtiofs) using *virtiofs*
-- [Share an input device](/gofurther/evdev) using *evdev*
-- [Create and share](/gofurther/vfio-mdev) a virtual GPU using *vfio-mdev*
-- [Share a physical device](/gofurther/vfio-pci) using *vfio-pci* passthrough
+- [Share a directory](/gofurther/virtiofs)
+- [Share an input device](/gofurther/evdev)
+- [Share a virtual GPU](/gofurther/vfio-mdev)
+- [Share a physical device](/gofurther/vfio-pci)
 
 ## Technical references
 
