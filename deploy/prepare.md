@@ -2,7 +2,7 @@
 title: Preparation
 description: 
 published: true
-date: 2023-05-20T21:57:01.131Z
+date: 2025-04-03T18:37:19.246Z
 tags: 
 editor: markdown
 dateCreated: 2021-11-15T15:39:49.074Z
@@ -14,23 +14,23 @@ dateCreated: 2021-11-15T15:39:49.074Z
 
 ### Minimum requirements
 
-- A **[x86-64](https://en.wikipedia.org/wiki/X86-64)** computer which supports the **1st generation** of [hardware-assisted virtualization](/virt/lexicon#hardware-assisted-virtualization)
-	- For AMD-based configurations: AMD V is available and [enabled](/deploy/prepare#enable-hardware-assisted-virtualization)
-  - For Intel-based configurations: Intel VT-x [is available](https://ark.intel.com/content/www/us/en/ark/search/featurefilter.html?productType=873&2_VTX=true) and [enabled](/deploy/prepare#enable-hardware-assisted-virtualization)
+- A **[x86-64](https://en.wikipedia.org/wiki/X86-64)** computer which supports [**hardware-assisted virtualization**](/virt/lexicon#hardware-assisted-virtualization), which means:
+	- For AMD-based configurations: **AMD V** is available and [enabled](/deploy/prepare#enable-hardware-assisted-virtualization)
+  - For Intel-based configurations: **Intel VT-x** [is available](https://ark.intel.com/content/www/us/en/ark/search/featurefilter.html?productType=873&2_VTX=true) and [enabled](/deploy/prepare#enable-hardware-assisted-virtualization)
 - A **2-core** processor
 - **4 GB** of RAM
 - **10 GB** of **hard disk** storage space for Phyllome OS
 - **250 GB** of **hard disk** storage space to store guest OS disk images
 
-> Most computers sold after 2015 support hardware-assisted virtualization.
+> Most computers sold after 2015 support hardware-assisted virtualization
 {.is-info}
 
-> Desktop motherboards are often better candidates for running virtualization-oriented workloads, as laptop motherboards often ship with chipsets that do not support hardware-assisted virtualization.
+> Desktop motherboards are often better candidates for running virtualization-oriented workloads, as laptop motherboards often ship with chipsets that do not support hardware-assisted virtualization
 {.is-info}
 
 ### Recommended requirements
 
-- A **x86-64** computer that supports the **2nd gen of hardware-assisted virtualization**
+- A **x86-64** computer that supports the **2nd gen** of **hardware-assisted virtualization**
 	- For AMD-based configurations: **AMD Vi** is available and [enabled](/deploy/prepare#enable-hardware-assisted-virtualization)
   - For Intel-based configurations: **Intel VT-d** [is available](https://ark.intel.com/content/www/us/en/ark/search/featurefilter.html?productType=873&0_VTD=True) and [enabled](/deploy/prepare#enable-hardware-assisted-virtualization)
 * A **4-core** processor
@@ -39,14 +39,14 @@ dateCreated: 2021-11-15T15:39:49.074Z
 * **1 TB** of **SSD** or **NVMe** storage space to store guest OS disk images
 * **Two graphics cards** or a graphics card that supports [vfio-mdev](/gofurther/vfio-mdev) or SR-IOV
 
-> Sitting idle, Phyllome OS consumes approximately 1 CPU core and 1.5 GB of RAM. This requirement scales up with the number of running virtual machines.
+> Sitting idle, Phyllome OS consumes approximately 1 CPU core and 1.5 GB of RAM. This requirement scales up with the number of running virtual machines
 {.is-info}
 
 ## Enabling hardware-assisted virtualization
 
 Hardware-assisted virtualization is rarely turned on by default, even on computers that support it: this section explains how to enable it.
 
-### Accessing the firmware
+### Accessing the platform firmware interface on Windows
 
 Enabling hardware-assisted virtualization requires accessing the firmware configuration tool of your motherboard, better known as the BIOS or UEFI. This process differs depending on which operating system is currently installed on the computer you intend to install Phyllome OS on.
 
@@ -85,9 +85,11 @@ shutdown /fw /r
 
 * Go to the section [Modify the firmware configuration](/deploy/prepare#modify-the-firmware-configuration) to learn what to do next.
 
-#### macOS-based computers
+#### MacOS-based computers
 
-Hardware-assisted virtualization is a hit or miss on Apple computers, as there is no way to access the firmware configuration tool on these computers. Apple users can go to the [installation section](https://wiki.phyllo.me/deploy/medium) directly, create a USB stick and hope that hardware-assisted virtualization will be supported. 
+Hardware-assisted virtualization is a hit or miss on Apple computers, as there is no way to access the platform firmware interface on these computers. 
+
+Apple users can go to the [installation section](https://wiki.phyllo.me/deploy/medium) directly, create a USB stick and hope that hardware-assisted virtualization will be supported.
 
 #### Other computers
 
@@ -97,16 +99,18 @@ During the POST phase, you need to press a certain key to access the firmware co
 
 Just after pressing the <kbd>power</kbd> button, hit the right key to access the firmware configuration tool, usually <kbd>F2</kbd> or <kbd>Del</kbd>, but it may be another keystroke on your model.
 
-> *Do not hesitate to repeatedly press the pertinent key as soon has your computer has started, to make sure it is registered*
+> Do not hesitate to repeatedly press the pertinent key as soon has your computer has started, to make sure it is registered
 {.is-info}
 
 ### Modify the firmware configuration
 
 Unfortunately, most firmware configuration tool do differ, and the steps here might not be identical on your current platform. In general, the sought after features are found under the *Security* tab.
 
-For an AMD-based computer, you need to look for references to *AMD SVM*, AMD V or AMD Vi. For an Intel-based computer, you need to look for *Intel VT-x* and *Intel VT-d*. It is also possible that the feature will be referred simply to as *Virtualization*. In that case, you may not know if it actually refers to IOMMU-based hardware-assisted virtualization.
+For an AMD-based computer, you need to look for references to *AMD SVM*, AMD V or AMD Vi. For an Intel-based computer, you need to look for *Intel VT-x* and *Intel VT-d*. 
 
-Make sure you enable these options and choose to *save and exit* the configuration tool, which will reboot your computer.
+It is also possible that the feature will be referred simply to as *Virtualization*. In that case, you may not know if it actually refers to IOMMU-based or non-IOMMU-based hardware-assisted virtualization.
+
+Make sure you enable these options and choose to *save and exit*, which will reboot your computer.
 
 #### A visual walk-through for Intel-based NUC
 
@@ -129,7 +133,7 @@ Then *save and exit* the configuration tool, which will reboot your computer.
 > *While you are there, you could also change the boot order, to make sure that your computer will boot from an attached USB thumb drive first when it will be time to try out Phyllome OS.*
 {.is-info}
 
-#### Modify the boot order permanently
+### Modify the boot order permanently
 
 This section will show you how to modify the boot order permanently, so you can boot from a USB flash drive attached to your computer, a necessary step to install or use Phyllome OS as a live system. 
 
@@ -147,7 +151,7 @@ This section will show you how to modify the boot order permanently, so you can 
 
 * That's it. Save changes and exist. Note that it is advisable to revert these changes after a successful installation, or to only change the bootloader temporary.
 
-> **Failing to activate hardware-assisted virtualization** will make running virtual machines extremly **slow**, or not possible at all. If, for some reasons, it cannot be activated on your computer, for example because of a lack of hardware support, you would be better off picking a Linux distribution which doesn't require it, such as [Debian](https://www.debian.org/distrib/).
+> **Failing to enable hardware-assisted virtualization** will make running virtual machines extremly **slow**, or not possible at all. If, for some reasons, it cannot be activated on your computer, for example because of a lack of hardware support, you would be better off picking a Linux distribution which doesn't require it, such as [Debian](https://www.debian.org/distrib/)
 {.is-warning}
 
 ---
