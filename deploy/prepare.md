@@ -2,7 +2,7 @@
 title: Preparation
 description: 
 published: true
-date: 2025-04-03T18:37:19.246Z
+date: 2025-04-03T18:40:57.593Z
 tags: 
 editor: markdown
 dateCreated: 2021-11-15T15:39:49.074Z
@@ -45,6 +45,9 @@ dateCreated: 2021-11-15T15:39:49.074Z
 ## Enabling hardware-assisted virtualization
 
 Hardware-assisted virtualization is rarely turned on by default, even on computers that support it: this section explains how to enable it.
+
+> Failing to enable hardware-assisted virtualization will make running virtual machines extremly **slow**, if possible at all. If it cannot be enabled, you would be better off picking a Linux distribution which doesn't require it, such as [Debian](https://www.debian.org/distrib/) or [Fedora](https://fedoraproject.org/)
+{.is-warning}
 
 ### Accessing the platform firmware interface on Windows
 
@@ -150,9 +153,6 @@ This section will show you how to modify the boot order permanently, so you can 
 ![efi_boot-order-3.png](/assets/intel-efi/efi_boot-order-3.png)
 
 * That's it. Save changes and exist. Note that it is advisable to revert these changes after a successful installation, or to only change the bootloader temporary.
-
-> **Failing to enable hardware-assisted virtualization** will make running virtual machines extremly **slow**, or not possible at all. If, for some reasons, it cannot be activated on your computer, for example because of a lack of hardware support, you would be better off picking a Linux distribution which doesn't require it, such as [Debian](https://www.debian.org/distrib/)
-{.is-warning}
 
 ---
 
