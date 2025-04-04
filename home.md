@@ -2,7 +2,7 @@
 title: Homepage
 description: 
 published: true
-date: 2025-04-02T18:28:51.894Z
+date: 2025-04-04T17:09:26.507Z
 tags: 
 editor: markdown
 dateCreated: 2021-06-19T09:29:20.593Z
@@ -10,7 +10,7 @@ dateCreated: 2021-06-19T09:29:20.593Z
 
 # The Phyllome OS wiki
 
-> *Phyllome[^1] OS is an operating system that makes it easier to run [various operating systems](#go-further) locally using [off-the-shelf hardware](/deploy/prepare) and [virtualization](/virt/lexicon#virtualization) technologies.*
+> *Phyllome[^1] OS is an operating system that makes it easier to run [various operating systems](#go-further) locally using [off-the-shelf hardware](/deploy/prepare) and [virtualization](/virt/lexicon#virtualization) technologies*
 {.is-info}
 
 In this wiki, you will find guides about [how to install](#install) and [use](#get-started) Phyllome OS, as well as information on the [underlying technologies](#references), Phyllome OS [itself](#about-phyllome-os) and the surrounding [project](#about-the-project).
