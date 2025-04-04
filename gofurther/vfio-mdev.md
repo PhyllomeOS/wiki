@@ -2,7 +2,7 @@
 title: Virtual Function I/O Mediated devices (vfio-mdev)
 description: Create and Configure Virtual Function I/O Mediated devices (vfio-mdev)
 published: true
-date: 2025-04-04T07:40:18.206Z
+date: 2025-04-04T11:30:02.034Z
 tags: 
 editor: markdown
 dateCreated: 2022-07-21T21:10:41.046Z
@@ -16,7 +16,7 @@ Contrary to paravirtualized GPUs (e.g. *virtio-gpu*), vGPUs can use the same dri
 
 ## Preparation
 
-> These instructions only cover **Intel GPUs** that are compatible with *vfio-mdev* (5th to 10th generation), [Intel GVT-g](https://github.com/intel/gvt-linux/wiki/GVTg_Setup_Guide), in Intel's lingo. Since generation 11th, *vfio-mdev* has been superseded by *SR-IOV*
+> Although these instructions only cover **Intel GPUs** compatible with *vfio-mdev* (5th to 10th generation), [Intel GVT-g](https://github.com/intel/gvt-linux/wiki/GVTg_Setup_Guide), in Intel's lingo, it might work similarly with compatible Nvidia or AMD GPUs. On Intel GPUs, since generation 11th, *vfio-mdev* has been superseded by *SR-IOV*
 {.is-info}
 
 * [Install](/deploy/install) the *Phyllome OS Desktop II*
