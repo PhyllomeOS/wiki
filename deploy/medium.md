@@ -2,7 +2,7 @@
 title: Phyllome OS meets a thumb drive
 description: 
 published: true
-date: 2021-11-23T20:30:10.268Z
+date: 2025-04-04T17:04:59.476Z
 tags: 
 editor: markdown
 dateCreated: 2021-11-13T11:34:07.852Z
@@ -12,7 +12,7 @@ dateCreated: 2021-11-13T11:34:07.852Z
 
 *In this section, you will learn how to create a bootable USB medium that will allow you to install Phyllome on your computer.*
 
-> As it is not yet possible to install Phyllome OS from the live image., intent to install Phyllome OS permanently on your computer, you need to use a [Fedora Server ISO instead](https://getfedora.org/en/server/). The steps below are made to be generic, and should be valid regardless of the ISO you use
+> As it is not yet possible to install Phyllome OS from the live image., intent to install Phyllome OS permanently on your computer, you need to use a [Fedora Everything ISO instead](https://fedoraproject.org/everything/download/)
 {.is-info}
 
 ## Load the ISO on a USB flash drive 
@@ -37,7 +37,7 @@ dd bs=4MB if=~/Downloads/Fedora-Server-dvd-x86_64-38-1.6 of=/dev/sdz
 
 ### Manual instructions (Cross-platform)
 
-The instructions are designed with Etcher in mind. Other tools such as [Rufus](https://rufus.ie/en/), [Unetbootin](https://unetbootin.github.io/) or [Ventoy](https://www.ventoy.net/en/index.html) are likely to work too.  
+The instructions are designed with [Etcher](https://etcher.balena.io/) in mind. Other tools such as [Rufus](https://rufus.ie/en/), [Unetbootin](https://unetbootin.github.io/) or [Ventoy](https://www.ventoy.net/en/index.html) are likely to work too.  
 
 > Etcher is an open-source, cross platform tool for flashing images to a target medium. It is developed and made available by [balena](https://www.balena.io/)
 {.is-info}
