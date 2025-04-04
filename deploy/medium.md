@@ -2,7 +2,7 @@
 title: Phyllome OS meets a thumb drive
 description: 
 published: true
-date: 2025-04-04T17:04:59.476Z
+date: 2025-04-04T17:06:40.871Z
 tags: 
 editor: markdown
 dateCreated: 2021-11-13T11:34:07.852Z
@@ -32,7 +32,7 @@ The next command, which requires root privileges, assumes that the ISO file is a
 {.is-danger}
 
 ```
-dd bs=4MB if=~/Downloads/Fedora-Server-dvd-x86_64-38-1.6 of=/dev/sdz
+dd bs=4MB if=./Fedora-Everything-netinst-x86_64-41-1.4 of=/dev/sdz
 ```
 
 ### Manual instructions (Cross-platform)
