@@ -2,7 +2,7 @@
 title: Install Phyllome OS
 description: 
 published: true
-date: 2023-05-29T18:20:59.583Z
+date: 2025-04-04T17:08:47.176Z
 tags: 
 editor: markdown
 dateCreated: 2021-11-14T16:19:00.348Z
@@ -28,7 +28,7 @@ Installing Phyllome OS involves booting from a [bootable USB flash drive](/deplo
 
 ## Choose your edition
 
-|  | GPU-agnostic | Intel GPUs (5th to 9th gen)[^2] |
+|  | GPU-agnostic | Intel GPUs (5th to 9th gen *only*)[^2] |
 |---|---|---|
 | *Intel CPU* | **Phyllome OS Desktop I** | **Phyllome OS Desktop II** | 
 | *AMD CPU* | **Phyllome OS Desktop A** | N/A  |
@@ -51,7 +51,7 @@ The following section illustrates how to change the boot order *temporarily*. Th
 
 ![kickstart-1](/assets/grub-kickstart/kickstart-1.png)
 
-## Boot into the automated install process
+## Boot into the automated installation process
 
 One needs to alter the GRUB instructions in order to trigger the automated installation. 
 
@@ -135,12 +135,12 @@ One needs to alter the GRUB instructions in order to trigger the automated insta
 
 ![first-launch-9.png](/assets/first-launch/first-launch-9.png)
 
-> *Congratulations, you are done!*
+> Congratulations, you are done!
 {.is-success}
 
 ![first-launch-10.png](/assets/first-launch/first-launch-10.png)
 
-> Don't forget to remove the USB flash drive from your computer, so that next time your computer will boot, it will use the internal disk where Phyllome OS has been deployed.
+> Don't forget to remove the USB flash drive from your computer, so that next time your computer will boot, it will use the internal disk where Phyllome OS has been deployed
 {.is-info}
 
 ---
