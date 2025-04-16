@@ -2,13 +2,16 @@
 title: Preparation
 description: 
 published: true
-date: 2025-04-03T18:40:57.593Z
+date: 2025-04-16T19:06:44.908Z
 tags: 
 editor: markdown
 dateCreated: 2021-11-15T15:39:49.074Z
 ---
 
 # Prepare the host computer
+
+> Phyllome OS is in alpha stage of development. Expect bugs and disappointment
+{.is-warning}
 
 ## Prerequisites
 
