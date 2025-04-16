@@ -2,7 +2,7 @@
 title: Homepage
 description: 
 published: true
-date: 2025-04-04T17:09:26.507Z
+date: 2025-04-16T19:05:35.147Z
 tags: 
 editor: markdown
 dateCreated: 2021-06-19T09:29:20.593Z
@@ -46,7 +46,6 @@ In this wiki, you will find guides about [how to install](#install) and [use](#g
 
 *Go further with Phyllome OS*
 
-- [Use Phyllome OS as a live system](/gofurther/live)
 - [Resize](/gofurther/resize) a virtual disk
 - [Encrypt](/gofurther/encrypt) a directory
 - [Leverage display options](/virt/vm/display)
