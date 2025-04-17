@@ -2,7 +2,7 @@
 title: Install Phyllome OS
 description: 
 published: true
-date: 2025-04-16T19:09:06.652Z
+date: 2025-04-17T21:13:46.882Z
 tags: 
 editor: markdown
 dateCreated: 2021-11-14T16:19:00.348Z
@@ -21,21 +21,20 @@ Installing Phyllome OS involves booting from a [bootable USB flash drive](/deplo
 	   * *If you don't have a USB flash drive ready to use, please go back to [the last section](/deploy/medium)*
   * **A wired Internet connection**
   	 * *Many files will be fetched online during the installation process*
-	 * *Wireless is not supported*  
+	 * *Wireless connections are not supported*  
   * **A storage device**
   	* *The kickstart file will look for a storage device and install Phyllome OS on it. If there is no disk available, the installation will fail* 
 
 ## Choose your edition
 
-> *Phyllome[^1] OS is an operating system that makes it easier to run [various operating systems](#go-further) locally using [off-the-shelf hardware](/deploy/prepare) and [virtualization](/virt/lexicon#virtualization) technologies*
+> *Phyllome[^1] OS is an operating system that makes it easier to run [various operating systems](#go-further) locally using [off-the-shelf hardware](/deploy/prepare) and [virtualization](/virt/lexicon#virtualization) software*
 {.is-info}
-
 
 |  | GPU-agnostic | Intel GPUs (5th to 9th gen *only*)[^2] |
 |---|---|---|
-| *Intel CPU* | **Phyllome OS Desktop I** | **Phyllome OS Desktop II** | 
-| *AMD CPU* | **Phyllome OS Desktop A** | N/A  |
-| CPU-agnostic | **Phyllome OS Desktop** | N/A  |
+| CPU-agnostic | **Phyllome OS** | N/A  |
+| Intel:tm: CPU edition | **Phyllome OS I** | **Phyllome OS II** | 
+| AMD:tm: CPU edition | **Phyllome OS A** | N/A  |
 
 [^2]: Only [Broadwell-based SoC](https://en.wikipedia.org/wiki/Broadwell_(microarchitecture)) (5th generation) to [Cascade Lake-based SoC](https://en.wikipedia.org/wiki/Cascade_Lake_(microarchitecture)) (9th generation) are supported. If you possess a more recent SoC from Intel, for instance one based on the Tiger Lake SoC, please pick Phyllome OS Desktop I or Phyllome OS Desktop A instead.
 
