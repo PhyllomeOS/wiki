@@ -2,7 +2,7 @@
 title: Install Phyllome OS
 description: 
 published: true
-date: 2025-04-17T22:01:45.237Z
+date: 2025-04-17T22:04:06.098Z
 tags: 
 editor: markdown
 dateCreated: 2021-11-14T16:19:00.348Z
@@ -39,8 +39,6 @@ Phyllome OS comes in many flavors. Pick your flavor based on the hardware you wi
 | **Phyllome OS Desktop Edition for Intel:tm: CPUs** | PODEIC | IOMMU and nested virtualization on Intel CPUs | ks.phyllo.me/di |
 | **Phyllome OS Desktop Edition for Intel:tm: CPUs and GPUs** | POSEICG | IOMMU and nested virtualization on Intel CPUs & Intel GVT-g for Intel GPUs (from 5th to 9th gen *only*) | ks.phyllo.me/dii | 
 | **Phyllome OS Desktop Edition for AMD:tm: CPUs** | PODEAC | IOMMU and nested virtualization on AMD CPUs |  ks.phyllo.me/da |
-
-### Other flavors
 
 ## Boot from the USB flash drive
 
