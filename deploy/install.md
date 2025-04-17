@@ -2,7 +2,7 @@
 title: Install Phyllome OS
 description: 
 published: true
-date: 2025-04-17T21:50:54.142Z
+date: 2025-04-17T21:52:13.627Z
 tags: 
 editor: markdown
 dateCreated: 2021-11-14T16:19:00.348Z
@@ -36,9 +36,9 @@ Phyllome OS comes in many flavors. Pick your flavor based on the hardware you wi
 | Edition | Shorthand | Features | Kickstart URL | Shortened URL |
 |---|---|---|
 | **Phyllome OS Desktop Edition** | PODE | Default edition. Compatible with x86-64 CPU and GPU agnostic. IOMMU support for AMD CPUs |
-| **Phyllome OS Desktop Edition for Intel CPUs** | PODEI | IOMMU and nested virtualization on Intel CPUs | 
+| **Phyllome OS Desktop Edition for Intel CPUs** | PODEIC | IOMMU and nested virtualization on Intel CPUs | 
 | **Phyllome OS Desktop Edition for Intel CPUs and GPUs** | POSEICG | IOMMU and nested virtualization on Intel CPUs & Intel GVT-g for Intel GPUs (from 5th to 9th gen *only*) | 
-| **Phyllome OS Desktop Edition for AMD:tm: CPUs** | PODEA | IOMMU and nested virtualization on AMD CPUs |  |
+| **Phyllome OS Desktop Edition for AMD:tm: CPUs** | PODEAC | IOMMU and nested virtualization on AMD CPUs |  |
 
 ### Other flavors
 
