@@ -2,7 +2,7 @@
 title: Phyllome OS meets a thumb drive
 description: 
 published: true
-date: 2025-04-04T17:06:40.871Z
+date: 2025-04-17T21:00:42.515Z
 tags: 
 editor: markdown
 dateCreated: 2021-11-13T11:34:07.852Z
@@ -10,29 +10,24 @@ dateCreated: 2021-11-13T11:34:07.852Z
 
 # Create a bootable USB flash drive
 
-*In this section, you will learn how to create a bootable USB medium that will allow you to install Phyllome on your computer.*
+*In this section, you will learn how to create a bootable USB flash drive that will allow you to deploy Phyllome on a target computer.*
 
-> As it is not yet possible to install Phyllome OS from the live image., intent to install Phyllome OS permanently on your computer, you need to use a [Fedora Everything ISO instead](https://fedoraproject.org/everything/download/)
-{.is-info}
+## Requirements
 
-## Load the ISO on a USB flash drive 
+- A fast USB 3.0 flash drive of at least 10 GB
+- A local copy of the [Fedora Everything](https://fedoraproject.org/everything/download/) ISO file
 
-The following instructions may have to be adapted depending on the operating system that you are currently using.
+### Command-line instructions for Unix systems
 
-* *General requirements*
-    * A fast USB 3.0 flash drive of at least 10 GB
+- Plug the USB 3.0 flash drive in your computer.
 
-### Command-line instructions (Linux-only)
+- Then adapt that command, which assumes that the Fedora Everything ISO file is available in the current folder and that the target device is called `sdz`. Use `lsblk` to identify it.
 
-This method uses the `dd` command line tool.
-
-The next command, which requires root privileges, assumes that the ISO file is available in the *Downloads* folder and that the target medium is called `sdz`. You can identify the correct target device using the `lsblk` command line tool. Modify the command according to your context. 
-
-> **Warning:** This command will **destroy** any data on the target device
+> This command will **destroy** any data on the target device
 {.is-danger}
 
 ```
-dd bs=4MB if=./Fedora-Everything-netinst-x86_64-41-1.4 of=/dev/sdz
+# dd bs=4MB if=./Fedora-Everything-netinst-x86_64-41-1.4 of=/dev/sdz
 ```
 
 ### Manual instructions (Cross-platform)
@@ -61,7 +56,7 @@ Follow the normal procedure to install an application on your computer.
 
 ![capture-balenaetcher-1.png](/assets/balena-etcher/capture-balenaetcher-1.png)
 
-* Browse where the ISO is stored and select *Open*
+* Browse where the Fedora Everything ISO is stored and select *Open*
 
 ![capture-balenaetcher-2.png](/assets/balena-etcher/capture-balenaetcher-2.png)
 
@@ -71,7 +66,7 @@ Follow the normal procedure to install an application on your computer.
 
 * Select *Flash* when you are ready.
 
-> **Warning:** clicking *Flash* will **destroy** any data on the target device
+> Clicking *Flash* will **destroy** any data on the target device
 {.is-danger}
 
 > A prompt might appear, asking for your password or a confirmation
