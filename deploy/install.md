@@ -2,7 +2,7 @@
 title: Install Phyllome OS
 description: 
 published: true
-date: 2025-04-17T21:52:13.627Z
+date: 2025-04-17T22:01:45.237Z
 tags: 
 editor: markdown
 dateCreated: 2021-11-14T16:19:00.348Z
@@ -33,12 +33,12 @@ Phyllome[^1] OS is an operating system that makes it easier to run [various oper
 
 Phyllome OS comes in many flavors. Pick your flavor based on the hardware you wish to deploy Phyllome on.
 
-| Edition | Shorthand | Features | Kickstart URL | Shortened URL |
+| Edition | Shorthand | Features |  Shortened URL |
 |---|---|---|
-| **Phyllome OS Desktop Edition** | PODE | Default edition. Compatible with x86-64 CPU and GPU agnostic. IOMMU support for AMD CPUs |
-| **Phyllome OS Desktop Edition for Intel CPUs** | PODEIC | IOMMU and nested virtualization on Intel CPUs | 
-| **Phyllome OS Desktop Edition for Intel CPUs and GPUs** | POSEICG | IOMMU and nested virtualization on Intel CPUs & Intel GVT-g for Intel GPUs (from 5th to 9th gen *only*) | 
-| **Phyllome OS Desktop Edition for AMD:tm: CPUs** | PODEAC | IOMMU and nested virtualization on AMD CPUs |  |
+| **Phyllome OS Desktop Edition** | PODE | Default edition. Compatible with x86-64 CPU. GPU agnostic. IOMMU support for AMD CPUs | ks.phyllo.me/d |
+| **Phyllome OS Desktop Edition for Intel:tm: CPUs** | PODEIC | IOMMU and nested virtualization on Intel CPUs | ks.phyllo.me/di |
+| **Phyllome OS Desktop Edition for Intel:tm: CPUs and GPUs** | POSEICG | IOMMU and nested virtualization on Intel CPUs & Intel GVT-g for Intel GPUs (from 5th to 9th gen *only*) | ks.phyllo.me/dii | 
+| **Phyllome OS Desktop Edition for AMD:tm: CPUs** | PODEAC | IOMMU and nested virtualization on AMD CPUs |  ks.phyllo.me/da |
 
 ### Other flavors
 
@@ -76,15 +76,6 @@ One needs to alter the GRUB instructions in order to trigger the automated insta
 
 > GRUB defaults to the US keyboard layout. Have a look at [this online resource](https://en.wikipedia.org/wiki/QWERTY#/media/File:KB_United_States.svg) to find the corresponding keys if you are not using a US keyboard layout
 {.is-info}
-
-* Write-down the URL associated to the edition you picked
-
-|  | Edition | Kickstart URL |
-|---|---|---|
-| *CPU and GPU agnostic* | **Phyllome OS Desktop** | [ks.phyllo.me/d](https://ks.phyllo.me/d) |
-| *Intel CPU* | **Phyllome OS Desktop I** | [ks.phyllo.me/di](https://ks.phyllo.me/di) | 
-| *AMD CPU* | **Phyllome OS Desktop A** | [ks.phyllo.me/da](https://ks.phyllo.me/da) |
-| *Intel CPU and GPU* | **Phyllome OS Desktop II** | [ks.phyllo.me/dii](https://ks.phyllo.me/dii) |
 
 > **Danger Zone**: the following instruction will trigger a process that will automatically **destroy** any data located on the internal disk present in your computer *without* asking for a confirmation*
 {.is-danger}
