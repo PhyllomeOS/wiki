@@ -2,7 +2,7 @@
 title: Install Phyllome OS
 description: 
 published: true
-date: 2025-04-17T21:49:56.490Z
+date: 2025-04-17T21:50:54.142Z
 tags: 
 editor: markdown
 dateCreated: 2021-11-14T16:19:00.348Z
@@ -37,14 +37,10 @@ Phyllome OS comes in many flavors. Pick your flavor based on the hardware you wi
 |---|---|---|
 | **Phyllome OS Desktop Edition** | PODE | Default edition. Compatible with x86-64 CPU and GPU agnostic. IOMMU support for AMD CPUs |
 | **Phyllome OS Desktop Edition for Intel CPUs** | PODEI | IOMMU and nested virtualization on Intel CPUs | 
-| **Phyllome OS Desktop Edition for Intel CPUs and GPUs (from 5th to 9th gen *only*)** | POSEICG | IOMMU and nested virtualization on Intel CPUs & Intel GVT-g for Intel GPUs | 
+| **Phyllome OS Desktop Edition for Intel CPUs and GPUs** | POSEICG | IOMMU and nested virtualization on Intel CPUs & Intel GVT-g for Intel GPUs (from 5th to 9th gen *only*) | 
 | **Phyllome OS Desktop Edition for AMD:tm: CPUs** | PODEA | IOMMU and nested virtualization on AMD CPUs |  |
 
 ### Other flavors
-
-
-
-[^2]: Only [Broadwell-based SoC](https://en.wikipedia.org/wiki/Broadwell_(microarchitecture)) (5th generation) to [Cascade Lake-based SoC](https://en.wikipedia.org/wiki/Cascade_Lake_(microarchitecture)) (9th generation) are supported. If you possess a more recent SoC from Intel, for instance one based on the Tiger Lake SoC, please pick Phyllome OS Desktop I or Phyllome OS Desktop A instead.
 
 ## Boot from the USB flash drive
 
