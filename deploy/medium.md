@@ -2,7 +2,7 @@
 title: Phyllome OS meets a thumb drive
 description: 
 published: true
-date: 2025-04-17T21:00:42.515Z
+date: 2025-04-17T21:01:10.694Z
 tags: 
 editor: markdown
 dateCreated: 2021-11-13T11:34:07.852Z
@@ -23,7 +23,7 @@ dateCreated: 2021-11-13T11:34:07.852Z
 
 - Then adapt that command, which assumes that the Fedora Everything ISO file is available in the current folder and that the target device is called `sdz`. Use `lsblk` to identify it.
 
-> This command will **destroy** any data on the target device
+> This command will **destroy** any data on the target device `sdz`
 {.is-danger}
 
 ```
