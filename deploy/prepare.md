@@ -2,7 +2,7 @@
 title: Preparation
 description: 
 published: true
-date: 2025-04-16T19:06:44.908Z
+date: 2025-04-18T23:07:13.554Z
 tags: 
 editor: markdown
 dateCreated: 2021-11-15T15:39:49.074Z
@@ -14,6 +14,20 @@ dateCreated: 2021-11-15T15:39:49.074Z
 {.is-warning}
 
 ## Prerequisites
+
+- **A USB flash drive**
+  - *Instructions available in [the next section](/deploy/medium)*
+- **A wired Internet connection**
+  - *Files will be fetched online during the installation process*
+  - *Wireless connections are not supported*  
+- **A computer with a storage device**, see requirements below
+- **A kickstart description of a Phyllome OS installation**, available as an Internet-accessible file
+	- Phyllome OS is automatically deployed based on a kickstart file 
+
+> [The kickstart installation method](https://pykickstart.readthedocs.io/en/latest/kickstart-docs.html#chapter-1-introduction) provides a way to configure and automate the installation of most [RPM-based distributions](https://en.wikipedia.org/wiki/Category:RPM-based_Linux_distributions), including [the official Fedora distributions](https://pagure.io/fedora-kickstarts) as well as Fedora Remixes like Phyllome OS
+{.is-info}
+
+## The Phyllome OS computer host
 
 ### Minimum requirements
 
@@ -28,9 +42,6 @@ dateCreated: 2021-11-15T15:39:49.074Z
 > Most computers sold after 2015 support hardware-assisted virtualization
 {.is-info}
 
-> Desktop motherboards are often better candidates for running virtualization-oriented workloads, as laptop motherboards often ship with chipsets that do not support hardware-assisted virtualization
-{.is-info}
-
 ### Recommended requirements
 
 - A **x86-64** computer that supports the **2nd gen** of **hardware-assisted virtualization**
@@ -42,14 +53,11 @@ dateCreated: 2021-11-15T15:39:49.074Z
 * **1 TB** of **SSD** or **NVMe** storage space to store guest OS disk images
 * **Two graphics cards** or a graphics card that supports [vfio-mdev](/gofurther/vfio-mdev) or SR-IOV
 
-> Sitting idle, Phyllome OS consumes approximately 1 CPU core and 1.5 GB of RAM. This requirement scales up with the number of running virtual machines
-{.is-info}
-
 ## Enabling hardware-assisted virtualization
 
 Hardware-assisted virtualization is rarely turned on by default, even on computers that support it: this section explains how to enable it.
 
-> Failing to enable hardware-assisted virtualization will make running virtual machines extremly **slow**, if possible at all. If it cannot be enabled, you would be better off picking a Linux distribution which doesn't require it, such as [Debian](https://www.debian.org/distrib/) or [Fedora](https://fedoraproject.org/)
+> Failure to enable hardware-assisted virtualization will make running virtual machines extremly **slow**, if possible at all. If it cannot be enabled, you would be better off picking a Linux distribution which doesn't require it, such as [Debian](https://www.debian.org/distrib/) or [Fedora](https://fedoraproject.org/)
 {.is-warning}
 
 ### Accessing the platform firmware interface on Windows
