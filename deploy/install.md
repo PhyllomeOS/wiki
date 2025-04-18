@@ -2,7 +2,7 @@
 title: Install Phyllome OS
 description: 
 published: true
-date: 2025-04-18T23:07:36.872Z
+date: 2025-04-18T23:09:19.924Z
 tags: 
 editor: markdown
 dateCreated: 2021-11-14T16:19:00.348Z
@@ -32,7 +32,7 @@ The shortened URL points to the full description of the edition in a kickstart f
 | **Phyllome OS Desktop Edition for Intel:tm: CPUs and GPUs** | *PODE-ICG* | IOMMU and nested virtualization on Intel CPUs & Intel GVT-g for Intel GPUs (from 5th to 9th gen *only*) | ks.phyllo.me/dii | 
 | **Phyllome OS Desktop Edition for AMD:tm: CPUs** | PODE-AC | IOMMU and nested virtualization on AMD CPUs |  ks.phyllo.me/da |
 
-> If you wish to learn more about how kickstart files are used to create Phyllome OS, please have a look at [the official git repository](https://git.phyllo.me/roots/phyllomeos).
+> If you wish to learn more about how kickstart files are used to create Phyllome OS, please have a look at [the official git repository](https://git.phyllo.me/roots/phyllomeos)
 {.is-info}
 
 ## Boot from the USB flash drive
