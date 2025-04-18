@@ -2,7 +2,7 @@
 title: Homepage
 description: 
 published: true
-date: 2025-04-16T19:09:15.188Z
+date: 2025-04-18T13:57:44.878Z
 tags: 
 editor: markdown
 dateCreated: 2021-06-19T09:29:20.593Z
@@ -22,16 +22,18 @@ In this wiki, you will find guides about [how to install](#install) and [use](#g
 
 ## Get started
 
-*How to deploy your favorite operating systems inside Phyllome OS*
+*How to use Phyllome OS and deploy your favorite operating system inside Phyllome OS*
 
-### Unix-like
+- [First setup and beyond](/getstarted/firstsetup)
+
+### Guests
 	
-- [Install a Linux distribution through the network](/getstarted/install-guest) 
-- [Automatically provision a Linux distribution](/getstarted/virt-install)
+- **Linux**:tm:  
+	- [Install a Linux distribution through the network](/getstarted/install-guest) 
+	- [Automatically provision a Linux distribution](/getstarted/virt-install)
 
-### Windows NT
-
-- [Install ReactOS manually](/getstarted/reactos)
+- **Windows**:tm:
+	- [Install ReactOS manually](/getstarted/reactos)
 
 ## Go further
 
@@ -41,7 +43,7 @@ In this wiki, you will find guides about [how to install](#install) and [use](#g
 - [Encrypt](/gofurther/encrypt) a directory
 - [Leverage display options](/virt/vm/display)
 
-### Sharing ressources with a guest system
+### Sharing resources with a guest system
 
 - [Share a directory](/gofurther/virtiofs)
 - [Share an input device](/gofurther/evdev)
