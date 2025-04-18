@@ -2,7 +2,7 @@
 title: Install Phyllome OS
 description: 
 published: true
-date: 2025-04-18T23:09:19.924Z
+date: 2025-04-18T23:09:36.538Z
 tags: 
 editor: markdown
 dateCreated: 2021-11-14T16:19:00.348Z
@@ -88,4 +88,4 @@ One needs to alter the GRUB instructions in order to trigger the automated insta
 
 ---
 
-*[**You are ready to get started**](https://wiki.phyllo.me/#get-started)*
+*[**You are ready to get started !**](https://wiki.phyllo.me/#get-started)*
