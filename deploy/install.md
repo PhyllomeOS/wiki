@@ -2,13 +2,16 @@
 title: Install Phyllome OS
 description: 
 published: true
-date: 2025-04-18T14:03:59.311Z
+date: 2025-04-18T22:44:03.271Z
 tags: 
 editor: markdown
 dateCreated: 2021-11-14T16:19:00.348Z
 ---
 
 # Install Phyllome OS
+
+> Phyllome[^1] OS is an operating system that makes it easier to run [various operating systems](#go-further) locally using [off-the-shelf hardware](/deploy/prepare) and [virtualization](/virt/lexicon#virtualization) software.
+{.is-info}
 
 [^1]: According to [the Wiktionary](https://en.wiktionary.org/wiki/phyllome), Phyllome refers to the "foliar part of a plant; any organ homologous with a leaf, or [any organ] produced by metamorphosis of a leaf"
 
@@ -27,8 +30,6 @@ Installing Phyllome OS involves booting from a [bootable USB flash drive](/deplo
 
 ## Pick your flavor
 
-Phyllome[^1] OS is an operating system that makes it easier to run [various operating systems](#go-further) locally using [off-the-shelf hardware](/deploy/prepare) and [virtualization](/virt/lexicon#virtualization) software.
-
 ### Main flavors
 
 Phyllome OS comes in many flavors. Pick your flavor based on the hardware you wish to deploy Phyllome on. 
@@ -38,9 +39,12 @@ The shortened URL points to the full description of the edition in a kickstart f
 | Edition | Shorthand | Features |  Shortened URL |
 |---|---|---|---|
 | **Phyllome OS Desktop Edition** | *PODE* | Default edition. Compatible with x86-64 CPU. GPU agnostic. IOMMU support for AMD CPUs | ks.phyllo.me/d |
-| **Phyllome OS Desktop Edition for Intel:tm: CPUs** | *PODEIC* | IOMMU and nested virtualization for Intel CPUs | ks.phyllo.me/di |
-| **Phyllome OS Desktop Edition for Intel:tm: CPUs and GPUs** | *PODEICG* | IOMMU and nested virtualization on Intel CPUs & Intel GVT-g for Intel GPUs (from 5th to 9th gen *only*) | ks.phyllo.me/dii | 
-| **Phyllome OS Desktop Edition for AMD:tm: CPUs** | PODEAC | IOMMU and nested virtualization on AMD CPUs |  ks.phyllo.me/da |
+| **Phyllome OS Desktop Edition for Intel:tm: CPUs** | *PODE-IC* | IOMMU and nested virtualization for Intel CPUs | ks.phyllo.me/di |
+| **Phyllome OS Desktop Edition for Intel:tm: CPUs and GPUs** | *PODE-ICG* | IOMMU and nested virtualization on Intel CPUs & Intel GVT-g for Intel GPUs (from 5th to 9th gen *only*) | ks.phyllo.me/dii | 
+| **Phyllome OS Desktop Edition for AMD:tm: CPUs** | PODE-AC | IOMMU and nested virtualization on AMD CPUs |  ks.phyllo.me/da |
+
+> If you wish to learn more about how kickstart files are used to create Phyllome OS, please have a look at [the official git repository](https://git.phyllo.me/roots/phyllomeos).
+{.is-info}
 
 ## Boot from the USB flash drive
 
@@ -89,55 +93,6 @@ One needs to alter the GRUB instructions in order to trigger the automated insta
 ![kickstart-4](/assets/grub-kickstart/kickstart-5.png)
 
 * After a few minutes, the computer will power off
-
-you should be greeted with a welcome screen.
-
-![kickstart-5](/assets/grub-kickstart/kickstart-6.png)
-
-> If you wish to learn more about how kickstart files are used to create Phyllome OS, please have a look at [the official git repository](https://github.com/PhyllomeOS/phyllomeos).
-{.is-info}
-
-## First-launch
-
-* **Welcome screen**: on first-launch, for the *Desktop edition*, you will be greeted with the GNOME Welcome Screen. As of now, only English is available out of the box. Click *Next* when you are ready.  
-
-![first-launch-1.png](/assets/first-launch/first-launch-1.png)
-
-* **Keyboard layout**: you can select your favorite keyboard layout by clicking on the three stacked vertical dots at the bottom of the screen.
-
-> By default, Phyllome OS is set to use the *fr-CH* keyboard layout. This keyboard layout is used by people living in [Romandy](https://en.wikipedia.org/wiki/Romandy), Switzerland, which is also where the original author of Phyllome OS is from.
-{.is-info}
-
-![first-launch-2.png](/assets/first-launch/first-launch-2.png)
-
-* **Time zone**: you can pick your current location by clicking on the map or writing it down inside the box. The time will be adjusted according to the provided location.
-
-![first-launch-3.png](/assets/first-launch/first-launch-3.png)
-
-* **Online Accounts**: Phyllome OS strongly discourages the use of *Online Accounts*, and therefore provides no option here. Click on *Skip* to go to the next screen.
-
-![first-launch-4.png](/assets/first-launch/first-launch-4.png)
-
-* **Create a user account**: you are invited to create a user account, which by default will be granted administrator or root privileges. Click on *Next* when you are done.
-
-![first-launch-5.png](/assets/first-launch/first-launch-5.png)
-
-* **Provide a password**: please do provide a strong password. In case you ever forget it, write it down on a piece of paper and store it somewhere safe, or/and rely on an online password manager like [Bitwarden](https://bitwarden.com/). Click on *Next* when you are done.
-
-![first-launch-6.png](/assets/first-launch/first-launch-6.png)
-
-* **Setup complete**: Click on start *Start Using Generic*. 
-
-![first-launch-7.png](/assets/first-launch/first-launch-7.png)
-
-* **Provide password**: The Virtual Machine Manager is set to auto-launch, and requires elevated permission. Please provide the user password you just set up and click on *Authenticate* to start using Phyllome OS. 
-
-![first-launch-9.png](/assets/first-launch/first-launch-9.png)
-
-> Congratulations, you are done!
-{.is-success}
-
-![first-launch-10.png](/assets/first-launch/first-launch-10.png)
 
 > Don't forget to remove the USB flash drive from your computer, so that next time your computer will boot, it will use the internal disk where Phyllome OS has been deployed
 {.is-info}
