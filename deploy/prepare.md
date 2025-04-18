@@ -2,7 +2,7 @@
 title: Preparation
 description: 
 published: true
-date: 2025-04-18T23:07:13.554Z
+date: 2025-04-18T23:08:42.017Z
 tags: 
 editor: markdown
 dateCreated: 2021-11-15T15:39:49.074Z
@@ -12,6 +12,11 @@ dateCreated: 2021-11-15T15:39:49.074Z
 
 > Phyllome OS is in alpha stage of development. Expect bugs and disappointment
 {.is-warning}
+
+Installing Phyllome OS involves booting from a [bootable USB flash drive](/deploy/medium) and fetching an online kickstart file, which contains instructions to automatically deploy Phyllome OS.
+
+> [The kickstart installation method](https://pykickstart.readthedocs.io/en/latest/kickstart-docs.html#chapter-1-introduction) provides a way to configure and automate the installation of most [RPM-based distributions](https://en.wikipedia.org/wiki/Category:RPM-based_Linux_distributions), including [the official Fedora distributions](https://pagure.io/fedora-kickstarts) as well as Fedora Remixes like Phyllome OS
+{.is-info}
 
 ## Prerequisites
 
@@ -23,9 +28,6 @@ dateCreated: 2021-11-15T15:39:49.074Z
 - **A computer with a storage device**, see requirements below
 - **A kickstart description of a Phyllome OS installation**, available as an Internet-accessible file
 	- Phyllome OS is automatically deployed based on a kickstart file 
-
-> [The kickstart installation method](https://pykickstart.readthedocs.io/en/latest/kickstart-docs.html#chapter-1-introduction) provides a way to configure and automate the installation of most [RPM-based distributions](https://en.wikipedia.org/wiki/Category:RPM-based_Linux_distributions), including [the official Fedora distributions](https://pagure.io/fedora-kickstarts) as well as Fedora Remixes like Phyllome OS
-{.is-info}
 
 ## The Phyllome OS computer host
 
@@ -52,6 +54,8 @@ dateCreated: 2021-11-15T15:39:49.074Z
 - **10 GB** of **SSD** or **NVMe** storage space for Phyllome OS
 * **1 TB** of **SSD** or **NVMe** storage space to store guest OS disk images
 * **Two graphics cards** or a graphics card that supports [vfio-mdev](/gofurther/vfio-mdev) or SR-IOV
+
+---
 
 ## Enabling hardware-assisted virtualization
 
