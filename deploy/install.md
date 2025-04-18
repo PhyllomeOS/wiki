@@ -2,7 +2,7 @@
 title: Install Phyllome OS
 description: 
 published: true
-date: 2025-04-17T22:08:05.577Z
+date: 2025-04-18T14:03:59.311Z
 tags: 
 editor: markdown
 dateCreated: 2021-11-14T16:19:00.348Z
@@ -31,13 +31,15 @@ Phyllome[^1] OS is an operating system that makes it easier to run [various oper
 
 ### Main flavors
 
-Phyllome OS comes in many flavors. Pick your flavor based on the hardware you wish to deploy Phyllome on.
+Phyllome OS comes in many flavors. Pick your flavor based on the hardware you wish to deploy Phyllome on. 
+
+The shortened URL points to the full description of the edition in a kickstart format.
 
 | Edition | Shorthand | Features |  Shortened URL |
 |---|---|---|---|
-| **Phyllome OS Desktop Edition** | PODE | Default edition. Compatible with x86-64 CPU. GPU agnostic. IOMMU support for AMD CPUs | ks.phyllo.me/d |
-| **Phyllome OS Desktop Edition for Intel:tm: CPUs** | PODEIC | IOMMU and nested virtualization on Intel CPUs | ks.phyllo.me/di |
-| **Phyllome OS Desktop Edition for Intel:tm: CPUs and GPUs** | POSEICG | IOMMU and nested virtualization on Intel CPUs & Intel GVT-g for Intel GPUs (from 5th to 9th gen *only*) | ks.phyllo.me/dii | 
+| **Phyllome OS Desktop Edition** | *PODE* | Default edition. Compatible with x86-64 CPU. GPU agnostic. IOMMU support for AMD CPUs | ks.phyllo.me/d |
+| **Phyllome OS Desktop Edition for Intel:tm: CPUs** | *PODEIC* | IOMMU and nested virtualization for Intel CPUs | ks.phyllo.me/di |
+| **Phyllome OS Desktop Edition for Intel:tm: CPUs and GPUs** | *PODEICG* | IOMMU and nested virtualization on Intel CPUs & Intel GVT-g for Intel GPUs (from 5th to 9th gen *only*) | ks.phyllo.me/dii | 
 | **Phyllome OS Desktop Edition for AMD:tm: CPUs** | PODEAC | IOMMU and nested virtualization on AMD CPUs |  ks.phyllo.me/da |
 
 ## Boot from the USB flash drive
@@ -59,7 +61,7 @@ The following section illustrates how to change the boot order *temporarily*. Th
 
 One needs to alter the GRUB instructions in order to trigger the automated installation. 
 
-> GRUB is universal bootloader that ship with many Linux distributions.
+> GRUB is universal bootloader that ship with many Linux distributions
 {.is-info}
 
 ### EFI-based firmware
@@ -86,7 +88,9 @@ One needs to alter the GRUB instructions in order to trigger the automated insta
 
 ![kickstart-4](/assets/grub-kickstart/kickstart-5.png)
 
-* After a few minutes, you should be greeted with a welcome screen.
+* After a few minutes, the computer will power off
+
+you should be greeted with a welcome screen.
 
 ![kickstart-5](/assets/grub-kickstart/kickstart-6.png)
 
