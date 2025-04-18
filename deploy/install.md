@@ -2,7 +2,7 @@
 title: Install Phyllome OS
 description: 
 published: true
-date: 2025-04-18T22:44:03.271Z
+date: 2025-04-18T23:07:36.872Z
 tags: 
 editor: markdown
 dateCreated: 2021-11-14T16:19:00.348Z
@@ -16,17 +16,6 @@ dateCreated: 2021-11-14T16:19:00.348Z
 [^1]: According to [the Wiktionary](https://en.wiktionary.org/wiki/phyllome), Phyllome refers to the "foliar part of a plant; any organ homologous with a leaf, or [any organ] produced by metamorphosis of a leaf"
 
 *This page is intended for users that would like to install Phyllome OS permanently on a computer. Make sure you understand what [Phyllome OS](/phyllomeos/purpose.md) is about before installing it*
-
-Installing Phyllome OS involves booting from a [bootable USB flash drive](/deploy/medium) and fetching an online kickstart file, which contains instructions to automatically deploy Phyllome OS.
-
-* General requirements:
-	* **A bootable USB flash drive**
-	   * *If you don't have a USB flash drive ready to use, please go back to [the last section](/deploy/medium)*
-  * **A wired Internet connection**
-  	 * *Many files will be fetched online during the installation process*
-	 * *Wireless connections are not supported*  
-  * **A storage device**
-  	* *The kickstart file will look for a storage device and install Phyllome OS on it. If there is no disk available, the installation will fail* 
 
 ## Pick your flavor
 
