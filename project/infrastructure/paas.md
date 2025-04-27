@@ -2,7 +2,7 @@
 title: PaaS
 description: 
 published: true
-date: 2025-04-27T21:57:58.262Z
+date: 2025-04-27T22:13:08.669Z
 tags: 
 editor: markdown
 dateCreated: 2025-04-27T21:57:58.262Z
@@ -10,11 +10,26 @@ dateCreated: 2025-04-27T21:57:58.262Z
 
 # Cloudron PaaS
 
-The Cloudron Platform-as-a-Service (PaaS) is hosted on a bare-metal server managed by OVH.
+The Cloudron Platform-as-a-Service (PaaS) is hosted on a single bare-metal server managed by [OVH](https://us.ovhcloud.com/).
 
-- Intel Xeon E3-1245v2 - 4c/8t - 3.4 GHz/3.8 GHz 
-- RAM 32 GB 1333 MHz
-- 2×480 GB SSD SATA
-- Soft RAID 0
+- *Reverse DNS*: my.phyllome.org
+- *Access*: SSH access via public key
 
-It is our beloved single point-of-failure.
+## Domains
+
+[Gandi](https://www.gandi.net/en-US) is the registrar.
+
+- *Domains*: phyllome.org and phyllo.me are available
+	- phyllome.org will eventually be used for production-ready services
+
+## Bare-metal server
+
+### Hardware specifications
+
+- *CPU*: Intel Xeon E3-1245v2 - 4c/8t - 3.4 GHz/3.8 GHz 
+- *Memory*: RAM 32 GB 1333 MHz
+- *Storage*: 2×480 GB SSD SATA, Soft RAID 0
+
+### Software
+
+- *Operating system*: Managed by Cloudron and based on Ubuntu Server 24.04 LTS.
