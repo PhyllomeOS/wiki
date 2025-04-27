@@ -2,7 +2,7 @@
 title: Git
 description: 
 published: true
-date: 2025-04-27T22:32:32.772Z
+date: 2025-04-27T22:36:19.893Z
 tags: 
 editor: markdown
 dateCreated: 2025-04-27T22:29:08.400Z
@@ -28,9 +28,5 @@ dateCreated: 2025-04-27T22:29:08.400Z
 SECRET_KEY = [Hidden]
 
 [service]
-; Whether a new user needs to confirm their email when registering.
-REGISTER_EMAIL_CONFIRM = true
-
-#EMAIL_DOMAIN_WHITELIST=phyllo.me,phyllome.org
 EMAIL_DOMAIN_ALLOWLIST=phyllo.me,phyllome.org
 ```
