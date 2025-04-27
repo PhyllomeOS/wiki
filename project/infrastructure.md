@@ -2,7 +2,7 @@
 title: Infrastructure
 description: 
 published: true
-date: 2022-01-17T14:45:35.300Z
+date: 2025-04-27T21:21:56.251Z
 tags: 
 editor: markdown
 dateCreated: 2021-11-13T12:10:04.658Z
@@ -10,18 +10,13 @@ dateCreated: 2021-11-13T12:10:04.658Z
 
 # Current infrastructure
 
-## Maintenance window
-
-> Every first Tuesday of the month, between 20h00 to 21h00 (CEST Time), a maintenance windows is scheduled. During that time, any self-hosted services listed below may become unaccessible.
-{.is-warning}
-
 ## Platform-as-a-Service (PaaS)
 
 * **Description**: [Cloudron.io](https://www.cloudron.io/) is used to deploy web applications consumed by the Phyllome OS project.
 * **Location**: https://my.phyllo.me
-* **Maintainer** : lukas@phyllo.me
+* **Maintainer** : lukas at phyllo.me
 
-Most services are self-hosted in an Ubuntu 20.04 virtual machine, on a Fedora Server 35 host.
+Cloudron is hosted on a bare-metal server in OVH. an Ubuntu 24.04 virtual machine, on a Fedora Server 35 host.
 
 Cloudron.io is a PaaS used to deploy and keep the web applications listed below up-do-date. It is our beloved single point-of-failure.
 
