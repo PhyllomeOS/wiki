@@ -2,15 +2,13 @@
 title: PaaS
 description: 
 published: true
-date: 2025-04-27T22:13:08.669Z
+date: 2025-04-27T22:15:14.537Z
 tags: 
 editor: markdown
 dateCreated: 2025-04-27T21:57:58.262Z
 ---
 
-# Cloudron PaaS
-
-The Cloudron Platform-as-a-Service (PaaS) is hosted on a single bare-metal server managed by [OVH](https://us.ovhcloud.com/).
+## The Cloudron Platform-as-a-Service (PaaS)
 
 - *Reverse DNS*: my.phyllome.org
 - *Access*: SSH access via public key
@@ -19,10 +17,12 @@ The Cloudron Platform-as-a-Service (PaaS) is hosted on a single bare-metal serve
 
 [Gandi](https://www.gandi.net/en-US) is the registrar.
 
-- *Domains*: phyllome.org and phyllo.me are available
-	- phyllome.org will eventually be used for production-ready services
+- *Domains*: `phyllome.org` and `phyllo.me` are available
+	- `phyllome.org` will eventually be used for production-ready services
 
-## Bare-metal server
+## Server
+
+A bare-metal is rented from [OVH](https://us.ovhcloud.com/).
 
 ### Hardware specifications
 
