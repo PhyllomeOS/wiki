@@ -2,7 +2,7 @@
 title: Infrastructure
 description: 
 published: true
-date: 2025-04-27T22:05:55.991Z
+date: 2025-04-27T22:23:32.684Z
 tags: 
 editor: markdown
 dateCreated: 2021-11-13T12:10:04.658Z
@@ -12,7 +12,7 @@ dateCreated: 2021-11-13T12:10:04.658Z
 
 | Name | Description | Location | Maintainer | More information |
 | --- | --- | --- | --- | --- |
-| Cloudron PaaS | [Cloudron.io](https://www.cloudron.io/) is used to deploy and keep up-to-date web applications needed by the project | https://my.phyllo.me | `lukas at phyllo me` | [More information](/project/infrastructure/paas) |
+| PaaS | [Cloudron.io](https://www.cloudron.io/) is used to deploy and keep up-to-date web applications needed by the project | https://my.phyllo.me | `lukas at phyllo me` | [More information](/project/infrastructure/paas) |
 | Website | [Grav](https://getgrav.org/) is used as a Content Management System (CMS)  | https://phyllo.me | `lukas at phyllo me` | [More information](/project/infrastructure/website) |
 | Git | [Gitea](https://gitea.io/en-us/) is used to host repositories for projects | https://git.phyllo.me | `lukas at phyllo me` | [More information](/project/infrastructure/git) |
 | Kan board | [Wekan](https://wekan.github.io/) is used for issue tracking | https://kanboard.phyllo.me/ | `lukas at phyllo me` | [More information](/project/infrastructure/kanboard) |
