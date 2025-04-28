@@ -2,7 +2,7 @@
 title: Homepage
 description: 
 published: true
-date: 2025-04-18T13:57:44.878Z
+date: 2025-04-28T16:59:23.579Z
 tags: 
 editor: markdown
 dateCreated: 2021-06-19T09:29:20.593Z
@@ -86,7 +86,7 @@ In this wiki, you will find guides about [how to install](#install) and [use](#g
 
 - [How to contribute](/project/contribute)
 - [How to join](/project/join)
-- [Current infrastructure](/project/infrastructure)
+- [Infrastructure](/project/infrastructure)
 
 ---
 
