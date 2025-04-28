@@ -2,7 +2,7 @@
 title: Share a host directory with a guest using virtiofs
 description: 
 published: true
-date: 2023-05-29T09:20:05.658Z
+date: 2025-04-28T22:45:21.257Z
 tags: 
 editor: markdown
 dateCreated: 2022-08-13T00:16:17.437Z
@@ -21,9 +21,6 @@ Just as with other `virtio` devices, `virtio-fs` requires specialized drivers to
 ## Guest configuration
 
 > For KVM/QEMU, as of January 2023, virtio-fs is only available for virtual machines managed by the system libvirt instance (`qemu:///system`)
-{.is-warning}
-
-> As of January 2023, `virtio-fs` does not support read-only mode, meaning a guest will be able to write to the host's folder.
 {.is-warning}
 
 ### Edit XML configuration
