@@ -2,13 +2,13 @@
 title: Infrastructure
 description: 
 published: true
-date: 2025-04-28T16:14:15.751Z
+date: 2025-04-28T16:59:03.270Z
 tags: 
 editor: markdown
 dateCreated: 2021-11-13T12:10:04.658Z
 ---
 
-# Current infrastructure
+# The Project's Infrastructure
 
 | Function | Description | Location | More information |
 | --- | --- | --- | --- |
