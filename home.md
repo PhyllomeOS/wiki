@@ -2,7 +2,7 @@
 title: Homepage
 description: 
 published: true
-date: 2025-04-28T16:59:23.579Z
+date: 2025-05-01T17:10:04.635Z
 tags: 
 editor: markdown
 dateCreated: 2021-06-19T09:29:20.593Z
@@ -56,30 +56,31 @@ In this wiki, you will find guides about [how to install](#install) and [use](#g
 
 - [Lexicon](/virt/lexicon)
 - [External resources](/virt/resources)
+- [A very short history of virtualization](/virt/history)
 
-### Virtualization software
+### Host virtualization software
 
 - [KVM-driven virtual machine monitors](/virt/host/vmms)
 - [Linux Kernel modules](/virt/host/modules) related to virtualization
 - [Virtualization-related paths](/virt/host/paths) on Phyllome OS
 - [A libvirt XML file](/virt/host/xml)
 
-### Virtual machine hardware
+### Guest hardware
 
 - [Chipsets](/virt/vm/chipset)
 - [Firmware](/virt/vm/firmware)
 - [Graphic cards](/virt/vm/graphic-card)
 - [Virtual I/O (virtio) devices](/virt/vm/virtio)
 
+### Guest software
+
+- [Guest operating systems support](/virt/guest.md)
+
 ## About Phyllome OS
 
-- [A very short history](/virt/history) of virtualization
-- [Context](/phyllomeos/context)
-- [Purpose](/phyllomeos/purpose)
+- [Context](/phyllomeos/context) and comparaison
+- [Architecture](/phyllomeos/purpose)
 - [Roadmap](/phyllomeos/roadmap)
-- [Guest operating systems support](/virt/guest.md)
-- [Software bill of materials](/phyllomeos/sbom)
-- [Security](/phyllomeos/security)
 - [FAQ](/phyllomeos/faq)
 
 ### About the project
