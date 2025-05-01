@@ -2,7 +2,7 @@
 title: Purpose
 description: 
 published: true
-date: 2022-02-09T20:19:32.002Z
+date: 2025-05-01T17:04:13.304Z
 tags: 
 editor: markdown
 dateCreated: 2021-11-12T15:31:30.659Z
@@ -119,6 +119,35 @@ Relying on a virtual machine as its primarily personal environment comes with se
 * **Decreased general usability**. Any physical device attached to a computer won't automatically be made to a guest virtual machine. For some users, it might be considered a hindrance. Phyllome OS relies on Linux drivers. Not all hardware fully supports Linux well, which may force users to rely on device or controllers passthrough. Finally, the use of Phyllome OS will certainly greatly reduce a laptop's battery-life over running a single system. 
 
 * **Lack of guest systems' integration**. Phyllome OS provides an optimized virtual machine model tuned to host modern operating systems, but, at the exception of some RPM-based guests operating systems including Phyllome OS itself, does not intent to provide automated ways to deploy guest operating systems (at the moment, [Infrastructure as code solutions](https://en.wikipedia.org/wiki/Infrastructure_as_code) or instance initialization software like [cloud-init](https://github.com/canonical/cloud-init) do not seem generic enough to satisfy every modern desktop-based operating systems' idiosyncrasies). In other words, contrary to end-to-end operating systems like [Qubes OS](https://www.qubes-os.org/) or the upcoming [Spectrum](https://spectrum-os.org/), which are offering ready to use templates or/and applications isolated in virtual machines by default, Phyllome OS delegates to end-users the task to install their favorite operating system, while trying to provide the best possible underlying defaults for each operating system. In this regard, its model is closer to [Proxmox](https://www.proxmox.com/en/), which doesn't make assumptions about how a guest operating system will be deployed.
+
+# Security in Phyllome OS
+
+> *Phyllome OS is currently in alpha stage. It should not be used to store any sensitive data*
+{.is-warning}
+
+Phyllome OS is a Fedora Remix that will eventually inherit security measures in place in Fedora.
+
+It also intends to bring some unique security-related features:
+
+- Unprivileged virtual machines creation with `qemu:///session`, by default
+- Filesystem-level encryption with `fscrypt`
+- Minimal set of applications
+- Unattended installation of security updates
+- Alternative virtual machine monitors like the Cloud Hypervisor
+
+## Features
+
+### Data at-rest encryption
+
+Currently, Phyllome OS does ***not*** provide any kind of encryption by default at the host level. 
+
+For any virtual disks that will contain personal data, users are strongly advised to use full-disk encryption as provided by their guest operating system.
+
+## Anti-features
+
+### Graphic virtualization
+
+Phyllome OS heavily relies on GPU or graphic virtualization, most notably through `virtio-gpu`, but also with `vfio-pci` or `vfio-mdev`. Granting a virtual machine 3D capabilities is not considered safe. Measures will be taken to reduce the risk, or at least to inform the user of potential security risks associated with certain techniques. 
 
 ## Use cases
 
