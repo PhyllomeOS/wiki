@@ -2,7 +2,7 @@
 title: Guests support
 description: 
 published: true
-date: 2023-02-11T21:58:25.082Z
+date: 2025-05-01T17:14:53.606Z
 tags: 
 editor: markdown
 dateCreated: 2022-01-12T14:25:25.960Z
@@ -47,7 +47,7 @@ When it comes to its longevity and number of variants, the UNIX family is by far
 > Support for guest systems differs widely. In general, free and open-source operating systems such as Linux distributions are better supported than proprietary operating systems.
 {.is-info}
 
-* *The table below only show support for the latest operating systems.*
+* *The table below only show support for the latest operating system and kernel version*
 
 | | Linux | Darwin | Windows |
 | :- | :-: | :-: | :-: |
@@ -55,7 +55,7 @@ When it comes to its longevity and number of variants, the UNIX family is by far
 | *Platform firmware* | [SeaBIOS](/virt/vm/firmware#seabios) [OVMF](/virt/vm/firmware#ovmf) [RHF](/virt/vm/firmware#rust-hypervisor-firmware) [^1] | [OVMF](/virt/vm/firmware#ovmf) | [SeaBIOS](/virt/vm/firmware#seabios) [OVMF](/virt/vm/firmware#ovmf) [RHF](/virt/vm/firmware#rust-hypervisor-firmware) |
 | *virtio-gpu* | **Yes** | No | No |
 | *virtio-video* | *Upcoming* | No | No |
-| *virtio-snd* | *Upcoming* | No | No |
+| *virtio-snd* | **Yes** | No | No |
 | *virtio-blk* | **Yes** | **Yes** | **Yes** |
 | *virtio-scsi* | **Yes** | No | **Yes** |
 | *virtio-fs* | **Yes** | No | **Yes** |
