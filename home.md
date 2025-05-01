@@ -2,7 +2,7 @@
 title: Homepage
 description: 
 published: true
-date: 2025-05-01T17:10:04.635Z
+date: 2025-05-01T17:17:27.191Z
 tags: 
 editor: markdown
 dateCreated: 2021-06-19T09:29:20.593Z
@@ -55,12 +55,10 @@ In this wiki, you will find guides about [how to install](#install) and [use](#g
 *Information about related technologies*
 
 - [Lexicon](/virt/lexicon)
-- [External resources](/virt/resources)
 - [A very short history of virtualization](/virt/history)
 
 ### Host virtualization software
 
-- [KVM-driven virtual machine monitors](/virt/host/vmms)
 - [Linux Kernel modules](/virt/host/modules) related to virtualization
 - [Virtualization-related paths](/virt/host/paths) on Phyllome OS
 - [A libvirt XML file](/virt/host/xml)
