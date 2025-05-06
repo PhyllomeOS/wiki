@@ -2,11 +2,15 @@
 title: Context
 description: 
 published: true
-date: 2023-05-27T19:48:26.476Z
+date: 2025-05-06T21:15:11.416Z
 tags: 
 editor: markdown
 dateCreated: 2021-11-12T15:31:13.657Z
 ---
+
+# What Phyllome OS is
+
+Phyllome OS is a [Fedora Remix](https://fedoraproject.org/wiki/Remix) designed to leverage [hardware-assisted virtualization](https://wiki.phyllo.me/virt/lexicon#hardware-assisted-virtualization) and [paravirtualization](https://wiki.phyllo.me/virt/lexicon#paravirtualization) to make it easier to run virtualized operating systems locally.
 
 # Context
 
