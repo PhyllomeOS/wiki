@@ -2,7 +2,7 @@
 title: Machine definition
 description: Virtual machine hardware
 published: true
-date: 2025-06-01T17:37:29.262Z
+date: 2025-06-01T17:41:22.711Z
 tags: 
 editor: markdown
 dateCreated: 2025-06-01T17:37:29.262Z
@@ -13,18 +13,6 @@ dateCreated: 2025-06-01T17:37:29.262Z
 Libvirt uses XML files to define virtual machine hardware.
 
 In the context of libvirt, a virtual machine or guest system is called a domain. In turn, a domain type refers to the hypervisor used for running the virtual machine.
-
-The following command output the XML description of the domain called *phyllomeos*
-
-```
-virsh dumpxml phyllomeos
-```
-
-``` 
-<domain type='kvm'>
-  [...]
-</domain>
-```
 
 ## Domain type
 
