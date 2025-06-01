@@ -2,7 +2,7 @@
 title: Homepage
 description: 
 published: true
-date: 2025-05-01T17:17:27.191Z
+date: 2025-06-01T16:23:04.803Z
 tags: 
 editor: markdown
 dateCreated: 2021-06-19T09:29:20.593Z
@@ -65,6 +65,7 @@ In this wiki, you will find guides about [how to install](#install) and [use](#g
 
 ### Guest hardware
 
+- [Machine definition](/virt/vm)
 - [Chipsets](/virt/vm/chipset)
 - [Firmware](/virt/vm/firmware)
 - [Graphic cards](/virt/vm/graphic-card)
