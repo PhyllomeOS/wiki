@@ -2,7 +2,7 @@
 title: Homepage
 description: 
 published: true
-date: 2025-06-01T16:23:04.803Z
+date: 2025-06-01T17:43:43.665Z
 tags: 
 editor: markdown
 dateCreated: 2021-06-19T09:29:20.593Z
@@ -56,6 +56,7 @@ In this wiki, you will find guides about [how to install](#install) and [use](#g
 
 - [Lexicon](/virt/lexicon)
 - [A very short history of virtualization](/virt/history)
+- [Tools related to virtualization](/virt/tools)
 
 ### Host virtualization software
 
