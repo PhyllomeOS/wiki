@@ -2,7 +2,7 @@
 title: Machine definition
 description: Virtual machine hardware
 published: true
-date: 2025-06-03T06:15:14.349Z
+date: 2025-06-03T11:37:10.057Z
 tags: 
 editor: markdown
 dateCreated: 2025-06-01T17:37:29.262Z
@@ -10,7 +10,7 @@ dateCreated: 2025-06-01T17:37:29.262Z
 
 # Virtual machine hardware
 
-Libvirt uses XML files to define virtual machine hardware.
+Libvirt uses XML files to define virtual machine hardware, from the system firmware to virtual devices.
 
 In the context of libvirt, a virtual machine or guest system is called a domain. 
 
@@ -109,11 +109,11 @@ What is also done is to mark the memory as shared memory, which is necessary for
 
 There are multiple XML elements related to the (v)CPU, with many parameters for each of them.
 
-the CPU allocation section defines the number of vCPU associated to the virtual machine. This number cannot exceed the total number of logical CPUs available in the host machine as well as the maximum number of that the KVM hypervisor can assign to a guest. 
+The CPU allocation section defines the number of vCPU associated to the virtual machine. This number cannot exceed the total number of logical CPUs available in the host machine as well as the maximum number of that the KVM hypervisor can assign to a guest. 
 
 The number of logical CPUs is the number of physical cores multiply by the number of threads per core.
 
-- In the following snippet, 4vCPU is assigned to the virtual machine
+- In the following snippet, 4vCPU is assigned to the virtual machine:
 
 ```
 <domain type='kvm'>
@@ -124,14 +124,20 @@ The number of logical CPUs is the number of physical cores multiply by the numbe
 </domain>
 ```  
 
-Another very important element is the CPU mode.
+- Another very important element is the CPU mode:
 
 ```
 <domain type='kvm'>
 [...]
-  <cpu mode="host-passthrough" check="none" migratable="on">
-    <topology sockets="1" dies="1" cores="2" threads="2"/>
+	<cpu mode='host-model'>
+		<topology sockets="1" dies="1" cores="2" threads="2"/>
   </cpu>
 [...]
 </domain>
 ```
+
+The `host-model` mode is not as fast as `host-passthrough` but should allow a guest to be migrated to a host running different hardware, which `host-passthrough` does not. 
+
+In short: it offers a good balance between performance and functionality.
+
+The topology describes the number of sockets, dies, cores and threads. The total number of cores and threads, in particular, has to match the CPU allocation described above.
