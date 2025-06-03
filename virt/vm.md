@@ -2,7 +2,7 @@
 title: Machine definition
 description: Virtual machine hardware
 published: true
-date: 2025-06-03T06:05:18.246Z
+date: 2025-06-03T06:15:14.349Z
 tags: 
 editor: markdown
 dateCreated: 2025-06-01T17:37:29.262Z
@@ -104,3 +104,34 @@ A memballon device is defined, which can release memory to the host and other vi
 ```
 
 What is also done is to mark the memory as shared memory, which is necessary for other features to work, like *virtiofs*.
+
+## (v)CPU
+
+There are multiple XML elements related to the (v)CPU, with many parameters for each of them.
+
+the CPU allocation section defines the number of vCPU associated to the virtual machine. This number cannot exceed the total number of logical CPUs available in the host machine as well as the maximum number of that the KVM hypervisor can assign to a guest. 
+
+The number of logical CPUs is the number of physical cores multiply by the number of threads per core.
+
+- In the following snippet, 4vCPU is assigned to the virtual machine
+
+```
+<domain type='kvm'>
+[...]
+  <vcpu placement='static'>4</vcpu>
+[...]
+
+</domain>
+```  
+
+Another very important element is the CPU mode.
+
+```
+<domain type='kvm'>
+[...]
+  <cpu mode="host-passthrough" check="none" migratable="on">
+    <topology sockets="1" dies="1" cores="2" threads="2"/>
+  </cpu>
+[...]
+</domain>
+```
