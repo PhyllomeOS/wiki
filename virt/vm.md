@@ -2,7 +2,7 @@
 title: Machine definition
 description: Virtual machine hardware
 published: true
-date: 2025-06-03T12:31:10.560Z
+date: 2025-06-03T12:34:13.773Z
 tags: 
 editor: markdown
 dateCreated: 2025-06-01T17:37:29.262Z
@@ -183,8 +183,7 @@ ACPI deals with power management, and allow for graceful shutdown to work.
 
 ### For Windows NT guests
 
-For Windows, more features are enabled:
-
+For Windows NT guests, more features are enabled:
 
 ```
 <domain type='kvm'>
@@ -200,17 +199,12 @@ For Windows, more features are enabled:
       <direct state='on'/>
     </stimer>
     <reset state='on'/>
-    <vendor_id state='on' value='KVM Hv'/>
     <frequencies state='on'/>
     <reenlightenment state='on'/>
     <tlbflush state='on'>
       <direct state='on'/>
       <extended state='on'/>
     </tlbflush>
-    <ipi state='on'/>
-    <evmcs state='on'/>
-    <emsr_bitmap state='on'/>
-    <xmm_input state='on'/>
   </hyperv>
   [...]
 </domain>
