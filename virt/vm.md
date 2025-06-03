@@ -2,7 +2,7 @@
 title: Machine definition
 description: Virtual machine hardware
 published: true
-date: 2025-06-03T11:37:10.057Z
+date: 2025-06-03T11:39:03.159Z
 tags: 
 editor: markdown
 dateCreated: 2025-06-01T17:37:29.262Z
@@ -140,4 +140,4 @@ The `host-model` mode is not as fast as `host-passthrough` but should allow a gu
 
 In short: it offers a good balance between performance and functionality.
 
-The topology describes the number of sockets, dies, cores and threads. The total number of cores and threads, in particular, has to match the CPU allocation described above.
+The topology describes the number of sockets, dies, cores and threads. The total number of cores and threads, in particular, has to match the CPU allocation described above. In our example, a total of four logical cores allocated, which translates to two cores each running two threads. 
