@@ -2,7 +2,7 @@
 title: Machine definition
 description: Virtual machine hardware
 published: true
-date: 2025-06-03T11:39:03.159Z
+date: 2025-06-03T12:31:10.560Z
 tags: 
 editor: markdown
 dateCreated: 2025-06-01T17:37:29.262Z
@@ -10,13 +10,13 @@ dateCreated: 2025-06-01T17:37:29.262Z
 
 # Virtual machine hardware
 
-Libvirt uses XML files to define virtual machine hardware, from the system firmware to virtual devices.
+*Libvirt* uses XML files to define virtual machine hardware, from the system firmware to devices like mouse and keyboard.  
 
-In the context of libvirt, a virtual machine or guest system is called a domain. 
+In the context of *libvirt*, a virtual machine or guest system is called a domain. 
 
 A domain *type* refers to the hypervisor used for running the virtual machine.
 
-- Truncated snippet of an virtual machine definition:
+- Truncated snippet of a virtual machine definition:
 
 ```
 <domain type='kvm'>
@@ -32,9 +32,9 @@ A domain *type* refers to the hypervisor used for running the virtual machine.
 </domain>
 ```
 
-In this snippet, one can identify the domain type, KVM, the machine name, *phyllome*, the allocated memory, 1 GiB, the vCPU allocation, 1 vCPU, the firmware type, UEFI. 
+In this snippet, one can identify the domain type, *KVM*, the machine name, *phyllome*, the allocated memory, *1 GiB*, the vCPU allocation, *1 vCPU*, the firmware type, *UEFI*. 
 
-These elements are primarily managed by Linux and KVM, whereas the elements within the devices section are managed by QEMU, as shown by the emualor line. One can find the keyboard in the device section.
+These elements are primarily managed by Linux and KVM, whereas the elements within the devices section are managed by QEMU, as shown by the emulator line. One can find the keyboard in the device section.
 
 ## Domain type
 
@@ -67,7 +67,7 @@ Not all QEMU commands are supported by Libvirt. To [pass QEMU commands](https://
 Under QEMU, the said domain definition translates simply to: 
 
 ```
-qemu-system-x86_64 -enable-kvm [...]
+qemu-system-x86_64 -enable-kvm
 ```
 
 ## Memory
@@ -85,6 +85,7 @@ A sane default, which does not maximize performance, is the following:
 	<devices>
    	<memballoon model="virtio-non-transitional"/>
   </devices>
+[...]
 </domain>
 ```
 
@@ -120,7 +121,6 @@ The number of logical CPUs is the number of physical cores multiply by the numbe
 [...]
   <vcpu placement='static'>4</vcpu>
 [...]
-
 </domain>
 ```  
 
@@ -140,4 +140,78 @@ The `host-model` mode is not as fast as `host-passthrough` but should allow a gu
 
 In short: it offers a good balance between performance and functionality.
 
-The topology describes the number of sockets, dies, cores and threads. The total number of cores and threads, in particular, has to match the CPU allocation described above. In our example, a total of four logical cores allocated, which translates to two cores each running two threads. 
+The topology describes the number of sockets, dies, cores and threads. The total number of cores and threads, in particular, has to match the CPU allocation described above. In our example, a total of four logical cores allocated, which translates to two cores each running two threads.
+
+## System firmware and chipset
+
+Phyllome OS primarily focuses on running modern guest operating systems, which often expect UEFI firmware, PCI Express and Secure Boot to be enabled.
+
+- The main definition focused on defining a UEFI firmware based on TianoCore, a x86_64 architecture running with a q35 chipset. Secure Boot is not yet enabled by default. The default boot device is the CDROM  
+
+```
+<domain type='kvm'>
+[...]
+  <os firmware="efi">
+    <type arch="x86_64" machine="q35">hvm</type>
+    <loader secure='no'/>
+    <boot dev="cdrom"/>
+  </os>
+[...]
+</domain>
+```
+
+## Hypervisor features
+
+Some extra features can be enabled depending on the guest. 
+
+### For Unix guests
+
+When it comes to modern Linux guests, only a few features are enabled in the context of the default virtual machine definition.
+
+```
+<domain type='kvm'>
+[...]
+  <features>
+    <acpi/>
+    <apic/>
+  </features>
+[...]
+</domain>
+```
+
+ACPI deals with power management, and allow for graceful shutdown to work.
+
+### For Windows NT guests
+
+For Windows, more features are enabled:
+
+
+```
+<domain type='kvm'>
+[...]
+  <hyperv mode='custom'>
+    <relaxed state='on'/>
+    <vapic state='on'/>
+    <spinlocks state='on' retries='4096'/>
+    <vpindex state='on'/>
+    <runtime state='on'/>
+    <synic state='on'/>
+    <stimer state='on'>
+      <direct state='on'/>
+    </stimer>
+    <reset state='on'/>
+    <vendor_id state='on' value='KVM Hv'/>
+    <frequencies state='on'/>
+    <reenlightenment state='on'/>
+    <tlbflush state='on'>
+      <direct state='on'/>
+      <extended state='on'/>
+    </tlbflush>
+    <ipi state='on'/>
+    <evmcs state='on'/>
+    <emsr_bitmap state='on'/>
+    <xmm_input state='on'/>
+  </hyperv>
+  [...]
+</domain>
+```
