@@ -2,7 +2,7 @@
 title: Machine definition
 description: Virtual machine hardware
 published: true
-date: 2025-06-02T17:41:18.805Z
+date: 2025-06-03T06:05:18.246Z
 tags: 
 editor: markdown
 dateCreated: 2025-06-01T17:37:29.262Z
@@ -16,7 +16,7 @@ In the context of libvirt, a virtual machine or guest system is called a domain.
 
 A domain *type* refers to the hypervisor used for running the virtual machine.
 
-- Truncated snippet of an imaginary virtual machine called *phyllome*:
+- Truncated snippet of an virtual machine definition:
 
 ```
 <domain type='kvm'>
@@ -32,9 +32,9 @@ A domain *type* refers to the hypervisor used for running the virtual machine.
 </domain>
 ```
 
-One can identify the domain type, KVM, the machine name, *phyllome*, the allocated memory, 1 GiB, the vCPU allocation, 1vCPU, the firmware type, UEFI. 
+In this snippet, one can identify the domain type, KVM, the machine name, *phyllome*, the allocated memory, 1 GiB, the vCPU allocation, 1 vCPU, the firmware type, UEFI. 
 
-These elements are primarily managed by Linux and KVM, whereas the elements within the devices section are managed by QEMU. One can find the keyboard, for instance.
+These elements are primarily managed by Linux and KVM, whereas the elements within the devices section are managed by QEMU, as shown by the emualor line. One can find the keyboard in the device section.
 
 ## Domain type
 
