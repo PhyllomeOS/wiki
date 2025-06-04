@@ -2,7 +2,7 @@
 title: Machine definition
 description: Virtual machine hardware
 published: true
-date: 2025-06-03T18:45:30.585Z
+date: 2025-06-04T06:43:23.738Z
 tags: 
 editor: markdown
 dateCreated: 2025-06-01T17:37:29.262Z
@@ -146,7 +146,7 @@ The topology describes the number of sockets, dies, cores and threads. The total
 
 Phyllome OS primarily focuses on running modern guest operating systems, which often expect UEFI firmware, PCI Express and Secure Boot to be enabled.
 
-- The main definition focused on defining a UEFI firmware based on TianoCore, a x86_64 architecture running with a q35 chipset. Secure Boot is not yet enabled by default. The default boot device is the CDROM  
+- The main definition focused on defining a UEFI firmware based on [TianoCore](https://www.tianocore.org/), an x86_64 architecture running with a q35 chipset. Secure Boot is not yet enabled by default. The default boot device is the CD-ROM  
 
 ```
 <domain type='kvm'>
