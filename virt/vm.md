@@ -2,7 +2,7 @@
 title: Machine definition
 description: Virtual machine hardware
 published: true
-date: 2025-06-04T06:43:23.738Z
+date: 2025-06-04T16:07:13.413Z
 tags: 
 editor: markdown
 dateCreated: 2025-06-01T17:37:29.262Z
@@ -231,7 +231,7 @@ The *KVM clock* timer has a catchup policy, which means that a paused guest whos
 > On non realtime kernel, the KVM clock is updated every 5 minutes for all vCPUs, which may not be enough for accurate timekeeping. For that reason, "[Red Hat recommends running NTP in the virtual machine if accurate timekeeping is required](https://access.redhat.com/solutions/27865)"
 {.is-info}
 
-### Resources
+### Resources about timekeeping
 
 - Linux Kernel documentation: [Timekeeping Virtualization for X86-Based Architectures](https://docs.kernel.org/virt/kvm/x86/timekeeping.html)
 - SUSE documentation: [VM Guest clock settings](https://documentation.suse.com/sles/15-SP3/html/SLES-all/sec-kvm-managing-clock.html#)
