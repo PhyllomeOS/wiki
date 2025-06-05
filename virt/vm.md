@@ -2,7 +2,7 @@
 title: Machine definition
 description: Virtual machine hardware
 published: true
-date: 2025-06-04T16:07:13.413Z
+date: 2025-06-05T04:40:18.851Z
 tags: 
 editor: markdown
 dateCreated: 2025-06-01T17:37:29.262Z
@@ -214,7 +214,7 @@ For Windows NT guests, more features are enabled:
 
 In most case, the guest clock derives from the host clock. 
 
-In the following example, the hardware clock uses [UTC](https://en.wikipedia.org/wiki/Coordinated_Universal_Time) and has several timers
+In the following example, the hardware clock uses [UTC](https://en.wikipedia.org/wiki/Coordinated_Universal_Time), the *KVM clock* timer has a catchup policy, which means that a paused guest whose clock will is frozen will eventually catch up with the host clock when the guest is resumed:
 
 ```
 <domain type='kvm'>
@@ -225,8 +225,6 @@ In the following example, the hardware clock uses [UTC](https://en.wikipedia.org
 [...]
 </domain>
 ```
-
-The *KVM clock* timer has a catchup policy, which means that a paused guest whose clock will is frozen will eventually catch up with the host clock when the guest is resumed.
 
 > On non realtime kernel, the KVM clock is updated every 5 minutes for all vCPUs, which may not be enough for accurate timekeeping. For that reason, "[Red Hat recommends running NTP in the virtual machine if accurate timekeeping is required](https://access.redhat.com/solutions/27865)"
 {.is-info}
