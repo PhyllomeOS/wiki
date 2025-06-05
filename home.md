@@ -2,7 +2,7 @@
 title: Homepage
 description: 
 published: true
-date: 2025-06-05T05:20:01.985Z
+date: 2025-06-05T14:33:58.922Z
 tags: 
 editor: markdown
 dateCreated: 2021-06-19T09:29:20.593Z
@@ -82,7 +82,7 @@ In this wiki, you will find guides about [how to install](#install) and [use](#g
 - [Roadmap](/phyllomeos/roadmap)
 - [FAQ](/phyllomeos/faq)
 
-### About the project
+## About the project
 
 - [How to contribute](/project/contribute)
 - [How to join](/project/join)
@@ -90,10 +90,6 @@ In this wiki, you will find guides about [how to install](#install) and [use](#g
 
 ---
 
-**The website**: https://phyllo.me
-
-**This wiki**: https://wiki.phyllo.me
-
-**The issue board**: [https://kanboard.phyllo.me](https://kanboard.phyllo.me/b/CH7qd98J2v7egmodk/development)
-
-**The forge**: https://git.phyllo.me
+| The website | This wiki | The issue board | The forge | 
+| :-: | :-: | :-: | :-: |
+| phyllo.me | wiki.phyllo.me | [kanboard.phyllo.me](https://kanboard.phyllo.me/b/CH7qd98J2v7egmodk/development) | git.phyllo.me |
