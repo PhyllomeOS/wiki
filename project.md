@@ -2,7 +2,7 @@
 title: The project
 description: 
 published: true
-date: 2025-06-05T14:27:07.691Z
+date: 2025-06-05T14:27:25.459Z
 tags: 
 editor: markdown
 dateCreated: 2023-08-20T12:01:31.184Z
