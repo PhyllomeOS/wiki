@@ -2,7 +2,7 @@
 title: Homepage
 description: 
 published: true
-date: 2025-06-01T17:43:43.665Z
+date: 2025-06-05T05:20:01.985Z
 tags: 
 editor: markdown
 dateCreated: 2021-06-19T09:29:20.593Z
@@ -41,7 +41,6 @@ In this wiki, you will find guides about [how to install](#install) and [use](#g
 
 - [Resize](/gofurther/resize) a virtual disk
 - [Encrypt](/gofurther/encrypt) a directory
-- [Leverage display options](/virt/vm/display)
 
 ### Sharing resources with a guest system
 
