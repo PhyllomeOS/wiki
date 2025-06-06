@@ -2,7 +2,7 @@
 title: Virtual Function I/O Mediated devices (vfio-mdev)
 description: Create and Configure Virtual Function I/O Mediated devices (vfio-mdev)
 published: true
-date: 2025-06-06T18:26:17.457Z
+date: 2025-06-06T20:12:14.088Z
 tags: 
 editor: markdown
 dateCreated: 2022-07-21T21:10:41.046Z
