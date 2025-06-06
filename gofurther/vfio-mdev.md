@@ -2,7 +2,7 @@
 title: Virtual Function I/O Mediated devices (vfio-mdev)
 description: Create and Configure Virtual Function I/O Mediated devices (vfio-mdev)
 published: true
-date: 2025-06-06T20:12:14.088Z
+date: 2025-06-06T20:14:11.248Z
 tags: 
 editor: markdown
 dateCreated: 2022-07-21T21:10:41.046Z
@@ -97,9 +97,9 @@ $ mdevctl list --defined
 [...]
 	<device>
 [...]
-    <video>
-    	<model type="none"/>
-    </video>
+		<video>
+			<model type="none"/>
+		</video>
 [...]
 	</device>
 [...]
@@ -133,11 +133,11 @@ $ mdevctl list --defined
 - Add a Spice display device
 
 ```
-	<device>
+<device>
 [...]
 		<graphics type="spice">
-    	<listen type="none"/>
-  		<gl enable="yes" rendernode="/dev/dri/by-path/pci-0000:00:02.0-render"/>
+			<listen type="none"/>
+			<gl enable="yes" rendernode="/dev/dri/by-path/pci-0000:00:02.0-render"/>
 		</graphics>
 [...]
 </device>
@@ -153,12 +153,12 @@ $ mdevctl list --defined
 [...]
 	<device>
 [...]
-    <hostdev mode="subsystem" type="mdev" managed="no" model="vfio-pci" display="on" ramfb="on">
-      <rom bar="on" file="/var/lib/libvirt/isos/vbios_gvt_uefi.rom"/>
+		<hostdev mode="subsystem" type="mdev" managed="no" model="vfio-pci" display="on" ramfb="on">
+			<rom bar="on" file="/var/lib/libvirt/isos/vbios_gvt_uefi.rom"/>
 			<source>
-        <address uuid="7686131b-b229-4768-a02c-35d1dbed7c66"/>
-      </source>
-    </hostdev>
+				<address uuid="7686131b-b229-4768-a02c-35d1dbed7c66"/>
+			</source>
+		</hostdev>
 [...]
 	</device>
 [...]
