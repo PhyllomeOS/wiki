@@ -2,7 +2,7 @@
 title: Virtual Function I/O Mediated devices (vfio-mdev)
 description: Create and Configure Virtual Function I/O Mediated devices (vfio-mdev)
 published: true
-date: 2025-04-04T11:33:57.079Z
+date: 2025-06-06T18:26:17.457Z
 tags: 
 editor: markdown
 dateCreated: 2022-07-21T21:10:41.046Z
@@ -126,7 +126,7 @@ $ mdevctl list --defined
 </domain>
 ```
 
-* Start the machine in headless mode. It is possible to connect to this machine over a console interface. 
+* Start the machine in headless mode. It is possible to connect to this machine over a console interface.
 
 ## Add a display device
 
@@ -136,17 +136,17 @@ $ mdevctl list --defined
 	<device>
 [...]
 		<graphics type="spice">
-  			<listen type="none"/>
+    	<listen type="none"/>
   		<gl enable="yes" rendernode="/dev/dri/by-path/pci-0000:00:02.0-render"/>
 		</graphics>
 [...]
-	</device>
+</device>
 ```
 
-> When associated with OpenGL, Spice will only work locally
+> When associated with OpenGL, Spice will only allow local connection
 {.is-info}
 
-- Modify the vGPU setting to set display and RAMFB to *on* 
+- Modify the vGPU setting to set display and RAMFB to *on*. Also, it is [necessary](https://wiki.archlinux.org/title/Intel_GVT-g#Using_DMA-BUF_with_UEFI/OVMF) to feed it a rom.
 
 ```
 <domain type="kvm">
@@ -154,7 +154,8 @@ $ mdevctl list --defined
 	<device>
 [...]
     <hostdev mode="subsystem" type="mdev" managed="no" model="vfio-pci" display="on" ramfb="on">
-      <source>
+      <rom bar="on" file="/var/lib/libvirt/isos/vbios_gvt_uefi.rom"/>
+			<source>
         <address uuid="7686131b-b229-4768-a02c-35d1dbed7c66"/>
       </source>
     </hostdev>
