@@ -2,7 +2,7 @@
 title: Machine definition
 description: Virtual machine hardware
 published: true
-date: 2025-06-05T04:40:18.851Z
+date: 2025-06-18T17:23:00.143Z
 tags: 
 editor: markdown
 dateCreated: 2025-06-01T17:37:29.262Z
@@ -214,13 +214,13 @@ For Windows NT guests, more features are enabled:
 
 In most case, the guest clock derives from the host clock. 
 
-In the following example, the hardware clock uses [UTC](https://en.wikipedia.org/wiki/Coordinated_Universal_Time), the *KVM clock* timer has a catchup policy, which means that a paused guest whose clock will is frozen will eventually catch up with the host clock when the guest is resumed:
+In the following example, the hardware clock uses [UTC](https://en.wikipedia.org/wiki/Coordinated_Universal_Time), the *KVM clock*, which does *not* a catchup policy :
 
 ```
 <domain type='kvm'>
 [...]
   <clock offset='utc'>
-    <timer name='kvmclock' tickpolicy='catchup'/>
+    <timer name='kvmclock'/>
   </clock>
 [...]
 </domain>
