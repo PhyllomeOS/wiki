@@ -2,7 +2,7 @@
 title: Machine definition
 description: Virtual machine hardware
 published: true
-date: 2025-06-18T17:23:00.143Z
+date: 2025-06-19T18:35:44.609Z
 tags: 
 editor: markdown
 dateCreated: 2025-06-01T17:37:29.262Z
@@ -234,3 +234,16 @@ In the following example, the hardware clock uses [UTC](https://en.wikipedia.org
 - Linux Kernel documentation: [Timekeeping Virtualization for X86-Based Architectures](https://docs.kernel.org/virt/kvm/x86/timekeeping.html)
 - SUSE documentation: [VM Guest clock settings](https://documentation.suse.com/sles/15-SP3/html/SLES-all/sec-kvm-managing-clock.html#)
 - [Best practices for accurate timekeeping for Red Hat Enterprise Linux running on Red Hat Virtualization](https://access.redhat.com/solutions/27865)
+
+## Events configuration
+
+```
+<domain type='kvm'>
+[...]
+  <on_poweroff>destroy</on_poweroff>
+  <on_reboot>restart</on_reboot>
+  <on_crash>destroy</on_crash>
+[...]
+</domain>
+```
+
