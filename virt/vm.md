@@ -2,7 +2,7 @@
 title: Machine definition
 description: Virtual machine hardware
 published: true
-date: 2025-06-19T18:35:44.609Z
+date: 2025-06-19T18:47:54.376Z
 tags: 
 editor: markdown
 dateCreated: 2025-06-01T17:37:29.262Z
@@ -237,6 +237,8 @@ In the following example, the hardware clock uses [UTC](https://en.wikipedia.org
 
 ## Events configuration
 
+This define section defines action when guest OS triggers a lifecycle operation.
+
 ```
 <domain type='kvm'>
 [...]
@@ -246,4 +248,10 @@ In the following example, the hardware clock uses [UTC](https://en.wikipedia.org
 [...]
 </domain>
 ```
+
+Despite its scary name, the `destroy` means that the domain will be terminated completely and all associated resources released, not that the domain will be erased. 
+
+### Resources about events configuration
+
+- [Events configuration on libvirt website](https://libvirt.org/formatdomain.html#events-configuration)
 
