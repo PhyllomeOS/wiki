@@ -2,7 +2,7 @@
 title: Machine definition
 description: Virtual machine hardware
 published: true
-date: 2025-06-19T18:52:19.311Z
+date: 2025-06-19T18:54:27.846Z
 tags: 
 editor: markdown
 dateCreated: 2025-06-01T17:37:29.262Z
@@ -270,7 +270,7 @@ This define section defines ACPI sleep states, suspend to memory meaning S3 stat
 </domain>
 ```
 
-Despite its scary name, the `destroy` means that the domain will be terminated completely and all associated resources released, not that the domain will be erased. 
+Suspend to memory won't work if a host device like a graphic card is attached to the guest.
 
 ### Resources about Power Management
 
