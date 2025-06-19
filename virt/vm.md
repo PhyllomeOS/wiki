@@ -2,7 +2,7 @@
 title: Machine definition
 description: Virtual machine hardware
 published: true
-date: 2025-06-19T18:54:50.768Z
+date: 2025-06-19T18:55:10.146Z
 tags: 
 editor: markdown
 dateCreated: 2025-06-01T17:37:29.262Z
@@ -270,8 +270,8 @@ This define section defines ACPI sleep states, suspend to memory meaning S3 stat
 </domain>
 ```
 
-> Suspend to memory won't work if a host device like a graphic card is attached to the guest
-{.is-info}
+> Suspend to memory won't work if a host device like a graphic card is attached to the guest virtual machine
+{.is-warning}
 
 ### Resources about Power Management
 
