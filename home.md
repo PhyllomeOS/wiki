@@ -2,7 +2,7 @@
 title: Homepage
 description: 
 published: true
-date: 2025-06-05T14:33:58.922Z
+date: 2025-06-20T19:15:30.530Z
 tags: 
 editor: markdown
 dateCreated: 2021-06-19T09:29:20.593Z
@@ -66,10 +66,10 @@ In this wiki, you will find guides about [how to install](#install) and [use](#g
 ### Guest hardware
 
 - [Machine definition](/virt/vm)
-- [Chipsets](/virt/vm/chipset)
-- [Firmware](/virt/vm/firmware)
-- [Graphic cards](/virt/vm/graphic-card)
-- [Virtual I/O (virtio) devices](/virt/vm/virtio)
+	- [Chipsets](/virt/vm/chipset)
+	- [Firmware](/virt/vm/firmware)
+	- [Graphic cards](/virt/vm/graphic-card)
+	- [Virtual I/O (virtio) devices](/virt/vm/virtio)
 
 ### Guest software
 
