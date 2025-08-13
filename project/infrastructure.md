@@ -2,7 +2,7 @@
 title: Infrastructure
 description: 
 published: true
-date: 2025-08-13T12:26:37.888Z
+date: 2025-08-13T13:05:29.804Z
 tags: 
 editor: markdown
 dateCreated: 2021-11-13T12:10:04.658Z
@@ -114,7 +114,7 @@ EMAIL_DOMAIN_ALLOWLIST=phyllo.me,phyllome.org
 
 ### Gitea runners
 
-Two runners are available. One is using Docker, the other is running directly on a Fedora host.
+Two runners are available. One is using Docker, the other is running directly on a Fedora host. They are both running at an instance level, and available for all projects.
 
 #### Deploy a new runner
 
@@ -180,7 +180,6 @@ Then, run the runner:
 ./act_runner daemon --config config.yaml
 ```
 
-
 #### Documentation:
 
 - Official documentation : https://docs.gitea.com/usage/actions/act-runner
@@ -197,15 +196,11 @@ Then, run the runner:
 
 ---
 
-- Test worflow locally
+### Test worflow locally
 
 ```
 ./act_runner-0.2.12-linux-amd64 exec -W .gitea/workflows/checkout-fedora.yml 
 ```
-
-
-
-
 
 ---
 
