@@ -10,80 +10,76 @@ dateCreated: 2021-06-19T09:29:20.593Z
 
 # The Phyllome OS wiki
 
-In this wiki, you will find guides about [how to install](#install) and [use](#get-started) Phyllome OS, as well as information on the [underlying technologies](#references), Phyllome OS [itself](#about-phyllome-os) and the surrounding [project](#about-the-project).
+Welcome to the Phyllome OS documentation! This wiki contains guides for installing, using, and extending Phyllome OS, as well as information about the underlying virtualization technologies.
 
-## Install
+## Installation
 
 *How to install Phyllome OS*
 
 - [Prepare the target computer](/deploy/prepare)
 - [Create an installation medium](/deploy/medium)
-- [Install](/deploy/install)
+- [Install Phyllome OS](/deploy/install)
 
-## Get started
+## Using Phyllome OS
 
-*How to use Phyllome OS and deploy your favorite operating system inside Phyllome OS*
+*Deploy and manage guest operating systems*
 
-- [First setup and beyond](/getstarted/firstsetup)
+### Linux Guests
+- [Install a Linux distribution through the network](/getstarted/install-guest) 
+- [Automatically provision a Linux distribution](/getstarted/virt-install)
 
-### Guests
-	
-- **Linux**:tm:  
-	- [Install a Linux distribution through the network](/getstarted/install-guest) 
-	- [Automatically provision a Linux distribution](/getstarted/virt-install)
+### Windows Guests
+- [Install ReactOS manually](/getstarted/reactos)
 
-- **Windows**:tm:
-	- [Install ReactOS manually](/getstarted/reactos)
-
-## Go further
+## Advanced Topics
 
 *Go further with Phyllome OS*
 
-- [Resize](/gofurther/resize) a virtual disk
-- [Encrypt](/gofurther/encrypt) a directory
+- [Resize virtual disks](/gofurther/resize)
+- [Encrypt directories](/gofurther/encrypt)
 
-### Sharing resources with a guest system
+### Sharing Resources with Guests
+- [Share directories](/gofurther/virtiofs)
+- [Share input devices](/gofurther/evdev)
+- [Share virtual GPUs](/gofurther/vfio-mdev)
+- [Share physical devices](/gofurther/vfio-pci)
 
-- [Share a directory](/gofurther/virtiofs)
-- [Share an input device](/gofurther/evdev)
-- [Share a virtual GPU](/gofurther/vfio-mdev)
-- [Share a physical device](/gofurther/vfio-pci)
+## Technical References
 
-## Technical references
+*Information about virtualization technologies*
 
-*Information about related technologies*
+- [Virtualization lexicon](/virt/lexicon)
+- [A short history of virtualization](/virt/history)
+- [Virtualization tools](/virt/tools)
 
-- [Lexicon](/virt/lexicon)
-- [A very short history of virtualization](/virt/history)
-- [Tools related to virtualization](/virt/tools)
+### Host Virtualization
+- [Linux Kernel modules](/virt/host/modules)
+- [Virtualization paths](/virt/host/paths)
+- [Libvirt XML examples](/virt/host/xml)
 
-### Host virtualization software
-
-- [Linux Kernel modules](/virt/host/modules) related to virtualization
-- [Virtualization-related paths](/virt/host/paths) on Phyllome OS
-- [A libvirt XML file](/virt/host/xml)
-
-### Guest hardware
-
+### Guest Hardware
 - [Virtual hardware definition](/virt/vm)
-	- [Chipset](/virt/vm/chipset)
-	- [Firmware](/virt/vm/firmware)
-	- [Graphic card](/virt/vm/graphic-card)
-	- [Virtual I/O device](/virt/vm/virtio)
-	- [Display](/virt/vm/display)
+  - [Chipset](/virt/vm/chipset)
+  - [Firmware](/virt/vm/firmware)
+  - [Graphic card](/virt/vm/graphic-card)
+  - [Virtual I/O devices](/virt/vm/virtio)
+  - [Display](/virt/vm/display)
 
-### Guest software
-
-- [Guest operating systems support](/virt/guest.md)
+### Guest Software
+- [Guest OS support](/virt/guest.md)
 
 ## About Phyllome OS
 
-- [Context](/phyllomeos/context) and comparaison
+*Learn more about the project*
+
+- [Context and comparison](/phyllomeos/context)
 - [Architecture](/phyllomeos/purpose)
 - [Roadmap](/phyllomeos/roadmap)
 - [FAQ](/phyllomeos/faq)
 
-## About the project
+## About the Project
+
+*Contribute to Phyllome OS*
 
 - [How to contribute](/project/contribute)
 - [How to join](/project/join)
