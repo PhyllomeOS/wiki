@@ -66,10 +66,11 @@ In this wiki, you will find guides about [how to install](#install) and [use](#g
 ### Guest hardware
 
 - [Virtual hardware definition](/virt/vm)
-	- [Chipsets](/virt/vm/chipset)
+	- [Chipset](/virt/vm/chipset)
 	- [Firmware](/virt/vm/firmware)
-	- [Graphic cards](/virt/vm/graphic-card)
-	- [Virtual I/O (virtio) devices](/virt/vm/virtio)
+	- [Graphic card](/virt/vm/graphic-card)
+	- [Virtual I/O device](/virt/vm/virtio)
+	- [Display](/virt/vm/display)
 
 ### Guest software
 
