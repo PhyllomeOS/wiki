@@ -10,7 +10,7 @@ dateCreated: 2021-11-13T11:56:47.463Z
 
 # Virtual chipsets
 
-Just as with physical computers, virtual machines are built around a central chipset.
+Just as with physical computers, virtual machines are built around a central chipset or machine type.
 
 These virtual chipsets are routinely updated. If no version of a chipset is defined, it is the latest that will be used. 
 
@@ -38,11 +38,35 @@ There are three main chipsets, `i440fx`, `Q35` and the more recent `virt`.
 
 ### i440fx
 
-The `i440fx` virtual chipset is a legacy chipset, compatible with PCI. 
+The `i440fx` virtual chipset is a legacy chipset, compatible with PCI.
+
+```
+<domain type='kvm'>
+[...]
+  <os firmware="efi">
+    <type arch="x86_64" machine="pc-i440fx">hvm</type>
+  </os>
+[...]
+</domain>
+```
+
+There are revisions of the `i440fx` chipset, such as `pc-i440fx-10.1`. If left undefined, the latest locally available version will be used.
 
 ### Q35
 
 The `Q35` virtual chipset is based on a modern chipset, compatible with PCI-Express.
+
+```
+<domain type='kvm'>
+[...]
+  <os firmware="efi">
+    <type arch="x86_64" machine="pc-q35">hvm</type>
+  </os>
+[...]
+</domain>
+```
+
+There are also revisions for the `Q35` chipset. If left undefined, the latest locally available version will be used.
 
 > Did you know that the Open Virtual Machine Firmware (OVMF), which is based on [TianoCore](https://www.tianocore.org/), is the default firmware for EFI-based virtual machines? Its configuration utility can be accessed using the <kbd>Esc</kbd> key.
 {.is-info}
@@ -58,7 +82,7 @@ The `virt` virtual chipset is the most modern chipset, compatible with PCI-Expre
 ## Resources
 
 * [Official documentation](https://wiki.qemu.org/Features/Q35) on Q35 
-
+- [QEMU machine types and compatibility blog post](https://people.redhat.com/~cohuck/2022/01/05/qemu-machine-types.html), by Cornelia Huck
 ---
 
 *[**Go to parent page**](https://wiki.phyllo.me/)*
