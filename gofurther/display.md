@@ -115,7 +115,7 @@ When the virtual machine is launched, a specific D-Bus address will be choosen, 
 
 A third-party tool is required to interact to the D-Bus display. 
 
-[Libmks](https://gitlab.gnome.org/GNOME/libmks), which is under development, is such a tool. 
+[**Libmks**](https://gitlab.gnome.org/GNOME/libmks), which is under development, is such a tool. 
 
 > Due to [a bug](https://gitlab.gnome.org/GNOME/libmks/-/issues/16), it is currenlty only possible to connect a D-Bus display with plain QEMU
 {.is-warning}
