@@ -2,7 +2,7 @@
 title: Resize an existing virtual disk
 description: 
 published: true
-date: 2024-07-13T13:33:59.560Z
+date: 2026-05-08T09:03:28.700Z
 tags: 
 editor: markdown
 dateCreated: 2021-11-13T11:41:29.087Z
@@ -47,7 +47,7 @@ One can tell that the root partition is located under `/dev/vda3`. This is the o
 
 * Copy the formet old data to the new disk and expand the root partition of the said disk
 
-> This command is cabable of expanding different kinds of filesystems, including `ext4` and `btrfs`  
+> This command is capable of expanding different kinds of filesystems, including `ext4` and `btrfs`  
 {.is-info}
 
 ```
